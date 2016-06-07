@@ -82,7 +82,6 @@ if spelling is not None:
 	
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
-nitpicky = True
 
 # The suffix of source filenames.
 source_suffix = '.rst'
@@ -299,7 +298,3 @@ texinfo_documents = [
 intersphinx_mapping = {'https://docs.python.org/3': None}
 
 epub_theme = 'epub'
-
-# Retry requests in the linkcheck builder so that we're resillient against
-# transient network errors.
-linkcheck_retries = 2
