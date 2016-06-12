@@ -1,0 +1,54 @@
+\hypertarget{Flowchart_8py}{}\section{Flowchart.\+py File Reference}
+\label{Flowchart_8py}\index{Flowchart.\+py@{Flowchart.\+py}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classFlowchart_1_1Flowchart}{Flowchart.\+Flowchart}
+\item 
+class \hyperlink{classFlowchart_1_1FlowchartGraphicsItem}{Flowchart.\+Flowchart\+Graphics\+Item}
+\item 
+class \hyperlink{classFlowchart_1_1FlowchartCtrlWidget}{Flowchart.\+Flowchart\+Ctrl\+Widget}
+\item 
+class \hyperlink{classFlowchart_1_1FlowchartWidget}{Flowchart.\+Flowchart\+Widget}
+\item 
+class \hyperlink{classFlowchart_1_1FlowchartNode}{Flowchart.\+Flowchart\+Node}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespaceFlowchart}{Flowchart}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespaceFlowchart_a4df8d2b9c9d35144082607ac873bbb0e}{Flowchart.\+str\+Dict} (d)
+\item 
+def \hyperlink{namespaceFlowchart_a3a8dec1a56afa0fb5e704625606501b6}{Flowchart.\+toposort}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+tuple \hyperlink{namespaceFlowchart_a1341dbc8fc4a0b646c19b56f288e03bd}{Flowchart.\+app} = Qt\+Gui.\+Q\+Application(\mbox{[}$\,$\mbox{]})
+\item 
+tuple \hyperlink{namespaceFlowchart_a0b07efb30fc1f11db38e4e6242d25f89}{Flowchart.\+win} = Qt\+Gui.\+Q\+Main\+Window()
+\begin{DoxyCompactList}\small\item\em Create main window with grid layout. \end{DoxyCompactList}\item 
+tuple \hyperlink{namespaceFlowchart_a8c7765a75e5c267970b7a075876dd703}{Flowchart.\+cw} = Qt\+Gui.\+Q\+Widget()
+\item 
+tuple \hyperlink{namespaceFlowchart_a7c65bdf9588d2e20126ed9915552be1d}{Flowchart.\+layout} = Qt\+Gui.\+Q\+Grid\+Layout()
+\item 
+tuple \hyperlink{namespaceFlowchart_afcff929e4d9621e1fa7a72969e1e247e}{Flowchart.\+fc}
+\begin{DoxyCompactList}\small\item\em Create flowchart, define input/output terminals. \end{DoxyCompactList}\item 
+tuple \hyperlink{namespaceFlowchart_adb242633cef63f930a6b70acdbbfec00}{Flowchart.\+w} = fc.\+widget()
+\item 
+tuple \hyperlink{namespaceFlowchart_a626e983c67d5de28756f40bf152d7cca}{Flowchart.\+pw1} = pg.\+Plot\+Widget()
+\begin{DoxyCompactList}\small\item\em Add flowchart control panel to the main window. \end{DoxyCompactList}\item 
+tuple \hyperlink{namespaceFlowchart_a7312d9e0a403b4d8f1b99a0a65c178eb}{Flowchart.\+pw2} = pg.\+Plot\+Widget()
+\item 
+tuple \hyperlink{namespaceFlowchart_a7d5fda16f35dc91fa5fde9e7bb08e1e5}{Flowchart.\+data} = np.\+random.\+normal(size=1000)
+\begin{DoxyCompactList}\small\item\em generate signal data to pass through the flowchart \end{DoxyCompactList}\item 
+tuple \hyperlink{namespaceFlowchart_acd2501986ff39a534fd62ecda0487108}{Flowchart.\+pw1\+Node} = fc.\+create\+Node(\textquotesingle{}Plot\+Widget\textquotesingle{}, pos=(0, -\/150))
+\begin{DoxyCompactList}\small\item\em Feed data into the input terminal of the flowchart. \end{DoxyCompactList}\item 
+tuple \hyperlink{namespaceFlowchart_adb645108dfae32e4c6f93efc3876c876}{Flowchart.\+pw2\+Node} = fc.\+create\+Node(\textquotesingle{}Plot\+Widget\textquotesingle{}, pos=(150, -\/150))
+\item 
+tuple \hyperlink{namespaceFlowchart_aed61dc3e3102ab47e39b56d0318e82b1}{Flowchart.\+f\+Node} = fc.\+create\+Node(\textquotesingle{}Gaussian\+Filter\textquotesingle{}, pos=(0, 0))
+\end{DoxyCompactItemize}

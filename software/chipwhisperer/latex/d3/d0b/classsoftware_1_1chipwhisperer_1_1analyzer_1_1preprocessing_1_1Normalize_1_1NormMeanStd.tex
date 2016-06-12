@@ -1,0 +1,60 @@
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1Normalize_1_1NormMeanStd}{}\section{software.\+chipwhisperer.\+analyzer.\+preprocessing.\+Normalize.\+Norm\+Mean\+Std Class Reference}
+\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1Normalize_1_1NormMeanStd}\index{software.\+chipwhisperer.\+analyzer.\+preprocessing.\+Normalize.\+Norm\+Mean\+Std@{software.\+chipwhisperer.\+analyzer.\+preprocessing.\+Normalize.\+Norm\+Mean\+Std}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1Normalize_1_1NormMeanStd_1_1NormLinFunc}{Norm\+Lin\+Func}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1Normalize_1_1NormMeanStd_a15a20e102f70b339491e4c424401a8ff}{process\+Trace} (self, t, tindex)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Normalize by mean & std-dev \end{DoxyVerb}
+ 
+
+Inheritance diagram for software.\+chipwhisperer.\+analyzer.\+preprocessing.\+Normalize.\+Norm\+Mean\+Std\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{d0/d30/classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1Normalize_1_1NormMeanStd__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for software.\+chipwhisperer.\+analyzer.\+preprocessing.\+Normalize.\+Norm\+Mean\+Std\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{da/db0/classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1Normalize_1_1NormMeanStd__coll__graph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1Normalize_1_1NormMeanStd_a15a20e102f70b339491e4c424401a8ff}{}\index{software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+Normalize\+::\+Norm\+Mean\+Std@{software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+Normalize\+::\+Norm\+Mean\+Std}!process\+Trace@{process\+Trace}}
+\index{process\+Trace@{process\+Trace}!software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+Normalize\+::\+Norm\+Mean\+Std@{software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+Normalize\+::\+Norm\+Mean\+Std}}
+\subsubsection[{process\+Trace}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+analyzer.\+preprocessing.\+Normalize.\+Norm\+Mean\+Std.\+process\+Trace (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{t, }
+\item[{}]{tindex}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1Normalize_1_1NormMeanStd_a15a20e102f70b339491e4c424401a8ff}
+
+\begin{DoxyCode}
+59     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1Normalize_1_1NormMeanStd_a15a20e102f70b339491e4c424401a8ff}{processTrace}(self, t, tindex):
+60         \textcolor{keywordflow}{return} (t - np.mean(t)) / np.std(t)
+61 
+62 
+63 \textcolor{keywordflow}{try}:
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Normalize_8py}{Normalize.\+py}\end{DoxyCompactItemize}

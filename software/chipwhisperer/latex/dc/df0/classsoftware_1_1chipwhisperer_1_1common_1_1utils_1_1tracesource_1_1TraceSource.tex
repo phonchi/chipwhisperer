@@ -1,0 +1,198 @@
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1tracesource_1_1TraceSource}{}\section{software.\+chipwhisperer.\+common.\+utils.\+tracesource.\+Trace\+Source Class Reference}
+\label{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1tracesource_1_1TraceSource}\index{software.\+chipwhisperer.\+common.\+utils.\+tracesource.\+Trace\+Source@{software.\+chipwhisperer.\+common.\+utils.\+tracesource.\+Trace\+Source}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1tracesource_1_1TraceSource_a857346bc3719161ab56d5a8e7c4fefdc}{\+\_\+\+\_\+init\+\_\+\+\_\+}
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1tracesource_1_1TraceSource_a1b48e8173be2027b8065c1de807fa828}{get\+Trace} (self, n)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1tracesource_1_1TraceSource_a8dda4941954d8c70c92889664a15142a}{num\+Points} (self)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1tracesource_1_1TraceSource_af4b0a4c0f1e1d63e0894024cd78da99c}{num\+Traces} (self)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1tracesource_1_1TraceSource_ac38aedee8f69e0d20c143c507e92cb24}{offset} (self)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1tracesource_1_1TraceSource_ae5c170314ed59751b21999e6d72df384}{register} (self)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1tracesource_1_1TraceSource_a982881a5a0e6f7fdfaecd18b3f1f349f}{deregister} (cls, \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1tracesource_1_1TraceSource_ac0cca65345519c525e20630288a6faa4}{name})
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1tracesource_1_1TraceSource_ab0c62f8fad1e457c72d44e62a542f3e9}{sig\+Traces\+Changed}
+\item 
+\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1tracesource_1_1TraceSource_ac0cca65345519c525e20630288a6faa4}{name}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+tuple \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1tracesource_1_1TraceSource_acb73a0d7494d4b9f143b1fe693cb886c}{registered\+Objects} = \hyperlink{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1util_aa256ae974052a2cfddc80fd21216b08d}{util.\+Dict\+Type}()
+\item 
+tuple \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1tracesource_1_1TraceSource_ab3d2b78b82dd89170071845840b4f1a6}{sig\+Registered\+Objects\+Changed} = \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1util_1_1Signal}{util.\+Signal}()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}It has traces as output
+Keeps a dictionary with all the registered objets and emits a signal when a new one is added
+\end{DoxyVerb}
+ 
+
+Inheritance diagram for software.\+chipwhisperer.\+common.\+utils.\+tracesource.\+Trace\+Source\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{de/da8/classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1tracesource_1_1TraceSource__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for software.\+chipwhisperer.\+common.\+utils.\+tracesource.\+Trace\+Source\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{d0/d22/classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1tracesource_1_1TraceSource__coll__graph}
+\end{center}
+\end{figure}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1tracesource_1_1TraceSource_a857346bc3719161ab56d5a8e7c4fefdc}{}\index{software\+::chipwhisperer\+::common\+::utils\+::tracesource\+::\+Trace\+Source@{software\+::chipwhisperer\+::common\+::utils\+::tracesource\+::\+Trace\+Source}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!software\+::chipwhisperer\+::common\+::utils\+::tracesource\+::\+Trace\+Source@{software\+::chipwhisperer\+::common\+::utils\+::tracesource\+::\+Trace\+Source}}
+\subsubsection[{\+\_\+\+\_\+init\+\_\+\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+utils.\+tracesource.\+Trace\+Source.\+\_\+\+\_\+init\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{name = {\ttfamily \char`\"{}Unknown\char`\"{}}}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1tracesource_1_1TraceSource_a857346bc3719161ab56d5a8e7c4fefdc}
+
+\begin{DoxyCode}
+40     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1tracesource_1_1TraceSource_a857346bc3719161ab56d5a8e7c4fefdc}{\_\_init\_\_}(self, name="Unknown"):
+41         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1tracesource_1_1TraceSource_ab0c62f8fad1e457c72d44e62a542f3e9}{sigTracesChanged} = \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1util_1_1Signal}{util.Signal}()
+42         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1tracesource_1_1TraceSource_ac0cca65345519c525e20630288a6faa4}{name} = name
+43 
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1tracesource_1_1TraceSource_a982881a5a0e6f7fdfaecd18b3f1f349f}{}\index{software\+::chipwhisperer\+::common\+::utils\+::tracesource\+::\+Trace\+Source@{software\+::chipwhisperer\+::common\+::utils\+::tracesource\+::\+Trace\+Source}!deregister@{deregister}}
+\index{deregister@{deregister}!software\+::chipwhisperer\+::common\+::utils\+::tracesource\+::\+Trace\+Source@{software\+::chipwhisperer\+::common\+::utils\+::tracesource\+::\+Trace\+Source}}
+\subsubsection[{deregister}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+utils.\+tracesource.\+Trace\+Source.\+deregister (
+\begin{DoxyParamCaption}
+\item[{}]{cls, }
+\item[{}]{name}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1tracesource_1_1TraceSource_a982881a5a0e6f7fdfaecd18b3f1f349f}
+
+\begin{DoxyCode}
+62     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1tracesource_1_1TraceSource_a982881a5a0e6f7fdfaecd18b3f1f349f}{deregister}(cls, name):
+63         \textcolor{keywordflow}{if} cls.registeredObjects.pop(name, \textcolor{keywordtype}{None}):
+64             cls.sigRegisteredObjectsChanged.emit()
+65 
+66 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1tracesource_1_1TraceSource_a1b48e8173be2027b8065c1de807fa828}{}\index{software\+::chipwhisperer\+::common\+::utils\+::tracesource\+::\+Trace\+Source@{software\+::chipwhisperer\+::common\+::utils\+::tracesource\+::\+Trace\+Source}!get\+Trace@{get\+Trace}}
+\index{get\+Trace@{get\+Trace}!software\+::chipwhisperer\+::common\+::utils\+::tracesource\+::\+Trace\+Source@{software\+::chipwhisperer\+::common\+::utils\+::tracesource\+::\+Trace\+Source}}
+\subsubsection[{get\+Trace}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+utils.\+tracesource.\+Trace\+Source.\+get\+Trace (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{n}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1tracesource_1_1TraceSource_a1b48e8173be2027b8065c1de807fa828}
+
+\begin{DoxyCode}
+44     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1tracesource_1_1TraceSource_a1b48e8173be2027b8065c1de807fa828}{getTrace}(self, n):
+45         \textcolor{keywordflow}{return} \textcolor{keywordtype}{None}
+46 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1tracesource_1_1TraceSource_a8dda4941954d8c70c92889664a15142a}{}\index{software\+::chipwhisperer\+::common\+::utils\+::tracesource\+::\+Trace\+Source@{software\+::chipwhisperer\+::common\+::utils\+::tracesource\+::\+Trace\+Source}!num\+Points@{num\+Points}}
+\index{num\+Points@{num\+Points}!software\+::chipwhisperer\+::common\+::utils\+::tracesource\+::\+Trace\+Source@{software\+::chipwhisperer\+::common\+::utils\+::tracesource\+::\+Trace\+Source}}
+\subsubsection[{num\+Points}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+utils.\+tracesource.\+Trace\+Source.\+num\+Points (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1tracesource_1_1TraceSource_a8dda4941954d8c70c92889664a15142a}
+
+\begin{DoxyCode}
+47     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1tracesource_1_1TraceSource_a8dda4941954d8c70c92889664a15142a}{numPoints}(self):
+48         \textcolor{keywordflow}{return} 0
+49 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1tracesource_1_1TraceSource_af4b0a4c0f1e1d63e0894024cd78da99c}{}\index{software\+::chipwhisperer\+::common\+::utils\+::tracesource\+::\+Trace\+Source@{software\+::chipwhisperer\+::common\+::utils\+::tracesource\+::\+Trace\+Source}!num\+Traces@{num\+Traces}}
+\index{num\+Traces@{num\+Traces}!software\+::chipwhisperer\+::common\+::utils\+::tracesource\+::\+Trace\+Source@{software\+::chipwhisperer\+::common\+::utils\+::tracesource\+::\+Trace\+Source}}
+\subsubsection[{num\+Traces}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+utils.\+tracesource.\+Trace\+Source.\+num\+Traces (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1tracesource_1_1TraceSource_af4b0a4c0f1e1d63e0894024cd78da99c}
+
+
+Referenced by software.\+chipwhisperer.\+capture.\+ui.\+C\+W\+Capture\+G\+U\+I.\+C\+W\+Capture\+G\+U\+I.\+validate\+Settings().
+
+
+\begin{DoxyCode}
+50     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1tracesource_1_1TraceSource_af4b0a4c0f1e1d63e0894024cd78da99c}{numTraces}(self):
+51         \textcolor{keywordflow}{return} 0
+52 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1tracesource_1_1TraceSource_ac38aedee8f69e0d20c143c507e92cb24}{}\index{software\+::chipwhisperer\+::common\+::utils\+::tracesource\+::\+Trace\+Source@{software\+::chipwhisperer\+::common\+::utils\+::tracesource\+::\+Trace\+Source}!offset@{offset}}
+\index{offset@{offset}!software\+::chipwhisperer\+::common\+::utils\+::tracesource\+::\+Trace\+Source@{software\+::chipwhisperer\+::common\+::utils\+::tracesource\+::\+Trace\+Source}}
+\subsubsection[{offset}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+utils.\+tracesource.\+Trace\+Source.\+offset (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1tracesource_1_1TraceSource_ac38aedee8f69e0d20c143c507e92cb24}
+
+\begin{DoxyCode}
+53     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1tracesource_1_1TraceSource_ac38aedee8f69e0d20c143c507e92cb24}{offset}(self):
+54         \textcolor{keywordflow}{return} 0
+55 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1tracesource_1_1TraceSource_ae5c170314ed59751b21999e6d72df384}{}\index{software\+::chipwhisperer\+::common\+::utils\+::tracesource\+::\+Trace\+Source@{software\+::chipwhisperer\+::common\+::utils\+::tracesource\+::\+Trace\+Source}!register@{register}}
+\index{register@{register}!software\+::chipwhisperer\+::common\+::utils\+::tracesource\+::\+Trace\+Source@{software\+::chipwhisperer\+::common\+::utils\+::tracesource\+::\+Trace\+Source}}
+\subsubsection[{register}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+utils.\+tracesource.\+Trace\+Source.\+register (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1tracesource_1_1TraceSource_ae5c170314ed59751b21999e6d72df384}
+
+
+References software.\+chipwhisperer.\+common.\+utils.\+tracesource.\+Trace\+Source.\+name, software.\+chipwhisperer.\+common.\+api.\+Trace\+Manager.\+Trace\+Manager.\+name, software.\+chipwhisperer.\+analyzer.\+utils.\+Trace\+Explorer\+Scripts.\+Text\+Display.\+Text\+Display.\+name, software.\+chipwhisperer.\+common.\+ui.\+C\+W\+Main\+G\+U\+I.\+C\+W\+Main\+G\+U\+I.\+name, software.\+chipwhisperer.\+capture.\+scopes.\+cwhardware.\+Chip\+Whisperer\+F\+W\+Loader.\+C\+W\+C\+Rev2\+\_\+\+Loader.\+name, software.\+chipwhisperer.\+capture.\+scopes.\+cwhardware.\+Chip\+Whisperer\+F\+W\+Loader.\+C\+W\+Lite\+\_\+\+Loader.\+name, software.\+chipwhisperer.\+capture.\+scopes.\+\_\+\+Open\+A\+D\+C\+Interface.\+H\+W\+Information.\+name, software.\+chipwhisperer.\+capture.\+scopes.\+\_\+\+Open\+A\+D\+C\+Interface.\+Gain\+Settings.\+name, software.\+chipwhisperer.\+analyzer.\+utils.\+Trace\+Explorer\+Scripts.\+Partition\+Display.\+Partition\+Display.\+name, software.\+chipwhisperer.\+capture.\+scopes.\+\_\+\+Open\+A\+D\+C\+Interface.\+Trigger\+Settings.\+name, software.\+chipwhisperer.\+capture.\+scopes.\+\_\+\+Open\+A\+D\+C\+Interface.\+Clock\+Settings.\+name, software.\+chipwhisperer.\+common.\+utils.\+tracesource.\+Trace\+Source.\+registered\+Objects, and software.\+chipwhisperer.\+common.\+results.\+base.\+Results\+Base.\+registered\+Objects.
+
+
+\begin{DoxyCode}
+56     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1tracesource_1_1TraceSource_ae5c170314ed59751b21999e6d72df384}{register}(self):
+57         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1tracesource_1_1TraceSource_acb73a0d7494d4b9f143b1fe693cb886c}{registeredObjects}[self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1tracesource_1_1TraceSource_ac0cca65345519c525e20630288a6faa4}{name}] = self
+58         self.sigRegisteredObjectsChanged.emit()
+59         \textcolor{keywordflow}{return} self
+60 
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1tracesource_1_1TraceSource_ac0cca65345519c525e20630288a6faa4}{}\index{software\+::chipwhisperer\+::common\+::utils\+::tracesource\+::\+Trace\+Source@{software\+::chipwhisperer\+::common\+::utils\+::tracesource\+::\+Trace\+Source}!name@{name}}
+\index{name@{name}!software\+::chipwhisperer\+::common\+::utils\+::tracesource\+::\+Trace\+Source@{software\+::chipwhisperer\+::common\+::utils\+::tracesource\+::\+Trace\+Source}}
+\subsubsection[{name}]{\setlength{\rightskip}{0pt plus 5cm}software.\+chipwhisperer.\+common.\+utils.\+tracesource.\+Trace\+Source.\+name}\label{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1tracesource_1_1TraceSource_ac0cca65345519c525e20630288a6faa4}
+
+
+Referenced by software.\+chipwhisperer.\+common.\+utils.\+tracesource.\+Trace\+Source.\+register().
+
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1tracesource_1_1TraceSource_acb73a0d7494d4b9f143b1fe693cb886c}{}\index{software\+::chipwhisperer\+::common\+::utils\+::tracesource\+::\+Trace\+Source@{software\+::chipwhisperer\+::common\+::utils\+::tracesource\+::\+Trace\+Source}!registered\+Objects@{registered\+Objects}}
+\index{registered\+Objects@{registered\+Objects}!software\+::chipwhisperer\+::common\+::utils\+::tracesource\+::\+Trace\+Source@{software\+::chipwhisperer\+::common\+::utils\+::tracesource\+::\+Trace\+Source}}
+\subsubsection[{registered\+Objects}]{\setlength{\rightskip}{0pt plus 5cm}tuple software.\+chipwhisperer.\+common.\+utils.\+tracesource.\+Trace\+Source.\+registered\+Objects = {\bf util.\+Dict\+Type}()\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1tracesource_1_1TraceSource_acb73a0d7494d4b9f143b1fe693cb886c}
+
+
+Referenced by software.\+chipwhisperer.\+common.\+utils.\+tracesource.\+Trace\+Source.\+register().
+
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1tracesource_1_1TraceSource_ab3d2b78b82dd89170071845840b4f1a6}{}\index{software\+::chipwhisperer\+::common\+::utils\+::tracesource\+::\+Trace\+Source@{software\+::chipwhisperer\+::common\+::utils\+::tracesource\+::\+Trace\+Source}!sig\+Registered\+Objects\+Changed@{sig\+Registered\+Objects\+Changed}}
+\index{sig\+Registered\+Objects\+Changed@{sig\+Registered\+Objects\+Changed}!software\+::chipwhisperer\+::common\+::utils\+::tracesource\+::\+Trace\+Source@{software\+::chipwhisperer\+::common\+::utils\+::tracesource\+::\+Trace\+Source}}
+\subsubsection[{sig\+Registered\+Objects\+Changed}]{\setlength{\rightskip}{0pt plus 5cm}tuple software.\+chipwhisperer.\+common.\+utils.\+tracesource.\+Trace\+Source.\+sig\+Registered\+Objects\+Changed = {\bf util.\+Signal}()\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1tracesource_1_1TraceSource_ab3d2b78b82dd89170071845840b4f1a6}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1tracesource_1_1TraceSource_ab0c62f8fad1e457c72d44e62a542f3e9}{}\index{software\+::chipwhisperer\+::common\+::utils\+::tracesource\+::\+Trace\+Source@{software\+::chipwhisperer\+::common\+::utils\+::tracesource\+::\+Trace\+Source}!sig\+Traces\+Changed@{sig\+Traces\+Changed}}
+\index{sig\+Traces\+Changed@{sig\+Traces\+Changed}!software\+::chipwhisperer\+::common\+::utils\+::tracesource\+::\+Trace\+Source@{software\+::chipwhisperer\+::common\+::utils\+::tracesource\+::\+Trace\+Source}}
+\subsubsection[{sig\+Traces\+Changed}]{\setlength{\rightskip}{0pt plus 5cm}software.\+chipwhisperer.\+common.\+utils.\+tracesource.\+Trace\+Source.\+sig\+Traces\+Changed}\label{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1tracesource_1_1TraceSource_ab0c62f8fad1e457c72d44e62a542f3e9}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{tracesource_8py}{tracesource.\+py}\end{DoxyCompactItemize}

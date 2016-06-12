@@ -1,0 +1,34 @@
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1__generic__parameters}{}\section{software.\+chipwhisperer.\+analyzer.\+attacks.\+\_\+generic\+\_\+parameters Namespace Reference}
+\label{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1__generic__parameters}\index{software.\+chipwhisperer.\+analyzer.\+attacks.\+\_\+generic\+\_\+parameters@{software.\+chipwhisperer.\+analyzer.\+attacks.\+\_\+generic\+\_\+parameters}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1__generic__parameters_1_1AttackGenericParameters}{Attack\+Generic\+Parameters}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1__generic__parameters_abcd215b51e9572a0f8de005212077184}{enforce\+Limits} (value, limits)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1__generic__parameters_abcd215b51e9572a0f8de005212077184}{}\index{software\+::chipwhisperer\+::analyzer\+::attacks\+::\+\_\+generic\+\_\+parameters@{software\+::chipwhisperer\+::analyzer\+::attacks\+::\+\_\+generic\+\_\+parameters}!enforce\+Limits@{enforce\+Limits}}
+\index{enforce\+Limits@{enforce\+Limits}!software\+::chipwhisperer\+::analyzer\+::attacks\+::\+\_\+generic\+\_\+parameters@{software\+::chipwhisperer\+::analyzer\+::attacks\+::\+\_\+generic\+\_\+parameters}}
+\subsubsection[{enforce\+Limits}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+analyzer.\+attacks.\+\_\+generic\+\_\+parameters.\+enforce\+Limits (
+\begin{DoxyParamCaption}
+\item[{}]{value, }
+\item[{}]{limits}
+\end{DoxyParamCaption}
+)}\label{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1__generic__parameters_abcd215b51e9572a0f8de005212077184}
+
+\begin{DoxyCode}
+35 \textcolor{keyword}{def }\hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1__generic__parameters_abcd215b51e9572a0f8de005212077184}{enforceLimits}(value, limits):
+36     \textcolor{keywordflow}{if} value < limits[0]:
+37         value = limits[0]
+38     \textcolor{keywordflow}{elif} value > limits[1]:
+39         value = limits[1]
+40     \textcolor{keywordflow}{return} value
+41 
+42 
+\end{DoxyCode}

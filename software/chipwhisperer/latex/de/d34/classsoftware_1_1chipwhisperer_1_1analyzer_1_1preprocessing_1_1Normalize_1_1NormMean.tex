@@ -1,0 +1,54 @@
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1Normalize_1_1NormMean}{}\section{software.\+chipwhisperer.\+analyzer.\+preprocessing.\+Normalize.\+Norm\+Mean Class Reference}
+\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1Normalize_1_1NormMean}\index{software.\+chipwhisperer.\+analyzer.\+preprocessing.\+Normalize.\+Norm\+Mean@{software.\+chipwhisperer.\+analyzer.\+preprocessing.\+Normalize.\+Norm\+Mean}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1Normalize_1_1NormMean_a2243a8ca5a35771f2eb4005bb76c26e8}{process\+Trace} (self, t, tindex)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Normalize by mean (e.g. make traces zero-mean)\end{DoxyVerb}
+ 
+
+Inheritance diagram for software.\+chipwhisperer.\+analyzer.\+preprocessing.\+Normalize.\+Norm\+Mean\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{da/d9b/classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1Normalize_1_1NormMean__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for software.\+chipwhisperer.\+analyzer.\+preprocessing.\+Normalize.\+Norm\+Mean\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{d6/dd2/classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1Normalize_1_1NormMean__coll__graph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1Normalize_1_1NormMean_a2243a8ca5a35771f2eb4005bb76c26e8}{}\index{software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+Normalize\+::\+Norm\+Mean@{software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+Normalize\+::\+Norm\+Mean}!process\+Trace@{process\+Trace}}
+\index{process\+Trace@{process\+Trace}!software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+Normalize\+::\+Norm\+Mean@{software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+Normalize\+::\+Norm\+Mean}}
+\subsubsection[{process\+Trace}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+analyzer.\+preprocessing.\+Normalize.\+Norm\+Mean.\+process\+Trace (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{t, }
+\item[{}]{tindex}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1Normalize_1_1NormMean_a2243a8ca5a35771f2eb4005bb76c26e8}
+
+\begin{DoxyCode}
+53     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1Normalize_1_1NormMean_a2243a8ca5a35771f2eb4005bb76c26e8}{processTrace}(self, t, tindex):
+54         \textcolor{keywordflow}{return} t - np.mean(t)
+55 
+56 
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Normalize_8py}{Normalize.\+py}\end{DoxyCompactItemize}

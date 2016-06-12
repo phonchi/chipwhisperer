@@ -1,0 +1,95 @@
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1common_1_1ui_1_1ParameterTypesCustom}{}\section{software.\+chipwhisperer.\+common.\+ui.\+Parameter\+Types\+Custom Namespace Reference}
+\label{namespacesoftware_1_1chipwhisperer_1_1common_1_1ui_1_1ParameterTypesCustom}\index{software.\+chipwhisperer.\+common.\+ui.\+Parameter\+Types\+Custom@{software.\+chipwhisperer.\+common.\+ui.\+Parameter\+Types\+Custom}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1ParameterTypesCustom_1_1FilelistItem}{Filelist\+Item}
+\item 
+class \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1ParameterTypesCustom_1_1FilelistParameter}{Filelist\+Parameter}
+\item 
+class \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1ParameterTypesCustom_1_1LabelParameter}{Label\+Parameter}
+\item 
+class \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1ParameterTypesCustom_1_1LabelParameterItem}{Label\+Parameter\+Item}
+\item 
+class \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1ParameterTypesCustom_1_1RangeParameter}{Range\+Parameter}
+\item 
+class \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1ParameterTypesCustom_1_1RangeParameterGraph}{Range\+Parameter\+Graph}
+\item 
+class \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1ParameterTypesCustom_1_1RangeParameterGraphItem}{Range\+Parameter\+Graph\+Item}
+\item 
+class \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1ParameterTypesCustom_1_1RangeParameterItem}{Range\+Parameter\+Item}
+\item 
+class \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1ParameterTypesCustom_1_1SigStuff}{Sig\+Stuff}
+\item 
+class \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1ParameterTypesCustom_1_1SpinBoxWithSet}{Spin\+Box\+With\+Set}
+\item 
+class \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1ParameterTypesCustom_1_1SpinBoxWithSetItem}{Spin\+Box\+With\+Set\+Item}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacesoftware_1_1chipwhisperer_1_1common_1_1ui_1_1ParameterTypesCustom_a18c173d1b725b67c55e484e05b8a4728}{list\+Parameter\+Item\+\_\+\+Fix} (self, param, depth)
+\item 
+def \hyperlink{namespacesoftware_1_1chipwhisperer_1_1common_1_1ui_1_1ParameterTypesCustom_ac4d3231b8dd4d8891361fd27bd5e18bd}{set\+Value\+\_\+\+Fix}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacesoftware_1_1chipwhisperer_1_1common_1_1ui_1_1ParameterTypesCustom_a36acd0a2c239a8f5294699afd53aaf49}{target\+Value}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1common_1_1ui_1_1ParameterTypesCustom_a18c173d1b725b67c55e484e05b8a4728}{}\index{software\+::chipwhisperer\+::common\+::ui\+::\+Parameter\+Types\+Custom@{software\+::chipwhisperer\+::common\+::ui\+::\+Parameter\+Types\+Custom}!list\+Parameter\+Item\+\_\+\+Fix@{list\+Parameter\+Item\+\_\+\+Fix}}
+\index{list\+Parameter\+Item\+\_\+\+Fix@{list\+Parameter\+Item\+\_\+\+Fix}!software\+::chipwhisperer\+::common\+::ui\+::\+Parameter\+Types\+Custom@{software\+::chipwhisperer\+::common\+::ui\+::\+Parameter\+Types\+Custom}}
+\subsubsection[{list\+Parameter\+Item\+\_\+\+Fix}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+ui.\+Parameter\+Types\+Custom.\+list\+Parameter\+Item\+\_\+\+Fix (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{param, }
+\item[{}]{depth}
+\end{DoxyParamCaption}
+)}\label{namespacesoftware_1_1chipwhisperer_1_1common_1_1ui_1_1ParameterTypesCustom_a18c173d1b725b67c55e484e05b8a4728}
+
+\begin{DoxyCode}
+591 \textcolor{keyword}{def }\hyperlink{namespacesoftware_1_1chipwhisperer_1_1common_1_1ui_1_1ParameterTypesCustom_a18c173d1b725b67c55e484e05b8a4728}{listParameterItem\_Fix}(self, param, depth):
+592     \textcolor{comment}{# Fixes a bug where the list would appear blank instead of showing the default value}
+593     self.targetValue = \textcolor{keywordtype}{None}
+594     WidgetParameterItem.\_\_init\_\_(self, param, depth)
+595     self.updateDisplayLabel(self.value())
+596 
+597 ListParameterItem.\_\_init\_\_ = listParameterItem\_Fix
+598 
+\end{DoxyCode}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1common_1_1ui_1_1ParameterTypesCustom_ac4d3231b8dd4d8891361fd27bd5e18bd}{}\index{software\+::chipwhisperer\+::common\+::ui\+::\+Parameter\+Types\+Custom@{software\+::chipwhisperer\+::common\+::ui\+::\+Parameter\+Types\+Custom}!set\+Value\+\_\+\+Fix@{set\+Value\+\_\+\+Fix}}
+\index{set\+Value\+\_\+\+Fix@{set\+Value\+\_\+\+Fix}!software\+::chipwhisperer\+::common\+::ui\+::\+Parameter\+Types\+Custom@{software\+::chipwhisperer\+::common\+::ui\+::\+Parameter\+Types\+Custom}}
+\subsubsection[{set\+Value\+\_\+\+Fix}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+ui.\+Parameter\+Types\+Custom.\+set\+Value\+\_\+\+Fix (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{value, }
+\item[{}]{block\+Signal = {\ttfamily None}}
+\end{DoxyParamCaption}
+)}\label{namespacesoftware_1_1chipwhisperer_1_1common_1_1ui_1_1ParameterTypesCustom_ac4d3231b8dd4d8891361fd27bd5e18bd}
+
+\begin{DoxyCode}
+599 \textcolor{keyword}{def }\hyperlink{namespacesoftware_1_1chipwhisperer_1_1common_1_1ui_1_1ParameterTypesCustom_ac4d3231b8dd4d8891361fd27bd5e18bd}{setValue\_Fix}(self, value, blockSignal=None):
+600     \textcolor{comment}{# Fixes the CW requirement to not skip the setValue call when the previous value is the same}
+601     \textcolor{keywordflow}{try}:
+602         \textcolor{keywordflow}{if} blockSignal \textcolor{keywordflow}{is} \textcolor{keywordflow}{not} \textcolor{keywordtype}{None}:
+603             self.sigValueChanged.disconnect(blockSignal)
+604         self.opts[\textcolor{stringliteral}{'value'}] = value
+605         self.sigValueChanged.emit(self, value)
+606     \textcolor{keywordflow}{finally}:
+607         \textcolor{keywordflow}{if} blockSignal \textcolor{keywordflow}{is} \textcolor{keywordflow}{not} \textcolor{keywordtype}{None}:
+608             self.sigValueChanged.connect(blockSignal)
+609 
+610 \textcolor{comment}{#TODO: Fix parameter's to not skip setting same value, requires more effort than this.}
+611 \textcolor{comment}{#      Useful when hardware reality is != software settings, and need to re-download}
+612 \textcolor{comment}{#      things.}
+613 Parameter.setValue = setValue\_Fix
+614 \end{DoxyCode}
+
+
+\subsection{Variable Documentation}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1common_1_1ui_1_1ParameterTypesCustom_a36acd0a2c239a8f5294699afd53aaf49}{}\index{software\+::chipwhisperer\+::common\+::ui\+::\+Parameter\+Types\+Custom@{software\+::chipwhisperer\+::common\+::ui\+::\+Parameter\+Types\+Custom}!target\+Value@{target\+Value}}
+\index{target\+Value@{target\+Value}!software\+::chipwhisperer\+::common\+::ui\+::\+Parameter\+Types\+Custom@{software\+::chipwhisperer\+::common\+::ui\+::\+Parameter\+Types\+Custom}}
+\subsubsection[{target\+Value}]{\setlength{\rightskip}{0pt plus 5cm}software.\+chipwhisperer.\+common.\+ui.\+Parameter\+Types\+Custom.\+target\+Value}\label{namespacesoftware_1_1chipwhisperer_1_1common_1_1ui_1_1ParameterTypesCustom_a36acd0a2c239a8f5294699afd53aaf49}

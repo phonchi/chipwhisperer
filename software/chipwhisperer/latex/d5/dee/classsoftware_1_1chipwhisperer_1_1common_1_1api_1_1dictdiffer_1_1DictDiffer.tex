@@ -1,0 +1,174 @@
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1dictdiffer_1_1DictDiffer}{}\section{software.\+chipwhisperer.\+common.\+api.\+dictdiffer.\+Dict\+Differ Class Reference}
+\label{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1dictdiffer_1_1DictDiffer}\index{software.\+chipwhisperer.\+common.\+api.\+dictdiffer.\+Dict\+Differ@{software.\+chipwhisperer.\+common.\+api.\+dictdiffer.\+Dict\+Differ}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1dictdiffer_1_1DictDiffer_a265e3c9600eff247d3fea7a0df9151f3}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self, current\+\_\+dict, \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1dictdiffer_1_1DictDiffer_a5ea256bc3eaea57ca7b5c0fedafa7f26}{past\+\_\+dict})
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1dictdiffer_1_1DictDiffer_ac67c82bc75806255fc4f35fdff530cbf}{added} (self)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1dictdiffer_1_1DictDiffer_a84b5decc8cae9d5a3fa3b3f2446580c1}{removed} (self)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1dictdiffer_1_1DictDiffer_a1334c74760fb631734a01557b39f9b8c}{changed} (self)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1dictdiffer_1_1DictDiffer_a40986c4add584a4d2ef51cc564f7ab4c}{unchanged} (self)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1dictdiffer_1_1DictDiffer_a5ea256bc3eaea57ca7b5c0fedafa7f26}{past\+\_\+dict}
+\item 
+\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1dictdiffer_1_1DictDiffer_a02ddc9b7c09c5cad76b4fa4e6c7572e3}{past\+\_\+keys}
+\item 
+\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1dictdiffer_1_1DictDiffer_a6b8cde04fc1f5bc7aa9339ed42fb2a29}{intersect}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Calculate the difference between two dictionaries as:
+(1) items added
+(2) items removed
+(3) keys same in both but changed values
+(4) keys same in both and unchanged values
+\end{DoxyVerb}
+ 
+
+Inheritance diagram for software.\+chipwhisperer.\+common.\+api.\+dictdiffer.\+Dict\+Differ\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=297pt]{d8/d14/classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1dictdiffer_1_1DictDiffer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for software.\+chipwhisperer.\+common.\+api.\+dictdiffer.\+Dict\+Differ\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=297pt]{d4/d4c/classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1dictdiffer_1_1DictDiffer__coll__graph}
+\end{center}
+\end{figure}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1dictdiffer_1_1DictDiffer_a265e3c9600eff247d3fea7a0df9151f3}{}\index{software\+::chipwhisperer\+::common\+::api\+::dictdiffer\+::\+Dict\+Differ@{software\+::chipwhisperer\+::common\+::api\+::dictdiffer\+::\+Dict\+Differ}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!software\+::chipwhisperer\+::common\+::api\+::dictdiffer\+::\+Dict\+Differ@{software\+::chipwhisperer\+::common\+::api\+::dictdiffer\+::\+Dict\+Differ}}
+\subsubsection[{\+\_\+\+\_\+init\+\_\+\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+api.\+dictdiffer.\+Dict\+Differ.\+\_\+\+\_\+init\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{current\+\_\+dict, }
+\item[{}]{past\+\_\+dict}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1dictdiffer_1_1DictDiffer_a265e3c9600eff247d3fea7a0df9151f3}
+
+\begin{DoxyCode}
+33     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1dictdiffer_1_1DictDiffer_a265e3c9600eff247d3fea7a0df9151f3}{\_\_init\_\_}(self, current\_dict, past\_dict):
+34         self.current\_dict, self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1dictdiffer_1_1DictDiffer_a5ea256bc3eaea57ca7b5c0fedafa7f26}{past\_dict} = current\_dict, past\_dict
+35         self.current\_keys, self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1dictdiffer_1_1DictDiffer_a02ddc9b7c09c5cad76b4fa4e6c7572e3}{past\_keys} = [
+36             set(d.keys()) \textcolor{keywordflow}{for} d \textcolor{keywordflow}{in} (current\_dict, past\_dict)
+37         ]
+38         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1dictdiffer_1_1DictDiffer_a6b8cde04fc1f5bc7aa9339ed42fb2a29}{intersect} = self.current\_keys.intersection(self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1dictdiffer_1_1DictDiffer_a02ddc9b7c09c5cad76b4fa4e6c7572e3}{past\_keys})
+39 
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1dictdiffer_1_1DictDiffer_ac67c82bc75806255fc4f35fdff530cbf}{}\index{software\+::chipwhisperer\+::common\+::api\+::dictdiffer\+::\+Dict\+Differ@{software\+::chipwhisperer\+::common\+::api\+::dictdiffer\+::\+Dict\+Differ}!added@{added}}
+\index{added@{added}!software\+::chipwhisperer\+::common\+::api\+::dictdiffer\+::\+Dict\+Differ@{software\+::chipwhisperer\+::common\+::api\+::dictdiffer\+::\+Dict\+Differ}}
+\subsubsection[{added}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+api.\+dictdiffer.\+Dict\+Differ.\+added (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1dictdiffer_1_1DictDiffer_ac67c82bc75806255fc4f35fdff530cbf}
+
+
+References software.\+chipwhisperer.\+common.\+api.\+dictdiffer.\+Dict\+Differ.\+intersect.
+
+
+\begin{DoxyCode}
+40     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1dictdiffer_1_1DictDiffer_ac67c82bc75806255fc4f35fdff530cbf}{added}(self):
+41         \textcolor{keywordflow}{return} self.current\_keys - self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1dictdiffer_1_1DictDiffer_a6b8cde04fc1f5bc7aa9339ed42fb2a29}{intersect}
+42 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1dictdiffer_1_1DictDiffer_a1334c74760fb631734a01557b39f9b8c}{}\index{software\+::chipwhisperer\+::common\+::api\+::dictdiffer\+::\+Dict\+Differ@{software\+::chipwhisperer\+::common\+::api\+::dictdiffer\+::\+Dict\+Differ}!changed@{changed}}
+\index{changed@{changed}!software\+::chipwhisperer\+::common\+::api\+::dictdiffer\+::\+Dict\+Differ@{software\+::chipwhisperer\+::common\+::api\+::dictdiffer\+::\+Dict\+Differ}}
+\subsubsection[{changed}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+api.\+dictdiffer.\+Dict\+Differ.\+changed (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1dictdiffer_1_1DictDiffer_a1334c74760fb631734a01557b39f9b8c}
+
+
+References software.\+chipwhisperer.\+common.\+api.\+dictdiffer.\+Dict\+Differ.\+intersect, and software.\+chipwhisperer.\+common.\+api.\+dictdiffer.\+Dict\+Differ.\+past\+\_\+dict.
+
+
+\begin{DoxyCode}
+46     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1dictdiffer_1_1DictDiffer_a1334c74760fb631734a01557b39f9b8c}{changed}(self):
+47         \textcolor{keywordflow}{return} set(o \textcolor{keywordflow}{for} o \textcolor{keywordflow}{in} self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1dictdiffer_1_1DictDiffer_a6b8cde04fc1f5bc7aa9339ed42fb2a29}{intersect}
+48                    \textcolor{keywordflow}{if} self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1dictdiffer_1_1DictDiffer_a5ea256bc3eaea57ca7b5c0fedafa7f26}{past\_dict}[o] != self.current\_dict[o])
+49 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1dictdiffer_1_1DictDiffer_a84b5decc8cae9d5a3fa3b3f2446580c1}{}\index{software\+::chipwhisperer\+::common\+::api\+::dictdiffer\+::\+Dict\+Differ@{software\+::chipwhisperer\+::common\+::api\+::dictdiffer\+::\+Dict\+Differ}!removed@{removed}}
+\index{removed@{removed}!software\+::chipwhisperer\+::common\+::api\+::dictdiffer\+::\+Dict\+Differ@{software\+::chipwhisperer\+::common\+::api\+::dictdiffer\+::\+Dict\+Differ}}
+\subsubsection[{removed}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+api.\+dictdiffer.\+Dict\+Differ.\+removed (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1dictdiffer_1_1DictDiffer_a84b5decc8cae9d5a3fa3b3f2446580c1}
+
+
+References software.\+chipwhisperer.\+common.\+api.\+dictdiffer.\+Dict\+Differ.\+intersect, and software.\+chipwhisperer.\+common.\+api.\+dictdiffer.\+Dict\+Differ.\+past\+\_\+keys.
+
+
+\begin{DoxyCode}
+43     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1dictdiffer_1_1DictDiffer_a84b5decc8cae9d5a3fa3b3f2446580c1}{removed}(self):
+44         \textcolor{keywordflow}{return} self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1dictdiffer_1_1DictDiffer_a02ddc9b7c09c5cad76b4fa4e6c7572e3}{past\_keys} - self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1dictdiffer_1_1DictDiffer_a6b8cde04fc1f5bc7aa9339ed42fb2a29}{intersect}
+45 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1dictdiffer_1_1DictDiffer_a40986c4add584a4d2ef51cc564f7ab4c}{}\index{software\+::chipwhisperer\+::common\+::api\+::dictdiffer\+::\+Dict\+Differ@{software\+::chipwhisperer\+::common\+::api\+::dictdiffer\+::\+Dict\+Differ}!unchanged@{unchanged}}
+\index{unchanged@{unchanged}!software\+::chipwhisperer\+::common\+::api\+::dictdiffer\+::\+Dict\+Differ@{software\+::chipwhisperer\+::common\+::api\+::dictdiffer\+::\+Dict\+Differ}}
+\subsubsection[{unchanged}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+api.\+dictdiffer.\+Dict\+Differ.\+unchanged (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1dictdiffer_1_1DictDiffer_a40986c4add584a4d2ef51cc564f7ab4c}
+
+
+References software.\+chipwhisperer.\+common.\+api.\+dictdiffer.\+Dict\+Differ.\+intersect, and software.\+chipwhisperer.\+common.\+api.\+dictdiffer.\+Dict\+Differ.\+past\+\_\+dict.
+
+
+\begin{DoxyCode}
+50     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1dictdiffer_1_1DictDiffer_a40986c4add584a4d2ef51cc564f7ab4c}{unchanged}(self):
+51         \textcolor{keywordflow}{return} set(o \textcolor{keywordflow}{for} o \textcolor{keywordflow}{in} self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1dictdiffer_1_1DictDiffer_a6b8cde04fc1f5bc7aa9339ed42fb2a29}{intersect}
+52                    \textcolor{keywordflow}{if} self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1dictdiffer_1_1DictDiffer_a5ea256bc3eaea57ca7b5c0fedafa7f26}{past\_dict}[o] == self.current\_dict[o])
+53 \end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1dictdiffer_1_1DictDiffer_a6b8cde04fc1f5bc7aa9339ed42fb2a29}{}\index{software\+::chipwhisperer\+::common\+::api\+::dictdiffer\+::\+Dict\+Differ@{software\+::chipwhisperer\+::common\+::api\+::dictdiffer\+::\+Dict\+Differ}!intersect@{intersect}}
+\index{intersect@{intersect}!software\+::chipwhisperer\+::common\+::api\+::dictdiffer\+::\+Dict\+Differ@{software\+::chipwhisperer\+::common\+::api\+::dictdiffer\+::\+Dict\+Differ}}
+\subsubsection[{intersect}]{\setlength{\rightskip}{0pt plus 5cm}software.\+chipwhisperer.\+common.\+api.\+dictdiffer.\+Dict\+Differ.\+intersect}\label{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1dictdiffer_1_1DictDiffer_a6b8cde04fc1f5bc7aa9339ed42fb2a29}
+
+
+Referenced by software.\+chipwhisperer.\+common.\+api.\+dictdiffer.\+Dict\+Differ.\+added(), software.\+chipwhisperer.\+common.\+api.\+dictdiffer.\+Dict\+Differ.\+changed(), software.\+chipwhisperer.\+common.\+api.\+dictdiffer.\+Dict\+Differ.\+removed(), and software.\+chipwhisperer.\+common.\+api.\+dictdiffer.\+Dict\+Differ.\+unchanged().
+
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1dictdiffer_1_1DictDiffer_a5ea256bc3eaea57ca7b5c0fedafa7f26}{}\index{software\+::chipwhisperer\+::common\+::api\+::dictdiffer\+::\+Dict\+Differ@{software\+::chipwhisperer\+::common\+::api\+::dictdiffer\+::\+Dict\+Differ}!past\+\_\+dict@{past\+\_\+dict}}
+\index{past\+\_\+dict@{past\+\_\+dict}!software\+::chipwhisperer\+::common\+::api\+::dictdiffer\+::\+Dict\+Differ@{software\+::chipwhisperer\+::common\+::api\+::dictdiffer\+::\+Dict\+Differ}}
+\subsubsection[{past\+\_\+dict}]{\setlength{\rightskip}{0pt plus 5cm}software.\+chipwhisperer.\+common.\+api.\+dictdiffer.\+Dict\+Differ.\+past\+\_\+dict}\label{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1dictdiffer_1_1DictDiffer_a5ea256bc3eaea57ca7b5c0fedafa7f26}
+
+
+Referenced by software.\+chipwhisperer.\+common.\+api.\+dictdiffer.\+Dict\+Differ.\+changed(), and software.\+chipwhisperer.\+common.\+api.\+dictdiffer.\+Dict\+Differ.\+unchanged().
+
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1dictdiffer_1_1DictDiffer_a02ddc9b7c09c5cad76b4fa4e6c7572e3}{}\index{software\+::chipwhisperer\+::common\+::api\+::dictdiffer\+::\+Dict\+Differ@{software\+::chipwhisperer\+::common\+::api\+::dictdiffer\+::\+Dict\+Differ}!past\+\_\+keys@{past\+\_\+keys}}
+\index{past\+\_\+keys@{past\+\_\+keys}!software\+::chipwhisperer\+::common\+::api\+::dictdiffer\+::\+Dict\+Differ@{software\+::chipwhisperer\+::common\+::api\+::dictdiffer\+::\+Dict\+Differ}}
+\subsubsection[{past\+\_\+keys}]{\setlength{\rightskip}{0pt plus 5cm}software.\+chipwhisperer.\+common.\+api.\+dictdiffer.\+Dict\+Differ.\+past\+\_\+keys}\label{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1dictdiffer_1_1DictDiffer_a02ddc9b7c09c5cad76b4fa4e6c7572e3}
+
+
+Referenced by software.\+chipwhisperer.\+common.\+api.\+dictdiffer.\+Dict\+Differ.\+removed().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{dictdiffer_8py}{dictdiffer.\+py}\end{DoxyCompactItemize}

@@ -1,0 +1,3 @@
+<map id="software.chipwhisperer.common.ui.ParameterTypesCustom.RangeParameterGraphItem" name="software.chipwhisperer.common.ui.ParameterTypesCustom.RangeParameterGraphItem">
+<area shape="rect" id="node2" href="$dc/d4f/classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1ParameterTypesCustom_1_1RangeParameterItem.html" title="{software.chipwhisperer.common.ui.\lParameterTypesCustom.RangeParameterItem\n|+ targetValue\l+ sigs\l+ wlow\l+ whigh\l|+ __init__()\l+ svChangedEmit()\l+ svChangingEmit()\l+ svLowChanging()\l+ svHighChanging()\l+ validateLimits()\l+ makeLayout()\l+ makeWidget()\l+ value()\l+ setValue()\l+ limitsChanged()\l}" alt="" coords="5,131,297,413"/>
+</map>

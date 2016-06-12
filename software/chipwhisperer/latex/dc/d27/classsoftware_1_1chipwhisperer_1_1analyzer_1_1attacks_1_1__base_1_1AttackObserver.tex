@@ -1,0 +1,82 @@
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1__base_1_1AttackObserver}{}\section{software.\+chipwhisperer.\+analyzer.\+attacks.\+\_\+base.\+Attack\+Observer Class Reference}
+\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1__base_1_1AttackObserver}\index{software.\+chipwhisperer.\+analyzer.\+attacks.\+\_\+base.\+Attack\+Observer@{software.\+chipwhisperer.\+analyzer.\+attacks.\+\_\+base.\+Attack\+Observer}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1__base_1_1AttackObserver_a867c135415209bd6770c56b7ca920692}{set\+Analysis\+Source} (self, analysis\+Source)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1__base_1_1AttackObserver_ab86a6c174ddb208b7513e02d7087fd31}{highlighted\+Key\+Color} = 255
+\item 
+int \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1__base_1_1AttackObserver_ad2992486563d90329cfad44a8965b67b}{trace\+Color} = 0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}"It is an AnalysisObserver with methods to get information from attacks\end{DoxyVerb}
+ 
+
+Inheritance diagram for software.\+chipwhisperer.\+analyzer.\+attacks.\+\_\+base.\+Attack\+Observer\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=275pt]{dd/d70/classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1__base_1_1AttackObserver__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for software.\+chipwhisperer.\+analyzer.\+attacks.\+\_\+base.\+Attack\+Observer\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=275pt]{d2/d88/classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1__base_1_1AttackObserver__coll__graph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1__base_1_1AttackObserver_a867c135415209bd6770c56b7ca920692}{}\index{software\+::chipwhisperer\+::analyzer\+::attacks\+::\+\_\+base\+::\+Attack\+Observer@{software\+::chipwhisperer\+::analyzer\+::attacks\+::\+\_\+base\+::\+Attack\+Observer}!set\+Analysis\+Source@{set\+Analysis\+Source}}
+\index{set\+Analysis\+Source@{set\+Analysis\+Source}!software\+::chipwhisperer\+::analyzer\+::attacks\+::\+\_\+base\+::\+Attack\+Observer@{software\+::chipwhisperer\+::analyzer\+::attacks\+::\+\_\+base\+::\+Attack\+Observer}}
+\subsubsection[{set\+Analysis\+Source}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+analyzer.\+attacks.\+\_\+base.\+Attack\+Observer.\+set\+Analysis\+Source (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{analysis\+Source}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1__base_1_1AttackObserver_a867c135415209bd6770c56b7ca920692}
+
+
+Referenced by software.\+chipwhisperer.\+common.\+utils.\+analysissource.\+Analysis\+Observer.\+\_\+\+\_\+init\+\_\+\+\_\+().
+
+
+\begin{DoxyCode}
+107     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1__base_1_1AttackObserver_a867c135415209bd6770c56b7ca920692}{setAnalysisSource}(self, analysisSource):
+108         \textcolor{keywordflow}{if} issubclass(analysisSource.\_\_class\_\_, AttackBaseClass):
+109             AnalysisObserver.setAnalysisSource(self, analysisSource)
+110         \textcolor{keywordflow}{else}:
+111             AnalysisObserver.setAnalysisSource(self, \textcolor{keywordtype}{None})
+112 
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1__base_1_1AttackObserver_ab86a6c174ddb208b7513e02d7087fd31}{}\index{software\+::chipwhisperer\+::analyzer\+::attacks\+::\+\_\+base\+::\+Attack\+Observer@{software\+::chipwhisperer\+::analyzer\+::attacks\+::\+\_\+base\+::\+Attack\+Observer}!highlighted\+Key\+Color@{highlighted\+Key\+Color}}
+\index{highlighted\+Key\+Color@{highlighted\+Key\+Color}!software\+::chipwhisperer\+::analyzer\+::attacks\+::\+\_\+base\+::\+Attack\+Observer@{software\+::chipwhisperer\+::analyzer\+::attacks\+::\+\_\+base\+::\+Attack\+Observer}}
+\subsubsection[{highlighted\+Key\+Color}]{\setlength{\rightskip}{0pt plus 5cm}int software.\+chipwhisperer.\+analyzer.\+attacks.\+\_\+base.\+Attack\+Observer.\+highlighted\+Key\+Color = 255\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1__base_1_1AttackObserver_ab86a6c174ddb208b7513e02d7087fd31}
+
+
+Referenced by software.\+chipwhisperer.\+common.\+results.\+table.\+Results\+Table.\+update\+Table().
+
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1__base_1_1AttackObserver_ad2992486563d90329cfad44a8965b67b}{}\index{software\+::chipwhisperer\+::analyzer\+::attacks\+::\+\_\+base\+::\+Attack\+Observer@{software\+::chipwhisperer\+::analyzer\+::attacks\+::\+\_\+base\+::\+Attack\+Observer}!trace\+Color@{trace\+Color}}
+\index{trace\+Color@{trace\+Color}!software\+::chipwhisperer\+::analyzer\+::attacks\+::\+\_\+base\+::\+Attack\+Observer@{software\+::chipwhisperer\+::analyzer\+::attacks\+::\+\_\+base\+::\+Attack\+Observer}}
+\subsubsection[{trace\+Color}]{\setlength{\rightskip}{0pt plus 5cm}int software.\+chipwhisperer.\+analyzer.\+attacks.\+\_\+base.\+Attack\+Observer.\+trace\+Color = 0\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1__base_1_1AttackObserver_ad2992486563d90329cfad44a8965b67b}
+
+
+Referenced by software.\+chipwhisperer.\+common.\+results.\+table.\+Results\+Table.\+get\+Trace\+Gradient\+Color().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{analyzer_2attacks_2__base_8py}{analyzer/attacks/\+\_\+base.\+py}\end{DoxyCompactItemize}

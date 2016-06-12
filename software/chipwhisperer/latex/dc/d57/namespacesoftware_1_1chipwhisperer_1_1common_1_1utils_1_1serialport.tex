@@ -1,0 +1,37 @@
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1serialport}{}\section{software.\+chipwhisperer.\+common.\+utils.\+serialport Namespace Reference}
+\label{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1serialport}\index{software.\+chipwhisperer.\+common.\+utils.\+serialport@{software.\+chipwhisperer.\+common.\+utils.\+serialport}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1serialport_a88312598e7c21a4d1a702d8a39d12917}{scan} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1serialport_a88312598e7c21a4d1a702d8a39d12917}{}\index{software\+::chipwhisperer\+::common\+::utils\+::serialport@{software\+::chipwhisperer\+::common\+::utils\+::serialport}!scan@{scan}}
+\index{scan@{scan}!software\+::chipwhisperer\+::common\+::utils\+::serialport@{software\+::chipwhisperer\+::common\+::utils\+::serialport}}
+\subsubsection[{scan}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+utils.\+serialport.\+scan (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1serialport_a88312598e7c21a4d1a702d8a39d12917}
+\begin{DoxyVerb}scan for available ports. return a list of names\end{DoxyVerb}
+ 
+\begin{DoxyCode}
+27 \textcolor{keyword}{def }\hyperlink{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1serialport_a88312598e7c21a4d1a702d8a39d12917}{scan}():
+28     \textcolor{stringliteral}{"""scan for available ports. return a list of names"""}
+29     system\_name = platform.system()
+30     \textcolor{keywordflow}{if} system\_name == \textcolor{stringliteral}{'Windows'}:
+31       available = []
+32       \textcolor{keywordflow}{for} i \textcolor{keywordflow}{in} range(64):
+33           \textcolor{keywordflow}{try}:
+34               s = serial.Serial(i)
+35               available.append(s.portstr)
+36               s.close()   \textcolor{comment}{# explicit close 'cause of delayed GC in java}
+37           \textcolor{keywordflow}{except} serial.SerialException:
+38               \textcolor{keywordflow}{pass}
+39       \textcolor{keywordflow}{return} available
+40     \textcolor{keywordflow}{else}:
+41       \textcolor{keywordflow}{return} glob.glob(\textcolor{stringliteral}{'/dev/ttyS*'}) + glob.glob(\textcolor{stringliteral}{'/dev/ttyUSB*'})
+42 
+\end{DoxyCode}

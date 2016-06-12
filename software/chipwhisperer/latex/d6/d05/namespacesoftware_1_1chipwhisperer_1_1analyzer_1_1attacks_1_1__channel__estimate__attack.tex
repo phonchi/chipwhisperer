@@ -1,0 +1,108 @@
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1__channel__estimate__attack}{}\section{software.\+chipwhisperer.\+analyzer.\+attacks.\+\_\+channel\+\_\+estimate\+\_\+attack Namespace Reference}
+\label{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1__channel__estimate__attack}\index{software.\+chipwhisperer.\+analyzer.\+attacks.\+\_\+channel\+\_\+estimate\+\_\+attack@{software.\+chipwhisperer.\+analyzer.\+attacks.\+\_\+channel\+\_\+estimate\+\_\+attack}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1__channel__estimate__attack_1_1ChannelEstimateAttackOneSubkey}{Channel\+Estimate\+Attack\+One\+Subkey}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1__channel__estimate__attack_a8a2b206889bacda130ce0bb83754ada8}{main} (tracedir, \hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1__channel__estimate__attack_a1662e9ab6f7af0176fcf252b14654395}{fitrange}, \hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1__channel__estimate__attack_acb22ab50a9a058ace0d8488dbe061a3c}{tryrange})
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1__channel__estimate__attack_afed662c16c0840677b0448500965e8a1}{directory} = \char`\"{}/home/colin/Documents/chipwhisperer/git/chipwhisperer/software/scripting-\/examples/default-\/data-\/dir/traces-\/avr-\/dpav4-\/vcc/\char`\"{}
+\item 
+tuple \hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1__channel__estimate__attack_a1662e9ab6f7af0176fcf252b14654395}{fitrange} = (0, 4000)
+\item 
+tuple \hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1__channel__estimate__attack_acb22ab50a9a058ace0d8488dbe061a3c}{tryrange} = (4000, 10000)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1__channel__estimate__attack_a8a2b206889bacda130ce0bb83754ada8}{}\index{software\+::chipwhisperer\+::analyzer\+::attacks\+::\+\_\+channel\+\_\+estimate\+\_\+attack@{software\+::chipwhisperer\+::analyzer\+::attacks\+::\+\_\+channel\+\_\+estimate\+\_\+attack}!main@{main}}
+\index{main@{main}!software\+::chipwhisperer\+::analyzer\+::attacks\+::\+\_\+channel\+\_\+estimate\+\_\+attack@{software\+::chipwhisperer\+::analyzer\+::attacks\+::\+\_\+channel\+\_\+estimate\+\_\+attack}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+analyzer.\+attacks.\+\_\+channel\+\_\+estimate\+\_\+attack.\+main (
+\begin{DoxyParamCaption}
+\item[{}]{tracedir, }
+\item[{}]{fitrange, }
+\item[{}]{tryrange}
+\end{DoxyParamCaption}
+)}\label{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1__channel__estimate__attack_a8a2b206889bacda130ce0bb83754ada8}
+
+\begin{DoxyCode}
+117 \textcolor{keyword}{def }\hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1__channel__estimate__attack_a8a2b206889bacda130ce0bb83754ada8}{main}(tracedir, fitrange, tryrange):    
+118     preflist = []
+119 
+120     files = os.listdir(tracedir)
+121     \textcolor{keywordflow}{for} f \textcolor{keywordflow}{in} files:
+122         \textcolor{keywordflow}{if} \textcolor{stringliteral}{"\_traces.npy"} \textcolor{keywordflow}{in} f:
+123             f = f.replace(\textcolor{stringliteral}{"traces.npy"}, \textcolor{stringliteral}{""})
+124             preflist.append(f)
+125 
+126     \textcolor{keywordflow}{if} len(preflist) == 0:
+127         \textcolor{keywordflow}{print} \textcolor{stringliteral}{"WARNING: No traces found. Check directory."}
+128 
+129     prefix = preflist[0]
+130 
+131     traces = np.load(tracedir + prefix + \textcolor{stringliteral}{"traces.npy"})
+132     textin = np.load(tracedir + prefix + \textcolor{stringliteral}{"textin.npy"})
+133     key = np.load(tracedir + prefix + \textcolor{stringliteral}{"knownkey.npy"})
+134     
+135     \textcolor{comment}{#Majority of traces used in generating estimated channel}
+136     tracesfit = traces[fitrange[0]:fitrange[1],:]
+137     textinfit = textin[fitrange[0]:fitrange[1],:]
+138 
+139     \textcolor{comment}{#Select a few traces to use a test}
+140     tracestry = traces[tryrange[0]:tryrange[1],:]
+141     textintry = textin[tryrange[0]:tryrange[1],:]
+142 
+143     tracesfit = np.linalg.pinv(tracesfit)
+144 
+145     cea = \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1__channel__estimate__attack_1_1ChannelEstimateAttackOneSubkey}{ChannelEstimateAttackOneSubkey}()
+146 
+147     diffs = [0]*16
+148     blist = range(0, 16)
+149 
+150     \textcolor{keywordflow}{for} bnum \textcolor{keywordflow}{in} blist:
+151         \textcolor{keywordflow}{print} \textcolor{stringliteral}{"Attacking byte %d"}%bnum
+152         cea.clearStats()
+153 
+154         \textcolor{comment}{#Example running an attack, don't set 'aroundStartEnd' if you want}
+155         \textcolor{comment}{#the full attack and not quick cheater}
+156         diffs[bnum] = cea.oneSubkey(bnum, tracesfit, tracestry, textinfit, textintry, AES128\_8bit,
+157                       key=key, printData=\textcolor{keyword}{False}, aroundStartEnd=\textcolor{keyword}{False}, tracefitPInv=\textcolor{keyword}{True})[0]
+158 
+159     \textcolor{comment}{#Sort Output}
+160     output = [0]*16
+161     \textcolor{keywordflow}{for} bnum \textcolor{keywordflow}{in} blist:
+162         output[bnum] = []
+163         \textcolor{keywordflow}{for} i,d \textcolor{keywordflow}{in} enumerate(diffs[bnum]):
+164             output[bnum].append(\{\textcolor{stringliteral}{'hyp'}:i, \textcolor{stringliteral}{'sse'}:d\})
+165 
+166         output[bnum] = sorted(output[bnum], key=itemgetter(\textcolor{stringliteral}{'sse'}))
+167 
+168     \textcolor{comment}{#Print most likely & PGE}
+169     \textcolor{keywordflow}{for} bnum \textcolor{keywordflow}{in} blist:
+170         \textcolor{keywordflow}{print} \textcolor{stringliteral}{" %02x "}%output[bnum][0][\textcolor{stringliteral}{'hyp'}],
+171     \textcolor{keywordflow}{print} \textcolor{stringliteral}{""}
+172     \textcolor{keywordflow}{for} bnum \textcolor{keywordflow}{in} blist:
+173         \textcolor{keywordflow}{print} \textcolor{stringliteral}{"%3d "}%map(itemgetter(\textcolor{stringliteral}{'hyp'}), output[bnum]).index(key[bnum]),
+174     \textcolor{keywordflow}{print} \textcolor{stringliteral}{""}
+175 
+176 
+\end{DoxyCode}
+
+
+\subsection{Variable Documentation}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1__channel__estimate__attack_afed662c16c0840677b0448500965e8a1}{}\index{software\+::chipwhisperer\+::analyzer\+::attacks\+::\+\_\+channel\+\_\+estimate\+\_\+attack@{software\+::chipwhisperer\+::analyzer\+::attacks\+::\+\_\+channel\+\_\+estimate\+\_\+attack}!directory@{directory}}
+\index{directory@{directory}!software\+::chipwhisperer\+::analyzer\+::attacks\+::\+\_\+channel\+\_\+estimate\+\_\+attack@{software\+::chipwhisperer\+::analyzer\+::attacks\+::\+\_\+channel\+\_\+estimate\+\_\+attack}}
+\subsubsection[{directory}]{\setlength{\rightskip}{0pt plus 5cm}string software.\+chipwhisperer.\+analyzer.\+attacks.\+\_\+channel\+\_\+estimate\+\_\+attack.\+directory = \char`\"{}/home/colin/Documents/chipwhisperer/git/chipwhisperer/software/scripting-\/examples/default-\/data-\/dir/traces-\/avr-\/dpav4-\/vcc/\char`\"{}}\label{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1__channel__estimate__attack_afed662c16c0840677b0448500965e8a1}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1__channel__estimate__attack_a1662e9ab6f7af0176fcf252b14654395}{}\index{software\+::chipwhisperer\+::analyzer\+::attacks\+::\+\_\+channel\+\_\+estimate\+\_\+attack@{software\+::chipwhisperer\+::analyzer\+::attacks\+::\+\_\+channel\+\_\+estimate\+\_\+attack}!fitrange@{fitrange}}
+\index{fitrange@{fitrange}!software\+::chipwhisperer\+::analyzer\+::attacks\+::\+\_\+channel\+\_\+estimate\+\_\+attack@{software\+::chipwhisperer\+::analyzer\+::attacks\+::\+\_\+channel\+\_\+estimate\+\_\+attack}}
+\subsubsection[{fitrange}]{\setlength{\rightskip}{0pt plus 5cm}tuple software.\+chipwhisperer.\+analyzer.\+attacks.\+\_\+channel\+\_\+estimate\+\_\+attack.\+fitrange = (0, 4000)}\label{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1__channel__estimate__attack_a1662e9ab6f7af0176fcf252b14654395}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1__channel__estimate__attack_acb22ab50a9a058ace0d8488dbe061a3c}{}\index{software\+::chipwhisperer\+::analyzer\+::attacks\+::\+\_\+channel\+\_\+estimate\+\_\+attack@{software\+::chipwhisperer\+::analyzer\+::attacks\+::\+\_\+channel\+\_\+estimate\+\_\+attack}!tryrange@{tryrange}}
+\index{tryrange@{tryrange}!software\+::chipwhisperer\+::analyzer\+::attacks\+::\+\_\+channel\+\_\+estimate\+\_\+attack@{software\+::chipwhisperer\+::analyzer\+::attacks\+::\+\_\+channel\+\_\+estimate\+\_\+attack}}
+\subsubsection[{tryrange}]{\setlength{\rightskip}{0pt plus 5cm}tuple software.\+chipwhisperer.\+analyzer.\+attacks.\+\_\+channel\+\_\+estimate\+\_\+attack.\+tryrange = (4000, 10000)}\label{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1__channel__estimate__attack_acb22ab50a9a058ace0d8488dbe061a3c}

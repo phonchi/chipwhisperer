@@ -1,0 +1,386 @@
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES256__8bit_1_1AES}{}\section{software.\+chipwhisperer.\+analyzer.\+attacks.\+models.\+A\+E\+S256\+\_\+8bit.\+A\+E\+S Class Reference}
+\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES256__8bit_1_1AES}\index{software.\+chipwhisperer.\+analyzer.\+attacks.\+models.\+A\+E\+S256\+\_\+8bit.\+A\+E\+S@{software.\+chipwhisperer.\+analyzer.\+attacks.\+models.\+A\+E\+S256\+\_\+8bit.\+A\+E\+S}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES256__8bit_1_1AES_ab4ebe558a658ffc5280e8c35c774df96}{get\+S\+Box\+Value} (self, num)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES256__8bit_1_1AES_a693835484cef99fc3629f028cb243d10}{get\+S\+Box\+Invert} (self, num)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES256__8bit_1_1AES_a2eeb2ffeed81b39fcee858f9dc7ccbca}{galois\+\_\+multiplication} (self, a, b)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES256__8bit_1_1AES_a1c5ee9303e72ff765a98827ba6d80259}{sub\+Bytes} (self, state, is\+Inv)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES256__8bit_1_1AES_a8fc34159e33b16bc614399d208c3cb52}{shift\+Rows} (self, state, is\+Inv)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES256__8bit_1_1AES_ac0de1586dfed65815fc7c17c19334a10}{shift\+Row} (self, state, state\+Pointer, nbr, is\+Inv)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES256__8bit_1_1AES_a470e2855d1f41f226ae297c841d9b1ca}{mix\+Columns} (self, state, is\+Inv)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES256__8bit_1_1AES_aab4240bdf8c39858424f05c1fd88f6f5}{mix\+Column} (self, column, is\+Inv)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES256__8bit_1_1AES_a49998c31b3e402d7f6bd986cc048c01b}{mapin} (self, iput)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES256__8bit_1_1AES_a1903875c578525032442e5e07e0b3acf}{mapout} (self, block)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+list \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES256__8bit_1_1AES_a6234bbf12e9e732f4b9890ada19c54dc}{sbox}
+\item 
+list \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES256__8bit_1_1AES_af10fdd6936815d7191116ed75863d52c}{rsbox}
+\end{DoxyCompactItemize}
+
+
+Inheritance diagram for software.\+chipwhisperer.\+analyzer.\+attacks.\+models.\+A\+E\+S256\+\_\+8bit.\+A\+E\+S\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{dc/dab/classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES256__8bit_1_1AES__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for software.\+chipwhisperer.\+analyzer.\+attacks.\+models.\+A\+E\+S256\+\_\+8bit.\+A\+E\+S\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{d5/dfb/classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES256__8bit_1_1AES__coll__graph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES256__8bit_1_1AES_a2eeb2ffeed81b39fcee858f9dc7ccbca}{}\index{software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S256\+\_\+8bit\+::\+A\+E\+S@{software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S256\+\_\+8bit\+::\+A\+E\+S}!galois\+\_\+multiplication@{galois\+\_\+multiplication}}
+\index{galois\+\_\+multiplication@{galois\+\_\+multiplication}!software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S256\+\_\+8bit\+::\+A\+E\+S@{software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S256\+\_\+8bit\+::\+A\+E\+S}}
+\subsubsection[{galois\+\_\+multiplication}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+analyzer.\+attacks.\+models.\+A\+E\+S256\+\_\+8bit.\+A\+E\+S.\+galois\+\_\+multiplication (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{a, }
+\item[{}]{b}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES256__8bit_1_1AES_a2eeb2ffeed81b39fcee858f9dc7ccbca}
+\begin{DoxyVerb}Galois multiplication of 8 bit characters a and b.\end{DoxyVerb}
+ 
+
+Referenced by software.\+chipwhisperer.\+analyzer.\+attacks.\+models.\+A\+E\+S256\+\_\+8bit.\+A\+E\+S.\+mix\+Column().
+
+
+\begin{DoxyCode}
+92     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES256__8bit_1_1AES_a2eeb2ffeed81b39fcee858f9dc7ccbca}{galois\_multiplication}(self, a, b):
+93         \textcolor{stringliteral}{"""Galois multiplication of 8 bit characters a and b."""}
+94         p = 0
+95         \textcolor{keywordflow}{for} counter \textcolor{keywordflow}{in} range(8):
+96             \textcolor{keywordflow}{if} b & 1: p ^= a
+97             hi\_bit\_set = a & 0x80
+98             a <<= 1
+99             \textcolor{comment}{# keep a 8 bit}
+100             a &= 0xFF
+101             \textcolor{keywordflow}{if} hi\_bit\_set:
+102                 a ^= 0x1b
+103             b >>= 1
+104         \textcolor{keywordflow}{return} p
+105 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES256__8bit_1_1AES_a693835484cef99fc3629f028cb243d10}{}\index{software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S256\+\_\+8bit\+::\+A\+E\+S@{software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S256\+\_\+8bit\+::\+A\+E\+S}!get\+S\+Box\+Invert@{get\+S\+Box\+Invert}}
+\index{get\+S\+Box\+Invert@{get\+S\+Box\+Invert}!software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S256\+\_\+8bit\+::\+A\+E\+S@{software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S256\+\_\+8bit\+::\+A\+E\+S}}
+\subsubsection[{get\+S\+Box\+Invert}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+analyzer.\+attacks.\+models.\+A\+E\+S256\+\_\+8bit.\+A\+E\+S.\+get\+S\+Box\+Invert (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{num}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES256__8bit_1_1AES_a693835484cef99fc3629f028cb243d10}
+\begin{DoxyVerb}Retrieves a given Inverted S-Box Value\end{DoxyVerb}
+ 
+
+References software.\+chipwhisperer.\+analyzer.\+attacks.\+models.\+A\+E\+S256\+\_\+8bit.\+A\+E\+S.\+rsbox.
+
+
+
+Referenced by software.\+chipwhisperer.\+analyzer.\+attacks.\+models.\+A\+E\+S256\+\_\+8bit.\+A\+E\+S.\+sub\+Bytes().
+
+
+\begin{DoxyCode}
+88     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES256__8bit_1_1AES_a693835484cef99fc3629f028cb243d10}{getSBoxInvert}(self, num):
+89         \textcolor{stringliteral}{"""Retrieves a given Inverted S-Box Value"""}
+90         \textcolor{keywordflow}{return} self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES256__8bit_1_1AES_af10fdd6936815d7191116ed75863d52c}{rsbox}[num]
+91 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES256__8bit_1_1AES_ab4ebe558a658ffc5280e8c35c774df96}{}\index{software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S256\+\_\+8bit\+::\+A\+E\+S@{software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S256\+\_\+8bit\+::\+A\+E\+S}!get\+S\+Box\+Value@{get\+S\+Box\+Value}}
+\index{get\+S\+Box\+Value@{get\+S\+Box\+Value}!software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S256\+\_\+8bit\+::\+A\+E\+S@{software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S256\+\_\+8bit\+::\+A\+E\+S}}
+\subsubsection[{get\+S\+Box\+Value}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+analyzer.\+attacks.\+models.\+A\+E\+S256\+\_\+8bit.\+A\+E\+S.\+get\+S\+Box\+Value (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{num}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES256__8bit_1_1AES_ab4ebe558a658ffc5280e8c35c774df96}
+\begin{DoxyVerb}Retrieves a given S-Box Value\end{DoxyVerb}
+ 
+
+References software.\+chipwhisperer.\+analyzer.\+attacks.\+models.\+A\+E\+S256\+\_\+8bit.\+A\+E\+S.\+sbox.
+
+
+
+Referenced by software.\+chipwhisperer.\+analyzer.\+attacks.\+models.\+A\+E\+S256\+\_\+8bit.\+A\+E\+S.\+sub\+Bytes().
+
+
+\begin{DoxyCode}
+84     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES256__8bit_1_1AES_ab4ebe558a658ffc5280e8c35c774df96}{getSBoxValue}(self, num):
+85         \textcolor{stringliteral}{"""Retrieves a given S-Box Value"""}
+86         \textcolor{keywordflow}{return} self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES256__8bit_1_1AES_a6234bbf12e9e732f4b9890ada19c54dc}{sbox}[num]
+87 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES256__8bit_1_1AES_a49998c31b3e402d7f6bd986cc048c01b}{}\index{software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S256\+\_\+8bit\+::\+A\+E\+S@{software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S256\+\_\+8bit\+::\+A\+E\+S}!mapin@{mapin}}
+\index{mapin@{mapin}!software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S256\+\_\+8bit\+::\+A\+E\+S@{software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S256\+\_\+8bit\+::\+A\+E\+S}}
+\subsubsection[{mapin}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+analyzer.\+attacks.\+models.\+A\+E\+S256\+\_\+8bit.\+A\+E\+S.\+mapin (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{iput}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES256__8bit_1_1AES_a49998c31b3e402d7f6bd986cc048c01b}
+
+\begin{DoxyCode}
+165     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES256__8bit_1_1AES_a49998c31b3e402d7f6bd986cc048c01b}{mapin}(self, iput):
+166         block = [0] * 16
+167         \textcolor{keywordflow}{for} i \textcolor{keywordflow}{in} range(4):
+168             \textcolor{comment}{# iterate over the rows}
+169             \textcolor{keywordflow}{for} j \textcolor{keywordflow}{in} range(4):
+170                 block[(i + (j * 4))] = iput[(i * 4) + j]
+171         \textcolor{keywordflow}{return} block
+172 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES256__8bit_1_1AES_a1903875c578525032442e5e07e0b3acf}{}\index{software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S256\+\_\+8bit\+::\+A\+E\+S@{software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S256\+\_\+8bit\+::\+A\+E\+S}!mapout@{mapout}}
+\index{mapout@{mapout}!software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S256\+\_\+8bit\+::\+A\+E\+S@{software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S256\+\_\+8bit\+::\+A\+E\+S}}
+\subsubsection[{mapout}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+analyzer.\+attacks.\+models.\+A\+E\+S256\+\_\+8bit.\+A\+E\+S.\+mapout (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{block}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES256__8bit_1_1AES_a1903875c578525032442e5e07e0b3acf}
+
+\begin{DoxyCode}
+173     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES256__8bit_1_1AES_a1903875c578525032442e5e07e0b3acf}{mapout}(self, block):
+174 
+175         output = [0] * 16
+176         \textcolor{comment}{# unmap the block again into the output}
+177         \textcolor{keywordflow}{for} k \textcolor{keywordflow}{in} range(4):
+178                     \textcolor{comment}{# iterate over the rows}
+179                     \textcolor{keywordflow}{for} l \textcolor{keywordflow}{in} range(4):
+180                         output[(k * 4) + l] = block[(k + (l * 4))]
+181         \textcolor{keywordflow}{return} output
+182 
+183 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES256__8bit_1_1AES_aab4240bdf8c39858424f05c1fd88f6f5}{}\index{software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S256\+\_\+8bit\+::\+A\+E\+S@{software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S256\+\_\+8bit\+::\+A\+E\+S}!mix\+Column@{mix\+Column}}
+\index{mix\+Column@{mix\+Column}!software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S256\+\_\+8bit\+::\+A\+E\+S@{software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S256\+\_\+8bit\+::\+A\+E\+S}}
+\subsubsection[{mix\+Column}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+analyzer.\+attacks.\+models.\+A\+E\+S256\+\_\+8bit.\+A\+E\+S.\+mix\+Column (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{column, }
+\item[{}]{is\+Inv}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES256__8bit_1_1AES_aab4240bdf8c39858424f05c1fd88f6f5}
+
+
+References software.\+chipwhisperer.\+analyzer.\+attacks.\+models.\+A\+E\+S256\+\_\+8bit.\+A\+E\+S.\+galois\+\_\+multiplication().
+
+
+
+Referenced by software.\+chipwhisperer.\+analyzer.\+attacks.\+models.\+A\+E\+S256\+\_\+8bit.\+A\+E\+S.\+mix\+Columns().
+
+
+\begin{DoxyCode}
+149     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES256__8bit_1_1AES_aab4240bdf8c39858424f05c1fd88f6f5}{mixColumn}(self, column, isInv):
+150         \textcolor{keywordflow}{if} isInv: mult = [14, 9, 13, 11]
+151         \textcolor{keywordflow}{else}: mult = [2, 1, 1, 3]
+152         cpy = list(column)
+153         g = self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES256__8bit_1_1AES_a2eeb2ffeed81b39fcee858f9dc7ccbca}{galois\_multiplication}
+154 
+155         column[0] = g(cpy[0], mult[0]) ^ g(cpy[3], mult[1]) ^ \(\backslash\)
+156                     g(cpy[2], mult[2]) ^ g(cpy[1], mult[3])
+157         column[1] = g(cpy[1], mult[0]) ^ g(cpy[0], mult[1]) ^ \(\backslash\)
+158                     g(cpy[3], mult[2]) ^ g(cpy[2], mult[3])
+159         column[2] = g(cpy[2], mult[0]) ^ g(cpy[1], mult[1]) ^ \(\backslash\)
+160                     g(cpy[0], mult[2]) ^ g(cpy[3], mult[3])
+161         column[3] = g(cpy[3], mult[0]) ^ g(cpy[2], mult[1]) ^ \(\backslash\)
+162                     g(cpy[1], mult[2]) ^ g(cpy[0], mult[3])
+163         \textcolor{keywordflow}{return} column
+164 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES256__8bit_1_1AES_a470e2855d1f41f226ae297c841d9b1ca}{}\index{software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S256\+\_\+8bit\+::\+A\+E\+S@{software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S256\+\_\+8bit\+::\+A\+E\+S}!mix\+Columns@{mix\+Columns}}
+\index{mix\+Columns@{mix\+Columns}!software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S256\+\_\+8bit\+::\+A\+E\+S@{software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S256\+\_\+8bit\+::\+A\+E\+S}}
+\subsubsection[{mix\+Columns}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+analyzer.\+attacks.\+models.\+A\+E\+S256\+\_\+8bit.\+A\+E\+S.\+mix\+Columns (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{state, }
+\item[{}]{is\+Inv}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES256__8bit_1_1AES_a470e2855d1f41f226ae297c841d9b1ca}
+
+
+References software.\+chipwhisperer.\+analyzer.\+attacks.\+models.\+A\+E\+S256\+\_\+8bit.\+A\+E\+S.\+mix\+Column().
+
+
+\begin{DoxyCode}
+136     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES256__8bit_1_1AES_a470e2855d1f41f226ae297c841d9b1ca}{mixColumns}(self, state, isInv):
+137         \textcolor{comment}{# iterate over the 4 columns}
+138         \textcolor{keywordflow}{for} i \textcolor{keywordflow}{in} range(4):
+139             \textcolor{comment}{# construct one column by slicing over the 4 rows}
+140             column = state[i:i + 16:4]
+141             \textcolor{comment}{# apply the mixColumn on one column}
+142             column = self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES256__8bit_1_1AES_aab4240bdf8c39858424f05c1fd88f6f5}{mixColumn}(column, isInv)
+143             \textcolor{comment}{# put the values back into the state}
+144             state[i:i + 16:4] = column
+145 
+146         \textcolor{keywordflow}{return} state
+147 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES256__8bit_1_1AES_ac0de1586dfed65815fc7c17c19334a10}{}\index{software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S256\+\_\+8bit\+::\+A\+E\+S@{software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S256\+\_\+8bit\+::\+A\+E\+S}!shift\+Row@{shift\+Row}}
+\index{shift\+Row@{shift\+Row}!software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S256\+\_\+8bit\+::\+A\+E\+S@{software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S256\+\_\+8bit\+::\+A\+E\+S}}
+\subsubsection[{shift\+Row}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+analyzer.\+attacks.\+models.\+A\+E\+S256\+\_\+8bit.\+A\+E\+S.\+shift\+Row (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{state, }
+\item[{}]{state\+Pointer, }
+\item[{}]{nbr, }
+\item[{}]{is\+Inv}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES256__8bit_1_1AES_ac0de1586dfed65815fc7c17c19334a10}
+
+
+Referenced by software.\+chipwhisperer.\+analyzer.\+attacks.\+models.\+A\+E\+S256\+\_\+8bit.\+A\+E\+S.\+shift\+Rows().
+
+
+\begin{DoxyCode}
+123     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES256__8bit_1_1AES_ac0de1586dfed65815fc7c17c19334a10}{shiftRow}(self, state, statePointer, nbr, isInv):
+124         \textcolor{keywordflow}{for} i \textcolor{keywordflow}{in} range(nbr):
+125             \textcolor{keywordflow}{if} isInv:
+126                 state[statePointer:statePointer + 4] = \(\backslash\)
+127                         state[statePointer + 3:statePointer + 4] + \(\backslash\)
+128                         state[statePointer:statePointer + 3]
+129             \textcolor{keywordflow}{else}:
+130                 state[statePointer:statePointer + 4] = \(\backslash\)
+131                         state[statePointer + 1:statePointer + 4] + \(\backslash\)
+132                         state[statePointer:statePointer + 1]
+133         \textcolor{keywordflow}{return} state
+134 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES256__8bit_1_1AES_a8fc34159e33b16bc614399d208c3cb52}{}\index{software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S256\+\_\+8bit\+::\+A\+E\+S@{software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S256\+\_\+8bit\+::\+A\+E\+S}!shift\+Rows@{shift\+Rows}}
+\index{shift\+Rows@{shift\+Rows}!software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S256\+\_\+8bit\+::\+A\+E\+S@{software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S256\+\_\+8bit\+::\+A\+E\+S}}
+\subsubsection[{shift\+Rows}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+analyzer.\+attacks.\+models.\+A\+E\+S256\+\_\+8bit.\+A\+E\+S.\+shift\+Rows (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{state, }
+\item[{}]{is\+Inv}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES256__8bit_1_1AES_a8fc34159e33b16bc614399d208c3cb52}
+
+
+References software.\+chipwhisperer.\+analyzer.\+attacks.\+models.\+A\+E\+S256\+\_\+8bit.\+A\+E\+S.\+shift\+Row().
+
+
+\begin{DoxyCode}
+117     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES256__8bit_1_1AES_a8fc34159e33b16bc614399d208c3cb52}{shiftRows}(self, state, isInv):
+118         \textcolor{keywordflow}{for} i \textcolor{keywordflow}{in} range(4):
+119             state = self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES256__8bit_1_1AES_ac0de1586dfed65815fc7c17c19334a10}{shiftRow}(state, i * 4, i, isInv)
+120         \textcolor{keywordflow}{return} state
+121 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES256__8bit_1_1AES_a1c5ee9303e72ff765a98827ba6d80259}{}\index{software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S256\+\_\+8bit\+::\+A\+E\+S@{software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S256\+\_\+8bit\+::\+A\+E\+S}!sub\+Bytes@{sub\+Bytes}}
+\index{sub\+Bytes@{sub\+Bytes}!software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S256\+\_\+8bit\+::\+A\+E\+S@{software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S256\+\_\+8bit\+::\+A\+E\+S}}
+\subsubsection[{sub\+Bytes}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+analyzer.\+attacks.\+models.\+A\+E\+S256\+\_\+8bit.\+A\+E\+S.\+sub\+Bytes (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{state, }
+\item[{}]{is\+Inv}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES256__8bit_1_1AES_a1c5ee9303e72ff765a98827ba6d80259}
+
+
+References software.\+chipwhisperer.\+analyzer.\+attacks.\+models.\+A\+E\+S256\+\_\+8bit.\+A\+E\+S.\+get\+S\+Box\+Invert(), and software.\+chipwhisperer.\+analyzer.\+attacks.\+models.\+A\+E\+S256\+\_\+8bit.\+A\+E\+S.\+get\+S\+Box\+Value().
+
+
+\begin{DoxyCode}
+110     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES256__8bit_1_1AES_a1c5ee9303e72ff765a98827ba6d80259}{subBytes}(self, state, isInv):
+111         \textcolor{keywordflow}{if} isInv: getter = self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES256__8bit_1_1AES_a693835484cef99fc3629f028cb243d10}{getSBoxInvert}
+112         \textcolor{keywordflow}{else}: getter = self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES256__8bit_1_1AES_ab4ebe558a658ffc5280e8c35c774df96}{getSBoxValue}
+113         \textcolor{keywordflow}{for} i \textcolor{keywordflow}{in} range(16): state[i] = getter(state[i])
+114         \textcolor{keywordflow}{return} state
+115 
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES256__8bit_1_1AES_af10fdd6936815d7191116ed75863d52c}{}\index{software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S256\+\_\+8bit\+::\+A\+E\+S@{software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S256\+\_\+8bit\+::\+A\+E\+S}!rsbox@{rsbox}}
+\index{rsbox@{rsbox}!software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S256\+\_\+8bit\+::\+A\+E\+S@{software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S256\+\_\+8bit\+::\+A\+E\+S}}
+\subsubsection[{rsbox}]{\setlength{\rightskip}{0pt plus 5cm}list software.\+chipwhisperer.\+analyzer.\+attacks.\+models.\+A\+E\+S256\+\_\+8bit.\+A\+E\+S.\+rsbox\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES256__8bit_1_1AES_af10fdd6936815d7191116ed75863d52c}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 = [0x52, 0x09, 0x6a, 0xd5, 0x30, 0x36, 0xa5, 0x38, 0xbf, 0x40, 0xa3,
+2             0x9e, 0x81, 0xf3, 0xd7, 0xfb , 0x7c, 0xe3, 0x39, 0x82, 0x9b, 0x2f,
+3             0xff, 0x87, 0x34, 0x8e, 0x43, 0x44, 0xc4, 0xde, 0xe9, 0xcb , 0x54,
+4             0x7b, 0x94, 0x32, 0xa6, 0xc2, 0x23, 0x3d, 0xee, 0x4c, 0x95, 0x0b,
+5             0x42, 0xfa, 0xc3, 0x4e , 0x08, 0x2e, 0xa1, 0x66, 0x28, 0xd9, 0x24,
+6             0xb2, 0x76, 0x5b, 0xa2, 0x49, 0x6d, 0x8b, 0xd1, 0x25 , 0x72, 0xf8,
+7             0xf6, 0x64, 0x86, 0x68, 0x98, 0x16, 0xd4, 0xa4, 0x5c, 0xcc, 0x5d,
+8             0x65, 0xb6, 0x92 , 0x6c, 0x70, 0x48, 0x50, 0xfd, 0xed, 0xb9, 0xda,
+9             0x5e, 0x15, 0x46, 0x57, 0xa7, 0x8d, 0x9d, 0x84 , 0x90, 0xd8, 0xab,
+10             0x00, 0x8c, 0xbc, 0xd3, 0x0a, 0xf7, 0xe4, 0x58, 0x05, 0xb8, 0xb3,
+11             0x45, 0x06 , 0xd0, 0x2c, 0x1e, 0x8f, 0xca, 0x3f, 0x0f, 0x02, 0xc1,
+12             0xaf, 0xbd, 0x03, 0x01, 0x13, 0x8a, 0x6b , 0x3a, 0x91, 0x11, 0x41,
+13             0x4f, 0x67, 0xdc, 0xea, 0x97, 0xf2, 0xcf, 0xce, 0xf0, 0xb4, 0xe6,
+14             0x73 , 0x96, 0xac, 0x74, 0x22, 0xe7, 0xad, 0x35, 0x85, 0xe2, 0xf9,
+15             0x37, 0xe8, 0x1c, 0x75, 0xdf, 0x6e , 0x47, 0xf1, 0x1a, 0x71, 0x1d,
+16             0x29, 0xc5, 0x89, 0x6f, 0xb7, 0x62, 0x0e, 0xaa, 0x18, 0xbe, 0x1b ,
+17             0xfc, 0x56, 0x3e, 0x4b, 0xc6, 0xd2, 0x79, 0x20, 0x9a, 0xdb, 0xc0,
+18             0xfe, 0x78, 0xcd, 0x5a, 0xf4 , 0x1f, 0xdd, 0xa8, 0x33, 0x88, 0x07,
+19             0xc7, 0x31, 0xb1, 0x12, 0x10, 0x59, 0x27, 0x80, 0xec, 0x5f , 0x60,
+20             0x51, 0x7f, 0xa9, 0x19, 0xb5, 0x4a, 0x0d, 0x2d, 0xe5, 0x7a, 0x9f,
+21             0x93, 0xc9, 0x9c, 0xef , 0xa0, 0xe0, 0x3b, 0x4d, 0xae, 0x2a, 0xf5,
+22             0xb0, 0xc8, 0xeb, 0xbb, 0x3c, 0x83, 0x53, 0x99, 0x61 , 0x17, 0x2b,
+23             0x04, 0x7e, 0xba, 0x77, 0xd6, 0x26, 0xe1, 0x69, 0x14, 0x63, 0x55,
+24             0x21, 0x0c, 0x7d]
+\end{DoxyCode}
+
+
+Referenced by software.\+chipwhisperer.\+analyzer.\+attacks.\+models.\+A\+E\+S256\+\_\+8bit.\+A\+E\+S.\+get\+S\+Box\+Invert().
+
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES256__8bit_1_1AES_a6234bbf12e9e732f4b9890ada19c54dc}{}\index{software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S256\+\_\+8bit\+::\+A\+E\+S@{software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S256\+\_\+8bit\+::\+A\+E\+S}!sbox@{sbox}}
+\index{sbox@{sbox}!software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S256\+\_\+8bit\+::\+A\+E\+S@{software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S256\+\_\+8bit\+::\+A\+E\+S}}
+\subsubsection[{sbox}]{\setlength{\rightskip}{0pt plus 5cm}list software.\+chipwhisperer.\+analyzer.\+attacks.\+models.\+A\+E\+S256\+\_\+8bit.\+A\+E\+S.\+sbox\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES256__8bit_1_1AES_a6234bbf12e9e732f4b9890ada19c54dc}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 = [0x63, 0x7c, 0x77, 0x7b, 0xf2, 0x6b, 0x6f, 0xc5, 0x30, 0x01, 0x67,
+2             0x2b, 0xfe, 0xd7, 0xab, 0x76, 0xca, 0x82, 0xc9, 0x7d, 0xfa, 0x59,
+3             0x47, 0xf0, 0xad, 0xd4, 0xa2, 0xaf, 0x9c, 0xa4, 0x72, 0xc0, 0xb7,
+4             0xfd, 0x93, 0x26, 0x36, 0x3f, 0xf7, 0xcc, 0x34, 0xa5, 0xe5, 0xf1,
+5             0x71, 0xd8, 0x31, 0x15, 0x04, 0xc7, 0x23, 0xc3, 0x18, 0x96, 0x05,
+6             0x9a, 0x07, 0x12, 0x80, 0xe2, 0xeb, 0x27, 0xb2, 0x75, 0x09, 0x83,
+7             0x2c, 0x1a, 0x1b, 0x6e, 0x5a, 0xa0, 0x52, 0x3b, 0xd6, 0xb3, 0x29,
+8             0xe3, 0x2f, 0x84, 0x53, 0xd1, 0x00, 0xed, 0x20, 0xfc, 0xb1, 0x5b,
+9             0x6a, 0xcb, 0xbe, 0x39, 0x4a, 0x4c, 0x58, 0xcf, 0xd0, 0xef, 0xaa,
+10             0xfb, 0x43, 0x4d, 0x33, 0x85, 0x45, 0xf9, 0x02, 0x7f, 0x50, 0x3c,
+11             0x9f, 0xa8, 0x51, 0xa3, 0x40, 0x8f, 0x92, 0x9d, 0x38, 0xf5, 0xbc,
+12             0xb6, 0xda, 0x21, 0x10, 0xff, 0xf3, 0xd2, 0xcd, 0x0c, 0x13, 0xec,
+13             0x5f, 0x97, 0x44, 0x17, 0xc4, 0xa7, 0x7e, 0x3d, 0x64, 0x5d, 0x19,
+14             0x73, 0x60, 0x81, 0x4f, 0xdc, 0x22, 0x2a, 0x90, 0x88, 0x46, 0xee,
+15             0xb8, 0x14, 0xde, 0x5e, 0x0b, 0xdb, 0xe0, 0x32, 0x3a, 0x0a, 0x49,
+16             0x06, 0x24, 0x5c, 0xc2, 0xd3, 0xac, 0x62, 0x91, 0x95, 0xe4, 0x79,
+17             0xe7, 0xc8, 0x37, 0x6d, 0x8d, 0xd5, 0x4e, 0xa9, 0x6c, 0x56, 0xf4,
+18             0xea, 0x65, 0x7a, 0xae, 0x08, 0xba, 0x78, 0x25, 0x2e, 0x1c, 0xa6,
+19             0xb4, 0xc6, 0xe8, 0xdd, 0x74, 0x1f, 0x4b, 0xbd, 0x8b, 0x8a, 0x70,
+20             0x3e, 0xb5, 0x66, 0x48, 0x03, 0xf6, 0x0e, 0x61, 0x35, 0x57, 0xb9,
+21             0x86, 0xc1, 0x1d, 0x9e, 0xe1, 0xf8, 0x98, 0x11, 0x69, 0xd9, 0x8e,
+22             0x94, 0x9b, 0x1e, 0x87, 0xe9, 0xce, 0x55, 0x28, 0xdf, 0x8c, 0xa1,
+23             0x89, 0x0d, 0xbf, 0xe6, 0x42, 0x68, 0x41, 0x99, 0x2d, 0x0f, 0xb0,
+24             0x54, 0xbb, 0x16]
+\end{DoxyCode}
+
+
+Referenced by software.\+chipwhisperer.\+analyzer.\+attacks.\+models.\+A\+E\+S256\+\_\+8bit.\+A\+E\+S.\+get\+S\+Box\+Value().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{AES256__8bit_8py}{A\+E\+S256\+\_\+8bit.\+py}\end{DoxyCompactItemize}

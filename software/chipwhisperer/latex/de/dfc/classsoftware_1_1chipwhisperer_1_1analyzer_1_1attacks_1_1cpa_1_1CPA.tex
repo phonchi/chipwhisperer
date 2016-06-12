@@ -1,0 +1,316 @@
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa_1_1CPA}{}\section{software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa.\+C\+P\+A Class Reference}
+\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa_1_1CPA}\index{software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa.\+C\+P\+A@{software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa.\+C\+P\+A}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa_1_1CPA_ae83c4d5f16963fe1c3aedde9085e972e}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa_1_1CPA_a16178f7a5d24e45eb6e05bdb9255fb25}{update\+Algorithm} (self, algo)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa_1_1CPA_af7d63bd4b81488db84d145cc43d9966e}{set\+Hardware\+Model} (self, model)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa_1_1CPA_a3f35e71a6b226c8c5b4ba08457df7a61}{set\+Analysis\+Algorithm} (self, analysis\+Algorithm, hardware\+Model, leakage\+Model)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa_1_1CPA_aa77f970b093325f2f378888a28c3ae34}{update\+Script}
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa_1_1CPA_a51e4358698280731148d8cc6d070fb68}{process\+Known\+Key} (self, inpkey)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa_1_1CPA_a48e1840a5c47d746180f82906b4e7c59}{process\+Traces} (self)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa_1_1CPA_ae7db6d51ca83870782dcbc24fbc0e838}{get\+Statistics} (self)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa_1_1CPA_a0726926974b21ec09d91075ecc5291c7}{param\+List} (self)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa_1_1CPA_a3277c248828abebda2823699d99bae32}{numsubkeys}
+\item 
+\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa_1_1CPA_a587c513e5f4f4eab10995d628c2db277}{attack}
+\item 
+\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa_1_1CPA_a60f3ed82aa38f86c5ea30733bb3316a7}{attack\+Params}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Correlation Power Analysis Attack\end{DoxyVerb}
+ 
+
+Inheritance diagram for software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa.\+C\+P\+A\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{d2/d05/classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa_1_1CPA__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa.\+C\+P\+A\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{da/d57/classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa_1_1CPA__coll__graph}
+\end{center}
+\end{figure}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa_1_1CPA_ae83c4d5f16963fe1c3aedde9085e972e}{}\index{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+::\+C\+P\+A@{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+::\+C\+P\+A}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+::\+C\+P\+A@{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+::\+C\+P\+A}}
+\subsubsection[{\+\_\+\+\_\+init\+\_\+\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa.\+C\+P\+A.\+\_\+\+\_\+init\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa_1_1CPA_ae83c4d5f16963fe1c3aedde9085e972e}
+
+
+References software.\+chipwhisperer.\+capture.\+scopes.\+\_\+\+Open\+A\+D\+C\+Interface.\+Open\+A\+D\+C\+Settings.\+find\+Param, software.\+chipwhisperer.\+common.\+api.\+Extended\+Parameter.\+Extended\+Parameter.\+find\+Param(), software.\+chipwhisperer.\+capture.\+scopes.\+\_\+\+Open\+A\+D\+C\+Interface.\+Clock\+Settings.\+find\+Param, software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa.\+C\+P\+A.\+set\+Analysis\+Algorithm(), software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa.\+C\+P\+A.\+update\+Algorithm(), software.\+chipwhisperer.\+analyzer.\+attacks.\+\_\+generic\+\_\+parameters.\+Attack\+Generic\+Parameters.\+update\+Bytes\+Visible(), and software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa.\+C\+P\+A.\+update\+Script().
+
+
+\begin{DoxyCode}
+39     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa_1_1CPA_ae83c4d5f16963fe1c3aedde9085e972e}{\_\_init\_\_}(self):
+40         AttackGenericParameters.\_\_init\_\_(self)
+41         AttackBaseClass.\_\_init\_\_(self)
+42 
+43         algos = pluginmanager.getPluginsInDictFromPackage(\textcolor{stringliteral}{"chipwhisperer.analyzer.attacks.cpa\_algorithms"}, \textcolor{keyword}{
+      False}, \textcolor{keyword}{False})
+44         self.params.addChildren([
+45             \{\textcolor{stringliteral}{'name'}:\textcolor{stringliteral}{'Algorithm'}, \textcolor{stringliteral}{'key'}:\textcolor{stringliteral}{'CPA\_algo'}, \textcolor{stringliteral}{'type'}:\textcolor{stringliteral}{'list'}, \textcolor{stringliteral}{'values'}:algos, \textcolor{stringliteral}{'value'}:algos[\textcolor{stringliteral}{"
+      Progressive"}], \textcolor{stringliteral}{'set'}:self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa_1_1CPA_a16178f7a5d24e45eb6e05bdb9255fb25}{updateAlgorithm}\},            \textcolor{comment}{#TODO: Should be called from the AES module to
+       figure out # of bytes}
+46         ])
+47         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa_1_1CPA_a3f35e71a6b226c8c5b4ba08457df7a61}{setAnalysisAlgorithm}(self.findParam(\textcolor{stringliteral}{'CPA\_algo'}).value(), \textcolor{keywordtype}{None}, \textcolor{keywordtype}{None})
+48         self.updateBytesVisible()
+49         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa_1_1CPA_aa77f970b093325f2f378888a28c3ae34}{updateScript}()
+50 
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa_1_1CPA_ae7db6d51ca83870782dcbc24fbc0e838}{}\index{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+::\+C\+P\+A@{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+::\+C\+P\+A}!get\+Statistics@{get\+Statistics}}
+\index{get\+Statistics@{get\+Statistics}!software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+::\+C\+P\+A@{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+::\+C\+P\+A}}
+\subsubsection[{get\+Statistics}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa.\+C\+P\+A.\+get\+Statistics (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa_1_1CPA_ae7db6d51ca83870782dcbc24fbc0e838}
+
+\begin{DoxyCode}
+119     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa_1_1CPA_ae7db6d51ca83870782dcbc24fbc0e838}{getStatistics}(self):
+120         \textcolor{keywordflow}{return} self.attack.getStatistics()
+121 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa_1_1CPA_a0726926974b21ec09d91075ecc5291c7}{}\index{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+::\+C\+P\+A@{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+::\+C\+P\+A}!param\+List@{param\+List}}
+\index{param\+List@{param\+List}!software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+::\+C\+P\+A@{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+::\+C\+P\+A}}
+\subsubsection[{param\+List}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa.\+C\+P\+A.\+param\+List (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa_1_1CPA_a0726926974b21ec09d91075ecc5291c7}
+
+
+References software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa.\+C\+P\+A.\+attack\+Params, software.\+chipwhisperer.\+analyzer.\+utils.\+Trace\+Explorer\+Scripts.\+Text\+Display.\+Text\+Display.\+params, software.\+chipwhisperer.\+capture.\+utils.\+Glitch\+Explorer\+Dialog.\+Tuning\+Parameter.\+params, software.\+chipwhisperer.\+capture.\+scopes.\+\_\+\+Open\+A\+D\+C\+Interface.\+Open\+A\+D\+C\+Settings.\+params, software.\+chipwhisperer.\+capture.\+scopes.\+cwhardware.\+Chip\+Whisperer\+S\+A\+D.\+Chip\+Whisperer\+S\+A\+D.\+params, software.\+chipwhisperer.\+analyzer.\+utils.\+Trace\+Explorer\+Dialog.\+Trace\+Explorer\+Dialog.\+params, software.\+chipwhisperer.\+common.\+utils.\+parameters.\+Parameterized.\+params, software.\+chipwhisperer.\+capture.\+utils.\+Glitch\+Explorer\+Dialog.\+Glitch\+Explorer\+Dialog.\+params, software.\+chipwhisperer.\+capture.\+scopes.\+cwhardware.\+Chip\+Whisperer\+Digital\+Pattern.\+Chip\+Whisperer\+Digital\+Pattern.\+params, software.\+chipwhisperer.\+analyzer.\+utils.\+Trace\+Explorer\+Scripts.\+Partition\+Display.\+Partition\+Display.\+params, software.\+chipwhisperer.\+common.\+api.\+Extended\+Parameter.\+submodule.\+params, software.\+chipwhisperer.\+common.\+api.\+Extended\+Parameter.\+module.\+params, software.\+chipwhisperer.\+common.\+api.\+Extended\+Parameter.\+maintest.\+params, software.\+chipwhisperer.\+analyzer.\+attacks.\+\_\+generic\+\_\+parameters.\+Attack\+Generic\+Parameters.\+points\+Params, and software.\+chipwhisperer.\+analyzer.\+attacks.\+\_\+generic\+\_\+parameters.\+Attack\+Generic\+Parameters.\+trace\+Params.
+
+
+
+Referenced by software.\+chipwhisperer.\+capture.\+utils.\+Glitch\+Explorer\+Dialog.\+Glitch\+Explorer\+Dialog.\+reload\+Parameters(), software.\+chipwhisperer.\+common.\+api.\+Extended\+Parameter.\+maintest.\+reload\+Params(), software.\+chipwhisperer.\+common.\+api.\+Extended\+Parameter.\+maintest.\+reload\+Params\+Bad(), software.\+chipwhisperer.\+common.\+api.\+Extended\+Parameter.\+maintest.\+setmodule(), and software.\+chipwhisperer.\+common.\+api.\+Extended\+Parameter.\+module.\+set\+Submodule().
+
+
+\begin{DoxyCode}
+122     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa_1_1CPA_a0726926974b21ec09d91075ecc5291c7}{paramList}(self):
+123         l = [self.params, self.pointsParams, self.traceParams]
+124         \textcolor{keywordflow}{if} self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa_1_1CPA_a60f3ed82aa38f86c5ea30733bb3316a7}{attackParams} \textcolor{keywordflow}{is} \textcolor{keywordflow}{not} \textcolor{keywordtype}{None}:
+125             l.append(self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa_1_1CPA_a60f3ed82aa38f86c5ea30733bb3316a7}{attackParams})
+126         \textcolor{keywordflow}{return} l
+127 \end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa_1_1CPA_a51e4358698280731148d8cc6d070fb68}{}\index{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+::\+C\+P\+A@{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+::\+C\+P\+A}!process\+Known\+Key@{process\+Known\+Key}}
+\index{process\+Known\+Key@{process\+Known\+Key}!software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+::\+C\+P\+A@{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+::\+C\+P\+A}}
+\subsubsection[{process\+Known\+Key}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa.\+C\+P\+A.\+process\+Known\+Key (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{inpkey}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa_1_1CPA_a51e4358698280731148d8cc6d070fb68}
+
+
+References software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa.\+C\+P\+A.\+attack.
+
+
+\begin{DoxyCode}
+91     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa_1_1CPA_a51e4358698280731148d8cc6d070fb68}{processKnownKey}(self, inpkey):
+92         \textcolor{keywordflow}{if} inpkey \textcolor{keywordflow}{is} \textcolor{keywordtype}{None}:
+93             \textcolor{keywordflow}{return} \textcolor{keywordtype}{None}
+94 
+95         \textcolor{keywordflow}{if} hasattr(self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa_1_1CPA_a587c513e5f4f4eab10995d628c2db277}{attack}, \textcolor{stringliteral}{'processKnownKey'}):
+96             \textcolor{keywordflow}{return} self.attack.processKnownKey(inpkey)
+97         \textcolor{keywordflow}{else}:
+98             \textcolor{keywordflow}{return} inpkey
+99 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa_1_1CPA_a48e1840a5c47d746180f82906b4e7c59}{}\index{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+::\+C\+P\+A@{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+::\+C\+P\+A}!process\+Traces@{process\+Traces}}
+\index{process\+Traces@{process\+Traces}!software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+::\+C\+P\+A@{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+::\+C\+P\+A}}
+\subsubsection[{process\+Traces}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa.\+C\+P\+A.\+process\+Traces (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa_1_1CPA_a48e1840a5c47d746180f82906b4e7c59}
+
+
+References software.\+chipwhisperer.\+analyzer.\+attacks.\+\_\+base.\+Attack\+Base\+Class.\+get\+Iterations(), software.\+chipwhisperer.\+analyzer.\+attacks.\+\_\+base.\+Attack\+Base\+Class.\+get\+Point\+Range(), software.\+chipwhisperer.\+analyzer.\+attacks.\+\_\+base.\+Attack\+Base\+Class.\+get\+Reporting\+Interval(), software.\+chipwhisperer.\+analyzer.\+attacks.\+\_\+base.\+Attack\+Base\+Class.\+get\+Traces\+Per\+Attack(), software.\+chipwhisperer.\+analyzer.\+attacks.\+\_\+base.\+Attack\+Base\+Class.\+get\+Trace\+Start(), software.\+chipwhisperer.\+common.\+ui.\+Progress\+Bar.\+Progress\+Bar, software.\+chipwhisperer.\+analyzer.\+attacks.\+\_\+base.\+Attack\+Base\+Class.\+target\+Bytes(), software.\+chipwhisperer.\+common.\+utils.\+tracesource.\+Passive\+Trace\+Observer.\+trace\+Source(), and software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+experimentalchannelinfo.\+Template\+C\+S\+I.\+trace\+Source().
+
+
+\begin{DoxyCode}
+100     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa_1_1CPA_a48e1840a5c47d746180f82906b4e7c59}{processTraces}(self):
+101         progressBar = \hyperlink{namespacesoftware_1_1chipwhisperer_1_1common_1_1ui_1_1ProgressBar_a378a399b50b3d116fc08a53eaa642148}{ProgressBar}(\textcolor{stringliteral}{"Analysis in Progress"}, \textcolor{stringliteral}{"Attaking with CPA:"})
+102         with progressBar:
+103             self.attack.setTargetBytes(self.targetBytes())
+104             self.attack.setReportingInterval(self.getReportingInterval())
+105             self.attack.getStatistics().clear()
+106             self.attack.setStatsReadyCallback(self.sigAnalysisUpdated.emit)
+107 
+108             self.sigAnalysisStarted.emit()
+109             \textcolor{keywordflow}{for} itNum \textcolor{keywordflow}{in} range(1, self.getIterations()+1):
+110                 startingTrace = self.getTracesPerAttack() * (itNum - 1) + self.getTraceStart()
+111                 endingTrace = startingTrace + self.getTracesPerAttack() - 1
+112                 \textcolor{comment}{#TODO:  pointRange=self.TraceRangeList[1:17]}
+113                 self.attack.addTraces(self.traceSource(), (startingTrace, endingTrace), progressBar, 
+      pointRange=self.getPointRange())
+114                 \textcolor{keywordflow}{if} progressBar \textcolor{keywordflow}{and} progressBar.wasAborted():
+115                     \textcolor{keywordflow}{return}
+116 
+117         self.sigAnalysisDone.emit()
+118 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa_1_1CPA_a3f35e71a6b226c8c5b4ba08457df7a61}{}\index{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+::\+C\+P\+A@{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+::\+C\+P\+A}!set\+Analysis\+Algorithm@{set\+Analysis\+Algorithm}}
+\index{set\+Analysis\+Algorithm@{set\+Analysis\+Algorithm}!software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+::\+C\+P\+A@{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+::\+C\+P\+A}}
+\subsubsection[{set\+Analysis\+Algorithm}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa.\+C\+P\+A.\+set\+Analysis\+Algorithm (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{analysis\+Algorithm, }
+\item[{}]{hardware\+Model, }
+\item[{}]{leakage\+Model}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa_1_1CPA_a3f35e71a6b226c8c5b4ba08457df7a61}
+
+
+Referenced by software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa.\+C\+P\+A.\+\_\+\+\_\+init\+\_\+\+\_\+(), software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa.\+C\+P\+A.\+update\+Algorithm(), and software.\+chipwhisperer.\+analyzer.\+attacks.\+profiling.\+Profiling.\+update\+Algorithm().
+
+
+\begin{DoxyCode}
+61     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa_1_1CPA_a3f35e71a6b226c8c5b4ba08457df7a61}{setAnalysisAlgorithm}(self, analysisAlgorithm, hardwareModel, leakageModel):
+62         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa_1_1CPA_a587c513e5f4f4eab10995d628c2db277}{attack} = analysisAlgorithm(self, hardwareModel, leakageModel)
+63 
+64         \textcolor{keywordflow}{try}:
+65             self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa_1_1CPA_a60f3ed82aa38f86c5ea30733bb3316a7}{attackParams} = self.attack.paramList()[0]
+66         \textcolor{keywordflow}{except}:
+67             self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa_1_1CPA_a60f3ed82aa38f86c5ea30733bb3316a7}{attackParams} = \textcolor{keywordtype}{None}
+68 
+69         self.paramListUpdated.emit()
+70 
+71         \textcolor{keywordflow}{if} hasattr(self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa_1_1CPA_a587c513e5f4f4eab10995d628c2db277}{attack}, \textcolor{stringliteral}{'scriptsUpdated'}):
+72             self.attack.scriptsUpdated.connect(self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa_1_1CPA_aa77f970b093325f2f378888a28c3ae34}{updateScript})
+73 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa_1_1CPA_af7d63bd4b81488db84d145cc43d9966e}{}\index{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+::\+C\+P\+A@{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+::\+C\+P\+A}!set\+Hardware\+Model@{set\+Hardware\+Model}}
+\index{set\+Hardware\+Model@{set\+Hardware\+Model}!software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+::\+C\+P\+A@{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+::\+C\+P\+A}}
+\subsubsection[{set\+Hardware\+Model}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa.\+C\+P\+A.\+set\+Hardware\+Model (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{model}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa_1_1CPA_af7d63bd4b81488db84d145cc43d9966e}
+
+\begin{DoxyCode}
+56     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa_1_1CPA_af7d63bd4b81488db84d145cc43d9966e}{setHardwareModel}(self, model):
+57         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa_1_1CPA_a3277c248828abebda2823699d99bae32}{numsubkeys} = model.numSubKeys
+58         self.updateBytesVisible()
+59         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa_1_1CPA_aa77f970b093325f2f378888a28c3ae34}{updateScript}()
+60 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa_1_1CPA_a16178f7a5d24e45eb6e05bdb9255fb25}{}\index{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+::\+C\+P\+A@{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+::\+C\+P\+A}!update\+Algorithm@{update\+Algorithm}}
+\index{update\+Algorithm@{update\+Algorithm}!software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+::\+C\+P\+A@{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+::\+C\+P\+A}}
+\subsubsection[{update\+Algorithm}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa.\+C\+P\+A.\+update\+Algorithm (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{algo}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa_1_1CPA_a16178f7a5d24e45eb6e05bdb9255fb25}
+
+
+References software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa.\+C\+P\+A.\+set\+Analysis\+Algorithm(), software.\+chipwhisperer.\+analyzer.\+attacks.\+\_\+generic\+\_\+parameters.\+Attack\+Generic\+Parameters.\+update\+Bytes\+Visible(), and software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa.\+C\+P\+A.\+update\+Script().
+
+
+
+Referenced by software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa.\+C\+P\+A.\+\_\+\+\_\+init\+\_\+\+\_\+(), and software.\+chipwhisperer.\+analyzer.\+attacks.\+profiling.\+Profiling.\+\_\+\+\_\+init\+\_\+\+\_\+().
+
+
+\begin{DoxyCode}
+51     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa_1_1CPA_a16178f7a5d24e45eb6e05bdb9255fb25}{updateAlgorithm}(self, algo):
+52         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa_1_1CPA_a3f35e71a6b226c8c5b4ba08457df7a61}{setAnalysisAlgorithm}(algo, \textcolor{keywordtype}{None}, \textcolor{keywordtype}{None})
+53         self.updateBytesVisible()
+54         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa_1_1CPA_aa77f970b093325f2f378888a28c3ae34}{updateScript}()
+55 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa_1_1CPA_aa77f970b093325f2f378888a28c3ae34}{}\index{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+::\+C\+P\+A@{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+::\+C\+P\+A}!update\+Script@{update\+Script}}
+\index{update\+Script@{update\+Script}!software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+::\+C\+P\+A@{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+::\+C\+P\+A}}
+\subsubsection[{update\+Script}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa.\+C\+P\+A.\+update\+Script (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{ignored = {\ttfamily None}}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa_1_1CPA_aa77f970b093325f2f378888a28c3ae34}
+
+
+References software.\+chipwhisperer.\+common.\+api.\+autoscript.\+Auto\+Script.\+add\+Function(), software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa.\+C\+P\+A.\+attack, software.\+chipwhisperer.\+capture.\+scopes.\+\_\+\+Open\+A\+D\+C\+Interface.\+Open\+A\+D\+C\+Settings.\+find\+Param, software.\+chipwhisperer.\+common.\+api.\+Extended\+Parameter.\+Extended\+Parameter.\+find\+Param(), software.\+chipwhisperer.\+capture.\+scopes.\+\_\+\+Open\+A\+D\+C\+Interface.\+Clock\+Settings.\+find\+Param, software.\+chipwhisperer.\+common.\+api.\+autoscript.\+Auto\+Script.\+imports\+Append(), and software.\+chipwhisperer.\+common.\+api.\+autoscript.\+Auto\+Script.\+merge\+Groups().
+
+
+
+Referenced by software.\+chipwhisperer.\+analyzer.\+preprocessing.\+Add\+Noise\+Random.\+Add\+Noise\+Random.\+\_\+\+\_\+init\+\_\+\+\_\+(), software.\+chipwhisperer.\+analyzer.\+preprocessing.\+Decimation\+Fixed.\+Decimation\+Fixed.\+\_\+\+\_\+init\+\_\+\+\_\+(), software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa.\+C\+P\+A.\+\_\+\+\_\+init\+\_\+\+\_\+(), software.\+chipwhisperer.\+analyzer.\+preprocessing.\+Filter.\+Filter.\+\_\+\+\_\+init\+\_\+\+\_\+(), software.\+chipwhisperer.\+analyzer.\+attacks.\+profiling\+\_\+algorithms.\+template.\+Profiling\+Template.\+\_\+\+\_\+init\+\_\+\+\_\+(), software.\+chipwhisperer.\+analyzer.\+preprocessing.\+Decimation\+Clock\+Recovery.\+Decimation\+Clock\+Recovery.\+\_\+\+\_\+init\+\_\+\+\_\+(), software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa.\+C\+P\+A.\+update\+Algorithm(), software.\+chipwhisperer.\+analyzer.\+attacks.\+profiling.\+Profiling.\+update\+Algorithm(), software.\+chipwhisperer.\+analyzer.\+preprocessing.\+Normalize.\+Normalize.\+update\+Norm\+Class(), and software.\+chipwhisperer.\+analyzer.\+utils.\+Trace\+Explorer\+Scripts.\+Partition\+Display.\+Partition\+Display.\+update\+P\+O\+I().
+
+
+\begin{DoxyCode}
+74     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa_1_1CPA_aa77f970b093325f2f378888a28c3ae34}{updateScript}(self, ignored=None):
+75         self.importsAppend(\textcolor{stringliteral}{"from chipwhisperer.analyzer.attacks.cpa import CPA"})
+76 
+77         analysAlgoStr = self.attack.\_\_class\_\_.\_\_name\_\_
+78         hardwareStr = self.findParam(\textcolor{stringliteral}{'hw\_algo'}).value().\_\_name\_\_
+79         leakModelStr = hardwareStr + \textcolor{stringliteral}{"."} + self.findParam(\textcolor{stringliteral}{'hw\_leak'}).value()
+80 
+81         self.importsAppend(\textcolor{stringliteral}{"from %s import %s"} % (sys.modules[self.attack.\_\_class\_\_.\_\_module\_\_].\_\_name\_\_, 
+      analysAlgoStr))
+82         self.importsAppend(\textcolor{stringliteral}{"import %s"} % hardwareStr)
+83 
+84         self.addFunction(\textcolor{stringliteral}{"init"}, \textcolor{stringliteral}{"setAnalysisAlgorithm"}, \textcolor{stringliteral}{"%s,%s,%s"} % (analysAlgoStr, hardwareStr, 
+      leakModelStr), loc=0)
+85 
+86         \textcolor{keywordflow}{if} hasattr(self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa_1_1CPA_a587c513e5f4f4eab10995d628c2db277}{attack}, \textcolor{stringliteral}{'\_smartstatements'}):
+87             self.mergeGroups(\textcolor{stringliteral}{'init'}, self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa_1_1CPA_a587c513e5f4f4eab10995d628c2db277}{attack}, prefix=\textcolor{stringliteral}{'attack'})
+88 
+89         self.addFunction(\textcolor{stringliteral}{"init"}, \textcolor{stringliteral}{"setTraceSource"}, \textcolor{stringliteral}{"UserScript.traces"})
+90 
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa_1_1CPA_a587c513e5f4f4eab10995d628c2db277}{}\index{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+::\+C\+P\+A@{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+::\+C\+P\+A}!attack@{attack}}
+\index{attack@{attack}!software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+::\+C\+P\+A@{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+::\+C\+P\+A}}
+\subsubsection[{attack}]{\setlength{\rightskip}{0pt plus 5cm}software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa.\+C\+P\+A.\+attack}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa_1_1CPA_a587c513e5f4f4eab10995d628c2db277}
+
+
+Referenced by software.\+chipwhisperer.\+analyzer.\+scripts.\+example.\+User\+Script.\+init\+Reporting(), software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa.\+C\+P\+A.\+process\+Known\+Key(), software.\+chipwhisperer.\+analyzer.\+utils.\+attackscriptgen.\+Attack\+Script\+Gen.\+reload\+Scripts(), software.\+chipwhisperer.\+analyzer.\+attacks.\+profiling.\+Profiling.\+update\+Script(), and software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa.\+C\+P\+A.\+update\+Script().
+
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa_1_1CPA_a60f3ed82aa38f86c5ea30733bb3316a7}{}\index{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+::\+C\+P\+A@{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+::\+C\+P\+A}!attack\+Params@{attack\+Params}}
+\index{attack\+Params@{attack\+Params}!software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+::\+C\+P\+A@{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+::\+C\+P\+A}}
+\subsubsection[{attack\+Params}]{\setlength{\rightskip}{0pt plus 5cm}software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa.\+C\+P\+A.\+attack\+Params}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa_1_1CPA_a60f3ed82aa38f86c5ea30733bb3316a7}
+
+
+Referenced by software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa.\+C\+P\+A.\+param\+List(), and software.\+chipwhisperer.\+analyzer.\+attacks.\+profiling.\+Profiling.\+param\+List().
+
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa_1_1CPA_a3277c248828abebda2823699d99bae32}{}\index{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+::\+C\+P\+A@{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+::\+C\+P\+A}!numsubkeys@{numsubkeys}}
+\index{numsubkeys@{numsubkeys}!software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+::\+C\+P\+A@{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+::\+C\+P\+A}}
+\subsubsection[{numsubkeys}]{\setlength{\rightskip}{0pt plus 5cm}software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa.\+C\+P\+A.\+numsubkeys}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa_1_1CPA_a3277c248828abebda2823699d99bae32}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{cpa_8py}{cpa.\+py}\end{DoxyCompactItemize}

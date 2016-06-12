@@ -1,0 +1,4 @@
+var namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1ResyncPeakDetect =
+[
+    [ "ResyncPeakDetect", "d1/d29/classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1ResyncPeakDetect_1_1ResyncPeakDetect.html", "d1/d29/classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1ResyncPeakDetect_1_1ResyncPeakDetect" ]
+];

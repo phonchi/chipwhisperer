@@ -1,0 +1,79 @@
+\hypertarget{classFlowChartWidget_1_1FlowChartWidget}{}\section{Flow\+Chart\+Widget.\+Flow\+Chart\+Widget Class Reference}
+\label{classFlowChartWidget_1_1FlowChartWidget}\index{Flow\+Chart\+Widget.\+Flow\+Chart\+Widget@{Flow\+Chart\+Widget.\+Flow\+Chart\+Widget}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classFlowChartWidget_1_1FlowChartWidget_ad19de55f5900fbc68c169860999f6326}{\+\_\+\+\_\+init\+\_\+\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFlowChartWidget_1_1FlowChartWidget_a66a1b98ec0242c5f6ed4148a806593dc}{imagepath}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}This FlowChartWidget holds a pyqtgraph FlowChart, and adds a toolbar for zoom, and a (togglable) toolbox of widgets you can add.
+\end{DoxyVerb}
+ 
+
+Inheritance diagram for Flow\+Chart\+Widget.\+Flow\+Chart\+Widget\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{d9/de6/classFlowChartWidget_1_1FlowChartWidget__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Flow\+Chart\+Widget.\+Flow\+Chart\+Widget\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{d3/d6f/classFlowChartWidget_1_1FlowChartWidget__coll__graph}
+\end{center}
+\end{figure}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFlowChartWidget_1_1FlowChartWidget_ad19de55f5900fbc68c169860999f6326}{}\index{Flow\+Chart\+Widget\+::\+Flow\+Chart\+Widget@{Flow\+Chart\+Widget\+::\+Flow\+Chart\+Widget}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!Flow\+Chart\+Widget\+::\+Flow\+Chart\+Widget@{Flow\+Chart\+Widget\+::\+Flow\+Chart\+Widget}}
+\subsubsection[{\+\_\+\+\_\+init\+\_\+\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}def Flow\+Chart\+Widget.\+Flow\+Chart\+Widget.\+\_\+\+\_\+init\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{imagepath = {\ttfamily \textquotesingle{}images/\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\label{classFlowChartWidget_1_1FlowChartWidget_ad19de55f5900fbc68c169860999f6326}
+
+\begin{DoxyCode}
+46     \textcolor{keyword}{def }\hyperlink{classFlowChartWidget_1_1FlowChartWidget_ad19de55f5900fbc68c169860999f6326}{\_\_init\_\_}(self, imagepath='images/'):
+47         super(FlowChartWidget, self).\hyperlink{classFlowChartWidget_1_1FlowChartWidget_ad19de55f5900fbc68c169860999f6326}{\_\_init\_\_}()
+48         
+49         pg.setConfigOption(\textcolor{stringliteral}{'background'}, \textcolor{stringliteral}{'w'})
+50         pg.setConfigOption(\textcolor{stringliteral}{'foreground'}, \textcolor{stringliteral}{'k'})
+51         self.\hyperlink{classFlowChartWidget_1_1FlowChartWidget_a66a1b98ec0242c5f6ed4148a806593dc}{imagepath} = imagepath
+52 
+53         layout = QVBoxLayout()
+54         
+55         \textcolor{comment}{## Create flowchart, define input/output terminals}
+56         fc = \hyperlink{namespaceFlowchart}{Flowchart}(terminals=\{
+57             \textcolor{stringliteral}{'dataIn'}: \{\textcolor{stringliteral}{'io'}: \textcolor{stringliteral}{'in'}\},
+58             \textcolor{stringliteral}{'dataOut'}: \{\textcolor{stringliteral}{'io'}: \textcolor{stringliteral}{'out'}\}    
+59             \})
+60         w = fc.widget()
+61         layout.addWidget(w)
+62         self.setLayout(layout)
+63         
+64 
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classFlowChartWidget_1_1FlowChartWidget_a66a1b98ec0242c5f6ed4148a806593dc}{}\index{Flow\+Chart\+Widget\+::\+Flow\+Chart\+Widget@{Flow\+Chart\+Widget\+::\+Flow\+Chart\+Widget}!imagepath@{imagepath}}
+\index{imagepath@{imagepath}!Flow\+Chart\+Widget\+::\+Flow\+Chart\+Widget@{Flow\+Chart\+Widget\+::\+Flow\+Chart\+Widget}}
+\subsubsection[{imagepath}]{\setlength{\rightskip}{0pt plus 5cm}Flow\+Chart\+Widget.\+Flow\+Chart\+Widget.\+imagepath}\label{classFlowChartWidget_1_1FlowChartWidget_a66a1b98ec0242c5f6ed4148a806593dc}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{FlowChartWidget_8py}{Flow\+Chart\+Widget.\+py}\end{DoxyCompactItemize}

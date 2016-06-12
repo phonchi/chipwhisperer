@@ -1,0 +1,94 @@
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1ParameterTypesCustom_1_1FilelistParameter}{}\section{software.\+chipwhisperer.\+common.\+ui.\+Parameter\+Types\+Custom.\+Filelist\+Parameter Class Reference}
+\label{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1ParameterTypesCustom_1_1FilelistParameter}\index{software.\+chipwhisperer.\+common.\+ui.\+Parameter\+Types\+Custom.\+Filelist\+Parameter@{software.\+chipwhisperer.\+common.\+ui.\+Parameter\+Types\+Custom.\+Filelist\+Parameter}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1ParameterTypesCustom_1_1FilelistParameter_a04373432d31620a1a68471eaf22b6699}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self, opts)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1ParameterTypesCustom_1_1FilelistParameter_ad8e2caa0e4ac95df00d43da9e5e65903}{set\+Limits} (self, limits)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1ParameterTypesCustom_1_1FilelistParameter_ab3b4b9f74d56f2dc63054dcdce422314}{item\+Class} = \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1ParameterTypesCustom_1_1FilelistItem}{Filelist\+Item}
+\end{DoxyCompactItemize}
+
+
+Inheritance diagram for software.\+chipwhisperer.\+common.\+ui.\+Parameter\+Types\+Custom.\+Filelist\+Parameter\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=280pt]{d7/d45/classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1ParameterTypesCustom_1_1FilelistParameter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for software.\+chipwhisperer.\+common.\+ui.\+Parameter\+Types\+Custom.\+Filelist\+Parameter\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=280pt]{dd/d70/classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1ParameterTypesCustom_1_1FilelistParameter__coll__graph}
+\end{center}
+\end{figure}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1ParameterTypesCustom_1_1FilelistParameter_a04373432d31620a1a68471eaf22b6699}{}\index{software\+::chipwhisperer\+::common\+::ui\+::\+Parameter\+Types\+Custom\+::\+Filelist\+Parameter@{software\+::chipwhisperer\+::common\+::ui\+::\+Parameter\+Types\+Custom\+::\+Filelist\+Parameter}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!software\+::chipwhisperer\+::common\+::ui\+::\+Parameter\+Types\+Custom\+::\+Filelist\+Parameter@{software\+::chipwhisperer\+::common\+::ui\+::\+Parameter\+Types\+Custom\+::\+Filelist\+Parameter}}
+\subsubsection[{\+\_\+\+\_\+init\+\_\+\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+ui.\+Parameter\+Types\+Custom.\+Filelist\+Parameter.\+\_\+\+\_\+init\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{opts}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1ParameterTypesCustom_1_1FilelistParameter_a04373432d31620a1a68471eaf22b6699}
+
+
+References software.\+chipwhisperer.\+common.\+ui.\+Parameter\+Types\+Custom.\+Filelist\+Parameter.\+set\+Limits().
+
+
+\begin{DoxyCode}
+458     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1ParameterTypesCustom_1_1FilelistParameter_a04373432d31620a1a68471eaf22b6699}{\_\_init\_\_}(self, **opts):
+459         \textcolor{comment}{# # Parameter uses 'limits' option to define the set of allowed values}
+460         \textcolor{keywordflow}{if} \textcolor{stringliteral}{'values'} \textcolor{keywordflow}{in} opts:
+461             opts[\textcolor{stringliteral}{'limits'}] = opts[\textcolor{stringliteral}{'values'}]
+462         \textcolor{keywordflow}{if} opts.get(\textcolor{stringliteral}{'limits'}, \textcolor{keywordtype}{None}) \textcolor{keywordflow}{is} \textcolor{keywordtype}{None}:
+463             opts[\textcolor{stringliteral}{'limits'}] = []
+464         Parameter.\_\_init\_\_(self, **opts)
+465         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1ParameterTypesCustom_1_1FilelistParameter_ad8e2caa0e4ac95df00d43da9e5e65903}{setLimits}(opts[\textcolor{stringliteral}{'limits'}])
+466 
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1ParameterTypesCustom_1_1FilelistParameter_ad8e2caa0e4ac95df00d43da9e5e65903}{}\index{software\+::chipwhisperer\+::common\+::ui\+::\+Parameter\+Types\+Custom\+::\+Filelist\+Parameter@{software\+::chipwhisperer\+::common\+::ui\+::\+Parameter\+Types\+Custom\+::\+Filelist\+Parameter}!set\+Limits@{set\+Limits}}
+\index{set\+Limits@{set\+Limits}!software\+::chipwhisperer\+::common\+::ui\+::\+Parameter\+Types\+Custom\+::\+Filelist\+Parameter@{software\+::chipwhisperer\+::common\+::ui\+::\+Parameter\+Types\+Custom\+::\+Filelist\+Parameter}}
+\subsubsection[{set\+Limits}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+ui.\+Parameter\+Types\+Custom.\+Filelist\+Parameter.\+set\+Limits (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{limits}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1ParameterTypesCustom_1_1FilelistParameter_ad8e2caa0e4ac95df00d43da9e5e65903}
+
+
+Referenced by software.\+chipwhisperer.\+common.\+ui.\+Parameter\+Types\+Custom.\+Filelist\+Parameter.\+\_\+\+\_\+init\+\_\+\+\_\+().
+
+
+\begin{DoxyCode}
+467     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1ParameterTypesCustom_1_1FilelistParameter_ad8e2caa0e4ac95df00d43da9e5e65903}{setLimits}(self, limits):
+468         Parameter.setLimits(self, limits)
+469 
+470 registerParameterType(\textcolor{stringliteral}{'filelist'}, FilelistParameter, override=\textcolor{keyword}{True})
+471 
+472 
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1ParameterTypesCustom_1_1FilelistParameter_ab3b4b9f74d56f2dc63054dcdce422314}{}\index{software\+::chipwhisperer\+::common\+::ui\+::\+Parameter\+Types\+Custom\+::\+Filelist\+Parameter@{software\+::chipwhisperer\+::common\+::ui\+::\+Parameter\+Types\+Custom\+::\+Filelist\+Parameter}!item\+Class@{item\+Class}}
+\index{item\+Class@{item\+Class}!software\+::chipwhisperer\+::common\+::ui\+::\+Parameter\+Types\+Custom\+::\+Filelist\+Parameter@{software\+::chipwhisperer\+::common\+::ui\+::\+Parameter\+Types\+Custom\+::\+Filelist\+Parameter}}
+\subsubsection[{item\+Class}]{\setlength{\rightskip}{0pt plus 5cm}software.\+chipwhisperer.\+common.\+ui.\+Parameter\+Types\+Custom.\+Filelist\+Parameter.\+item\+Class = {\bf Filelist\+Item}\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1ParameterTypesCustom_1_1FilelistParameter_ab3b4b9f74d56f2dc63054dcdce422314}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ParameterTypesCustom_8py}{Parameter\+Types\+Custom.\+py}\end{DoxyCompactItemize}

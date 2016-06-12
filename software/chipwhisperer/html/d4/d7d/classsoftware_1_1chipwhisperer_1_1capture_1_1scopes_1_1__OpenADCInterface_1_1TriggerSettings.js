@@ -1,0 +1,25 @@
+var classsoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1__OpenADCInterface_1_1TriggerSettings =
+[
+    [ "__init__", "d4/d7d/classsoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1__OpenADCInterface_1_1TriggerSettings.html#a7f490cc8155fbb46875e2b3ba3357148", null ],
+    [ "extTriggerPin", "d4/d7d/classsoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1__OpenADCInterface_1_1TriggerSettings.html#a1f8320b31303d45eb4c7f43268833893", null ],
+    [ "maxSamples", "d4/d7d/classsoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1__OpenADCInterface_1_1TriggerSettings.html#af1bd5ada7304773da3bbba03196b20ad", null ],
+    [ "mode", "d4/d7d/classsoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1__OpenADCInterface_1_1TriggerSettings.html#a833d47731f239a5bf76c483a15773a68", null ],
+    [ "offset", "d4/d7d/classsoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1__OpenADCInterface_1_1TriggerSettings.html#a0212bec51282adeb7554b50f36be78ea", null ],
+    [ "presamples", "d4/d7d/classsoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1__OpenADCInterface_1_1TriggerSettings.html#a056b8af2b6a26ba68830d3f9759c5c25", null ],
+    [ "setInterface", "d4/d7d/classsoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1__OpenADCInterface_1_1TriggerSettings.html#ab38f60b907dc27c156b1c4ff49c91151", null ],
+    [ "setMaxSamples", "d4/d7d/classsoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1__OpenADCInterface_1_1TriggerSettings.html#a56f7d7b7da49c522be4985e9618db9a0", null ],
+    [ "setMode", "d4/d7d/classsoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1__OpenADCInterface_1_1TriggerSettings.html#ae3ab455a8b6aa316214506a1bbb5ffb9", null ],
+    [ "setOffset", "d4/d7d/classsoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1__OpenADCInterface_1_1TriggerSettings.html#a5040d8fe1d4118f60144fcb0cd6451e5", null ],
+    [ "setPresamples", "d4/d7d/classsoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1__OpenADCInterface_1_1TriggerSettings.html#acff1c2edd003728666d3a49559e71de2", null ],
+    [ "setSource", "d4/d7d/classsoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1__OpenADCInterface_1_1TriggerSettings.html#afdd8ebdc3a3574cf7f261790b685e61f", null ],
+    [ "setTimeout", "d4/d7d/classsoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1__OpenADCInterface_1_1TriggerSettings.html#acba34f4d1ccaae7bcdab0f2903d98094", null ],
+    [ "source", "d4/d7d/classsoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1__OpenADCInterface_1_1TriggerSettings.html#a883c718bcd84d03142c0d1efa314dfa2", null ],
+    [ "timeout", "d4/d7d/classsoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1__OpenADCInterface_1_1TriggerSettings.html#a7036019925f52a88333c87f11c204308", null ],
+    [ "maxsamples", "d4/d7d/classsoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1__OpenADCInterface_1_1TriggerSettings.html#ad27510d145542c2a8a8b2ee8fd5ab408", null ],
+    [ "name", "d4/d7d/classsoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1__OpenADCInterface_1_1TriggerSettings.html#acd5cbd01eb4c0d48caa7419d9501ffb1", null ],
+    [ "oa", "d4/d7d/classsoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1__OpenADCInterface_1_1TriggerSettings.html#a4f80c07ef89fc937a522a1aba81aab79", null ],
+    [ "param", "d4/d7d/classsoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1__OpenADCInterface_1_1TriggerSettings.html#a340276c0e8a3e2a085692036e5906613", null ],
+    [ "presamples_actual", "d4/d7d/classsoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1__OpenADCInterface_1_1TriggerSettings.html#a65dc2578bdf55b0c247e5a6403e3f1c4", null ],
+    [ "presamples_desired", "d4/d7d/classsoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1__OpenADCInterface_1_1TriggerSettings.html#a45c60fe381af3e1715ada22bccdf0d2d", null ],
+    [ "presampleTempMargin", "d4/d7d/classsoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1__OpenADCInterface_1_1TriggerSettings.html#a997cc9d58b9fe01447a3c133b1abb071", null ]
+];

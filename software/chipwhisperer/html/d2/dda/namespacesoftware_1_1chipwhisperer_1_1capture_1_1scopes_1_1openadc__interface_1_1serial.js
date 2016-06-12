@@ -1,0 +1,4 @@
+var namespacesoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1openadc__interface_1_1serial =
+[
+    [ "OpenADCInterface_Serial", "dc/ded/classsoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1openadc__interface_1_1serial_1_1OpenADCInterface__Serial.html", "dc/ded/classsoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1openadc__interface_1_1serial_1_1OpenADCInterface__Serial" ]
+];

@@ -1,0 +1,531 @@
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig}{}\section{software.\+chipwhisperer.\+common.\+traces.\+\_\+cfgfile.\+Trace\+Container\+Config Class Reference}
+\label{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig}\index{software.\+chipwhisperer.\+common.\+traces.\+\_\+cfgfile.\+Trace\+Container\+Config@{software.\+chipwhisperer.\+common.\+traces.\+\_\+cfgfile.\+Trace\+Container\+Config}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_a8d113e6450324993f8d5cad558ac31d3}{\+\_\+\+\_\+init\+\_\+\+\_\+}
+\begin{DoxyCompactList}\small\item\em Notes on dictionary\+: order = order of display, needed since dictionary is unordered value = value of variable desc = description of variable changed = has value changed since being written to disk? header\+Label = short description/name used for header label in trace management dialog. \end{DoxyCompactList}\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_ab7a5f610e228901eeb43a4c90e48ca9a}{module}
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_aa376f8c93beab5127bce0a5325f2dcbd}{attr\+Header\+Values} (self)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_a1ead14c1a015e51d41bd044b24163849}{set\+Config\+Filename} (self, fname)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_a0f7e3b0cf2c971910bc9d1bebcef88e3}{config\+Filename} (self)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_afda6373c5ddb839c5c1abce260c70963}{attr}
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_ae233030bf89194535f55800fe2dd8f05}{attr\+Dict}
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_a964b903ee7824416df2f32cf00b77644}{set\+Attr}
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_a4a724a27d4491869088867b22a18d44a}{sync\+File}
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_a13953a9da71b1f9e3f284536a525f890}{load\+Trace}
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_add441a867daedf7eb7deeef41d929a5c}{save\+Trace}
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_a6a8a4b76fb08dbe7303d7ba379fabd1a}{check\+Trace\+Item} (self, itemname, localitem, changedlist)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_ad0b2c84e52dd7f1fc2d94e9a983e2fad}{check\+Trace}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_a077f17e52165a436ad5390b2fe244ecd}{attr\+Dict\+Inst}
+\item 
+\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_a50e6444b02d5847a6afbb976b45a200b}{attr\+List}
+\item 
+\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_af2768fe77299d03ee0bb4f703254f593}{mapped\+Range}
+\item 
+\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_aa72086d18253a4c676edfc39e11ca2ef}{trace}
+\item 
+\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_ac56f6f65211948add4b2fa9192e44f41}{config}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}This class holds configuration data for a TraceContainer class. This is split into a separate class
+partially for historical reasons, since the old code had this as a separate class.
+
+This class is responsible for reading/writing the .cfg file associated with any traces. Even if we are
+using non-native trace format, the traces will STILL have a ChipWhisperer-specific .cfg file written
+with them.
+
+This choice means you aren't forced to import traces into ChipWhisperer-only format, and can for example
+you may wish to keep them in some MATLAB workspace format instead.
+\end{DoxyVerb}
+ 
+
+Inheritance diagram for software.\+chipwhisperer.\+common.\+traces.\+\_\+cfgfile.\+Trace\+Container\+Config\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=271pt]{d5/d83/classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for software.\+chipwhisperer.\+common.\+traces.\+\_\+cfgfile.\+Trace\+Container\+Config\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=271pt]{d3/d65/classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig__coll__graph}
+\end{center}
+\end{figure}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_a8d113e6450324993f8d5cad558ac31d3}{}\index{software\+::chipwhisperer\+::common\+::traces\+::\+\_\+cfgfile\+::\+Trace\+Container\+Config@{software\+::chipwhisperer\+::common\+::traces\+::\+\_\+cfgfile\+::\+Trace\+Container\+Config}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!software\+::chipwhisperer\+::common\+::traces\+::\+\_\+cfgfile\+::\+Trace\+Container\+Config@{software\+::chipwhisperer\+::common\+::traces\+::\+\_\+cfgfile\+::\+Trace\+Container\+Config}}
+\subsubsection[{\+\_\+\+\_\+init\+\_\+\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+traces.\+\_\+cfgfile.\+Trace\+Container\+Config.\+\_\+\+\_\+init\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{configfile = {\ttfamily None}}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_a8d113e6450324993f8d5cad558ac31d3}
+
+
+Notes on dictionary\+: order = order of display, needed since dictionary is unordered value = value of variable desc = description of variable changed = has value changed since being written to disk? header\+Label = short description/name used for header label in trace management dialog. 
+
+\begin{DoxyVerb}If a config file is given, will attempt to load that file\end{DoxyVerb}
+ 
+\begin{DoxyCode}
+92     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_a8d113e6450324993f8d5cad558ac31d3}{\_\_init\_\_}(self, configfile=None):
+93         \textcolor{stringliteral}{"""If a config file is given, will attempt to load that file"""}
+94         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_a077f17e52165a436ad5390b2fe244ecd}{attrDictInst} = \{
+95                 \textcolor{stringliteral}{"sectionName"}:\textcolor{stringliteral}{"Trace Config"},
+96                 \textcolor{stringliteral}{"moduleName"}:\textcolor{stringliteral}{"native"},
+97                 \textcolor{stringliteral}{"module"}:\textcolor{keywordtype}{None},
+98                 \textcolor{stringliteral}{"values"}:\{
+99                     \textcolor{stringliteral}{"format"}:\{\textcolor{stringliteral}{"order"}:0, \textcolor{stringliteral}{"value"}:\textcolor{stringliteral}{"native"}, \textcolor{stringliteral}{"desc"}:\textcolor{stringliteral}{"Native Format Type"}, \textcolor{stringliteral}{"changed"}:\textcolor{keyword}{False}, \textcolor{stringliteral}{"
+      headerLabel"}:\textcolor{stringliteral}{"Format"}, \textcolor{stringliteral}{"editable"}:\textcolor{keyword}{False}\},
+100                     \textcolor{stringliteral}{"numTraces"}:\{\textcolor{stringliteral}{"order"}:1, \textcolor{stringliteral}{"value"}:0, \textcolor{stringliteral}{"desc"}:\textcolor{stringliteral}{"Number of Traces in File"}, \textcolor{stringliteral}{"changed"}:\textcolor{keyword}{False}, \textcolor{stringliteral}{
+      "headerLabel"}:\textcolor{stringliteral}{"# Traces"}, \textcolor{stringliteral}{"editable"}:\textcolor{keyword}{False}\},
+101                     \textcolor{stringliteral}{"numPoints"}:\{\textcolor{stringliteral}{"order"}:2, \textcolor{stringliteral}{"value"}:0, \textcolor{stringliteral}{"desc"}:\textcolor{stringliteral}{"Number of Points per trace, assuming uniform
+      "}, \textcolor{stringliteral}{"changed"}:\textcolor{keyword}{False}, \textcolor{stringliteral}{"headerLabel"}:\textcolor{stringliteral}{"# Points"}, \textcolor{stringliteral}{"editable"}:\textcolor{keyword}{False}\},
+102                     \textcolor{stringliteral}{"date"}:\{\textcolor{stringliteral}{"order"}:3, \textcolor{stringliteral}{"value"}:\textcolor{stringliteral}{"1997-01-28 17:05:00"}, \textcolor{stringliteral}{"desc"}:\textcolor{stringliteral}{"Date of Capture YYYY-MM-DD
+       HH:MM:SS Format"}, \textcolor{stringliteral}{"changed"}:\textcolor{keyword}{False}, \textcolor{stringliteral}{"headerLabel"}:\textcolor{stringliteral}{"Date and Time of Capture"}, \textcolor{stringliteral}{"editable"}:\textcolor{keyword}{False}\},
+103                     \textcolor{stringliteral}{"prefix"}:\{\textcolor{stringliteral}{"order"}:4, \textcolor{stringliteral}{"value"}:\textcolor{keywordtype}{None}, \textcolor{stringliteral}{"desc"}:\textcolor{stringliteral}{"Prefix of all files if applicable"}, \textcolor{stringliteral}{"changed
+      "}:\textcolor{keyword}{False}\},
+104                     \textcolor{stringliteral}{"targetHW"}:\{\textcolor{stringliteral}{"order"}:5, \textcolor{stringliteral}{"value"}:\textcolor{stringliteral}{"unknown"}, \textcolor{stringliteral}{"desc"}:\textcolor{stringliteral}{"Description of Target (DUT) Hardware"}
+      , \textcolor{stringliteral}{"changed"}:\textcolor{keyword}{False}, \textcolor{stringliteral}{"headerLabel"}:\textcolor{stringliteral}{"Target Hardware"}, \textcolor{stringliteral}{"editable"}:\textcolor{keyword}{True}\},
+105                     \textcolor{stringliteral}{"targetSW"}:\{\textcolor{stringliteral}{"order"}:6, \textcolor{stringliteral}{"value"}:\textcolor{stringliteral}{"unknown"}, \textcolor{stringliteral}{"desc"}:\textcolor{stringliteral}{"Description of Target (DUT) Software"}
+      , \textcolor{stringliteral}{"changed"}:\textcolor{keyword}{False}, \textcolor{stringliteral}{"headerLabel"}:\textcolor{stringliteral}{"Target Software"}, \textcolor{stringliteral}{"editable"}:\textcolor{keyword}{True}\},
+106                     \textcolor{stringliteral}{"scopeName"}:\{\textcolor{stringliteral}{"order"}:7, \textcolor{stringliteral}{"value"}:\textcolor{stringliteral}{"unknown"}, \textcolor{stringliteral}{"desc"}:\textcolor{stringliteral}{"Scope Model/Description"}, \textcolor{stringliteral}{"changed"}:\textcolor{keyword}{
+      False}, \textcolor{stringliteral}{"headerLabel"}:\textcolor{stringliteral}{"Scope Module Name"}, \textcolor{stringliteral}{"editable"}:\textcolor{keyword}{True}\},
+107                     \textcolor{stringliteral}{"scopeSampleRate"}:\{\textcolor{stringliteral}{"order"}:8, \textcolor{stringliteral}{"value"}:0, \textcolor{stringliteral}{"desc"}:\textcolor{stringliteral}{"Sample Rate (s/sec)"}, \textcolor{stringliteral}{"changed"}:\textcolor{keyword}{False},
+       \textcolor{stringliteral}{"headerLabel"}:\textcolor{stringliteral}{"Sample Rate"}, \textcolor{stringliteral}{"editable"}:\textcolor{keyword}{True}\},
+108                     \textcolor{stringliteral}{"scopeYUnits"}:\{\textcolor{stringliteral}{"order"}:9, \textcolor{stringliteral}{"value"}:0, \textcolor{stringliteral}{"desc"}:\textcolor{stringliteral}{"Units of Y Points"}, \textcolor{stringliteral}{"changed"}:\textcolor{keyword}{False}, \textcolor{stringliteral}{"
+      editable"}:\textcolor{keyword}{True}\},
+109                     \textcolor{stringliteral}{"scopeXUnits"}:\{\textcolor{stringliteral}{"order"}:10, \textcolor{stringliteral}{"value"}:0, \textcolor{stringliteral}{"desc"}:\textcolor{stringliteral}{"Units of X Points"}, \textcolor{stringliteral}{"changed"}:\textcolor{keyword}{False}, \textcolor{stringliteral}{"
+      editable"}:\textcolor{keyword}{True}\},
+110                     \textcolor{stringliteral}{"notes"}:\{\textcolor{stringliteral}{"order"}:11, \textcolor{stringliteral}{"value"}:\textcolor{stringliteral}{""}, \textcolor{stringliteral}{"desc"}:\textcolor{stringliteral}{"Additional Notes about Capture Setup"}, \textcolor{stringliteral}{"
+      changed"}:\textcolor{keyword}{False}, \textcolor{stringliteral}{"headerLabel"}:\textcolor{stringliteral}{"Notes"}, \textcolor{stringliteral}{"editable"}:\textcolor{keyword}{True}\}                
+111                     \},
+112                 \}
+113     
+114         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_a50e6444b02d5847a6afbb976b45a200b}{attrList} = [self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_a077f17e52165a436ad5390b2fe244ecd}{attrDictInst}]
+115         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_af2768fe77299d03ee0bb4f703254f593}{mappedRange} = \textcolor{keywordtype}{None}
+116         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_aa72086d18253a4c676edfc39e11ca2ef}{trace} = \textcolor{keywordtype}{None}
+117         \textcolor{keywordflow}{if} configfile \textcolor{keywordflow}{is} \textcolor{keywordflow}{not} \textcolor{keywordtype}{None}:
+118             configfile = os.path.normpath(configfile)
+119         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_a61816b0fa98df80f2b36fc8d9373264a}{\_configfile} = configfile
+120 
+121         \textcolor{comment}{#Attempt load/sync}
+122         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_a13953a9da71b1f9e3f284536a525f890}{loadTrace}(configfile)
+123         
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_afda6373c5ddb839c5c1abce260c70963}{}\index{software\+::chipwhisperer\+::common\+::traces\+::\+\_\+cfgfile\+::\+Trace\+Container\+Config@{software\+::chipwhisperer\+::common\+::traces\+::\+\_\+cfgfile\+::\+Trace\+Container\+Config}!attr@{attr}}
+\index{attr@{attr}!software\+::chipwhisperer\+::common\+::traces\+::\+\_\+cfgfile\+::\+Trace\+Container\+Config@{software\+::chipwhisperer\+::common\+::traces\+::\+\_\+cfgfile\+::\+Trace\+Container\+Config}}
+\subsubsection[{attr}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+traces.\+\_\+cfgfile.\+Trace\+Container\+Config.\+attr (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{attr, }
+\item[{}]{module\+Name = {\ttfamily None}}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_afda6373c5ddb839c5c1abce260c70963}
+\begin{DoxyVerb}Get value of attribute specified from internal DB\end{DoxyVerb}
+ 
+
+References software.\+chipwhisperer.\+common.\+traces.\+Trace\+Container\+My\+S\+Q\+L.\+Trace\+Container\+My\+S\+Q\+L.\+attr\+Dict, and software.\+chipwhisperer.\+common.\+traces.\+\_\+cfgfile.\+Trace\+Container\+Config.\+attr\+Dict().
+
+
+\begin{DoxyCode}
+171     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_afda6373c5ddb839c5c1abce260c70963}{attr}(self, attr, moduleName=None):
+172         \textcolor{stringliteral}{"""Get value of attribute specified from internal DB"""}       
+173         \textcolor{keywordflow}{return} self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_ae233030bf89194535f55800fe2dd8f05}{attrDict}(attr, moduleName)[\textcolor{stringliteral}{"value"}]
+174     
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_ae233030bf89194535f55800fe2dd8f05}{}\index{software\+::chipwhisperer\+::common\+::traces\+::\+\_\+cfgfile\+::\+Trace\+Container\+Config@{software\+::chipwhisperer\+::common\+::traces\+::\+\_\+cfgfile\+::\+Trace\+Container\+Config}!attr\+Dict@{attr\+Dict}}
+\index{attr\+Dict@{attr\+Dict}!software\+::chipwhisperer\+::common\+::traces\+::\+\_\+cfgfile\+::\+Trace\+Container\+Config@{software\+::chipwhisperer\+::common\+::traces\+::\+\_\+cfgfile\+::\+Trace\+Container\+Config}}
+\subsubsection[{attr\+Dict}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+traces.\+\_\+cfgfile.\+Trace\+Container\+Config.\+attr\+Dict (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{attr, }
+\item[{}]{module\+Name = {\ttfamily None}}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_ae233030bf89194535f55800fe2dd8f05}
+\begin{DoxyVerb}Get dictionary of attribute specified, includes additional info such as flags\end{DoxyVerb}
+ 
+
+References software.\+chipwhisperer.\+common.\+traces.\+\_\+cfgfile.\+Trace\+Container\+Config.\+module(), and software.\+chipwhisperer.\+common.\+api.\+Extended\+Parameter.\+maintest.\+module.
+
+
+
+Referenced by software.\+chipwhisperer.\+common.\+traces.\+\_\+cfgfile.\+Trace\+Container\+Config.\+attr().
+
+
+\begin{DoxyCode}
+175     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_ae233030bf89194535f55800fe2dd8f05}{attrDict}(self, attr, moduleName=None):
+176         \textcolor{stringliteral}{"""Get dictionary of attribute specified, includes additional info such as flags"""}
+177         mod = self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_ab7a5f610e228901eeb43a4c90e48ca9a}{module}(attr,moduleName)        
+178         \textcolor{keywordflow}{return} mod[\textcolor{stringliteral}{"values"}][attr]
+179         
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_aa376f8c93beab5127bce0a5325f2dcbd}{}\index{software\+::chipwhisperer\+::common\+::traces\+::\+\_\+cfgfile\+::\+Trace\+Container\+Config@{software\+::chipwhisperer\+::common\+::traces\+::\+\_\+cfgfile\+::\+Trace\+Container\+Config}!attr\+Header\+Values@{attr\+Header\+Values}}
+\index{attr\+Header\+Values@{attr\+Header\+Values}!software\+::chipwhisperer\+::common\+::traces\+::\+\_\+cfgfile\+::\+Trace\+Container\+Config@{software\+::chipwhisperer\+::common\+::traces\+::\+\_\+cfgfile\+::\+Trace\+Container\+Config}}
+\subsubsection[{attr\+Header\+Values}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+traces.\+\_\+cfgfile.\+Trace\+Container\+Config.\+attr\+Header\+Values (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_aa376f8c93beab5127bce0a5325f2dcbd}
+\begin{DoxyVerb}Used to list all values in {"name":name, "header":header title, "desc":description} dictionary\end{DoxyVerb}
+ 
+
+References software.\+chipwhisperer.\+common.\+traces.\+\_\+cfgfile.\+Trace\+Container\+Config.\+attr\+List.
+
+
+\begin{DoxyCode}
+145     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_aa376f8c93beab5127bce0a5325f2dcbd}{attrHeaderValues}(self):
+146         \textcolor{stringliteral}{"""Used to list all values in \{"name":name, "header":header title, "desc":description\} dictionary
+      """}
+147         lst = []
+148         
+149         \textcolor{keywordflow}{for} i \textcolor{keywordflow}{in} self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_a50e6444b02d5847a6afbb976b45a200b}{attrList}:
+150             \textcolor{keywordflow}{for} p \textcolor{keywordflow}{in} i[\textcolor{stringliteral}{"values"}].iterkeys():
+151                 \textcolor{keywordflow}{try}:
+152                     lst += [\{ \textcolor{stringliteral}{"name"}:p, \textcolor{stringliteral}{"header"}:i[\textcolor{stringliteral}{"values"}][p][\textcolor{stringliteral}{"headerLabel"}], \textcolor{stringliteral}{"desc"}:i[\textcolor{stringliteral}{"values"}][p][\textcolor{stringliteral}{"desc
+      "}], \textcolor{stringliteral}{"order"}:i[\textcolor{stringliteral}{"values"}][p][\textcolor{stringliteral}{"order"}] \}]
+153                 \textcolor{keywordflow}{except} KeyError:
+154                     \textcolor{comment}{#If we don't have headerLabel type, we skip this item}
+155                     \textcolor{keywordflow}{pass}
+156         
+157         lst = sorted(lst, key=\textcolor{keyword}{lambda} k: k[\textcolor{stringliteral}{"order"}]) 
+158         
+159         \textcolor{keywordflow}{return} lst
+160      
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_ad0b2c84e52dd7f1fc2d94e9a983e2fad}{}\index{software\+::chipwhisperer\+::common\+::traces\+::\+\_\+cfgfile\+::\+Trace\+Container\+Config@{software\+::chipwhisperer\+::common\+::traces\+::\+\_\+cfgfile\+::\+Trace\+Container\+Config}!check\+Trace@{check\+Trace}}
+\index{check\+Trace@{check\+Trace}!software\+::chipwhisperer\+::common\+::traces\+::\+\_\+cfgfile\+::\+Trace\+Container\+Config@{software\+::chipwhisperer\+::common\+::traces\+::\+\_\+cfgfile\+::\+Trace\+Container\+Config}}
+\subsubsection[{check\+Trace}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+traces.\+\_\+cfgfile.\+Trace\+Container\+Config.\+check\+Trace (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{configfile = {\ttfamily None}}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_ad0b2c84e52dd7f1fc2d94e9a983e2fad}
+
+
+References software.\+chipwhisperer.\+common.\+traces.\+\_\+base.\+Trace\+Container.\+configfile.
+
+
+\begin{DoxyCode}
+261     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_ad0b2c84e52dd7f1fc2d94e9a983e2fad}{checkTrace}(self, configfile = None):
+262         \textcolor{keywordflow}{if} configfile == \textcolor{keywordtype}{None}:
+263             configfile = self.configfile
+264       
+265         changed = \textcolor{keyword}{True}
+266         
+267         \textcolor{comment}{#TODO: THIS}
+268 
+269         \textcolor{keywordflow}{return} changed
+270 \end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_a6a8a4b76fb08dbe7303d7ba379fabd1a}{}\index{software\+::chipwhisperer\+::common\+::traces\+::\+\_\+cfgfile\+::\+Trace\+Container\+Config@{software\+::chipwhisperer\+::common\+::traces\+::\+\_\+cfgfile\+::\+Trace\+Container\+Config}!check\+Trace\+Item@{check\+Trace\+Item}}
+\index{check\+Trace\+Item@{check\+Trace\+Item}!software\+::chipwhisperer\+::common\+::traces\+::\+\_\+cfgfile\+::\+Trace\+Container\+Config@{software\+::chipwhisperer\+::common\+::traces\+::\+\_\+cfgfile\+::\+Trace\+Container\+Config}}
+\subsubsection[{check\+Trace\+Item}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+traces.\+\_\+cfgfile.\+Trace\+Container\+Config.\+check\+Trace\+Item (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{itemname, }
+\item[{}]{localitem, }
+\item[{}]{changedlist}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_a6a8a4b76fb08dbe7303d7ba379fabd1a}
+
+\begin{DoxyCode}
+255     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_a6a8a4b76fb08dbe7303d7ba379fabd1a}{checkTraceItem}(self, itemname, localitem, changedlist):
+256         \textcolor{keywordflow}{if} localitem != self.\_\_dict\_\_[itemname]:                      
+257             changedlist.append(itemname)
+258             \textcolor{keywordflow}{return} \textcolor{keyword}{True}
+259         \textcolor{keywordflow}{return} \textcolor{keyword}{False}        
+260 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_a0f7e3b0cf2c971910bc9d1bebcef88e3}{}\index{software\+::chipwhisperer\+::common\+::traces\+::\+\_\+cfgfile\+::\+Trace\+Container\+Config@{software\+::chipwhisperer\+::common\+::traces\+::\+\_\+cfgfile\+::\+Trace\+Container\+Config}!config\+Filename@{config\+Filename}}
+\index{config\+Filename@{config\+Filename}!software\+::chipwhisperer\+::common\+::traces\+::\+\_\+cfgfile\+::\+Trace\+Container\+Config@{software\+::chipwhisperer\+::common\+::traces\+::\+\_\+cfgfile\+::\+Trace\+Container\+Config}}
+\subsubsection[{config\+Filename}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+traces.\+\_\+cfgfile.\+Trace\+Container\+Config.\+config\+Filename (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_a0f7e3b0cf2c971910bc9d1bebcef88e3}
+\begin{DoxyVerb}Get Config Filename\end{DoxyVerb}
+ 
+
+References software.\+chipwhisperer.\+common.\+traces.\+\_\+cfgfile.\+Trace\+Container\+Config.\+\_\+configfile.
+
+
+\begin{DoxyCode}
+167     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_a0f7e3b0cf2c971910bc9d1bebcef88e3}{configFilename}(self):
+168         \textcolor{stringliteral}{"""Get Config Filename"""}
+169         \textcolor{keywordflow}{return} self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_a61816b0fa98df80f2b36fc8d9373264a}{\_configfile}
+170      
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_a13953a9da71b1f9e3f284536a525f890}{}\index{software\+::chipwhisperer\+::common\+::traces\+::\+\_\+cfgfile\+::\+Trace\+Container\+Config@{software\+::chipwhisperer\+::common\+::traces\+::\+\_\+cfgfile\+::\+Trace\+Container\+Config}!load\+Trace@{load\+Trace}}
+\index{load\+Trace@{load\+Trace}!software\+::chipwhisperer\+::common\+::traces\+::\+\_\+cfgfile\+::\+Trace\+Container\+Config@{software\+::chipwhisperer\+::common\+::traces\+::\+\_\+cfgfile\+::\+Trace\+Container\+Config}}
+\subsubsection[{load\+Trace}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+traces.\+\_\+cfgfile.\+Trace\+Container\+Config.\+load\+Trace (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{configfile = {\ttfamily None}}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_a13953a9da71b1f9e3f284536a525f890}
+\begin{DoxyVerb}Load config file. Syncs internal DB to File\end{DoxyVerb}
+ 
+
+References software.\+chipwhisperer.\+common.\+traces.\+\_\+cfgfile.\+Trace\+Container\+Config.\+\_\+configfile.
+
+
+\begin{DoxyCode}
+239     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_a13953a9da71b1f9e3f284536a525f890}{loadTrace}(self, configfile=None):
+240         \textcolor{stringliteral}{"""Load config file. Syncs internal DB to File"""}
+241         \textcolor{keywordflow}{if} configfile:
+242             self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_a61816b0fa98df80f2b36fc8d9373264a}{\_configfile} = os.path.normpath(configfile)
+243             \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} os.path.isfile(configfile):
+244                 \textcolor{keywordflow}{raise} Exception(\textcolor{stringliteral}{"Error: Trace set config file doesn't exists: "} + configfile)
+245 
+246         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_ac56f6f65211948add4b2fa9192e44f41}{config} = ConfigObj(self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_a61816b0fa98df80f2b36fc8d9373264a}{\_configfile})
+247         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_a4a724a27d4491869088867b22a18d44a}{syncFile}()
+248         
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_ab7a5f610e228901eeb43a4c90e48ca9a}{}\index{software\+::chipwhisperer\+::common\+::traces\+::\+\_\+cfgfile\+::\+Trace\+Container\+Config@{software\+::chipwhisperer\+::common\+::traces\+::\+\_\+cfgfile\+::\+Trace\+Container\+Config}!module@{module}}
+\index{module@{module}!software\+::chipwhisperer\+::common\+::traces\+::\+\_\+cfgfile\+::\+Trace\+Container\+Config@{software\+::chipwhisperer\+::common\+::traces\+::\+\_\+cfgfile\+::\+Trace\+Container\+Config}}
+\subsubsection[{module}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+traces.\+\_\+cfgfile.\+Trace\+Container\+Config.\+module (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{attr, }
+\item[{}]{module\+Name = {\ttfamily None}}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_ab7a5f610e228901eeb43a4c90e48ca9a}
+\begin{DoxyVerb}Given an attribute & possibly module name, return reference to module dictionary\end{DoxyVerb}
+ 
+
+References software.\+chipwhisperer.\+common.\+traces.\+\_\+cfgfile.\+Trace\+Container\+Config.\+attr\+List.
+
+
+
+Referenced by software.\+chipwhisperer.\+common.\+traces.\+\_\+cfgfile.\+Trace\+Container\+Config.\+attr\+Dict(), and software.\+chipwhisperer.\+common.\+traces.\+\_\+cfgfile.\+Trace\+Container\+Config.\+set\+Attr().
+
+
+\begin{DoxyCode}
+124     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_ab7a5f610e228901eeb43a4c90e48ca9a}{module}(self, attr, moduleName=None):
+125         \textcolor{stringliteral}{"""Given an attribute & possibly module name, return reference to module dictionary"""}
+126         module = \textcolor{keywordtype}{None}
+127                 
+128         \textcolor{keywordflow}{if} moduleName == \textcolor{keywordtype}{None}:
+129             \textcolor{keywordflow}{for} i \textcolor{keywordflow}{in} self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_a50e6444b02d5847a6afbb976b45a200b}{attrList}:
+130                 \textcolor{keywordflow}{if} attr \textcolor{keywordflow}{in} i[\textcolor{stringliteral}{"values"}]:
+131                     module = i
+132                     \textcolor{keywordflow}{break}
+133         \textcolor{keywordflow}{else}:
+134             \textcolor{keywordflow}{for} i \textcolor{keywordflow}{in} self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_a50e6444b02d5847a6afbb976b45a200b}{attrList}:
+135                 \textcolor{keywordflow}{if} (i[\textcolor{stringliteral}{"moduleName"}] == moduleName) | (i[\textcolor{stringliteral}{"sectionName"}] == moduleName):
+136                     \textcolor{keywordflow}{if} attr \textcolor{keywordflow}{in} i[\textcolor{stringliteral}{"values"}]:
+137                         module = i
+138                         \textcolor{keywordflow}{break}
+139                 
+140         \textcolor{keywordflow}{if} module == \textcolor{keywordtype}{None}:
+141             \textcolor{keywordflow}{raise} ValueError(\textcolor{stringliteral}{"Invalid attribute: %s"}%attr)
+142         
+143         \textcolor{keywordflow}{return} module
+144         
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_add441a867daedf7eb7deeef41d929a5c}{}\index{software\+::chipwhisperer\+::common\+::traces\+::\+\_\+cfgfile\+::\+Trace\+Container\+Config@{software\+::chipwhisperer\+::common\+::traces\+::\+\_\+cfgfile\+::\+Trace\+Container\+Config}!save\+Trace@{save\+Trace}}
+\index{save\+Trace@{save\+Trace}!software\+::chipwhisperer\+::common\+::traces\+::\+\_\+cfgfile\+::\+Trace\+Container\+Config@{software\+::chipwhisperer\+::common\+::traces\+::\+\_\+cfgfile\+::\+Trace\+Container\+Config}}
+\subsubsection[{save\+Trace}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+traces.\+\_\+cfgfile.\+Trace\+Container\+Config.\+save\+Trace (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{configfile = {\ttfamily None}}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_add441a867daedf7eb7deeef41d929a5c}
+\begin{DoxyVerb}Save internal DB to Config File\end{DoxyVerb}
+ 
+
+References software.\+chipwhisperer.\+common.\+traces.\+\_\+cfgfile.\+Trace\+Container\+Config.\+\_\+configfile, and software.\+chipwhisperer.\+common.\+traces.\+\_\+cfgfile.\+Trace\+Container\+Config.\+sync\+File().
+
+
+\begin{DoxyCode}
+249     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_add441a867daedf7eb7deeef41d929a5c}{saveTrace}(self, configfile = None):
+250         \textcolor{stringliteral}{"""Save internal DB to Config File"""}
+251         self.config.filename = self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_a61816b0fa98df80f2b36fc8d9373264a}{\_configfile}
+252         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_a4a724a27d4491869088867b22a18d44a}{syncFile}()     
+253         self.config.write()
+254 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_a964b903ee7824416df2f32cf00b77644}{}\index{software\+::chipwhisperer\+::common\+::traces\+::\+\_\+cfgfile\+::\+Trace\+Container\+Config@{software\+::chipwhisperer\+::common\+::traces\+::\+\_\+cfgfile\+::\+Trace\+Container\+Config}!set\+Attr@{set\+Attr}}
+\index{set\+Attr@{set\+Attr}!software\+::chipwhisperer\+::common\+::traces\+::\+\_\+cfgfile\+::\+Trace\+Container\+Config@{software\+::chipwhisperer\+::common\+::traces\+::\+\_\+cfgfile\+::\+Trace\+Container\+Config}}
+\subsubsection[{set\+Attr}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+traces.\+\_\+cfgfile.\+Trace\+Container\+Config.\+set\+Attr (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{attr, }
+\item[{}]{value, }
+\item[{}]{module\+Name = {\ttfamily None}}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_a964b903ee7824416df2f32cf00b77644}
+\begin{DoxyVerb}Set value of attribute in internal DB\end{DoxyVerb}
+ 
+
+References software.\+chipwhisperer.\+common.\+traces.\+\_\+cfgfile.\+Trace\+Container\+Config.\+module(), and software.\+chipwhisperer.\+common.\+api.\+Extended\+Parameter.\+maintest.\+module.
+
+
+\begin{DoxyCode}
+180     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_a964b903ee7824416df2f32cf00b77644}{setAttr}(self, attr, value, moduleName=None):
+181         \textcolor{stringliteral}{"""Set value of attribute in internal DB"""}
+182         mod = self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_ab7a5f610e228901eeb43a4c90e48ca9a}{module}(attr,moduleName)
+183         mod[\textcolor{stringliteral}{"values"}][attr][\textcolor{stringliteral}{"value"}] = value
+184         mod[\textcolor{stringliteral}{"values"}][attr][\textcolor{stringliteral}{"changed"}] = \textcolor{keyword}{True} 
+185                
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_a1ead14c1a015e51d41bd044b24163849}{}\index{software\+::chipwhisperer\+::common\+::traces\+::\+\_\+cfgfile\+::\+Trace\+Container\+Config@{software\+::chipwhisperer\+::common\+::traces\+::\+\_\+cfgfile\+::\+Trace\+Container\+Config}!set\+Config\+Filename@{set\+Config\+Filename}}
+\index{set\+Config\+Filename@{set\+Config\+Filename}!software\+::chipwhisperer\+::common\+::traces\+::\+\_\+cfgfile\+::\+Trace\+Container\+Config@{software\+::chipwhisperer\+::common\+::traces\+::\+\_\+cfgfile\+::\+Trace\+Container\+Config}}
+\subsubsection[{set\+Config\+Filename}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+traces.\+\_\+cfgfile.\+Trace\+Container\+Config.\+set\+Config\+Filename (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{fname}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_a1ead14c1a015e51d41bd044b24163849}
+\begin{DoxyVerb}Set the config filename, WITHOUT syncronizing internal DB to File. Use load or save for this feature.\end{DoxyVerb}
+ 
+
+References software.\+chipwhisperer.\+common.\+traces.\+\_\+cfgfile.\+Trace\+Container\+Config.\+\_\+configfile.
+
+
+\begin{DoxyCode}
+161     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_a1ead14c1a015e51d41bd044b24163849}{setConfigFilename}(self, fname):
+162         \textcolor{stringliteral}{"""Set the config filename, WITHOUT syncronizing internal DB to File. Use load or save for this
+       feature."""}
+163         \textcolor{keywordflow}{if} fname \textcolor{keywordflow}{is} \textcolor{keywordflow}{not} \textcolor{keywordtype}{None}:
+164             fname = os.path.normpath(fname)
+165         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_a61816b0fa98df80f2b36fc8d9373264a}{\_configfile} = fname
+166         
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_a4a724a27d4491869088867b22a18d44a}{}\index{software\+::chipwhisperer\+::common\+::traces\+::\+\_\+cfgfile\+::\+Trace\+Container\+Config@{software\+::chipwhisperer\+::common\+::traces\+::\+\_\+cfgfile\+::\+Trace\+Container\+Config}!sync\+File@{sync\+File}}
+\index{sync\+File@{sync\+File}!software\+::chipwhisperer\+::common\+::traces\+::\+\_\+cfgfile\+::\+Trace\+Container\+Config@{software\+::chipwhisperer\+::common\+::traces\+::\+\_\+cfgfile\+::\+Trace\+Container\+Config}}
+\subsubsection[{sync\+File}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+traces.\+\_\+cfgfile.\+Trace\+Container\+Config.\+sync\+File (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{sectionname = {\ttfamily None}}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_a4a724a27d4491869088867b22a18d44a}
+\begin{DoxyVerb}Sync the internal DB cache to the .cfg file specified already, basically this can be a save or load.
+
+The CHANGED flag is used to decide what to do. If the 'changed' flag is FALSE in the internal DB,
+the disk has priority. Any attributes not in the disk .cfg file will be taken from the internal DB.
+
+If the 'changed' flag of an attribute is TRUE, the internal DB will overwrite the disk file.
+\end{DoxyVerb}
+ 
+
+References software.\+chipwhisperer.\+common.\+traces.\+\_\+cfgfile.\+Trace\+Container\+Config.\+attr\+List, software.\+chipwhisperer.\+common.\+traces.\+\_\+base.\+Trace\+Container.\+config, software.\+chipwhisperer.\+common.\+api.\+Project\+Format.\+Project\+Format.\+config, and software.\+chipwhisperer.\+common.\+traces.\+\_\+cfgfile.\+Trace\+Container\+Config.\+config.
+
+
+
+Referenced by software.\+chipwhisperer.\+common.\+traces.\+\_\+cfgfile.\+Trace\+Container\+Config.\+save\+Trace().
+
+
+\begin{DoxyCode}
+186     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_a4a724a27d4491869088867b22a18d44a}{syncFile}(self, sectionname=None):
+187         \textcolor{stringliteral}{"""}
+188 \textcolor{stringliteral}{        Sync the internal DB cache to the .cfg file specified already, basically this can be a save or
+       load.}
+189 \textcolor{stringliteral}{        }
+190 \textcolor{stringliteral}{        The CHANGED flag is used to decide what to do. If the 'changed' flag is FALSE in the internal DB,}
+191 \textcolor{stringliteral}{        the disk has priority. Any attributes not in the disk .cfg file will be taken from the internal DB.}
+192 \textcolor{stringliteral}{        }
+193 \textcolor{stringliteral}{        If the 'changed' flag of an attribute is TRUE, the internal DB will overwrite the disk file.}
+194 \textcolor{stringliteral}{        """}
+195          
+196         debug = \textcolor{keyword}{False}
+197 
+198         \textcolor{keywordflow}{for} ad \textcolor{keywordflow}{in} self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_a50e6444b02d5847a6afbb976b45a200b}{attrList}:
+199 
+200             \textcolor{comment}{# If user only wishes to update a certain section do that}
+201             \textcolor{keywordflow}{if} sectionname \textcolor{keywordflow}{is} \textcolor{keywordflow}{not} \textcolor{keywordtype}{None}:
+202                 \textcolor{keywordflow}{if} ad[\textcolor{stringliteral}{"sectionName"}] != sectionname:
+203                     \textcolor{keywordflow}{continue}
+204 
+205             sn = ad[\textcolor{stringliteral}{"sectionName"}]
+206             
+207             \textcolor{comment}{#Does section exist?}
+208             \textcolor{keywordflow}{try}:
+209                 self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_ac56f6f65211948add4b2fa9192e44f41}{config}[sn]
+210                 \textcolor{keywordflow}{if} debug:
+211                     \textcolor{keywordflow}{print} \textcolor{stringliteral}{"Section %s found"}%sn
+212             \textcolor{keywordflow}{except} KeyError:
+213                 self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_ac56f6f65211948add4b2fa9192e44f41}{config}[sn] = \{\}
+214                 \textcolor{keywordflow}{if} debug:
+215                     \textcolor{keywordflow}{print} \textcolor{stringliteral}{"Section %s not found"}%sn
+216                 
+217             \textcolor{comment}{#Check each item}
+218             \textcolor{keywordflow}{for} item \textcolor{keywordflow}{in} ad[\textcolor{stringliteral}{"values"}].iterkeys():
+219                 \textcolor{keywordflow}{try}:
+220                     self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_ac56f6f65211948add4b2fa9192e44f41}{config}[sn][item]
+221                     
+222                     \textcolor{comment}{#Check priority}
+223                     \textcolor{keywordflow}{if} ad[\textcolor{stringliteral}{"values"}][item][\textcolor{stringliteral}{"changed"}] == \textcolor{keyword}{False}:                        
+224                         ad[\textcolor{stringliteral}{"values"}][item][\textcolor{stringliteral}{"value"}] = self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_ac56f6f65211948add4b2fa9192e44f41}{config}[sn][item]
+225                         \textcolor{keywordflow}{if} debug:
+226                             \textcolor{keywordflow}{print} \textcolor{stringliteral}{"%s from configfile = "}%item,
+227                             \textcolor{keywordflow}{print} self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_ac56f6f65211948add4b2fa9192e44f41}{config}[sn][item]
+228                     \textcolor{keywordflow}{else}:
+229                         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_ac56f6f65211948add4b2fa9192e44f41}{config}[sn][item] = ad[\textcolor{stringliteral}{"values"}][item][\textcolor{stringliteral}{"value"}]
+230                         \textcolor{keywordflow}{if} debug:
+231                             \textcolor{keywordflow}{print} \textcolor{stringliteral}{"%s from cache = "}%item,
+232                             \textcolor{keywordflow}{print} ad[\textcolor{stringliteral}{"values"}][item][\textcolor{stringliteral}{"value"}]
+233                 
+234                 \textcolor{keywordflow}{except} KeyError:
+235                     self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_ac56f6f65211948add4b2fa9192e44f41}{config}[sn][item] = ad[\textcolor{stringliteral}{"values"}][item][\textcolor{stringliteral}{"value"}]
+236                     \textcolor{keywordflow}{if} debug: 
+237                         \textcolor{keywordflow}{print} \textcolor{stringliteral}{"%s missing in cfg file"}%item                   
+238         
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_a077f17e52165a436ad5390b2fe244ecd}{}\index{software\+::chipwhisperer\+::common\+::traces\+::\+\_\+cfgfile\+::\+Trace\+Container\+Config@{software\+::chipwhisperer\+::common\+::traces\+::\+\_\+cfgfile\+::\+Trace\+Container\+Config}!attr\+Dict\+Inst@{attr\+Dict\+Inst}}
+\index{attr\+Dict\+Inst@{attr\+Dict\+Inst}!software\+::chipwhisperer\+::common\+::traces\+::\+\_\+cfgfile\+::\+Trace\+Container\+Config@{software\+::chipwhisperer\+::common\+::traces\+::\+\_\+cfgfile\+::\+Trace\+Container\+Config}}
+\subsubsection[{attr\+Dict\+Inst}]{\setlength{\rightskip}{0pt plus 5cm}software.\+chipwhisperer.\+common.\+traces.\+\_\+cfgfile.\+Trace\+Container\+Config.\+attr\+Dict\+Inst}\label{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_a077f17e52165a436ad5390b2fe244ecd}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_a50e6444b02d5847a6afbb976b45a200b}{}\index{software\+::chipwhisperer\+::common\+::traces\+::\+\_\+cfgfile\+::\+Trace\+Container\+Config@{software\+::chipwhisperer\+::common\+::traces\+::\+\_\+cfgfile\+::\+Trace\+Container\+Config}!attr\+List@{attr\+List}}
+\index{attr\+List@{attr\+List}!software\+::chipwhisperer\+::common\+::traces\+::\+\_\+cfgfile\+::\+Trace\+Container\+Config@{software\+::chipwhisperer\+::common\+::traces\+::\+\_\+cfgfile\+::\+Trace\+Container\+Config}}
+\subsubsection[{attr\+List}]{\setlength{\rightskip}{0pt plus 5cm}software.\+chipwhisperer.\+common.\+traces.\+\_\+cfgfile.\+Trace\+Container\+Config.\+attr\+List}\label{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_a50e6444b02d5847a6afbb976b45a200b}
+
+
+Referenced by software.\+chipwhisperer.\+common.\+traces.\+\_\+cfgfile.\+Trace\+Container\+Config.\+attr\+Header\+Values(), software.\+chipwhisperer.\+common.\+traces.\+\_\+cfgfile.\+Trace\+Container\+Config.\+module(), and software.\+chipwhisperer.\+common.\+traces.\+\_\+cfgfile.\+Trace\+Container\+Config.\+sync\+File().
+
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_ac56f6f65211948add4b2fa9192e44f41}{}\index{software\+::chipwhisperer\+::common\+::traces\+::\+\_\+cfgfile\+::\+Trace\+Container\+Config@{software\+::chipwhisperer\+::common\+::traces\+::\+\_\+cfgfile\+::\+Trace\+Container\+Config}!config@{config}}
+\index{config@{config}!software\+::chipwhisperer\+::common\+::traces\+::\+\_\+cfgfile\+::\+Trace\+Container\+Config@{software\+::chipwhisperer\+::common\+::traces\+::\+\_\+cfgfile\+::\+Trace\+Container\+Config}}
+\subsubsection[{config}]{\setlength{\rightskip}{0pt plus 5cm}software.\+chipwhisperer.\+common.\+traces.\+\_\+cfgfile.\+Trace\+Container\+Config.\+config}\label{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_ac56f6f65211948add4b2fa9192e44f41}
+
+
+Referenced by software.\+chipwhisperer.\+common.\+traces.\+\_\+cfgfile.\+Trace\+Container\+Config.\+sync\+File().
+
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_af2768fe77299d03ee0bb4f703254f593}{}\index{software\+::chipwhisperer\+::common\+::traces\+::\+\_\+cfgfile\+::\+Trace\+Container\+Config@{software\+::chipwhisperer\+::common\+::traces\+::\+\_\+cfgfile\+::\+Trace\+Container\+Config}!mapped\+Range@{mapped\+Range}}
+\index{mapped\+Range@{mapped\+Range}!software\+::chipwhisperer\+::common\+::traces\+::\+\_\+cfgfile\+::\+Trace\+Container\+Config@{software\+::chipwhisperer\+::common\+::traces\+::\+\_\+cfgfile\+::\+Trace\+Container\+Config}}
+\subsubsection[{mapped\+Range}]{\setlength{\rightskip}{0pt plus 5cm}software.\+chipwhisperer.\+common.\+traces.\+\_\+cfgfile.\+Trace\+Container\+Config.\+mapped\+Range}\label{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_af2768fe77299d03ee0bb4f703254f593}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_aa72086d18253a4c676edfc39e11ca2ef}{}\index{software\+::chipwhisperer\+::common\+::traces\+::\+\_\+cfgfile\+::\+Trace\+Container\+Config@{software\+::chipwhisperer\+::common\+::traces\+::\+\_\+cfgfile\+::\+Trace\+Container\+Config}!trace@{trace}}
+\index{trace@{trace}!software\+::chipwhisperer\+::common\+::traces\+::\+\_\+cfgfile\+::\+Trace\+Container\+Config@{software\+::chipwhisperer\+::common\+::traces\+::\+\_\+cfgfile\+::\+Trace\+Container\+Config}}
+\subsubsection[{trace}]{\setlength{\rightskip}{0pt plus 5cm}software.\+chipwhisperer.\+common.\+traces.\+\_\+cfgfile.\+Trace\+Container\+Config.\+trace}\label{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig_aa72086d18253a4c676edfc39e11ca2ef}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{__cfgfile_8py}{\+\_\+cfgfile.\+py}\end{DoxyCompactItemize}

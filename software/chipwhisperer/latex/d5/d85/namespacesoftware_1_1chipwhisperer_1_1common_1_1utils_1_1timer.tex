@@ -1,0 +1,55 @@
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1timer}{}\section{software.\+chipwhisperer.\+common.\+utils.\+timer Namespace Reference}
+\label{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1timer}\index{software.\+chipwhisperer.\+common.\+utils.\+timer@{software.\+chipwhisperer.\+common.\+utils.\+timer}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1timer_1_1FakeQTimer}{Fake\+Q\+Timer}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1timer_a5bc9a91bcf02a8990381ded4d9ca7872}{run\+Task}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1timer_aa4c1e5572f5ed6511d6902a02ad05d06}{Timer} = \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1timer_1_1FakeQTimer}{Fake\+Q\+Timer}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1timer_a5bc9a91bcf02a8990381ded4d9ca7872}{}\index{software\+::chipwhisperer\+::common\+::utils\+::timer@{software\+::chipwhisperer\+::common\+::utils\+::timer}!run\+Task@{run\+Task}}
+\index{run\+Task@{run\+Task}!software\+::chipwhisperer\+::common\+::utils\+::timer@{software\+::chipwhisperer\+::common\+::utils\+::timer}}
+\subsubsection[{run\+Task}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+utils.\+timer.\+run\+Task (
+\begin{DoxyParamCaption}
+\item[{}]{task, }
+\item[{}]{timeout\+\_\+in\+\_\+s, }
+\item[{}]{single\+\_\+shot = {\ttfamily False}, }
+\item[{}]{start\+\_\+timer = {\ttfamily False}}
+\end{DoxyParamCaption}
+)}\label{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1timer_a5bc9a91bcf02a8990381ded4d9ca7872}
+
+
+References software.\+chipwhisperer.\+common.\+utils.\+timer.\+Timer.
+
+
+\begin{DoxyCode}
+57 \textcolor{keyword}{def }\hyperlink{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1timer_a5bc9a91bcf02a8990381ded4d9ca7872}{runTask}(task, timeout\_in\_s, single\_shot = False, start\_timer = False):
+58     timer = \hyperlink{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1timer_aa4c1e5572f5ed6511d6902a02ad05d06}{Timer}()
+59     timer.timeout.connect(task)
+60     timer.setInterval(int(timeout\_in\_s * 1000))
+61     timer.setSingleShot(single\_shot)
+62     \textcolor{keywordflow}{if} start\_timer:
+63         timer.start()
+64     \textcolor{keywordflow}{return} timer
+65 \end{DoxyCode}
+
+
+\subsection{Variable Documentation}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1timer_aa4c1e5572f5ed6511d6902a02ad05d06}{}\index{software\+::chipwhisperer\+::common\+::utils\+::timer@{software\+::chipwhisperer\+::common\+::utils\+::timer}!Timer@{Timer}}
+\index{Timer@{Timer}!software\+::chipwhisperer\+::common\+::utils\+::timer@{software\+::chipwhisperer\+::common\+::utils\+::timer}}
+\subsubsection[{Timer}]{\setlength{\rightskip}{0pt plus 5cm}software.\+chipwhisperer.\+common.\+utils.\+timer.\+Timer = {\bf Fake\+Q\+Timer}}\label{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1timer_aa4c1e5572f5ed6511d6902a02ad05d06}
+
+
+Referenced by software.\+chipwhisperer.\+common.\+utils.\+timer.\+run\+Task().
+

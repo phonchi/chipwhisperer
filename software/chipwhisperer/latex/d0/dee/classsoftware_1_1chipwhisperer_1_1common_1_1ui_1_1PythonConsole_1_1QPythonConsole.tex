@@ -1,0 +1,168 @@
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1PythonConsole_1_1QPythonConsole}{}\section{software.\+chipwhisperer.\+common.\+ui.\+Python\+Console.\+Q\+Python\+Console Class Reference}
+\label{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1PythonConsole_1_1QPythonConsole}\index{software.\+chipwhisperer.\+common.\+ui.\+Python\+Console.\+Q\+Python\+Console@{software.\+chipwhisperer.\+common.\+ui.\+Python\+Console.\+Q\+Python\+Console}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1PythonConsole_1_1QPythonConsole_a515d570004b0b948e0e0a074ba03d8a5}{\+\_\+\+\_\+init\+\_\+\+\_\+}
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1PythonConsole_1_1QPythonConsole_a27269a59718f8d58bc059223cfde1db2}{event\+Filter} (self, obj, event)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1PythonConsole_1_1QPythonConsole_a822e9b2d88f4b5380397f2e2e34afeb2}{go\+\_\+history} (self, offset)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1PythonConsole_1_1QPythonConsole_a52233b537b052cef5b3bcfceb8d7b4f1}{ui}
+\item 
+\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1PythonConsole_1_1QPythonConsole_ab19e0f45f1ae712a330044f7d83f65e9}{interpreter}
+\item 
+\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1PythonConsole_1_1QPythonConsole_a7e67c9a26d22cb7481508cd1bd361ffd}{history}
+\item 
+\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1PythonConsole_1_1QPythonConsole_a3f733ebc187846ffaae47c80b1b8bbbd}{history\+\_\+pos}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}A simple python console to embed in your GUI.
+
+This widget provides a simple interactive python console that you can
+embed in your GUI (e.g. for debugging purposes). Use it like so:
+
+self.debug_window.layout().addWidget(QPythonConsole())
+
+You can customize the variables that are available in the shell by
+passing a dict as the "locals" argument.
+\end{DoxyVerb}
+ 
+
+Inheritance diagram for software.\+chipwhisperer.\+common.\+ui.\+Python\+Console.\+Q\+Python\+Console\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=251pt]{d8/d05/classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1PythonConsole_1_1QPythonConsole__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for software.\+chipwhisperer.\+common.\+ui.\+Python\+Console.\+Q\+Python\+Console\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=251pt]{db/db1/classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1PythonConsole_1_1QPythonConsole__coll__graph}
+\end{center}
+\end{figure}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1PythonConsole_1_1QPythonConsole_a515d570004b0b948e0e0a074ba03d8a5}{}\index{software\+::chipwhisperer\+::common\+::ui\+::\+Python\+Console\+::\+Q\+Python\+Console@{software\+::chipwhisperer\+::common\+::ui\+::\+Python\+Console\+::\+Q\+Python\+Console}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!software\+::chipwhisperer\+::common\+::ui\+::\+Python\+Console\+::\+Q\+Python\+Console@{software\+::chipwhisperer\+::common\+::ui\+::\+Python\+Console\+::\+Q\+Python\+Console}}
+\subsubsection[{\+\_\+\+\_\+init\+\_\+\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+ui.\+Python\+Console.\+Q\+Python\+Console.\+\_\+\+\_\+init\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{parent = {\ttfamily None}, }
+\item[{}]{locals = {\ttfamily None}}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1PythonConsole_1_1QPythonConsole_a515d570004b0b948e0e0a074ba03d8a5}
+
+\begin{DoxyCode}
+91     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1PythonConsole_1_1QPythonConsole_a515d570004b0b948e0e0a074ba03d8a5}{\_\_init\_\_}(self,parent=None,locals=None):
+92         super(QPythonConsole,self).\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1PythonConsole_1_1QPythonConsole_a515d570004b0b948e0e0a074ba03d8a5}{\_\_init\_\_}(parent)
+93         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1PythonConsole_1_1QPythonConsole_a52233b537b052cef5b3bcfceb8d7b4f1}{ui} = \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1PythonConsole_1_1__QPythonConsoleUI}{\_QPythonConsoleUI}(self)
+94         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1PythonConsole_1_1QPythonConsole_ab19e0f45f1ae712a330044f7d83f65e9}{interpreter} = \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1PythonConsole_1_1__QPythonConsoleInterpreter}{\_QPythonConsoleInterpreter}(self.
+      \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1PythonConsole_1_1QPythonConsole_a52233b537b052cef5b3bcfceb8d7b4f1}{ui},locals)
+95         self.ui.input.returnPressed.connect(self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1PythonConsole_1_1QPythonConsole_af62ac410920287f03d910241ab67bce6}{\_on\_enter\_line})
+96         self.ui.input.installEventFilter(self)
+97         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1PythonConsole_1_1QPythonConsole_a7e67c9a26d22cb7481508cd1bd361ffd}{history} = []
+98         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1PythonConsole_1_1QPythonConsole_a3f733ebc187846ffaae47c80b1b8bbbd}{history\_pos} = 0
+99 
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1PythonConsole_1_1QPythonConsole_a27269a59718f8d58bc059223cfde1db2}{}\index{software\+::chipwhisperer\+::common\+::ui\+::\+Python\+Console\+::\+Q\+Python\+Console@{software\+::chipwhisperer\+::common\+::ui\+::\+Python\+Console\+::\+Q\+Python\+Console}!event\+Filter@{event\+Filter}}
+\index{event\+Filter@{event\+Filter}!software\+::chipwhisperer\+::common\+::ui\+::\+Python\+Console\+::\+Q\+Python\+Console@{software\+::chipwhisperer\+::common\+::ui\+::\+Python\+Console\+::\+Q\+Python\+Console}}
+\subsubsection[{event\+Filter}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+ui.\+Python\+Console.\+Q\+Python\+Console.\+event\+Filter (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{obj, }
+\item[{}]{event}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1PythonConsole_1_1QPythonConsole_a27269a59718f8d58bc059223cfde1db2}
+
+
+References software.\+chipwhisperer.\+common.\+ui.\+Python\+Console.\+Q\+Python\+Console.\+go\+\_\+history().
+
+
+\begin{DoxyCode}
+116     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1PythonConsole_1_1QPythonConsole_a27269a59718f8d58bc059223cfde1db2}{eventFilter}(self, obj, event):
+117         \textcolor{keywordflow}{if} hasattr(event, \textcolor{stringliteral}{"type"}) \textcolor{keywordflow}{and} event.type() == QtCore.QEvent.KeyPress:
+118             \textcolor{keywordflow}{if} event.key() == QtCore.Qt.Key\_Up:
+119                 self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1PythonConsole_1_1QPythonConsole_a822e9b2d88f4b5380397f2e2e34afeb2}{go\_history}(-1)
+120                 \textcolor{keywordflow}{return} \textcolor{keyword}{True}
+121             \textcolor{keywordflow}{elif} event.key() == QtCore.Qt.Key\_Down:
+122                 self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1PythonConsole_1_1QPythonConsole_a822e9b2d88f4b5380397f2e2e34afeb2}{go\_history}(1)
+123                 \textcolor{keywordflow}{return} \textcolor{keyword}{True}
+124         \textcolor{keywordflow}{return} \textcolor{keyword}{False}
+125 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1PythonConsole_1_1QPythonConsole_a822e9b2d88f4b5380397f2e2e34afeb2}{}\index{software\+::chipwhisperer\+::common\+::ui\+::\+Python\+Console\+::\+Q\+Python\+Console@{software\+::chipwhisperer\+::common\+::ui\+::\+Python\+Console\+::\+Q\+Python\+Console}!go\+\_\+history@{go\+\_\+history}}
+\index{go\+\_\+history@{go\+\_\+history}!software\+::chipwhisperer\+::common\+::ui\+::\+Python\+Console\+::\+Q\+Python\+Console@{software\+::chipwhisperer\+::common\+::ui\+::\+Python\+Console\+::\+Q\+Python\+Console}}
+\subsubsection[{go\+\_\+history}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+ui.\+Python\+Console.\+Q\+Python\+Console.\+go\+\_\+history (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{offset}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1PythonConsole_1_1QPythonConsole_a822e9b2d88f4b5380397f2e2e34afeb2}
+
+
+References software.\+chipwhisperer.\+common.\+ui.\+Python\+Console.\+Q\+Python\+Console.\+history, and software.\+chipwhisperer.\+common.\+ui.\+Python\+Console.\+Q\+Python\+Console.\+history\+\_\+pos.
+
+
+
+Referenced by software.\+chipwhisperer.\+common.\+ui.\+Python\+Console.\+Q\+Python\+Console.\+event\+Filter().
+
+
+\begin{DoxyCode}
+126     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1PythonConsole_1_1QPythonConsole_a822e9b2d88f4b5380397f2e2e34afeb2}{go\_history}(self,offset):
+127         \textcolor{keywordflow}{if} offset < 0:
+128             self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1PythonConsole_1_1QPythonConsole_a3f733ebc187846ffaae47c80b1b8bbbd}{history\_pos} = max(0,self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1PythonConsole_1_1QPythonConsole_a3f733ebc187846ffaae47c80b1b8bbbd}{history\_pos} + offset)
+129         \textcolor{keywordflow}{elif} offset > 0:
+130             self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1PythonConsole_1_1QPythonConsole_a3f733ebc187846ffaae47c80b1b8bbbd}{history\_pos} = min(len(self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1PythonConsole_1_1QPythonConsole_a7e67c9a26d22cb7481508cd1bd361ffd}{history}),self.
+      \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1PythonConsole_1_1QPythonConsole_a3f733ebc187846ffaae47c80b1b8bbbd}{history\_pos} + offset)
+131         \textcolor{keywordflow}{try}:
+132             line = self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1PythonConsole_1_1QPythonConsole_a7e67c9a26d22cb7481508cd1bd361ffd}{history}[self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1PythonConsole_1_1QPythonConsole_a3f733ebc187846ffaae47c80b1b8bbbd}{history\_pos}]
+133         \textcolor{keywordflow}{except} IndexError:
+134             line = \textcolor{stringliteral}{""}
+135         self.ui.input.setText(line)
+136         self.ui.input.end(\textcolor{keyword}{False})
+137 
+138 
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1PythonConsole_1_1QPythonConsole_a7e67c9a26d22cb7481508cd1bd361ffd}{}\index{software\+::chipwhisperer\+::common\+::ui\+::\+Python\+Console\+::\+Q\+Python\+Console@{software\+::chipwhisperer\+::common\+::ui\+::\+Python\+Console\+::\+Q\+Python\+Console}!history@{history}}
+\index{history@{history}!software\+::chipwhisperer\+::common\+::ui\+::\+Python\+Console\+::\+Q\+Python\+Console@{software\+::chipwhisperer\+::common\+::ui\+::\+Python\+Console\+::\+Q\+Python\+Console}}
+\subsubsection[{history}]{\setlength{\rightskip}{0pt plus 5cm}software.\+chipwhisperer.\+common.\+ui.\+Python\+Console.\+Q\+Python\+Console.\+history}\label{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1PythonConsole_1_1QPythonConsole_a7e67c9a26d22cb7481508cd1bd361ffd}
+
+
+Referenced by software.\+chipwhisperer.\+common.\+ui.\+Python\+Console.\+Q\+Python\+Console.\+go\+\_\+history().
+
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1PythonConsole_1_1QPythonConsole_a3f733ebc187846ffaae47c80b1b8bbbd}{}\index{software\+::chipwhisperer\+::common\+::ui\+::\+Python\+Console\+::\+Q\+Python\+Console@{software\+::chipwhisperer\+::common\+::ui\+::\+Python\+Console\+::\+Q\+Python\+Console}!history\+\_\+pos@{history\+\_\+pos}}
+\index{history\+\_\+pos@{history\+\_\+pos}!software\+::chipwhisperer\+::common\+::ui\+::\+Python\+Console\+::\+Q\+Python\+Console@{software\+::chipwhisperer\+::common\+::ui\+::\+Python\+Console\+::\+Q\+Python\+Console}}
+\subsubsection[{history\+\_\+pos}]{\setlength{\rightskip}{0pt plus 5cm}software.\+chipwhisperer.\+common.\+ui.\+Python\+Console.\+Q\+Python\+Console.\+history\+\_\+pos}\label{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1PythonConsole_1_1QPythonConsole_a3f733ebc187846ffaae47c80b1b8bbbd}
+
+
+Referenced by software.\+chipwhisperer.\+common.\+ui.\+Python\+Console.\+Q\+Python\+Console.\+go\+\_\+history().
+
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1PythonConsole_1_1QPythonConsole_ab19e0f45f1ae712a330044f7d83f65e9}{}\index{software\+::chipwhisperer\+::common\+::ui\+::\+Python\+Console\+::\+Q\+Python\+Console@{software\+::chipwhisperer\+::common\+::ui\+::\+Python\+Console\+::\+Q\+Python\+Console}!interpreter@{interpreter}}
+\index{interpreter@{interpreter}!software\+::chipwhisperer\+::common\+::ui\+::\+Python\+Console\+::\+Q\+Python\+Console@{software\+::chipwhisperer\+::common\+::ui\+::\+Python\+Console\+::\+Q\+Python\+Console}}
+\subsubsection[{interpreter}]{\setlength{\rightskip}{0pt plus 5cm}software.\+chipwhisperer.\+common.\+ui.\+Python\+Console.\+Q\+Python\+Console.\+interpreter}\label{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1PythonConsole_1_1QPythonConsole_ab19e0f45f1ae712a330044f7d83f65e9}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1PythonConsole_1_1QPythonConsole_a52233b537b052cef5b3bcfceb8d7b4f1}{}\index{software\+::chipwhisperer\+::common\+::ui\+::\+Python\+Console\+::\+Q\+Python\+Console@{software\+::chipwhisperer\+::common\+::ui\+::\+Python\+Console\+::\+Q\+Python\+Console}!ui@{ui}}
+\index{ui@{ui}!software\+::chipwhisperer\+::common\+::ui\+::\+Python\+Console\+::\+Q\+Python\+Console@{software\+::chipwhisperer\+::common\+::ui\+::\+Python\+Console\+::\+Q\+Python\+Console}}
+\subsubsection[{ui}]{\setlength{\rightskip}{0pt plus 5cm}software.\+chipwhisperer.\+common.\+ui.\+Python\+Console.\+Q\+Python\+Console.\+ui}\label{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1PythonConsole_1_1QPythonConsole_a52233b537b052cef5b3bcfceb8d7b4f1}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{PythonConsole_8py}{Python\+Console.\+py}\end{DoxyCompactItemize}

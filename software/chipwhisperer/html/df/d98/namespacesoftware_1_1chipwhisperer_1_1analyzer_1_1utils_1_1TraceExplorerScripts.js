@@ -1,0 +1,5 @@
+var namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1TraceExplorerScripts =
+[
+    [ "PartitionDisplay", "d1/d4a/namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1TraceExplorerScripts_1_1PartitionDisplay.html", "d1/d4a/namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1TraceExplorerScripts_1_1PartitionDisplay" ],
+    [ "TextDisplay", "db/d43/namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1TraceExplorerScripts_1_1TextDisplay.html", "db/d43/namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1TraceExplorerScripts_1_1TextDisplay" ]
+];

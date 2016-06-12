@@ -1,0 +1,4 @@
+var namespacesoftware_1_1chipwhisperer_1_1capture_1_1acq__patterns_1_1__base =
+[
+    [ "AcqKeyTextPattern_Base", "d6/d7d/classsoftware_1_1chipwhisperer_1_1capture_1_1acq__patterns_1_1__base_1_1AcqKeyTextPattern__Base.html", "d6/d7d/classsoftware_1_1chipwhisperer_1_1capture_1_1acq__patterns_1_1__base_1_1AcqKeyTextPattern__Base" ]
+];

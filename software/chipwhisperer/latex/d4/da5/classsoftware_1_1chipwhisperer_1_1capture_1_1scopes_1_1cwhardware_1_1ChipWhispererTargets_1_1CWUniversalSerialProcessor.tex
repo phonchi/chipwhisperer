@@ -1,0 +1,234 @@
+\hypertarget{classsoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1cwhardware_1_1ChipWhispererTargets_1_1CWUniversalSerialProcessor}{}\section{software.\+chipwhisperer.\+capture.\+scopes.\+cwhardware.\+Chip\+Whisperer\+Targets.\+C\+W\+Universal\+Serial\+Processor Class Reference}
+\label{classsoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1cwhardware_1_1ChipWhispererTargets_1_1CWUniversalSerialProcessor}\index{software.\+chipwhisperer.\+capture.\+scopes.\+cwhardware.\+Chip\+Whisperer\+Targets.\+C\+W\+Universal\+Serial\+Processor@{software.\+chipwhisperer.\+capture.\+scopes.\+cwhardware.\+Chip\+Whisperer\+Targets.\+C\+W\+Universal\+Serial\+Processor}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1cwhardware_1_1ChipWhispererTargets_1_1CWUniversalSerialProcessor_a8429b40cbc941da8b450e7facc297aad}{bits\+To\+Tx\+Pattern}
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1cwhardware_1_1ChipWhispererTargets_1_1CWUniversalSerialProcessor_a6c440a6340a95a9c8a76e99795c412f4}{average\+Bits} (self, bits)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1cwhardware_1_1ChipWhispererTargets_1_1CWUniversalSerialProcessor_a284b4beff98546e4a8297710bcd58ea1}{num\+Ones} (self, bits)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1cwhardware_1_1ChipWhispererTargets_1_1CWUniversalSerialProcessor_ae9d3a515864c14c7b71a647d88454f6b}{rx\+Pattern\+To\+String}
+\end{DoxyCompactItemize}
+
+
+Inheritance diagram for software.\+chipwhisperer.\+capture.\+scopes.\+cwhardware.\+Chip\+Whisperer\+Targets.\+C\+W\+Universal\+Serial\+Processor\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=325pt]{dc/dbb/classsoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1cwhardware_1_1ChipWhispererTargets_1_1CWUb0970174ce8d4aaef0c8655bbfec6bee}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for software.\+chipwhisperer.\+capture.\+scopes.\+cwhardware.\+Chip\+Whisperer\+Targets.\+C\+W\+Universal\+Serial\+Processor\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=325pt]{d1/db5/classsoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1cwhardware_1_1ChipWhispererTargets_1_1CWU1f7b2a1430b8bf25f1823a26fa444d4c}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1cwhardware_1_1ChipWhispererTargets_1_1CWUniversalSerialProcessor_a6c440a6340a95a9c8a76e99795c412f4}{}\index{software\+::chipwhisperer\+::capture\+::scopes\+::cwhardware\+::\+Chip\+Whisperer\+Targets\+::\+C\+W\+Universal\+Serial\+Processor@{software\+::chipwhisperer\+::capture\+::scopes\+::cwhardware\+::\+Chip\+Whisperer\+Targets\+::\+C\+W\+Universal\+Serial\+Processor}!average\+Bits@{average\+Bits}}
+\index{average\+Bits@{average\+Bits}!software\+::chipwhisperer\+::capture\+::scopes\+::cwhardware\+::\+Chip\+Whisperer\+Targets\+::\+C\+W\+Universal\+Serial\+Processor@{software\+::chipwhisperer\+::capture\+::scopes\+::cwhardware\+::\+Chip\+Whisperer\+Targets\+::\+C\+W\+Universal\+Serial\+Processor}}
+\subsubsection[{average\+Bits}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+capture.\+scopes.\+cwhardware.\+Chip\+Whisperer\+Targets.\+C\+W\+Universal\+Serial\+Processor.\+average\+Bits (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{bits}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1cwhardware_1_1ChipWhispererTargets_1_1CWUniversalSerialProcessor_a6c440a6340a95a9c8a76e99795c412f4}
+
+
+Referenced by software.\+chipwhisperer.\+capture.\+scopes.\+cwhardware.\+Chip\+Whisperer\+Targets.\+C\+W\+Universal\+Serial\+Processor.\+rx\+Pattern\+To\+String().
+
+
+\begin{DoxyCode}
+68     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1cwhardware_1_1ChipWhispererTargets_1_1CWUniversalSerialProcessor_a6c440a6340a95a9c8a76e99795c412f4}{averageBits}(self, bits):
+69         ones = 0
+70         zeros = 0
+71         \textcolor{keywordflow}{for} b \textcolor{keywordflow}{in} bits:
+72             \textcolor{keywordflow}{if} b == 1:
+73                 ones += 1
+74             \textcolor{keywordflow}{else}:
+75                 zeros += 1
+76         
+77         \textcolor{keywordflow}{if} ones >= zeros:
+78             \textcolor{keywordflow}{return} 1
+79         \textcolor{keywordflow}{else}:
+80             \textcolor{keywordflow}{return} 0
+81         
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1cwhardware_1_1ChipWhispererTargets_1_1CWUniversalSerialProcessor_a8429b40cbc941da8b450e7facc297aad}{}\index{software\+::chipwhisperer\+::capture\+::scopes\+::cwhardware\+::\+Chip\+Whisperer\+Targets\+::\+C\+W\+Universal\+Serial\+Processor@{software\+::chipwhisperer\+::capture\+::scopes\+::cwhardware\+::\+Chip\+Whisperer\+Targets\+::\+C\+W\+Universal\+Serial\+Processor}!bits\+To\+Tx\+Pattern@{bits\+To\+Tx\+Pattern}}
+\index{bits\+To\+Tx\+Pattern@{bits\+To\+Tx\+Pattern}!software\+::chipwhisperer\+::capture\+::scopes\+::cwhardware\+::\+Chip\+Whisperer\+Targets\+::\+C\+W\+Universal\+Serial\+Processor@{software\+::chipwhisperer\+::capture\+::scopes\+::cwhardware\+::\+Chip\+Whisperer\+Targets\+::\+C\+W\+Universal\+Serial\+Processor}}
+\subsubsection[{bits\+To\+Tx\+Pattern}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+capture.\+scopes.\+cwhardware.\+Chip\+Whisperer\+Targets.\+C\+W\+Universal\+Serial\+Processor.\+bits\+To\+Tx\+Pattern (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{bits, }
+\item[{}]{samplesperbit = {\ttfamily 1}, }
+\item[{}]{idle = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1cwhardware_1_1ChipWhispererTargets_1_1CWUniversalSerialProcessor_a8429b40cbc941da8b450e7facc297aad}
+
+\begin{DoxyCode}
+41     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1cwhardware_1_1ChipWhispererTargets_1_1CWUniversalSerialProcessor_a8429b40cbc941da8b450e7facc297aad}{bitsToTxPattern}(self, bits, samplesperbit=1, idle=1):
+42         txpattern = []
+43         
+44         \textcolor{comment}{#Extend if needed}
+45         \textcolor{keywordflow}{for} b \textcolor{keywordflow}{in} bits:
+46             \textcolor{keywordflow}{for} i \textcolor{keywordflow}{in} range(0, samplesperbit):
+47                 txpattern.append(b)
+48         
+49         \textcolor{comment}{#Extend to make multiple of 8 bits}
+50         \textcolor{keywordflow}{if} (len(txpattern) % 8) != 0:
+51             extend = 8 - (len(txpattern) % 8)
+52             \textcolor{keywordflow}{for} i \textcolor{keywordflow}{in} range(0, extend):
+53                 txpattern.append(1)
+54             
+55         blist = []
+56                 
+57         \textcolor{comment}{#Group into 8 bits}
+58         \textcolor{keywordflow}{for} gnum \textcolor{keywordflow}{in} range(0, len(txpattern)/8):
+59             start = gnum * 8
+60             byte = 0
+61             \textcolor{keywordflow}{for} b \textcolor{keywordflow}{in} range(0,8):
+62                 byte |= txpattern[start+b] << b;
+63                 
+64             blist.append(byte)
+65             
+66         \textcolor{keywordflow}{return} blist   
+67     
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1cwhardware_1_1ChipWhispererTargets_1_1CWUniversalSerialProcessor_a284b4beff98546e4a8297710bcd58ea1}{}\index{software\+::chipwhisperer\+::capture\+::scopes\+::cwhardware\+::\+Chip\+Whisperer\+Targets\+::\+C\+W\+Universal\+Serial\+Processor@{software\+::chipwhisperer\+::capture\+::scopes\+::cwhardware\+::\+Chip\+Whisperer\+Targets\+::\+C\+W\+Universal\+Serial\+Processor}!num\+Ones@{num\+Ones}}
+\index{num\+Ones@{num\+Ones}!software\+::chipwhisperer\+::capture\+::scopes\+::cwhardware\+::\+Chip\+Whisperer\+Targets\+::\+C\+W\+Universal\+Serial\+Processor@{software\+::chipwhisperer\+::capture\+::scopes\+::cwhardware\+::\+Chip\+Whisperer\+Targets\+::\+C\+W\+Universal\+Serial\+Processor}}
+\subsubsection[{num\+Ones}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+capture.\+scopes.\+cwhardware.\+Chip\+Whisperer\+Targets.\+C\+W\+Universal\+Serial\+Processor.\+num\+Ones (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{bits}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1cwhardware_1_1ChipWhispererTargets_1_1CWUniversalSerialProcessor_a284b4beff98546e4a8297710bcd58ea1}
+
+\begin{DoxyCode}
+82     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1cwhardware_1_1ChipWhispererTargets_1_1CWUniversalSerialProcessor_a284b4beff98546e4a8297710bcd58ea1}{numOnes}(self, bits):
+83         ones = 0
+84         \textcolor{keywordflow}{for} b \textcolor{keywordflow}{in} bits:
+85             \textcolor{keywordflow}{if} b == 1:
+86                 ones += 1
+87 
+88         \textcolor{keywordflow}{return} ones
+89     
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1cwhardware_1_1ChipWhispererTargets_1_1CWUniversalSerialProcessor_ae9d3a515864c14c7b71a647d88454f6b}{}\index{software\+::chipwhisperer\+::capture\+::scopes\+::cwhardware\+::\+Chip\+Whisperer\+Targets\+::\+C\+W\+Universal\+Serial\+Processor@{software\+::chipwhisperer\+::capture\+::scopes\+::cwhardware\+::\+Chip\+Whisperer\+Targets\+::\+C\+W\+Universal\+Serial\+Processor}!rx\+Pattern\+To\+String@{rx\+Pattern\+To\+String}}
+\index{rx\+Pattern\+To\+String@{rx\+Pattern\+To\+String}!software\+::chipwhisperer\+::capture\+::scopes\+::cwhardware\+::\+Chip\+Whisperer\+Targets\+::\+C\+W\+Universal\+Serial\+Processor@{software\+::chipwhisperer\+::capture\+::scopes\+::cwhardware\+::\+Chip\+Whisperer\+Targets\+::\+C\+W\+Universal\+Serial\+Processor}}
+\subsubsection[{rx\+Pattern\+To\+String}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+capture.\+scopes.\+cwhardware.\+Chip\+Whisperer\+Targets.\+C\+W\+Universal\+Serial\+Processor.\+rx\+Pattern\+To\+String (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{rxpattern, }
+\item[{}]{samplesperbit = {\ttfamily 1}, }
+\item[{}]{idle = {\ttfamily 1}, }
+\item[{}]{startbits = {\ttfamily 1}, }
+\item[{}]{stopbits = {\ttfamily 1}, }
+\item[{}]{parity = {\ttfamily \char`\"{}none\char`\"{}}}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1cwhardware_1_1ChipWhispererTargets_1_1CWUniversalSerialProcessor_ae9d3a515864c14c7b71a647d88454f6b}
+
+
+References software.\+chipwhisperer.\+capture.\+scopes.\+cwhardware.\+Chip\+Whisperer\+Targets.\+C\+W\+Universal\+Serial\+Processor.\+average\+Bits().
+
+
+\begin{DoxyCode}
+90     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1cwhardware_1_1ChipWhispererTargets_1_1CWUniversalSerialProcessor_ae9d3a515864c14c7b71a647d88454f6b}{rxPatternToString}(self, rxpattern, samplesperbit=1, idle=1, startbits=1, 
+      stopbits=1, parity="none"):
+91         bits = []
+92         
+93         \textcolor{comment}{#Flip bits around}
+94         \textcolor{keywordflow}{for} b \textcolor{keywordflow}{in} rxpattern:
+95             \textcolor{keywordflow}{for} i \textcolor{keywordflow}{in} range(0,  8):
+96                 bit = (b >> i) & 0x01
+97                 bits.append(bit)
+98             
+99         bytelist = []
+100         
+101         \textcolor{comment}{#print bits}
+102                 
+103         \textcolor{comment}{#Find start bit}
+104         bindex = 0
+105         
+106         \textcolor{comment}{#print samplesperbit}
+107         bits[0] = 0
+108         
+109         
+110         \textcolor{keywordflow}{while} bindex < len(bits):
+111             
+112             \textcolor{keywordflow}{if} self.\hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1cwhardware_1_1ChipWhispererTargets_1_1CWUniversalSerialProcessor_a6c440a6340a95a9c8a76e99795c412f4}{averageBits}(bits[bindex:(bindex+samplesperbit)]) == 0:
+113             \textcolor{comment}{#if self.numOnes(bits[bindex:(bindex+samplesperbit)]) <= 3:}
+114             \textcolor{comment}{#if bits[bindex:(bindex+samplesperbit)] == [0]*samplesperbit:                }
+115                 \textcolor{comment}{#print "found start bit @ %d"%bindex}
+116                 \textcolor{comment}{#if bindex < samplesperbit:}
+117                 \textcolor{comment}{#    bindex += 1#samplesperbit}
+118                 \textcolor{comment}{#else:               }
+119                 bindex += samplesperbit
+120                 
+121                 \textcolor{keywordflow}{for} n \textcolor{keywordflow}{in} range(1, startbits):
+122                     \textcolor{keywordflow}{if} self.\hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1cwhardware_1_1ChipWhispererTargets_1_1CWUniversalSerialProcessor_a6c440a6340a95a9c8a76e99795c412f4}{averageBits}(bits[bindex:(bindex+samplesperbit)]) != 0:
+123                         \textcolor{keywordflow}{print} \textcolor{stringliteral}{"WARNING: USI Missing expected start bit"}
+124                     bindex += samplesperbit
+125                 
+126                 byte = 0
+127                 
+128                 onecnt = 0
+129         
+130                 \textcolor{keywordflow}{for} b \textcolor{keywordflow}{in} range(0,8):
+131                     bitstate = self.\hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1cwhardware_1_1ChipWhispererTargets_1_1CWUniversalSerialProcessor_a6c440a6340a95a9c8a76e99795c412f4}{averageBits}(bits[bindex:(bindex+samplesperbit)])
+132                     onecnt += bitstate
+133                     byte |= bitstate << b
+134                     bindex += samplesperbit
+135                     
+136                 bytelist.append(byte)
+137                 
+138                 \textcolor{keywordflow}{if} parity != \textcolor{stringliteral}{"none"}:
+139                     \textcolor{comment}{#TODO: Check/Validate parity}
+140                     paritystate = self.\hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1cwhardware_1_1ChipWhispererTargets_1_1CWUniversalSerialProcessor_a6c440a6340a95a9c8a76e99795c412f4}{averageBits}(bits[bindex:(bindex+samplesperbit)])
+141                     bindex += samplesperbit
+142                     
+143                     \textcolor{keywordflow}{if} (onecnt % 2) == 0:
+144                         \textcolor{comment}{#Even number of 1's present}
+145                         \textcolor{keywordflow}{if} parity == \textcolor{stringliteral}{"even"}:
+146                             \textcolor{keywordflow}{if} paritystate == 1:
+147                                 \textcolor{keywordflow}{print} \textcolor{stringliteral}{"WARNING: USI parity error"}
+148                         \textcolor{keywordflow}{elif} parity == \textcolor{stringliteral}{"odd"}:
+149                             \textcolor{keywordflow}{if} paritystate == 0:
+150                                 \textcolor{keywordflow}{print} \textcolor{stringliteral}{"WARNING: USI parity error"}
+151                      
+152                     \textcolor{keywordflow}{else}:
+153                         \textcolor{comment}{#Even number of 1's present}
+154                         \textcolor{keywordflow}{if} parity == \textcolor{stringliteral}{"even"}:
+155                             \textcolor{keywordflow}{if} paritystate == 0:
+156                                 \textcolor{keywordflow}{print} \textcolor{stringliteral}{"WARNING: USI parity error"}
+157                         \textcolor{keywordflow}{elif} parity == \textcolor{stringliteral}{"odd"}:
+158                             \textcolor{keywordflow}{if} paritystate == 1:
+159                                 \textcolor{keywordflow}{print} \textcolor{stringliteral}{"WARNING: USI parity error"}
+160                                 
+161                 \textcolor{keywordflow}{for} n \textcolor{keywordflow}{in} range(0, stopbits):       
+162                     \textcolor{keywordflow}{if} self.\hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1cwhardware_1_1ChipWhispererTargets_1_1CWUniversalSerialProcessor_a6c440a6340a95a9c8a76e99795c412f4}{averageBits}(bits[bindex:(bindex+samplesperbit)]) != 1:
+163                         \textcolor{keywordflow}{print} \textcolor{stringliteral}{"WARNING: USI Missing expected stop bit @ point=%d,byte=%d"}%(bindex,len(
+      bytelist))
+164                     \textcolor{comment}{#else:}
+165                     \textcolor{comment}{#    print "found stop bit"}
+166                     bindex += samplesperbit
+167                                     
+168             \textcolor{keywordflow}{else}:
+169                 \textcolor{comment}{#TODO: only works with oversampling = 8}
+170                 bindex += samplesperbit/4
+171                 
+172         s = \textcolor{stringliteral}{""}.join([chr(b) \textcolor{keywordflow}{for} b \textcolor{keywordflow}{in} bytelist])    
+173         \textcolor{keywordflow}{return} s
+174         
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ChipWhispererTargets_8py}{Chip\+Whisperer\+Targets.\+py}\end{DoxyCompactItemize}

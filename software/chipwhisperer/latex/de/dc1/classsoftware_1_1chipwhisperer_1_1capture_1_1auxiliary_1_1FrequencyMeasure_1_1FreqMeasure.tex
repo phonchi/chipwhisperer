@@ -1,0 +1,205 @@
+\hypertarget{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1FrequencyMeasure_1_1FreqMeasure}{}\section{software.\+chipwhisperer.\+capture.\+auxiliary.\+Frequency\+Measure.\+Freq\+Measure Class Reference}
+\label{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1FrequencyMeasure_1_1FreqMeasure}\index{software.\+chipwhisperer.\+capture.\+auxiliary.\+Frequency\+Measure.\+Freq\+Measure@{software.\+chipwhisperer.\+capture.\+auxiliary.\+Frequency\+Measure.\+Freq\+Measure}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1FrequencyMeasure_1_1FreqMeasure_af74533682800dc8bba7bfc4560c835dc}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self, \hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1FrequencyMeasure_1_1FreqMeasure_af2545458d3c342049086990489f391a5}{ps})
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1FrequencyMeasure_1_1FreqMeasure_afbc6e2b4b5dc1c8e377b9c61f9003ad5}{open\+Scope} (self)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1FrequencyMeasure_1_1FreqMeasure_a05165f01df1e2c3bec3e72362700597f}{close\+Scope} (self)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1FrequencyMeasure_1_1FreqMeasure_a967c62573202adf5e148ee2cbfcbe7fd}{arm\+Measure} (self)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1FrequencyMeasure_1_1FreqMeasure_ac40f8e10bfb7566630a8f10a6b2080e3}{freq\+\_\+from\+\_\+crossings} (self, sig)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1FrequencyMeasure_1_1FreqMeasure_a884ed5f6cd0388de0d2dd352fb2d2cc6}{measure} (self)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1FrequencyMeasure_1_1FreqMeasure_af2545458d3c342049086990489f391a5}{ps}
+\item 
+\hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1FrequencyMeasure_1_1FreqMeasure_a2ae0bc89daf835da875430d3bb9a7f96}{is\+Open}
+\item 
+\hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1FrequencyMeasure_1_1FreqMeasure_aa20585486d90250dd2d231f6e9c478ed}{sample\+Rate}
+\end{DoxyCompactItemize}
+
+
+Collaboration diagram for software.\+chipwhisperer.\+capture.\+auxiliary.\+Frequency\+Measure.\+Freq\+Measure\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=274pt]{d3/d83/classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1FrequencyMeasure_1_1FreqMeasure__coll__graph}
+\end{center}
+\end{figure}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1FrequencyMeasure_1_1FreqMeasure_af74533682800dc8bba7bfc4560c835dc}{}\index{software\+::chipwhisperer\+::capture\+::auxiliary\+::\+Frequency\+Measure\+::\+Freq\+Measure@{software\+::chipwhisperer\+::capture\+::auxiliary\+::\+Frequency\+Measure\+::\+Freq\+Measure}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!software\+::chipwhisperer\+::capture\+::auxiliary\+::\+Frequency\+Measure\+::\+Freq\+Measure@{software\+::chipwhisperer\+::capture\+::auxiliary\+::\+Frequency\+Measure\+::\+Freq\+Measure}}
+\subsubsection[{\+\_\+\+\_\+init\+\_\+\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+capture.\+auxiliary.\+Frequency\+Measure.\+Freq\+Measure.\+\_\+\+\_\+init\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{ps}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1FrequencyMeasure_1_1FreqMeasure_af74533682800dc8bba7bfc4560c835dc}
+
+\begin{DoxyCode}
+40     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1FrequencyMeasure_1_1FreqMeasure_af74533682800dc8bba7bfc4560c835dc}{\_\_init\_\_}(self, ps):
+41         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1FrequencyMeasure_1_1FreqMeasure_af2545458d3c342049086990489f391a5}{ps} = ps
+42         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1FrequencyMeasure_1_1FreqMeasure_a2ae0bc89daf835da875430d3bb9a7f96}{isOpen} = \textcolor{keyword}{False}
+43     
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1FrequencyMeasure_1_1FreqMeasure_a967c62573202adf5e148ee2cbfcbe7fd}{}\index{software\+::chipwhisperer\+::capture\+::auxiliary\+::\+Frequency\+Measure\+::\+Freq\+Measure@{software\+::chipwhisperer\+::capture\+::auxiliary\+::\+Frequency\+Measure\+::\+Freq\+Measure}!arm\+Measure@{arm\+Measure}}
+\index{arm\+Measure@{arm\+Measure}!software\+::chipwhisperer\+::capture\+::auxiliary\+::\+Frequency\+Measure\+::\+Freq\+Measure@{software\+::chipwhisperer\+::capture\+::auxiliary\+::\+Frequency\+Measure\+::\+Freq\+Measure}}
+\subsubsection[{arm\+Measure}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+capture.\+auxiliary.\+Frequency\+Measure.\+Freq\+Measure.\+arm\+Measure (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1FrequencyMeasure_1_1FreqMeasure_a967c62573202adf5e148ee2cbfcbe7fd}
+
+\begin{DoxyCode}
+65     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1FrequencyMeasure_1_1FreqMeasure_a967c62573202adf5e148ee2cbfcbe7fd}{armMeasure}(self):
+66         self.ps.runBlock()
+67 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1FrequencyMeasure_1_1FreqMeasure_a05165f01df1e2c3bec3e72362700597f}{}\index{software\+::chipwhisperer\+::capture\+::auxiliary\+::\+Frequency\+Measure\+::\+Freq\+Measure@{software\+::chipwhisperer\+::capture\+::auxiliary\+::\+Frequency\+Measure\+::\+Freq\+Measure}!close\+Scope@{close\+Scope}}
+\index{close\+Scope@{close\+Scope}!software\+::chipwhisperer\+::capture\+::auxiliary\+::\+Frequency\+Measure\+::\+Freq\+Measure@{software\+::chipwhisperer\+::capture\+::auxiliary\+::\+Frequency\+Measure\+::\+Freq\+Measure}}
+\subsubsection[{close\+Scope}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+capture.\+auxiliary.\+Frequency\+Measure.\+Freq\+Measure.\+close\+Scope (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1FrequencyMeasure_1_1FreqMeasure_a05165f01df1e2c3bec3e72362700597f}
+
+
+References software.\+chipwhisperer.\+capture.\+auxiliary.\+Frequency\+Measure.\+Freq\+Measure.\+is\+Open.
+
+
+\begin{DoxyCode}
+61     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1FrequencyMeasure_1_1FreqMeasure_a05165f01df1e2c3bec3e72362700597f}{closeScope}(self):
+62         self.ps.close()
+63         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1FrequencyMeasure_1_1FreqMeasure_a2ae0bc89daf835da875430d3bb9a7f96}{isOpen} = \textcolor{keyword}{False}
+64 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1FrequencyMeasure_1_1FreqMeasure_ac40f8e10bfb7566630a8f10a6b2080e3}{}\index{software\+::chipwhisperer\+::capture\+::auxiliary\+::\+Frequency\+Measure\+::\+Freq\+Measure@{software\+::chipwhisperer\+::capture\+::auxiliary\+::\+Frequency\+Measure\+::\+Freq\+Measure}!freq\+\_\+from\+\_\+crossings@{freq\+\_\+from\+\_\+crossings}}
+\index{freq\+\_\+from\+\_\+crossings@{freq\+\_\+from\+\_\+crossings}!software\+::chipwhisperer\+::capture\+::auxiliary\+::\+Frequency\+Measure\+::\+Freq\+Measure@{software\+::chipwhisperer\+::capture\+::auxiliary\+::\+Frequency\+Measure\+::\+Freq\+Measure}}
+\subsubsection[{freq\+\_\+from\+\_\+crossings}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+capture.\+auxiliary.\+Frequency\+Measure.\+Freq\+Measure.\+freq\+\_\+from\+\_\+crossings (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{sig}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1FrequencyMeasure_1_1FreqMeasure_ac40f8e10bfb7566630a8f10a6b2080e3}
+\begin{DoxyVerb}Estimate frequency by counting zero crossings\end{DoxyVerb}
+ 
+
+References software.\+chipwhisperer.\+capture.\+auxiliary.\+Frequency\+Measure.\+Freq\+Measure.\+sample\+Rate.
+
+
+
+Referenced by software.\+chipwhisperer.\+capture.\+auxiliary.\+Frequency\+Measure.\+Freq\+Measure.\+measure().
+
+
+\begin{DoxyCode}
+68     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1FrequencyMeasure_1_1FreqMeasure_ac40f8e10bfb7566630a8f10a6b2080e3}{freq\_from\_crossings}(self, sig):
+69         \textcolor{stringliteral}{"""Estimate frequency by counting zero crossings"""}
+70         \textcolor{comment}{# From https://gist.github.com/endolith/255291:}
+71 
+72         fs = self.\hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1FrequencyMeasure_1_1FreqMeasure_aa20585486d90250dd2d231f6e9c478ed}{sampleRate}
+73 
+74         \textcolor{comment}{# Find all indices right before a rising-edge zero crossing}
+75         indices = find((sig[1:] >= 0) & (sig[:-1] < 0))
+76         \textcolor{comment}{# More accurate, using linear interpolation to find intersample}
+77         \textcolor{comment}{# zero-crossings (Measures 1000.000129 Hz for 1000 Hz, for instance)}
+78         crossings = [i - sig[i] / (sig[i + 1] - sig[i]) \textcolor{keywordflow}{for} i \textcolor{keywordflow}{in} indices]
+79         \textcolor{comment}{# Some other interpolation based on neighboring points might be better. Spline, cubic, whatever}
+80         \textcolor{keywordflow}{return} fs / np.mean(np.diff(crossings))
+81 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1FrequencyMeasure_1_1FreqMeasure_a884ed5f6cd0388de0d2dd352fb2d2cc6}{}\index{software\+::chipwhisperer\+::capture\+::auxiliary\+::\+Frequency\+Measure\+::\+Freq\+Measure@{software\+::chipwhisperer\+::capture\+::auxiliary\+::\+Frequency\+Measure\+::\+Freq\+Measure}!measure@{measure}}
+\index{measure@{measure}!software\+::chipwhisperer\+::capture\+::auxiliary\+::\+Frequency\+Measure\+::\+Freq\+Measure@{software\+::chipwhisperer\+::capture\+::auxiliary\+::\+Frequency\+Measure\+::\+Freq\+Measure}}
+\subsubsection[{measure}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+capture.\+auxiliary.\+Frequency\+Measure.\+Freq\+Measure.\+measure (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1FrequencyMeasure_1_1FreqMeasure_a884ed5f6cd0388de0d2dd352fb2d2cc6}
+
+
+References software.\+chipwhisperer.\+capture.\+auxiliary.\+Frequency\+Measure.\+Freq\+Measure.\+freq\+\_\+from\+\_\+crossings().
+
+
+\begin{DoxyCode}
+82     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1FrequencyMeasure_1_1FreqMeasure_a884ed5f6cd0388de0d2dd352fb2d2cc6}{measure}(self):
+83         \textcolor{comment}{# print "Waiting for trigger"}
+84         while(self.ps.isReady() == \textcolor{keyword}{False}): time.sleep(0.01)
+85         \textcolor{comment}{# print "Sampling Done"}
+86 
+87         data = self.ps.getDataV(\textcolor{stringliteral}{"A"}, 50000)
+88         data = data - np.mean(data)
+89         freq = self.\hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1FrequencyMeasure_1_1FreqMeasure_ac40f8e10bfb7566630a8f10a6b2080e3}{freq\_from\_crossings}(data)
+90 
+91         \textcolor{keywordflow}{print} \textcolor{stringliteral}{"Aux: Frequency Measurement Done, %d Hz"} % freq
+92 
+93         \textcolor{keywordflow}{return} freq
+94 
+95 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1FrequencyMeasure_1_1FreqMeasure_afbc6e2b4b5dc1c8e377b9c61f9003ad5}{}\index{software\+::chipwhisperer\+::capture\+::auxiliary\+::\+Frequency\+Measure\+::\+Freq\+Measure@{software\+::chipwhisperer\+::capture\+::auxiliary\+::\+Frequency\+Measure\+::\+Freq\+Measure}!open\+Scope@{open\+Scope}}
+\index{open\+Scope@{open\+Scope}!software\+::chipwhisperer\+::capture\+::auxiliary\+::\+Frequency\+Measure\+::\+Freq\+Measure@{software\+::chipwhisperer\+::capture\+::auxiliary\+::\+Frequency\+Measure\+::\+Freq\+Measure}}
+\subsubsection[{open\+Scope}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+capture.\+auxiliary.\+Frequency\+Measure.\+Freq\+Measure.\+open\+Scope (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1FrequencyMeasure_1_1FreqMeasure_afbc6e2b4b5dc1c8e377b9c61f9003ad5}
+
+
+References software.\+chipwhisperer.\+capture.\+auxiliary.\+Frequency\+Measure.\+Freq\+Measure.\+is\+Open.
+
+
+\begin{DoxyCode}
+44     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1FrequencyMeasure_1_1FreqMeasure_afbc6e2b4b5dc1c8e377b9c61f9003ad5}{openScope}(self):
+45         \textcolor{keywordflow}{if} self.\hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1FrequencyMeasure_1_1FreqMeasure_a2ae0bc89daf835da875430d3bb9a7f96}{isOpen} == \textcolor{keyword}{False}:
+46             self.ps.open()
+47 
+48         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1FrequencyMeasure_1_1FreqMeasure_a2ae0bc89daf835da875430d3bb9a7f96}{isOpen} = \textcolor{keyword}{True}
+49 
+50         self.ps.setChannel(\textcolor{stringliteral}{"A"}, coupling=\textcolor{stringliteral}{"DC"}, VRange=5.0, probeAttenuation=10)
+51         self.ps.setChannel(\textcolor{stringliteral}{"B"}, enabled=\textcolor{keyword}{False})
+52         self.ps.setChannel(\textcolor{stringliteral}{"C"}, enabled=\textcolor{keyword}{False})
+53         self.ps.setChannel(\textcolor{stringliteral}{"D"}, enabled=\textcolor{keyword}{False})
+54         res = self.ps.setSamplingFrequency(1000E6, 50000)
+55         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1FrequencyMeasure_1_1FreqMeasure_aa20585486d90250dd2d231f6e9c478ed}{sampleRate} = res[0]
+56         \textcolor{keywordflow}{print} \textcolor{stringliteral}{"Sampling @ %f MHz, %d samples"} % (res[0] / 1E6, res[1])
+57 
+58         \textcolor{comment}{# Use external trigger to mark when we sample}
+59         self.ps.setSimpleTrigger(trigSrc=\textcolor{stringliteral}{"External"}, threshold\_V=0.150, timeout\_ms=5000)
+60 
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1FrequencyMeasure_1_1FreqMeasure_a2ae0bc89daf835da875430d3bb9a7f96}{}\index{software\+::chipwhisperer\+::capture\+::auxiliary\+::\+Frequency\+Measure\+::\+Freq\+Measure@{software\+::chipwhisperer\+::capture\+::auxiliary\+::\+Frequency\+Measure\+::\+Freq\+Measure}!is\+Open@{is\+Open}}
+\index{is\+Open@{is\+Open}!software\+::chipwhisperer\+::capture\+::auxiliary\+::\+Frequency\+Measure\+::\+Freq\+Measure@{software\+::chipwhisperer\+::capture\+::auxiliary\+::\+Frequency\+Measure\+::\+Freq\+Measure}}
+\subsubsection[{is\+Open}]{\setlength{\rightskip}{0pt plus 5cm}software.\+chipwhisperer.\+capture.\+auxiliary.\+Frequency\+Measure.\+Freq\+Measure.\+is\+Open}\label{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1FrequencyMeasure_1_1FreqMeasure_a2ae0bc89daf835da875430d3bb9a7f96}
+
+
+Referenced by software.\+chipwhisperer.\+capture.\+auxiliary.\+Frequency\+Measure.\+Freq\+Measure.\+close\+Scope(), and software.\+chipwhisperer.\+capture.\+auxiliary.\+Frequency\+Measure.\+Freq\+Measure.\+open\+Scope().
+
+\hypertarget{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1FrequencyMeasure_1_1FreqMeasure_af2545458d3c342049086990489f391a5}{}\index{software\+::chipwhisperer\+::capture\+::auxiliary\+::\+Frequency\+Measure\+::\+Freq\+Measure@{software\+::chipwhisperer\+::capture\+::auxiliary\+::\+Frequency\+Measure\+::\+Freq\+Measure}!ps@{ps}}
+\index{ps@{ps}!software\+::chipwhisperer\+::capture\+::auxiliary\+::\+Frequency\+Measure\+::\+Freq\+Measure@{software\+::chipwhisperer\+::capture\+::auxiliary\+::\+Frequency\+Measure\+::\+Freq\+Measure}}
+\subsubsection[{ps}]{\setlength{\rightskip}{0pt plus 5cm}software.\+chipwhisperer.\+capture.\+auxiliary.\+Frequency\+Measure.\+Freq\+Measure.\+ps}\label{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1FrequencyMeasure_1_1FreqMeasure_af2545458d3c342049086990489f391a5}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1FrequencyMeasure_1_1FreqMeasure_aa20585486d90250dd2d231f6e9c478ed}{}\index{software\+::chipwhisperer\+::capture\+::auxiliary\+::\+Frequency\+Measure\+::\+Freq\+Measure@{software\+::chipwhisperer\+::capture\+::auxiliary\+::\+Frequency\+Measure\+::\+Freq\+Measure}!sample\+Rate@{sample\+Rate}}
+\index{sample\+Rate@{sample\+Rate}!software\+::chipwhisperer\+::capture\+::auxiliary\+::\+Frequency\+Measure\+::\+Freq\+Measure@{software\+::chipwhisperer\+::capture\+::auxiliary\+::\+Frequency\+Measure\+::\+Freq\+Measure}}
+\subsubsection[{sample\+Rate}]{\setlength{\rightskip}{0pt plus 5cm}software.\+chipwhisperer.\+capture.\+auxiliary.\+Frequency\+Measure.\+Freq\+Measure.\+sample\+Rate}\label{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1FrequencyMeasure_1_1FreqMeasure_aa20585486d90250dd2d231f6e9c478ed}
+
+
+Referenced by software.\+chipwhisperer.\+capture.\+auxiliary.\+Frequency\+Measure.\+Freq\+Measure.\+freq\+\_\+from\+\_\+crossings().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{FrequencyMeasure_8py}{Frequency\+Measure.\+py}\end{DoxyCompactItemize}

@@ -1,0 +1,4 @@
+var namespacesoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__chipcon =
+[
+    [ "ChipConProgrammer", "d8/d0d/classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__chipcon_1_1ChipConProgrammer.html", "d8/d0d/classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__chipcon_1_1ChipConProgrammer" ]
+];

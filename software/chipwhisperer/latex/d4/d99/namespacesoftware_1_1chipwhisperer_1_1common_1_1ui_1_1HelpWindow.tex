@@ -1,0 +1,178 @@
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1common_1_1ui_1_1HelpWindow}{}\section{software.\+chipwhisperer.\+common.\+ui.\+Help\+Window Namespace Reference}
+\label{namespacesoftware_1_1chipwhisperer_1_1common_1_1ui_1_1HelpWindow}\index{software.\+chipwhisperer.\+common.\+ui.\+Help\+Window@{software.\+chipwhisperer.\+common.\+ui.\+Help\+Window}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1HelpWindow_1_1HelpBrowser}{Help\+Browser}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacesoftware_1_1chipwhisperer_1_1common_1_1ui_1_1HelpWindow_a428e7cdcc49b6cdd98dc61d9218952e6}{html\+\_\+parts}
+\item 
+def \hyperlink{namespacesoftware_1_1chipwhisperer_1_1common_1_1ui_1_1HelpWindow_aab735445677633db6506bff6e4a2d733}{html\+\_\+body}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+tuple \hyperlink{namespacesoftware_1_1chipwhisperer_1_1common_1_1ui_1_1HelpWindow_aa332a61a44fd34a5b42551efb342cc0c}{app} = Q\+Application(sys.\+argv)
+\item 
+tuple \hyperlink{namespacesoftware_1_1chipwhisperer_1_1common_1_1ui_1_1HelpWindow_a5facd763a64693533133ce0867f8e297}{wid} = Q\+Widget()
+\item 
+tuple \hyperlink{namespacesoftware_1_1chipwhisperer_1_1common_1_1ui_1_1HelpWindow_a6b7e91449c35dc76ffa124f92fbd5265}{test} = \hyperlink{namespacesoftware_1_1chipwhisperer_1_1common_1_1ui_1_1HelpWindow_aab735445677633db6506bff6e4a2d733}{html\+\_\+body}(unicode(\char`\"{}test\textbackslash{}n=====\textbackslash{}n\textbackslash{}n\+Hello There.\char`\"{}))
+\item 
+tuple \hyperlink{namespacesoftware_1_1chipwhisperer_1_1common_1_1ui_1_1HelpWindow_a089170c473735215005185584cf7b156}{view} = Qt\+Web\+Kit.\+Q\+Web\+View(None)
+\item 
+tuple \hyperlink{namespacesoftware_1_1chipwhisperer_1_1common_1_1ui_1_1HelpWindow_af78b8102e9200cb5b721f55f81f81561}{layoutmain} = Q\+H\+Box\+Layout()
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1common_1_1ui_1_1HelpWindow_aab735445677633db6506bff6e4a2d733}{}\index{software\+::chipwhisperer\+::common\+::ui\+::\+Help\+Window@{software\+::chipwhisperer\+::common\+::ui\+::\+Help\+Window}!html\+\_\+body@{html\+\_\+body}}
+\index{html\+\_\+body@{html\+\_\+body}!software\+::chipwhisperer\+::common\+::ui\+::\+Help\+Window@{software\+::chipwhisperer\+::common\+::ui\+::\+Help\+Window}}
+\subsubsection[{html\+\_\+body}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+ui.\+Help\+Window.\+html\+\_\+body (
+\begin{DoxyParamCaption}
+\item[{}]{input\+\_\+string, }
+\item[{}]{source\+\_\+path = {\ttfamily None}, }
+\item[{}]{destination\+\_\+path = {\ttfamily None}, }
+\item[{}]{input\+\_\+encoding = {\ttfamily \textquotesingle{}unicode\textquotesingle{}}, }
+\item[{}]{output\+\_\+encoding = {\ttfamily \textquotesingle{}unicode\textquotesingle{}}, }
+\item[{}]{doctitle = {\ttfamily True}, }
+\item[{}]{initial\+\_\+header\+\_\+level = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)}\label{namespacesoftware_1_1chipwhisperer_1_1common_1_1ui_1_1HelpWindow_aab735445677633db6506bff6e4a2d733}
+\begin{DoxyVerb}Given an input string, returns an HTML fragment as a string.
+The return value is the contents of the <body> element.
+Parameters (see `html_parts()` for the remainder):
+
+- `output_encoding`: The desired encoding of the output.  If a Unicode
+  string is desired, use the default value of "unicode" .
+\end{DoxyVerb}
+ 
+
+References software.\+chipwhisperer.\+common.\+ui.\+Help\+Window.\+html\+\_\+parts().
+
+
+
+Referenced by software.\+chipwhisperer.\+common.\+ui.\+Help\+Window.\+html\+\_\+parts(), and software.\+chipwhisperer.\+common.\+ui.\+Help\+Window.\+Help\+Browser.\+show\+Help().
+
+
+\begin{DoxyCode}
+55               doctitle=\textcolor{keyword}{True}, initial\_header\_level=1):
+56     \textcolor{stringliteral}{"""}
+57 \textcolor{stringliteral}{    Given an input string, returns an HTML fragment as a string.}
+58 \textcolor{stringliteral}{    The return value is the contents of the <body> element.}
+59 \textcolor{stringliteral}{    Parameters (see `html\_parts()` for the remainder):}
+60 \textcolor{stringliteral}{}
+61 \textcolor{stringliteral}{    - `output\_encoding`: The desired encoding of the output.  If a Unicode}
+62 \textcolor{stringliteral}{      string is desired, use the default value of "unicode" .}
+63 \textcolor{stringliteral}{    """}
+64     parts = \hyperlink{namespacesoftware_1_1chipwhisperer_1_1common_1_1ui_1_1HelpWindow_a428e7cdcc49b6cdd98dc61d9218952e6}{html\_parts}(
+65         input\_string=input\_string, source\_path=source\_path,
+66         destination\_path=destination\_path,
+67         input\_encoding=input\_encoding, doctitle=doctitle,
+68         initial\_header\_level=initial\_header\_level)
+69     fragment = parts[\textcolor{stringliteral}{'html\_body'}]
+70     \textcolor{keywordflow}{if} output\_encoding != \textcolor{stringliteral}{'unicode'}:
+71         fragment = fragment.encode(output\_encoding)
+72     \textcolor{keywordflow}{return} fragment
+73 
+74 
+\end{DoxyCode}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1common_1_1ui_1_1HelpWindow_a428e7cdcc49b6cdd98dc61d9218952e6}{}\index{software\+::chipwhisperer\+::common\+::ui\+::\+Help\+Window@{software\+::chipwhisperer\+::common\+::ui\+::\+Help\+Window}!html\+\_\+parts@{html\+\_\+parts}}
+\index{html\+\_\+parts@{html\+\_\+parts}!software\+::chipwhisperer\+::common\+::ui\+::\+Help\+Window@{software\+::chipwhisperer\+::common\+::ui\+::\+Help\+Window}}
+\subsubsection[{html\+\_\+parts}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+ui.\+Help\+Window.\+html\+\_\+parts (
+\begin{DoxyParamCaption}
+\item[{}]{input\+\_\+string, }
+\item[{}]{source\+\_\+path = {\ttfamily None}, }
+\item[{}]{destination\+\_\+path = {\ttfamily None}, }
+\item[{}]{input\+\_\+encoding = {\ttfamily \textquotesingle{}unicode\textquotesingle{}}, }
+\item[{}]{doctitle = {\ttfamily True}, }
+\item[{}]{initial\+\_\+header\+\_\+level = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)}\label{namespacesoftware_1_1chipwhisperer_1_1common_1_1ui_1_1HelpWindow_a428e7cdcc49b6cdd98dc61d9218952e6}
+\begin{DoxyVerb}Given an input string, returns a dictionary of HTML document parts.
+
+Dictionary keys are the names of parts, and values are Unicode strings;
+encoding is up to the client.
+
+Parameters:
+
+- `input_string`: A multi-line text string; required.
+- `source_path`: Path to the source file or object.  Optional, but useful
+  for diagnostic output (system messages).
+- `destination_path`: Path to the file or object which will receive the
+  output; optional.  Used for determining relative paths (stylesheets,
+  source links, etc.).
+- `input_encoding`: The encoding of `input_string`.  If it is an encoded
+  8-bit string, provide the correct encoding.  If it is a Unicode string,
+  use "unicode", the default.
+- `doctitle`: Disable the promotion of a lone top-level section title to
+  document title (and subsequent section title to document subtitle
+  promotion); enabled by default.
+- `initial_header_level`: The initial level for header elements (e.g. 1
+  for "<h1>").
+\end{DoxyVerb}
+ 
+
+References software.\+chipwhisperer.\+common.\+ui.\+Help\+Window.\+html\+\_\+body().
+
+
+
+Referenced by software.\+chipwhisperer.\+common.\+ui.\+Help\+Window.\+html\+\_\+body().
+
+
+\begin{DoxyCode}
+19                initial\_header\_level=1):
+20     \textcolor{stringliteral}{"""}
+21 \textcolor{stringliteral}{    Given an input string, returns a dictionary of HTML document parts.}
+22 \textcolor{stringliteral}{}
+23 \textcolor{stringliteral}{    Dictionary keys are the names of parts, and values are Unicode strings;}
+24 \textcolor{stringliteral}{    encoding is up to the client.}
+25 \textcolor{stringliteral}{}
+26 \textcolor{stringliteral}{    Parameters:}
+27 \textcolor{stringliteral}{}
+28 \textcolor{stringliteral}{    - `input\_string`: A multi-line text string; required.}
+29 \textcolor{stringliteral}{    - `source\_path`: Path to the source file or object.  Optional, but useful}
+30 \textcolor{stringliteral}{      for diagnostic output (system messages).}
+31 \textcolor{stringliteral}{    - `destination\_path`: Path to the file or object which will receive the}
+32 \textcolor{stringliteral}{      output; optional.  Used for determining relative paths (stylesheets,}
+33 \textcolor{stringliteral}{      source links, etc.).}
+34 \textcolor{stringliteral}{    - `input\_encoding`: The encoding of `input\_string`.  If it is an encoded}
+35 \textcolor{stringliteral}{      8-bit string, provide the correct encoding.  If it is a Unicode string,}
+36 \textcolor{stringliteral}{      use "unicode", the default.}
+37 \textcolor{stringliteral}{    - `doctitle`: Disable the promotion of a lone top-level section title to}
+38 \textcolor{stringliteral}{      document title (and subsequent section title to document subtitle}
+39 \textcolor{stringliteral}{      promotion); enabled by default.}
+40 \textcolor{stringliteral}{    - `initial\_header\_level`: The initial level for header elements (e.g. 1}
+41 \textcolor{stringliteral}{      for "<h1>").}
+42 \textcolor{stringliteral}{    """}
+43     overrides = \{\textcolor{stringliteral}{'input\_encoding'}: input\_encoding,
+44                  \textcolor{stringliteral}{'doctitle\_xform'}: doctitle,
+45                  \textcolor{stringliteral}{'initial\_header\_level'}: initial\_header\_level\}
+46     parts = core.publish\_parts(
+47         source=input\_string, source\_path=source\_path,
+48         destination\_path=destination\_path,
+49         writer\_name=\textcolor{stringliteral}{'html'}, settings\_overrides=overrides)
+50     \textcolor{keywordflow}{return} parts
+51 
+52 
+\end{DoxyCode}
+
+
+\subsection{Variable Documentation}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1common_1_1ui_1_1HelpWindow_aa332a61a44fd34a5b42551efb342cc0c}{}\index{software\+::chipwhisperer\+::common\+::ui\+::\+Help\+Window@{software\+::chipwhisperer\+::common\+::ui\+::\+Help\+Window}!app@{app}}
+\index{app@{app}!software\+::chipwhisperer\+::common\+::ui\+::\+Help\+Window@{software\+::chipwhisperer\+::common\+::ui\+::\+Help\+Window}}
+\subsubsection[{app}]{\setlength{\rightskip}{0pt plus 5cm}tuple software.\+chipwhisperer.\+common.\+ui.\+Help\+Window.\+app = Q\+Application(sys.\+argv)}\label{namespacesoftware_1_1chipwhisperer_1_1common_1_1ui_1_1HelpWindow_aa332a61a44fd34a5b42551efb342cc0c}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1common_1_1ui_1_1HelpWindow_af78b8102e9200cb5b721f55f81f81561}{}\index{software\+::chipwhisperer\+::common\+::ui\+::\+Help\+Window@{software\+::chipwhisperer\+::common\+::ui\+::\+Help\+Window}!layoutmain@{layoutmain}}
+\index{layoutmain@{layoutmain}!software\+::chipwhisperer\+::common\+::ui\+::\+Help\+Window@{software\+::chipwhisperer\+::common\+::ui\+::\+Help\+Window}}
+\subsubsection[{layoutmain}]{\setlength{\rightskip}{0pt plus 5cm}tuple software.\+chipwhisperer.\+common.\+ui.\+Help\+Window.\+layoutmain = Q\+H\+Box\+Layout()}\label{namespacesoftware_1_1chipwhisperer_1_1common_1_1ui_1_1HelpWindow_af78b8102e9200cb5b721f55f81f81561}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1common_1_1ui_1_1HelpWindow_a6b7e91449c35dc76ffa124f92fbd5265}{}\index{software\+::chipwhisperer\+::common\+::ui\+::\+Help\+Window@{software\+::chipwhisperer\+::common\+::ui\+::\+Help\+Window}!test@{test}}
+\index{test@{test}!software\+::chipwhisperer\+::common\+::ui\+::\+Help\+Window@{software\+::chipwhisperer\+::common\+::ui\+::\+Help\+Window}}
+\subsubsection[{test}]{\setlength{\rightskip}{0pt plus 5cm}tuple software.\+chipwhisperer.\+common.\+ui.\+Help\+Window.\+test = {\bf html\+\_\+body}(unicode(\char`\"{}test\textbackslash{}n=====\textbackslash{}n\textbackslash{}n\+Hello There.\char`\"{}))}\label{namespacesoftware_1_1chipwhisperer_1_1common_1_1ui_1_1HelpWindow_a6b7e91449c35dc76ffa124f92fbd5265}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1common_1_1ui_1_1HelpWindow_a089170c473735215005185584cf7b156}{}\index{software\+::chipwhisperer\+::common\+::ui\+::\+Help\+Window@{software\+::chipwhisperer\+::common\+::ui\+::\+Help\+Window}!view@{view}}
+\index{view@{view}!software\+::chipwhisperer\+::common\+::ui\+::\+Help\+Window@{software\+::chipwhisperer\+::common\+::ui\+::\+Help\+Window}}
+\subsubsection[{view}]{\setlength{\rightskip}{0pt plus 5cm}tuple software.\+chipwhisperer.\+common.\+ui.\+Help\+Window.\+view = Qt\+Web\+Kit.\+Q\+Web\+View(None)}\label{namespacesoftware_1_1chipwhisperer_1_1common_1_1ui_1_1HelpWindow_a089170c473735215005185584cf7b156}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1common_1_1ui_1_1HelpWindow_a5facd763a64693533133ce0867f8e297}{}\index{software\+::chipwhisperer\+::common\+::ui\+::\+Help\+Window@{software\+::chipwhisperer\+::common\+::ui\+::\+Help\+Window}!wid@{wid}}
+\index{wid@{wid}!software\+::chipwhisperer\+::common\+::ui\+::\+Help\+Window@{software\+::chipwhisperer\+::common\+::ui\+::\+Help\+Window}}
+\subsubsection[{wid}]{\setlength{\rightskip}{0pt plus 5cm}tuple software.\+chipwhisperer.\+common.\+ui.\+Help\+Window.\+wid = Q\+Widget()}\label{namespacesoftware_1_1chipwhisperer_1_1common_1_1ui_1_1HelpWindow_a5facd763a64693533133ce0867f8e297}

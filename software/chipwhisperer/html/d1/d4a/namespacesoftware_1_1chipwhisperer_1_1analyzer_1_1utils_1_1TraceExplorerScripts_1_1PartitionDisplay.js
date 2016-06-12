@@ -1,0 +1,8 @@
+var namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1TraceExplorerScripts_1_1PartitionDisplay =
+[
+    [ "DifferenceMode", "df/d40/classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1TraceExplorerScripts_1_1PartitionDisplay_1_1DifferenceMode.html", "df/d40/classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1TraceExplorerScripts_1_1PartitionDisplay_1_1DifferenceMode" ],
+    [ "DifferenceModeSAD", "df/d1d/classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1TraceExplorerScripts_1_1PartitionDisplay_1_1DifferenceModeSAD.html", "df/d1d/classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1TraceExplorerScripts_1_1PartitionDisplay_1_1DifferenceModeSAD" ],
+    [ "DifferenceModeTTest", "df/d2d/classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1TraceExplorerScripts_1_1PartitionDisplay_1_1DifferenceModeTTest.html", "df/d2d/classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1TraceExplorerScripts_1_1PartitionDisplay_1_1DifferenceModeTTest" ],
+    [ "PartitionDisplay", "da/de2/classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1TraceExplorerScripts_1_1PartitionDisplay_1_1PartitionDisplay.html", "da/de2/classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1TraceExplorerScripts_1_1PartitionDisplay_1_1PartitionDisplay" ],
+    [ "POI", "d7/d24/classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1TraceExplorerScripts_1_1PartitionDisplay_1_1POI.html", "d7/d24/classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1TraceExplorerScripts_1_1PartitionDisplay_1_1POI" ]
+];

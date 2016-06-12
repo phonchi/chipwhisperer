@@ -1,0 +1,182 @@
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1__data__analysis_1_1DataAnalysis}{}\section{software.\+chipwhisperer.\+analyzer.\+attacks.\+\_\+data\+\_\+analysis.\+Data\+Analysis Class Reference}
+\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1__data__analysis_1_1DataAnalysis}\index{software.\+chipwhisperer.\+analyzer.\+attacks.\+\_\+data\+\_\+analysis.\+Data\+Analysis@{software.\+chipwhisperer.\+analyzer.\+attacks.\+\_\+data\+\_\+analysis.\+Data\+Analysis}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1__data__analysis_1_1DataAnalysis_a96f376d2f17fcf633582980082bdee2c}{load\+Data} (self, filename)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1__data__analysis_1_1DataAnalysis_ae01a2f63cf38a43d91a50c73fdecdcb7}{set\+Knownkey} (self, \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1__data__analysis_1_1DataAnalysis_a207516056735e3966c24a7eb2d2e836a}{knownkey})
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1__data__analysis_1_1DataAnalysis_ab2c7d26838e31f8bf2d346c12ba0323f}{calculate}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1__data__analysis_1_1DataAnalysis_a6f5e5781d17b950cb00eb4ce0177a2b5}{rawdata}
+\item 
+\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1__data__analysis_1_1DataAnalysis_a207516056735e3966c24a7eb2d2e836a}{knownkey}
+\end{DoxyCompactItemize}
+
+
+Inheritance diagram for software.\+chipwhisperer.\+analyzer.\+attacks.\+\_\+data\+\_\+analysis.\+Data\+Analysis\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=275pt]{d2/dd3/classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1__data__analysis_1_1DataAnalysis__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for software.\+chipwhisperer.\+analyzer.\+attacks.\+\_\+data\+\_\+analysis.\+Data\+Analysis\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=275pt]{dc/d37/classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1__data__analysis_1_1DataAnalysis__coll__graph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1__data__analysis_1_1DataAnalysis_ab2c7d26838e31f8bf2d346c12ba0323f}{}\index{software\+::chipwhisperer\+::analyzer\+::attacks\+::\+\_\+data\+\_\+analysis\+::\+Data\+Analysis@{software\+::chipwhisperer\+::analyzer\+::attacks\+::\+\_\+data\+\_\+analysis\+::\+Data\+Analysis}!calculate@{calculate}}
+\index{calculate@{calculate}!software\+::chipwhisperer\+::analyzer\+::attacks\+::\+\_\+data\+\_\+analysis\+::\+Data\+Analysis@{software\+::chipwhisperer\+::analyzer\+::attacks\+::\+\_\+data\+\_\+analysis\+::\+Data\+Analysis}}
+\subsubsection[{calculate}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+analyzer.\+attacks.\+\_\+data\+\_\+analysis.\+Data\+Analysis.\+calculate (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{use\+Abs = {\ttfamily True}}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1__data__analysis_1_1DataAnalysis_ab2c7d26838e31f8bf2d346c12ba0323f}
+
+
+References software.\+chipwhisperer.\+analyzer.\+attacks.\+\_\+data\+\_\+analysis.\+Data\+Analysis.\+knownkey, and software.\+chipwhisperer.\+analyzer.\+attacks.\+\_\+data\+\_\+analysis.\+Data\+Analysis.\+rawdata.
+
+
+\begin{DoxyCode}
+43     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1__data__analysis_1_1DataAnalysis_ab2c7d26838e31f8bf2d346c12ba0323f}{calculate}(self, useAbs=True):
+44         nkeys = len(self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1__data__analysis_1_1DataAnalysis_a207516056735e3966c24a7eb2d2e836a}{knownkey})
+45         nhyp = len(self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1__data__analysis_1_1DataAnalysis_a6f5e5781d17b950cb00eb4ce0177a2b5}{rawdata}[0][\textcolor{stringliteral}{"diffsmax"}][0])
+46         ntests = len(self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1__data__analysis_1_1DataAnalysis_a6f5e5781d17b950cb00eb4ce0177a2b5}{rawdata})
+47         data = \{\}
+48 
+49         \textcolor{keywordflow}{for} tindex \textcolor{keywordflow}{in} range(0, ntests):
+50             tnum = self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1__data__analysis_1_1DataAnalysis_a6f5e5781d17b950cb00eb4ce0177a2b5}{rawdata}[tindex][\textcolor{stringliteral}{"tracecnt"}][0]
+51 
+52             \textcolor{keywordflow}{print} tnum
+53 
+54             \textcolor{keywordflow}{if} tnum \textcolor{keywordflow}{not} \textcolor{keywordflow}{in} data.keys():
+55                 data[tnum] = \{\textcolor{stringliteral}{'pge'}:[0] * nkeys, \textcolor{stringliteral}{'gsr'}:0, \textcolor{stringliteral}{'tests'}:0\}
+56 
+57             pge = [0] * nkeys
+58             maxes = [0] * nkeys
+59             \textcolor{keywordflow}{for} i \textcolor{keywordflow}{in} range(0, nkeys):
+60                 maxes[i] = np.zeros(nhyp, dtype=[(\textcolor{stringliteral}{'hyp'}, \textcolor{stringliteral}{'i2'}), (\textcolor{stringliteral}{'value'}, \textcolor{stringliteral}{'f8'})])
+61 
+62             \textcolor{keywordflow}{for} i \textcolor{keywordflow}{in} range(0, nkeys):
+63                 \textcolor{keywordflow}{for} hyp \textcolor{keywordflow}{in} range(0, nhyp):
+64                     \textcolor{keywordflow}{if} useAbs:
+65                         v1 = abs(self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1__data__analysis_1_1DataAnalysis_a6f5e5781d17b950cb00eb4ce0177a2b5}{rawdata}[tindex][\textcolor{stringliteral}{"diffsmax"}][i][hyp])
+66                         v2 = abs(self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1__data__analysis_1_1DataAnalysis_a6f5e5781d17b950cb00eb4ce0177a2b5}{rawdata}[tindex][\textcolor{stringliteral}{"diffsmin"}][i][hyp])
+67                         mvalue = max(v1, v2)
+68                     \textcolor{keywordflow}{else}:
+69                         mvalue = self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1__data__analysis_1_1DataAnalysis_a6f5e5781d17b950cb00eb4ce0177a2b5}{rawdata}[tindex][\textcolor{stringliteral}{"diffsmax"}][i][hyp]
+70 
+71                     maxes[i][hyp][\textcolor{stringliteral}{'hyp'}] = hyp
+72                     maxes[i][hyp][\textcolor{stringliteral}{'value'}] = mvalue
+73 
+74                     \textcolor{comment}{# TODO: workaround for PGE, as NaN's get ranked first}
+75                     numnans = np.isnan(maxes[i][\textcolor{stringliteral}{'value'}]).sum()
+76 
+77                     maxes[i].sort(order=\textcolor{stringliteral}{'value'})
+78                     maxes[i] = maxes[i][::-1]
+79 
+80                     \textcolor{keywordflow}{try}:
+81                         pge[i] = np.where(maxes[i][\textcolor{stringliteral}{'hyp'}] == self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1__data__analysis_1_1DataAnalysis_a207516056735e3966c24a7eb2d2e836a}{knownkey}[i])[0][0] - numnans
+82                         \textcolor{keywordflow}{if} pge[i] < 0:
+83                             pge[i] = 128
+84                     \textcolor{keywordflow}{except} IndexError:
+85                         pge[i] = 255
+86 
+87             \textcolor{keywordflow}{if} all(v == 0 \textcolor{keywordflow}{for} v \textcolor{keywordflow}{in} pge):
+88                 gsr = 1
+89             \textcolor{keywordflow}{else}:
+90                 gsr = 0
+91 
+92             data[tnum][\textcolor{stringliteral}{'pge'}] = [data[tnum][\textcolor{stringliteral}{'pge'}][k] + pge[k] \textcolor{keywordflow}{for} k \textcolor{keywordflow}{in} range(0, len(pge))]
+93             data[tnum][\textcolor{stringliteral}{'gsr'}] += gsr
+94             data[tnum][\textcolor{stringliteral}{'tests'}] += 1
+95 
+96         \textcolor{keywordflow}{return} data
+97 
+98 \textcolor{comment}{# fdir =
+       "C:\(\backslash\)\(\backslash\)E\(\backslash\)\(\backslash\)Documents\(\backslash\)\(\backslash\)academic\(\backslash\)\(\backslash\)sidechannel\(\backslash\)\(\backslash\)eclipse-workspace\(\backslash\)\(\backslash\)chipwhisperer\(\backslash\)\(\backslash\)chipwhisperer\(\backslash\)\(\backslash\)software\(\backslash\)\(\backslash\)chipwhisperer\(\backslash\)\(\backslash\)analyzer\(\backslash\)\(\backslash\)"}
+99 \textcolor{comment}{# fname = "tempstats\_20141009\_213041.npy"}
+100 
+101 \textcolor{comment}{# test = DataAnalysis()}
+102 \textcolor{comment}{# test.loadData(fdir + fname)}
+103 \textcolor{comment}{# test.setKnownkey([0xea, 0x79, 0x79, 0x20, 0xc8, 0x71, 0x44, 0x7d, 0x46, 0x62, 0x5f, 0x51, 0x85, 0xc1,
+       0x3b, 0xcb])}
+104 
+105 \textcolor{comment}{# print "Calculating..."}
+106 \textcolor{comment}{# data = test.calculate()}
+107 \textcolor{comment}{# print "Done"}
+108 
+109 \textcolor{comment}{# print data}
+110 \end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1__data__analysis_1_1DataAnalysis_a96f376d2f17fcf633582980082bdee2c}{}\index{software\+::chipwhisperer\+::analyzer\+::attacks\+::\+\_\+data\+\_\+analysis\+::\+Data\+Analysis@{software\+::chipwhisperer\+::analyzer\+::attacks\+::\+\_\+data\+\_\+analysis\+::\+Data\+Analysis}!load\+Data@{load\+Data}}
+\index{load\+Data@{load\+Data}!software\+::chipwhisperer\+::analyzer\+::attacks\+::\+\_\+data\+\_\+analysis\+::\+Data\+Analysis@{software\+::chipwhisperer\+::analyzer\+::attacks\+::\+\_\+data\+\_\+analysis\+::\+Data\+Analysis}}
+\subsubsection[{load\+Data}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+analyzer.\+attacks.\+\_\+data\+\_\+analysis.\+Data\+Analysis.\+load\+Data (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{filename}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1__data__analysis_1_1DataAnalysis_a96f376d2f17fcf633582980082bdee2c}
+
+\begin{DoxyCode}
+33     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1__data__analysis_1_1DataAnalysis_a96f376d2f17fcf633582980082bdee2c}{loadData}(self, filename):
+34         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1__data__analysis_1_1DataAnalysis_a6f5e5781d17b950cb00eb4ce0177a2b5}{rawdata} = np.load(filename)
+35 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1__data__analysis_1_1DataAnalysis_ae01a2f63cf38a43d91a50c73fdecdcb7}{}\index{software\+::chipwhisperer\+::analyzer\+::attacks\+::\+\_\+data\+\_\+analysis\+::\+Data\+Analysis@{software\+::chipwhisperer\+::analyzer\+::attacks\+::\+\_\+data\+\_\+analysis\+::\+Data\+Analysis}!set\+Knownkey@{set\+Knownkey}}
+\index{set\+Knownkey@{set\+Knownkey}!software\+::chipwhisperer\+::analyzer\+::attacks\+::\+\_\+data\+\_\+analysis\+::\+Data\+Analysis@{software\+::chipwhisperer\+::analyzer\+::attacks\+::\+\_\+data\+\_\+analysis\+::\+Data\+Analysis}}
+\subsubsection[{set\+Knownkey}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+analyzer.\+attacks.\+\_\+data\+\_\+analysis.\+Data\+Analysis.\+set\+Knownkey (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{knownkey}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1__data__analysis_1_1DataAnalysis_ae01a2f63cf38a43d91a50c73fdecdcb7}
+
+
+References software.\+chipwhisperer.\+analyzer.\+attacks.\+\_\+data\+\_\+analysis.\+Data\+Analysis.\+rawdata.
+
+
+\begin{DoxyCode}
+36     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1__data__analysis_1_1DataAnalysis_ae01a2f63cf38a43d91a50c73fdecdcb7}{setKnownkey}(self, knownkey):
+37         numsubkeys = len(self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1__data__analysis_1_1DataAnalysis_a6f5e5781d17b950cb00eb4ce0177a2b5}{rawdata}[0][\textcolor{stringliteral}{"diffsmax"}])
+38         \textcolor{keywordflow}{if} len(knownkey) != numsubkeys:
+39             \textcolor{keywordflow}{raise} ValueError(\textcolor{stringliteral}{"Knownkey of length %d differs from trace keylength of %d"} % (len(knownkey), 
+      numsubkeys))
+40 
+41         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1__data__analysis_1_1DataAnalysis_a207516056735e3966c24a7eb2d2e836a}{knownkey} = knownkey
+42 
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1__data__analysis_1_1DataAnalysis_a207516056735e3966c24a7eb2d2e836a}{}\index{software\+::chipwhisperer\+::analyzer\+::attacks\+::\+\_\+data\+\_\+analysis\+::\+Data\+Analysis@{software\+::chipwhisperer\+::analyzer\+::attacks\+::\+\_\+data\+\_\+analysis\+::\+Data\+Analysis}!knownkey@{knownkey}}
+\index{knownkey@{knownkey}!software\+::chipwhisperer\+::analyzer\+::attacks\+::\+\_\+data\+\_\+analysis\+::\+Data\+Analysis@{software\+::chipwhisperer\+::analyzer\+::attacks\+::\+\_\+data\+\_\+analysis\+::\+Data\+Analysis}}
+\subsubsection[{knownkey}]{\setlength{\rightskip}{0pt plus 5cm}software.\+chipwhisperer.\+analyzer.\+attacks.\+\_\+data\+\_\+analysis.\+Data\+Analysis.\+knownkey}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1__data__analysis_1_1DataAnalysis_a207516056735e3966c24a7eb2d2e836a}
+
+
+Referenced by software.\+chipwhisperer.\+analyzer.\+attacks.\+\_\+data\+\_\+analysis.\+Data\+Analysis.\+calculate(), software.\+chipwhisperer.\+common.\+traces.\+Trace\+Container\+Native.\+Trace\+Container\+Native.\+close\+All(), software.\+chipwhisperer.\+common.\+utils.\+tracereader\+\_\+native.\+tracereader\+\_\+native.\+copy\+To(), software.\+chipwhisperer.\+analyzer.\+attacks.\+\_\+stats.\+Data\+Type\+Diffs.\+find\+Maximums(), software.\+chipwhisperer.\+common.\+utils.\+tracereader\+\_\+native.\+tracereader\+\_\+native.\+get\+Known\+Key(), software.\+chipwhisperer.\+common.\+utils.\+tracereader\+\_\+dpacontestv3.\+tracereader\+\_\+dpacontestv3.\+get\+Known\+Key(), software.\+chipwhisperer.\+common.\+traces.\+\_\+base.\+Trace\+Container.\+get\+Known\+Key(), software.\+chipwhisperer.\+common.\+traces.\+Trace\+Container\+Native.\+Trace\+Container\+Native.\+load\+All\+Traces(), software.\+chipwhisperer.\+common.\+utils.\+tracereader\+\_\+native.\+tracereader\+\_\+native.\+load\+All\+Traces(), software.\+chipwhisperer.\+common.\+utils.\+tracereader\+\_\+native.\+tracereader\+\_\+native.\+save\+All\+Traces(), software.\+chipwhisperer.\+common.\+traces.\+Trace\+Container\+Native.\+Trace\+Container\+Native.\+save\+All\+Traces(), software.\+chipwhisperer.\+analyzer.\+attacks.\+\_\+stats.\+Data\+Type\+Diffs.\+set\+Knownkey(), software.\+chipwhisperer.\+common.\+traces.\+\_\+base.\+Trace\+Container.\+set\+Known\+Key(), and software.\+chipwhisperer.\+common.\+traces.\+Trace\+Container\+Native.\+Trace\+Container\+Native.\+unload\+All\+Traces().
+
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1__data__analysis_1_1DataAnalysis_a6f5e5781d17b950cb00eb4ce0177a2b5}{}\index{software\+::chipwhisperer\+::analyzer\+::attacks\+::\+\_\+data\+\_\+analysis\+::\+Data\+Analysis@{software\+::chipwhisperer\+::analyzer\+::attacks\+::\+\_\+data\+\_\+analysis\+::\+Data\+Analysis}!rawdata@{rawdata}}
+\index{rawdata@{rawdata}!software\+::chipwhisperer\+::analyzer\+::attacks\+::\+\_\+data\+\_\+analysis\+::\+Data\+Analysis@{software\+::chipwhisperer\+::analyzer\+::attacks\+::\+\_\+data\+\_\+analysis\+::\+Data\+Analysis}}
+\subsubsection[{rawdata}]{\setlength{\rightskip}{0pt plus 5cm}software.\+chipwhisperer.\+analyzer.\+attacks.\+\_\+data\+\_\+analysis.\+Data\+Analysis.\+rawdata}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1__data__analysis_1_1DataAnalysis_a6f5e5781d17b950cb00eb4ce0177a2b5}
+
+
+Referenced by software.\+chipwhisperer.\+analyzer.\+attacks.\+\_\+data\+\_\+analysis.\+Data\+Analysis.\+calculate(), and software.\+chipwhisperer.\+analyzer.\+attacks.\+\_\+data\+\_\+analysis.\+Data\+Analysis.\+set\+Knownkey().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{__data__analysis_8py}{\+\_\+data\+\_\+analysis.\+py}\end{DoxyCompactItemize}

@@ -1,0 +1,4 @@
+var namespacesoftware_1_1chipwhisperer_1_1capture_1_1targets_1_1smartcard__readers_1_1chipwhisperer__scard =
+[
+    [ "ReaderChipWhispererSCard", "dd/d18/classsoftware_1_1chipwhisperer_1_1capture_1_1targets_1_1smartcard__readers_1_1chipwhisperer__scard_1_1ReaderChipWhispererSCard.html", "dd/d18/classsoftware_1_1chipwhisperer_1_1capture_1_1targets_1_1smartcard__readers_1_1chipwhisperer__scard_1_1ReaderChipWhispererSCard" ]
+];

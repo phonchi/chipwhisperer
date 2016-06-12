@@ -1,0 +1,3 @@
+<map id="software.chipwhisperer.hardware.naeusb.programmer_avr.ATMega48PA" name="software.chipwhisperer.hardware.naeusb.programmer_avr.ATMega48PA">
+<area shape="rect" id="node2" href="$df/d0c/classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRBase.html" title="{software.chipwhisperer.hardware.naeusb.programmer\l_avr.AVRBase\n|+ name\l+ signature\l+ timeout\l+ stabdelay\l+ cmdexedelay\l+ synchloops\l+ bytedelay\l+ pollindex\l+ pollvalue\l+ predelay\l+ postdelay\l+ pollmethod\l+ memtypes\l|}" alt="" coords="5,131,337,399"/>
+</map>

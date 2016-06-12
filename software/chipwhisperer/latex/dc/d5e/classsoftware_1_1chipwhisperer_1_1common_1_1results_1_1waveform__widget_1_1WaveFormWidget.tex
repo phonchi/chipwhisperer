@@ -1,0 +1,218 @@
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1waveform__widget_1_1WaveFormWidget}{}\section{software.\+chipwhisperer.\+common.\+results.\+waveform\+\_\+widget.\+Wave\+Form\+Widget Class Reference}
+\label{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1waveform__widget_1_1WaveFormWidget}\index{software.\+chipwhisperer.\+common.\+results.\+waveform\+\_\+widget.\+Wave\+Form\+Widget@{software.\+chipwhisperer.\+common.\+results.\+waveform\+\_\+widget.\+Wave\+Form\+Widget}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1waveform__widget_1_1WaveFormWidget_aaca9b6d34808f541cdeaff2a0db1f5fc}{\+\_\+\+\_\+init\+\_\+\+\_\+}
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1waveform__widget_1_1WaveFormWidget_a5d0b52d0e854e36ced61f90547daef63}{reset\+Trace\+Limits} (self)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1waveform__widget_1_1WaveFormWidget_a30d46f17faf50a747d563441d90d0a6c}{set\+Redraw\+After\+Each} (self, enabled)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1waveform__widget_1_1WaveFormWidget_ad647aa0ea34bda73fec2c2e1695720d8}{plot\+Input\+Trace} (self)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1waveform__widget_1_1WaveFormWidget_a6d52aa963daf9e87debee36510266a24}{process\+Traces} (self)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1waveform__widget_1_1WaveFormWidget_a750089233c3ca4406b423172777c7aa0}{get\+Widget} (self)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1waveform__widget_1_1WaveFormWidget_a1ab3d2b50abef54a20f88960c8cc1a10}{redraw\+After\+Each}
+\end{DoxyCompactItemize}
+
+
+Inheritance diagram for software.\+chipwhisperer.\+common.\+results.\+waveform\+\_\+widget.\+Wave\+Form\+Widget\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d0/d46/classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1waveform__widget_1_1WaveFormWidget__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for software.\+chipwhisperer.\+common.\+results.\+waveform\+\_\+widget.\+Wave\+Form\+Widget\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d60/classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1waveform__widget_1_1WaveFormWidget__coll__graph}
+\end{center}
+\end{figure}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1waveform__widget_1_1WaveFormWidget_aaca9b6d34808f541cdeaff2a0db1f5fc}{}\index{software\+::chipwhisperer\+::common\+::results\+::waveform\+\_\+widget\+::\+Wave\+Form\+Widget@{software\+::chipwhisperer\+::common\+::results\+::waveform\+\_\+widget\+::\+Wave\+Form\+Widget}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!software\+::chipwhisperer\+::common\+::results\+::waveform\+\_\+widget\+::\+Wave\+Form\+Widget@{software\+::chipwhisperer\+::common\+::results\+::waveform\+\_\+widget\+::\+Wave\+Form\+Widget}}
+\subsubsection[{\+\_\+\+\_\+init\+\_\+\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+results.\+waveform\+\_\+widget.\+Wave\+Form\+Widget.\+\_\+\+\_\+init\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{parent\+Param = {\ttfamily None}, }
+\item[{}]{name = {\ttfamily None}}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1waveform__widget_1_1WaveFormWidget_aaca9b6d34808f541cdeaff2a0db1f5fc}
+
+\begin{DoxyCode}
+38     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1waveform__widget_1_1WaveFormWidget_aaca9b6d34808f541cdeaff2a0db1f5fc}{\_\_init\_\_}(self, parentParam=None, name=None):
+39         GraphWidget.\_\_init\_\_(self)
+40         ResultsBase.\_\_init\_\_(self, parentParam, name)
+41         ActiveTraceObserver.\_\_init\_\_(self)
+42 
+43         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1waveform__widget_1_1WaveFormWidget_a1ab3d2b50abef54a20f88960c8cc1a10}{redrawAfterEach} = \textcolor{keyword}{False}
+44         self.params.addChildren([
+45             \{\textcolor{stringliteral}{'name'}:\textcolor{stringliteral}{'Redraw after Each'}, \textcolor{stringliteral}{'type'}:\textcolor{stringliteral}{'bool'}, \textcolor{stringliteral}{'value'}:self.
+      \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1waveform__widget_1_1WaveFormWidget_a1ab3d2b50abef54a20f88960c8cc1a10}{redrawAfterEach}, \textcolor{stringliteral}{'set'}:self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1waveform__widget_1_1WaveFormWidget_a30d46f17faf50a747d563441d90d0a6c}{setRedrawAfterEach}\},
+46             \{\textcolor{stringliteral}{'name'}:\textcolor{stringliteral}{'Trace Range'}, \textcolor{stringliteral}{'key'}:\textcolor{stringliteral}{'tracerng'}, \textcolor{stringliteral}{'type'}:\textcolor{stringliteral}{'range'}, \textcolor{stringliteral}{'limits'}:(0, 0), \textcolor{stringliteral}{'default'}:(0, 0)\},
+47             \{\textcolor{stringliteral}{'name'}:\textcolor{stringliteral}{'Point Range'}, \textcolor{stringliteral}{'key'}:\textcolor{stringliteral}{'pointrng'}, \textcolor{stringliteral}{'type'}:\textcolor{stringliteral}{'rangegraph'}, \textcolor{stringliteral}{'limits'}:(0, 0), \textcolor{stringliteral}{'default'}:(0, 0)
+      , \textcolor{stringliteral}{'graphwidget'}:self\},
+48             \{\textcolor{stringliteral}{'name'}:\textcolor{stringliteral}{'Redraw'}, \textcolor{stringliteral}{'type'}:\textcolor{stringliteral}{'action'}, \textcolor{stringliteral}{'action'}:self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1waveform__widget_1_1WaveFormWidget_ad647aa0ea34bda73fec2c2e1695720d8}{plotInputTrace}\},
+49         ])
+50 
+51         self.findParam(\textcolor{stringliteral}{'input'}).setValue(TraceSource.registeredObjects[\textcolor{stringliteral}{"Trace Management"}])
+52         TraceSource.sigRegisteredObjectsChanged.connect(self.traceSourcesChanged)
+53 
+54         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1waveform__widget_1_1WaveFormWidget_a5d0b52d0e854e36ced61f90547daef63}{resetTraceLimits}()
+55         self.setDefaultYRange(-0.5, 0.5)
+56         self.YDefault()
+57 
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1waveform__widget_1_1WaveFormWidget_a750089233c3ca4406b423172777c7aa0}{}\index{software\+::chipwhisperer\+::common\+::results\+::waveform\+\_\+widget\+::\+Wave\+Form\+Widget@{software\+::chipwhisperer\+::common\+::results\+::waveform\+\_\+widget\+::\+Wave\+Form\+Widget}!get\+Widget@{get\+Widget}}
+\index{get\+Widget@{get\+Widget}!software\+::chipwhisperer\+::common\+::results\+::waveform\+\_\+widget\+::\+Wave\+Form\+Widget@{software\+::chipwhisperer\+::common\+::results\+::waveform\+\_\+widget\+::\+Wave\+Form\+Widget}}
+\subsubsection[{get\+Widget}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+results.\+waveform\+\_\+widget.\+Wave\+Form\+Widget.\+get\+Widget (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1waveform__widget_1_1WaveFormWidget_a750089233c3ca4406b423172777c7aa0}
+
+\begin{DoxyCode}
+106     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1waveform__widget_1_1WaveFormWidget_a750089233c3ca4406b423172777c7aa0}{getWidget}(self):
+107         \textcolor{keywordflow}{return} self\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1waveform__widget_1_1WaveFormWidget_ad647aa0ea34bda73fec2c2e1695720d8}{}\index{software\+::chipwhisperer\+::common\+::results\+::waveform\+\_\+widget\+::\+Wave\+Form\+Widget@{software\+::chipwhisperer\+::common\+::results\+::waveform\+\_\+widget\+::\+Wave\+Form\+Widget}!plot\+Input\+Trace@{plot\+Input\+Trace}}
+\index{plot\+Input\+Trace@{plot\+Input\+Trace}!software\+::chipwhisperer\+::common\+::results\+::waveform\+\_\+widget\+::\+Wave\+Form\+Widget@{software\+::chipwhisperer\+::common\+::results\+::waveform\+\_\+widget\+::\+Wave\+Form\+Widget}}
+\subsubsection[{plot\+Input\+Trace}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+results.\+waveform\+\_\+widget.\+Wave\+Form\+Widget.\+plot\+Input\+Trace (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1waveform__widget_1_1WaveFormWidget_ad647aa0ea34bda73fec2c2e1695720d8}
+
+
+References software.\+chipwhisperer.\+common.\+ui.\+Graph\+Widget.\+Graph\+Widget.\+clear\+Pushed(), software.\+chipwhisperer.\+capture.\+scopes.\+\_\+\+Open\+A\+D\+C\+Interface.\+Open\+A\+D\+C\+Settings.\+find\+Param, software.\+chipwhisperer.\+common.\+api.\+Extended\+Parameter.\+Extended\+Parameter.\+find\+Param(), software.\+chipwhisperer.\+capture.\+scopes.\+\_\+\+Open\+A\+D\+C\+Interface.\+Clock\+Settings.\+find\+Param, software.\+chipwhisperer.\+common.\+ui.\+Graph\+Widget.\+Graph\+Widget.\+pass\+Trace(), software.\+chipwhisperer.\+common.\+ui.\+Graph\+Widget.\+Graph\+Widget.\+persistant, software.\+chipwhisperer.\+common.\+results.\+waveform\+\_\+widget.\+Wave\+Form\+Widget.\+redraw\+After\+Each, and software.\+chipwhisperer.\+common.\+ui.\+Graph\+Widget.\+Graph\+Widget.\+set\+Persistance().
+
+
+
+Referenced by software.\+chipwhisperer.\+common.\+results.\+waveform\+\_\+widget.\+Wave\+Form\+Widget.\+process\+Traces().
+
+
+\begin{DoxyCode}
+76     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1waveform__widget_1_1WaveFormWidget_ad647aa0ea34bda73fec2c2e1695720d8}{plotInputTrace}(self):
+77         \textcolor{comment}{#print "Plotting %d-%d for points %d-%d"%(params[0].value(), params[1].value(), params[2].value(),
+       params[3].value())}
+78         initialPersist = self.persistant
+79         \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} self.persistant:
+80             self.clearPushed()
+81 
+82         tstart = self.findParam(\textcolor{stringliteral}{'tracerng'}).value()[0]
+83         tend = self.findParam(\textcolor{stringliteral}{'tracerng'}).value()[1]
+84         pstart = self.findParam(\textcolor{stringliteral}{'pointrng'}).value()[0]
+85         pend = self.findParam(\textcolor{stringliteral}{'pointrng'}).value()[1]
+86         ttotal = 0
+87 
+88         \textcolor{keywordflow}{if} tend - tstart + 1 > 1:
+89             self.setPersistance(\textcolor{keyword}{True})
+90 
+91         \textcolor{keywordflow}{for} tnum \textcolor{keywordflow}{in} range(tstart, tend+1):
+92             trace = self.\_traceSource.getTrace(tnum)
+93             \textcolor{keywordflow}{if} trace \textcolor{keywordflow}{is} \textcolor{keywordflow}{not} \textcolor{keywordtype}{None}:
+94                 ttotal += 1
+95                 self.passTrace(trace[pstart:pend+1], pstart, self.\_traceSource.offset(), idString = str(
+      tnum))
+96 
+97                 \textcolor{keywordflow}{if} self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1waveform__widget_1_1WaveFormWidget_a1ab3d2b50abef54a20f88960c8cc1a10}{redrawAfterEach}:
+98                     util.updateUI()
+99 
+100         self.setPersistance(initialPersist)
+101 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1waveform__widget_1_1WaveFormWidget_a6d52aa963daf9e87debee36510266a24}{}\index{software\+::chipwhisperer\+::common\+::results\+::waveform\+\_\+widget\+::\+Wave\+Form\+Widget@{software\+::chipwhisperer\+::common\+::results\+::waveform\+\_\+widget\+::\+Wave\+Form\+Widget}!process\+Traces@{process\+Traces}}
+\index{process\+Traces@{process\+Traces}!software\+::chipwhisperer\+::common\+::results\+::waveform\+\_\+widget\+::\+Wave\+Form\+Widget@{software\+::chipwhisperer\+::common\+::results\+::waveform\+\_\+widget\+::\+Wave\+Form\+Widget}}
+\subsubsection[{process\+Traces}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+results.\+waveform\+\_\+widget.\+Wave\+Form\+Widget.\+process\+Traces (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1waveform__widget_1_1WaveFormWidget_a6d52aa963daf9e87debee36510266a24}
+
+
+References software.\+chipwhisperer.\+common.\+results.\+waveform\+\_\+widget.\+Wave\+Form\+Widget.\+plot\+Input\+Trace(), and software.\+chipwhisperer.\+common.\+results.\+waveform\+\_\+widget.\+Wave\+Form\+Widget.\+reset\+Trace\+Limits().
+
+
+\begin{DoxyCode}
+102     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1waveform__widget_1_1WaveFormWidget_a6d52aa963daf9e87debee36510266a24}{processTraces}(self):
+103         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1waveform__widget_1_1WaveFormWidget_a5d0b52d0e854e36ced61f90547daef63}{resetTraceLimits}()
+104         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1waveform__widget_1_1WaveFormWidget_ad647aa0ea34bda73fec2c2e1695720d8}{plotInputTrace}()
+105 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1waveform__widget_1_1WaveFormWidget_a5d0b52d0e854e36ced61f90547daef63}{}\index{software\+::chipwhisperer\+::common\+::results\+::waveform\+\_\+widget\+::\+Wave\+Form\+Widget@{software\+::chipwhisperer\+::common\+::results\+::waveform\+\_\+widget\+::\+Wave\+Form\+Widget}!reset\+Trace\+Limits@{reset\+Trace\+Limits}}
+\index{reset\+Trace\+Limits@{reset\+Trace\+Limits}!software\+::chipwhisperer\+::common\+::results\+::waveform\+\_\+widget\+::\+Wave\+Form\+Widget@{software\+::chipwhisperer\+::common\+::results\+::waveform\+\_\+widget\+::\+Wave\+Form\+Widget}}
+\subsubsection[{reset\+Trace\+Limits}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+results.\+waveform\+\_\+widget.\+Wave\+Form\+Widget.\+reset\+Trace\+Limits (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1waveform__widget_1_1WaveFormWidget_a5d0b52d0e854e36ced61f90547daef63}
+
+
+References software.\+chipwhisperer.\+common.\+utils.\+tracesource.\+Passive\+Trace\+Observer.\+\_\+trace\+Source, software.\+chipwhisperer.\+common.\+utils.\+tracesource.\+Active\+Trace\+Observer.\+\_\+trace\+Source, software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+experimentalchannelinfo.\+Template\+C\+S\+I.\+\_\+trace\+Source, software.\+chipwhisperer.\+capture.\+scopes.\+\_\+\+Open\+A\+D\+C\+Interface.\+Open\+A\+D\+C\+Settings.\+find\+Param, software.\+chipwhisperer.\+common.\+api.\+Extended\+Parameter.\+Extended\+Parameter.\+find\+Param(), and software.\+chipwhisperer.\+capture.\+scopes.\+\_\+\+Open\+A\+D\+C\+Interface.\+Clock\+Settings.\+find\+Param.
+
+
+
+Referenced by software.\+chipwhisperer.\+common.\+results.\+waveform\+\_\+widget.\+Wave\+Form\+Widget.\+process\+Traces().
+
+
+\begin{DoxyCode}
+61     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1waveform__widget_1_1WaveFormWidget_a5d0b52d0e854e36ced61f90547daef63}{resetTraceLimits}(self):
+62         \textcolor{keywordflow}{if} self.\_traceSource:
+63             lastTrace = self.\_traceSource.numTraces()-1
+64             lastPoint = self.\_traceSource.numPoints()-1
+65         \textcolor{keywordflow}{else}:
+66             lastTrace = -1
+67             lastPoint = -1
+68         self.findParam(\textcolor{stringliteral}{'tracerng'}).setLimits((0 \textcolor{keywordflow}{if} lastTrace>-1 \textcolor{keywordflow}{else} -1, lastTrace))
+69         self.findParam(\textcolor{stringliteral}{'tracerng'}).setValue((0, min(lastTrace, 0)))
+70         self.findParam(\textcolor{stringliteral}{'pointrng'}).setLimits((0 \textcolor{keywordflow}{if} lastPoint>-1 \textcolor{keywordflow}{else} -1, lastPoint))
+71         self.findParam(\textcolor{stringliteral}{'pointrng'}).setValue((0, lastPoint))
+72 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1waveform__widget_1_1WaveFormWidget_a30d46f17faf50a747d563441d90d0a6c}{}\index{software\+::chipwhisperer\+::common\+::results\+::waveform\+\_\+widget\+::\+Wave\+Form\+Widget@{software\+::chipwhisperer\+::common\+::results\+::waveform\+\_\+widget\+::\+Wave\+Form\+Widget}!set\+Redraw\+After\+Each@{set\+Redraw\+After\+Each}}
+\index{set\+Redraw\+After\+Each@{set\+Redraw\+After\+Each}!software\+::chipwhisperer\+::common\+::results\+::waveform\+\_\+widget\+::\+Wave\+Form\+Widget@{software\+::chipwhisperer\+::common\+::results\+::waveform\+\_\+widget\+::\+Wave\+Form\+Widget}}
+\subsubsection[{set\+Redraw\+After\+Each}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+results.\+waveform\+\_\+widget.\+Wave\+Form\+Widget.\+set\+Redraw\+After\+Each (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{enabled}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1waveform__widget_1_1WaveFormWidget_a30d46f17faf50a747d563441d90d0a6c}
+
+
+References software.\+chipwhisperer.\+common.\+results.\+waveform\+\_\+widget.\+Wave\+Form\+Widget.\+redraw\+After\+Each.
+
+
+\begin{DoxyCode}
+73     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1waveform__widget_1_1WaveFormWidget_a30d46f17faf50a747d563441d90d0a6c}{setRedrawAfterEach}(self, enabled):
+74         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1waveform__widget_1_1WaveFormWidget_a1ab3d2b50abef54a20f88960c8cc1a10}{redrawAfterEach} = enabled
+75 
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1waveform__widget_1_1WaveFormWidget_a1ab3d2b50abef54a20f88960c8cc1a10}{}\index{software\+::chipwhisperer\+::common\+::results\+::waveform\+\_\+widget\+::\+Wave\+Form\+Widget@{software\+::chipwhisperer\+::common\+::results\+::waveform\+\_\+widget\+::\+Wave\+Form\+Widget}!redraw\+After\+Each@{redraw\+After\+Each}}
+\index{redraw\+After\+Each@{redraw\+After\+Each}!software\+::chipwhisperer\+::common\+::results\+::waveform\+\_\+widget\+::\+Wave\+Form\+Widget@{software\+::chipwhisperer\+::common\+::results\+::waveform\+\_\+widget\+::\+Wave\+Form\+Widget}}
+\subsubsection[{redraw\+After\+Each}]{\setlength{\rightskip}{0pt plus 5cm}software.\+chipwhisperer.\+common.\+results.\+waveform\+\_\+widget.\+Wave\+Form\+Widget.\+redraw\+After\+Each}\label{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1waveform__widget_1_1WaveFormWidget_a1ab3d2b50abef54a20f88960c8cc1a10}
+
+
+Referenced by software.\+chipwhisperer.\+common.\+results.\+waveform\+\_\+widget.\+Wave\+Form\+Widget.\+plot\+Input\+Trace(), and software.\+chipwhisperer.\+common.\+results.\+waveform\+\_\+widget.\+Wave\+Form\+Widget.\+set\+Redraw\+After\+Each().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{waveform__widget_8py}{waveform\+\_\+widget.\+py}\end{DoxyCompactItemize}

@@ -1,0 +1,75 @@
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1common_1_1ui_1_1ProjectTextEditor}{}\section{software.\+chipwhisperer.\+common.\+ui.\+Project\+Text\+Editor Namespace Reference}
+\label{namespacesoftware_1_1chipwhisperer_1_1common_1_1ui_1_1ProjectTextEditor}\index{software.\+chipwhisperer.\+common.\+ui.\+Project\+Text\+Editor@{software.\+chipwhisperer.\+common.\+ui.\+Project\+Text\+Editor}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1ProjectTextEditor_1_1ProjectEditor}{Project\+Editor}
+\item 
+class \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1ProjectTextEditor_1_1ProjectHighlighter}{Project\+Highlighter}
+\item 
+class \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1ProjectTextEditor_1_1ProjectTextEditor}{Project\+Text\+Editor}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacesoftware_1_1chipwhisperer_1_1common_1_1ui_1_1ProjectTextEditor_a4509958a6872ff0910dce94fc604722a}{fontformat}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+dictionary \hyperlink{namespacesoftware_1_1chipwhisperer_1_1common_1_1ui_1_1ProjectTextEditor_ab8f16bee0288aa31c33096fe8fb4c618}{S\+T\+Y\+L\+E\+S}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1common_1_1ui_1_1ProjectTextEditor_a4509958a6872ff0910dce94fc604722a}{}\index{software\+::chipwhisperer\+::common\+::ui\+::\+Project\+Text\+Editor@{software\+::chipwhisperer\+::common\+::ui\+::\+Project\+Text\+Editor}!fontformat@{fontformat}}
+\index{fontformat@{fontformat}!software\+::chipwhisperer\+::common\+::ui\+::\+Project\+Text\+Editor@{software\+::chipwhisperer\+::common\+::ui\+::\+Project\+Text\+Editor}}
+\subsubsection[{fontformat}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+ui.\+Project\+Text\+Editor.\+fontformat (
+\begin{DoxyParamCaption}
+\item[{}]{color, }
+\item[{}]{style = {\ttfamily \textquotesingle{}\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\label{namespacesoftware_1_1chipwhisperer_1_1common_1_1ui_1_1ProjectTextEditor_a4509958a6872ff0910dce94fc604722a}
+\begin{DoxyVerb}Return a QTextCharFormat with the given attributes.
+\end{DoxyVerb}
+ 
+\begin{DoxyCode}
+200 \textcolor{keyword}{def }\hyperlink{namespacesoftware_1_1chipwhisperer_1_1common_1_1ui_1_1ProjectTextEditor_a4509958a6872ff0910dce94fc604722a}{fontformat}(color, style=''):
+201     \textcolor{stringliteral}{"""Return a QTextCharFormat with the given attributes.}
+202 \textcolor{stringliteral}{    """}
+203     \_color = QColor()
+204     \_color.setNamedColor(color)
+205 
+206     \_format = QTextCharFormat()
+207     \_format.setForeground(\_color)
+208     \textcolor{keywordflow}{if} \textcolor{stringliteral}{'bold'} \textcolor{keywordflow}{in} style:
+209         \_format.setFontWeight(QFont.Bold)
+210     \textcolor{keywordflow}{if} \textcolor{stringliteral}{'italic'} \textcolor{keywordflow}{in} style:
+211         \_format.setFontItalic(\textcolor{keyword}{True})
+212 
+213     \textcolor{keywordflow}{return} \_format
+214 
+215 
+216 \textcolor{comment}{# Syntax styles that can be shared by all languages}
+\end{DoxyCode}
+
+
+\subsection{Variable Documentation}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1common_1_1ui_1_1ProjectTextEditor_ab8f16bee0288aa31c33096fe8fb4c618}{}\index{software\+::chipwhisperer\+::common\+::ui\+::\+Project\+Text\+Editor@{software\+::chipwhisperer\+::common\+::ui\+::\+Project\+Text\+Editor}!S\+T\+Y\+L\+E\+S@{S\+T\+Y\+L\+E\+S}}
+\index{S\+T\+Y\+L\+E\+S@{S\+T\+Y\+L\+E\+S}!software\+::chipwhisperer\+::common\+::ui\+::\+Project\+Text\+Editor@{software\+::chipwhisperer\+::common\+::ui\+::\+Project\+Text\+Editor}}
+\subsubsection[{S\+T\+Y\+L\+E\+S}]{\setlength{\rightskip}{0pt plus 5cm}dictionary software.\+chipwhisperer.\+common.\+ui.\+Project\+Text\+Editor.\+S\+T\+Y\+L\+E\+S}\label{namespacesoftware_1_1chipwhisperer_1_1common_1_1ui_1_1ProjectTextEditor_ab8f16bee0288aa31c33096fe8fb4c618}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 = \{
+2     \textcolor{stringliteral}{'operator'}: \hyperlink{namespacesoftware_1_1chipwhisperer_1_1common_1_1ui_1_1ProjectTextEditor_a4509958a6872ff0910dce94fc604722a}{fontformat}(\textcolor{stringliteral}{'blue'}),
+3     \textcolor{stringliteral}{'defclass'}: \hyperlink{namespacesoftware_1_1chipwhisperer_1_1common_1_1ui_1_1ProjectTextEditor_a4509958a6872ff0910dce94fc604722a}{fontformat}(\textcolor{stringliteral}{'black'}, \textcolor{stringliteral}{'bold'}),
+4     \textcolor{stringliteral}{'string'}: \hyperlink{namespacesoftware_1_1chipwhisperer_1_1common_1_1ui_1_1ProjectTextEditor_a4509958a6872ff0910dce94fc604722a}{fontformat}(\textcolor{stringliteral}{'darkMagenta'}),
+5     \textcolor{stringliteral}{'string2'}: \hyperlink{namespacesoftware_1_1chipwhisperer_1_1common_1_1ui_1_1ProjectTextEditor_a4509958a6872ff0910dce94fc604722a}{fontformat}(\textcolor{stringliteral}{'darkMagenta'}),
+6     \textcolor{stringliteral}{'comment'}: \hyperlink{namespacesoftware_1_1chipwhisperer_1_1common_1_1ui_1_1ProjectTextEditor_a4509958a6872ff0910dce94fc604722a}{fontformat}(\textcolor{stringliteral}{'darkGreen'}, \textcolor{stringliteral}{'italic'}),
+7     \textcolor{stringliteral}{'class1'}: \hyperlink{namespacesoftware_1_1chipwhisperer_1_1common_1_1ui_1_1ProjectTextEditor_a4509958a6872ff0910dce94fc604722a}{fontformat}(\textcolor{stringliteral}{'red'}, \textcolor{stringliteral}{'bold'}),
+8     \textcolor{stringliteral}{'class2'}: \hyperlink{namespacesoftware_1_1chipwhisperer_1_1common_1_1ui_1_1ProjectTextEditor_a4509958a6872ff0910dce94fc604722a}{fontformat}(\textcolor{stringliteral}{'magenta'}, \textcolor{stringliteral}{'bold'}),
+9     \textcolor{stringliteral}{'class3'}: \hyperlink{namespacesoftware_1_1chipwhisperer_1_1common_1_1ui_1_1ProjectTextEditor_a4509958a6872ff0910dce94fc604722a}{fontformat}(\textcolor{stringliteral}{'magenta'}, \textcolor{stringliteral}{'bold'}),
+10     \textcolor{stringliteral}{'class4'}: \hyperlink{namespacesoftware_1_1chipwhisperer_1_1common_1_1ui_1_1ProjectTextEditor_a4509958a6872ff0910dce94fc604722a}{fontformat}(\textcolor{stringliteral}{'magenta'}, \textcolor{stringliteral}{'bold'}),
+11     \textcolor{stringliteral}{'numbers'}: \hyperlink{namespacesoftware_1_1chipwhisperer_1_1common_1_1ui_1_1ProjectTextEditor_a4509958a6872ff0910dce94fc604722a}{fontformat}(\textcolor{stringliteral}{'brown'}),
+12 \}
+\end{DoxyCode}

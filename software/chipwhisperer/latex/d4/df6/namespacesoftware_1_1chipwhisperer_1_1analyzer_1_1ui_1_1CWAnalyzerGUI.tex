@@ -1,0 +1,62 @@
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1ui_1_1CWAnalyzerGUI}{}\section{software.\+chipwhisperer.\+analyzer.\+ui.\+C\+W\+Analyzer\+G\+U\+I Namespace Reference}
+\label{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1ui_1_1CWAnalyzerGUI}\index{software.\+chipwhisperer.\+analyzer.\+ui.\+C\+W\+Analyzer\+G\+U\+I@{software.\+chipwhisperer.\+analyzer.\+ui.\+C\+W\+Analyzer\+G\+U\+I}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1ui_1_1CWAnalyzerGUI_1_1CWAnalyzerGUI}{C\+W\+Analyzer\+G\+U\+I}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1ui_1_1CWAnalyzerGUI_abfa5e2488cba7c37b5c186eb714468c0}{make\+Application} ()
+\item 
+def \hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1ui_1_1CWAnalyzerGUI_ae2a4b2c05f89ed17bcc712ef3b5da18b}{main} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1ui_1_1CWAnalyzerGUI_ae2a4b2c05f89ed17bcc712ef3b5da18b}{}\index{software\+::chipwhisperer\+::analyzer\+::ui\+::\+C\+W\+Analyzer\+G\+U\+I@{software\+::chipwhisperer\+::analyzer\+::ui\+::\+C\+W\+Analyzer\+G\+U\+I}!main@{main}}
+\index{main@{main}!software\+::chipwhisperer\+::analyzer\+::ui\+::\+C\+W\+Analyzer\+G\+U\+I@{software\+::chipwhisperer\+::analyzer\+::ui\+::\+C\+W\+Analyzer\+G\+U\+I}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+analyzer.\+ui.\+C\+W\+Analyzer\+G\+U\+I.\+main (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1ui_1_1CWAnalyzerGUI_ae2a4b2c05f89ed17bcc712ef3b5da18b}
+
+
+References software.\+chipwhisperer.\+analyzer.\+ui.\+C\+W\+Analyzer\+G\+U\+I.\+make\+Application().
+
+
+\begin{DoxyCode}
+116 \textcolor{keyword}{def }\hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1ui_1_1CWAnalyzerGUI_ae2a4b2c05f89ed17bcc712ef3b5da18b}{main}():
+117     \textcolor{comment}{# Create the Qt Application}
+118     app = \hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1ui_1_1CWAnalyzerGUI_abfa5e2488cba7c37b5c186eb714468c0}{makeApplication}()
+119     \textcolor{comment}{# Create and show the GUI}
+120     window = \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1ui_1_1CWAnalyzerGUI_1_1CWAnalyzerGUI}{CWAnalyzerGUI}(CWCoreAPI())
+121     window.show()
+122 
+123     \textcolor{comment}{# Run the main Qt loop}
+124     sys.exit(app.exec\_())
+125 
+\end{DoxyCode}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1ui_1_1CWAnalyzerGUI_abfa5e2488cba7c37b5c186eb714468c0}{}\index{software\+::chipwhisperer\+::analyzer\+::ui\+::\+C\+W\+Analyzer\+G\+U\+I@{software\+::chipwhisperer\+::analyzer\+::ui\+::\+C\+W\+Analyzer\+G\+U\+I}!make\+Application@{make\+Application}}
+\index{make\+Application@{make\+Application}!software\+::chipwhisperer\+::analyzer\+::ui\+::\+C\+W\+Analyzer\+G\+U\+I@{software\+::chipwhisperer\+::analyzer\+::ui\+::\+C\+W\+Analyzer\+G\+U\+I}}
+\subsubsection[{make\+Application}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+analyzer.\+ui.\+C\+W\+Analyzer\+G\+U\+I.\+make\+Application (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1ui_1_1CWAnalyzerGUI_abfa5e2488cba7c37b5c186eb714468c0}
+
+
+Referenced by software.\+chipwhisperer.\+analyzer.\+ui.\+C\+W\+Analyzer\+G\+U\+I.\+main().
+
+
+\begin{DoxyCode}
+109 \textcolor{keyword}{def }\hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1ui_1_1CWAnalyzerGUI_abfa5e2488cba7c37b5c186eb714468c0}{makeApplication}():
+110     \textcolor{comment}{# Create the Qt Application}
+111     app = QApplication(sys.argv)
+112     app.setOrganizationName(\textcolor{stringliteral}{"ChipWhisperer"})
+113     app.setApplicationName(\textcolor{stringliteral}{"Analyzer V2"})
+114     \textcolor{keywordflow}{return} app
+115 
+\end{DoxyCode}

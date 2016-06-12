@@ -1,0 +1,91 @@
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1ProjectTextEditor_1_1ProjectEditor}{}\section{software.\+chipwhisperer.\+common.\+ui.\+Project\+Text\+Editor.\+Project\+Editor Class Reference}
+\label{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1ProjectTextEditor_1_1ProjectEditor}\index{software.\+chipwhisperer.\+common.\+ui.\+Project\+Text\+Editor.\+Project\+Editor@{software.\+chipwhisperer.\+common.\+ui.\+Project\+Text\+Editor.\+Project\+Editor}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1ProjectTextEditor_1_1ProjectEditor_a9266efc29c53c9e44da25e7e957d5aa7}{\+\_\+\+\_\+init\+\_\+\+\_\+}
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1ProjectTextEditor_1_1ProjectEditor_abdf3178b676fc32cc788dc1c1e3b54ea}{key\+Press\+Event} (self, event)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1ProjectTextEditor_1_1ProjectEditor_aa59d647bfaf0eaa8e18f9dec81e294ac}{highlighter}
+\end{DoxyCompactItemize}
+
+
+Inheritance diagram for software.\+chipwhisperer.\+common.\+ui.\+Project\+Text\+Editor.\+Project\+Editor\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=251pt]{d6/d5b/classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1ProjectTextEditor_1_1ProjectEditor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for software.\+chipwhisperer.\+common.\+ui.\+Project\+Text\+Editor.\+Project\+Editor\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=251pt]{d7/dd9/classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1ProjectTextEditor_1_1ProjectEditor__coll__graph}
+\end{center}
+\end{figure}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1ProjectTextEditor_1_1ProjectEditor_a9266efc29c53c9e44da25e7e957d5aa7}{}\index{software\+::chipwhisperer\+::common\+::ui\+::\+Project\+Text\+Editor\+::\+Project\+Editor@{software\+::chipwhisperer\+::common\+::ui\+::\+Project\+Text\+Editor\+::\+Project\+Editor}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!software\+::chipwhisperer\+::common\+::ui\+::\+Project\+Text\+Editor\+::\+Project\+Editor@{software\+::chipwhisperer\+::common\+::ui\+::\+Project\+Text\+Editor\+::\+Project\+Editor}}
+\subsubsection[{\+\_\+\+\_\+init\+\_\+\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+ui.\+Project\+Text\+Editor.\+Project\+Editor.\+\_\+\+\_\+init\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{parent = {\ttfamily None}}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1ProjectTextEditor_1_1ProjectEditor_a9266efc29c53c9e44da25e7e957d5aa7}
+
+\begin{DoxyCode}
+36     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1ProjectTextEditor_1_1ProjectEditor_a9266efc29c53c9e44da25e7e957d5aa7}{\_\_init\_\_}(self, parent=None):
+37         super(ProjectEditor, self).\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1ProjectTextEditor_1_1ProjectEditor_a9266efc29c53c9e44da25e7e957d5aa7}{\_\_init\_\_}(parent)
+38 
+39         \textcolor{comment}{# Use fixed-space font}
+40         font = QFont()
+41         font.setFamily(\textcolor{stringliteral}{"Courier"})
+42         font.setStyleHint(QFont.Monospace)
+43         font.setFixedPitch(\textcolor{keyword}{True})
+44         font.setPointSize(10)
+45         self.setFont(font)
+46 
+47         \textcolor{comment}{# Setup code highlighter}
+48         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1ProjectTextEditor_1_1ProjectEditor_aa59d647bfaf0eaa8e18f9dec81e294ac}{highlighter} = \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1ProjectTextEditor_1_1ProjectHighlighter}{ProjectHighlighter}(self.document())
+49 
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1ProjectTextEditor_1_1ProjectEditor_abdf3178b676fc32cc788dc1c1e3b54ea}{}\index{software\+::chipwhisperer\+::common\+::ui\+::\+Project\+Text\+Editor\+::\+Project\+Editor@{software\+::chipwhisperer\+::common\+::ui\+::\+Project\+Text\+Editor\+::\+Project\+Editor}!key\+Press\+Event@{key\+Press\+Event}}
+\index{key\+Press\+Event@{key\+Press\+Event}!software\+::chipwhisperer\+::common\+::ui\+::\+Project\+Text\+Editor\+::\+Project\+Editor@{software\+::chipwhisperer\+::common\+::ui\+::\+Project\+Text\+Editor\+::\+Project\+Editor}}
+\subsubsection[{key\+Press\+Event}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+ui.\+Project\+Text\+Editor.\+Project\+Editor.\+key\+Press\+Event (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{event}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1ProjectTextEditor_1_1ProjectEditor_abdf3178b676fc32cc788dc1c1e3b54ea}
+
+\begin{DoxyCode}
+50     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1ProjectTextEditor_1_1ProjectEditor_abdf3178b676fc32cc788dc1c1e3b54ea}{keyPressEvent}(self, event):
+51         \textcolor{keywordflow}{if} event.key() == Qt.Key\_Tab:
+52             self.insertPlainText(\textcolor{stringliteral}{"    "})
+53         \textcolor{keywordflow}{else}:
+54             \textcolor{keywordflow}{return} QTextEdit.keyPressEvent(self, event)
+55 
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1ProjectTextEditor_1_1ProjectEditor_aa59d647bfaf0eaa8e18f9dec81e294ac}{}\index{software\+::chipwhisperer\+::common\+::ui\+::\+Project\+Text\+Editor\+::\+Project\+Editor@{software\+::chipwhisperer\+::common\+::ui\+::\+Project\+Text\+Editor\+::\+Project\+Editor}!highlighter@{highlighter}}
+\index{highlighter@{highlighter}!software\+::chipwhisperer\+::common\+::ui\+::\+Project\+Text\+Editor\+::\+Project\+Editor@{software\+::chipwhisperer\+::common\+::ui\+::\+Project\+Text\+Editor\+::\+Project\+Editor}}
+\subsubsection[{highlighter}]{\setlength{\rightskip}{0pt plus 5cm}software.\+chipwhisperer.\+common.\+ui.\+Project\+Text\+Editor.\+Project\+Editor.\+highlighter}\label{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1ProjectTextEditor_1_1ProjectEditor_aa59d647bfaf0eaa8e18f9dec81e294ac}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ProjectTextEditor_8py}{Project\+Text\+Editor.\+py}\end{DoxyCompactItemize}

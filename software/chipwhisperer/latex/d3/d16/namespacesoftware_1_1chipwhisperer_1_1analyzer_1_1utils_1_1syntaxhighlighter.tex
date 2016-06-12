@@ -1,0 +1,70 @@
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1syntaxhighlighter}{}\section{software.\+chipwhisperer.\+analyzer.\+utils.\+syntaxhighlighter Namespace Reference}
+\label{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1syntaxhighlighter}\index{software.\+chipwhisperer.\+analyzer.\+utils.\+syntaxhighlighter@{software.\+chipwhisperer.\+analyzer.\+utils.\+syntaxhighlighter}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1syntaxhighlighter_1_1PythonHighlighter}{Python\+Highlighter}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1syntaxhighlighter_a4e7861054393cd43c95289be43cf111f}{fontformat}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+dictionary \hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1syntaxhighlighter_ab8e25eb52f475aa3553ecab51d52e998}{S\+T\+Y\+L\+E\+S}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1syntaxhighlighter_a4e7861054393cd43c95289be43cf111f}{}\index{software\+::chipwhisperer\+::analyzer\+::utils\+::syntaxhighlighter@{software\+::chipwhisperer\+::analyzer\+::utils\+::syntaxhighlighter}!fontformat@{fontformat}}
+\index{fontformat@{fontformat}!software\+::chipwhisperer\+::analyzer\+::utils\+::syntaxhighlighter@{software\+::chipwhisperer\+::analyzer\+::utils\+::syntaxhighlighter}}
+\subsubsection[{fontformat}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+analyzer.\+utils.\+syntaxhighlighter.\+fontformat (
+\begin{DoxyParamCaption}
+\item[{}]{color, }
+\item[{}]{style = {\ttfamily \textquotesingle{}\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\label{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1syntaxhighlighter_a4e7861054393cd43c95289be43cf111f}
+\begin{DoxyVerb}Return a QTextCharFormat with the given attributes.
+\end{DoxyVerb}
+ 
+\begin{DoxyCode}
+33 \textcolor{keyword}{def }\hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1syntaxhighlighter_a4e7861054393cd43c95289be43cf111f}{fontformat}(color, style=''):
+34     \textcolor{stringliteral}{"""Return a QTextCharFormat with the given attributes.}
+35 \textcolor{stringliteral}{    """}
+36     \_color = QColor()
+37     \_color.setNamedColor(color)
+38 
+39     \_format = QTextCharFormat()
+40     \_format.setForeground(\_color)
+41     \textcolor{keywordflow}{if} \textcolor{stringliteral}{'bold'} \textcolor{keywordflow}{in} style:
+42         \_format.setFontWeight(QFont.Bold)
+43     \textcolor{keywordflow}{if} \textcolor{stringliteral}{'italic'} \textcolor{keywordflow}{in} style:
+44         \_format.setFontItalic(\textcolor{keyword}{True})
+45 
+46     \textcolor{keywordflow}{return} \_format
+47 
+48 
+49 \textcolor{comment}{# Syntax styles that can be shared by all languages}
+\end{DoxyCode}
+
+
+\subsection{Variable Documentation}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1syntaxhighlighter_ab8e25eb52f475aa3553ecab51d52e998}{}\index{software\+::chipwhisperer\+::analyzer\+::utils\+::syntaxhighlighter@{software\+::chipwhisperer\+::analyzer\+::utils\+::syntaxhighlighter}!S\+T\+Y\+L\+E\+S@{S\+T\+Y\+L\+E\+S}}
+\index{S\+T\+Y\+L\+E\+S@{S\+T\+Y\+L\+E\+S}!software\+::chipwhisperer\+::analyzer\+::utils\+::syntaxhighlighter@{software\+::chipwhisperer\+::analyzer\+::utils\+::syntaxhighlighter}}
+\subsubsection[{S\+T\+Y\+L\+E\+S}]{\setlength{\rightskip}{0pt plus 5cm}dictionary software.\+chipwhisperer.\+analyzer.\+utils.\+syntaxhighlighter.\+S\+T\+Y\+L\+E\+S}\label{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1syntaxhighlighter_ab8e25eb52f475aa3553ecab51d52e998}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 = \{
+2     \textcolor{stringliteral}{'keyword'}: \hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1syntaxhighlighter_a4e7861054393cd43c95289be43cf111f}{fontformat}(\textcolor{stringliteral}{'blue'}),
+3     \textcolor{stringliteral}{'operator'}: \hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1syntaxhighlighter_a4e7861054393cd43c95289be43cf111f}{fontformat}(\textcolor{stringliteral}{'red'}),
+4     \textcolor{stringliteral}{'brace'}: \hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1syntaxhighlighter_a4e7861054393cd43c95289be43cf111f}{fontformat}(\textcolor{stringliteral}{'darkGray'}),
+5     \textcolor{stringliteral}{'defclass'}: \hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1syntaxhighlighter_a4e7861054393cd43c95289be43cf111f}{fontformat}(\textcolor{stringliteral}{'black'}, \textcolor{stringliteral}{'bold'}),
+6     \textcolor{stringliteral}{'string'}: \hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1syntaxhighlighter_a4e7861054393cd43c95289be43cf111f}{fontformat}(\textcolor{stringliteral}{'magenta'}),
+7     \textcolor{stringliteral}{'string2'}: \hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1syntaxhighlighter_a4e7861054393cd43c95289be43cf111f}{fontformat}(\textcolor{stringliteral}{'darkMagenta'}),
+8     \textcolor{stringliteral}{'comment'}: \hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1syntaxhighlighter_a4e7861054393cd43c95289be43cf111f}{fontformat}(\textcolor{stringliteral}{'darkGreen'}, \textcolor{stringliteral}{'italic'}),
+9     \textcolor{stringliteral}{'self'}: \hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1syntaxhighlighter_a4e7861054393cd43c95289be43cf111f}{fontformat}(\textcolor{stringliteral}{'black'}, \textcolor{stringliteral}{'italic'}),
+10     \textcolor{stringliteral}{'numbers'}: \hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1syntaxhighlighter_a4e7861054393cd43c95289be43cf111f}{fontformat}(\textcolor{stringliteral}{'brown'}),
+11 \}
+\end{DoxyCode}

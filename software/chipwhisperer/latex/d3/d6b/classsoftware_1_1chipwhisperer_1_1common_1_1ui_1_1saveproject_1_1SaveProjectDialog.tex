@@ -1,0 +1,152 @@
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1saveproject_1_1SaveProjectDialog}{}\section{software.\+chipwhisperer.\+common.\+ui.\+saveproject.\+Save\+Project\+Dialog Class Reference}
+\label{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1saveproject_1_1SaveProjectDialog}\index{software.\+chipwhisperer.\+common.\+ui.\+saveproject.\+Save\+Project\+Dialog@{software.\+chipwhisperer.\+common.\+ui.\+saveproject.\+Save\+Project\+Dialog}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1saveproject_1_1SaveProjectDialog_a74ed4268ea7f95d176a10f7ecf35b11a}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self, parent)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1saveproject_1_1SaveProjectDialog_ac8d30703920421b5084bdd8212751a4b}{set\+Value} (self, but)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1saveproject_1_1SaveProjectDialog_a75a3d47b45e46cfb75dec8018bc28db8}{value} (self)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1saveproject_1_1SaveProjectDialog_a116a2d66274ec2e80c142f8290d48610}{get\+Save\+Project\+Dialog} (parent, project)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1saveproject_1_1SaveProjectDialog_ac079729687f3f5327de93bf1585de65c}{button\+Box}
+\end{DoxyCompactItemize}
+
+
+Inheritance diagram for software.\+chipwhisperer.\+common.\+ui.\+saveproject.\+Save\+Project\+Dialog\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{d9/d92/classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1saveproject_1_1SaveProjectDialog__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for software.\+chipwhisperer.\+common.\+ui.\+saveproject.\+Save\+Project\+Dialog\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{de/dba/classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1saveproject_1_1SaveProjectDialog__coll__graph}
+\end{center}
+\end{figure}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1saveproject_1_1SaveProjectDialog_a74ed4268ea7f95d176a10f7ecf35b11a}{}\index{software\+::chipwhisperer\+::common\+::ui\+::saveproject\+::\+Save\+Project\+Dialog@{software\+::chipwhisperer\+::common\+::ui\+::saveproject\+::\+Save\+Project\+Dialog}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!software\+::chipwhisperer\+::common\+::ui\+::saveproject\+::\+Save\+Project\+Dialog@{software\+::chipwhisperer\+::common\+::ui\+::saveproject\+::\+Save\+Project\+Dialog}}
+\subsubsection[{\+\_\+\+\_\+init\+\_\+\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+ui.\+saveproject.\+Save\+Project\+Dialog.\+\_\+\+\_\+init\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{parent}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1saveproject_1_1SaveProjectDialog_a74ed4268ea7f95d176a10f7ecf35b11a}
+
+\begin{DoxyCode}
+31     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1saveproject_1_1SaveProjectDialog_a74ed4268ea7f95d176a10f7ecf35b11a}{\_\_init\_\_}(self, parent):
+32         super(SaveProjectDialog, self).\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1saveproject_1_1SaveProjectDialog_a74ed4268ea7f95d176a10f7ecf35b11a}{\_\_init\_\_}(parent)
+33         self.setWindowTitle(\textcolor{stringliteral}{"Unsaved Changes Detected"})
+34         self.setModal(\textcolor{keyword}{True})
+35         layout = QVBoxLayout()
+36         layout.addWidget(QLabel(\textcolor{stringliteral}{"Save unsaved changes?"}))
+37         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1saveproject_1_1SaveProjectDialog_ac079729687f3f5327de93bf1585de65c}{buttonBox} = QDialogButtonBox(QDialogButtonBox.Yes | QDialogButtonBox.No | 
+      QDialogButtonBox.Cancel)
+38         layout.addWidget(self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1saveproject_1_1SaveProjectDialog_ac079729687f3f5327de93bf1585de65c}{buttonBox})
+39 
+40         detailedWidget = ProjectDiffWidget(self, project=self.parent().api.project())
+41         detailedWidget.checkDiff(updateGUI=\textcolor{keyword}{True})
+42         detailedLayout = QVBoxLayout()
+43         detailedLayout.addWidget(detailedWidget)
+44 
+45         detailedHidableWidget = QWidget()
+46         detailedHidableWidget.setLayout(detailedLayout)
+47         detailedHidableWidget.hide()
+48 
+49         pbShowDetails = QPushButton(\textcolor{stringliteral}{"Show Details"})
+50         pbShowDetails.clicked.connect(detailedHidableWidget.show)
+51         detailpblayout = QHBoxLayout()
+52         detailpblayout.addWidget(pbShowDetails)
+53         detailpblayout.addStretch()
+54         layout.addLayout(detailpblayout)
+55         layout.addWidget(detailedHidableWidget)
+56 
+57         self.setLayout(layout)
+58 
+59         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1saveproject_1_1SaveProjectDialog_a3e5ff96fb08d151715449f76ff83bf35}{\_lastpushed} = QDialogButtonBox.RejectRole
+60         self.buttonBox.clicked.connect(self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1saveproject_1_1SaveProjectDialog_ac8d30703920421b5084bdd8212751a4b}{setValue})
+61         self.buttonBox.accepted.connect(self.accept)
+62         self.buttonBox.rejected.connect(self.reject)
+63 
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1saveproject_1_1SaveProjectDialog_a116a2d66274ec2e80c142f8290d48610}{}\index{software\+::chipwhisperer\+::common\+::ui\+::saveproject\+::\+Save\+Project\+Dialog@{software\+::chipwhisperer\+::common\+::ui\+::saveproject\+::\+Save\+Project\+Dialog}!get\+Save\+Project\+Dialog@{get\+Save\+Project\+Dialog}}
+\index{get\+Save\+Project\+Dialog@{get\+Save\+Project\+Dialog}!software\+::chipwhisperer\+::common\+::ui\+::saveproject\+::\+Save\+Project\+Dialog@{software\+::chipwhisperer\+::common\+::ui\+::saveproject\+::\+Save\+Project\+Dialog}}
+\subsubsection[{get\+Save\+Project\+Dialog}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+ui.\+saveproject.\+Save\+Project\+Dialog.\+get\+Save\+Project\+Dialog (
+\begin{DoxyParamCaption}
+\item[{}]{parent, }
+\item[{}]{project}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1saveproject_1_1SaveProjectDialog_a116a2d66274ec2e80c142f8290d48610}
+
+\begin{DoxyCode}
+71     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1saveproject_1_1SaveProjectDialog_a116a2d66274ec2e80c142f8290d48610}{getSaveProjectDialog}(parent, project):
+72         \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} project.hasDiffs():
+73             \textcolor{keywordflow}{return} QDialogButtonBox.NoRole
+74         dialog = \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1saveproject_1_1SaveProjectDialog}{SaveProjectDialog}(parent)
+75         dialog.exec\_()
+76         \textcolor{keywordflow}{return} dialog.value()\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1saveproject_1_1SaveProjectDialog_ac8d30703920421b5084bdd8212751a4b}{}\index{software\+::chipwhisperer\+::common\+::ui\+::saveproject\+::\+Save\+Project\+Dialog@{software\+::chipwhisperer\+::common\+::ui\+::saveproject\+::\+Save\+Project\+Dialog}!set\+Value@{set\+Value}}
+\index{set\+Value@{set\+Value}!software\+::chipwhisperer\+::common\+::ui\+::saveproject\+::\+Save\+Project\+Dialog@{software\+::chipwhisperer\+::common\+::ui\+::saveproject\+::\+Save\+Project\+Dialog}}
+\subsubsection[{set\+Value}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+ui.\+saveproject.\+Save\+Project\+Dialog.\+set\+Value (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{but}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1saveproject_1_1SaveProjectDialog_ac8d30703920421b5084bdd8212751a4b}
+
+
+References software.\+chipwhisperer.\+common.\+ui.\+saveproject.\+Save\+Project\+Dialog.\+\_\+lastpushed.
+
+
+\begin{DoxyCode}
+64     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1saveproject_1_1SaveProjectDialog_ac8d30703920421b5084bdd8212751a4b}{setValue}(self, but):
+65         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1saveproject_1_1SaveProjectDialog_a3e5ff96fb08d151715449f76ff83bf35}{\_lastpushed} = self.buttonBox.buttonRole(but)
+66 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1saveproject_1_1SaveProjectDialog_a75a3d47b45e46cfb75dec8018bc28db8}{}\index{software\+::chipwhisperer\+::common\+::ui\+::saveproject\+::\+Save\+Project\+Dialog@{software\+::chipwhisperer\+::common\+::ui\+::saveproject\+::\+Save\+Project\+Dialog}!value@{value}}
+\index{value@{value}!software\+::chipwhisperer\+::common\+::ui\+::saveproject\+::\+Save\+Project\+Dialog@{software\+::chipwhisperer\+::common\+::ui\+::saveproject\+::\+Save\+Project\+Dialog}}
+\subsubsection[{value}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+ui.\+saveproject.\+Save\+Project\+Dialog.\+value (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1saveproject_1_1SaveProjectDialog_a75a3d47b45e46cfb75dec8018bc28db8}
+
+
+References software.\+chipwhisperer.\+common.\+ui.\+saveproject.\+Save\+Project\+Dialog.\+\_\+lastpushed.
+
+
+\begin{DoxyCode}
+67     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1saveproject_1_1SaveProjectDialog_a75a3d47b45e46cfb75dec8018bc28db8}{value}(self):
+68         \textcolor{keywordflow}{return} self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1saveproject_1_1SaveProjectDialog_a3e5ff96fb08d151715449f76ff83bf35}{\_lastpushed}
+69 
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1saveproject_1_1SaveProjectDialog_ac079729687f3f5327de93bf1585de65c}{}\index{software\+::chipwhisperer\+::common\+::ui\+::saveproject\+::\+Save\+Project\+Dialog@{software\+::chipwhisperer\+::common\+::ui\+::saveproject\+::\+Save\+Project\+Dialog}!button\+Box@{button\+Box}}
+\index{button\+Box@{button\+Box}!software\+::chipwhisperer\+::common\+::ui\+::saveproject\+::\+Save\+Project\+Dialog@{software\+::chipwhisperer\+::common\+::ui\+::saveproject\+::\+Save\+Project\+Dialog}}
+\subsubsection[{button\+Box}]{\setlength{\rightskip}{0pt plus 5cm}software.\+chipwhisperer.\+common.\+ui.\+saveproject.\+Save\+Project\+Dialog.\+button\+Box}\label{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1saveproject_1_1SaveProjectDialog_ac079729687f3f5327de93bf1585de65c}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{saveproject_8py}{saveproject.\+py}\end{DoxyCompactItemize}
