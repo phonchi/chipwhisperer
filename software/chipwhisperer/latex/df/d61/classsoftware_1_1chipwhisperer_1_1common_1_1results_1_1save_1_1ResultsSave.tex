@@ -1,0 +1,180 @@
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1save_1_1ResultsSave}{}\section{software.\+chipwhisperer.\+common.\+results.\+save.\+Results\+Save Class Reference}
+\label{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1save_1_1ResultsSave}\index{software.\+chipwhisperer.\+common.\+results.\+save.\+Results\+Save@{software.\+chipwhisperer.\+common.\+results.\+save.\+Results\+Save}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1save_1_1ResultsSave_a1a04696aba8890ac76be86c7cc40895d}{\+\_\+\+\_\+init\+\_\+\+\_\+}
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1save_1_1ResultsSave_af085523ae618bb17e3f82411c7a26496}{analysis\+Updated} (self)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1save_1_1ResultsSave_ae45d6f987a479e7e27aa070759899042}{process\+Analysis} (self)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1save_1_1ResultsSave_aeea37dece50414d5283dfc93c86c1328}{set\+Enabled} (self, enabled)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1save_1_1ResultsSave_a8c2555db9c212b301a0974d00ae76b8b}{dataarray}
+\end{DoxyCompactItemize}
+
+
+Inheritance diagram for software.\+chipwhisperer.\+common.\+results.\+save.\+Results\+Save\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{d8/d38/classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1save_1_1ResultsSave__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for software.\+chipwhisperer.\+common.\+results.\+save.\+Results\+Save\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{db/d47/classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1save_1_1ResultsSave__coll__graph}
+\end{center}
+\end{figure}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1save_1_1ResultsSave_a1a04696aba8890ac76be86c7cc40895d}{}\index{software\+::chipwhisperer\+::common\+::results\+::save\+::\+Results\+Save@{software\+::chipwhisperer\+::common\+::results\+::save\+::\+Results\+Save}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!software\+::chipwhisperer\+::common\+::results\+::save\+::\+Results\+Save@{software\+::chipwhisperer\+::common\+::results\+::save\+::\+Results\+Save}}
+\subsubsection[{\+\_\+\+\_\+init\+\_\+\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+results.\+save.\+Results\+Save.\+\_\+\+\_\+init\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{parent\+Param = {\ttfamily None}, }
+\item[{}]{name = {\ttfamily None}}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1save_1_1ResultsSave_a1a04696aba8890ac76be86c7cc40895d}
+
+
+References software.\+chipwhisperer.\+common.\+results.\+save.\+Results\+Save.\+\_\+enabled, and software.\+chipwhisperer.\+common.\+results.\+save.\+Results\+Save.\+\_\+filename.
+
+
+\begin{DoxyCode}
+39     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1save_1_1ResultsSave_a1a04696aba8890ac76be86c7cc40895d}{\_\_init\_\_}(self, parentParam=None, name=None):
+40         ResultsBase.\_\_init\_\_(self, parentParam, name)
+41         AttackObserver.\_\_init\_\_(self)
+42         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1save_1_1ResultsSave_ae4a658ab3207638029c9b900dc662585}{\_filename} = \textcolor{keywordtype}{None}
+43         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1save_1_1ResultsSave_a4c9c41188199cdbccbe09744246a494b}{\_enabled} = \textcolor{keyword}{False}
+44         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1save_1_1ResultsSave_a8c2555db9c212b301a0974d00ae76b8b}{dataarray} = \textcolor{keywordtype}{None}
+45 
+46         self.params.addChildren([
+47             \{\textcolor{stringliteral}{'name'}:\textcolor{stringliteral}{'Save Raw Results'}, \textcolor{stringliteral}{'type'}:\textcolor{stringliteral}{'bool'}, \textcolor{stringliteral}{'value'}:\textcolor{keyword}{False}, \textcolor{stringliteral}{'set'}:self.
+      \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1save_1_1ResultsSave_aeea37dece50414d5283dfc93c86c1328}{setEnabled}\}
+48         ])
+49 
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1save_1_1ResultsSave_af085523ae618bb17e3f82411c7a26496}{}\index{software\+::chipwhisperer\+::common\+::results\+::save\+::\+Results\+Save@{software\+::chipwhisperer\+::common\+::results\+::save\+::\+Results\+Save}!analysis\+Updated@{analysis\+Updated}}
+\index{analysis\+Updated@{analysis\+Updated}!software\+::chipwhisperer\+::common\+::results\+::save\+::\+Results\+Save@{software\+::chipwhisperer\+::common\+::results\+::save\+::\+Results\+Save}}
+\subsubsection[{analysis\+Updated}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+results.\+save.\+Results\+Save.\+analysis\+Updated (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1save_1_1ResultsSave_af085523ae618bb17e3f82411c7a26496}
+\begin{DoxyVerb}Stats have been updated\end{DoxyVerb}
+ 
+
+References software.\+chipwhisperer.\+common.\+results.\+save.\+Results\+Save.\+\_\+enabled, software.\+chipwhisperer.\+common.\+results.\+save.\+Results\+Save.\+\_\+filename, software.\+chipwhisperer.\+analyzer.\+attacks.\+\_\+base.\+Attack\+Observer.\+\_\+max\+Num\+Perms(), software.\+chipwhisperer.\+analyzer.\+attacks.\+\_\+base.\+Attack\+Observer.\+\_\+num\+Keys(), software.\+chipwhisperer.\+analyzer.\+attacks.\+\_\+base.\+Attack\+Observer.\+\_\+num\+Perms(), and software.\+chipwhisperer.\+common.\+results.\+save.\+Results\+Save.\+dataarray.
+
+
+
+Referenced by software.\+chipwhisperer.\+common.\+utils.\+analysissource.\+Analysis\+Observer.\+set\+Analysis\+Source().
+
+
+\begin{DoxyCode}
+50     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1save_1_1ResultsSave_af085523ae618bb17e3f82411c7a26496}{analysisUpdated}(self):
+51         \textcolor{stringliteral}{"""Stats have been updated"""}
+52         \textcolor{keywordflow}{if} self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1save_1_1ResultsSave_a4c9c41188199cdbccbe09744246a494b}{\_enabled} == \textcolor{keyword}{False}:
+53             \textcolor{keywordflow}{return}
+54 
+55         attackStats = self.\_analysisSource.getStatistics()
+56         \textcolor{comment}{# attackStats.setKnownkey(nk)}
+57         \textcolor{comment}{# attackStats.findMaximums(useAbsolute=self.useAbs)}
+58 
+59         \textcolor{comment}{# attackStats.diffs[i][hypkey]}
+60         \textcolor{comment}{# attackStats.diffs\_tnum[i]}
+61 
+62         \textcolor{keywordflow}{if} self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1save_1_1ResultsSave_ae4a658ab3207638029c9b900dc662585}{\_filename} \textcolor{keywordflow}{is} \textcolor{keywordtype}{None}:
+63             \textcolor{comment}{# Generate filename}
+64             self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1save_1_1ResultsSave_ae4a658ab3207638029c9b900dc662585}{\_filename} = \textcolor{stringliteral}{"tempstats\_%s.npy"} % datetime.now().strftime(\textcolor{stringliteral}{'%Y%m%d\_%H%M%S'})
+65 
+66             \textcolor{comment}{# Generate Array}
+67             self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1save_1_1ResultsSave_a8c2555db9c212b301a0974d00ae76b8b}{dataarray} = []
+68 
+69         \textcolor{comment}{# Record max & min, used as we don't know if user wanted absolute mode or not}
+70 
+71         tempmin = np.ndarray((self.\_numKeys(), self.\_maxNumPerms()))
+72         tempmax = np.ndarray((self.\_numKeys(), self.\_maxNumPerms()))
+73 
+74         \textcolor{keywordflow}{for} i \textcolor{keywordflow}{in} range(0, self.\_numKeys()):
+75             \textcolor{keywordflow}{for} j \textcolor{keywordflow}{in} range(0, self.\_numPerms(i)):
+76                 tempmax[i][j] = np.nanmax(attackStats.diffs[i][j])
+77                 tempmin[i][j] = np.nanmin(attackStats.diffs[i][j])
+78 
+79         newdata = \{\textcolor{stringliteral}{"tracecnt"}:copy.deepcopy(attackStats.diffs\_tnum), \textcolor{stringliteral}{"diffsmax"}:tempmax, \textcolor{stringliteral}{"diffsmin"}:tempmin
+      \}
+80 
+81         self.dataarray.append(newdata)
+82         np.save(self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1save_1_1ResultsSave_ae4a658ab3207638029c9b900dc662585}{\_filename}, self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1save_1_1ResultsSave_a8c2555db9c212b301a0974d00ae76b8b}{dataarray})
+83 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1save_1_1ResultsSave_ae45d6f987a479e7e27aa070759899042}{}\index{software\+::chipwhisperer\+::common\+::results\+::save\+::\+Results\+Save@{software\+::chipwhisperer\+::common\+::results\+::save\+::\+Results\+Save}!process\+Analysis@{process\+Analysis}}
+\index{process\+Analysis@{process\+Analysis}!software\+::chipwhisperer\+::common\+::results\+::save\+::\+Results\+Save@{software\+::chipwhisperer\+::common\+::results\+::save\+::\+Results\+Save}}
+\subsubsection[{process\+Analysis}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+results.\+save.\+Results\+Save.\+process\+Analysis (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1save_1_1ResultsSave_ae45d6f987a479e7e27aa070759899042}
+\begin{DoxyVerb}Attack is done\end{DoxyVerb}
+ 
+
+References software.\+chipwhisperer.\+common.\+results.\+save.\+Results\+Save.\+\_\+filename, and software.\+chipwhisperer.\+common.\+results.\+save.\+Results\+Save.\+dataarray.
+
+
+
+Referenced by software.\+chipwhisperer.\+common.\+utils.\+analysissource.\+Analysis\+Observer.\+set\+Analysis\+Source().
+
+
+\begin{DoxyCode}
+84     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1save_1_1ResultsSave_ae45d6f987a479e7e27aa070759899042}{processAnalysis}(self):
+85         \textcolor{stringliteral}{"""Attack is done"""}
+86         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1save_1_1ResultsSave_ae4a658ab3207638029c9b900dc662585}{\_filename} = \textcolor{keywordtype}{None}
+87         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1save_1_1ResultsSave_a8c2555db9c212b301a0974d00ae76b8b}{dataarray} = \textcolor{keywordtype}{None}
+88 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1save_1_1ResultsSave_aeea37dece50414d5283dfc93c86c1328}{}\index{software\+::chipwhisperer\+::common\+::results\+::save\+::\+Results\+Save@{software\+::chipwhisperer\+::common\+::results\+::save\+::\+Results\+Save}!set\+Enabled@{set\+Enabled}}
+\index{set\+Enabled@{set\+Enabled}!software\+::chipwhisperer\+::common\+::results\+::save\+::\+Results\+Save@{software\+::chipwhisperer\+::common\+::results\+::save\+::\+Results\+Save}}
+\subsubsection[{set\+Enabled}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+results.\+save.\+Results\+Save.\+set\+Enabled (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{enabled}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1save_1_1ResultsSave_aeea37dece50414d5283dfc93c86c1328}
+
+
+References software.\+chipwhisperer.\+common.\+results.\+save.\+Results\+Save.\+\_\+enabled.
+
+
+\begin{DoxyCode}
+89     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1save_1_1ResultsSave_aeea37dece50414d5283dfc93c86c1328}{setEnabled}(self, enabled):
+90         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1save_1_1ResultsSave_a4c9c41188199cdbccbe09744246a494b}{\_enabled} = enabled
+91 \end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1save_1_1ResultsSave_a8c2555db9c212b301a0974d00ae76b8b}{}\index{software\+::chipwhisperer\+::common\+::results\+::save\+::\+Results\+Save@{software\+::chipwhisperer\+::common\+::results\+::save\+::\+Results\+Save}!dataarray@{dataarray}}
+\index{dataarray@{dataarray}!software\+::chipwhisperer\+::common\+::results\+::save\+::\+Results\+Save@{software\+::chipwhisperer\+::common\+::results\+::save\+::\+Results\+Save}}
+\subsubsection[{dataarray}]{\setlength{\rightskip}{0pt plus 5cm}software.\+chipwhisperer.\+common.\+results.\+save.\+Results\+Save.\+dataarray}\label{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1save_1_1ResultsSave_a8c2555db9c212b301a0974d00ae76b8b}
+
+
+Referenced by software.\+chipwhisperer.\+common.\+results.\+save.\+Results\+Save.\+analysis\+Updated(), and software.\+chipwhisperer.\+common.\+results.\+save.\+Results\+Save.\+process\+Analysis().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{save_8py}{save.\+py}\end{DoxyCompactItemize}

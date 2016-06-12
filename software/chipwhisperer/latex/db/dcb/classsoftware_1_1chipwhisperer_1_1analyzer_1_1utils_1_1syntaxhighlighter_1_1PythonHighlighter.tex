@@ -1,0 +1,294 @@
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1syntaxhighlighter_1_1PythonHighlighter}{}\section{software.\+chipwhisperer.\+analyzer.\+utils.\+syntaxhighlighter.\+Python\+Highlighter Class Reference}
+\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1syntaxhighlighter_1_1PythonHighlighter}\index{software.\+chipwhisperer.\+analyzer.\+utils.\+syntaxhighlighter.\+Python\+Highlighter@{software.\+chipwhisperer.\+analyzer.\+utils.\+syntaxhighlighter.\+Python\+Highlighter}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1syntaxhighlighter_1_1PythonHighlighter_a8c04cc586167fb82a4b0b036b7cb0f14}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self, document)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1syntaxhighlighter_1_1PythonHighlighter_a489b83d01ae6e38ad73e3e86a6fd43bb}{highlight\+Block} (self, text)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1syntaxhighlighter_1_1PythonHighlighter_a547033e018e06d765eea4974f7f7647c}{match\+\_\+multiline} (self, text, delimiter, in\+\_\+state, style)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1syntaxhighlighter_1_1PythonHighlighter_a20db7befbb80fc505e9f641ee97ea9ef}{tri\+\_\+single}
+\item 
+\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1syntaxhighlighter_1_1PythonHighlighter_a28f1aa6d52aab1f3ba742b8f93a9ac39}{tri\+\_\+double}
+\item 
+\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1syntaxhighlighter_1_1PythonHighlighter_a144a306a7cf18c752a6fbe3d88d2bc9e}{rules}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+list \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1syntaxhighlighter_1_1PythonHighlighter_ad5fa814a6a65820676451524e140fdcd}{keywords}
+\item 
+list \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1syntaxhighlighter_1_1PythonHighlighter_af01544c219b1f3b65d672c4f992c0b0f}{operators}
+\item 
+list \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1syntaxhighlighter_1_1PythonHighlighter_ad05b5e381fdda163b18406549b46dd7c}{braces}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Syntax highlighter for the Python language.
+\end{DoxyVerb}
+ 
+
+Inheritance diagram for software.\+chipwhisperer.\+analyzer.\+utils.\+syntaxhighlighter.\+Python\+Highlighter\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=337pt]{d3/db0/classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1syntaxhighlighter_1_1PythonHighlighter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for software.\+chipwhisperer.\+analyzer.\+utils.\+syntaxhighlighter.\+Python\+Highlighter\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=337pt]{de/d54/classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1syntaxhighlighter_1_1PythonHighlighter__coll__graph}
+\end{center}
+\end{figure}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1syntaxhighlighter_1_1PythonHighlighter_a8c04cc586167fb82a4b0b036b7cb0f14}{}\index{software\+::chipwhisperer\+::analyzer\+::utils\+::syntaxhighlighter\+::\+Python\+Highlighter@{software\+::chipwhisperer\+::analyzer\+::utils\+::syntaxhighlighter\+::\+Python\+Highlighter}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!software\+::chipwhisperer\+::analyzer\+::utils\+::syntaxhighlighter\+::\+Python\+Highlighter@{software\+::chipwhisperer\+::analyzer\+::utils\+::syntaxhighlighter\+::\+Python\+Highlighter}}
+\subsubsection[{\+\_\+\+\_\+init\+\_\+\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+analyzer.\+utils.\+syntaxhighlighter.\+Python\+Highlighter.\+\_\+\+\_\+init\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{document}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1syntaxhighlighter_1_1PythonHighlighter_a8c04cc586167fb82a4b0b036b7cb0f14}
+
+\begin{DoxyCode}
+93     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1syntaxhighlighter_1_1PythonHighlighter_a8c04cc586167fb82a4b0b036b7cb0f14}{\_\_init\_\_}(self, document):
+94         QSyntaxHighlighter.\_\_init\_\_(self, document)
+95 
+96         \textcolor{comment}{# Multi-line strings (expression, flag, style)}
+97         \textcolor{comment}{# FIXME: The triple-quotes in these two lines will mess up the}
+98         \textcolor{comment}{# syntax highlighting from this point onward}
+99         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1syntaxhighlighter_1_1PythonHighlighter_a20db7befbb80fc505e9f641ee97ea9ef}{tri\_single} = (QRegExp(\textcolor{stringliteral}{"'''"}), 1, STYLES[\textcolor{stringliteral}{'string2'}])
+100         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1syntaxhighlighter_1_1PythonHighlighter_a28f1aa6d52aab1f3ba742b8f93a9ac39}{tri\_double} = (QRegExp(\textcolor{stringliteral}{'"""'}), 2, STYLES[\textcolor{stringliteral}{'string2'}])
+101 
+102         rules = []
+103 
+104         \textcolor{comment}{# Keyword, operator, and brace rules}
+105         rules += [(\textcolor{stringliteral}{r'\(\backslash\)b%s\(\backslash\)b'} % w, 0, STYLES[\textcolor{stringliteral}{'keyword'}])
+106             \textcolor{keywordflow}{for} w \textcolor{keywordflow}{in} PythonHighlighter.keywords]
+107         rules += [(\textcolor{stringliteral}{r'%s'} % o, 0, STYLES[\textcolor{stringliteral}{'operator'}])
+108             \textcolor{keywordflow}{for} o \textcolor{keywordflow}{in} PythonHighlighter.operators]
+109         rules += [(\textcolor{stringliteral}{r'%s'} % b, 0, STYLES[\textcolor{stringliteral}{'brace'}])
+110             \textcolor{keywordflow}{for} b \textcolor{keywordflow}{in} PythonHighlighter.braces]
+111 
+112         \textcolor{comment}{# All other rules}
+113         rules += [
+114             \textcolor{comment}{# 'self'}
+115             (\textcolor{stringliteral}{r'\(\backslash\)bself\(\backslash\)b'}, 0, STYLES[\textcolor{stringliteral}{'self'}]),
+116 
+117             \textcolor{comment}{# Double-quoted string, possibly containing escape sequences}
+118             (\textcolor{stringliteral}{r'"[^"\(\backslash\)\(\backslash\)]*(\(\backslash\)\(\backslash\).[^"\(\backslash\)\(\backslash\)]*)*"'}, 0, STYLES[\textcolor{stringliteral}{'string'}]),
+119             \textcolor{comment}{# Single-quoted string, possibly containing escape sequences}
+120             (\textcolor{stringliteral}{r"'[^'\(\backslash\)\(\backslash\)]*(\(\backslash\)\(\backslash\).[^'\(\backslash\)\(\backslash\)]*)*'"}, 0, STYLES[\textcolor{stringliteral}{'string'}]),
+121 
+122             \textcolor{comment}{# 'def' followed by an identifier}
+123             (\textcolor{stringliteral}{r'\(\backslash\)bdef\(\backslash\)b\(\backslash\)s*(\(\backslash\)w+)'}, 1, STYLES[\textcolor{stringliteral}{'defclass'}]),
+124             \textcolor{comment}{# 'class' followed by an identifier}
+125             (\textcolor{stringliteral}{r'\(\backslash\)bclass\(\backslash\)b\(\backslash\)s*(\(\backslash\)w+)'}, 1, STYLES[\textcolor{stringliteral}{'defclass'}]),
+126 
+127             \textcolor{comment}{# From '#' until a newline}
+128             (\textcolor{stringliteral}{r'#[^\(\backslash\)n]*'}, 0, STYLES[\textcolor{stringliteral}{'comment'}]),
+129 
+130             \textcolor{comment}{# Numeric literals}
+131             (\textcolor{stringliteral}{r'\(\backslash\)b[+-]?[0-9]+[lL]?\(\backslash\)b'}, 0, STYLES[\textcolor{stringliteral}{'numbers'}]),
+132             (\textcolor{stringliteral}{r'\(\backslash\)b[+-]?0[xX][0-9A-Fa-f]+[lL]?\(\backslash\)b'}, 0, STYLES[\textcolor{stringliteral}{'numbers'}]),
+133             (\textcolor{stringliteral}{r'\(\backslash\)b[+-]?[0-9]+(?:\(\backslash\).[0-9]+)?(?:[eE][+-]?[0-9]+)?\(\backslash\)b'}, 0, STYLES[\textcolor{stringliteral}{'numbers'}]),
+134         ]
+135 
+136         \textcolor{comment}{# Build a QRegExp for each pattern}
+137         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1syntaxhighlighter_1_1PythonHighlighter_a144a306a7cf18c752a6fbe3d88d2bc9e}{rules} = [(QRegExp(pat), index, fmt)
+138             \textcolor{keywordflow}{for} (pat, index, fmt) \textcolor{keywordflow}{in} rules]
+139 
+140 
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1syntaxhighlighter_1_1PythonHighlighter_a489b83d01ae6e38ad73e3e86a6fd43bb}{}\index{software\+::chipwhisperer\+::analyzer\+::utils\+::syntaxhighlighter\+::\+Python\+Highlighter@{software\+::chipwhisperer\+::analyzer\+::utils\+::syntaxhighlighter\+::\+Python\+Highlighter}!highlight\+Block@{highlight\+Block}}
+\index{highlight\+Block@{highlight\+Block}!software\+::chipwhisperer\+::analyzer\+::utils\+::syntaxhighlighter\+::\+Python\+Highlighter@{software\+::chipwhisperer\+::analyzer\+::utils\+::syntaxhighlighter\+::\+Python\+Highlighter}}
+\subsubsection[{highlight\+Block}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+analyzer.\+utils.\+syntaxhighlighter.\+Python\+Highlighter.\+highlight\+Block (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{text}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1syntaxhighlighter_1_1PythonHighlighter_a489b83d01ae6e38ad73e3e86a6fd43bb}
+\begin{DoxyVerb}Apply syntax highlighting to the given block of text.
+\end{DoxyVerb}
+ 
+
+References software.\+chipwhisperer.\+analyzer.\+utils.\+syntaxhighlighter.\+Python\+Highlighter.\+match\+\_\+multiline(), software.\+chipwhisperer.\+analyzer.\+utils.\+syntaxhighlighter.\+Python\+Highlighter.\+rules, software.\+chipwhisperer.\+common.\+traces.\+Trace\+Container\+My\+S\+Q\+L.\+Trace\+Container\+My\+S\+Q\+L.\+set\+Format(), software.\+chipwhisperer.\+analyzer.\+utils.\+syntaxhighlighter.\+Python\+Highlighter.\+tri\+\_\+double, and software.\+chipwhisperer.\+analyzer.\+utils.\+syntaxhighlighter.\+Python\+Highlighter.\+tri\+\_\+single.
+
+
+\begin{DoxyCode}
+141     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1syntaxhighlighter_1_1PythonHighlighter_a489b83d01ae6e38ad73e3e86a6fd43bb}{highlightBlock}(self, text):
+142         \textcolor{stringliteral}{"""Apply syntax highlighting to the given block of text.}
+143 \textcolor{stringliteral}{        """}
+144         \textcolor{comment}{# Do other syntax formatting}
+145         \textcolor{keywordflow}{for} expression, nth, format \textcolor{keywordflow}{in} self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1syntaxhighlighter_1_1PythonHighlighter_a144a306a7cf18c752a6fbe3d88d2bc9e}{rules}:
+146             index = expression.indexIn(text, 0)
+147 
+148             \textcolor{keywordflow}{while} index >= 0:
+149                 \textcolor{comment}{# We actually want the index of the nth match}
+150                 index = expression.pos(nth)
+151                 length = len(expression.cap(nth))
+152                 self.setFormat(index, length, format)
+153                 index = expression.indexIn(text, index + length)
+154 
+155         self.setCurrentBlockState(0)
+156 
+157         \textcolor{comment}{# Do multi-line strings}
+158         in\_multiline = self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1syntaxhighlighter_1_1PythonHighlighter_a547033e018e06d765eea4974f7f7647c}{match\_multiline}(text, *self.
+      \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1syntaxhighlighter_1_1PythonHighlighter_a20db7befbb80fc505e9f641ee97ea9ef}{tri\_single})
+159         \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} in\_multiline:
+160             in\_multiline = self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1syntaxhighlighter_1_1PythonHighlighter_a547033e018e06d765eea4974f7f7647c}{match\_multiline}(text, *self.
+      \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1syntaxhighlighter_1_1PythonHighlighter_a28f1aa6d52aab1f3ba742b8f93a9ac39}{tri\_double})
+161 
+162 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1syntaxhighlighter_1_1PythonHighlighter_a547033e018e06d765eea4974f7f7647c}{}\index{software\+::chipwhisperer\+::analyzer\+::utils\+::syntaxhighlighter\+::\+Python\+Highlighter@{software\+::chipwhisperer\+::analyzer\+::utils\+::syntaxhighlighter\+::\+Python\+Highlighter}!match\+\_\+multiline@{match\+\_\+multiline}}
+\index{match\+\_\+multiline@{match\+\_\+multiline}!software\+::chipwhisperer\+::analyzer\+::utils\+::syntaxhighlighter\+::\+Python\+Highlighter@{software\+::chipwhisperer\+::analyzer\+::utils\+::syntaxhighlighter\+::\+Python\+Highlighter}}
+\subsubsection[{match\+\_\+multiline}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+analyzer.\+utils.\+syntaxhighlighter.\+Python\+Highlighter.\+match\+\_\+multiline (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{text, }
+\item[{}]{delimiter, }
+\item[{}]{in\+\_\+state, }
+\item[{}]{style}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1syntaxhighlighter_1_1PythonHighlighter_a547033e018e06d765eea4974f7f7647c}
+\begin{DoxyVerb}Do highlighting of multi-line strings. ``delimiter`` should be a
+``QRegExp`` for triple-single-quotes or triple-double-quotes, and
+``in_state`` should be a unique integer to represent the corresponding
+state changes when inside those strings. Returns True if we're still
+inside a multi-line string when this function is finished.
+\end{DoxyVerb}
+ 
+
+References software.\+chipwhisperer.\+common.\+traces.\+Trace\+Container\+My\+S\+Q\+L.\+Trace\+Container\+My\+S\+Q\+L.\+set\+Format().
+
+
+
+Referenced by software.\+chipwhisperer.\+analyzer.\+utils.\+syntaxhighlighter.\+Python\+Highlighter.\+highlight\+Block(), and software.\+chipwhisperer.\+common.\+ui.\+Project\+Text\+Editor.\+Project\+Highlighter.\+highlight\+Block().
+
+
+\begin{DoxyCode}
+163     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1syntaxhighlighter_1_1PythonHighlighter_a547033e018e06d765eea4974f7f7647c}{match\_multiline}(self, text, delimiter, in\_state, style):
+164         \textcolor{stringliteral}{"""Do highlighting of multi-line strings. ``delimiter`` should be a}
+165 \textcolor{stringliteral}{        ``QRegExp`` for triple-single-quotes or triple-double-quotes, and}
+166 \textcolor{stringliteral}{        ``in\_state`` should be a unique integer to represent the corresponding}
+167 \textcolor{stringliteral}{        state changes when inside those strings. Returns True if we're still}
+168 \textcolor{stringliteral}{        inside a multi-line string when this function is finished.}
+169 \textcolor{stringliteral}{        """}
+170         \textcolor{comment}{# If inside triple-single quotes, start at 0}
+171         \textcolor{keywordflow}{if} self.previousBlockState() == in\_state:
+172             start = 0
+173             add = 0
+174         \textcolor{comment}{# Otherwise, look for the delimiter on this line}
+175         \textcolor{keywordflow}{else}:
+176             start = delimiter.indexIn(text)
+177             \textcolor{comment}{# Move past this match}
+178             add = delimiter.matchedLength()
+179 
+180         \textcolor{comment}{# As long as there's a delimiter match on this line...}
+181         \textcolor{keywordflow}{while} start >= 0:
+182             \textcolor{comment}{# Look for the ending delimiter}
+183             end = delimiter.indexIn(text, start + add)
+184             \textcolor{comment}{# Ending delimiter on this line?}
+185             \textcolor{keywordflow}{if} end >= add:
+186                 length = end - start + add + delimiter.matchedLength()
+187                 self.setCurrentBlockState(0)
+188             \textcolor{comment}{# No; multi-line string}
+189             \textcolor{keywordflow}{else}:
+190                 self.setCurrentBlockState(in\_state)
+191                 length = len(text) - start + add
+192             \textcolor{comment}{# Apply formatting}
+193             self.setFormat(start, length, style)
+194             \textcolor{comment}{# Look for the next match}
+195             start = delimiter.indexIn(text, start + length)
+196 
+197         \textcolor{comment}{# Return True if still inside a multi-line string, False otherwise}
+198         \textcolor{keywordflow}{if} self.currentBlockState() == in\_state:
+199             \textcolor{keywordflow}{return} \textcolor{keyword}{True}
+200         \textcolor{keywordflow}{else}:
+201             \textcolor{keywordflow}{return} \textcolor{keyword}{False}
+202 \end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1syntaxhighlighter_1_1PythonHighlighter_ad05b5e381fdda163b18406549b46dd7c}{}\index{software\+::chipwhisperer\+::analyzer\+::utils\+::syntaxhighlighter\+::\+Python\+Highlighter@{software\+::chipwhisperer\+::analyzer\+::utils\+::syntaxhighlighter\+::\+Python\+Highlighter}!braces@{braces}}
+\index{braces@{braces}!software\+::chipwhisperer\+::analyzer\+::utils\+::syntaxhighlighter\+::\+Python\+Highlighter@{software\+::chipwhisperer\+::analyzer\+::utils\+::syntaxhighlighter\+::\+Python\+Highlighter}}
+\subsubsection[{braces}]{\setlength{\rightskip}{0pt plus 5cm}list software.\+chipwhisperer.\+analyzer.\+utils.\+syntaxhighlighter.\+Python\+Highlighter.\+braces\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1syntaxhighlighter_1_1PythonHighlighter_ad05b5e381fdda163b18406549b46dd7c}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 = [
+2         \textcolor{stringliteral}{'\(\backslash\)\{'}, \textcolor{stringliteral}{'\(\backslash\)\}'}, \textcolor{stringliteral}{'\(\backslash\)('}, \textcolor{stringliteral}{'\(\backslash\))'}, \textcolor{stringliteral}{'\(\backslash\)['}, \textcolor{stringliteral}{'\(\backslash\)]'},
+3     ]
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1syntaxhighlighter_1_1PythonHighlighter_ad5fa814a6a65820676451524e140fdcd}{}\index{software\+::chipwhisperer\+::analyzer\+::utils\+::syntaxhighlighter\+::\+Python\+Highlighter@{software\+::chipwhisperer\+::analyzer\+::utils\+::syntaxhighlighter\+::\+Python\+Highlighter}!keywords@{keywords}}
+\index{keywords@{keywords}!software\+::chipwhisperer\+::analyzer\+::utils\+::syntaxhighlighter\+::\+Python\+Highlighter@{software\+::chipwhisperer\+::analyzer\+::utils\+::syntaxhighlighter\+::\+Python\+Highlighter}}
+\subsubsection[{keywords}]{\setlength{\rightskip}{0pt plus 5cm}list software.\+chipwhisperer.\+analyzer.\+utils.\+syntaxhighlighter.\+Python\+Highlighter.\+keywords\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1syntaxhighlighter_1_1PythonHighlighter_ad5fa814a6a65820676451524e140fdcd}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 = [
+2         \textcolor{stringliteral}{'and'}, \textcolor{stringliteral}{'assert'}, \textcolor{stringliteral}{'break'}, \textcolor{stringliteral}{'class'}, \textcolor{stringliteral}{'continue'}, \textcolor{stringliteral}{'def'},
+3         \textcolor{stringliteral}{'del'}, \textcolor{stringliteral}{'elif'}, \textcolor{stringliteral}{'else'}, \textcolor{stringliteral}{'except'}, \textcolor{stringliteral}{'exec'}, \textcolor{stringliteral}{'finally'},
+4         \textcolor{stringliteral}{'for'}, \textcolor{stringliteral}{'from'}, \textcolor{stringliteral}{'global'}, \textcolor{stringliteral}{'if'}, \textcolor{stringliteral}{'import'}, \textcolor{stringliteral}{'in'},
+5         \textcolor{stringliteral}{'is'}, \textcolor{stringliteral}{'lambda'}, \textcolor{stringliteral}{'not'}, \textcolor{stringliteral}{'or'}, \textcolor{stringliteral}{'pass'}, \textcolor{stringliteral}{'print'},
+6         \textcolor{stringliteral}{'raise'}, \textcolor{stringliteral}{'return'}, \textcolor{stringliteral}{'try'}, \textcolor{stringliteral}{'while'}, \textcolor{stringliteral}{'yield'},
+7         \textcolor{stringliteral}{'None'}, \textcolor{stringliteral}{'True'}, \textcolor{stringliteral}{'False'},
+8     ]
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1syntaxhighlighter_1_1PythonHighlighter_af01544c219b1f3b65d672c4f992c0b0f}{}\index{software\+::chipwhisperer\+::analyzer\+::utils\+::syntaxhighlighter\+::\+Python\+Highlighter@{software\+::chipwhisperer\+::analyzer\+::utils\+::syntaxhighlighter\+::\+Python\+Highlighter}!operators@{operators}}
+\index{operators@{operators}!software\+::chipwhisperer\+::analyzer\+::utils\+::syntaxhighlighter\+::\+Python\+Highlighter@{software\+::chipwhisperer\+::analyzer\+::utils\+::syntaxhighlighter\+::\+Python\+Highlighter}}
+\subsubsection[{operators}]{\setlength{\rightskip}{0pt plus 5cm}list software.\+chipwhisperer.\+analyzer.\+utils.\+syntaxhighlighter.\+Python\+Highlighter.\+operators\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1syntaxhighlighter_1_1PythonHighlighter_af01544c219b1f3b65d672c4f992c0b0f}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 = [
+2         \textcolor{stringliteral}{'='},
+3         \textcolor{comment}{# Comparison}
+4         \textcolor{stringliteral}{'=='}, \textcolor{stringliteral}{'!='}, \textcolor{stringliteral}{'<'}, \textcolor{stringliteral}{'<='}, \textcolor{stringliteral}{'>'}, \textcolor{stringliteral}{'>='},
+5         \textcolor{comment}{# Arithmetic}
+6         \textcolor{stringliteral}{'\(\backslash\)+'}, \textcolor{stringliteral}{'-'}, \textcolor{stringliteral}{'\(\backslash\)*'}, \textcolor{stringliteral}{'/'}, \textcolor{stringliteral}{'//'}, \textcolor{stringliteral}{'\(\backslash\)%'}, \textcolor{stringliteral}{'\(\backslash\)*\(\backslash\)*'},
+7         \textcolor{comment}{# In-place}
+8         \textcolor{stringliteral}{'\(\backslash\)+='}, \textcolor{stringliteral}{'-='}, \textcolor{stringliteral}{'\(\backslash\)*='}, \textcolor{stringliteral}{'/='}, \textcolor{stringliteral}{'\(\backslash\)%='},
+9         \textcolor{comment}{# Bitwise}
+10         \textcolor{stringliteral}{'\(\backslash\)^'}, \textcolor{stringliteral}{'\(\backslash\)|'}, \textcolor{stringliteral}{'\(\backslash\)&'}, \textcolor{stringliteral}{'\(\backslash\)~'}, \textcolor{stringliteral}{'>>'}, \textcolor{stringliteral}{'<<'},
+11     ]
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1syntaxhighlighter_1_1PythonHighlighter_a144a306a7cf18c752a6fbe3d88d2bc9e}{}\index{software\+::chipwhisperer\+::analyzer\+::utils\+::syntaxhighlighter\+::\+Python\+Highlighter@{software\+::chipwhisperer\+::analyzer\+::utils\+::syntaxhighlighter\+::\+Python\+Highlighter}!rules@{rules}}
+\index{rules@{rules}!software\+::chipwhisperer\+::analyzer\+::utils\+::syntaxhighlighter\+::\+Python\+Highlighter@{software\+::chipwhisperer\+::analyzer\+::utils\+::syntaxhighlighter\+::\+Python\+Highlighter}}
+\subsubsection[{rules}]{\setlength{\rightskip}{0pt plus 5cm}software.\+chipwhisperer.\+analyzer.\+utils.\+syntaxhighlighter.\+Python\+Highlighter.\+rules}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1syntaxhighlighter_1_1PythonHighlighter_a144a306a7cf18c752a6fbe3d88d2bc9e}
+
+
+Referenced by software.\+chipwhisperer.\+analyzer.\+utils.\+syntaxhighlighter.\+Python\+Highlighter.\+highlight\+Block(), and software.\+chipwhisperer.\+common.\+ui.\+Project\+Text\+Editor.\+Project\+Highlighter.\+highlight\+Block().
+
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1syntaxhighlighter_1_1PythonHighlighter_a28f1aa6d52aab1f3ba742b8f93a9ac39}{}\index{software\+::chipwhisperer\+::analyzer\+::utils\+::syntaxhighlighter\+::\+Python\+Highlighter@{software\+::chipwhisperer\+::analyzer\+::utils\+::syntaxhighlighter\+::\+Python\+Highlighter}!tri\+\_\+double@{tri\+\_\+double}}
+\index{tri\+\_\+double@{tri\+\_\+double}!software\+::chipwhisperer\+::analyzer\+::utils\+::syntaxhighlighter\+::\+Python\+Highlighter@{software\+::chipwhisperer\+::analyzer\+::utils\+::syntaxhighlighter\+::\+Python\+Highlighter}}
+\subsubsection[{tri\+\_\+double}]{\setlength{\rightskip}{0pt plus 5cm}software.\+chipwhisperer.\+analyzer.\+utils.\+syntaxhighlighter.\+Python\+Highlighter.\+tri\+\_\+double}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1syntaxhighlighter_1_1PythonHighlighter_a28f1aa6d52aab1f3ba742b8f93a9ac39}
+
+
+Referenced by software.\+chipwhisperer.\+analyzer.\+utils.\+syntaxhighlighter.\+Python\+Highlighter.\+highlight\+Block(), and software.\+chipwhisperer.\+common.\+ui.\+Project\+Text\+Editor.\+Project\+Highlighter.\+highlight\+Block().
+
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1syntaxhighlighter_1_1PythonHighlighter_a20db7befbb80fc505e9f641ee97ea9ef}{}\index{software\+::chipwhisperer\+::analyzer\+::utils\+::syntaxhighlighter\+::\+Python\+Highlighter@{software\+::chipwhisperer\+::analyzer\+::utils\+::syntaxhighlighter\+::\+Python\+Highlighter}!tri\+\_\+single@{tri\+\_\+single}}
+\index{tri\+\_\+single@{tri\+\_\+single}!software\+::chipwhisperer\+::analyzer\+::utils\+::syntaxhighlighter\+::\+Python\+Highlighter@{software\+::chipwhisperer\+::analyzer\+::utils\+::syntaxhighlighter\+::\+Python\+Highlighter}}
+\subsubsection[{tri\+\_\+single}]{\setlength{\rightskip}{0pt plus 5cm}software.\+chipwhisperer.\+analyzer.\+utils.\+syntaxhighlighter.\+Python\+Highlighter.\+tri\+\_\+single}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1syntaxhighlighter_1_1PythonHighlighter_a20db7befbb80fc505e9f641ee97ea9ef}
+
+
+Referenced by software.\+chipwhisperer.\+analyzer.\+utils.\+syntaxhighlighter.\+Python\+Highlighter.\+highlight\+Block(), and software.\+chipwhisperer.\+common.\+ui.\+Project\+Text\+Editor.\+Project\+Highlighter.\+highlight\+Block().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{syntaxhighlighter_8py}{syntaxhighlighter.\+py}\end{DoxyCompactItemize}

@@ -1,0 +1,70 @@
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1pluginmanager_1_1Plugin_1_1PluginStatusDialog}{}\section{software.\+chipwhisperer.\+common.\+utils.\+pluginmanager.\+Plugin.\+Plugin\+Status\+Dialog Class Reference}
+\label{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1pluginmanager_1_1Plugin_1_1PluginStatusDialog}\index{software.\+chipwhisperer.\+common.\+utils.\+pluginmanager.\+Plugin.\+Plugin\+Status\+Dialog@{software.\+chipwhisperer.\+common.\+utils.\+pluginmanager.\+Plugin.\+Plugin\+Status\+Dialog}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1pluginmanager_1_1Plugin_1_1PluginStatusDialog_a8bc46975d63d33b425f484c503e6e6f8}{\+\_\+\+\_\+init\+\_\+\+\_\+}
+\end{DoxyCompactItemize}
+
+
+Inheritance diagram for software.\+chipwhisperer.\+common.\+utils.\+pluginmanager.\+Plugin.\+Plugin\+Status\+Dialog\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{dc/ddd/classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1pluginmanager_1_1Plugin_1_1PluginStatusDialog__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for software.\+chipwhisperer.\+common.\+utils.\+pluginmanager.\+Plugin.\+Plugin\+Status\+Dialog\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{db/d56/classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1pluginmanager_1_1Plugin_1_1PluginStatusDialog__coll__graph}
+\end{center}
+\end{figure}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1pluginmanager_1_1Plugin_1_1PluginStatusDialog_a8bc46975d63d33b425f484c503e6e6f8}{}\index{software\+::chipwhisperer\+::common\+::utils\+::pluginmanager\+::\+Plugin\+::\+Plugin\+Status\+Dialog@{software\+::chipwhisperer\+::common\+::utils\+::pluginmanager\+::\+Plugin\+::\+Plugin\+Status\+Dialog}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!software\+::chipwhisperer\+::common\+::utils\+::pluginmanager\+::\+Plugin\+::\+Plugin\+Status\+Dialog@{software\+::chipwhisperer\+::common\+::utils\+::pluginmanager\+::\+Plugin\+::\+Plugin\+Status\+Dialog}}
+\subsubsection[{\+\_\+\+\_\+init\+\_\+\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+utils.\+pluginmanager.\+Plugin.\+Plugin\+Status\+Dialog.\+\_\+\+\_\+init\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{parent = {\ttfamily None}}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1pluginmanager_1_1Plugin_1_1PluginStatusDialog_a8bc46975d63d33b425f484c503e6e6f8}
+
+
+References software.\+chipwhisperer.\+common.\+utils.\+qt\+\_\+tweaks.\+Q\+Dialog.\+show().
+
+
+\begin{DoxyCode}
+44         \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1pluginmanager_1_1Plugin_1_1PluginStatusDialog_a8bc46975d63d33b425f484c503e6e6f8}{\_\_init\_\_}(self, parent=None):
+45             super(PluginStatusDialog, self).\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1pluginmanager_1_1Plugin_1_1PluginStatusDialog_a8bc46975d63d33b425f484c503e6e6f8}{\_\_init\_\_}(len(loadedItems), 4, parent=parent)
+46             self.setWindowFlags(Qt.Window)
+47             self.setWindowTitle(\textcolor{stringliteral}{"Plugin Status"})
+48             self.setHorizontalHeaderLabels([\textcolor{stringliteral}{"Module"}, \textcolor{stringliteral}{"Enabled"}, \textcolor{stringliteral}{"Error Message"}, \textcolor{stringliteral}{"Details (full stack)"}])
+49 
+50             \textcolor{keywordflow}{for} indx, itm \textcolor{keywordflow}{in} enumerate(loadedItems):
+51                 self.setItem(indx, 0, QTableWidgetItem(itm[0]))
+52                 self.setItem(indx, 1, QTableWidgetItem(str(itm[1])))
+53                 self.setItem(indx, 2, QTableWidgetItem(itm[2]))
+54                 self.setItem(indx, 3, QTableWidgetItem(itm[3]))
+55             \textcolor{keywordflow}{for} y \textcolor{keywordflow}{in} range(0, len(loadedItems)):
+56                 \textcolor{keywordflow}{for} x \textcolor{keywordflow}{in} (0,1,2,3):
+57                     self.item(y, x).setFlags(self.item(y, x).flags() ^ Qt.ItemIsEditable)
+58 
+59             self.resize(950, 400)
+60             self.horizontalHeader().setStretchLastSection(\textcolor{keyword}{True})
+61             self.resizeColumnsToContents()
+62             self.resizeRowsToContents()
+63             self.show()
+64             self.raise\_()
+65 
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{pluginmanager_8py}{pluginmanager.\+py}\end{DoxyCompactItemize}

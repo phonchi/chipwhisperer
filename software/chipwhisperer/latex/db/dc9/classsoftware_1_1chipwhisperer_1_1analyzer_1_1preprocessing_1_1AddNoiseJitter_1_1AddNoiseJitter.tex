@@ -1,0 +1,154 @@
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1AddNoiseJitter_1_1AddNoiseJitter}{}\section{software.\+chipwhisperer.\+analyzer.\+preprocessing.\+Add\+Noise\+Jitter.\+Add\+Noise\+Jitter Class Reference}
+\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1AddNoiseJitter_1_1AddNoiseJitter}\index{software.\+chipwhisperer.\+analyzer.\+preprocessing.\+Add\+Noise\+Jitter.\+Add\+Noise\+Jitter@{software.\+chipwhisperer.\+analyzer.\+preprocessing.\+Add\+Noise\+Jitter.\+Add\+Noise\+Jitter}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1AddNoiseJitter_1_1AddNoiseJitter_a4deeabfacda9c24b44cec87d396cc915}{\+\_\+\+\_\+init\+\_\+\+\_\+}
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1AddNoiseJitter_1_1AddNoiseJitter_ae58ef89e17377776d970a6a62b59b318}{update\+Script}
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1AddNoiseJitter_1_1AddNoiseJitter_a69cbd41a530473cb34aabff927a35ea6}{set\+Max\+Jitter} (self, jit)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1AddNoiseJitter_1_1AddNoiseJitter_a633104366a15b1e78bde7b1bb80fcc29}{get\+Trace} (self, n)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1AddNoiseJitter_1_1AddNoiseJitter_a1ea50a845c9821cfd0331c501be94d96}{max\+Jitter}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Generic filter, pulls in from SciPy for doing the actual filtering of things
+\end{DoxyVerb}
+ 
+
+Inheritance diagram for software.\+chipwhisperer.\+analyzer.\+preprocessing.\+Add\+Noise\+Jitter.\+Add\+Noise\+Jitter\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{d3/d0a/classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1AddNoiseJitter_1_1AddNoiseJitter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for software.\+chipwhisperer.\+analyzer.\+preprocessing.\+Add\+Noise\+Jitter.\+Add\+Noise\+Jitter\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{d5/d52/classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1AddNoiseJitter_1_1AddNoiseJitter__coll__graph}
+\end{center}
+\end{figure}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1AddNoiseJitter_1_1AddNoiseJitter_a4deeabfacda9c24b44cec87d396cc915}{}\index{software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+Add\+Noise\+Jitter\+::\+Add\+Noise\+Jitter@{software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+Add\+Noise\+Jitter\+::\+Add\+Noise\+Jitter}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+Add\+Noise\+Jitter\+::\+Add\+Noise\+Jitter@{software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+Add\+Noise\+Jitter\+::\+Add\+Noise\+Jitter}}
+\subsubsection[{\+\_\+\+\_\+init\+\_\+\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+analyzer.\+preprocessing.\+Add\+Noise\+Jitter.\+Add\+Noise\+Jitter.\+\_\+\+\_\+init\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{parent\+Param = {\ttfamily None}, }
+\item[{}]{trace\+Source = {\ttfamily None}}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1AddNoiseJitter_1_1AddNoiseJitter_a4deeabfacda9c24b44cec87d396cc915}
+
+\begin{DoxyCode}
+41     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1AddNoiseJitter_1_1AddNoiseJitter_a4deeabfacda9c24b44cec87d396cc915}{\_\_init\_\_}(self, parentParam=None, traceSource=None):
+42         PreprocessingBase.\_\_init\_\_(self, parentParam, traceSource)
+43         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1AddNoiseJitter_1_1AddNoiseJitter_a1ea50a845c9821cfd0331c501be94d96}{maxJitter} = 0
+44         self.params.addChildren([
+45             \{\textcolor{stringliteral}{'name'}:\textcolor{stringliteral}{'Max Jitter (+/- cycles)'}, \textcolor{stringliteral}{'key'}:\textcolor{stringliteral}{'jitter'}, \textcolor{stringliteral}{'type'}:\textcolor{stringliteral}{'int'}, \textcolor{stringliteral}{'value'}:self.
+      \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1AddNoiseJitter_1_1AddNoiseJitter_a1ea50a845c9821cfd0331c501be94d96}{maxJitter}, \textcolor{stringliteral}{'limits'}:(0, 1000), \textcolor{stringliteral}{'set'}:self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1AddNoiseJitter_1_1AddNoiseJitter_ae58ef89e17377776d970a6a62b59b318}{updateScript}\}
+46         ])
+47         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1AddNoiseJitter_1_1AddNoiseJitter_ae58ef89e17377776d970a6a62b59b318}{updateScript}()
+48 
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1AddNoiseJitter_1_1AddNoiseJitter_a633104366a15b1e78bde7b1bb80fcc29}{}\index{software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+Add\+Noise\+Jitter\+::\+Add\+Noise\+Jitter@{software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+Add\+Noise\+Jitter\+::\+Add\+Noise\+Jitter}!get\+Trace@{get\+Trace}}
+\index{get\+Trace@{get\+Trace}!software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+Add\+Noise\+Jitter\+::\+Add\+Noise\+Jitter@{software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+Add\+Noise\+Jitter\+::\+Add\+Noise\+Jitter}}
+\subsubsection[{get\+Trace}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+analyzer.\+preprocessing.\+Add\+Noise\+Jitter.\+Add\+Noise\+Jitter.\+get\+Trace (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{n}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1AddNoiseJitter_1_1AddNoiseJitter_a633104366a15b1e78bde7b1bb80fcc29}
+
+
+References software.\+chipwhisperer.\+analyzer.\+preprocessing.\+\_\+base.\+Preprocessing\+Base.\+enabled, software.\+chipwhisperer.\+analyzer.\+preprocessing.\+Resync\+Resample\+Z\+C.\+Resync\+Resample\+Z\+C.\+enabled, software.\+chipwhisperer.\+analyzer.\+preprocessing.\+Resync\+Cross\+Correlation.\+Resync\+Cross\+Correlation.\+enabled, software.\+chipwhisperer.\+analyzer.\+preprocessing.\+Resync\+S\+A\+D.\+Resync\+S\+A\+D.\+enabled, software.\+chipwhisperer.\+analyzer.\+preprocessing.\+Add\+Noise\+Jitter.\+Add\+Noise\+Jitter.\+max\+Jitter, and software.\+chipwhisperer.\+analyzer.\+preprocessing.\+Add\+Noise\+Jitter.\+roll\+\_\+zeropad().
+
+
+\begin{DoxyCode}
+57     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1AddNoiseJitter_1_1AddNoiseJitter_a633104366a15b1e78bde7b1bb80fcc29}{getTrace}(self, n):
+58         \textcolor{keywordflow}{if} self.enabled:
+59             trace = self.\_traceSource.getTrace(n)
+60             \textcolor{keywordflow}{if} trace \textcolor{keywordflow}{is} \textcolor{keywordtype}{None}:
+61                 \textcolor{keywordflow}{return} \textcolor{keywordtype}{None}
+62             
+63             jit = random.randint(-self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1AddNoiseJitter_1_1AddNoiseJitter_a1ea50a845c9821cfd0331c501be94d96}{maxJitter}, self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1AddNoiseJitter_1_1AddNoiseJitter_a1ea50a845c9821cfd0331c501be94d96}{maxJitter})
+64 
+65             \textcolor{keywordflow}{return} \hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1AddNoiseJitter_a790f3f20f0f53b393f42bd693cb5182a}{roll\_zeropad}(trace, jit)
+66         \textcolor{keywordflow}{else}:
+67             \textcolor{keywordflow}{return} self.\_traceSource.getTrace(n)
+68 
+69         
+70 \textcolor{comment}{# This function stolen from: http://stackoverflow.com/questions/2777907/python-numpy-roll-with-padding}
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1AddNoiseJitter_1_1AddNoiseJitter_a69cbd41a530473cb34aabff927a35ea6}{}\index{software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+Add\+Noise\+Jitter\+::\+Add\+Noise\+Jitter@{software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+Add\+Noise\+Jitter\+::\+Add\+Noise\+Jitter}!set\+Max\+Jitter@{set\+Max\+Jitter}}
+\index{set\+Max\+Jitter@{set\+Max\+Jitter}!software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+Add\+Noise\+Jitter\+::\+Add\+Noise\+Jitter@{software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+Add\+Noise\+Jitter\+::\+Add\+Noise\+Jitter}}
+\subsubsection[{set\+Max\+Jitter}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+analyzer.\+preprocessing.\+Add\+Noise\+Jitter.\+Add\+Noise\+Jitter.\+set\+Max\+Jitter (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{jit}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1AddNoiseJitter_1_1AddNoiseJitter_a69cbd41a530473cb34aabff927a35ea6}
+
+
+References software.\+chipwhisperer.\+analyzer.\+preprocessing.\+Add\+Noise\+Jitter.\+Add\+Noise\+Jitter.\+max\+Jitter.
+
+
+\begin{DoxyCode}
+54     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1AddNoiseJitter_1_1AddNoiseJitter_a69cbd41a530473cb34aabff927a35ea6}{setMaxJitter}(self, jit):
+55         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1AddNoiseJitter_1_1AddNoiseJitter_a1ea50a845c9821cfd0331c501be94d96}{maxJitter} = jit
+56    
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1AddNoiseJitter_1_1AddNoiseJitter_ae58ef89e17377776d970a6a62b59b318}{}\index{software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+Add\+Noise\+Jitter\+::\+Add\+Noise\+Jitter@{software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+Add\+Noise\+Jitter\+::\+Add\+Noise\+Jitter}!update\+Script@{update\+Script}}
+\index{update\+Script@{update\+Script}!software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+Add\+Noise\+Jitter\+::\+Add\+Noise\+Jitter@{software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+Add\+Noise\+Jitter\+::\+Add\+Noise\+Jitter}}
+\subsubsection[{update\+Script}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+analyzer.\+preprocessing.\+Add\+Noise\+Jitter.\+Add\+Noise\+Jitter.\+update\+Script (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{ignored = {\ttfamily None}}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1AddNoiseJitter_1_1AddNoiseJitter_ae58ef89e17377776d970a6a62b59b318}
+
+
+References software.\+chipwhisperer.\+common.\+api.\+autoscript.\+Auto\+Script.\+add\+Function(), software.\+chipwhisperer.\+capture.\+scopes.\+\_\+\+Open\+A\+D\+C\+Interface.\+Open\+A\+D\+C\+Settings.\+find\+Param, software.\+chipwhisperer.\+common.\+api.\+Extended\+Parameter.\+Extended\+Parameter.\+find\+Param(), and software.\+chipwhisperer.\+capture.\+scopes.\+\_\+\+Open\+A\+D\+C\+Interface.\+Clock\+Settings.\+find\+Param.
+
+
+
+Referenced by software.\+chipwhisperer.\+analyzer.\+preprocessing.\+Add\+Noise\+Random.\+Add\+Noise\+Random.\+\_\+\+\_\+init\+\_\+\+\_\+(), software.\+chipwhisperer.\+analyzer.\+preprocessing.\+Decimation\+Fixed.\+Decimation\+Fixed.\+\_\+\+\_\+init\+\_\+\+\_\+(), software.\+chipwhisperer.\+analyzer.\+preprocessing.\+Filter.\+Filter.\+\_\+\+\_\+init\+\_\+\+\_\+(), software.\+chipwhisperer.\+analyzer.\+preprocessing.\+Decimation\+Clock\+Recovery.\+Decimation\+Clock\+Recovery.\+\_\+\+\_\+init\+\_\+\+\_\+(), software.\+chipwhisperer.\+analyzer.\+preprocessing.\+Normalize.\+Normalize.\+update\+Norm\+Class(), and software.\+chipwhisperer.\+analyzer.\+utils.\+Trace\+Explorer\+Scripts.\+Partition\+Display.\+Partition\+Display.\+update\+P\+O\+I().
+
+
+\begin{DoxyCode}
+49     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1AddNoiseJitter_1_1AddNoiseJitter_ae58ef89e17377776d970a6a62b59b318}{updateScript}(self, ignored=None):
+50         self.addFunction(\textcolor{stringliteral}{"init"}, \textcolor{stringliteral}{"setEnabled"}, \textcolor{stringliteral}{"%s"} % self.findParam(\textcolor{stringliteral}{'enabled'}).value())
+51         jit = self.findParam(\textcolor{stringliteral}{'jitter'}).value()
+52         self.addFunction(\textcolor{stringliteral}{"init"}, \textcolor{stringliteral}{"setMaxJitter"}, \textcolor{stringliteral}{"%d"} % jit)
+53    
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1AddNoiseJitter_1_1AddNoiseJitter_a1ea50a845c9821cfd0331c501be94d96}{}\index{software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+Add\+Noise\+Jitter\+::\+Add\+Noise\+Jitter@{software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+Add\+Noise\+Jitter\+::\+Add\+Noise\+Jitter}!max\+Jitter@{max\+Jitter}}
+\index{max\+Jitter@{max\+Jitter}!software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+Add\+Noise\+Jitter\+::\+Add\+Noise\+Jitter@{software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+Add\+Noise\+Jitter\+::\+Add\+Noise\+Jitter}}
+\subsubsection[{max\+Jitter}]{\setlength{\rightskip}{0pt plus 5cm}software.\+chipwhisperer.\+analyzer.\+preprocessing.\+Add\+Noise\+Jitter.\+Add\+Noise\+Jitter.\+max\+Jitter}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1AddNoiseJitter_1_1AddNoiseJitter_a1ea50a845c9821cfd0331c501be94d96}
+
+
+Referenced by software.\+chipwhisperer.\+analyzer.\+preprocessing.\+Add\+Noise\+Jitter.\+Add\+Noise\+Jitter.\+get\+Trace(), and software.\+chipwhisperer.\+analyzer.\+preprocessing.\+Add\+Noise\+Jitter.\+Add\+Noise\+Jitter.\+set\+Max\+Jitter().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{AddNoiseJitter_8py}{Add\+Noise\+Jitter.\+py}\end{DoxyCompactItemize}

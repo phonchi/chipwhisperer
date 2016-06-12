@@ -1,0 +1,4 @@
+var namespacesoftware_1_1chipwhisperer_1_1common_1_1ui_1_1TraceManagerDialog =
+[
+    [ "TraceManagerDialog", "d6/d4f/classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1TraceManagerDialog_1_1TraceManagerDialog.html", "d6/d4f/classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1TraceManagerDialog_1_1TraceManagerDialog" ]
+];

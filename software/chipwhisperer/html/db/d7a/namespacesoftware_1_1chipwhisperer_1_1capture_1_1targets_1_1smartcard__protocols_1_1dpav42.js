@@ -1,0 +1,4 @@
+var namespacesoftware_1_1chipwhisperer_1_1capture_1_1targets_1_1smartcard__protocols_1_1dpav42 =
+[
+    [ "ProtocolDPAv42", "d0/d84/classsoftware_1_1chipwhisperer_1_1capture_1_1targets_1_1smartcard__protocols_1_1dpav42_1_1ProtocolDPAv42.html", "d0/d84/classsoftware_1_1chipwhisperer_1_1capture_1_1targets_1_1smartcard__protocols_1_1dpav42_1_1ProtocolDPAv42" ]
+];

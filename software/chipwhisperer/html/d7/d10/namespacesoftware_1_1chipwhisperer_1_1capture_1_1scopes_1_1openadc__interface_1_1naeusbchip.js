@@ -1,0 +1,4 @@
+var namespacesoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1openadc__interface_1_1naeusbchip =
+[
+    [ "OpenADCInterface_NAEUSBChip", "d2/d88/classsoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1openadc__interface_1_1naeusbchip_1_1OpenADCInterface__NAEUSBChip.html", "d2/d88/classsoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1openadc__interface_1_1naeusbchip_1_1OpenADCInterface__NAEUSBChip" ]
+];

@@ -1,0 +1,285 @@
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive_1_1CPAProgressiveOneSubkey}{}\section{software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+progressive.\+C\+P\+A\+Progressive\+One\+Subkey Class Reference}
+\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive_1_1CPAProgressiveOneSubkey}\index{software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+progressive.\+C\+P\+A\+Progressive\+One\+Subkey@{software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+progressive.\+C\+P\+A\+Progressive\+One\+Subkey}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive_1_1CPAProgressiveOneSubkey_a11a705e73f7c624060fe14ae1593568f}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive_1_1CPAProgressiveOneSubkey_a3b4ddd23425b078c79417c9afd490380}{clear\+Stats} (self)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive_1_1CPAProgressiveOneSubkey_aae409c56b8087a4dd5a3b1bc9d5fad20}{one\+Subkey} (self, bnum, point\+Range, traces\+\_\+all, numtraces, plaintexts, ciphertexts, knownkeys, progress\+Bar, model, leakagetype, state, pbcnt)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive_1_1CPAProgressiveOneSubkey_a013ea5a2bd363d6d5aaf953e5dbee0dd}{sumhq}
+\item 
+\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive_1_1CPAProgressiveOneSubkey_a3f8f27352de8ef2c3dbebc1e3fb51954}{sumtq}
+\item 
+\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive_1_1CPAProgressiveOneSubkey_a061db56508f9340132d55ec9cf0a0ed0}{sumt}
+\item 
+\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive_1_1CPAProgressiveOneSubkey_aaf99598968c1ab0c7836bf3fdee9c309}{sumh}
+\item 
+\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive_1_1CPAProgressiveOneSubkey_abd38d5556813178f7c8b0b4f45bed94c}{sumht}
+\item 
+\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive_1_1CPAProgressiveOneSubkey_a07a202a4af63fed2b3d66043eca926b6}{total\+Traces}
+\item 
+\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive_1_1CPAProgressiveOneSubkey_a21ea6edb219d8380a85bd3d9a8c0abba}{modelstate}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}This class is the basic progressive CPA attack, capable of adding traces onto a variable with previous data\end{DoxyVerb}
+ 
+
+Inheritance diagram for software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+progressive.\+C\+P\+A\+Progressive\+One\+Subkey\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{d6/d47/classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive_1_1CPAPr303e47a6313764d85e883d41789bc7d0}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+progressive.\+C\+P\+A\+Progressive\+One\+Subkey\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{df/d20/classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive_1_1CPAProgressiveOneSubkey__coll__graph}
+\end{center}
+\end{figure}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive_1_1CPAProgressiveOneSubkey_a11a705e73f7c624060fe14ae1593568f}{}\index{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+::\+C\+P\+A\+Progressive\+One\+Subkey@{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+::\+C\+P\+A\+Progressive\+One\+Subkey}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+::\+C\+P\+A\+Progressive\+One\+Subkey@{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+::\+C\+P\+A\+Progressive\+One\+Subkey}}
+\subsubsection[{\+\_\+\+\_\+init\+\_\+\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+progressive.\+C\+P\+A\+Progressive\+One\+Subkey.\+\_\+\+\_\+init\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive_1_1CPAProgressiveOneSubkey_a11a705e73f7c624060fe14ae1593568f}
+
+
+References software.\+chipwhisperer.\+analyzer.\+attacks.\+\_\+channel\+\_\+estimate\+\_\+attack.\+Channel\+Estimate\+Attack\+One\+Subkey.\+clear\+Stats(), software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+progressive.\+C\+P\+A\+Progressive\+One\+Subkey.\+clear\+Stats(), software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+experimentalchannelinfo.\+C\+P\+A\+Progressive\+One\+Subkey.\+clear\+Stats(), software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+experimentalchannelinfo.\+Min\+Dist\+One\+Subkey.\+clear\+Stats(), and software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+experimentalchannelinfo.\+Template\+One\+Subkey.\+clear\+Stats().
+
+
+\begin{DoxyCode}
+38     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive_1_1CPAProgressiveOneSubkey_a11a705e73f7c624060fe14ae1593568f}{\_\_init\_\_}(self):
+39         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive_1_1CPAProgressiveOneSubkey_a3b4ddd23425b078c79417c9afd490380}{clearStats}()
+40 
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive_1_1CPAProgressiveOneSubkey_a3b4ddd23425b078c79417c9afd490380}{}\index{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+::\+C\+P\+A\+Progressive\+One\+Subkey@{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+::\+C\+P\+A\+Progressive\+One\+Subkey}!clear\+Stats@{clear\+Stats}}
+\index{clear\+Stats@{clear\+Stats}!software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+::\+C\+P\+A\+Progressive\+One\+Subkey@{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+::\+C\+P\+A\+Progressive\+One\+Subkey}}
+\subsubsection[{clear\+Stats}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+progressive.\+C\+P\+A\+Progressive\+One\+Subkey.\+clear\+Stats (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive_1_1CPAProgressiveOneSubkey_a3b4ddd23425b078c79417c9afd490380}
+
+
+Referenced by software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+progressive.\+C\+P\+A\+Progressive\+One\+Subkey.\+\_\+\+\_\+init\+\_\+\+\_\+(), and software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+progressive\+\_\+caccel.\+C\+P\+A\+Progressive\+One\+Subkey.\+\_\+\+\_\+init\+\_\+\+\_\+().
+
+
+\begin{DoxyCode}
+41     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive_1_1CPAProgressiveOneSubkey_a3b4ddd23425b078c79417c9afd490380}{clearStats}(self):
+42         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive_1_1CPAProgressiveOneSubkey_a013ea5a2bd363d6d5aaf953e5dbee0dd}{sumhq} = [0]*256
+43         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive_1_1CPAProgressiveOneSubkey_a3f8f27352de8ef2c3dbebc1e3fb51954}{sumtq} = [0]
+44         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive_1_1CPAProgressiveOneSubkey_a061db56508f9340132d55ec9cf0a0ed0}{sumt} = [0]
+45         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive_1_1CPAProgressiveOneSubkey_aaf99598968c1ab0c7836bf3fdee9c309}{sumh} = [0]*256
+46         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive_1_1CPAProgressiveOneSubkey_abd38d5556813178f7c8b0b4f45bed94c}{sumht} = [0]*256
+47         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive_1_1CPAProgressiveOneSubkey_a07a202a4af63fed2b3d66043eca926b6}{totalTraces} = 0
+48         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive_1_1CPAProgressiveOneSubkey_a21ea6edb219d8380a85bd3d9a8c0abba}{modelstate} = \{\textcolor{stringliteral}{'knownkey'}:\textcolor{keywordtype}{None}\}
+49 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive_1_1CPAProgressiveOneSubkey_aae409c56b8087a4dd5a3b1bc9d5fad20}{}\index{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+::\+C\+P\+A\+Progressive\+One\+Subkey@{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+::\+C\+P\+A\+Progressive\+One\+Subkey}!one\+Subkey@{one\+Subkey}}
+\index{one\+Subkey@{one\+Subkey}!software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+::\+C\+P\+A\+Progressive\+One\+Subkey@{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+::\+C\+P\+A\+Progressive\+One\+Subkey}}
+\subsubsection[{one\+Subkey}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+progressive.\+C\+P\+A\+Progressive\+One\+Subkey.\+one\+Subkey (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{bnum, }
+\item[{}]{point\+Range, }
+\item[{}]{traces\+\_\+all, }
+\item[{}]{numtraces, }
+\item[{}]{plaintexts, }
+\item[{}]{ciphertexts, }
+\item[{}]{knownkeys, }
+\item[{}]{progress\+Bar, }
+\item[{}]{model, }
+\item[{}]{leakagetype, }
+\item[{}]{state, }
+\item[{}]{pbcnt}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive_1_1CPAProgressiveOneSubkey_aae409c56b8087a4dd5a3b1bc9d5fad20}
+
+
+References software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+progressive.\+C\+P\+A\+Progressive\+One\+Subkey.\+sumh, software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+experimentalchannelinfo.\+C\+P\+A\+Progressive\+One\+Subkey.\+sumh, software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+progressive.\+C\+P\+A\+Progressive\+One\+Subkey.\+sumhq, software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+experimentalchannelinfo.\+C\+P\+A\+Progressive\+One\+Subkey.\+sumhq, software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+progressive.\+C\+P\+A\+Progressive\+One\+Subkey.\+sumht, software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+experimentalchannelinfo.\+C\+P\+A\+Progressive\+One\+Subkey.\+sumht, software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+progressive.\+C\+P\+A\+Progressive\+One\+Subkey.\+sumt, software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+experimentalchannelinfo.\+C\+P\+A\+Progressive\+One\+Subkey.\+sumt, software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+progressive.\+C\+P\+A\+Progressive\+One\+Subkey.\+sumtq, software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+experimentalchannelinfo.\+C\+P\+A\+Progressive\+One\+Subkey.\+sumtq, software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+progressive.\+C\+P\+A\+Progressive\+One\+Subkey.\+total\+Traces, software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+experimentalchannelinfo.\+C\+P\+A\+Progressive\+One\+Subkey.\+total\+Traces, software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+experimentalchannelinfo.\+Min\+Dist\+One\+Subkey.\+total\+Traces, and software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+experimentalchannelinfo.\+Template\+One\+Subkey.\+total\+Traces.
+
+
+\begin{DoxyCode}
+50     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive_1_1CPAProgressiveOneSubkey_aae409c56b8087a4dd5a3b1bc9d5fad20}{oneSubkey}(self, bnum, pointRange, traces\_all, numtraces, plaintexts, ciphertexts, 
+      knownkeys, progressBar, model, leakagetype, state, pbcnt):
+51         diffs = [0]*256
+52         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive_1_1CPAProgressiveOneSubkey_a07a202a4af63fed2b3d66043eca926b6}{totalTraces} += numtraces
+53 
+54         \textcolor{keywordflow}{if} pointRange == \textcolor{keywordtype}{None}:
+55             traces = traces\_all
+56             \textcolor{comment}{# padbefore = 0}
+57             \textcolor{comment}{# padafter = 0}
+58         \textcolor{keywordflow}{else}:
+59             traces = traces\_all[:, pointRange[0] : pointRange[1]]
+60             \textcolor{comment}{# padbefore = pointRange[0]}
+61             \textcolor{comment}{# padafter = len(traces\_all[0, :]) - pointRange[1]}
+62             \textcolor{comment}{# print "%d - %d (%d %d)" % (pointRange[0], pointRange[1], padbefore, padafter)}
+63 
+64         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive_1_1CPAProgressiveOneSubkey_a3f8f27352de8ef2c3dbebc1e3fb51954}{sumtq} += np.sum(np.square(traces), axis=0, dtype=np.float64)
+65         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive_1_1CPAProgressiveOneSubkey_a061db56508f9340132d55ec9cf0a0ed0}{sumt} += np.sum(traces, axis=0)
+66         sumden2 = (np.square(self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive_1_1CPAProgressiveOneSubkey_a061db56508f9340132d55ec9cf0a0ed0}{sumt}) - self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive_1_1CPAProgressiveOneSubkey_a07a202a4af63fed2b3d66043eca926b6}{totalTraces} * self.
+      \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive_1_1CPAProgressiveOneSubkey_a3f8f27352de8ef2c3dbebc1e3fb51954}{sumtq})
+67 
+68         \textcolor{comment}{#For each 0..0xFF possible value of the key byte}
+69         \textcolor{keywordflow}{for} key \textcolor{keywordflow}{in} range(0, 256):
+70             \textcolor{comment}{#Initialize arrays & variables to zero}
+71             sumnum = np.zeros(len(traces[0,:]))
+72             \textcolor{comment}{# sumden1 = np.zeros(len(traces[0,:]))}
+73             \textcolor{comment}{# sumden2 = np.zeros(len(traces[0,:]))}
+74 
+75             hyp = [0] * numtraces
+76 
+77             \textcolor{comment}{#Formula for CPA & description found in "Power Analysis Attacks"}
+78             \textcolor{comment}{# by Mangard et al, page 124, formula 6.2.}
+79             \textcolor{comment}{#}
+80             \textcolor{comment}{# This has been modified to reduce computational requirements such that adding a new waveform}
+81             \textcolor{comment}{# doesn't require you to recalculate everything}
+82 
+83             \textcolor{comment}{#Generate hypotheticals}
+84             \textcolor{keywordflow}{for} tnum \textcolor{keywordflow}{in} range(numtraces):
+85 
+86                 \textcolor{keywordflow}{if} len(plaintexts) > 0:
+87                     pt = plaintexts[tnum]
+88 
+89                 \textcolor{keywordflow}{if} len(ciphertexts) > 0:
+90                     ct = ciphertexts[tnum]
+91 
+92                 \textcolor{keywordflow}{if} knownkeys \textcolor{keywordflow}{and} len(knownkeys) > 0:
+93                     nk = knownkeys[tnum]
+94                 \textcolor{keywordflow}{else}:
+95                     nk = \textcolor{keywordtype}{None}
+96 
+97                 state[\textcolor{stringliteral}{'knownkey'}] = nk
+98 
+99                 hypint = model.leakage(pt, ct, key, bnum, leakagetype, state)
+100 
+101                 hyp[tnum] = hypint
+102 
+103             hyp = np.array(hyp)
+104 
+105             self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive_1_1CPAProgressiveOneSubkey_aaf99598968c1ab0c7836bf3fdee9c309}{sumh}[key] += np.sum(hyp, axis=0)
+106             self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive_1_1CPAProgressiveOneSubkey_abd38d5556813178f7c8b0b4f45bed94c}{sumht}[key] += np.sum(np.multiply(np.transpose(traces), hyp), axis=1)
+107 
+108             \textcolor{comment}{#WARNING: not casting to np.float64 causes algorithm degredation... always be careful}
+109             \textcolor{comment}{#meanh = self.sumh[key] / np.float64(self.totalTraces)}
+110             \textcolor{comment}{#meant = self.sumt[key] / np.float64(self.totalTraces)}
+111 
+112             \textcolor{comment}{#numtraces * meanh * meant = sumh * meant}
+113             \textcolor{comment}{#sumnum =  self.sumht[key] - meant*self.sumh[key] - meanh*self.sumt[key] + (self.sumh[key] *
+       meant)}
+114             \textcolor{comment}{#sumnum =  self.sumht[key] - meanh*self.sumt[key]}
+115 \textcolor{comment}{#            sumnum =  self.sumht[key] - meanh*self.sumt[key]}
+116             \textcolor{comment}{#sumnum =  self.sumht[key] - self.sumh[key]*self.sumt[key] / np.float64(self.totalTraces)}
+117             sumnum = self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive_1_1CPAProgressiveOneSubkey_a07a202a4af63fed2b3d66043eca926b6}{totalTraces} * self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive_1_1CPAProgressiveOneSubkey_abd38d5556813178f7c8b0b4f45bed94c}{sumht}[key] - self.
+      \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive_1_1CPAProgressiveOneSubkey_aaf99598968c1ab0c7836bf3fdee9c309}{sumh}[key] * self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive_1_1CPAProgressiveOneSubkey_a061db56508f9340132d55ec9cf0a0ed0}{sumt}
+118 
+119             self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive_1_1CPAProgressiveOneSubkey_a013ea5a2bd363d6d5aaf953e5dbee0dd}{sumhq}[key] += np.sum(np.square(hyp),axis=0, dtype=np.float64)
+120 
+121             \textcolor{comment}{#numtraces * meanh * meanh = sumh * meanh}
+122             \textcolor{comment}{#sumden1 = sumhq - (2*meanh*self.sumh) + (numtraces*meanh*meanh)}
+123             \textcolor{comment}{#sumden1 = sumhq - (2*meanh*self.sumh) + (self.sumh * meanh)}
+124             \textcolor{comment}{# sumden1 = sumhq - meanh*self.sumh}
+125             \textcolor{comment}{# similarly for sumden2}
+126             \textcolor{comment}{#sumden1 = self.sumhq[key] - meanh*self.sumh[key]}
+127             \textcolor{comment}{#sumden2 = self.sumtq[key] - meant*self.sumt[key]}
+128             \textcolor{comment}{# sumden = sumden1 * sumden2}
+129 
+130             \textcolor{comment}{#Sumden1/Sumden2 are variance of these variables, may be numeric unstability}
+131             \textcolor{comment}{#See http://en.wikipedia.org/wiki/Algorithms\_for\_calculating\_variance for online update}
+132             \textcolor{comment}{#algorithm which might be better}
+133             sumden1 = (np.square(self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive_1_1CPAProgressiveOneSubkey_aaf99598968c1ab0c7836bf3fdee9c309}{sumh}[key]) - self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive_1_1CPAProgressiveOneSubkey_a07a202a4af63fed2b3d66043eca926b6}{totalTraces} * self.
+      \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive_1_1CPAProgressiveOneSubkey_a013ea5a2bd363d6d5aaf953e5dbee0dd}{sumhq}[key])
+134             sumden = sumden1 * sumden2
+135 
+136             \textcolor{comment}{#if sumden.any() < 1E-12:}
+137             \textcolor{comment}{#    print "WARNING: sumden small"}
+138 
+139             diffs[key] = sumnum / np.sqrt(sumden) \textcolor{comment}{#TODO: zero division error here}
+140 
+141             \textcolor{keywordflow}{if} progressBar:
+142                 progressBar.updateStatus(pbcnt, (self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive_1_1CPAProgressiveOneSubkey_a07a202a4af63fed2b3d66043eca926b6}{totalTraces}-numtraces, self.
+      \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive_1_1CPAProgressiveOneSubkey_a07a202a4af63fed2b3d66043eca926b6}{totalTraces}-1, bnum))
+143             pbcnt = pbcnt + 1
+144 
+145             \textcolor{comment}{# if padafter > 0:}
+146             \textcolor{comment}{#    diffs[key] = np.concatenate([diffs[key], np.zeros(padafter)])}
+147 
+148             \textcolor{comment}{# if padbefore > 0:}
+149             \textcolor{comment}{#    diffs[key] = np.concatenate([np.zeros(padbefore), diffs[key]])}
+150 
+151         \textcolor{keywordflow}{return} (diffs, pbcnt)
+152 
+153 
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive_1_1CPAProgressiveOneSubkey_a21ea6edb219d8380a85bd3d9a8c0abba}{}\index{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+::\+C\+P\+A\+Progressive\+One\+Subkey@{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+::\+C\+P\+A\+Progressive\+One\+Subkey}!modelstate@{modelstate}}
+\index{modelstate@{modelstate}!software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+::\+C\+P\+A\+Progressive\+One\+Subkey@{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+::\+C\+P\+A\+Progressive\+One\+Subkey}}
+\subsubsection[{modelstate}]{\setlength{\rightskip}{0pt plus 5cm}software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+progressive.\+C\+P\+A\+Progressive\+One\+Subkey.\+modelstate}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive_1_1CPAProgressiveOneSubkey_a21ea6edb219d8380a85bd3d9a8c0abba}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive_1_1CPAProgressiveOneSubkey_aaf99598968c1ab0c7836bf3fdee9c309}{}\index{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+::\+C\+P\+A\+Progressive\+One\+Subkey@{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+::\+C\+P\+A\+Progressive\+One\+Subkey}!sumh@{sumh}}
+\index{sumh@{sumh}!software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+::\+C\+P\+A\+Progressive\+One\+Subkey@{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+::\+C\+P\+A\+Progressive\+One\+Subkey}}
+\subsubsection[{sumh}]{\setlength{\rightskip}{0pt plus 5cm}software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+progressive.\+C\+P\+A\+Progressive\+One\+Subkey.\+sumh}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive_1_1CPAProgressiveOneSubkey_aaf99598968c1ab0c7836bf3fdee9c309}
+
+
+Referenced by software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+progressive.\+C\+P\+A\+Progressive\+One\+Subkey.\+one\+Subkey().
+
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive_1_1CPAProgressiveOneSubkey_a013ea5a2bd363d6d5aaf953e5dbee0dd}{}\index{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+::\+C\+P\+A\+Progressive\+One\+Subkey@{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+::\+C\+P\+A\+Progressive\+One\+Subkey}!sumhq@{sumhq}}
+\index{sumhq@{sumhq}!software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+::\+C\+P\+A\+Progressive\+One\+Subkey@{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+::\+C\+P\+A\+Progressive\+One\+Subkey}}
+\subsubsection[{sumhq}]{\setlength{\rightskip}{0pt plus 5cm}software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+progressive.\+C\+P\+A\+Progressive\+One\+Subkey.\+sumhq}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive_1_1CPAProgressiveOneSubkey_a013ea5a2bd363d6d5aaf953e5dbee0dd}
+
+
+Referenced by software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+progressive.\+C\+P\+A\+Progressive\+One\+Subkey.\+one\+Subkey().
+
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive_1_1CPAProgressiveOneSubkey_abd38d5556813178f7c8b0b4f45bed94c}{}\index{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+::\+C\+P\+A\+Progressive\+One\+Subkey@{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+::\+C\+P\+A\+Progressive\+One\+Subkey}!sumht@{sumht}}
+\index{sumht@{sumht}!software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+::\+C\+P\+A\+Progressive\+One\+Subkey@{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+::\+C\+P\+A\+Progressive\+One\+Subkey}}
+\subsubsection[{sumht}]{\setlength{\rightskip}{0pt plus 5cm}software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+progressive.\+C\+P\+A\+Progressive\+One\+Subkey.\+sumht}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive_1_1CPAProgressiveOneSubkey_abd38d5556813178f7c8b0b4f45bed94c}
+
+
+Referenced by software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+progressive.\+C\+P\+A\+Progressive\+One\+Subkey.\+one\+Subkey().
+
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive_1_1CPAProgressiveOneSubkey_a061db56508f9340132d55ec9cf0a0ed0}{}\index{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+::\+C\+P\+A\+Progressive\+One\+Subkey@{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+::\+C\+P\+A\+Progressive\+One\+Subkey}!sumt@{sumt}}
+\index{sumt@{sumt}!software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+::\+C\+P\+A\+Progressive\+One\+Subkey@{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+::\+C\+P\+A\+Progressive\+One\+Subkey}}
+\subsubsection[{sumt}]{\setlength{\rightskip}{0pt plus 5cm}software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+progressive.\+C\+P\+A\+Progressive\+One\+Subkey.\+sumt}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive_1_1CPAProgressiveOneSubkey_a061db56508f9340132d55ec9cf0a0ed0}
+
+
+Referenced by software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+progressive.\+C\+P\+A\+Progressive\+One\+Subkey.\+one\+Subkey().
+
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive_1_1CPAProgressiveOneSubkey_a3f8f27352de8ef2c3dbebc1e3fb51954}{}\index{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+::\+C\+P\+A\+Progressive\+One\+Subkey@{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+::\+C\+P\+A\+Progressive\+One\+Subkey}!sumtq@{sumtq}}
+\index{sumtq@{sumtq}!software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+::\+C\+P\+A\+Progressive\+One\+Subkey@{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+::\+C\+P\+A\+Progressive\+One\+Subkey}}
+\subsubsection[{sumtq}]{\setlength{\rightskip}{0pt plus 5cm}software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+progressive.\+C\+P\+A\+Progressive\+One\+Subkey.\+sumtq}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive_1_1CPAProgressiveOneSubkey_a3f8f27352de8ef2c3dbebc1e3fb51954}
+
+
+Referenced by software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+progressive.\+C\+P\+A\+Progressive\+One\+Subkey.\+one\+Subkey().
+
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive_1_1CPAProgressiveOneSubkey_a07a202a4af63fed2b3d66043eca926b6}{}\index{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+::\+C\+P\+A\+Progressive\+One\+Subkey@{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+::\+C\+P\+A\+Progressive\+One\+Subkey}!total\+Traces@{total\+Traces}}
+\index{total\+Traces@{total\+Traces}!software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+::\+C\+P\+A\+Progressive\+One\+Subkey@{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+::\+C\+P\+A\+Progressive\+One\+Subkey}}
+\subsubsection[{total\+Traces}]{\setlength{\rightskip}{0pt plus 5cm}software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+progressive.\+C\+P\+A\+Progressive\+One\+Subkey.\+total\+Traces}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive_1_1CPAProgressiveOneSubkey_a07a202a4af63fed2b3d66043eca926b6}
+
+
+Referenced by software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+progressive.\+C\+P\+A\+Progressive\+One\+Subkey.\+one\+Subkey().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{progressive_8py}{progressive.\+py}\end{DoxyCompactItemize}

@@ -1,0 +1,160 @@
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1GraphWidget_1_1ColorDialog}{}\section{software.\+chipwhisperer.\+common.\+ui.\+Graph\+Widget.\+Color\+Dialog Class Reference}
+\label{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1GraphWidget_1_1ColorDialog}\index{software.\+chipwhisperer.\+common.\+ui.\+Graph\+Widget.\+Color\+Dialog@{software.\+chipwhisperer.\+common.\+ui.\+Graph\+Widget.\+Color\+Dialog}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1GraphWidget_1_1ColorDialog_ab72ef5ec3f8bf14fae06b3c95e2ff1b8}{\+\_\+\+\_\+init\+\_\+\+\_\+}
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1GraphWidget_1_1ColorDialog_a84e27fa5eb2bc5a0282a29f7274b97ba}{current\+Index\+Changed} (self, indx)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1GraphWidget_1_1ColorDialog_ad6fe68579523887c02e90d10f6fda0b5}{get\+Values} (self)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1GraphWidget_1_1ColorDialog_a3434fbb313b6184880eda429dc5137e2}{cb\+Auto}
+\item 
+\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1GraphWidget_1_1ColorDialog_a98e4aea598edf40302ef87c432a02b16}{cb\+Color}
+\item 
+\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1GraphWidget_1_1ColorDialog_acaecfb6a19402664b7020f129377b3e8}{color\+Int}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Simple dialog to pick colours for the trace data.
+\end{DoxyVerb}
+ 
+
+Inheritance diagram for software.\+chipwhisperer.\+common.\+ui.\+Graph\+Widget.\+Color\+Dialog\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=251pt]{d4/de5/classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1GraphWidget_1_1ColorDialog__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for software.\+chipwhisperer.\+common.\+ui.\+Graph\+Widget.\+Color\+Dialog\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=251pt]{d4/d8b/classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1GraphWidget_1_1ColorDialog__coll__graph}
+\end{center}
+\end{figure}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1GraphWidget_1_1ColorDialog_ab72ef5ec3f8bf14fae06b3c95e2ff1b8}{}\index{software\+::chipwhisperer\+::common\+::ui\+::\+Graph\+Widget\+::\+Color\+Dialog@{software\+::chipwhisperer\+::common\+::ui\+::\+Graph\+Widget\+::\+Color\+Dialog}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!software\+::chipwhisperer\+::common\+::ui\+::\+Graph\+Widget\+::\+Color\+Dialog@{software\+::chipwhisperer\+::common\+::ui\+::\+Graph\+Widget\+::\+Color\+Dialog}}
+\subsubsection[{\+\_\+\+\_\+init\+\_\+\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+ui.\+Graph\+Widget.\+Color\+Dialog.\+\_\+\+\_\+init\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{color\+Int = {\ttfamily None}, }
+\item[{}]{auto = {\ttfamily None}}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1GraphWidget_1_1ColorDialog_ab72ef5ec3f8bf14fae06b3c95e2ff1b8}
+
+\begin{DoxyCode}
+35     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1GraphWidget_1_1ColorDialog_ab72ef5ec3f8bf14fae06b3c95e2ff1b8}{\_\_init\_\_}(self, colorInt=None, auto=None):
+36         super(ColorDialog, self).\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1GraphWidget_1_1ColorDialog_ab72ef5ec3f8bf14fae06b3c95e2ff1b8}{\_\_init\_\_}()
+37         layout = QVBoxLayout()
+38         self.setLayout(layout)
+39                 
+40         \textcolor{keywordflow}{if} colorInt \textcolor{keywordflow}{is} \textcolor{keywordtype}{None}:
+41             colorInt = 0
+42 
+43         \textcolor{keywordflow}{if} auto \textcolor{keywordflow}{is} \textcolor{keywordtype}{None}:
+44             auto = \textcolor{keyword}{True}
+45 
+46         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1GraphWidget_1_1ColorDialog_a3434fbb313b6184880eda429dc5137e2}{cbAuto} = QCheckBox(\textcolor{stringliteral}{"Auto-Increment Persistent Colours"})
+47         self.cbAuto.setChecked(auto)
+48         
+49         layout.addWidget(self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1GraphWidget_1_1ColorDialog_a3434fbb313b6184880eda429dc5137e2}{cbAuto})
+50         
+51         clayout = QHBoxLayout()
+52         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1GraphWidget_1_1ColorDialog_a98e4aea598edf40302ef87c432a02b16}{cbColor} = QComboBox()
+53         self.cbColor.addItem(\textcolor{stringliteral}{"Red"},  0)
+54         self.cbColor.addItem(\textcolor{stringliteral}{"Yellow"},  1)
+55         self.cbColor.addItem(\textcolor{stringliteral}{"Chartreuse"},  2)
+56         self.cbColor.addItem(\textcolor{stringliteral}{"Green"},  3)
+57         self.cbColor.addItem(\textcolor{stringliteral}{"Cyan"},  4)
+58         self.cbColor.addItem(\textcolor{stringliteral}{"Blue"},  5)
+59         self.cbColor.addItem(\textcolor{stringliteral}{"Purple"},  6)
+60         self.cbColor.addItem(\textcolor{stringliteral}{"Magenta"},  7)          
+61         self.cbColor.currentIndexChanged.connect(self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1GraphWidget_1_1ColorDialog_a84e27fa5eb2bc5a0282a29f7274b97ba}{currentIndexChanged})
+62         self.cbColor.setCurrentIndex(colorInt)
+63         
+64         clayout.addWidget(QLabel(\textcolor{stringliteral}{"Color: "}))
+65         clayout.addWidget(self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1GraphWidget_1_1ColorDialog_a98e4aea598edf40302ef87c432a02b16}{cbColor})
+66         clayout.addStretch()
+67 
+68         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1GraphWidget_1_1ColorDialog_acaecfb6a19402664b7020f129377b3e8}{colorInt} = colorInt
+69         
+70         layout.addLayout(clayout)
+71         
+72         buttonBox = QDialogButtonBox(QDialogButtonBox.Ok | QDialogButtonBox.Cancel)
+73         buttonBox.accepted.connect(self.accept)
+74         buttonBox.rejected.connect(self.reject)
+75         layout.addWidget(buttonBox)
+76         
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1GraphWidget_1_1ColorDialog_a84e27fa5eb2bc5a0282a29f7274b97ba}{}\index{software\+::chipwhisperer\+::common\+::ui\+::\+Graph\+Widget\+::\+Color\+Dialog@{software\+::chipwhisperer\+::common\+::ui\+::\+Graph\+Widget\+::\+Color\+Dialog}!current\+Index\+Changed@{current\+Index\+Changed}}
+\index{current\+Index\+Changed@{current\+Index\+Changed}!software\+::chipwhisperer\+::common\+::ui\+::\+Graph\+Widget\+::\+Color\+Dialog@{software\+::chipwhisperer\+::common\+::ui\+::\+Graph\+Widget\+::\+Color\+Dialog}}
+\subsubsection[{current\+Index\+Changed}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+ui.\+Graph\+Widget.\+Color\+Dialog.\+current\+Index\+Changed (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{indx}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1GraphWidget_1_1ColorDialog_a84e27fa5eb2bc5a0282a29f7274b97ba}
+
+
+References software.\+chipwhisperer.\+common.\+ui.\+Graph\+Widget.\+Color\+Dialog.\+color\+Int.
+
+
+\begin{DoxyCode}
+77     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1GraphWidget_1_1ColorDialog_a84e27fa5eb2bc5a0282a29f7274b97ba}{currentIndexChanged}(self, indx):
+78         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1GraphWidget_1_1ColorDialog_acaecfb6a19402664b7020f129377b3e8}{colorInt} = self.cbColor.itemData(indx)
+79         
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1GraphWidget_1_1ColorDialog_ad6fe68579523887c02e90d10f6fda0b5}{}\index{software\+::chipwhisperer\+::common\+::ui\+::\+Graph\+Widget\+::\+Color\+Dialog@{software\+::chipwhisperer\+::common\+::ui\+::\+Graph\+Widget\+::\+Color\+Dialog}!get\+Values@{get\+Values}}
+\index{get\+Values@{get\+Values}!software\+::chipwhisperer\+::common\+::ui\+::\+Graph\+Widget\+::\+Color\+Dialog@{software\+::chipwhisperer\+::common\+::ui\+::\+Graph\+Widget\+::\+Color\+Dialog}}
+\subsubsection[{get\+Values}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+ui.\+Graph\+Widget.\+Color\+Dialog.\+get\+Values (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1GraphWidget_1_1ColorDialog_ad6fe68579523887c02e90d10f6fda0b5}
+
+
+References software.\+chipwhisperer.\+common.\+ui.\+Graph\+Widget.\+Color\+Dialog.\+color\+Int.
+
+
+\begin{DoxyCode}
+80     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1GraphWidget_1_1ColorDialog_ad6fe68579523887c02e90d10f6fda0b5}{getValues}(self):
+81         \textcolor{keywordflow}{return} (self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1GraphWidget_1_1ColorDialog_acaecfb6a19402664b7020f129377b3e8}{colorInt}, self.cbAuto.isChecked())
+82 
+83 
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1GraphWidget_1_1ColorDialog_a3434fbb313b6184880eda429dc5137e2}{}\index{software\+::chipwhisperer\+::common\+::ui\+::\+Graph\+Widget\+::\+Color\+Dialog@{software\+::chipwhisperer\+::common\+::ui\+::\+Graph\+Widget\+::\+Color\+Dialog}!cb\+Auto@{cb\+Auto}}
+\index{cb\+Auto@{cb\+Auto}!software\+::chipwhisperer\+::common\+::ui\+::\+Graph\+Widget\+::\+Color\+Dialog@{software\+::chipwhisperer\+::common\+::ui\+::\+Graph\+Widget\+::\+Color\+Dialog}}
+\subsubsection[{cb\+Auto}]{\setlength{\rightskip}{0pt plus 5cm}software.\+chipwhisperer.\+common.\+ui.\+Graph\+Widget.\+Color\+Dialog.\+cb\+Auto}\label{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1GraphWidget_1_1ColorDialog_a3434fbb313b6184880eda429dc5137e2}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1GraphWidget_1_1ColorDialog_a98e4aea598edf40302ef87c432a02b16}{}\index{software\+::chipwhisperer\+::common\+::ui\+::\+Graph\+Widget\+::\+Color\+Dialog@{software\+::chipwhisperer\+::common\+::ui\+::\+Graph\+Widget\+::\+Color\+Dialog}!cb\+Color@{cb\+Color}}
+\index{cb\+Color@{cb\+Color}!software\+::chipwhisperer\+::common\+::ui\+::\+Graph\+Widget\+::\+Color\+Dialog@{software\+::chipwhisperer\+::common\+::ui\+::\+Graph\+Widget\+::\+Color\+Dialog}}
+\subsubsection[{cb\+Color}]{\setlength{\rightskip}{0pt plus 5cm}software.\+chipwhisperer.\+common.\+ui.\+Graph\+Widget.\+Color\+Dialog.\+cb\+Color}\label{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1GraphWidget_1_1ColorDialog_a98e4aea598edf40302ef87c432a02b16}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1GraphWidget_1_1ColorDialog_acaecfb6a19402664b7020f129377b3e8}{}\index{software\+::chipwhisperer\+::common\+::ui\+::\+Graph\+Widget\+::\+Color\+Dialog@{software\+::chipwhisperer\+::common\+::ui\+::\+Graph\+Widget\+::\+Color\+Dialog}!color\+Int@{color\+Int}}
+\index{color\+Int@{color\+Int}!software\+::chipwhisperer\+::common\+::ui\+::\+Graph\+Widget\+::\+Color\+Dialog@{software\+::chipwhisperer\+::common\+::ui\+::\+Graph\+Widget\+::\+Color\+Dialog}}
+\subsubsection[{color\+Int}]{\setlength{\rightskip}{0pt plus 5cm}software.\+chipwhisperer.\+common.\+ui.\+Graph\+Widget.\+Color\+Dialog.\+color\+Int}\label{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1GraphWidget_1_1ColorDialog_acaecfb6a19402664b7020f129377b3e8}
+
+
+Referenced by software.\+chipwhisperer.\+common.\+ui.\+Graph\+Widget.\+Color\+Dialog.\+current\+Index\+Changed(), and software.\+chipwhisperer.\+common.\+ui.\+Graph\+Widget.\+Color\+Dialog.\+get\+Values().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{GraphWidget_8py}{Graph\+Widget.\+py}\end{DoxyCompactItemize}

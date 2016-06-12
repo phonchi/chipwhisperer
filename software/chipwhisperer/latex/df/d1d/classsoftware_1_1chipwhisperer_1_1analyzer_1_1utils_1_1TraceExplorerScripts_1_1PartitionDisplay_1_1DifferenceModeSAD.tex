@@ -1,0 +1,93 @@
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1TraceExplorerScripts_1_1PartitionDisplay_1_1DifferenceModeSAD}{}\section{software.\+chipwhisperer.\+analyzer.\+utils.\+Trace\+Explorer\+Scripts.\+Partition\+Display.\+Difference\+Mode\+S\+A\+D Class Reference}
+\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1TraceExplorerScripts_1_1PartitionDisplay_1_1DifferenceModeSAD}\index{software.\+chipwhisperer.\+analyzer.\+utils.\+Trace\+Explorer\+Scripts.\+Partition\+Display.\+Difference\+Mode\+S\+A\+D@{software.\+chipwhisperer.\+analyzer.\+utils.\+Trace\+Explorer\+Scripts.\+Partition\+Display.\+Difference\+Mode\+S\+A\+D}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1TraceExplorerScripts_1_1PartitionDisplay_1_1DifferenceModeSAD_a0590799aa1f80c95b6f3bf358add5cf7}{difference}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1TraceExplorerScripts_1_1PartitionDisplay_1_1DifferenceModeSAD_a06df339805ddf5ce09ba515252edc2de}{section\+Name} = \char`\"{}Difference of Partitions using S\+A\+D\char`\"{}
+\item 
+string \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1TraceExplorerScripts_1_1PartitionDisplay_1_1DifferenceModeSAD_a44d8cd8f4be43ca25d7d76c18a4933ea}{module\+Name} = \char`\"{}Partition\+Differences\+S\+A\+D\char`\"{}
+\item 
+string \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1TraceExplorerScripts_1_1PartitionDisplay_1_1DifferenceModeSAD_adeab64150fd0e4c9210ad903a4382200}{difference\+Type} = \char`\"{}Sum of Absolute Difference\char`\"{}
+\end{DoxyCompactItemize}
+
+
+Inheritance diagram for software.\+chipwhisperer.\+analyzer.\+utils.\+Trace\+Explorer\+Scripts.\+Partition\+Display.\+Difference\+Mode\+S\+A\+D\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=263pt]{d9/dcc/classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1TraceExplorerScripts_1_1PartitionDisplay_74a6773223a6b997ee3b33992ac635e6}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for software.\+chipwhisperer.\+analyzer.\+utils.\+Trace\+Explorer\+Scripts.\+Partition\+Display.\+Difference\+Mode\+S\+A\+D\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=263pt]{dc/db4/classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1TraceExplorerScripts_1_1PartitionDisplay_c5e9a00198b3d0005f883c1d56a125cf}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1TraceExplorerScripts_1_1PartitionDisplay_1_1DifferenceModeSAD_a0590799aa1f80c95b6f3bf358add5cf7}{}\index{software\+::chipwhisperer\+::analyzer\+::utils\+::\+Trace\+Explorer\+Scripts\+::\+Partition\+Display\+::\+Difference\+Mode\+S\+A\+D@{software\+::chipwhisperer\+::analyzer\+::utils\+::\+Trace\+Explorer\+Scripts\+::\+Partition\+Display\+::\+Difference\+Mode\+S\+A\+D}!difference@{difference}}
+\index{difference@{difference}!software\+::chipwhisperer\+::analyzer\+::utils\+::\+Trace\+Explorer\+Scripts\+::\+Partition\+Display\+::\+Difference\+Mode\+S\+A\+D@{software\+::chipwhisperer\+::analyzer\+::utils\+::\+Trace\+Explorer\+Scripts\+::\+Partition\+Display\+::\+Difference\+Mode\+S\+A\+D}}
+\subsubsection[{difference}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+analyzer.\+utils.\+Trace\+Explorer\+Scripts.\+Partition\+Display.\+Difference\+Mode\+S\+A\+D.\+difference (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{numkeys, }
+\item[{}]{numparts, }
+\item[{}]{trace, }
+\item[{}]{numpoints, }
+\item[{}]{stats, }
+\item[{}]{pb\+Dialog = {\ttfamily None}}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1TraceExplorerScripts_1_1PartitionDisplay_1_1DifferenceModeSAD_a0590799aa1f80c95b6f3bf358add5cf7}
+
+\begin{DoxyCode}
+89     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1TraceExplorerScripts_1_1PartitionDisplay_1_1DifferenceModeSAD_a0590799aa1f80c95b6f3bf358add5cf7}{difference}(self, numkeys, numparts, trace, numpoints, stats, pbDialog=None):
+90 
+91         averageData = stats[\textcolor{stringliteral}{"mean"}]
+92 
+93         \textcolor{keywordflow}{if} pbDialog:
+94             pbDialog.setMinimum(0)
+95             pbDialog.setMaximum(numkeys * numparts)
+96 
+97         SADSeg = np.zeros((numkeys, numpoints))
+98         \textcolor{keywordflow}{for} bnum \textcolor{keywordflow}{in} range(0, numkeys):
+99             \textcolor{keywordflow}{for} i \textcolor{keywordflow}{in} range(0, numparts):
+100                 \textcolor{keywordflow}{if} pbDialog:
+101                     pbDialog.updateStatus(numparts * bnum + i)
+102                     QApplication.processEvents()
+103                     \textcolor{keywordflow}{if} pbDialog.wasAborted():
+104                         \textcolor{keywordflow}{return} SADSeg
+105                 \textcolor{keywordflow}{for} j \textcolor{keywordflow}{in} range(0, numparts):
+106                     \textcolor{keywordflow}{if} averageData[bnum][i] \textcolor{keywordflow}{is} \textcolor{keywordflow}{not} \textcolor{keywordtype}{None} \textcolor{keywordflow}{and} averageData[bnum][j] \textcolor{keywordflow}{is} \textcolor{keywordflow}{not} \textcolor{keywordtype}{None}:
+107                         SADSeg[bnum] = np.add(SADSeg[bnum], np.abs(np.subtract(averageData[bnum][i], 
+      averageData[bnum][j])))
+108         \textcolor{keywordflow}{return} SADSeg
+109 
+110 
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1TraceExplorerScripts_1_1PartitionDisplay_1_1DifferenceModeSAD_adeab64150fd0e4c9210ad903a4382200}{}\index{software\+::chipwhisperer\+::analyzer\+::utils\+::\+Trace\+Explorer\+Scripts\+::\+Partition\+Display\+::\+Difference\+Mode\+S\+A\+D@{software\+::chipwhisperer\+::analyzer\+::utils\+::\+Trace\+Explorer\+Scripts\+::\+Partition\+Display\+::\+Difference\+Mode\+S\+A\+D}!difference\+Type@{difference\+Type}}
+\index{difference\+Type@{difference\+Type}!software\+::chipwhisperer\+::analyzer\+::utils\+::\+Trace\+Explorer\+Scripts\+::\+Partition\+Display\+::\+Difference\+Mode\+S\+A\+D@{software\+::chipwhisperer\+::analyzer\+::utils\+::\+Trace\+Explorer\+Scripts\+::\+Partition\+Display\+::\+Difference\+Mode\+S\+A\+D}}
+\subsubsection[{difference\+Type}]{\setlength{\rightskip}{0pt plus 5cm}string software.\+chipwhisperer.\+analyzer.\+utils.\+Trace\+Explorer\+Scripts.\+Partition\+Display.\+Difference\+Mode\+S\+A\+D.\+difference\+Type = \char`\"{}Sum of Absolute Difference\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1TraceExplorerScripts_1_1PartitionDisplay_1_1DifferenceModeSAD_adeab64150fd0e4c9210ad903a4382200}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1TraceExplorerScripts_1_1PartitionDisplay_1_1DifferenceModeSAD_a44d8cd8f4be43ca25d7d76c18a4933ea}{}\index{software\+::chipwhisperer\+::analyzer\+::utils\+::\+Trace\+Explorer\+Scripts\+::\+Partition\+Display\+::\+Difference\+Mode\+S\+A\+D@{software\+::chipwhisperer\+::analyzer\+::utils\+::\+Trace\+Explorer\+Scripts\+::\+Partition\+Display\+::\+Difference\+Mode\+S\+A\+D}!module\+Name@{module\+Name}}
+\index{module\+Name@{module\+Name}!software\+::chipwhisperer\+::analyzer\+::utils\+::\+Trace\+Explorer\+Scripts\+::\+Partition\+Display\+::\+Difference\+Mode\+S\+A\+D@{software\+::chipwhisperer\+::analyzer\+::utils\+::\+Trace\+Explorer\+Scripts\+::\+Partition\+Display\+::\+Difference\+Mode\+S\+A\+D}}
+\subsubsection[{module\+Name}]{\setlength{\rightskip}{0pt plus 5cm}string software.\+chipwhisperer.\+analyzer.\+utils.\+Trace\+Explorer\+Scripts.\+Partition\+Display.\+Difference\+Mode\+S\+A\+D.\+module\+Name = \char`\"{}Partition\+Differences\+S\+A\+D\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1TraceExplorerScripts_1_1PartitionDisplay_1_1DifferenceModeSAD_a44d8cd8f4be43ca25d7d76c18a4933ea}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1TraceExplorerScripts_1_1PartitionDisplay_1_1DifferenceModeSAD_a06df339805ddf5ce09ba515252edc2de}{}\index{software\+::chipwhisperer\+::analyzer\+::utils\+::\+Trace\+Explorer\+Scripts\+::\+Partition\+Display\+::\+Difference\+Mode\+S\+A\+D@{software\+::chipwhisperer\+::analyzer\+::utils\+::\+Trace\+Explorer\+Scripts\+::\+Partition\+Display\+::\+Difference\+Mode\+S\+A\+D}!section\+Name@{section\+Name}}
+\index{section\+Name@{section\+Name}!software\+::chipwhisperer\+::analyzer\+::utils\+::\+Trace\+Explorer\+Scripts\+::\+Partition\+Display\+::\+Difference\+Mode\+S\+A\+D@{software\+::chipwhisperer\+::analyzer\+::utils\+::\+Trace\+Explorer\+Scripts\+::\+Partition\+Display\+::\+Difference\+Mode\+S\+A\+D}}
+\subsubsection[{section\+Name}]{\setlength{\rightskip}{0pt plus 5cm}string software.\+chipwhisperer.\+analyzer.\+utils.\+Trace\+Explorer\+Scripts.\+Partition\+Display.\+Difference\+Mode\+S\+A\+D.\+section\+Name = \char`\"{}Difference of Partitions using S\+A\+D\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1TraceExplorerScripts_1_1PartitionDisplay_1_1DifferenceModeSAD_a06df339805ddf5ce09ba515252edc2de}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{PartitionDisplay_8py}{Partition\+Display.\+py}\end{DoxyCompactItemize}

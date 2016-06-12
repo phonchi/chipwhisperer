@@ -1,0 +1,100 @@
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1Partition_1_1PartitionDialog}{}\section{software.\+chipwhisperer.\+analyzer.\+utils.\+Partition.\+Partition\+Dialog Class Reference}
+\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1Partition_1_1PartitionDialog}\index{software.\+chipwhisperer.\+analyzer.\+utils.\+Partition.\+Partition\+Dialog@{software.\+chipwhisperer.\+analyzer.\+utils.\+Partition.\+Partition\+Dialog}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1Partition_1_1PartitionDialog_a583ee02c784a903c3aef99a6433257a2}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self, parent, part\+Inst)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1Partition_1_1PartitionDialog_ab3facdcbde429d905a3532f6b3f1cb99}{run\+Generate} (self)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1Partition_1_1PartitionDialog_a5b9489ab794a053397b9bfccbdbdf74f}{part}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Open dialog to run partioning\end{DoxyVerb}
+ 
+
+Inheritance diagram for software.\+chipwhisperer.\+analyzer.\+utils.\+Partition.\+Partition\+Dialog\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=261pt]{dd/dba/classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1Partition_1_1PartitionDialog__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for software.\+chipwhisperer.\+analyzer.\+utils.\+Partition.\+Partition\+Dialog\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=261pt]{dd/dd4/classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1Partition_1_1PartitionDialog__coll__graph}
+\end{center}
+\end{figure}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1Partition_1_1PartitionDialog_a583ee02c784a903c3aef99a6433257a2}{}\index{software\+::chipwhisperer\+::analyzer\+::utils\+::\+Partition\+::\+Partition\+Dialog@{software\+::chipwhisperer\+::analyzer\+::utils\+::\+Partition\+::\+Partition\+Dialog}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!software\+::chipwhisperer\+::analyzer\+::utils\+::\+Partition\+::\+Partition\+Dialog@{software\+::chipwhisperer\+::analyzer\+::utils\+::\+Partition\+::\+Partition\+Dialog}}
+\subsubsection[{\+\_\+\+\_\+init\+\_\+\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+analyzer.\+utils.\+Partition.\+Partition\+Dialog.\+\_\+\+\_\+init\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{parent, }
+\item[{}]{part\+Inst}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1Partition_1_1PartitionDialog_a583ee02c784a903c3aef99a6433257a2}
+
+\begin{DoxyCode}
+130     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1Partition_1_1PartitionDialog_a583ee02c784a903c3aef99a6433257a2}{\_\_init\_\_}(self, parent, partInst):
+131         super(PartitionDialog, self).\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1Partition_1_1PartitionDialog_a583ee02c784a903c3aef99a6433257a2}{\_\_init\_\_}(parent)
+132 
+133         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1Partition_1_1PartitionDialog_a5b9489ab794a053397b9bfccbdbdf74f}{part} = partInst
+134 
+135         self.setWindowTitle(\textcolor{stringliteral}{"Partition Traces"})
+136         self.setObjectName(\textcolor{stringliteral}{"Partition Traces"})
+137 
+138         layoutPart = QHBoxLayout()
+139 
+140         pbStart = QPushButton(\textcolor{stringliteral}{"Generate Partitions"})
+141         pbStart.clicked.connect(self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1Partition_1_1PartitionDialog_ab3facdcbde429d905a3532f6b3f1cb99}{runGenerate})
+142         layoutPart.addWidget(pbStart)
+143         self.setLayout(layoutPart)
+144 
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1Partition_1_1PartitionDialog_ab3facdcbde429d905a3532f6b3f1cb99}{}\index{software\+::chipwhisperer\+::analyzer\+::utils\+::\+Partition\+::\+Partition\+Dialog@{software\+::chipwhisperer\+::analyzer\+::utils\+::\+Partition\+::\+Partition\+Dialog}!run\+Generate@{run\+Generate}}
+\index{run\+Generate@{run\+Generate}!software\+::chipwhisperer\+::analyzer\+::utils\+::\+Partition\+::\+Partition\+Dialog@{software\+::chipwhisperer\+::analyzer\+::utils\+::\+Partition\+::\+Partition\+Dialog}}
+\subsubsection[{run\+Generate}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+analyzer.\+utils.\+Partition.\+Partition\+Dialog.\+run\+Generate (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1Partition_1_1PartitionDialog_ab3facdcbde429d905a3532f6b3f1cb99}
+
+\begin{DoxyCode}
+145     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1Partition_1_1PartitionDialog_ab3facdcbde429d905a3532f6b3f1cb99}{runGenerate}(self):
+146         pb = QProgressBar(self)
+147 
+148         \textcolor{comment}{# TODO: Partition generation doesn't work}
+149         pb.setMinimum(0)
+150         pb.setMaximum(self.part.traceSource.numTraces())
+151 
+152         self.part.runPartitions(report=pb.updateStatus)
+153 
+154 
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1Partition_1_1PartitionDialog_a5b9489ab794a053397b9bfccbdbdf74f}{}\index{software\+::chipwhisperer\+::analyzer\+::utils\+::\+Partition\+::\+Partition\+Dialog@{software\+::chipwhisperer\+::analyzer\+::utils\+::\+Partition\+::\+Partition\+Dialog}!part@{part}}
+\index{part@{part}!software\+::chipwhisperer\+::analyzer\+::utils\+::\+Partition\+::\+Partition\+Dialog@{software\+::chipwhisperer\+::analyzer\+::utils\+::\+Partition\+::\+Partition\+Dialog}}
+\subsubsection[{part}]{\setlength{\rightskip}{0pt plus 5cm}software.\+chipwhisperer.\+analyzer.\+utils.\+Partition.\+Partition\+Dialog.\+part}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1Partition_1_1PartitionDialog_a5b9489ab794a053397b9bfccbdbdf74f}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Partition_8py}{Partition.\+py}\end{DoxyCompactItemize}

@@ -1,0 +1,899 @@
+\hypertarget{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP}{}\section{software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P Class Reference}
+\label{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP}\index{software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P@{software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a79dd80cda2f8f1d1a269f46e30e44933}{\+\_\+\+\_\+init\+\_\+\+\_\+}
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_affd2dbf3053a0b3aaffb1d47023b918d}{enable\+I\+S\+P} (self, status)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a1dc123d4f23f16778e6a6d16f913b79f}{read\+Signature} (self)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_acdbed75b76ed7edcabfb70a8cce6f2bf}{read\+Fuse} (self, fusename)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_af5ba5e84200073c0314127501fc063ca}{read\+Lock} (self, lock)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a7a79f9469caa4ca900935c513f3eb1f2}{write\+Fuse} (self, fusename, value)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a3050b15c2a86d668f1c123cd1d77a3ae}{write\+Lock} (self, value)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_ae9f45698adecdf0e48b9b5e68557e07e}{erase\+Chip} (self)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_afac4cb4bf4cbf1760ceed0734f8acfe6}{read\+Memory}
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a23ee0a22ef4d2d8e2222b4d7d99f7481}{write\+Memory} (self, addr, data, memname)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_ab483cf3d55283aacdd836b697be73cb0}{set\+Chip} (self, chiptype)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a4b60ce77b3e5106d2f083acba7258eca}{enable\+Slow\+Clock} (self, enabled)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a40661fbd64dc34b859bda177db0a3f2a}{C\+M\+D\+\_\+\+A\+V\+R\+\_\+\+P\+R\+O\+G\+R\+A\+M} = 0x21
+\item 
+int \hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a9441c40b32499dd69a2fc11e87f2e206}{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+S\+I\+G\+N\+\_\+\+O\+N} = 0x01
+\item 
+int \hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a47f367c9a55aeff98b7de06c28a7a15c}{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+S\+E\+T\+\_\+\+P\+A\+R\+A\+M\+E\+T\+E\+R} = 0x02
+\item 
+int \hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a70ac60ef49cbbb3fc0bb36cae9bdae1d}{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+G\+E\+T\+\_\+\+P\+A\+R\+A\+M\+E\+T\+E\+R} = 0x03
+\item 
+int \hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a49931f1ff3ca7f3fc5582e49a402c890}{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+O\+S\+C\+C\+A\+L} = 0x05
+\item 
+int \hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a67f5e35e8a1fe59396fc6fcace808c56}{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+L\+O\+A\+D\+\_\+\+A\+D\+D\+R\+E\+S\+S} = 0x06
+\item 
+int \hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a5976512e748373668f2a69c6107c77fa}{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+F\+I\+R\+M\+W\+A\+R\+E\+\_\+\+U\+P\+G\+R\+A\+D\+E} = 0x07
+\item 
+int \hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a2f149ae82bea13e55a9dd63bf98fbd89}{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+R\+E\+S\+E\+T\+\_\+\+P\+R\+O\+T\+E\+C\+T\+I\+O\+N} = 0x0\+A
+\item 
+int \hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a03f6d1050aa506a68015843a7a9657d4}{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+E\+N\+T\+E\+R\+\_\+\+P\+R\+O\+G\+M\+O\+D\+E\+\_\+\+I\+S\+P} = 0x10
+\item 
+int \hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a6fe54b4a6c344eea926a3de12e1465fb}{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+L\+E\+A\+V\+E\+\_\+\+P\+R\+O\+G\+M\+O\+D\+E\+\_\+\+I\+S\+P} = 0x11
+\item 
+int \hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a619973473cbbfaaed1f11b46c9e1db83}{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+C\+H\+I\+P\+\_\+\+E\+R\+A\+S\+E\+\_\+\+I\+S\+P} = 0x12
+\item 
+int \hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_adafb34c4319e15d0feb0c86f77464c0d}{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+P\+R\+O\+G\+R\+A\+M\+\_\+\+F\+L\+A\+S\+H\+\_\+\+I\+S\+P} = 0x13
+\item 
+int \hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a11926590275da564a7f7a9c67fb9c4b5}{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+R\+E\+A\+D\+\_\+\+F\+L\+A\+S\+H\+\_\+\+I\+S\+P} = 0x14
+\item 
+int \hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a86283abf1e7a463bb7037118ba96523a}{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+P\+R\+O\+G\+R\+A\+M\+\_\+\+E\+E\+P\+R\+O\+M\+\_\+\+I\+S\+P} = 0x15
+\item 
+int \hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a3c82b943016436def5f21a3ceacfce49}{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+R\+E\+A\+D\+\_\+\+E\+E\+P\+R\+O\+M\+\_\+\+I\+S\+P} = 0x16
+\item 
+int \hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a4721a0a7e1ed28046f6547ae99a0358b}{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+P\+R\+O\+G\+R\+A\+M\+\_\+\+F\+U\+S\+E\+\_\+\+I\+S\+P} = 0x17
+\item 
+int \hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a4341e5b7244a4ea44797d0b0ed6b16e6}{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+R\+E\+A\+D\+\_\+\+F\+U\+S\+E\+\_\+\+I\+S\+P} = 0x18
+\item 
+int \hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a8d3bf3e15dfc2d6f8309bb28f1f0e9a1}{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+P\+R\+O\+G\+R\+A\+M\+\_\+\+L\+O\+C\+K\+\_\+\+I\+S\+P} = 0x19
+\item 
+int \hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_aabdf83b268b72480d60379c2f9936a50}{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+R\+E\+A\+D\+\_\+\+L\+O\+C\+K\+\_\+\+I\+S\+P} = 0x1\+A
+\item 
+int \hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a2d857e4b5ae26fd8bd1fba554fa1e856}{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+R\+E\+A\+D\+\_\+\+S\+I\+G\+N\+A\+T\+U\+R\+E\+\_\+\+I\+S\+P} = 0x1\+B
+\item 
+int \hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_acd4a5738624860110f76ed59fb79d4ab}{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+R\+E\+A\+D\+\_\+\+O\+S\+C\+C\+A\+L\+\_\+\+I\+S\+P} = 0x1\+C
+\item 
+int \hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_af21290619f59c7a4cb895b8525a25ff4}{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+S\+P\+I\+\_\+\+M\+U\+L\+T\+I} = 0x1\+D
+\item 
+int \hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a3f087ab709bda5deeeb4c1d18720c128}{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+X\+P\+R\+O\+G} = 0x50
+\item 
+int \hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_abfcc819b1a929ef3810cf36fc8bf9276}{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+X\+P\+R\+O\+G\+\_\+\+S\+E\+T\+M\+O\+D\+E} = 0x51
+\item 
+int \hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_abebf09f36b1ed037f8ef29edb9dd9ada}{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+G\+E\+T\+\_\+\+S\+T\+A\+T\+U\+S} = 0x20
+\item 
+int \hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a51fe661324e73d87ae8b6c657a2ba843}{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+S\+E\+T\+\_\+\+R\+A\+M\+B\+U\+F} = 0x21
+\item 
+int \hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a9af41f3bc7fa2159fe6fba42a1117de3}{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+G\+E\+T\+\_\+\+R\+A\+M\+B\+U\+F} = 0x22
+\item 
+int \hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a4e285abb4b8c7116a9e8a36c4ebb96a0}{I\+S\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+C\+M\+D\+\_\+\+O\+K} = 0x00
+\item 
+int \hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_ab51c66a3212c4ca6a24ac4438609bb13}{I\+S\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+C\+M\+D\+\_\+\+T\+O\+U\+T} = 0x80
+\item 
+int \hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a8a1dc049f7566250426c569e0edfa71e}{I\+S\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+R\+D\+Y\+\_\+\+B\+S\+Y\+\_\+\+T\+O\+U\+T} = 0x81
+\item 
+int \hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_af34d1529a33ac9f040f3e38cb4109242}{I\+S\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+S\+E\+T\+\_\+\+P\+A\+R\+A\+M\+\_\+\+M\+I\+S\+S\+I\+N\+G} = 0x82
+\item 
+int \hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_ad00cf4940f4b99fc1bcd362d20d764a5}{I\+S\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+C\+M\+D\+\_\+\+F\+A\+I\+L\+E\+D} = 0x\+C0
+\item 
+int \hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a85eeefe825018a0cbe31e1091bdc3278}{I\+S\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+C\+M\+D\+\_\+\+U\+N\+K\+N\+O\+W\+N} = 0x\+C9
+\item 
+int \hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_ae9774e154bb532e0313a3789baa21f3f}{I\+S\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+I\+S\+P\+\_\+\+R\+E\+A\+D\+Y} = 0x00
+\item 
+int \hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_aa58bfd3159837fd5bd34fec480e4e61f}{I\+S\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+C\+O\+N\+N\+\_\+\+F\+A\+I\+L\+\_\+\+M\+O\+S\+I} = 0x01
+\item 
+int \hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a8a1050270f3a4d3d9c6198ee9a1c16ea}{I\+S\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+C\+O\+N\+N\+\_\+\+F\+A\+I\+L\+\_\+\+R\+S\+T} = 0x02
+\item 
+int \hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a726b1548c93bba2f2ffd1e38a74aa606}{I\+S\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+C\+O\+N\+N\+\_\+\+F\+A\+I\+L\+\_\+\+S\+C\+K} = 0x04
+\item 
+int \hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_ad77172e8691de3d28d3a04758558d01b}{I\+S\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+T\+G\+T\+\_\+\+N\+O\+T\+\_\+\+D\+E\+T\+E\+C\+T\+E\+D} = 0x10
+\item 
+int \hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_aa4c9c0155268529b4e7a9cf75d453f21}{I\+S\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+T\+G\+T\+\_\+\+R\+E\+V\+E\+R\+S\+E\+\_\+\+I\+N\+S\+E\+R\+T\+E\+D} = 0x20
+\item 
+dictionary \hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_ab2178dc6b2bc0b67b2b306f35934c517}{S\+T\+A\+T\+U\+S\+\_\+\+T\+E\+X\+T\+\_\+\+D\+E\+S\+C}
+\item 
+int \hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_ab49c377c6dc37d7ce2174257854c8924}{I\+S\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+B\+U\+I\+L\+D\+\_\+\+N\+U\+M\+B\+E\+R\+\_\+\+L\+O\+W} = 0x80
+\item 
+int \hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a6c6551dd2357004f0f2e474a453ee61e}{I\+S\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+B\+U\+I\+L\+D\+\_\+\+N\+U\+M\+B\+E\+R\+\_\+\+H\+I\+G\+H} = 0x81
+\item 
+int \hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_aa6f78f7b4cc0350ec4e4b4734ad5575f}{I\+S\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+H\+W\+\_\+\+V\+E\+R} = 0x90
+\item 
+int \hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_af042bdd48079327d8ab9493668ee5e45}{I\+S\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+W\+\_\+\+M\+A\+J\+O\+R} = 0x91
+\item 
+int \hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_abf3b5115e731ac76fd7ad0553d73b9b8}{I\+S\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+W\+\_\+\+M\+I\+N\+O\+R} = 0x92
+\item 
+int \hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a03c2fb663dad19161a7b826ff2b28873}{I\+S\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+V\+T\+A\+R\+G\+E\+T} = 0x94
+\item 
+int \hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a4267928fb97172d3316e6ec183184736}{I\+S\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+C\+K\+\_\+\+D\+U\+R\+A\+T\+I\+O\+N} = 0x98
+\item 
+int \hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a8f89043d7c6f10ad52286a7f1cf94521}{I\+S\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+R\+E\+S\+E\+T\+\_\+\+P\+O\+L\+A\+R\+I\+T\+Y} = 0x9\+E
+\item 
+int \hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_abd1458c916ba5557268e9d81cdc8d4c6}{I\+S\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+T\+G\+T\+\_\+\+C\+O\+N\+N} = 0x\+A1
+\item 
+int \hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a86da83aea6f5bc2d67950d0bf435ca9d}{I\+S\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+D\+I\+S\+C\+H\+A\+R\+G\+E\+D\+E\+L\+A\+Y} = 0x\+A4
+\item 
+int \hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_af627b5a5032f0be7e6c31419f4eca33c}{C\+M\+D\+\_\+\+S\+A\+M3\+U\+\_\+\+C\+F\+G} = 0x22
+\item 
+int \hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a07f57a817d0764c6b3d37a1a1171ab1c}{M\+A\+X\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+Z\+E} = 256
+\end{DoxyCompactItemize}
+
+
+Inheritance diagram for software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=329pt]{d0/d9e/classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=329pt]{d6/dc4/classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP__coll__graph}
+\end{center}
+\end{figure}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a79dd80cda2f8f1d1a269f46e30e44933}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}}
+\subsubsection[{\+\_\+\+\_\+init\+\_\+\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+\_\+\+\_\+init\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{usb, }
+\item[{}]{timeout = {\ttfamily 200}}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a79dd80cda2f8f1d1a269f46e30e44933}
+
+
+References software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+\_\+avr\+Do\+Read(), software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+\_\+chip, software.\+chipwhisperer.\+hardware.\+naeusb.\+fpga.\+F\+P\+G\+A.\+\_\+timeout, software.\+chipwhisperer.\+hardware.\+naeusb.\+naeusb.\+N\+A\+E\+U\+S\+B.\+\_\+timeout, software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+\_\+timeout, software.\+chipwhisperer.\+capture.\+scopes.\+\_\+\+Open\+A\+D\+C\+Interface.\+Trigger\+Settings.\+\_\+timeout, software.\+chipwhisperer.\+capture.\+scopes.\+\_\+\+Open\+A\+D\+C\+Interface.\+Open\+A\+D\+C\+Interface.\+\_\+timeout, software.\+chipwhisperer.\+hardware.\+naeusb.\+pll\+\_\+cdce906.\+P\+L\+L\+C\+D\+C\+E906.\+\_\+usb, software.\+chipwhisperer.\+hardware.\+naeusb.\+fpga.\+F\+P\+G\+A.\+\_\+usb, software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+\_\+usb, software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+C\+M\+D\+\_\+\+A\+V\+R\+\_\+\+P\+R\+O\+G\+R\+A\+M, and software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+S\+T\+A\+T\+U\+S\+\_\+\+T\+E\+X\+T\+\_\+\+D\+E\+S\+C.
+
+
+\begin{DoxyCode}
+200     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a79dd80cda2f8f1d1a269f46e30e44933}{\_\_init\_\_}(self, usb, timeout = 200):
+201         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_aca5ba6e014a57b45ec1e7cffdf088e04}{\_usb} = usb
+202         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_adacb8e08bc5e322fbe120f2a0314de96}{\_timeout} = timeout
+203 
+204         \textcolor{comment}{# TEMP, user should select correct one}
+205         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_adf413f90486fca83b48b7d3e85edd7d7}{\_chip} = supported\_avr[0]
+206 
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_affd2dbf3053a0b3aaffb1d47023b918d}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}!enable\+I\+S\+P@{enable\+I\+S\+P}}
+\index{enable\+I\+S\+P@{enable\+I\+S\+P}!software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}}
+\subsubsection[{enable\+I\+S\+P}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+enable\+I\+S\+P (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{status}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_affd2dbf3053a0b3aaffb1d47023b918d}
+\begin{DoxyVerb}Enable or disable ISP interface and prepare AVR chip for new status, either entering or exiting
+programming mode.
+
+Raises IOError() if an error occurs (such as no chip found).
+\end{DoxyVerb}
+ 
+
+References software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+\_\+avr\+Do\+Read(), software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+\_\+avr\+Do\+Write(), software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+E\+N\+T\+E\+R\+\_\+\+P\+R\+O\+G\+M\+O\+D\+E\+\_\+\+I\+S\+P, and software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+L\+E\+A\+V\+E\+\_\+\+P\+R\+O\+G\+M\+O\+D\+E\+\_\+\+I\+S\+P.
+
+
+\begin{DoxyCode}
+233     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_affd2dbf3053a0b3aaffb1d47023b918d}{enableISP}(self, status):
+234         \textcolor{stringliteral}{"""}
+235 \textcolor{stringliteral}{        Enable or disable ISP interface and prepare AVR chip for new status, either entering or exiting}
+236 \textcolor{stringliteral}{        programming mode.}
+237 \textcolor{stringliteral}{}
+238 \textcolor{stringliteral}{        Raises IOError() if an error occurs (such as no chip found).}
+239 \textcolor{stringliteral}{        """}
+240 
+241         \textcolor{keywordflow}{if} status:
+242             util.chipwhisperer\_extra.cwEXTRA.setAVRISPMode(status)
+243             time.sleep(0.1)
+244             self.\hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a30dde10a2adaa31bbd912b53bce2b138}{\_avrDoWrite}(self.\hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a03f6d1050aa506a68015843a7a9657d4}{ISP\_CMD\_ENTER\_PROGMODE\_ISP}, [
+      self.\_chip.timeout, self.\_chip.stabdelay, self.\_chip.cmdexedelay, self.\_chip.synchloops,
+245                                                                self.\_chip.bytedelay, self.\_chip.pollvalue, 
+      self.\_chip.pollindex, 0xAC, 0x53, 0, 0])
+246         \textcolor{keywordflow}{else}:
+247             \textcolor{keywordflow}{try}:
+248                 self.\hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a30dde10a2adaa31bbd912b53bce2b138}{\_avrDoWrite}(self.\hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a6fe54b4a6c344eea926a3de12e1465fb}{ISP\_CMD\_LEAVE\_PROGMODE\_ISP}, [
+      self.\_chip.predelay, self.\_chip.postdelay])
+249             \textcolor{keywordflow}{except}:
+250                 \textcolor{comment}{# Always disable ISP mode lines!}
+251                 util.chipwhisperer\_extra.cwEXTRA.setAVRISPMode(status)
+252                 \textcolor{keywordflow}{raise}
+253             util.chipwhisperer\_extra.cwEXTRA.setAVRISPMode(status)
+254 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a4b60ce77b3e5106d2f083acba7258eca}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}!enable\+Slow\+Clock@{enable\+Slow\+Clock}}
+\index{enable\+Slow\+Clock@{enable\+Slow\+Clock}!software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}}
+\subsubsection[{enable\+Slow\+Clock}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+enable\+Slow\+Clock (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{enabled}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a4b60ce77b3e5106d2f083acba7258eca}
+
+
+References software.\+chipwhisperer.\+hardware.\+naeusb.\+fpga.\+F\+P\+G\+A.\+\_\+timeout, software.\+chipwhisperer.\+hardware.\+naeusb.\+naeusb.\+N\+A\+E\+U\+S\+B.\+\_\+timeout, software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+\_\+timeout, software.\+chipwhisperer.\+capture.\+scopes.\+\_\+\+Open\+A\+D\+C\+Interface.\+Trigger\+Settings.\+\_\+timeout, software.\+chipwhisperer.\+capture.\+scopes.\+\_\+\+Open\+A\+D\+C\+Interface.\+Open\+A\+D\+C\+Interface.\+\_\+timeout, and software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+C\+M\+D\+\_\+\+S\+A\+M3\+U\+\_\+\+C\+F\+G.
+
+
+\begin{DoxyCode}
+473     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a4b60ce77b3e5106d2f083acba7258eca}{enableSlowClock}(self, enabled):
+474         \textcolor{keywordflow}{if} enabled:
+475             self.\_usb.usbdev().ctrl\_transfer(0x41, self.\hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_af627b5a5032f0be7e6c31419f4eca33c}{CMD\_SAM3U\_CFG}, 0x01, 0, timeout=self.
+      \hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_adacb8e08bc5e322fbe120f2a0314de96}{\_timeout})
+476         \textcolor{keywordflow}{else}:
+477             self.\_usb.usbdev().ctrl\_transfer(0x41, self.\hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_af627b5a5032f0be7e6c31419f4eca33c}{CMD\_SAM3U\_CFG}, 0x02, 0, timeout=self.
+      \hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_adacb8e08bc5e322fbe120f2a0314de96}{\_timeout})\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_ae9f45698adecdf0e48b9b5e68557e07e}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}!erase\+Chip@{erase\+Chip}}
+\index{erase\+Chip@{erase\+Chip}!software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}}
+\subsubsection[{erase\+Chip}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+erase\+Chip (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_ae9f45698adecdf0e48b9b5e68557e07e}
+\begin{DoxyVerb}Perform chip erase
+\end{DoxyVerb}
+ 
+
+References software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+\_\+avr\+Do\+Write(), and software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+C\+H\+I\+P\+\_\+\+E\+R\+A\+S\+E\+\_\+\+I\+S\+P.
+
+
+\begin{DoxyCode}
+337     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_ae9f45698adecdf0e48b9b5e68557e07e}{eraseChip}(self):
+338         \textcolor{stringliteral}{"""}
+339 \textcolor{stringliteral}{        Perform chip erase}
+340 \textcolor{stringliteral}{        """}
+341         \textcolor{comment}{# the AC 80 00 00 section comes from datasheet for chip erase, not sure if different?}
+342         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a30dde10a2adaa31bbd912b53bce2b138}{\_avrDoWrite}(self.\hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a619973473cbbfaaed1f11b46c9e1db83}{ISP\_CMD\_CHIP\_ERASE\_ISP},
+343                          [25,  \textcolor{comment}{# erase delay in mS}
+344                          0,  \textcolor{comment}{# poll method}
+345                          0xAC, 0x80, 0x00, 0x00  \textcolor{comment}{# erase command}
+346                          ])
+347 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_acdbed75b76ed7edcabfb70a8cce6f2bf}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}!read\+Fuse@{read\+Fuse}}
+\index{read\+Fuse@{read\+Fuse}!software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}}
+\subsubsection[{read\+Fuse}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+read\+Fuse (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{fusename}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_acdbed75b76ed7edcabfb70a8cce6f2bf}
+\begin{DoxyVerb}Read single byte of fuse memory
+
+Args:
+    fusename (str): One of 'low', 'high', or 'extended'
+Returns:
+    Fuse value
+Raises:
+    IOError, ValueError
+\end{DoxyVerb}
+ 
+
+References software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+\_\+read\+Fuse\+Lock\+Sig(), and software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+R\+E\+A\+D\+\_\+\+F\+U\+S\+E\+\_\+\+I\+S\+P.
+
+
+\begin{DoxyCode}
+281     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_acdbed75b76ed7edcabfb70a8cce6f2bf}{readFuse}(self, fusename):
+282         \textcolor{stringliteral}{"""}
+283 \textcolor{stringliteral}{        Read single byte of fuse memory}
+284 \textcolor{stringliteral}{}
+285 \textcolor{stringliteral}{        Args:}
+286 \textcolor{stringliteral}{            fusename (str): One of 'low', 'high', or 'extended'}
+287 \textcolor{stringliteral}{        Returns:}
+288 \textcolor{stringliteral}{            Fuse value}
+289 \textcolor{stringliteral}{        Raises:}
+290 \textcolor{stringliteral}{            IOError, ValueError}
+291 \textcolor{stringliteral}{        """}
+292 
+293         \textcolor{keywordflow}{if} fusename == \textcolor{stringliteral}{"low"}:
+294             command = [0x50, 0x00, 0x00, 0x00]
+295         \textcolor{keywordflow}{elif} fusename == \textcolor{stringliteral}{"high"}:
+296             command = [0x58, 0x08, 0x00, 0x00]
+297         \textcolor{keywordflow}{elif} fusename == \textcolor{stringliteral}{"extended"}:
+298             command = [0x50, 0x08, 0x00, 0x00]
+299         \textcolor{keywordflow}{else}:
+300             \textcolor{keywordflow}{raise} ValueError(\textcolor{stringliteral}{"Invalid fusename: %s"} % fusename)
+301 
+302         \textcolor{keywordflow}{return} self.\hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a086804dcad31a38595f182d26a1c733e}{\_readFuseLockSig}(self.\hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a4341e5b7244a4ea44797d0b0ed6b16e6}{ISP\_CMD\_READ\_FUSE\_ISP}, 
+      command, 4)
+303 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_af5ba5e84200073c0314127501fc063ca}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}!read\+Lock@{read\+Lock}}
+\index{read\+Lock@{read\+Lock}!software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}}
+\subsubsection[{read\+Lock}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+read\+Lock (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{lock}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_af5ba5e84200073c0314127501fc063ca}
+\begin{DoxyVerb}Read lock byte and return value.
+\end{DoxyVerb}
+ 
+
+References software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+\_\+read\+Fuse\+Lock\+Sig(), and software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+R\+E\+A\+D\+\_\+\+L\+O\+C\+K\+\_\+\+I\+S\+P.
+
+
+\begin{DoxyCode}
+304     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_af5ba5e84200073c0314127501fc063ca}{readLock}(self, lock):
+305         \textcolor{stringliteral}{"""}
+306 \textcolor{stringliteral}{        Read lock byte and return value.}
+307 \textcolor{stringliteral}{        """}
+308         \textcolor{keywordflow}{return} self.\hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a086804dcad31a38595f182d26a1c733e}{\_readFuseLockSig}(self.\hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_aabdf83b268b72480d60379c2f9936a50}{ISP\_CMD\_READ\_LOCK\_ISP}, [0xAC
+      , 0xE0, 0x00, 0x00], 4)
+309 
+310 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_afac4cb4bf4cbf1760ceed0734f8acfe6}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}!read\+Memory@{read\+Memory}}
+\index{read\+Memory@{read\+Memory}!software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}}
+\subsubsection[{read\+Memory}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+read\+Memory (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{addr, }
+\item[{}]{dlen, }
+\item[{}]{memname = {\ttfamily \char`\"{}flash\char`\"{}}}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_afac4cb4bf4cbf1760ceed0734f8acfe6}
+\begin{DoxyVerb}Read memory such as FLASH or EEPROM. Can specify an arbitrary length of data.
+
+Args:
+    addr (int): Address to read from.
+    dlen (in): How much data to read.
+Kwargs:
+    memname (str): Type of memory, such as "flash" or "eeprom". Defaults to 'flash', but
+           this will often work for other memory types.
+Returns:
+    list.
+Raises:
+    IOError
+\end{DoxyVerb}
+ 
+
+References software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+\_\+avr\+Do\+Read(), software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+\_\+avr\+Do\+Write(), software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+G\+E\+T\+\_\+\+R\+A\+M\+B\+U\+F, software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+L\+O\+A\+D\+\_\+\+A\+D\+D\+R\+E\+S\+S, software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+R\+E\+A\+D\+\_\+\+F\+L\+A\+S\+H\+\_\+\+I\+S\+P, software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+M\+A\+X\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+Z\+E, and software.\+chipwhisperer.\+hardware.\+naeusb.\+naeusb.\+packuint32().
+
+
+\begin{DoxyCode}
+348     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_afac4cb4bf4cbf1760ceed0734f8acfe6}{readMemory}(self, addr, dlen, memname="flash"):
+349         \textcolor{stringliteral}{"""}
+350 \textcolor{stringliteral}{        Read memory such as FLASH or EEPROM. Can specify an arbitrary length of data.}
+351 \textcolor{stringliteral}{}
+352 \textcolor{stringliteral}{        Args:}
+353 \textcolor{stringliteral}{            addr (int): Address to read from.}
+354 \textcolor{stringliteral}{            dlen (in): How much data to read.}
+355 \textcolor{stringliteral}{        Kwargs:}
+356 \textcolor{stringliteral}{            memname (str): Type of memory, such as "flash" or "eeprom". Defaults to 'flash', but}
+357 \textcolor{stringliteral}{                           this will often work for other memory types.}
+358 \textcolor{stringliteral}{        Returns:}
+359 \textcolor{stringliteral}{            list.}
+360 \textcolor{stringliteral}{        Raises:}
+361 \textcolor{stringliteral}{            IOError}
+362 \textcolor{stringliteral}{        """}
+363         memread = 0
+364         endptsize = 64
+365         \textcolor{comment}{# start = 0}
+366         \textcolor{comment}{# end = endptsize}
+367 
+368         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a30dde10a2adaa31bbd912b53bce2b138}{\_avrDoWrite}(self.\hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a67f5e35e8a1fe59396fc6fcace808c56}{ISP\_CMD\_LOAD\_ADDRESS}, data=
+      \hyperlink{namespacesoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1naeusb_a51ac98c158e5ef60f6b600a4761ed279}{packuint32}(addr))
+369 
+370         membuf = []
+371 
+372         \textcolor{keywordflow}{while} memread < dlen:
+373 
+374             \textcolor{comment}{# Read into internal buffer}
+375             ramreadln = dlen - memread
+376 
+377             \textcolor{comment}{# Check if maximum size for internal buffer}
+378             \textcolor{keywordflow}{if} ramreadln > self.\hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a07f57a817d0764c6b3d37a1a1171ab1c}{MAX\_BUFFER\_SIZE}:
+379                 ramreadln = self.\hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a07f57a817d0764c6b3d37a1a1171ab1c}{MAX\_BUFFER\_SIZE}
+380 
+381             self.\hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a30dde10a2adaa31bbd912b53bce2b138}{\_avrDoWrite}(self.\hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a11926590275da564a7f7a9c67fb9c4b5}{ISP\_CMD\_READ\_FLASH\_ISP}, data=[0x00, 0x01
+      , 0x20])
+382 
+383             epread = 0
+384 
+385             \textcolor{comment}{# First we need to fill the page buffer in the USB Interface using smaller transactions}
+386             \textcolor{keywordflow}{while} epread < ramreadln:
+387 
+388                 epreadln = ramreadln - epread
+389                 \textcolor{keywordflow}{if} epreadln > endptsize:
+390                     epreadln = endptsize
+391 
+392                 \textcolor{comment}{# Read data out progressively}
+393                 membuf.extend(self.\hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a0765701e8ee8e212341cbe2d86ddde55}{\_avrDoRead}(self.\hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a9af41f3bc7fa2159fe6fba42a1117de3}{ISP\_CMD\_GET\_RAMBUF} | (epread
+       << 8), dlen=epreadln))
+394 
+395                 \textcolor{comment}{# print epread}
+396 
+397                 epread += epreadln
+398 
+399             memread += ramreadln
+400 
+401         \textcolor{keywordflow}{return} membuf
+402 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a1dc123d4f23f16778e6a6d16f913b79f}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}!read\+Signature@{read\+Signature}}
+\index{read\+Signature@{read\+Signature}!software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}}
+\subsubsection[{read\+Signature}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+read\+Signature (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a1dc123d4f23f16778e6a6d16f913b79f}
+\begin{DoxyVerb}Read the 3-byte signature sequence from the AVR.
+
+Returns:
+    list.
+Raises:
+    IOError
+\end{DoxyVerb}
+ 
+
+References software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+\_\+read\+Fuse\+Lock\+Sig(), and software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+R\+E\+A\+D\+\_\+\+S\+I\+G\+N\+A\+T\+U\+R\+E\+\_\+\+I\+S\+P.
+
+
+\begin{DoxyCode}
+267     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a1dc123d4f23f16778e6a6d16f913b79f}{readSignature}(self):
+268         \textcolor{stringliteral}{"""}
+269 \textcolor{stringliteral}{        Read the 3-byte signature sequence from the AVR.}
+270 \textcolor{stringliteral}{}
+271 \textcolor{stringliteral}{        Returns:}
+272 \textcolor{stringliteral}{            list.}
+273 \textcolor{stringliteral}{        Raises:}
+274 \textcolor{stringliteral}{            IOError}
+275 \textcolor{stringliteral}{        """}
+276         sigbytes = [0, 0, 0]
+277         \textcolor{keywordflow}{for} i \textcolor{keywordflow}{in} range(0, 3):
+278             sigbytes[i] = self.\hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a086804dcad31a38595f182d26a1c733e}{\_readFuseLockSig}(self.
+      \hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a2d857e4b5ae26fd8bd1fba554fa1e856}{ISP\_CMD\_READ\_SIGNATURE\_ISP}, [0x30, 0x00, i, 0x00], 4)
+279         \textcolor{keywordflow}{return} sigbytes
+280 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_ab483cf3d55283aacdd836b697be73cb0}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}!set\+Chip@{set\+Chip}}
+\index{set\+Chip@{set\+Chip}!software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}}
+\subsubsection[{set\+Chip}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+set\+Chip (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{chiptype}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_ab483cf3d55283aacdd836b697be73cb0}
+
+
+References software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+\_\+chip.
+
+
+\begin{DoxyCode}
+469     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_ab483cf3d55283aacdd836b697be73cb0}{setChip}(self, chiptype):
+470         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_adf413f90486fca83b48b7d3e85edd7d7}{\_chip} = chiptype
+471 
+472 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a7a79f9469caa4ca900935c513f3eb1f2}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}!write\+Fuse@{write\+Fuse}}
+\index{write\+Fuse@{write\+Fuse}!software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}}
+\subsubsection[{write\+Fuse}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+write\+Fuse (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{fusename, }
+\item[{}]{value}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a7a79f9469caa4ca900935c513f3eb1f2}
+\begin{DoxyVerb}Write single byte of fuse memory
+
+Args:
+    fusename (str): One of 'low', 'high', or 'extended'
+    value (byte): Value to write
+Raises:
+    IOError, ValueError
+\end{DoxyVerb}
+ 
+
+References software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+\_\+avr\+Do\+Write(), and software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+P\+R\+O\+G\+R\+A\+M\+\_\+\+F\+U\+S\+E\+\_\+\+I\+S\+P.
+
+
+\begin{DoxyCode}
+311     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a7a79f9469caa4ca900935c513f3eb1f2}{writeFuse}(self, fusename, value):
+312         \textcolor{stringliteral}{"""}
+313 \textcolor{stringliteral}{        Write single byte of fuse memory}
+314 \textcolor{stringliteral}{}
+315 \textcolor{stringliteral}{        Args:}
+316 \textcolor{stringliteral}{            fusename (str): One of 'low', 'high', or 'extended'}
+317 \textcolor{stringliteral}{            value (byte): Value to write}
+318 \textcolor{stringliteral}{        Raises:}
+319 \textcolor{stringliteral}{            IOError, ValueError}
+320 \textcolor{stringliteral}{        """}
+321         \textcolor{keywordflow}{if} fusename == \textcolor{stringliteral}{"low"}:
+322             command = [0xAC, 0xA0, 0x00, value]
+323         \textcolor{keywordflow}{elif} fusename == \textcolor{stringliteral}{"high"}:
+324             command = [0xAC, 0xA8, 0x00, value]
+325         \textcolor{keywordflow}{elif} fusename == \textcolor{stringliteral}{"extended"}:
+326             command = [0xAC, 0xA4, 0x00, value]
+327         \textcolor{keywordflow}{else}:
+328             \textcolor{keywordflow}{raise} ValueError(\textcolor{stringliteral}{"Invalid fusename: %s"} % fusename)
+329         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a30dde10a2adaa31bbd912b53bce2b138}{\_avrDoWrite}(self.\hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a4721a0a7e1ed28046f6547ae99a0358b}{ISP\_CMD\_PROGRAM\_FUSE\_ISP}, data=command)
+330 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a3050b15c2a86d668f1c123cd1d77a3ae}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}!write\+Lock@{write\+Lock}}
+\index{write\+Lock@{write\+Lock}!software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}}
+\subsubsection[{write\+Lock}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+write\+Lock (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{value}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a3050b15c2a86d668f1c123cd1d77a3ae}
+\begin{DoxyVerb}Write lock byte value.
+\end{DoxyVerb}
+ 
+
+References software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+\_\+avr\+Do\+Write(), and software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+P\+R\+O\+G\+R\+A\+M\+\_\+\+L\+O\+C\+K\+\_\+\+I\+S\+P.
+
+
+\begin{DoxyCode}
+331     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a3050b15c2a86d668f1c123cd1d77a3ae}{writeLock}(self, value):
+332         \textcolor{stringliteral}{"""}
+333 \textcolor{stringliteral}{        Write lock byte value.}
+334 \textcolor{stringliteral}{        """}
+335         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a30dde10a2adaa31bbd912b53bce2b138}{\_avrDoWrite}(self.\hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a8d3bf3e15dfc2d6f8309bb28f1f0e9a1}{ISP\_CMD\_PROGRAM\_LOCK\_ISP}, data=[0xAC, 0xE0
+      , 0x00, value])
+336 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a23ee0a22ef4d2d8e2222b4d7d99f7481}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}!write\+Memory@{write\+Memory}}
+\index{write\+Memory@{write\+Memory}!software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}}
+\subsubsection[{write\+Memory}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+write\+Memory (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{addr, }
+\item[{}]{data, }
+\item[{}]{memname}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a23ee0a22ef4d2d8e2222b4d7d99f7481}
+\begin{DoxyVerb}Write memory such as FLASH or EEPROM. Can specify an arbitrary length of data.
+
+Args:
+    addr (int): Address to write at, should be page aligned if writing paged memory!
+    data (list): Data to write.
+    memname (str): Type of memory, such as "flash" or "eeprom".
+Raises:
+    IOError
+\end{DoxyVerb}
+ 
+
+References software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+\_\+avr\+Do\+Write(), software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+L\+O\+A\+D\+\_\+\+A\+D\+D\+R\+E\+S\+S, software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+P\+R\+O\+G\+R\+A\+M\+\_\+\+F\+L\+A\+S\+H\+\_\+\+I\+S\+P, and software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+S\+E\+T\+\_\+\+R\+A\+M\+B\+U\+F.
+
+
+\begin{DoxyCode}
+403     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a23ee0a22ef4d2d8e2222b4d7d99f7481}{writeMemory}(self, addr, data, memname):
+404         \textcolor{stringliteral}{"""}
+405 \textcolor{stringliteral}{        Write memory such as FLASH or EEPROM. Can specify an arbitrary length of data.}
+406 \textcolor{stringliteral}{}
+407 \textcolor{stringliteral}{        Args:}
+408 \textcolor{stringliteral}{            addr (int): Address to write at, should be page aligned if writing paged memory!}
+409 \textcolor{stringliteral}{            data (list): Data to write.}
+410 \textcolor{stringliteral}{            memname (str): Type of memory, such as "flash" or "eeprom".}
+411 \textcolor{stringliteral}{        Raises:}
+412 \textcolor{stringliteral}{            IOError}
+413 \textcolor{stringliteral}{        """}
+414 
+415         memspec = self.\_chip.memtypes[memname]
+416 
+417         memwritten = 0
+418         endptsize = 64
+419         start = 0
+420         end = endptsize
+421         pagesize = memspec[\textcolor{stringliteral}{"pagesize"}]
+422 
+423         \textcolor{keywordflow}{if} addr % pagesize:
+424             \textcolor{keywordflow}{print} \textcolor{stringliteral}{"WARNING: You appear to be writing to an address that is not page aligned, you will
+       probably write the wrong data"}
+425 
+426         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a30dde10a2adaa31bbd912b53bce2b138}{\_avrDoWrite}(self.\hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a67f5e35e8a1fe59396fc6fcace808c56}{ISP\_CMD\_LOAD\_ADDRESS}, data=[0, 0, 0, 0])
+427 
+428         \textcolor{keywordflow}{while} memwritten < len(data):
+429 
+430             epwritten = 0
+431 
+432             \textcolor{comment}{# First we need to fill the page buffer in the USB Interface using smaller transactions}
+433             \textcolor{keywordflow}{while} epwritten < pagesize:
+434 
+435                 \textcolor{comment}{# Check for less than full endpoint written}
+436                 \textcolor{keywordflow}{if} end > len(data):
+437                     end = len(data)
+438 
+439                 \textcolor{comment}{# Get slice of data}
+440                 epdata = data[start:end]
+441 
+442                 \textcolor{comment}{# print "%d %d %d" % (epwritten, len(epdata), memwritten)}
+443                 \textcolor{comment}{# Copy to USB interface buffer}
+444                 self.\hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a30dde10a2adaa31bbd912b53bce2b138}{\_avrDoWrite}(self.\hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a51fe661324e73d87ae8b6c657a2ba843}{ISP\_CMD\_SET\_RAMBUF} | (epwritten << 8), 
+      data=epdata, checkStatus=\textcolor{keyword}{False})
+445 
+446                 epwritten += len(epdata)
+447 
+448                 \textcolor{comment}{# Check for final write indicating we are done}
+449                 \textcolor{keywordflow}{if} end == len(data):
+450                     \textcolor{keywordflow}{break}
+451 
+452                 start += endptsize
+453                 end += endptsize
+454 
+455 
+456             \textcolor{comment}{# Copy internal buffer to final location (probably FLASH memory)}
+457             \textcolor{comment}{# self.\_avrDoWrite(self.ISP\_CMD\_LOAD\_ADDRESS, data=packuint32(addr + memwritten))}
+458             infoblock = []
+459             infoblock.append(epwritten & 0xff)
+460             infoblock.append((epwritten >> 8) & 0xff)
+461             infoblock.append(0x41 | 0x80)  \textcolor{comment}{# Programming mode, enable flash page programming}
+462             infoblock.append(6)  \textcolor{comment}{# 6mS delay for whatever it is here}
+463             infoblock.extend([0x40, 0x4C, 0x20])  \textcolor{comment}{# Programming commands for doing stuff}
+464             infoblock.extend([0xff, 0xff])  \textcolor{comment}{# We don't use value polling so don't care}
+465             self.\hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a30dde10a2adaa31bbd912b53bce2b138}{\_avrDoWrite}(self.\hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_adafb34c4319e15d0feb0c86f77464c0d}{ISP\_CMD\_PROGRAM\_FLASH\_ISP}, data=
+      infoblock)
+466 
+467             memwritten += epwritten
+468 
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a40661fbd64dc34b859bda177db0a3f2a}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}!C\+M\+D\+\_\+\+A\+V\+R\+\_\+\+P\+R\+O\+G\+R\+A\+M@{C\+M\+D\+\_\+\+A\+V\+R\+\_\+\+P\+R\+O\+G\+R\+A\+M}}
+\index{C\+M\+D\+\_\+\+A\+V\+R\+\_\+\+P\+R\+O\+G\+R\+A\+M@{C\+M\+D\+\_\+\+A\+V\+R\+\_\+\+P\+R\+O\+G\+R\+A\+M}!software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}}
+\subsubsection[{C\+M\+D\+\_\+\+A\+V\+R\+\_\+\+P\+R\+O\+G\+R\+A\+M}]{\setlength{\rightskip}{0pt plus 5cm}int software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+C\+M\+D\+\_\+\+A\+V\+R\+\_\+\+P\+R\+O\+G\+R\+A\+M = 0x21\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a40661fbd64dc34b859bda177db0a3f2a}
+
+
+Referenced by software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+\_\+\+\_\+init\+\_\+\+\_\+().
+
+\hypertarget{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_af627b5a5032f0be7e6c31419f4eca33c}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}!C\+M\+D\+\_\+\+S\+A\+M3\+U\+\_\+\+C\+F\+G@{C\+M\+D\+\_\+\+S\+A\+M3\+U\+\_\+\+C\+F\+G}}
+\index{C\+M\+D\+\_\+\+S\+A\+M3\+U\+\_\+\+C\+F\+G@{C\+M\+D\+\_\+\+S\+A\+M3\+U\+\_\+\+C\+F\+G}!software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}}
+\subsubsection[{C\+M\+D\+\_\+\+S\+A\+M3\+U\+\_\+\+C\+F\+G}]{\setlength{\rightskip}{0pt plus 5cm}int software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+C\+M\+D\+\_\+\+S\+A\+M3\+U\+\_\+\+C\+F\+G = 0x22\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_af627b5a5032f0be7e6c31419f4eca33c}
+
+
+Referenced by software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+enable\+Slow\+Clock().
+
+\hypertarget{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a619973473cbbfaaed1f11b46c9e1db83}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}!I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+C\+H\+I\+P\+\_\+\+E\+R\+A\+S\+E\+\_\+\+I\+S\+P@{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+C\+H\+I\+P\+\_\+\+E\+R\+A\+S\+E\+\_\+\+I\+S\+P}}
+\index{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+C\+H\+I\+P\+\_\+\+E\+R\+A\+S\+E\+\_\+\+I\+S\+P@{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+C\+H\+I\+P\+\_\+\+E\+R\+A\+S\+E\+\_\+\+I\+S\+P}!software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}}
+\subsubsection[{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+C\+H\+I\+P\+\_\+\+E\+R\+A\+S\+E\+\_\+\+I\+S\+P}]{\setlength{\rightskip}{0pt plus 5cm}int software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+C\+H\+I\+P\+\_\+\+E\+R\+A\+S\+E\+\_\+\+I\+S\+P = 0x12\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a619973473cbbfaaed1f11b46c9e1db83}
+
+
+Referenced by software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+erase\+Chip().
+
+\hypertarget{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a03f6d1050aa506a68015843a7a9657d4}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}!I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+E\+N\+T\+E\+R\+\_\+\+P\+R\+O\+G\+M\+O\+D\+E\+\_\+\+I\+S\+P@{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+E\+N\+T\+E\+R\+\_\+\+P\+R\+O\+G\+M\+O\+D\+E\+\_\+\+I\+S\+P}}
+\index{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+E\+N\+T\+E\+R\+\_\+\+P\+R\+O\+G\+M\+O\+D\+E\+\_\+\+I\+S\+P@{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+E\+N\+T\+E\+R\+\_\+\+P\+R\+O\+G\+M\+O\+D\+E\+\_\+\+I\+S\+P}!software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}}
+\subsubsection[{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+E\+N\+T\+E\+R\+\_\+\+P\+R\+O\+G\+M\+O\+D\+E\+\_\+\+I\+S\+P}]{\setlength{\rightskip}{0pt plus 5cm}int software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+E\+N\+T\+E\+R\+\_\+\+P\+R\+O\+G\+M\+O\+D\+E\+\_\+\+I\+S\+P = 0x10\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a03f6d1050aa506a68015843a7a9657d4}
+
+
+Referenced by software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+enable\+I\+S\+P().
+
+\hypertarget{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a5976512e748373668f2a69c6107c77fa}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}!I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+F\+I\+R\+M\+W\+A\+R\+E\+\_\+\+U\+P\+G\+R\+A\+D\+E@{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+F\+I\+R\+M\+W\+A\+R\+E\+\_\+\+U\+P\+G\+R\+A\+D\+E}}
+\index{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+F\+I\+R\+M\+W\+A\+R\+E\+\_\+\+U\+P\+G\+R\+A\+D\+E@{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+F\+I\+R\+M\+W\+A\+R\+E\+\_\+\+U\+P\+G\+R\+A\+D\+E}!software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}}
+\subsubsection[{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+F\+I\+R\+M\+W\+A\+R\+E\+\_\+\+U\+P\+G\+R\+A\+D\+E}]{\setlength{\rightskip}{0pt plus 5cm}int software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+F\+I\+R\+M\+W\+A\+R\+E\+\_\+\+U\+P\+G\+R\+A\+D\+E = 0x07\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a5976512e748373668f2a69c6107c77fa}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a70ac60ef49cbbb3fc0bb36cae9bdae1d}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}!I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+G\+E\+T\+\_\+\+P\+A\+R\+A\+M\+E\+T\+E\+R@{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+G\+E\+T\+\_\+\+P\+A\+R\+A\+M\+E\+T\+E\+R}}
+\index{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+G\+E\+T\+\_\+\+P\+A\+R\+A\+M\+E\+T\+E\+R@{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+G\+E\+T\+\_\+\+P\+A\+R\+A\+M\+E\+T\+E\+R}!software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}}
+\subsubsection[{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+G\+E\+T\+\_\+\+P\+A\+R\+A\+M\+E\+T\+E\+R}]{\setlength{\rightskip}{0pt plus 5cm}int software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+G\+E\+T\+\_\+\+P\+A\+R\+A\+M\+E\+T\+E\+R = 0x03\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a70ac60ef49cbbb3fc0bb36cae9bdae1d}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a9af41f3bc7fa2159fe6fba42a1117de3}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}!I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+G\+E\+T\+\_\+\+R\+A\+M\+B\+U\+F@{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+G\+E\+T\+\_\+\+R\+A\+M\+B\+U\+F}}
+\index{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+G\+E\+T\+\_\+\+R\+A\+M\+B\+U\+F@{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+G\+E\+T\+\_\+\+R\+A\+M\+B\+U\+F}!software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}}
+\subsubsection[{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+G\+E\+T\+\_\+\+R\+A\+M\+B\+U\+F}]{\setlength{\rightskip}{0pt plus 5cm}int software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+G\+E\+T\+\_\+\+R\+A\+M\+B\+U\+F = 0x22\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a9af41f3bc7fa2159fe6fba42a1117de3}
+
+
+Referenced by software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+read\+Memory().
+
+\hypertarget{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_abebf09f36b1ed037f8ef29edb9dd9ada}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}!I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+G\+E\+T\+\_\+\+S\+T\+A\+T\+U\+S@{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+G\+E\+T\+\_\+\+S\+T\+A\+T\+U\+S}}
+\index{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+G\+E\+T\+\_\+\+S\+T\+A\+T\+U\+S@{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+G\+E\+T\+\_\+\+S\+T\+A\+T\+U\+S}!software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}}
+\subsubsection[{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+G\+E\+T\+\_\+\+S\+T\+A\+T\+U\+S}]{\setlength{\rightskip}{0pt plus 5cm}int software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+G\+E\+T\+\_\+\+S\+T\+A\+T\+U\+S = 0x20\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_abebf09f36b1ed037f8ef29edb9dd9ada}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a6fe54b4a6c344eea926a3de12e1465fb}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}!I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+L\+E\+A\+V\+E\+\_\+\+P\+R\+O\+G\+M\+O\+D\+E\+\_\+\+I\+S\+P@{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+L\+E\+A\+V\+E\+\_\+\+P\+R\+O\+G\+M\+O\+D\+E\+\_\+\+I\+S\+P}}
+\index{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+L\+E\+A\+V\+E\+\_\+\+P\+R\+O\+G\+M\+O\+D\+E\+\_\+\+I\+S\+P@{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+L\+E\+A\+V\+E\+\_\+\+P\+R\+O\+G\+M\+O\+D\+E\+\_\+\+I\+S\+P}!software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}}
+\subsubsection[{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+L\+E\+A\+V\+E\+\_\+\+P\+R\+O\+G\+M\+O\+D\+E\+\_\+\+I\+S\+P}]{\setlength{\rightskip}{0pt plus 5cm}int software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+L\+E\+A\+V\+E\+\_\+\+P\+R\+O\+G\+M\+O\+D\+E\+\_\+\+I\+S\+P = 0x11\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a6fe54b4a6c344eea926a3de12e1465fb}
+
+
+Referenced by software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+enable\+I\+S\+P().
+
+\hypertarget{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a67f5e35e8a1fe59396fc6fcace808c56}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}!I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+L\+O\+A\+D\+\_\+\+A\+D\+D\+R\+E\+S\+S@{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+L\+O\+A\+D\+\_\+\+A\+D\+D\+R\+E\+S\+S}}
+\index{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+L\+O\+A\+D\+\_\+\+A\+D\+D\+R\+E\+S\+S@{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+L\+O\+A\+D\+\_\+\+A\+D\+D\+R\+E\+S\+S}!software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}}
+\subsubsection[{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+L\+O\+A\+D\+\_\+\+A\+D\+D\+R\+E\+S\+S}]{\setlength{\rightskip}{0pt plus 5cm}int software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+L\+O\+A\+D\+\_\+\+A\+D\+D\+R\+E\+S\+S = 0x06\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a67f5e35e8a1fe59396fc6fcace808c56}
+
+
+Referenced by software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+read\+Memory(), and software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+write\+Memory().
+
+\hypertarget{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a49931f1ff3ca7f3fc5582e49a402c890}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}!I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+O\+S\+C\+C\+A\+L@{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+O\+S\+C\+C\+A\+L}}
+\index{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+O\+S\+C\+C\+A\+L@{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+O\+S\+C\+C\+A\+L}!software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}}
+\subsubsection[{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+O\+S\+C\+C\+A\+L}]{\setlength{\rightskip}{0pt plus 5cm}int software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+O\+S\+C\+C\+A\+L = 0x05\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a49931f1ff3ca7f3fc5582e49a402c890}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a86283abf1e7a463bb7037118ba96523a}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}!I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+P\+R\+O\+G\+R\+A\+M\+\_\+\+E\+E\+P\+R\+O\+M\+\_\+\+I\+S\+P@{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+P\+R\+O\+G\+R\+A\+M\+\_\+\+E\+E\+P\+R\+O\+M\+\_\+\+I\+S\+P}}
+\index{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+P\+R\+O\+G\+R\+A\+M\+\_\+\+E\+E\+P\+R\+O\+M\+\_\+\+I\+S\+P@{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+P\+R\+O\+G\+R\+A\+M\+\_\+\+E\+E\+P\+R\+O\+M\+\_\+\+I\+S\+P}!software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}}
+\subsubsection[{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+P\+R\+O\+G\+R\+A\+M\+\_\+\+E\+E\+P\+R\+O\+M\+\_\+\+I\+S\+P}]{\setlength{\rightskip}{0pt plus 5cm}int software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+P\+R\+O\+G\+R\+A\+M\+\_\+\+E\+E\+P\+R\+O\+M\+\_\+\+I\+S\+P = 0x15\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a86283abf1e7a463bb7037118ba96523a}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_adafb34c4319e15d0feb0c86f77464c0d}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}!I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+P\+R\+O\+G\+R\+A\+M\+\_\+\+F\+L\+A\+S\+H\+\_\+\+I\+S\+P@{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+P\+R\+O\+G\+R\+A\+M\+\_\+\+F\+L\+A\+S\+H\+\_\+\+I\+S\+P}}
+\index{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+P\+R\+O\+G\+R\+A\+M\+\_\+\+F\+L\+A\+S\+H\+\_\+\+I\+S\+P@{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+P\+R\+O\+G\+R\+A\+M\+\_\+\+F\+L\+A\+S\+H\+\_\+\+I\+S\+P}!software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}}
+\subsubsection[{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+P\+R\+O\+G\+R\+A\+M\+\_\+\+F\+L\+A\+S\+H\+\_\+\+I\+S\+P}]{\setlength{\rightskip}{0pt plus 5cm}int software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+P\+R\+O\+G\+R\+A\+M\+\_\+\+F\+L\+A\+S\+H\+\_\+\+I\+S\+P = 0x13\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_adafb34c4319e15d0feb0c86f77464c0d}
+
+
+Referenced by software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+write\+Memory().
+
+\hypertarget{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a4721a0a7e1ed28046f6547ae99a0358b}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}!I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+P\+R\+O\+G\+R\+A\+M\+\_\+\+F\+U\+S\+E\+\_\+\+I\+S\+P@{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+P\+R\+O\+G\+R\+A\+M\+\_\+\+F\+U\+S\+E\+\_\+\+I\+S\+P}}
+\index{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+P\+R\+O\+G\+R\+A\+M\+\_\+\+F\+U\+S\+E\+\_\+\+I\+S\+P@{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+P\+R\+O\+G\+R\+A\+M\+\_\+\+F\+U\+S\+E\+\_\+\+I\+S\+P}!software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}}
+\subsubsection[{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+P\+R\+O\+G\+R\+A\+M\+\_\+\+F\+U\+S\+E\+\_\+\+I\+S\+P}]{\setlength{\rightskip}{0pt plus 5cm}int software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+P\+R\+O\+G\+R\+A\+M\+\_\+\+F\+U\+S\+E\+\_\+\+I\+S\+P = 0x17\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a4721a0a7e1ed28046f6547ae99a0358b}
+
+
+Referenced by software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+write\+Fuse().
+
+\hypertarget{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a8d3bf3e15dfc2d6f8309bb28f1f0e9a1}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}!I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+P\+R\+O\+G\+R\+A\+M\+\_\+\+L\+O\+C\+K\+\_\+\+I\+S\+P@{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+P\+R\+O\+G\+R\+A\+M\+\_\+\+L\+O\+C\+K\+\_\+\+I\+S\+P}}
+\index{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+P\+R\+O\+G\+R\+A\+M\+\_\+\+L\+O\+C\+K\+\_\+\+I\+S\+P@{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+P\+R\+O\+G\+R\+A\+M\+\_\+\+L\+O\+C\+K\+\_\+\+I\+S\+P}!software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}}
+\subsubsection[{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+P\+R\+O\+G\+R\+A\+M\+\_\+\+L\+O\+C\+K\+\_\+\+I\+S\+P}]{\setlength{\rightskip}{0pt plus 5cm}int software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+P\+R\+O\+G\+R\+A\+M\+\_\+\+L\+O\+C\+K\+\_\+\+I\+S\+P = 0x19\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a8d3bf3e15dfc2d6f8309bb28f1f0e9a1}
+
+
+Referenced by software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+write\+Lock().
+
+\hypertarget{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a3c82b943016436def5f21a3ceacfce49}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}!I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+R\+E\+A\+D\+\_\+\+E\+E\+P\+R\+O\+M\+\_\+\+I\+S\+P@{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+R\+E\+A\+D\+\_\+\+E\+E\+P\+R\+O\+M\+\_\+\+I\+S\+P}}
+\index{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+R\+E\+A\+D\+\_\+\+E\+E\+P\+R\+O\+M\+\_\+\+I\+S\+P@{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+R\+E\+A\+D\+\_\+\+E\+E\+P\+R\+O\+M\+\_\+\+I\+S\+P}!software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}}
+\subsubsection[{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+R\+E\+A\+D\+\_\+\+E\+E\+P\+R\+O\+M\+\_\+\+I\+S\+P}]{\setlength{\rightskip}{0pt plus 5cm}int software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+R\+E\+A\+D\+\_\+\+E\+E\+P\+R\+O\+M\+\_\+\+I\+S\+P = 0x16\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a3c82b943016436def5f21a3ceacfce49}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a11926590275da564a7f7a9c67fb9c4b5}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}!I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+R\+E\+A\+D\+\_\+\+F\+L\+A\+S\+H\+\_\+\+I\+S\+P@{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+R\+E\+A\+D\+\_\+\+F\+L\+A\+S\+H\+\_\+\+I\+S\+P}}
+\index{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+R\+E\+A\+D\+\_\+\+F\+L\+A\+S\+H\+\_\+\+I\+S\+P@{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+R\+E\+A\+D\+\_\+\+F\+L\+A\+S\+H\+\_\+\+I\+S\+P}!software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}}
+\subsubsection[{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+R\+E\+A\+D\+\_\+\+F\+L\+A\+S\+H\+\_\+\+I\+S\+P}]{\setlength{\rightskip}{0pt plus 5cm}int software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+R\+E\+A\+D\+\_\+\+F\+L\+A\+S\+H\+\_\+\+I\+S\+P = 0x14\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a11926590275da564a7f7a9c67fb9c4b5}
+
+
+Referenced by software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+read\+Memory().
+
+\hypertarget{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a4341e5b7244a4ea44797d0b0ed6b16e6}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}!I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+R\+E\+A\+D\+\_\+\+F\+U\+S\+E\+\_\+\+I\+S\+P@{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+R\+E\+A\+D\+\_\+\+F\+U\+S\+E\+\_\+\+I\+S\+P}}
+\index{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+R\+E\+A\+D\+\_\+\+F\+U\+S\+E\+\_\+\+I\+S\+P@{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+R\+E\+A\+D\+\_\+\+F\+U\+S\+E\+\_\+\+I\+S\+P}!software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}}
+\subsubsection[{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+R\+E\+A\+D\+\_\+\+F\+U\+S\+E\+\_\+\+I\+S\+P}]{\setlength{\rightskip}{0pt plus 5cm}int software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+R\+E\+A\+D\+\_\+\+F\+U\+S\+E\+\_\+\+I\+S\+P = 0x18\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a4341e5b7244a4ea44797d0b0ed6b16e6}
+
+
+Referenced by software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+read\+Fuse().
+
+\hypertarget{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_aabdf83b268b72480d60379c2f9936a50}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}!I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+R\+E\+A\+D\+\_\+\+L\+O\+C\+K\+\_\+\+I\+S\+P@{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+R\+E\+A\+D\+\_\+\+L\+O\+C\+K\+\_\+\+I\+S\+P}}
+\index{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+R\+E\+A\+D\+\_\+\+L\+O\+C\+K\+\_\+\+I\+S\+P@{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+R\+E\+A\+D\+\_\+\+L\+O\+C\+K\+\_\+\+I\+S\+P}!software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}}
+\subsubsection[{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+R\+E\+A\+D\+\_\+\+L\+O\+C\+K\+\_\+\+I\+S\+P}]{\setlength{\rightskip}{0pt plus 5cm}int software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+R\+E\+A\+D\+\_\+\+L\+O\+C\+K\+\_\+\+I\+S\+P = 0x1\+A\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_aabdf83b268b72480d60379c2f9936a50}
+
+
+Referenced by software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+read\+Lock().
+
+\hypertarget{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_acd4a5738624860110f76ed59fb79d4ab}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}!I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+R\+E\+A\+D\+\_\+\+O\+S\+C\+C\+A\+L\+\_\+\+I\+S\+P@{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+R\+E\+A\+D\+\_\+\+O\+S\+C\+C\+A\+L\+\_\+\+I\+S\+P}}
+\index{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+R\+E\+A\+D\+\_\+\+O\+S\+C\+C\+A\+L\+\_\+\+I\+S\+P@{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+R\+E\+A\+D\+\_\+\+O\+S\+C\+C\+A\+L\+\_\+\+I\+S\+P}!software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}}
+\subsubsection[{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+R\+E\+A\+D\+\_\+\+O\+S\+C\+C\+A\+L\+\_\+\+I\+S\+P}]{\setlength{\rightskip}{0pt plus 5cm}int software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+R\+E\+A\+D\+\_\+\+O\+S\+C\+C\+A\+L\+\_\+\+I\+S\+P = 0x1\+C\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_acd4a5738624860110f76ed59fb79d4ab}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a2d857e4b5ae26fd8bd1fba554fa1e856}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}!I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+R\+E\+A\+D\+\_\+\+S\+I\+G\+N\+A\+T\+U\+R\+E\+\_\+\+I\+S\+P@{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+R\+E\+A\+D\+\_\+\+S\+I\+G\+N\+A\+T\+U\+R\+E\+\_\+\+I\+S\+P}}
+\index{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+R\+E\+A\+D\+\_\+\+S\+I\+G\+N\+A\+T\+U\+R\+E\+\_\+\+I\+S\+P@{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+R\+E\+A\+D\+\_\+\+S\+I\+G\+N\+A\+T\+U\+R\+E\+\_\+\+I\+S\+P}!software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}}
+\subsubsection[{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+R\+E\+A\+D\+\_\+\+S\+I\+G\+N\+A\+T\+U\+R\+E\+\_\+\+I\+S\+P}]{\setlength{\rightskip}{0pt plus 5cm}int software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+R\+E\+A\+D\+\_\+\+S\+I\+G\+N\+A\+T\+U\+R\+E\+\_\+\+I\+S\+P = 0x1\+B\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a2d857e4b5ae26fd8bd1fba554fa1e856}
+
+
+Referenced by software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+read\+Signature().
+
+\hypertarget{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a2f149ae82bea13e55a9dd63bf98fbd89}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}!I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+R\+E\+S\+E\+T\+\_\+\+P\+R\+O\+T\+E\+C\+T\+I\+O\+N@{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+R\+E\+S\+E\+T\+\_\+\+P\+R\+O\+T\+E\+C\+T\+I\+O\+N}}
+\index{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+R\+E\+S\+E\+T\+\_\+\+P\+R\+O\+T\+E\+C\+T\+I\+O\+N@{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+R\+E\+S\+E\+T\+\_\+\+P\+R\+O\+T\+E\+C\+T\+I\+O\+N}!software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}}
+\subsubsection[{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+R\+E\+S\+E\+T\+\_\+\+P\+R\+O\+T\+E\+C\+T\+I\+O\+N}]{\setlength{\rightskip}{0pt plus 5cm}int software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+R\+E\+S\+E\+T\+\_\+\+P\+R\+O\+T\+E\+C\+T\+I\+O\+N = 0x0\+A\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a2f149ae82bea13e55a9dd63bf98fbd89}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a47f367c9a55aeff98b7de06c28a7a15c}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}!I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+S\+E\+T\+\_\+\+P\+A\+R\+A\+M\+E\+T\+E\+R@{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+S\+E\+T\+\_\+\+P\+A\+R\+A\+M\+E\+T\+E\+R}}
+\index{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+S\+E\+T\+\_\+\+P\+A\+R\+A\+M\+E\+T\+E\+R@{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+S\+E\+T\+\_\+\+P\+A\+R\+A\+M\+E\+T\+E\+R}!software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}}
+\subsubsection[{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+S\+E\+T\+\_\+\+P\+A\+R\+A\+M\+E\+T\+E\+R}]{\setlength{\rightskip}{0pt plus 5cm}int software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+S\+E\+T\+\_\+\+P\+A\+R\+A\+M\+E\+T\+E\+R = 0x02\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a47f367c9a55aeff98b7de06c28a7a15c}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a51fe661324e73d87ae8b6c657a2ba843}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}!I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+S\+E\+T\+\_\+\+R\+A\+M\+B\+U\+F@{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+S\+E\+T\+\_\+\+R\+A\+M\+B\+U\+F}}
+\index{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+S\+E\+T\+\_\+\+R\+A\+M\+B\+U\+F@{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+S\+E\+T\+\_\+\+R\+A\+M\+B\+U\+F}!software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}}
+\subsubsection[{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+S\+E\+T\+\_\+\+R\+A\+M\+B\+U\+F}]{\setlength{\rightskip}{0pt plus 5cm}int software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+S\+E\+T\+\_\+\+R\+A\+M\+B\+U\+F = 0x21\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a51fe661324e73d87ae8b6c657a2ba843}
+
+
+Referenced by software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+write\+Memory().
+
+\hypertarget{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a9441c40b32499dd69a2fc11e87f2e206}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}!I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+S\+I\+G\+N\+\_\+\+O\+N@{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+S\+I\+G\+N\+\_\+\+O\+N}}
+\index{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+S\+I\+G\+N\+\_\+\+O\+N@{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+S\+I\+G\+N\+\_\+\+O\+N}!software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}}
+\subsubsection[{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+S\+I\+G\+N\+\_\+\+O\+N}]{\setlength{\rightskip}{0pt plus 5cm}int software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+S\+I\+G\+N\+\_\+\+O\+N = 0x01\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a9441c40b32499dd69a2fc11e87f2e206}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_af21290619f59c7a4cb895b8525a25ff4}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}!I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+S\+P\+I\+\_\+\+M\+U\+L\+T\+I@{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+S\+P\+I\+\_\+\+M\+U\+L\+T\+I}}
+\index{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+S\+P\+I\+\_\+\+M\+U\+L\+T\+I@{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+S\+P\+I\+\_\+\+M\+U\+L\+T\+I}!software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}}
+\subsubsection[{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+S\+P\+I\+\_\+\+M\+U\+L\+T\+I}]{\setlength{\rightskip}{0pt plus 5cm}int software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+S\+P\+I\+\_\+\+M\+U\+L\+T\+I = 0x1\+D\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_af21290619f59c7a4cb895b8525a25ff4}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a3f087ab709bda5deeeb4c1d18720c128}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}!I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+X\+P\+R\+O\+G@{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+X\+P\+R\+O\+G}}
+\index{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+X\+P\+R\+O\+G@{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+X\+P\+R\+O\+G}!software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}}
+\subsubsection[{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+X\+P\+R\+O\+G}]{\setlength{\rightskip}{0pt plus 5cm}int software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+X\+P\+R\+O\+G = 0x50\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a3f087ab709bda5deeeb4c1d18720c128}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_abfcc819b1a929ef3810cf36fc8bf9276}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}!I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+X\+P\+R\+O\+G\+\_\+\+S\+E\+T\+M\+O\+D\+E@{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+X\+P\+R\+O\+G\+\_\+\+S\+E\+T\+M\+O\+D\+E}}
+\index{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+X\+P\+R\+O\+G\+\_\+\+S\+E\+T\+M\+O\+D\+E@{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+X\+P\+R\+O\+G\+\_\+\+S\+E\+T\+M\+O\+D\+E}!software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}}
+\subsubsection[{I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+X\+P\+R\+O\+G\+\_\+\+S\+E\+T\+M\+O\+D\+E}]{\setlength{\rightskip}{0pt plus 5cm}int software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+I\+S\+P\+\_\+\+C\+M\+D\+\_\+\+X\+P\+R\+O\+G\+\_\+\+S\+E\+T\+M\+O\+D\+E = 0x51\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_abfcc819b1a929ef3810cf36fc8bf9276}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a6c6551dd2357004f0f2e474a453ee61e}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}!I\+S\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+B\+U\+I\+L\+D\+\_\+\+N\+U\+M\+B\+E\+R\+\_\+\+H\+I\+G\+H@{I\+S\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+B\+U\+I\+L\+D\+\_\+\+N\+U\+M\+B\+E\+R\+\_\+\+H\+I\+G\+H}}
+\index{I\+S\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+B\+U\+I\+L\+D\+\_\+\+N\+U\+M\+B\+E\+R\+\_\+\+H\+I\+G\+H@{I\+S\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+B\+U\+I\+L\+D\+\_\+\+N\+U\+M\+B\+E\+R\+\_\+\+H\+I\+G\+H}!software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}}
+\subsubsection[{I\+S\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+B\+U\+I\+L\+D\+\_\+\+N\+U\+M\+B\+E\+R\+\_\+\+H\+I\+G\+H}]{\setlength{\rightskip}{0pt plus 5cm}int software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+I\+S\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+B\+U\+I\+L\+D\+\_\+\+N\+U\+M\+B\+E\+R\+\_\+\+H\+I\+G\+H = 0x81\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a6c6551dd2357004f0f2e474a453ee61e}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_ab49c377c6dc37d7ce2174257854c8924}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}!I\+S\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+B\+U\+I\+L\+D\+\_\+\+N\+U\+M\+B\+E\+R\+\_\+\+L\+O\+W@{I\+S\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+B\+U\+I\+L\+D\+\_\+\+N\+U\+M\+B\+E\+R\+\_\+\+L\+O\+W}}
+\index{I\+S\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+B\+U\+I\+L\+D\+\_\+\+N\+U\+M\+B\+E\+R\+\_\+\+L\+O\+W@{I\+S\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+B\+U\+I\+L\+D\+\_\+\+N\+U\+M\+B\+E\+R\+\_\+\+L\+O\+W}!software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}}
+\subsubsection[{I\+S\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+B\+U\+I\+L\+D\+\_\+\+N\+U\+M\+B\+E\+R\+\_\+\+L\+O\+W}]{\setlength{\rightskip}{0pt plus 5cm}int software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+I\+S\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+B\+U\+I\+L\+D\+\_\+\+N\+U\+M\+B\+E\+R\+\_\+\+L\+O\+W = 0x80\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_ab49c377c6dc37d7ce2174257854c8924}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a86da83aea6f5bc2d67950d0bf435ca9d}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}!I\+S\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+D\+I\+S\+C\+H\+A\+R\+G\+E\+D\+E\+L\+A\+Y@{I\+S\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+D\+I\+S\+C\+H\+A\+R\+G\+E\+D\+E\+L\+A\+Y}}
+\index{I\+S\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+D\+I\+S\+C\+H\+A\+R\+G\+E\+D\+E\+L\+A\+Y@{I\+S\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+D\+I\+S\+C\+H\+A\+R\+G\+E\+D\+E\+L\+A\+Y}!software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}}
+\subsubsection[{I\+S\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+D\+I\+S\+C\+H\+A\+R\+G\+E\+D\+E\+L\+A\+Y}]{\setlength{\rightskip}{0pt plus 5cm}int software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+I\+S\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+D\+I\+S\+C\+H\+A\+R\+G\+E\+D\+E\+L\+A\+Y = 0x\+A4\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a86da83aea6f5bc2d67950d0bf435ca9d}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_aa6f78f7b4cc0350ec4e4b4734ad5575f}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}!I\+S\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+H\+W\+\_\+\+V\+E\+R@{I\+S\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+H\+W\+\_\+\+V\+E\+R}}
+\index{I\+S\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+H\+W\+\_\+\+V\+E\+R@{I\+S\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+H\+W\+\_\+\+V\+E\+R}!software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}}
+\subsubsection[{I\+S\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+H\+W\+\_\+\+V\+E\+R}]{\setlength{\rightskip}{0pt plus 5cm}int software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+I\+S\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+H\+W\+\_\+\+V\+E\+R = 0x90\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_aa6f78f7b4cc0350ec4e4b4734ad5575f}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a8f89043d7c6f10ad52286a7f1cf94521}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}!I\+S\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+R\+E\+S\+E\+T\+\_\+\+P\+O\+L\+A\+R\+I\+T\+Y@{I\+S\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+R\+E\+S\+E\+T\+\_\+\+P\+O\+L\+A\+R\+I\+T\+Y}}
+\index{I\+S\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+R\+E\+S\+E\+T\+\_\+\+P\+O\+L\+A\+R\+I\+T\+Y@{I\+S\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+R\+E\+S\+E\+T\+\_\+\+P\+O\+L\+A\+R\+I\+T\+Y}!software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}}
+\subsubsection[{I\+S\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+R\+E\+S\+E\+T\+\_\+\+P\+O\+L\+A\+R\+I\+T\+Y}]{\setlength{\rightskip}{0pt plus 5cm}int software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+I\+S\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+R\+E\+S\+E\+T\+\_\+\+P\+O\+L\+A\+R\+I\+T\+Y = 0x9\+E\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a8f89043d7c6f10ad52286a7f1cf94521}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a4267928fb97172d3316e6ec183184736}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}!I\+S\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+C\+K\+\_\+\+D\+U\+R\+A\+T\+I\+O\+N@{I\+S\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+C\+K\+\_\+\+D\+U\+R\+A\+T\+I\+O\+N}}
+\index{I\+S\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+C\+K\+\_\+\+D\+U\+R\+A\+T\+I\+O\+N@{I\+S\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+C\+K\+\_\+\+D\+U\+R\+A\+T\+I\+O\+N}!software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}}
+\subsubsection[{I\+S\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+C\+K\+\_\+\+D\+U\+R\+A\+T\+I\+O\+N}]{\setlength{\rightskip}{0pt plus 5cm}int software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+I\+S\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+C\+K\+\_\+\+D\+U\+R\+A\+T\+I\+O\+N = 0x98\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a4267928fb97172d3316e6ec183184736}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_abd1458c916ba5557268e9d81cdc8d4c6}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}!I\+S\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+T\+G\+T\+\_\+\+C\+O\+N\+N@{I\+S\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+T\+G\+T\+\_\+\+C\+O\+N\+N}}
+\index{I\+S\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+T\+G\+T\+\_\+\+C\+O\+N\+N@{I\+S\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+T\+G\+T\+\_\+\+C\+O\+N\+N}!software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}}
+\subsubsection[{I\+S\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+T\+G\+T\+\_\+\+C\+O\+N\+N}]{\setlength{\rightskip}{0pt plus 5cm}int software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+I\+S\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+T\+G\+T\+\_\+\+C\+O\+N\+N = 0x\+A1\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_abd1458c916ba5557268e9d81cdc8d4c6}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_af042bdd48079327d8ab9493668ee5e45}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}!I\+S\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+W\+\_\+\+M\+A\+J\+O\+R@{I\+S\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+W\+\_\+\+M\+A\+J\+O\+R}}
+\index{I\+S\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+W\+\_\+\+M\+A\+J\+O\+R@{I\+S\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+W\+\_\+\+M\+A\+J\+O\+R}!software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}}
+\subsubsection[{I\+S\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+W\+\_\+\+M\+A\+J\+O\+R}]{\setlength{\rightskip}{0pt plus 5cm}int software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+I\+S\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+W\+\_\+\+M\+A\+J\+O\+R = 0x91\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_af042bdd48079327d8ab9493668ee5e45}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_abf3b5115e731ac76fd7ad0553d73b9b8}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}!I\+S\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+W\+\_\+\+M\+I\+N\+O\+R@{I\+S\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+W\+\_\+\+M\+I\+N\+O\+R}}
+\index{I\+S\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+W\+\_\+\+M\+I\+N\+O\+R@{I\+S\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+W\+\_\+\+M\+I\+N\+O\+R}!software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}}
+\subsubsection[{I\+S\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+W\+\_\+\+M\+I\+N\+O\+R}]{\setlength{\rightskip}{0pt plus 5cm}int software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+I\+S\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+W\+\_\+\+M\+I\+N\+O\+R = 0x92\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_abf3b5115e731ac76fd7ad0553d73b9b8}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a03c2fb663dad19161a7b826ff2b28873}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}!I\+S\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+V\+T\+A\+R\+G\+E\+T@{I\+S\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+V\+T\+A\+R\+G\+E\+T}}
+\index{I\+S\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+V\+T\+A\+R\+G\+E\+T@{I\+S\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+V\+T\+A\+R\+G\+E\+T}!software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}}
+\subsubsection[{I\+S\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+V\+T\+A\+R\+G\+E\+T}]{\setlength{\rightskip}{0pt plus 5cm}int software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+I\+S\+P\+\_\+\+P\+A\+R\+A\+M\+\_\+\+V\+T\+A\+R\+G\+E\+T = 0x94\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a03c2fb663dad19161a7b826ff2b28873}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_ad00cf4940f4b99fc1bcd362d20d764a5}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}!I\+S\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+C\+M\+D\+\_\+\+F\+A\+I\+L\+E\+D@{I\+S\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+C\+M\+D\+\_\+\+F\+A\+I\+L\+E\+D}}
+\index{I\+S\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+C\+M\+D\+\_\+\+F\+A\+I\+L\+E\+D@{I\+S\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+C\+M\+D\+\_\+\+F\+A\+I\+L\+E\+D}!software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}}
+\subsubsection[{I\+S\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+C\+M\+D\+\_\+\+F\+A\+I\+L\+E\+D}]{\setlength{\rightskip}{0pt plus 5cm}int software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+I\+S\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+C\+M\+D\+\_\+\+F\+A\+I\+L\+E\+D = 0x\+C0\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_ad00cf4940f4b99fc1bcd362d20d764a5}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a4e285abb4b8c7116a9e8a36c4ebb96a0}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}!I\+S\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+C\+M\+D\+\_\+\+O\+K@{I\+S\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+C\+M\+D\+\_\+\+O\+K}}
+\index{I\+S\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+C\+M\+D\+\_\+\+O\+K@{I\+S\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+C\+M\+D\+\_\+\+O\+K}!software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}}
+\subsubsection[{I\+S\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+C\+M\+D\+\_\+\+O\+K}]{\setlength{\rightskip}{0pt plus 5cm}int software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+I\+S\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+C\+M\+D\+\_\+\+O\+K = 0x00\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a4e285abb4b8c7116a9e8a36c4ebb96a0}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_ab51c66a3212c4ca6a24ac4438609bb13}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}!I\+S\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+C\+M\+D\+\_\+\+T\+O\+U\+T@{I\+S\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+C\+M\+D\+\_\+\+T\+O\+U\+T}}
+\index{I\+S\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+C\+M\+D\+\_\+\+T\+O\+U\+T@{I\+S\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+C\+M\+D\+\_\+\+T\+O\+U\+T}!software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}}
+\subsubsection[{I\+S\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+C\+M\+D\+\_\+\+T\+O\+U\+T}]{\setlength{\rightskip}{0pt plus 5cm}int software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+I\+S\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+C\+M\+D\+\_\+\+T\+O\+U\+T = 0x80\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_ab51c66a3212c4ca6a24ac4438609bb13}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a85eeefe825018a0cbe31e1091bdc3278}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}!I\+S\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+C\+M\+D\+\_\+\+U\+N\+K\+N\+O\+W\+N@{I\+S\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+C\+M\+D\+\_\+\+U\+N\+K\+N\+O\+W\+N}}
+\index{I\+S\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+C\+M\+D\+\_\+\+U\+N\+K\+N\+O\+W\+N@{I\+S\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+C\+M\+D\+\_\+\+U\+N\+K\+N\+O\+W\+N}!software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}}
+\subsubsection[{I\+S\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+C\+M\+D\+\_\+\+U\+N\+K\+N\+O\+W\+N}]{\setlength{\rightskip}{0pt plus 5cm}int software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+I\+S\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+C\+M\+D\+\_\+\+U\+N\+K\+N\+O\+W\+N = 0x\+C9\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a85eeefe825018a0cbe31e1091bdc3278}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_aa58bfd3159837fd5bd34fec480e4e61f}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}!I\+S\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+C\+O\+N\+N\+\_\+\+F\+A\+I\+L\+\_\+\+M\+O\+S\+I@{I\+S\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+C\+O\+N\+N\+\_\+\+F\+A\+I\+L\+\_\+\+M\+O\+S\+I}}
+\index{I\+S\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+C\+O\+N\+N\+\_\+\+F\+A\+I\+L\+\_\+\+M\+O\+S\+I@{I\+S\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+C\+O\+N\+N\+\_\+\+F\+A\+I\+L\+\_\+\+M\+O\+S\+I}!software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}}
+\subsubsection[{I\+S\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+C\+O\+N\+N\+\_\+\+F\+A\+I\+L\+\_\+\+M\+O\+S\+I}]{\setlength{\rightskip}{0pt plus 5cm}int software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+I\+S\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+C\+O\+N\+N\+\_\+\+F\+A\+I\+L\+\_\+\+M\+O\+S\+I = 0x01\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_aa58bfd3159837fd5bd34fec480e4e61f}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a8a1050270f3a4d3d9c6198ee9a1c16ea}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}!I\+S\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+C\+O\+N\+N\+\_\+\+F\+A\+I\+L\+\_\+\+R\+S\+T@{I\+S\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+C\+O\+N\+N\+\_\+\+F\+A\+I\+L\+\_\+\+R\+S\+T}}
+\index{I\+S\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+C\+O\+N\+N\+\_\+\+F\+A\+I\+L\+\_\+\+R\+S\+T@{I\+S\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+C\+O\+N\+N\+\_\+\+F\+A\+I\+L\+\_\+\+R\+S\+T}!software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}}
+\subsubsection[{I\+S\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+C\+O\+N\+N\+\_\+\+F\+A\+I\+L\+\_\+\+R\+S\+T}]{\setlength{\rightskip}{0pt plus 5cm}int software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+I\+S\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+C\+O\+N\+N\+\_\+\+F\+A\+I\+L\+\_\+\+R\+S\+T = 0x02\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a8a1050270f3a4d3d9c6198ee9a1c16ea}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a726b1548c93bba2f2ffd1e38a74aa606}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}!I\+S\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+C\+O\+N\+N\+\_\+\+F\+A\+I\+L\+\_\+\+S\+C\+K@{I\+S\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+C\+O\+N\+N\+\_\+\+F\+A\+I\+L\+\_\+\+S\+C\+K}}
+\index{I\+S\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+C\+O\+N\+N\+\_\+\+F\+A\+I\+L\+\_\+\+S\+C\+K@{I\+S\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+C\+O\+N\+N\+\_\+\+F\+A\+I\+L\+\_\+\+S\+C\+K}!software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}}
+\subsubsection[{I\+S\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+C\+O\+N\+N\+\_\+\+F\+A\+I\+L\+\_\+\+S\+C\+K}]{\setlength{\rightskip}{0pt plus 5cm}int software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+I\+S\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+C\+O\+N\+N\+\_\+\+F\+A\+I\+L\+\_\+\+S\+C\+K = 0x04\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a726b1548c93bba2f2ffd1e38a74aa606}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_ae9774e154bb532e0313a3789baa21f3f}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}!I\+S\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+I\+S\+P\+\_\+\+R\+E\+A\+D\+Y@{I\+S\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+I\+S\+P\+\_\+\+R\+E\+A\+D\+Y}}
+\index{I\+S\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+I\+S\+P\+\_\+\+R\+E\+A\+D\+Y@{I\+S\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+I\+S\+P\+\_\+\+R\+E\+A\+D\+Y}!software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}}
+\subsubsection[{I\+S\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+I\+S\+P\+\_\+\+R\+E\+A\+D\+Y}]{\setlength{\rightskip}{0pt plus 5cm}int software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+I\+S\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+I\+S\+P\+\_\+\+R\+E\+A\+D\+Y = 0x00\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_ae9774e154bb532e0313a3789baa21f3f}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a8a1dc049f7566250426c569e0edfa71e}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}!I\+S\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+R\+D\+Y\+\_\+\+B\+S\+Y\+\_\+\+T\+O\+U\+T@{I\+S\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+R\+D\+Y\+\_\+\+B\+S\+Y\+\_\+\+T\+O\+U\+T}}
+\index{I\+S\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+R\+D\+Y\+\_\+\+B\+S\+Y\+\_\+\+T\+O\+U\+T@{I\+S\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+R\+D\+Y\+\_\+\+B\+S\+Y\+\_\+\+T\+O\+U\+T}!software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}}
+\subsubsection[{I\+S\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+R\+D\+Y\+\_\+\+B\+S\+Y\+\_\+\+T\+O\+U\+T}]{\setlength{\rightskip}{0pt plus 5cm}int software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+I\+S\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+R\+D\+Y\+\_\+\+B\+S\+Y\+\_\+\+T\+O\+U\+T = 0x81\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a8a1dc049f7566250426c569e0edfa71e}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_af34d1529a33ac9f040f3e38cb4109242}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}!I\+S\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+S\+E\+T\+\_\+\+P\+A\+R\+A\+M\+\_\+\+M\+I\+S\+S\+I\+N\+G@{I\+S\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+S\+E\+T\+\_\+\+P\+A\+R\+A\+M\+\_\+\+M\+I\+S\+S\+I\+N\+G}}
+\index{I\+S\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+S\+E\+T\+\_\+\+P\+A\+R\+A\+M\+\_\+\+M\+I\+S\+S\+I\+N\+G@{I\+S\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+S\+E\+T\+\_\+\+P\+A\+R\+A\+M\+\_\+\+M\+I\+S\+S\+I\+N\+G}!software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}}
+\subsubsection[{I\+S\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+S\+E\+T\+\_\+\+P\+A\+R\+A\+M\+\_\+\+M\+I\+S\+S\+I\+N\+G}]{\setlength{\rightskip}{0pt plus 5cm}int software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+I\+S\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+S\+E\+T\+\_\+\+P\+A\+R\+A\+M\+\_\+\+M\+I\+S\+S\+I\+N\+G = 0x82\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_af34d1529a33ac9f040f3e38cb4109242}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_ad77172e8691de3d28d3a04758558d01b}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}!I\+S\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+T\+G\+T\+\_\+\+N\+O\+T\+\_\+\+D\+E\+T\+E\+C\+T\+E\+D@{I\+S\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+T\+G\+T\+\_\+\+N\+O\+T\+\_\+\+D\+E\+T\+E\+C\+T\+E\+D}}
+\index{I\+S\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+T\+G\+T\+\_\+\+N\+O\+T\+\_\+\+D\+E\+T\+E\+C\+T\+E\+D@{I\+S\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+T\+G\+T\+\_\+\+N\+O\+T\+\_\+\+D\+E\+T\+E\+C\+T\+E\+D}!software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}}
+\subsubsection[{I\+S\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+T\+G\+T\+\_\+\+N\+O\+T\+\_\+\+D\+E\+T\+E\+C\+T\+E\+D}]{\setlength{\rightskip}{0pt plus 5cm}int software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+I\+S\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+T\+G\+T\+\_\+\+N\+O\+T\+\_\+\+D\+E\+T\+E\+C\+T\+E\+D = 0x10\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_ad77172e8691de3d28d3a04758558d01b}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_aa4c9c0155268529b4e7a9cf75d453f21}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}!I\+S\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+T\+G\+T\+\_\+\+R\+E\+V\+E\+R\+S\+E\+\_\+\+I\+N\+S\+E\+R\+T\+E\+D@{I\+S\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+T\+G\+T\+\_\+\+R\+E\+V\+E\+R\+S\+E\+\_\+\+I\+N\+S\+E\+R\+T\+E\+D}}
+\index{I\+S\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+T\+G\+T\+\_\+\+R\+E\+V\+E\+R\+S\+E\+\_\+\+I\+N\+S\+E\+R\+T\+E\+D@{I\+S\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+T\+G\+T\+\_\+\+R\+E\+V\+E\+R\+S\+E\+\_\+\+I\+N\+S\+E\+R\+T\+E\+D}!software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}}
+\subsubsection[{I\+S\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+T\+G\+T\+\_\+\+R\+E\+V\+E\+R\+S\+E\+\_\+\+I\+N\+S\+E\+R\+T\+E\+D}]{\setlength{\rightskip}{0pt plus 5cm}int software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+I\+S\+P\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+T\+G\+T\+\_\+\+R\+E\+V\+E\+R\+S\+E\+\_\+\+I\+N\+S\+E\+R\+T\+E\+D = 0x20\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_aa4c9c0155268529b4e7a9cf75d453f21}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a07f57a817d0764c6b3d37a1a1171ab1c}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}!M\+A\+X\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+Z\+E@{M\+A\+X\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+Z\+E}}
+\index{M\+A\+X\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+Z\+E@{M\+A\+X\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+Z\+E}!software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}}
+\subsubsection[{M\+A\+X\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+Z\+E}]{\setlength{\rightskip}{0pt plus 5cm}int software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+M\+A\+X\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+Z\+E = 256\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_a07f57a817d0764c6b3d37a1a1171ab1c}
+
+
+Referenced by software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+xmega.\+X\+M\+E\+G\+A\+P\+D\+I.\+read\+Memory(), and software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+read\+Memory().
+
+\hypertarget{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_ab2178dc6b2bc0b67b2b306f35934c517}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}!S\+T\+A\+T\+U\+S\+\_\+\+T\+E\+X\+T\+\_\+\+D\+E\+S\+C@{S\+T\+A\+T\+U\+S\+\_\+\+T\+E\+X\+T\+\_\+\+D\+E\+S\+C}}
+\index{S\+T\+A\+T\+U\+S\+\_\+\+T\+E\+X\+T\+\_\+\+D\+E\+S\+C@{S\+T\+A\+T\+U\+S\+\_\+\+T\+E\+X\+T\+\_\+\+D\+E\+S\+C}!software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P@{software\+::chipwhisperer\+::hardware\+::naeusb\+::programmer\+\_\+avr\+::\+A\+V\+R\+I\+S\+P}}
+\subsubsection[{S\+T\+A\+T\+U\+S\+\_\+\+T\+E\+X\+T\+\_\+\+D\+E\+S\+C}]{\setlength{\rightskip}{0pt plus 5cm}dictionary software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+S\+T\+A\+T\+U\+S\+\_\+\+T\+E\+X\+T\+\_\+\+D\+E\+S\+C\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1programmer__avr_1_1AVRISP_ab2178dc6b2bc0b67b2b306f35934c517}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 = \{
+2         0x00:\textcolor{stringliteral}{"OK"},
+3         0x80:\textcolor{stringliteral}{"Timeout"},
+4         0x81:\textcolor{stringliteral}{"Busy Timeout"},
+5         0x82:\textcolor{stringliteral}{"Parameter Missing"},
+6         0xC0:\textcolor{stringliteral}{"Command Failed"},
+7         0xC9:\textcolor{stringliteral}{"Command Unknown"},
+8         0x10:\textcolor{stringliteral}{"Target not detected"}
+9     \}
+\end{DoxyCode}
+
+
+Referenced by software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+\_\+\+\_\+init\+\_\+\+\_\+().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{programmer__avr_8py}{programmer\+\_\+avr.\+py}\end{DoxyCompactItemize}

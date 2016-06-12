@@ -1,0 +1,144 @@
+\hypertarget{classsoftware_1_1chipwhisperer_1_1capture_1_1targets_1_1__smartcard__gui_1_1APDUFilter}{}\section{software.\+chipwhisperer.\+capture.\+targets.\+\_\+smartcard\+\_\+gui.\+A\+P\+D\+U\+Filter Class Reference}
+\label{classsoftware_1_1chipwhisperer_1_1capture_1_1targets_1_1__smartcard__gui_1_1APDUFilter}\index{software.\+chipwhisperer.\+capture.\+targets.\+\_\+smartcard\+\_\+gui.\+A\+P\+D\+U\+Filter@{software.\+chipwhisperer.\+capture.\+targets.\+\_\+smartcard\+\_\+gui.\+A\+P\+D\+U\+Filter}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1targets_1_1__smartcard__gui_1_1APDUFilter_a7aae8aefbdc9d2d54c5d57c5d36e35f4}{validate\+A\+P\+D\+U} (self, widget)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1targets_1_1__smartcard__gui_1_1APDUFilter_ab2fcf21f946b41b580b2ec0567988b2b}{event\+Filter} (self, widget, event)
+\end{DoxyCompactItemize}
+
+
+Inheritance diagram for software.\+chipwhisperer.\+capture.\+targets.\+\_\+smartcard\+\_\+gui.\+A\+P\+D\+U\+Filter\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{db/ddf/classsoftware_1_1chipwhisperer_1_1capture_1_1targets_1_1__smartcard__gui_1_1APDUFilter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for software.\+chipwhisperer.\+capture.\+targets.\+\_\+smartcard\+\_\+gui.\+A\+P\+D\+U\+Filter\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{dc/da0/classsoftware_1_1chipwhisperer_1_1capture_1_1targets_1_1__smartcard__gui_1_1APDUFilter__coll__graph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1capture_1_1targets_1_1__smartcard__gui_1_1APDUFilter_ab2fcf21f946b41b580b2ec0567988b2b}{}\index{software\+::chipwhisperer\+::capture\+::targets\+::\+\_\+smartcard\+\_\+gui\+::\+A\+P\+D\+U\+Filter@{software\+::chipwhisperer\+::capture\+::targets\+::\+\_\+smartcard\+\_\+gui\+::\+A\+P\+D\+U\+Filter}!event\+Filter@{event\+Filter}}
+\index{event\+Filter@{event\+Filter}!software\+::chipwhisperer\+::capture\+::targets\+::\+\_\+smartcard\+\_\+gui\+::\+A\+P\+D\+U\+Filter@{software\+::chipwhisperer\+::capture\+::targets\+::\+\_\+smartcard\+\_\+gui\+::\+A\+P\+D\+U\+Filter}}
+\subsubsection[{event\+Filter}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+capture.\+targets.\+\_\+smartcard\+\_\+gui.\+A\+P\+D\+U\+Filter.\+event\+Filter (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{widget, }
+\item[{}]{event}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1capture_1_1targets_1_1__smartcard__gui_1_1APDUFilter_ab2fcf21f946b41b580b2ec0567988b2b}
+
+
+References software.\+chipwhisperer.\+capture.\+targets.\+\_\+smartcard\+\_\+gui.\+A\+P\+D\+U\+Filter.\+validate\+A\+P\+D\+U().
+
+
+\begin{DoxyCode}
+95     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1targets_1_1__smartcard__gui_1_1APDUFilter_ab2fcf21f946b41b580b2ec0567988b2b}{eventFilter}(self, widget, event):
+96         \textcolor{comment}{# FocusOut event}
+97         \textcolor{keywordflow}{if} event.type() == QEvent.FocusOut:
+98 
+99             self.\hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1targets_1_1__smartcard__gui_1_1APDUFilter_a7aae8aefbdc9d2d54c5d57c5d36e35f4}{validateAPDU}(widget)
+100 
+101             \textcolor{comment}{# return False so that the widget will also handle the event}
+102             \textcolor{comment}{# otherwise it won't focus out}
+103             \textcolor{keywordflow}{return} \textcolor{keyword}{False}
+104         \textcolor{keywordflow}{else}:
+105             \textcolor{comment}{# we don't care about other events}
+106             \textcolor{keywordflow}{return} \textcolor{keyword}{False}
+107 
+108 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1capture_1_1targets_1_1__smartcard__gui_1_1APDUFilter_a7aae8aefbdc9d2d54c5d57c5d36e35f4}{}\index{software\+::chipwhisperer\+::capture\+::targets\+::\+\_\+smartcard\+\_\+gui\+::\+A\+P\+D\+U\+Filter@{software\+::chipwhisperer\+::capture\+::targets\+::\+\_\+smartcard\+\_\+gui\+::\+A\+P\+D\+U\+Filter}!validate\+A\+P\+D\+U@{validate\+A\+P\+D\+U}}
+\index{validate\+A\+P\+D\+U@{validate\+A\+P\+D\+U}!software\+::chipwhisperer\+::capture\+::targets\+::\+\_\+smartcard\+\_\+gui\+::\+A\+P\+D\+U\+Filter@{software\+::chipwhisperer\+::capture\+::targets\+::\+\_\+smartcard\+\_\+gui\+::\+A\+P\+D\+U\+Filter}}
+\subsubsection[{validate\+A\+P\+D\+U}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+capture.\+targets.\+\_\+smartcard\+\_\+gui.\+A\+P\+D\+U\+Filter.\+validate\+A\+P\+D\+U (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{widget}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1capture_1_1targets_1_1__smartcard__gui_1_1APDUFilter_a7aae8aefbdc9d2d54c5d57c5d36e35f4}
+
+
+References software.\+chipwhisperer.\+common.\+utils.\+util.\+hexstr2list().
+
+
+
+Referenced by software.\+chipwhisperer.\+capture.\+targets.\+\_\+smartcard\+\_\+gui.\+A\+P\+D\+U\+Filter.\+event\+Filter().
+
+
+\begin{DoxyCode}
+35     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1targets_1_1__smartcard__gui_1_1APDUFilter_a7aae8aefbdc9d2d54c5d57c5d36e35f4}{validateAPDU}(self, widget):       
+36          
+37         headerstart = \textcolor{stringliteral}{"<font color=red>"}
+38         headerend = \textcolor{stringliteral}{"</font>"}
+39         
+40         lenstart = \textcolor{stringliteral}{"<font color=blue>"}
+41         lenend = \textcolor{stringliteral}{"</font>"}
+42         
+43         payloadstart = \textcolor{stringliteral}{"<font color=green>"}
+44         payloadend = \textcolor{stringliteral}{"</font>"}
+45         
+46         
+47         \textcolor{comment}{#APDU Changed, verify & colour-code text       }
+48         data = \hyperlink{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1util_ad2cd7abc81938c0de013778a8044d187}{hexstr2list}(widget.toPlainText())
+49 
+50         htmlstr = \textcolor{stringliteral}{""}
+51 
+52         \textcolor{comment}{#Validate length - basic}
+53         \textcolor{keywordflow}{if} len(data) < 5:
+54             fail = \textcolor{keyword}{True}
+55         \textcolor{keywordflow}{else}:            
+56             \textcolor{comment}{#First four bytes are header}
+57             htmlstr += headerstart
+58             header = data[0:4]
+59             \textcolor{keywordflow}{for} d \textcolor{keywordflow}{in} header:
+60                 htmlstr += \textcolor{stringliteral}{"%02x "}%d
+61             htmlstr += headerend
+62             
+63             \textcolor{comment}{#Next is payload length or response length}
+64             htmlstr += lenstart
+65             htmlstr += \textcolor{stringliteral}{"%02x "}%data[4]
+66             htmlstr += lenend
+67             
+68             plen = data[4]
+69             
+70             \textcolor{comment}{#Have payload}
+71             \textcolor{keywordflow}{if} len(data) > 5:
+72                 
+73                 \textcolor{comment}{#Hmm... bad format!?}
+74                 \textcolor{keywordflow}{if} (len(data)-5) < plen:
+75                     \textcolor{keywordflow}{print} \textcolor{stringliteral}{"ERROR: Header too short"}
+76                     plen = len(data)-5
+77                 
+78                 payload = data[5:(5+plen)]
+79                 
+80                 htmlstr += payloadstart
+81                 \textcolor{keywordflow}{for} d \textcolor{keywordflow}{in} payload:
+82                     htmlstr += \textcolor{stringliteral}{"%02x "}%d
+83                 htmlstr += payloadend
+84                 
+85                 \textcolor{keywordflow}{if} (len(data)-5) > plen:
+86                     htmlstr += lenstart
+87                     htmlstr += \textcolor{stringliteral}{"%02x "}%data[plen+5]
+88                     htmlstr += lenend
+89                     
+90                     \textcolor{keywordflow}{if} (len(data)-5) != (plen+1):
+91                         \textcolor{keywordflow}{print} \textcolor{stringliteral}{"ERROR: Extra data"}                  
+92         
+93             widget.setHtml(htmlstr)
+94     
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{__smartcard__gui_8py}{\+\_\+smartcard\+\_\+gui.\+py}\end{DoxyCompactItemize}

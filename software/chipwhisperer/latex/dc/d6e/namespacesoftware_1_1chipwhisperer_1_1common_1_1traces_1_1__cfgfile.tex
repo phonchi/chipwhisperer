@@ -1,0 +1,76 @@
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile}{}\section{software.\+chipwhisperer.\+common.\+traces.\+\_\+cfgfile Namespace Reference}
+\label{namespacesoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile}\index{software.\+chipwhisperer.\+common.\+traces.\+\_\+cfgfile@{software.\+chipwhisperer.\+common.\+traces.\+\_\+cfgfile}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_1_1TraceContainerConfig}{Trace\+Container\+Config}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacesoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_ae5242f90d9cfb290f14d59027088de1e}{make\+Attr\+Dict} (sectionname, modulename, param\+Specs)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{namespacesoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_ace8a3b8ccc370e5d6fc081e07eb5ea19}{\+\_\+\+\_\+author\+\_\+\+\_\+} = \char`\"{}Colin O\textquotesingle{}Flynn\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_ae5242f90d9cfb290f14d59027088de1e}{}\index{software\+::chipwhisperer\+::common\+::traces\+::\+\_\+cfgfile@{software\+::chipwhisperer\+::common\+::traces\+::\+\_\+cfgfile}!make\+Attr\+Dict@{make\+Attr\+Dict}}
+\index{make\+Attr\+Dict@{make\+Attr\+Dict}!software\+::chipwhisperer\+::common\+::traces\+::\+\_\+cfgfile@{software\+::chipwhisperer\+::common\+::traces\+::\+\_\+cfgfile}}
+\subsubsection[{make\+Attr\+Dict}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+traces.\+\_\+cfgfile.\+make\+Attr\+Dict (
+\begin{DoxyParamCaption}
+\item[{}]{sectionname, }
+\item[{}]{modulename, }
+\item[{}]{param\+Specs}
+\end{DoxyParamCaption}
+)}\label{namespacesoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_ae5242f90d9cfb290f14d59027088de1e}
+\begin{DoxyVerb}Converts a parameter tree configuration setup into an attribute dictionary. Requires specific setup
+of parameter tree, assumes passed a single-element list, with first element having 'children'. No
+sub-groups allowed. Any element without a 'value' key is skipped.
+\end{DoxyVerb}
+ 
+\begin{DoxyCode}
+38 \textcolor{keyword}{def }\hyperlink{namespacesoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_ae5242f90d9cfb290f14d59027088de1e}{makeAttrDict}(sectionname, modulename, paramSpecs):
+39     \textcolor{stringliteral}{"""}
+40 \textcolor{stringliteral}{    Converts a parameter tree configuration setup into an attribute dictionary. Requires specific setup}
+41 \textcolor{stringliteral}{    of parameter tree, assumes passed a single-element list, with first element having 'children'. No}
+42 \textcolor{stringliteral}{    sub-groups allowed. Any element without a 'value' key is skipped.}
+43 \textcolor{stringliteral}{    """}
+44     
+45     ps = paramSpecs[0][\textcolor{stringliteral}{'children'}]
+46     
+47     attrDict = \{
+48                 \textcolor{stringliteral}{"sectionName"}:sectionname,
+49                 \textcolor{stringliteral}{"moduleName"}:modulename,
+50                 \textcolor{stringliteral}{"module"}:\textcolor{keywordtype}{None},
+51                 \textcolor{stringliteral}{"values"}:\{\},
+52                 \}    
+53     order = 0    
+54     \textcolor{keywordflow}{for} p \textcolor{keywordflow}{in} ps:
+55         \textcolor{keywordflow}{try}:
+56             edit = \textcolor{keywordflow}{not} p[\textcolor{stringliteral}{"readonly"}]
+57         \textcolor{keywordflow}{except} KeyError:
+58             edit = \textcolor{keyword}{True}
+59             
+60         \textcolor{keywordflow}{try}:
+61             attrDict[\textcolor{stringliteral}{"values"}][p[\textcolor{stringliteral}{"key"}]] = \{\textcolor{stringliteral}{"order"}:order, \textcolor{stringliteral}{"value"}:p[\textcolor{stringliteral}{"value"}], \textcolor{stringliteral}{"desc"}:p[\textcolor{stringliteral}{"name"}], \textcolor{stringliteral}{"changed"}:\textcolor{keyword}{
+      False}, \textcolor{stringliteral}{"editable"}:edit\}
+62         \textcolor{keywordflow}{except} KeyError:
+63             \textcolor{comment}{#Silently skip anything without a 'value' attribute given, which forms the initial value}
+64             \textcolor{keywordflow}{pass}
+65         
+66         order += 1
+67         
+68     \textcolor{keywordflow}{return} attrDict
+69     
+70    
+\end{DoxyCode}
+
+
+\subsection{Variable Documentation}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_ace8a3b8ccc370e5d6fc081e07eb5ea19}{}\index{software\+::chipwhisperer\+::common\+::traces\+::\+\_\+cfgfile@{software\+::chipwhisperer\+::common\+::traces\+::\+\_\+cfgfile}!\+\_\+\+\_\+author\+\_\+\+\_\+@{\+\_\+\+\_\+author\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+author\+\_\+\+\_\+@{\+\_\+\+\_\+author\+\_\+\+\_\+}!software\+::chipwhisperer\+::common\+::traces\+::\+\_\+cfgfile@{software\+::chipwhisperer\+::common\+::traces\+::\+\_\+cfgfile}}
+\subsubsection[{\+\_\+\+\_\+author\+\_\+\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}string software.\+chipwhisperer.\+common.\+traces.\+\_\+cfgfile.\+\_\+\+\_\+author\+\_\+\+\_\+ = \char`\"{}Colin O\textquotesingle{}Flynn\char`\"{}}\label{namespacesoftware_1_1chipwhisperer_1_1common_1_1traces_1_1__cfgfile_ace8a3b8ccc370e5d6fc081e07eb5ea19}

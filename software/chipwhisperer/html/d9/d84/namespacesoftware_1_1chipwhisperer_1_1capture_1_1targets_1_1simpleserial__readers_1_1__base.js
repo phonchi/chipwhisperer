@@ -1,0 +1,4 @@
+var namespacesoftware_1_1chipwhisperer_1_1capture_1_1targets_1_1simpleserial__readers_1_1__base =
+[
+    [ "SimpleSerialTemplate", "d1/dc3/classsoftware_1_1chipwhisperer_1_1capture_1_1targets_1_1simpleserial__readers_1_1__base_1_1SimpleSerialTemplate.html", "d1/dc3/classsoftware_1_1chipwhisperer_1_1capture_1_1targets_1_1simpleserial__readers_1_1__base_1_1SimpleSerialTemplate" ]
+];

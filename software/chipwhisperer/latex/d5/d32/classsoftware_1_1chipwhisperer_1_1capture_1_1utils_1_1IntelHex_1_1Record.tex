@@ -1,0 +1,272 @@
+\hypertarget{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1Record}{}\section{software.\+chipwhisperer.\+capture.\+utils.\+Intel\+Hex.\+Record Class Reference}
+\label{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1Record}\index{software.\+chipwhisperer.\+capture.\+utils.\+Intel\+Hex.\+Record@{software.\+chipwhisperer.\+capture.\+utils.\+Intel\+Hex.\+Record}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1Record_a1569da4fa0d9b1d4b55b231eacbd2c1a}{data} (offset, bytes)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1Record_a06ffc2b3d361d1ae984174bdf66355c4}{eof} ()
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1Record_a0a701368eaee09b09a75f066c10855b1}{extended\+\_\+segment\+\_\+address} (usba)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1Record_afc7c6958ffa23dfb4806eb2700473401}{start\+\_\+segment\+\_\+address} (cs, ip)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1Record_a5dc9a50c782883c50958fe350dfecc06}{extended\+\_\+linear\+\_\+address} (ulba)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1Record_ad6f86854fcc9f437e7b26d89f54d16bd}{start\+\_\+linear\+\_\+address} (eip)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+tuple \hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1Record_aeef662fd4bb0403161279105c8a62198}{data} = staticmethod(data)
+\item 
+tuple \hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1Record_a477afb71966aed6301c61218c9f4dba1}{eof} = staticmethod(eof)
+\item 
+tuple \hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1Record_a2c663a7e9a87820391387ef41f377735}{extended\+\_\+segment\+\_\+address} = staticmethod(extended\+\_\+segment\+\_\+address)
+\item 
+tuple \hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1Record_aac32e40d4f3228b6b0889ad0f0fb1718}{start\+\_\+segment\+\_\+address} = staticmethod(start\+\_\+segment\+\_\+address)
+\item 
+tuple \hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1Record_a37025192502e973c36cae2704cd0e510}{extended\+\_\+linear\+\_\+address} = staticmethod(extended\+\_\+linear\+\_\+address)
+\item 
+tuple \hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1Record_ad8aa161e2b23c82719b0ba93fe28c045}{start\+\_\+linear\+\_\+address} = staticmethod(start\+\_\+linear\+\_\+address)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Helper methods to build valid ihex records.\end{DoxyVerb}
+ 
+
+Inheritance diagram for software.\+chipwhisperer.\+capture.\+utils.\+Intel\+Hex.\+Record\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{d8/d0a/classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1Record__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for software.\+chipwhisperer.\+capture.\+utils.\+Intel\+Hex.\+Record\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{d2/d55/classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1Record__coll__graph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1Record_a1569da4fa0d9b1d4b55b231eacbd2c1a}{}\index{software\+::chipwhisperer\+::capture\+::utils\+::\+Intel\+Hex\+::\+Record@{software\+::chipwhisperer\+::capture\+::utils\+::\+Intel\+Hex\+::\+Record}!data@{data}}
+\index{data@{data}!software\+::chipwhisperer\+::capture\+::utils\+::\+Intel\+Hex\+::\+Record@{software\+::chipwhisperer\+::capture\+::utils\+::\+Intel\+Hex\+::\+Record}}
+\subsubsection[{data}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+capture.\+utils.\+Intel\+Hex.\+Record.\+data (
+\begin{DoxyParamCaption}
+\item[{}]{offset, }
+\item[{}]{bytes}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1Record_a1569da4fa0d9b1d4b55b231eacbd2c1a}
+\begin{DoxyVerb}Return Data record. This constructs the full record, including
+the length information, the record type (0x00), the
+checksum, and the offset.
+
+@param  offset  load offset of first byte.
+@param  bytes   list of byte values to pack into record.
+
+@return         String representation of one HEX record
+\end{DoxyVerb}
+ 
+
+References software.\+chipwhisperer.\+capture.\+utils.\+Intel\+Hex.\+Record.\+data.
+
+
+\begin{DoxyCode}
+1088     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1Record_aeef662fd4bb0403161279105c8a62198}{data}(offset, bytes):
+1089         \textcolor{stringliteral}{"""Return Data record. This constructs the full record, including}
+1090 \textcolor{stringliteral}{        the length information, the record type (0x00), the}
+1091 \textcolor{stringliteral}{        checksum, and the offset.}
+1092 \textcolor{stringliteral}{}
+1093 \textcolor{stringliteral}{        @param  offset  load offset of first byte.}
+1094 \textcolor{stringliteral}{        @param  bytes   list of byte values to pack into record.}
+1095 \textcolor{stringliteral}{}
+1096 \textcolor{stringliteral}{        @return         String representation of one HEX record}
+1097 \textcolor{stringliteral}{        """}
+1098         \textcolor{keyword}{assert} 0 <= offset < 65536
+1099         \textcolor{keyword}{assert} 0 < len(bytes) < 256
+1100         b = [len(bytes), (offset >> 8) & 0x0FF, offset & 0x0FF, 0x00] + bytes
+1101         \textcolor{keywordflow}{return} Record.\_from\_bytes(b)
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1Record_a06ffc2b3d361d1ae984174bdf66355c4}{}\index{software\+::chipwhisperer\+::capture\+::utils\+::\+Intel\+Hex\+::\+Record@{software\+::chipwhisperer\+::capture\+::utils\+::\+Intel\+Hex\+::\+Record}!eof@{eof}}
+\index{eof@{eof}!software\+::chipwhisperer\+::capture\+::utils\+::\+Intel\+Hex\+::\+Record@{software\+::chipwhisperer\+::capture\+::utils\+::\+Intel\+Hex\+::\+Record}}
+\subsubsection[{eof}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+capture.\+utils.\+Intel\+Hex.\+Record.\+eof (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1Record_a06ffc2b3d361d1ae984174bdf66355c4}
+\begin{DoxyVerb}Return End of File record as a string.
+@return         String representation of Intel Hex EOF record 
+\end{DoxyVerb}
+ 
+\begin{DoxyCode}
+1104     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1Record_a06ffc2b3d361d1ae984174bdf66355c4}{eof}():
+1105         \textcolor{stringliteral}{"""Return End of File record as a string.}
+1106 \textcolor{stringliteral}{        @return         String representation of Intel Hex EOF record }
+1107 \textcolor{stringliteral}{        """}
+1108         \textcolor{keywordflow}{return} \textcolor{stringliteral}{':00000001FF'}
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1Record_a5dc9a50c782883c50958fe350dfecc06}{}\index{software\+::chipwhisperer\+::capture\+::utils\+::\+Intel\+Hex\+::\+Record@{software\+::chipwhisperer\+::capture\+::utils\+::\+Intel\+Hex\+::\+Record}!extended\+\_\+linear\+\_\+address@{extended\+\_\+linear\+\_\+address}}
+\index{extended\+\_\+linear\+\_\+address@{extended\+\_\+linear\+\_\+address}!software\+::chipwhisperer\+::capture\+::utils\+::\+Intel\+Hex\+::\+Record@{software\+::chipwhisperer\+::capture\+::utils\+::\+Intel\+Hex\+::\+Record}}
+\subsubsection[{extended\+\_\+linear\+\_\+address}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+capture.\+utils.\+Intel\+Hex.\+Record.\+extended\+\_\+linear\+\_\+address (
+\begin{DoxyParamCaption}
+\item[{}]{ulba}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1Record_a5dc9a50c782883c50958fe350dfecc06}
+\begin{DoxyVerb}Return Extended Linear Address Record.
+@param  ulba    Upper Linear Base Address.
+
+@return         String representation of Intel Hex ELA record.
+\end{DoxyVerb}
+ 
+
+References software.\+chipwhisperer.\+capture.\+utils.\+Intel\+Hex.\+Record.\+extended\+\_\+linear\+\_\+address.
+
+
+\begin{DoxyCode}
+1133     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1Record_a37025192502e973c36cae2704cd0e510}{extended\_linear\_address}(ulba):
+1134         \textcolor{stringliteral}{"""Return Extended Linear Address Record.}
+1135 \textcolor{stringliteral}{        @param  ulba    Upper Linear Base Address.}
+1136 \textcolor{stringliteral}{}
+1137 \textcolor{stringliteral}{        @return         String representation of Intel Hex ELA record.}
+1138 \textcolor{stringliteral}{        """}
+1139         b = [2, 0, 0, 0x04, (ulba >> 8) & 0x0FF, ulba & 0x0FF]
+1140         \textcolor{keywordflow}{return} Record.\_from\_bytes(b)
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1Record_a0a701368eaee09b09a75f066c10855b1}{}\index{software\+::chipwhisperer\+::capture\+::utils\+::\+Intel\+Hex\+::\+Record@{software\+::chipwhisperer\+::capture\+::utils\+::\+Intel\+Hex\+::\+Record}!extended\+\_\+segment\+\_\+address@{extended\+\_\+segment\+\_\+address}}
+\index{extended\+\_\+segment\+\_\+address@{extended\+\_\+segment\+\_\+address}!software\+::chipwhisperer\+::capture\+::utils\+::\+Intel\+Hex\+::\+Record@{software\+::chipwhisperer\+::capture\+::utils\+::\+Intel\+Hex\+::\+Record}}
+\subsubsection[{extended\+\_\+segment\+\_\+address}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+capture.\+utils.\+Intel\+Hex.\+Record.\+extended\+\_\+segment\+\_\+address (
+\begin{DoxyParamCaption}
+\item[{}]{usba}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1Record_a0a701368eaee09b09a75f066c10855b1}
+\begin{DoxyVerb}Return Extended Segment Address Record.
+@param  usba     Upper Segment Base Address.
+
+@return         String representation of Intel Hex USBA record.
+\end{DoxyVerb}
+ 
+
+References software.\+chipwhisperer.\+capture.\+utils.\+Intel\+Hex.\+Record.\+extended\+\_\+segment\+\_\+address.
+
+
+\begin{DoxyCode}
+1111     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1Record_a2c663a7e9a87820391387ef41f377735}{extended\_segment\_address}(usba):
+1112         \textcolor{stringliteral}{"""Return Extended Segment Address Record.}
+1113 \textcolor{stringliteral}{        @param  usba     Upper Segment Base Address.}
+1114 \textcolor{stringliteral}{}
+1115 \textcolor{stringliteral}{        @return         String representation of Intel Hex USBA record.}
+1116 \textcolor{stringliteral}{        """}
+1117         b = [2, 0, 0, 0x02, (usba >> 8) & 0x0FF, usba & 0x0FF]
+1118         \textcolor{keywordflow}{return} Record.\_from\_bytes(b)
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1Record_ad6f86854fcc9f437e7b26d89f54d16bd}{}\index{software\+::chipwhisperer\+::capture\+::utils\+::\+Intel\+Hex\+::\+Record@{software\+::chipwhisperer\+::capture\+::utils\+::\+Intel\+Hex\+::\+Record}!start\+\_\+linear\+\_\+address@{start\+\_\+linear\+\_\+address}}
+\index{start\+\_\+linear\+\_\+address@{start\+\_\+linear\+\_\+address}!software\+::chipwhisperer\+::capture\+::utils\+::\+Intel\+Hex\+::\+Record@{software\+::chipwhisperer\+::capture\+::utils\+::\+Intel\+Hex\+::\+Record}}
+\subsubsection[{start\+\_\+linear\+\_\+address}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+capture.\+utils.\+Intel\+Hex.\+Record.\+start\+\_\+linear\+\_\+address (
+\begin{DoxyParamCaption}
+\item[{}]{eip}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1Record_ad6f86854fcc9f437e7b26d89f54d16bd}
+\begin{DoxyVerb}Return Start Linear Address Record.
+@param  eip     32-bit linear address for the EIP register.
+
+@return         String representation of Intel Hex SLA record.
+\end{DoxyVerb}
+ 
+
+References software.\+chipwhisperer.\+capture.\+utils.\+Intel\+Hex.\+Record.\+start\+\_\+linear\+\_\+address.
+
+
+\begin{DoxyCode}
+1143     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1Record_ad8aa161e2b23c82719b0ba93fe28c045}{start\_linear\_address}(eip):
+1144         \textcolor{stringliteral}{"""Return Start Linear Address Record.}
+1145 \textcolor{stringliteral}{        @param  eip     32-bit linear address for the EIP register.}
+1146 \textcolor{stringliteral}{}
+1147 \textcolor{stringliteral}{        @return         String representation of Intel Hex SLA record.}
+1148 \textcolor{stringliteral}{        """}
+1149         b = [4, 0, 0, 0x05, (eip >> 24) & 0x0FF, (eip >> 16) & 0x0FF,
+1150              (eip >> 8) & 0x0FF, eip & 0x0FF]
+1151         \textcolor{keywordflow}{return} Record.\_from\_bytes(b)
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1Record_afc7c6958ffa23dfb4806eb2700473401}{}\index{software\+::chipwhisperer\+::capture\+::utils\+::\+Intel\+Hex\+::\+Record@{software\+::chipwhisperer\+::capture\+::utils\+::\+Intel\+Hex\+::\+Record}!start\+\_\+segment\+\_\+address@{start\+\_\+segment\+\_\+address}}
+\index{start\+\_\+segment\+\_\+address@{start\+\_\+segment\+\_\+address}!software\+::chipwhisperer\+::capture\+::utils\+::\+Intel\+Hex\+::\+Record@{software\+::chipwhisperer\+::capture\+::utils\+::\+Intel\+Hex\+::\+Record}}
+\subsubsection[{start\+\_\+segment\+\_\+address}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+capture.\+utils.\+Intel\+Hex.\+Record.\+start\+\_\+segment\+\_\+address (
+\begin{DoxyParamCaption}
+\item[{}]{cs, }
+\item[{}]{ip}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1Record_afc7c6958ffa23dfb4806eb2700473401}
+\begin{DoxyVerb}Return Start Segment Address Record.
+@param  cs      16-bit value for CS register.
+@param  ip      16-bit value for IP register.
+
+@return         String representation of Intel Hex SSA record.
+\end{DoxyVerb}
+ 
+
+References software.\+chipwhisperer.\+capture.\+utils.\+Intel\+Hex.\+Record.\+start\+\_\+segment\+\_\+address.
+
+
+\begin{DoxyCode}
+1121     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1Record_aac32e40d4f3228b6b0889ad0f0fb1718}{start\_segment\_address}(cs, ip):
+1122         \textcolor{stringliteral}{"""Return Start Segment Address Record.}
+1123 \textcolor{stringliteral}{        @param  cs      16-bit value for CS register.}
+1124 \textcolor{stringliteral}{        @param  ip      16-bit value for IP register.}
+1125 \textcolor{stringliteral}{}
+1126 \textcolor{stringliteral}{        @return         String representation of Intel Hex SSA record.}
+1127 \textcolor{stringliteral}{        """}
+1128         b = [4, 0, 0, 0x03, (cs >> 8) & 0x0FF, cs & 0x0FF,
+1129              (ip >> 8) & 0x0FF, ip & 0x0FF]
+1130         \textcolor{keywordflow}{return} Record.\_from\_bytes(b)
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1Record_aeef662fd4bb0403161279105c8a62198}{}\index{software\+::chipwhisperer\+::capture\+::utils\+::\+Intel\+Hex\+::\+Record@{software\+::chipwhisperer\+::capture\+::utils\+::\+Intel\+Hex\+::\+Record}!data@{data}}
+\index{data@{data}!software\+::chipwhisperer\+::capture\+::utils\+::\+Intel\+Hex\+::\+Record@{software\+::chipwhisperer\+::capture\+::utils\+::\+Intel\+Hex\+::\+Record}}
+\subsubsection[{data}]{\setlength{\rightskip}{0pt plus 5cm}tuple software.\+chipwhisperer.\+capture.\+utils.\+Intel\+Hex.\+Record.\+data = staticmethod(data)\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1Record_aeef662fd4bb0403161279105c8a62198}
+
+
+Referenced by software.\+chipwhisperer.\+capture.\+utils.\+Intel\+Hex.\+Record.\+data(), software.\+chipwhisperer.\+common.\+utils.\+util.\+Observable.\+set\+Value(), and software.\+chipwhisperer.\+common.\+utils.\+util.\+Observable.\+value().
+
+\hypertarget{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1Record_a477afb71966aed6301c61218c9f4dba1}{}\index{software\+::chipwhisperer\+::capture\+::utils\+::\+Intel\+Hex\+::\+Record@{software\+::chipwhisperer\+::capture\+::utils\+::\+Intel\+Hex\+::\+Record}!eof@{eof}}
+\index{eof@{eof}!software\+::chipwhisperer\+::capture\+::utils\+::\+Intel\+Hex\+::\+Record@{software\+::chipwhisperer\+::capture\+::utils\+::\+Intel\+Hex\+::\+Record}}
+\subsubsection[{eof}]{\setlength{\rightskip}{0pt plus 5cm}tuple software.\+chipwhisperer.\+capture.\+utils.\+Intel\+Hex.\+Record.\+eof = staticmethod(eof)\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1Record_a477afb71966aed6301c61218c9f4dba1}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1Record_a37025192502e973c36cae2704cd0e510}{}\index{software\+::chipwhisperer\+::capture\+::utils\+::\+Intel\+Hex\+::\+Record@{software\+::chipwhisperer\+::capture\+::utils\+::\+Intel\+Hex\+::\+Record}!extended\+\_\+linear\+\_\+address@{extended\+\_\+linear\+\_\+address}}
+\index{extended\+\_\+linear\+\_\+address@{extended\+\_\+linear\+\_\+address}!software\+::chipwhisperer\+::capture\+::utils\+::\+Intel\+Hex\+::\+Record@{software\+::chipwhisperer\+::capture\+::utils\+::\+Intel\+Hex\+::\+Record}}
+\subsubsection[{extended\+\_\+linear\+\_\+address}]{\setlength{\rightskip}{0pt plus 5cm}tuple software.\+chipwhisperer.\+capture.\+utils.\+Intel\+Hex.\+Record.\+extended\+\_\+linear\+\_\+address = staticmethod(extended\+\_\+linear\+\_\+address)\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1Record_a37025192502e973c36cae2704cd0e510}
+
+
+Referenced by software.\+chipwhisperer.\+capture.\+utils.\+Intel\+Hex.\+Record.\+extended\+\_\+linear\+\_\+address().
+
+\hypertarget{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1Record_a2c663a7e9a87820391387ef41f377735}{}\index{software\+::chipwhisperer\+::capture\+::utils\+::\+Intel\+Hex\+::\+Record@{software\+::chipwhisperer\+::capture\+::utils\+::\+Intel\+Hex\+::\+Record}!extended\+\_\+segment\+\_\+address@{extended\+\_\+segment\+\_\+address}}
+\index{extended\+\_\+segment\+\_\+address@{extended\+\_\+segment\+\_\+address}!software\+::chipwhisperer\+::capture\+::utils\+::\+Intel\+Hex\+::\+Record@{software\+::chipwhisperer\+::capture\+::utils\+::\+Intel\+Hex\+::\+Record}}
+\subsubsection[{extended\+\_\+segment\+\_\+address}]{\setlength{\rightskip}{0pt plus 5cm}tuple software.\+chipwhisperer.\+capture.\+utils.\+Intel\+Hex.\+Record.\+extended\+\_\+segment\+\_\+address = staticmethod(extended\+\_\+segment\+\_\+address)\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1Record_a2c663a7e9a87820391387ef41f377735}
+
+
+Referenced by software.\+chipwhisperer.\+capture.\+utils.\+Intel\+Hex.\+Record.\+extended\+\_\+segment\+\_\+address().
+
+\hypertarget{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1Record_ad8aa161e2b23c82719b0ba93fe28c045}{}\index{software\+::chipwhisperer\+::capture\+::utils\+::\+Intel\+Hex\+::\+Record@{software\+::chipwhisperer\+::capture\+::utils\+::\+Intel\+Hex\+::\+Record}!start\+\_\+linear\+\_\+address@{start\+\_\+linear\+\_\+address}}
+\index{start\+\_\+linear\+\_\+address@{start\+\_\+linear\+\_\+address}!software\+::chipwhisperer\+::capture\+::utils\+::\+Intel\+Hex\+::\+Record@{software\+::chipwhisperer\+::capture\+::utils\+::\+Intel\+Hex\+::\+Record}}
+\subsubsection[{start\+\_\+linear\+\_\+address}]{\setlength{\rightskip}{0pt plus 5cm}tuple software.\+chipwhisperer.\+capture.\+utils.\+Intel\+Hex.\+Record.\+start\+\_\+linear\+\_\+address = staticmethod(start\+\_\+linear\+\_\+address)\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1Record_ad8aa161e2b23c82719b0ba93fe28c045}
+
+
+Referenced by software.\+chipwhisperer.\+capture.\+utils.\+Intel\+Hex.\+Record.\+start\+\_\+linear\+\_\+address().
+
+\hypertarget{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1Record_aac32e40d4f3228b6b0889ad0f0fb1718}{}\index{software\+::chipwhisperer\+::capture\+::utils\+::\+Intel\+Hex\+::\+Record@{software\+::chipwhisperer\+::capture\+::utils\+::\+Intel\+Hex\+::\+Record}!start\+\_\+segment\+\_\+address@{start\+\_\+segment\+\_\+address}}
+\index{start\+\_\+segment\+\_\+address@{start\+\_\+segment\+\_\+address}!software\+::chipwhisperer\+::capture\+::utils\+::\+Intel\+Hex\+::\+Record@{software\+::chipwhisperer\+::capture\+::utils\+::\+Intel\+Hex\+::\+Record}}
+\subsubsection[{start\+\_\+segment\+\_\+address}]{\setlength{\rightskip}{0pt plus 5cm}tuple software.\+chipwhisperer.\+capture.\+utils.\+Intel\+Hex.\+Record.\+start\+\_\+segment\+\_\+address = staticmethod(start\+\_\+segment\+\_\+address)\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1Record_aac32e40d4f3228b6b0889ad0f0fb1718}
+
+
+Referenced by software.\+chipwhisperer.\+capture.\+utils.\+Intel\+Hex.\+Record.\+start\+\_\+segment\+\_\+address().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{IntelHex_8py}{Intel\+Hex.\+py}\end{DoxyCompactItemize}

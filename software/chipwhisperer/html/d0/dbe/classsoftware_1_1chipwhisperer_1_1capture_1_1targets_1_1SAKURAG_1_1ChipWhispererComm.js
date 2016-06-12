@@ -1,0 +1,28 @@
+var classsoftware_1_1chipwhisperer_1_1capture_1_1targets_1_1SAKURAG_1_1ChipWhispererComm =
+[
+    [ "__init__", "d0/dbe/classsoftware_1_1chipwhisperer_1_1capture_1_1targets_1_1SAKURAG_1_1ChipWhispererComm.html#a2ac1db61d004b629819751f61c8ad493", null ],
+    [ "close", "d0/dbe/classsoftware_1_1chipwhisperer_1_1capture_1_1targets_1_1SAKURAG_1_1ChipWhispererComm.html#a751c8ceb6f8314b54180902500c056c2", null ],
+    [ "con", "d0/dbe/classsoftware_1_1chipwhisperer_1_1capture_1_1targets_1_1SAKURAG_1_1ChipWhispererComm.html#adce7a88374360a598223aac43faa4d25", null ],
+    [ "disconnect", "d0/dbe/classsoftware_1_1chipwhisperer_1_1capture_1_1targets_1_1SAKURAG_1_1ChipWhispererComm.html#a85cd276bfd59c530eaeffc852d223a7b", null ],
+    [ "flush", "d0/dbe/classsoftware_1_1chipwhisperer_1_1capture_1_1targets_1_1SAKURAG_1_1ChipWhispererComm.html#a7d0dfb167255f9298cbc3f4e9e1ea2f0", null ],
+    [ "read", "d0/dbe/classsoftware_1_1chipwhisperer_1_1capture_1_1targets_1_1SAKURAG_1_1ChipWhispererComm.html#a4153eefa9d08bcb72a42f3ad845546fe", null ],
+    [ "read128", "d0/dbe/classsoftware_1_1chipwhisperer_1_1capture_1_1targets_1_1SAKURAG_1_1ChipWhispererComm.html#ae32d114745b77e88b95297ef270a8afd", null ],
+    [ "readMsg", "d0/dbe/classsoftware_1_1chipwhisperer_1_1capture_1_1targets_1_1SAKURAG_1_1ChipWhispererComm.html#a8bbb21f0e60f4f8787041ad65b9029e9", null ],
+    [ "readStatus", "d0/dbe/classsoftware_1_1chipwhisperer_1_1capture_1_1targets_1_1SAKURAG_1_1ChipWhispererComm.html#a4bd764c98c163e7f0e62a3bc6e2d0d40", null ],
+    [ "reset", "d0/dbe/classsoftware_1_1chipwhisperer_1_1capture_1_1targets_1_1SAKURAG_1_1ChipWhispererComm.html#a0ad84d5dca53c99bec10292a1ca3ff46", null ],
+    [ "write", "d0/dbe/classsoftware_1_1chipwhisperer_1_1capture_1_1targets_1_1SAKURAG_1_1ChipWhispererComm.html#a77f2dca36fb710c9a3ee67b6f797d88a", null ],
+    [ "writeMsg", "d0/dbe/classsoftware_1_1chipwhisperer_1_1capture_1_1targets_1_1SAKURAG_1_1ChipWhispererComm.html#ab1bfde1b19eefaefd3f18ee4178c982c", null ],
+    [ "ADDR_FIFO", "d0/dbe/classsoftware_1_1chipwhisperer_1_1capture_1_1targets_1_1SAKURAG_1_1ChipWhispererComm.html#a2d8e1e80332b73a79cacc8d693c6fc9c", null ],
+    [ "ADDR_STATUS", "d0/dbe/classsoftware_1_1chipwhisperer_1_1capture_1_1targets_1_1SAKURAG_1_1ChipWhispererComm.html#ab32929b54d31f5e1ceae0c8c23df1a45", null ],
+    [ "CODE_READ", "d0/dbe/classsoftware_1_1chipwhisperer_1_1capture_1_1targets_1_1SAKURAG_1_1ChipWhispererComm.html#ad2ccac46a58b65bfb9a373ff798d23bd", null ],
+    [ "CODE_WRITE", "d0/dbe/classsoftware_1_1chipwhisperer_1_1capture_1_1targets_1_1SAKURAG_1_1ChipWhispererComm.html#a1e107c656728a8cc0f3ceaa461c9e852", null ],
+    [ "FLAG_RDEMPTY", "d0/dbe/classsoftware_1_1chipwhisperer_1_1capture_1_1targets_1_1SAKURAG_1_1ChipWhispererComm.html#af3f1fa7ab94831dff83830566879e9b1", null ],
+    [ "FLAG_RESET", "d0/dbe/classsoftware_1_1chipwhisperer_1_1capture_1_1targets_1_1SAKURAG_1_1ChipWhispererComm.html#ac677a497db9caf3b306164e16cf34a2d", null ],
+    [ "FLAG_WRFULL", "d0/dbe/classsoftware_1_1chipwhisperer_1_1capture_1_1targets_1_1SAKURAG_1_1ChipWhispererComm.html#af41117429de7bf24fa1a953afb072e46", null ],
+    [ "oa", "d0/dbe/classsoftware_1_1chipwhisperer_1_1capture_1_1targets_1_1SAKURAG_1_1ChipWhispererComm.html#a3a404d2620d6092be22795ff7c4407b5", null ],
+    [ "oaiface", "d0/dbe/classsoftware_1_1chipwhisperer_1_1capture_1_1targets_1_1SAKURAG_1_1ChipWhispererComm.html#a949d1a6a1166eb27cf9209f36059e3f0", null ],
+    [ "qtadc", "d0/dbe/classsoftware_1_1chipwhisperer_1_1capture_1_1targets_1_1SAKURAG_1_1ChipWhispererComm.html#a4a0a888b021ee8a1ae9b19f1e7efcc8c", null ],
+    [ "serialnum", "d0/dbe/classsoftware_1_1chipwhisperer_1_1capture_1_1targets_1_1SAKURAG_1_1ChipWhispererComm.html#a34b8d52b86106b7013cdeac4cbf9b277", null ],
+    [ "setSerial", "d0/dbe/classsoftware_1_1chipwhisperer_1_1capture_1_1targets_1_1SAKURAG_1_1ChipWhispererComm.html#a75c4e8865a7859de1be9132fafc1ae6c", null ],
+    [ "standalone", "d0/dbe/classsoftware_1_1chipwhisperer_1_1capture_1_1targets_1_1SAKURAG_1_1ChipWhispererComm.html#a7027dac3728fcdd9cccbee5e5f416731", null ]
+];

@@ -1,0 +1,460 @@
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1ExtendedParameter_1_1ExtendedParameter}{}\section{software.\+chipwhisperer.\+common.\+api.\+Extended\+Parameter.\+Extended\+Parameter Class Reference}
+\label{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1ExtendedParameter_1_1ExtendedParameter}\index{software.\+chipwhisperer.\+common.\+api.\+Extended\+Parameter.\+Extended\+Parameter@{software.\+chipwhisperer.\+common.\+api.\+Extended\+Parameter.\+Extended\+Parameter}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1ExtendedParameter_1_1ExtendedParameter_a2ab4764a9cd83977273f8d8e76a4efb7}{get\+All\+Parameters}
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1ExtendedParameter_1_1ExtendedParameter_aad823165c339700ff83a6707c0c33c65}{find\+Help\+Window\+Method} (cur\+Param)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1ExtendedParameter_1_1ExtendedParameter_a081497ebb71276b0ac24fb4811ca1dcc}{show\+Help\+Window} (cur\+Param)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1ExtendedParameter_1_1ExtendedParameter_a820104612a421b9f641503261d5e8299}{draw\+Help\+Icon} (cur\+Param)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1ExtendedParameter_1_1ExtendedParameter_af91e882fe94b8bd9e0532488a9a19d00}{add\+Help\+Icons} (cur\+Param)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1ExtendedParameter_1_1ExtendedParameter_a78ea872d430d928ece118acfe32b9f59}{setup\+Extended}
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1ExtendedParameter_1_1ExtendedParameter_a1fdfcaabd393a61caaacd5409fec8fe6}{change} (param, changes)
+\begin{DoxyCompactList}\small\item\em If anything changes in the tree, print a message. \end{DoxyCompactList}\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1ExtendedParameter_1_1ExtendedParameter_af1c683f13498329d6a1d06401a936bfe}{param\+Tree\+Changed} (self, param, changes)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1ExtendedParameter_1_1ExtendedParameter_a0e2c123c60b1b6eeb91cc4b0c808e40d}{reload\+Params}
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1ExtendedParameter_1_1ExtendedParameter_a2eed34995dc4ee05168b2e75d833ddb5}{find\+Param}
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1ExtendedParameter_1_1ExtendedParameter_af7cd4372c3875a880302b2c80989a1fe}{show\+Script\+Parameter} (param, changes, top\+Param)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1ExtendedParameter_1_1ExtendedParameter_a1c38aaa80058ca10945d48cbba61dde9}{param\+Scripting\+Output} = None
+\end{DoxyCompactItemize}
+
+
+Collaboration diagram for software.\+chipwhisperer.\+common.\+api.\+Extended\+Parameter.\+Extended\+Parameter\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=272pt]{d0/d83/classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1ExtendedParameter_1_1ExtendedParameter__coll__graph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1ExtendedParameter_1_1ExtendedParameter_af91e882fe94b8bd9e0532488a9a19d00}{}\index{software\+::chipwhisperer\+::common\+::api\+::\+Extended\+Parameter\+::\+Extended\+Parameter@{software\+::chipwhisperer\+::common\+::api\+::\+Extended\+Parameter\+::\+Extended\+Parameter}!add\+Help\+Icons@{add\+Help\+Icons}}
+\index{add\+Help\+Icons@{add\+Help\+Icons}!software\+::chipwhisperer\+::common\+::api\+::\+Extended\+Parameter\+::\+Extended\+Parameter@{software\+::chipwhisperer\+::common\+::api\+::\+Extended\+Parameter\+::\+Extended\+Parameter}}
+\subsubsection[{add\+Help\+Icons}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+api.\+Extended\+Parameter.\+Extended\+Parameter.\+add\+Help\+Icons (
+\begin{DoxyParamCaption}
+\item[{}]{cur\+Param}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1ExtendedParameter_1_1ExtendedParameter_af91e882fe94b8bd9e0532488a9a19d00}
+\begin{DoxyVerb}Iterate through parameter tree, and add help icon to each one. Replaces existing class with overloaded class which will generate
+   a help icon when the widget is made.\end{DoxyVerb}
+ 
+\begin{DoxyCode}
+141     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1ExtendedParameter_1_1ExtendedParameter_af91e882fe94b8bd9e0532488a9a19d00}{addHelpIcons}(curParam):
+142         \textcolor{stringliteral}{"""Iterate through parameter tree, and add help icon to each one. Replaces existing class with
+       overloaded class which will generate}
+143 \textcolor{stringliteral}{           a help icon when the widget is made."""}
+144         \textcolor{keywordflow}{if} len(curParam.children()) > 0:
+145             \textcolor{keywordflow}{for} child \textcolor{keywordflow}{in} curParam.children():
+146                 ExtendedParameter.addHelpIcons(child)
+147         \textcolor{keywordflow}{else}:
+148             \textcolor{keywordflow}{if} str(curParam.itemClass) \textcolor{keywordflow}{in} classmapping.keys():
+149                 curParam.itemClass = classmapping[str(curParam.itemClass)]
+150 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1ExtendedParameter_1_1ExtendedParameter_a1fdfcaabd393a61caaacd5409fec8fe6}{}\index{software\+::chipwhisperer\+::common\+::api\+::\+Extended\+Parameter\+::\+Extended\+Parameter@{software\+::chipwhisperer\+::common\+::api\+::\+Extended\+Parameter\+::\+Extended\+Parameter}!change@{change}}
+\index{change@{change}!software\+::chipwhisperer\+::common\+::api\+::\+Extended\+Parameter\+::\+Extended\+Parameter@{software\+::chipwhisperer\+::common\+::api\+::\+Extended\+Parameter\+::\+Extended\+Parameter}}
+\subsubsection[{change}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+api.\+Extended\+Parameter.\+Extended\+Parameter.\+change (
+\begin{DoxyParamCaption}
+\item[{}]{param, }
+\item[{}]{changes}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1ExtendedParameter_1_1ExtendedParameter_a1fdfcaabd393a61caaacd5409fec8fe6}
+
+
+If anything changes in the tree, print a message. 
+
+\begin{DoxyVerb}Monitor changes in the tree\end{DoxyVerb}
+ 
+\begin{DoxyCode}
+166     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1ExtendedParameter_1_1ExtendedParameter_a1fdfcaabd393a61caaacd5409fec8fe6}{change}(param, changes):
+167         \textcolor{stringliteral}{"""Monitor changes in the tree"""}
+168         \textcolor{keywordflow}{for} param, change, data \textcolor{keywordflow}{in} changes:
+169 
+170             \textcolor{comment}{# print change}
+171 
+172             \textcolor{comment}{# Only trigger on 'value' changes!}
+173             \textcolor{keywordflow}{if} (change != \textcolor{stringliteral}{'value'}) \textcolor{keywordflow}{and} (change != \textcolor{stringliteral}{'activated'}):\textcolor{comment}{# and (change != 'limits'):}
+174                 \textcolor{keywordflow}{return}
+175 
+176             \textcolor{comment}{# Call specific 'set' routine associated with data}
+177             \textcolor{keywordflow}{if} \textcolor{stringliteral}{'set'} \textcolor{keywordflow}{in} param.opts:
+178                 \textcolor{comment}{# QtCore.QTimer.singleShot(0, partial(param.opts['set'], data))}
+179                 param.opts[\textcolor{stringliteral}{'set'}](data)
+180 
+181             \textcolor{keywordflow}{if} \textcolor{stringliteral}{'linked'} \textcolor{keywordflow}{in} param.opts:
+182                 par = param.parent()
+183                 \textcolor{keywordflow}{for} link \textcolor{keywordflow}{in} param.opts[\textcolor{stringliteral}{'linked'}]:
+184                     linked = par
+185                     \textcolor{keywordflow}{if} isinstance(link, tuple):
+186                         \textcolor{keywordflow}{for} p \textcolor{keywordflow}{in} link:
+187                             linked = linked.names[p]
+188                     \textcolor{keywordflow}{else}:
+189                         linked = par.names[link]
+190 
+191                     \textcolor{comment}{# QtCore.QTimer.singleShot(0, partial(linked.setValue, linked.opts['get']()))}
+192                     linked.setValue(linked.opts[\textcolor{stringliteral}{'get'}]())
+193 
+194             \textcolor{keywordflow}{if} \textcolor{stringliteral}{'action'} \textcolor{keywordflow}{in} param.opts:
+195                 \textcolor{comment}{# QtCore.QTimer.singleShot(0, param.opts['action'])}
+196                 param.opts[\textcolor{stringliteral}{'action'}]()
+197 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1ExtendedParameter_1_1ExtendedParameter_a820104612a421b9f641503261d5e8299}{}\index{software\+::chipwhisperer\+::common\+::api\+::\+Extended\+Parameter\+::\+Extended\+Parameter@{software\+::chipwhisperer\+::common\+::api\+::\+Extended\+Parameter\+::\+Extended\+Parameter}!draw\+Help\+Icon@{draw\+Help\+Icon}}
+\index{draw\+Help\+Icon@{draw\+Help\+Icon}!software\+::chipwhisperer\+::common\+::api\+::\+Extended\+Parameter\+::\+Extended\+Parameter@{software\+::chipwhisperer\+::common\+::api\+::\+Extended\+Parameter\+::\+Extended\+Parameter}}
+\subsubsection[{draw\+Help\+Icon}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+api.\+Extended\+Parameter.\+Extended\+Parameter.\+draw\+Help\+Icon (
+\begin{DoxyParamCaption}
+\item[{}]{cur\+Param}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1ExtendedParameter_1_1ExtendedParameter_a820104612a421b9f641503261d5e8299}
+\begin{DoxyVerb}Add a single help icons to a Parameter Item. Also removes the "default" button which isn't really used in our applications\end{DoxyVerb}
+ 
+\begin{DoxyCode}
+120     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1ExtendedParameter_1_1ExtendedParameter_a820104612a421b9f641503261d5e8299}{drawHelpIcon}(curParam):
+121         \textcolor{stringliteral}{"""Add a single help icons to a Parameter Item. Also removes the "default" button which isn't
+       really used in our applications"""}
+122         layout = curParam.layoutWidget.layout()
+123 
+124         \textcolor{comment}{# Bonus: We don't want the default button so delete it here}
+125         numitems = layout.count()
+126         lastitem = layout.itemAt(numitems - 1)
+127 
+128         \textcolor{keywordflow}{if} (type(lastitem.widget()) == QtGui.QPushButton) \textcolor{keywordflow}{and} lastitem.widget().width() == 20:
+129             lastitem.widget().deleteLater()
+130 
+131         \textcolor{comment}{# If help option add the button}
+132         \textcolor{keywordflow}{if} \textcolor{stringliteral}{'help'} \textcolor{keywordflow}{in} curParam.param.opts:
+133             buthelp = QtGui.QPushButton()
+134             buthelp.setFixedWidth(20)
+135             buthelp.setFixedHeight(20)
+136             buthelp.setIcon(curParam.layoutWidget.style().standardIcon(
+      QtGui.QStyle.SP\_TitleBarContextHelpButton))
+137             buthelp.clicked[bool].connect(\textcolor{keyword}{lambda} ignored: ExtendedParameter.showHelpWindow(curParam))
+138             layout.addWidget(buthelp)
+139 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1ExtendedParameter_1_1ExtendedParameter_aad823165c339700ff83a6707c0c33c65}{}\index{software\+::chipwhisperer\+::common\+::api\+::\+Extended\+Parameter\+::\+Extended\+Parameter@{software\+::chipwhisperer\+::common\+::api\+::\+Extended\+Parameter\+::\+Extended\+Parameter}!find\+Help\+Window\+Method@{find\+Help\+Window\+Method}}
+\index{find\+Help\+Window\+Method@{find\+Help\+Window\+Method}!software\+::chipwhisperer\+::common\+::api\+::\+Extended\+Parameter\+::\+Extended\+Parameter@{software\+::chipwhisperer\+::common\+::api\+::\+Extended\+Parameter\+::\+Extended\+Parameter}}
+\subsubsection[{find\+Help\+Window\+Method}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+api.\+Extended\+Parameter.\+Extended\+Parameter.\+find\+Help\+Window\+Method (
+\begin{DoxyParamCaption}
+\item[{}]{cur\+Param}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1ExtendedParameter_1_1ExtendedParameter_aad823165c339700ff83a6707c0c33c65}
+
+\begin{DoxyCode}
+82     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1ExtendedParameter_1_1ExtendedParameter_aad823165c339700ff83a6707c0c33c65}{findHelpWindowMethod}(curParam):
+83         \textcolor{keywordflow}{if} hasattr(curParam, \textcolor{stringliteral}{'param'}):
+84             \textcolor{keywordflow}{if} hasattr(curParam.param, \textcolor{stringliteral}{'opts'}):
+85                 \textcolor{keywordflow}{if} \textcolor{stringliteral}{'helpwnd'} \textcolor{keywordflow}{in} curParam.param.opts:
+86                     \textcolor{keywordflow}{return} curParam.param.opts[\textcolor{stringliteral}{'helpwnd'}]
+87 
+88         \textcolor{keywordflow}{if} hasattr(curParam, \textcolor{stringliteral}{'parent'}):
+89             \textcolor{keywordflow}{return} ExtendedParameter.findHelpWindowMethod(curParam.parent())
+90 
+91         \textcolor{keywordflow}{return} \textcolor{keywordtype}{None}
+92 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1ExtendedParameter_1_1ExtendedParameter_a2eed34995dc4ee05168b2e75d833ddb5}{}\index{software\+::chipwhisperer\+::common\+::api\+::\+Extended\+Parameter\+::\+Extended\+Parameter@{software\+::chipwhisperer\+::common\+::api\+::\+Extended\+Parameter\+::\+Extended\+Parameter}!find\+Param@{find\+Param}}
+\index{find\+Param@{find\+Param}!software\+::chipwhisperer\+::common\+::api\+::\+Extended\+Parameter\+::\+Extended\+Parameter@{software\+::chipwhisperer\+::common\+::api\+::\+Extended\+Parameter\+::\+Extended\+Parameter}}
+\subsubsection[{find\+Param}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+api.\+Extended\+Parameter.\+Extended\+Parameter.\+find\+Param (
+\begin{DoxyParamCaption}
+\item[{}]{self = {\ttfamily None}, }
+\item[{}]{param\+Key = {\ttfamily None}, }
+\item[{}]{params = {\ttfamily None}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1ExtendedParameter_1_1ExtendedParameter_a2eed34995dc4ee05168b2e75d833ddb5}
+\begin{DoxyVerb}Match parameter based on 'key'\end{DoxyVerb}
+ 
+
+References software.\+chipwhisperer.\+capture.\+scopes.\+\_\+\+Open\+A\+D\+C\+Interface.\+Open\+A\+D\+C\+Settings.\+find\+Param, software.\+chipwhisperer.\+common.\+api.\+Extended\+Parameter.\+Extended\+Parameter.\+find\+Param(), software.\+chipwhisperer.\+capture.\+scopes.\+\_\+\+Open\+A\+D\+C\+Interface.\+Clock\+Settings.\+find\+Param, software.\+chipwhisperer.\+analyzer.\+utils.\+Trace\+Explorer\+Scripts.\+Text\+Display.\+Text\+Display.\+params, software.\+chipwhisperer.\+capture.\+utils.\+Glitch\+Explorer\+Dialog.\+Tuning\+Parameter.\+params, software.\+chipwhisperer.\+capture.\+scopes.\+\_\+\+Open\+A\+D\+C\+Interface.\+Open\+A\+D\+C\+Settings.\+params, software.\+chipwhisperer.\+capture.\+scopes.\+cwhardware.\+Chip\+Whisperer\+S\+A\+D.\+Chip\+Whisperer\+S\+A\+D.\+params, software.\+chipwhisperer.\+analyzer.\+utils.\+Trace\+Explorer\+Dialog.\+Trace\+Explorer\+Dialog.\+params, software.\+chipwhisperer.\+common.\+utils.\+parameters.\+Parameterized.\+params, software.\+chipwhisperer.\+capture.\+utils.\+Glitch\+Explorer\+Dialog.\+Glitch\+Explorer\+Dialog.\+params, software.\+chipwhisperer.\+capture.\+scopes.\+cwhardware.\+Chip\+Whisperer\+Digital\+Pattern.\+Chip\+Whisperer\+Digital\+Pattern.\+params, software.\+chipwhisperer.\+analyzer.\+utils.\+Trace\+Explorer\+Scripts.\+Partition\+Display.\+Partition\+Display.\+params, software.\+chipwhisperer.\+common.\+api.\+Extended\+Parameter.\+submodule.\+params, software.\+chipwhisperer.\+common.\+api.\+Extended\+Parameter.\+module.\+params, and software.\+chipwhisperer.\+common.\+api.\+Extended\+Parameter.\+maintest.\+params.
+
+
+
+Referenced by software.\+chipwhisperer.\+common.\+results.\+attacksettings.\+Attack\+Settings.\+\_\+\+\_\+init\+\_\+\+\_\+(), software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa.\+C\+P\+A.\+\_\+\+\_\+init\+\_\+\+\_\+(), software.\+chipwhisperer.\+capture.\+utils.\+Glitch\+Explorer\+Dialog.\+Glitch\+Explorer\+Dialog.\+add\+Response(), software.\+chipwhisperer.\+capture.\+scopes.\+cwhardware.\+Chip\+Whisperer\+Glitch.\+Chip\+Whisperer\+Glitch.\+arm\+Post\+Scope(), software.\+chipwhisperer.\+capture.\+scopes.\+cwhardware.\+Chip\+Whisperer\+Glitch.\+Chip\+Whisperer\+Glitch.\+arm\+Pre\+Scope(), software.\+chipwhisperer.\+analyzer.\+attacks.\+\_\+generic\+\_\+parameters.\+Attack\+Generic\+Parameters.\+bytes\+Parameters(), software.\+chipwhisperer.\+capture.\+scopes.\+visascope\+\_\+interface.\+mso54831\+D.\+Visa\+Scope\+Interface\+\_\+\+M\+S\+O54831\+D.\+capture(), software.\+chipwhisperer.\+capture.\+targets.\+simpleserial\+\_\+readers.\+cw.\+Simple\+Serial\+\_\+\+Chip\+Whisperer.\+check\+Version(), software.\+chipwhisperer.\+capture.\+targets.\+simpleserial\+\_\+readers.\+serial.\+Simple\+Serial\+\_\+serial.\+con(), software.\+chipwhisperer.\+capture.\+targets.\+simpleserial\+\_\+readers.\+cwlite.\+Simple\+Serial\+\_\+\+Chip\+Whisperer\+Lite.\+con(), software.\+chipwhisperer.\+capture.\+targets.\+smartcard\+\_\+readers.\+system\+\_\+ser.\+Reader\+System\+S\+E\+R.\+con(), software.\+chipwhisperer.\+capture.\+targets.\+S\+A\+K\+U\+R\+A\+G.\+Sakura\+G.\+con(), software.\+chipwhisperer.\+common.\+results.\+pgevstraceplot.\+P\+G\+E\+Vs\+Trace.\+copy\+P\+G\+E(), software.\+chipwhisperer.\+capture.\+scopes.\+Visa\+Scope.\+Visa\+Scope\+Interface.\+example\+String(), software.\+chipwhisperer.\+common.\+api.\+Extended\+Parameter.\+Extended\+Parameter.\+find\+Param(), software.\+chipwhisperer.\+common.\+traces.\+Trace\+Container\+My\+S\+Q\+L.\+Trace\+Container\+My\+S\+Q\+L.\+format(), software.\+chipwhisperer.\+capture.\+scopes.\+cwhardware.\+Chip\+Whisperer\+S\+A\+D.\+Chip\+Whisperer\+S\+A\+D.\+get\+Captue\+Trace\+Ref(), software.\+chipwhisperer.\+capture.\+targets.\+Simple\+Serial.\+Simple\+Serial.\+go(), software.\+chipwhisperer.\+capture.\+targets.\+C\+W305.\+C\+W305.\+go(), software.\+chipwhisperer.\+capture.\+targets.\+C\+W305.\+C\+W305.\+gui\+\_\+selectfpga(), software.\+chipwhisperer.\+capture.\+targets.\+Simple\+Serial.\+Simple\+Serial.\+init(), software.\+chipwhisperer.\+analyzer.\+preprocessing.\+Resync\+Cross\+Correlation.\+Resync\+Cross\+Correlation.\+init(), software.\+chipwhisperer.\+analyzer.\+preprocessing.\+Resync\+Peak\+Detect.\+Resync\+Peak\+Detect.\+init(), software.\+chipwhisperer.\+capture.\+targets.\+Simple\+Serial.\+Simple\+Serial.\+load\+Input(), software.\+chipwhisperer.\+capture.\+utils.\+Glitch\+Explorer\+Dialog.\+Tuning\+Parameter.\+name(), software.\+chipwhisperer.\+common.\+results.\+waveform\+\_\+widget.\+Wave\+Form\+Widget.\+plot\+Input\+Trace(), software.\+chipwhisperer.\+capture.\+targets.\+Simple\+Serial.\+Simple\+Serial.\+read\+Output(), software.\+chipwhisperer.\+capture.\+targets.\+S\+A\+K\+U\+R\+A\+G.\+Sakura\+G.\+refresh\+Serial(), software.\+chipwhisperer.\+capture.\+targets.\+smartcard\+\_\+readers.\+chipwhisperer\+\_\+scard.\+Reader\+Chip\+Whisperer\+S\+Card.\+reset(), software.\+chipwhisperer.\+capture.\+scopes.\+cwhardware.\+Chip\+Whisperer\+Digital\+Pattern.\+Chip\+Whisperer\+Digital\+Pattern.\+reset(), software.\+chipwhisperer.\+capture.\+scopes.\+cwhardware.\+Chip\+Whisperer\+Glitch.\+Chip\+Whisperer\+Glitch.\+reset\+D\+C\+Ms(), software.\+chipwhisperer.\+capture.\+auxiliary.\+Reset\+C\+W1173\+Read.\+Reset\+C\+W1173\+Read.\+reset\+Device(), software.\+chipwhisperer.\+common.\+results.\+waveform\+\_\+widget.\+Wave\+Form\+Widget.\+reset\+Trace\+Limits(), software.\+chipwhisperer.\+capture.\+targets.\+S\+A\+K\+U\+R\+A\+G.\+Sakura\+G.\+set\+Conn(), software.\+chipwhisperer.\+capture.\+scopes.\+Visa\+Scope.\+Visa\+Scope\+Interface.\+set\+Current\+Scope(), software.\+chipwhisperer.\+analyzer.\+attacks.\+\_\+generic\+\_\+parameters.\+Attack\+Generic\+Parameters.\+set\+Generic\+Point\+Range(), software.\+chipwhisperer.\+common.\+results.\+attacksettings.\+Attack\+Settings.\+set\+Known\+Key\+Src(), software.\+chipwhisperer.\+capture.\+scopes.\+cwhardware.\+Chip\+Whisperer\+Digital\+Pattern.\+Chip\+Whisperer\+Digital\+Pattern.\+set\+Pattern(), software.\+chipwhisperer.\+capture.\+auxiliary.\+G\+P\+I\+O\+Toggle.\+G\+P\+I\+O\+Toggle.\+settings\+Changed(), software.\+chipwhisperer.\+analyzer.\+attacks.\+\_\+generic\+\_\+parameters.\+Attack\+Generic\+Parameters.\+set\+Trace\+Limits(), software.\+chipwhisperer.\+common.\+utils.\+tracesource.\+Passive\+Trace\+Observer.\+set\+Trace\+Source(), software.\+chipwhisperer.\+capture.\+targets.\+smartcard\+\_\+readers.\+chipwhisperer\+\_\+scard.\+Reader\+Chip\+Whisperer\+S\+Card.\+status\+Update(), software.\+chipwhisperer.\+capture.\+auxiliary.\+Reset\+A\+V\+R.\+Reset\+A\+V\+R.\+trace\+Arm(), software.\+chipwhisperer.\+capture.\+auxiliary.\+Reset\+C\+W1173\+Read.\+Reset\+C\+W1173\+Read.\+trace\+Arm(), software.\+chipwhisperer.\+capture.\+auxiliary.\+Reset\+C\+W1173\+Read.\+Reset\+C\+W1173\+Read.\+trace\+Arm\+Post(), software.\+chipwhisperer.\+analyzer.\+attacks.\+profiling\+\_\+algorithms.\+template.\+Profiling\+Template.\+trace\+Limits\+Changed(), software.\+chipwhisperer.\+capture.\+utils.\+Glitch\+Explorer\+Dialog.\+Glitch\+Explorer\+Dialog.\+tracesreq\+Changed(), software.\+chipwhisperer.\+capture.\+utils.\+Glitch\+Explorer\+Dialog.\+Glitch\+Explorer\+Dialog.\+tune\+Enabled(), software.\+chipwhisperer.\+capture.\+scopes.\+visascope\+\_\+interface.\+\_\+base.\+Visa\+Scope.\+update\+Current\+Settings(), software.\+chipwhisperer.\+analyzer.\+attacks.\+\_\+generic\+\_\+parameters.\+Attack\+Generic\+Parameters.\+update\+Generic\+Script(), software.\+chipwhisperer.\+analyzer.\+preprocessing.\+Normalize.\+Normalize.\+update\+Norm\+Class(), software.\+chipwhisperer.\+capture.\+utils.\+Glitch\+Explorer\+Dialog.\+Glitch\+Explorer\+Dialog.\+update\+Parameters(), software.\+chipwhisperer.\+capture.\+utils.\+Glitch\+Explorer\+Dialog.\+Tuning\+Parameter.\+update\+Params(), software.\+chipwhisperer.\+capture.\+scopes.\+cwhardware.\+Chip\+Whisperer\+Glitch.\+Chip\+Whisperer\+Glitch.\+update\+Partial\+Reconfig(), software.\+chipwhisperer.\+capture.\+scopes.\+cwhardware.\+Chip\+Whisperer\+S\+A\+D.\+Chip\+Whisperer\+S\+A\+D.\+update\+S\+A\+D\+Trace\+Ref(), software.\+chipwhisperer.\+capture.\+scopes.\+cwhardware.\+Chip\+Whisperer\+Digital\+Pattern.\+Chip\+Whisperer\+Digital\+Pattern.\+update\+Sample\+Rate(), software.\+chipwhisperer.\+analyzer.\+preprocessing.\+Decimation\+Fixed.\+Decimation\+Fixed.\+update\+Script(), software.\+chipwhisperer.\+analyzer.\+preprocessing.\+Add\+Noise\+Random.\+Add\+Noise\+Random.\+update\+Script(), software.\+chipwhisperer.\+analyzer.\+preprocessing.\+Add\+Noise\+Jitter.\+Add\+Noise\+Jitter.\+update\+Script(), software.\+chipwhisperer.\+analyzer.\+preprocessing.\+Resync\+Resample\+Z\+C.\+Resync\+Resample\+Z\+C.\+update\+Script(), software.\+chipwhisperer.\+analyzer.\+preprocessing.\+Resync\+Cross\+Correlation.\+Resync\+Cross\+Correlation.\+update\+Script(), software.\+chipwhisperer.\+analyzer.\+preprocessing.\+Filter.\+Filter.\+update\+Script(), software.\+chipwhisperer.\+analyzer.\+preprocessing.\+Resync\+S\+A\+D.\+Resync\+S\+A\+D.\+update\+Script(), software.\+chipwhisperer.\+analyzer.\+preprocessing.\+Resync\+Peak\+Detect.\+Resync\+Peak\+Detect.\+update\+Script(), software.\+chipwhisperer.\+analyzer.\+attacks.\+profiling.\+Profiling.\+update\+Script(), software.\+chipwhisperer.\+analyzer.\+preprocessing.\+Decimation\+Clock\+Recovery.\+Decimation\+Clock\+Recovery.\+update\+Script(), software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa.\+C\+P\+A.\+update\+Script(), software.\+chipwhisperer.\+analyzer.\+attacks.\+profiling\+\_\+algorithms.\+template.\+Profiling\+Template.\+update\+Script(), software.\+chipwhisperer.\+analyzer.\+preprocessing.\+Normalize.\+Normalize.\+update\+Script(), software.\+chipwhisperer.\+capture.\+targets.\+simpleserial\+\_\+readers.\+serial.\+Simple\+Serial\+\_\+serial.\+update\+Serial(), software.\+chipwhisperer.\+capture.\+targets.\+smartcard\+\_\+readers.\+system\+\_\+ser.\+Reader\+System\+S\+E\+R.\+update\+Serial(), and software.\+chipwhisperer.\+common.\+results.\+table.\+Results\+Table.\+update\+Table().
+
+
+\begin{DoxyCode}
+231     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1ExtendedParameter_1_1ExtendedParameter_a2eed34995dc4ee05168b2e75d833ddb5}{findParam}(self=None, paramKey=None, params=None):
+232         \textcolor{stringliteral}{"""Match parameter based on 'key'"""}
+233         \textcolor{keywordflow}{if} params \textcolor{keywordflow}{is} \textcolor{keywordtype}{None}:
+234             params = self.params
+235 
+236         \textcolor{keywordflow}{try}:
+237             \textcolor{keywordflow}{if} params.opts[\textcolor{stringliteral}{'key'}] == paramKey:
+238                 \textcolor{keywordflow}{return} params
+239         \textcolor{keywordflow}{except} KeyError:
+240             \textcolor{keywordflow}{pass}
+241 
+242         \textcolor{keywordflow}{for} t \textcolor{keywordflow}{in} params.children():
+243             p = self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1ExtendedParameter_1_1ExtendedParameter_a2eed34995dc4ee05168b2e75d833ddb5}{findParam}(paramKey=paramKey, params=t)
+244             \textcolor{keywordflow}{if} p \textcolor{keywordflow}{is} \textcolor{keywordflow}{not} \textcolor{keywordtype}{None}:
+245                 \textcolor{keywordflow}{return} p
+246 
+247         \textcolor{keywordflow}{return} \textcolor{keywordtype}{None}
+248 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1ExtendedParameter_1_1ExtendedParameter_a2ab4764a9cd83977273f8d8e76a4efb7}{}\index{software\+::chipwhisperer\+::common\+::api\+::\+Extended\+Parameter\+::\+Extended\+Parameter@{software\+::chipwhisperer\+::common\+::api\+::\+Extended\+Parameter\+::\+Extended\+Parameter}!get\+All\+Parameters@{get\+All\+Parameters}}
+\index{get\+All\+Parameters@{get\+All\+Parameters}!software\+::chipwhisperer\+::common\+::api\+::\+Extended\+Parameter\+::\+Extended\+Parameter@{software\+::chipwhisperer\+::common\+::api\+::\+Extended\+Parameter\+::\+Extended\+Parameter}}
+\subsubsection[{get\+All\+Parameters}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+api.\+Extended\+Parameter.\+Extended\+Parameter.\+get\+All\+Parameters (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{parent = {\ttfamily None}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1ExtendedParameter_1_1ExtendedParameter_a2ab4764a9cd83977273f8d8e76a4efb7}
+\begin{DoxyVerb}Causes the 'get' function for all parameters to be called (if present).\end{DoxyVerb}
+ 
+
+References software.\+chipwhisperer.\+common.\+api.\+Extended\+Parameter.\+Extended\+Parameter.\+get\+All\+Parameters().
+
+
+
+Referenced by software.\+chipwhisperer.\+common.\+api.\+Extended\+Parameter.\+Extended\+Parameter.\+get\+All\+Parameters().
+
+
+\begin{DoxyCode}
+66     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1ExtendedParameter_1_1ExtendedParameter_a2ab4764a9cd83977273f8d8e76a4efb7}{getAllParameters}(self, parent=None):
+67         \textcolor{stringliteral}{"""Causes the 'get' function for all parameters to be called (if present)."""}
+68         \textcolor{keywordflow}{if} parent \textcolor{keywordflow}{is} \textcolor{keywordtype}{None}:
+69             parent = self
+70 
+71         \textcolor{keywordflow}{if} parent.hasChildren():
+72             \textcolor{keywordflow}{for} child \textcolor{keywordflow}{in} parent.children():
+73                 self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1ExtendedParameter_1_1ExtendedParameter_a2ab4764a9cd83977273f8d8e76a4efb7}{getAllParameters}(child)
+74         \textcolor{keywordflow}{else}:
+75             \textcolor{keywordflow}{if} \textcolor{stringliteral}{'get'} \textcolor{keywordflow}{in} parent.opts:
+76                 \textcolor{keywordflow}{try}:
+77                     parent.setValue(parent.opts[\textcolor{stringliteral}{'get'}]())
+78                 \textcolor{keywordflow}{except} TypeError:
+79                     parent.hide()
+80 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1ExtendedParameter_1_1ExtendedParameter_af1c683f13498329d6a1d06401a936bfe}{}\index{software\+::chipwhisperer\+::common\+::api\+::\+Extended\+Parameter\+::\+Extended\+Parameter@{software\+::chipwhisperer\+::common\+::api\+::\+Extended\+Parameter\+::\+Extended\+Parameter}!param\+Tree\+Changed@{param\+Tree\+Changed}}
+\index{param\+Tree\+Changed@{param\+Tree\+Changed}!software\+::chipwhisperer\+::common\+::api\+::\+Extended\+Parameter\+::\+Extended\+Parameter@{software\+::chipwhisperer\+::common\+::api\+::\+Extended\+Parameter\+::\+Extended\+Parameter}}
+\subsubsection[{param\+Tree\+Changed}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+api.\+Extended\+Parameter.\+Extended\+Parameter.\+param\+Tree\+Changed (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{param, }
+\item[{}]{changes}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1ExtendedParameter_1_1ExtendedParameter_af1c683f13498329d6a1d06401a936bfe}
+
+
+References software.\+chipwhisperer.\+analyzer.\+utils.\+Trace\+Explorer\+Scripts.\+Text\+Display.\+Text\+Display.\+params, software.\+chipwhisperer.\+capture.\+utils.\+Glitch\+Explorer\+Dialog.\+Tuning\+Parameter.\+params, software.\+chipwhisperer.\+capture.\+scopes.\+\_\+\+Open\+A\+D\+C\+Interface.\+Open\+A\+D\+C\+Settings.\+params, software.\+chipwhisperer.\+capture.\+scopes.\+cwhardware.\+Chip\+Whisperer\+S\+A\+D.\+Chip\+Whisperer\+S\+A\+D.\+params, software.\+chipwhisperer.\+analyzer.\+utils.\+Trace\+Explorer\+Dialog.\+Trace\+Explorer\+Dialog.\+params, software.\+chipwhisperer.\+common.\+utils.\+parameters.\+Parameterized.\+params, software.\+chipwhisperer.\+capture.\+utils.\+Glitch\+Explorer\+Dialog.\+Glitch\+Explorer\+Dialog.\+params, software.\+chipwhisperer.\+capture.\+scopes.\+cwhardware.\+Chip\+Whisperer\+Digital\+Pattern.\+Chip\+Whisperer\+Digital\+Pattern.\+params, software.\+chipwhisperer.\+analyzer.\+utils.\+Trace\+Explorer\+Scripts.\+Partition\+Display.\+Partition\+Display.\+params, software.\+chipwhisperer.\+common.\+api.\+Extended\+Parameter.\+submodule.\+params, software.\+chipwhisperer.\+common.\+api.\+Extended\+Parameter.\+module.\+params, and software.\+chipwhisperer.\+common.\+api.\+Extended\+Parameter.\+maintest.\+params.
+
+
+\begin{DoxyCode}
+199     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1ExtendedParameter_1_1ExtendedParameter_af1c683f13498329d6a1d06401a936bfe}{paramTreeChanged}(self, param, changes):
+200         ExtendedParameter.showScriptParameter(param, changes, self.params)
+201 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1ExtendedParameter_1_1ExtendedParameter_a0e2c123c60b1b6eeb91cc4b0c808e40d}{}\index{software\+::chipwhisperer\+::common\+::api\+::\+Extended\+Parameter\+::\+Extended\+Parameter@{software\+::chipwhisperer\+::common\+::api\+::\+Extended\+Parameter\+::\+Extended\+Parameter}!reload\+Params@{reload\+Params}}
+\index{reload\+Params@{reload\+Params}!software\+::chipwhisperer\+::common\+::api\+::\+Extended\+Parameter\+::\+Extended\+Parameter@{software\+::chipwhisperer\+::common\+::api\+::\+Extended\+Parameter\+::\+Extended\+Parameter}}
+\subsubsection[{reload\+Params}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+api.\+Extended\+Parameter.\+Extended\+Parameter.\+reload\+Params (
+\begin{DoxyParamCaption}
+\item[{}]{lst, }
+\item[{}]{paramtree, }
+\item[{}]{help\+\_\+window = {\ttfamily None}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1ExtendedParameter_1_1ExtendedParameter_a0e2c123c60b1b6eeb91cc4b0c808e40d}
+\begin{DoxyVerb}    Reloads parameters in a paramtree. Hides anything that isn't in the list anymore, adds
+    any new parameters. Required to avoid deleting parameters that we actually want to see
+    again later, otherwise they are garbage collected.\end{DoxyVerb}
+ 
+
+Referenced by software.\+chipwhisperer.\+common.\+utils.\+parameters.\+C\+W\+Parameter\+Tree.\+extend(), software.\+chipwhisperer.\+common.\+utils.\+parameters.\+C\+W\+Parameter\+Tree.\+replace(), and software.\+chipwhisperer.\+common.\+api.\+Extended\+Parameter.\+maintest.\+setmodule().
+
+
+\begin{DoxyCode}
+203     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1ExtendedParameter_1_1ExtendedParameter_a0e2c123c60b1b6eeb91cc4b0c808e40d}{reloadParams}(lst, paramtree, help\_window=None):
+204         \textcolor{stringliteral}{"""}
+205 \textcolor{stringliteral}{            Reloads parameters in a paramtree. Hides anything that isn't in the list anymore, adds}
+206 \textcolor{stringliteral}{            any new parameters. Required to avoid deleting parameters that we actually want to see}
+207 \textcolor{stringliteral}{            again later, otherwise they are garbage collected.}
+208 \textcolor{stringliteral}{            """}
+209 
+210         \textcolor{keywordflow}{for} i \textcolor{keywordflow}{in} range(0, paramtree.invisibleRootItem().childCount()):
+211             refitem = paramtree.invisibleRootItem().child(i)
+212             \textcolor{keywordflow}{if} refitem.param \textcolor{keywordflow}{in} lst:
+213                 lst.remove(refitem.param)
+214                 refitem.setHidden(\textcolor{keyword}{False})
+215             \textcolor{keywordflow}{else}:
+216                 refitem.setHidden(\textcolor{keyword}{True})
+217 
+218         \textcolor{keywordflow}{for} p \textcolor{keywordflow}{in} lst:
+219             \textcolor{keywordflow}{if} help\_window:
+220                 \textcolor{keywordflow}{for} c \textcolor{keywordflow}{in} p.children():
+221                     \textcolor{keywordflow}{if} hasattr(c, \textcolor{stringliteral}{'children'}):
+222                         \textcolor{keywordflow}{for} k \textcolor{keywordflow}{in} c.children():
+223                             \textcolor{comment}{# if hasattr(k, 'param'):}
+224                             \textcolor{comment}{#    print k.param()}
+225                             \textcolor{keywordflow}{if} hasattr(k, \textcolor{stringliteral}{'opts'}):
+226                                 k.opts[\textcolor{stringliteral}{'helpwnd'}] = help\_window
+227 
+228             paramtree.addParameters(p)
+229 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1ExtendedParameter_1_1ExtendedParameter_a78ea872d430d928ece118acfe32b9f59}{}\index{software\+::chipwhisperer\+::common\+::api\+::\+Extended\+Parameter\+::\+Extended\+Parameter@{software\+::chipwhisperer\+::common\+::api\+::\+Extended\+Parameter\+::\+Extended\+Parameter}!setup\+Extended@{setup\+Extended}}
+\index{setup\+Extended@{setup\+Extended}!software\+::chipwhisperer\+::common\+::api\+::\+Extended\+Parameter\+::\+Extended\+Parameter@{software\+::chipwhisperer\+::common\+::api\+::\+Extended\+Parameter\+::\+Extended\+Parameter}}
+\subsubsection[{setup\+Extended}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+api.\+Extended\+Parameter.\+Extended\+Parameter.\+setup\+Extended (
+\begin{DoxyParamCaption}
+\item[{}]{cur\+Param, }
+\item[{}]{parent = {\ttfamily None}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1ExtendedParameter_1_1ExtendedParameter_a78ea872d430d928ece118acfe32b9f59}
+\begin{DoxyVerb}Setup the 'extended' parameters, which is the name given to the OpenADC extensions.\end{DoxyVerb}
+ 
+\begin{DoxyCode}
+152     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1ExtendedParameter_1_1ExtendedParameter_a78ea872d430d928ece118acfe32b9f59}{setupExtended}(curParam, parent=None):
+153         \textcolor{stringliteral}{"""Setup the 'extended' parameters, which is the name given to the OpenADC extensions."""}
+154         curParam.getAllParameters = types.MethodType(ExtendedParameter.getAllParameters, curParam)
+155         curParam.sigTreeStateChanged.connect(ExtendedParameter.change)
+156 
+157         ExtendedParameter.addHelpIcons(curParam)
+158 
+159         \textcolor{keywordflow}{if} parent \textcolor{keywordflow}{is} \textcolor{keywordflow}{not} \textcolor{keywordtype}{None}:
+160             parent.paramTreeChanged = types.MethodType(ExtendedParameter.paramTreeChanged, parent)
+161             curParam.sigTreeStateChanged.connect(parent.paramTreeChanged)
+162             parent.findParam = types.MethodType(ExtendedParameter.findParam, parent)
+163 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1ExtendedParameter_1_1ExtendedParameter_a081497ebb71276b0ac24fb4811ca1dcc}{}\index{software\+::chipwhisperer\+::common\+::api\+::\+Extended\+Parameter\+::\+Extended\+Parameter@{software\+::chipwhisperer\+::common\+::api\+::\+Extended\+Parameter\+::\+Extended\+Parameter}!show\+Help\+Window@{show\+Help\+Window}}
+\index{show\+Help\+Window@{show\+Help\+Window}!software\+::chipwhisperer\+::common\+::api\+::\+Extended\+Parameter\+::\+Extended\+Parameter@{software\+::chipwhisperer\+::common\+::api\+::\+Extended\+Parameter\+::\+Extended\+Parameter}}
+\subsubsection[{show\+Help\+Window}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+api.\+Extended\+Parameter.\+Extended\+Parameter.\+show\+Help\+Window (
+\begin{DoxyParamCaption}
+\item[{}]{cur\+Param}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1ExtendedParameter_1_1ExtendedParameter_a081497ebb71276b0ac24fb4811ca1dcc}
+\begin{DoxyVerb}Helper to show the help text. If class defines a 'helpwnd' it uses that function, otherwise
+a simple message box is called upon.
+\end{DoxyVerb}
+ 
+\begin{DoxyCode}
+94     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1ExtendedParameter_1_1ExtendedParameter_a081497ebb71276b0ac24fb4811ca1dcc}{showHelpWindow}(curParam):
+95         \textcolor{stringliteral}{"""}
+96 \textcolor{stringliteral}{        Helper to show the help text. If class defines a 'helpwnd' it uses that function, otherwise}
+97 \textcolor{stringliteral}{        a simple message box is called upon.}
+98 \textcolor{stringliteral}{        """}
+99 
+100         nametext = curParam.param.opts[\textcolor{stringliteral}{'name'}]
+101         helptext = curParam.param.opts[\textcolor{stringliteral}{'help'}]
+102         hdrtext = \textcolor{stringliteral}{'-'} * len(nametext)
+103 
+104         helptext = helptext.replace(\textcolor{stringliteral}{'%namehdr%'}, \textcolor{stringliteral}{'%s\(\backslash\)n%s\(\backslash\)n\(\backslash\)n'} % (nametext, hdrtext))
+105 
+106         helpwnd = ExtendedParameter.findHelpWindowMethod(curParam)
+107 
+108         \textcolor{keywordflow}{if} helpwnd:
+109             helpwnd(helptext, curParam)
+110         \textcolor{keywordflow}{else}:
+111             \textcolor{comment}{# Shitty default window}
+112             \textcolor{keywordflow}{if} hasattr(curParam, \textcolor{stringliteral}{'widget'}):
+113                 wdgt = curParam.widget
+114             \textcolor{keywordflow}{else}:
+115                 wdgt = \textcolor{keywordtype}{None}
+116             QtGui.QMessageBox.information(wdgt, \textcolor{stringliteral}{'Help: %s'} % nametext, helptext, QtGui.QMessageBox.Cancel,
+117                                           QtGui.QMessageBox.Cancel)
+118 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1ExtendedParameter_1_1ExtendedParameter_af7cd4372c3875a880302b2c80989a1fe}{}\index{software\+::chipwhisperer\+::common\+::api\+::\+Extended\+Parameter\+::\+Extended\+Parameter@{software\+::chipwhisperer\+::common\+::api\+::\+Extended\+Parameter\+::\+Extended\+Parameter}!show\+Script\+Parameter@{show\+Script\+Parameter}}
+\index{show\+Script\+Parameter@{show\+Script\+Parameter}!software\+::chipwhisperer\+::common\+::api\+::\+Extended\+Parameter\+::\+Extended\+Parameter@{software\+::chipwhisperer\+::common\+::api\+::\+Extended\+Parameter\+::\+Extended\+Parameter}}
+\subsubsection[{show\+Script\+Parameter}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+api.\+Extended\+Parameter.\+Extended\+Parameter.\+show\+Script\+Parameter (
+\begin{DoxyParamCaption}
+\item[{}]{param, }
+\item[{}]{changes, }
+\item[{}]{top\+Param}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1ExtendedParameter_1_1ExtendedParameter_af7cd4372c3875a880302b2c80989a1fe}
+\begin{DoxyVerb}This function is used to tell the user what they should pass to setParameter
+in order to recreate a system. This will automatically be called if the module
+has done the following:
+
+When calling ExtendedParameter.setupParameter(), have passed a reference to 'self' like this::
+
+   ExtendedParameter.setupExtended(self.params, self)
+
+Have a function called paramTreeChanged in the class which calls showScriptParameter (this function).
+Typically done like the following, where self.showScriptParameter is setup in the setupExtended() call. You
+might need to pass the reference to this instance down to lower modules.::
+
+    def paramTreeChanged(self, param, changes):
+if self.showScriptParameter is not None:
+    self.showScriptParameter(param, changes, self.params)\end{DoxyVerb}
+ 
+\begin{DoxyCode}
+250     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1ExtendedParameter_1_1ExtendedParameter_af7cd4372c3875a880302b2c80989a1fe}{showScriptParameter}(param,  changes, topParam):
+251         \textcolor{stringliteral}{"""}
+252 \textcolor{stringliteral}{        This function is used to tell the user what they should pass to setParameter}
+253 \textcolor{stringliteral}{        in order to recreate a system. This will automatically be called if the module}
+254 \textcolor{stringliteral}{        has done the following:}
+255 \textcolor{stringliteral}{}
+256 \textcolor{stringliteral}{        When calling ExtendedParameter.setupParameter(), have passed a reference to 'self' like this::}
+257 \textcolor{stringliteral}{}
+258 \textcolor{stringliteral}{           ExtendedParameter.setupExtended(self.params, self)}
+259 \textcolor{stringliteral}{}
+260 \textcolor{stringliteral}{        Have a function called paramTreeChanged in the class which calls showScriptParameter (this
+       function).}
+261 \textcolor{stringliteral}{        Typically done like the following, where self.showScriptParameter is setup in the setupExtended()
+       call. You}
+262 \textcolor{stringliteral}{        might need to pass the reference to this instance down to lower modules.::}
+263 \textcolor{stringliteral}{}
+264 \textcolor{stringliteral}{            def paramTreeChanged(self, param, changes):}
+265 \textcolor{stringliteral}{                if self.showScriptParameter is not None:}
+266 \textcolor{stringliteral}{                    self.showScriptParameter(param, changes, self.params)}
+267 \textcolor{stringliteral}{}
+268 \textcolor{stringliteral}{        """}
+269         \textcolor{keywordflow}{for} param, change, data \textcolor{keywordflow}{in} changes:
+270             ppath = topParam.childPath(param)
+271             \textcolor{keywordflow}{if} ppath \textcolor{keywordflow}{is} \textcolor{keywordtype}{None}:
+272                 name = [param.name()]
+273             \textcolor{keywordflow}{else}:
+274                 ppath.insert(0, topParam.name())
+275                 name = ppath
+276 
+277             \textcolor{comment}{#Don't pollute script output with readonly things}
+278             \textcolor{keywordflow}{if} param.opts[\textcolor{stringliteral}{"readonly"}] == \textcolor{keyword}{True}:
+279                 \textcolor{keywordflow}{continue}
+280 
+281             \textcolor{keywordflow}{if} \textcolor{stringliteral}{"echooff"} \textcolor{keywordflow}{in} param.opts:
+282                 \textcolor{keywordflow}{if} param.opts[\textcolor{stringliteral}{"echooff"}] == \textcolor{keyword}{True}:
+283                     param.opts[\textcolor{stringliteral}{"echooff"}] = \textcolor{keyword}{False}
+284                     \textcolor{keywordflow}{continue}
+285 
+286             \textcolor{keywordflow}{if} \textcolor{stringliteral}{"values"} \textcolor{keywordflow}{in} param.opts:
+287                 \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} hasattr(param.opts[\textcolor{stringliteral}{"values"}], \textcolor{stringliteral}{'iteritems'}):
+288                     name.append(data)
+289                 \textcolor{keywordflow}{else}:
+290                     \textcolor{keywordflow}{for} k, v \textcolor{keywordflow}{in} param.opts[\textcolor{stringliteral}{"values"}].iteritems():
+291                         \textcolor{keywordflow}{if} v == data:
+292                             name.append(k)
+293             \textcolor{keywordflow}{else}:
+294                 name.append(data)
+295 
+296             \textcolor{keywordflow}{if} ExtendedParameter.paramScriptingOutput:
+297                 ExtendedParameter.paramScriptingOutput.append(str(name))
+298 
+299 
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1ExtendedParameter_1_1ExtendedParameter_a1c38aaa80058ca10945d48cbba61dde9}{}\index{software\+::chipwhisperer\+::common\+::api\+::\+Extended\+Parameter\+::\+Extended\+Parameter@{software\+::chipwhisperer\+::common\+::api\+::\+Extended\+Parameter\+::\+Extended\+Parameter}!param\+Scripting\+Output@{param\+Scripting\+Output}}
+\index{param\+Scripting\+Output@{param\+Scripting\+Output}!software\+::chipwhisperer\+::common\+::api\+::\+Extended\+Parameter\+::\+Extended\+Parameter@{software\+::chipwhisperer\+::common\+::api\+::\+Extended\+Parameter\+::\+Extended\+Parameter}}
+\subsubsection[{param\+Scripting\+Output}]{\setlength{\rightskip}{0pt plus 5cm}software.\+chipwhisperer.\+common.\+api.\+Extended\+Parameter.\+Extended\+Parameter.\+param\+Scripting\+Output = None\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1ExtendedParameter_1_1ExtendedParameter_a1c38aaa80058ca10945d48cbba61dde9}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ExtendedParameter_8py}{Extended\+Parameter.\+py}\end{DoxyCompactItemize}

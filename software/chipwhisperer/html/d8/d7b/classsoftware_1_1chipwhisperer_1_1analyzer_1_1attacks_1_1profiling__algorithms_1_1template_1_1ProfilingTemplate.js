@@ -1,0 +1,26 @@
+var classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1profiling__algorithms_1_1template_1_1ProfilingTemplate =
+[
+    [ "__init__", "d8/d7b/classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1profiling__algorithms_1_1template_1_1ProfilingTemplate.html#ab916cd445c8ddbeef3a265fa7068d151", null ],
+    [ "addTraces", "d8/d7b/classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1profiling__algorithms_1_1template_1_1ProfilingTemplate.html#ab2ab00186a9f5f55029d96a0507f5705", null ],
+    [ "getStatistics", "d8/d7b/classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1profiling__algorithms_1_1template_1_1ProfilingTemplate.html#a1461d9fe4c3c49691b54ec82a1e3feaf", null ],
+    [ "loadPOIs", "d8/d7b/classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1profiling__algorithms_1_1template_1_1ProfilingTemplate.html#a93184b469db7613d1d3aca33b4b4d6f1", null ],
+    [ "loadTemplatesFromProject", "d8/d7b/classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1profiling__algorithms_1_1template_1_1ProfilingTemplate.html#a5fd92be2bd7bebc72dbf65264986b1fe", null ],
+    [ "parent", "d8/d7b/classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1profiling__algorithms_1_1template_1_1ProfilingTemplate.html#aefd1af6afebf5ce83545395bac9d67c4", null ],
+    [ "project", "d8/d7b/classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1profiling__algorithms_1_1template_1_1ProfilingTemplate.html#aef13260a2d3b54ca164610a114b9c04d", null ],
+    [ "saveTemplatesToProject", "d8/d7b/classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1profiling__algorithms_1_1template_1_1ProfilingTemplate.html#a57c94b75f146ccb916be1b369966e3b9", null ],
+    [ "setByteList", "d8/d7b/classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1profiling__algorithms_1_1template_1_1ProfilingTemplate.html#a2e052f0cd8b3001fae62252edafcc566", null ],
+    [ "setKeyround", "d8/d7b/classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1profiling__algorithms_1_1template_1_1ProfilingTemplate.html#aef13306acef85c72966a5a2b1eb26227", null ],
+    [ "setProfileAlgorithm", "d8/d7b/classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1profiling__algorithms_1_1template_1_1ProfilingTemplate.html#ae31a280bc637823ea041b00c289a989f", null ],
+    [ "setProject", "d8/d7b/classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1profiling__algorithms_1_1template_1_1ProfilingTemplate.html#ac3a1886986fc777b0b37c2dace9d47c4", null ],
+    [ "setReportingInterval", "d8/d7b/classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1profiling__algorithms_1_1template_1_1ProfilingTemplate.html#a06b488515ed13bff13053592e04f28d9", null ],
+    [ "setStatsReadyCallback", "d8/d7b/classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1profiling__algorithms_1_1template_1_1ProfilingTemplate.html#a5e0b7cb42593307289b266128feb996d", null ],
+    [ "setTraceSource", "d8/d7b/classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1profiling__algorithms_1_1template_1_1ProfilingTemplate.html#a6eaf8bfb5b8913f7bfafcf287eaf59ac", null ],
+    [ "traceLimitsChanged", "d8/d7b/classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1profiling__algorithms_1_1template_1_1ProfilingTemplate.html#a52f18b1755148d3219a08d7dc3160b86", null ],
+    [ "updateScript", "d8/d7b/classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1profiling__algorithms_1_1template_1_1ProfilingTemplate.html#ae1550fc7220093d4fcfe226a157e2ed9", null ],
+    [ "brange", "d8/d7b/classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1profiling__algorithms_1_1template_1_1ProfilingTemplate.html#a3fa5a3b2304e49b52cf7672c120f5908", null ],
+    [ "keyround", "d8/d7b/classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1profiling__algorithms_1_1template_1_1ProfilingTemplate.html#a3ae2ff09ae6a7134dedd457bda82f98a", null ],
+    [ "path", "d8/d7b/classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1profiling__algorithms_1_1template_1_1ProfilingTemplate.html#abb2bc4c23ef1dbb79b1c899863409ef4", null ],
+    [ "profiling", "d8/d7b/classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1profiling__algorithms_1_1template_1_1ProfilingTemplate.html#a55db6d81473c29a771ba813ebdbde517", null ],
+    [ "sr", "d8/d7b/classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1profiling__algorithms_1_1template_1_1ProfilingTemplate.html#abb7b9c53e7e3f3eb5a3dac885af8b329", null ],
+    [ "stats", "d8/d7b/classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1profiling__algorithms_1_1template_1_1ProfilingTemplate.html#a23bdc3d599b21c33f56bb6cf2e29fb16", null ]
+];

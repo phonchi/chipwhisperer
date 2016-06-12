@@ -1,0 +1,5 @@
+var namespacesoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1cwhardware_1_1ChipWhispererDigitalPattern =
+[
+    [ "ChipWhispererDigitalPattern", "db/d38/classsoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1cwhardware_1_1ChipWhispererDigitalPattern_1_1ChipWhispererDigitalPattern.html", "db/d38/classsoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1cwhardware_1_1ChipWhispererDigitalPattern_1_1ChipWhispererDigitalPattern" ],
+    [ "CWAdvTrigger", "d8/d2b/classsoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1cwhardware_1_1ChipWhispererDigitalPattern_1_1CWAdvTrigger.html", "d8/d2b/classsoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1cwhardware_1_1ChipWhispererDigitalPattern_1_1CWAdvTrigger" ]
+];

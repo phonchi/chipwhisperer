@@ -1,0 +1,4 @@
+var namespacesoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1SerialTerminalDialog =
+[
+    [ "SerialTerminalDialog", "d2/d9e/classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1SerialTerminalDialog_1_1SerialTerminalDialog.html", "d2/d9e/classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1SerialTerminalDialog_1_1SerialTerminalDialog" ]
+];

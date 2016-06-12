@@ -1,0 +1,138 @@
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1base_1_1ResultsBase}{}\section{software.\+chipwhisperer.\+common.\+results.\+base.\+Results\+Base Class Reference}
+\label{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1base_1_1ResultsBase}\index{software.\+chipwhisperer.\+common.\+results.\+base.\+Results\+Base@{software.\+chipwhisperer.\+common.\+results.\+base.\+Results\+Base}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1base_1_1ResultsBase_aefcd936de015bb84991229618e8d473f}{get\+Widget} (self)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1base_1_1ResultsBase_acd0c18272ae6410fe2c9dbcc7884f095}{get\+Classes} (cls)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1base_1_1ResultsBase_ab6af8d14e5f8034d682f2c680f5aec54}{get\+Param\+Tree} (cls)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1base_1_1ResultsBase_aa595d8c9d35dc83fecc439569a05a95e}{create\+New}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+tuple \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1base_1_1ResultsBase_ac0d733a6098da1cedab98f46a587beb6}{registered\+Objects} = util.\+Dict\+Type()
+\item 
+tuple \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1base_1_1ResultsBase_a49a8dbf8a5790e3153def3b292510715}{sig\+Registered\+Objects\+Changed} = util.\+Signal()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Base class for the output widgets:
+To be uses in conjunct with chipwhisperer.common.utils.analysissource/tracesource
+\end{DoxyVerb}
+ 
+
+Inheritance diagram for software.\+chipwhisperer.\+common.\+results.\+base.\+Results\+Base\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=297pt]{d5/df9/classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1base_1_1ResultsBase__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for software.\+chipwhisperer.\+common.\+results.\+base.\+Results\+Base\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=297pt]{d0/d40/classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1base_1_1ResultsBase__coll__graph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1base_1_1ResultsBase_aa595d8c9d35dc83fecc439569a05a95e}{}\index{software\+::chipwhisperer\+::common\+::results\+::base\+::\+Results\+Base@{software\+::chipwhisperer\+::common\+::results\+::base\+::\+Results\+Base}!create\+New@{create\+New}}
+\index{create\+New@{create\+New}!software\+::chipwhisperer\+::common\+::results\+::base\+::\+Results\+Base@{software\+::chipwhisperer\+::common\+::results\+::base\+::\+Results\+Base}}
+\subsubsection[{create\+New}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+results.\+base.\+Results\+Base.\+create\+New (
+\begin{DoxyParamCaption}
+\item[{}]{cls, }
+\item[{}]{class\+Name, }
+\item[{}]{instance\+Name = {\ttfamily None}}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1base_1_1ResultsBase_aa595d8c9d35dc83fecc439569a05a95e}
+
+\begin{DoxyCode}
+63     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1base_1_1ResultsBase_aa595d8c9d35dc83fecc439569a05a95e}{createNew}(cls, className, instanceName = None):
+64         \textcolor{comment}{# To do it manually using the python console:}
+65         \textcolor{comment}{# from chipwhisperer.common.results.base import ResultsBase}
+66         \textcolor{comment}{# ResultsBase.createNew("Trace Output Plot", "Channel 2")}
+67 
+68         \textcolor{keywordflow}{if} instanceName \textcolor{keywordflow}{in} cls.registeredObjects:
+69             \textcolor{keywordflow}{raise} Warning(\textcolor{stringliteral}{"Result widget %s already exists, choose a different name"} % instanceName)
+70 
+71         obj = cls.getClasses()[className](\textcolor{keywordtype}{None}, instanceName)
+72         cls.registeredObjects[obj.getName()] = obj
+73         cls.sigRegisteredObjectsChanged.emit(obj)
+74         cls.getParamTree().extend([obj])
+75         \textcolor{keywordflow}{return} obj
+76 \end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1base_1_1ResultsBase_acd0c18272ae6410fe2c9dbcc7884f095}{}\index{software\+::chipwhisperer\+::common\+::results\+::base\+::\+Results\+Base@{software\+::chipwhisperer\+::common\+::results\+::base\+::\+Results\+Base}!get\+Classes@{get\+Classes}}
+\index{get\+Classes@{get\+Classes}!software\+::chipwhisperer\+::common\+::results\+::base\+::\+Results\+Base@{software\+::chipwhisperer\+::common\+::results\+::base\+::\+Results\+Base}}
+\subsubsection[{get\+Classes}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+results.\+base.\+Results\+Base.\+get\+Classes (
+\begin{DoxyParamCaption}
+\item[{}]{cls}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1base_1_1ResultsBase_acd0c18272ae6410fe2c9dbcc7884f095}
+
+
+References software.\+chipwhisperer.\+common.\+utils.\+pluginmanager.\+get\+Plugins\+In\+Dict\+From\+Package().
+
+
+\begin{DoxyCode}
+51     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1base_1_1ResultsBase_acd0c18272ae6410fe2c9dbcc7884f095}{getClasses}(cls):
+52         \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} cls.\_\_classes:
+53             cls.\_\_classes = \hyperlink{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1pluginmanager_ab548f765a1943ab1d23c0126a1c43e5b}{getPluginsInDictFromPackage}(\textcolor{stringliteral}{"
+      chipwhisperer.common.results"}, \textcolor{keyword}{False}, \textcolor{keyword}{False})
+54         \textcolor{keywordflow}{return} cls.\_\_classes
+55 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1base_1_1ResultsBase_ab6af8d14e5f8034d682f2c680f5aec54}{}\index{software\+::chipwhisperer\+::common\+::results\+::base\+::\+Results\+Base@{software\+::chipwhisperer\+::common\+::results\+::base\+::\+Results\+Base}!get\+Param\+Tree@{get\+Param\+Tree}}
+\index{get\+Param\+Tree@{get\+Param\+Tree}!software\+::chipwhisperer\+::common\+::results\+::base\+::\+Results\+Base@{software\+::chipwhisperer\+::common\+::results\+::base\+::\+Results\+Base}}
+\subsubsection[{get\+Param\+Tree}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+results.\+base.\+Results\+Base.\+get\+Param\+Tree (
+\begin{DoxyParamCaption}
+\item[{}]{cls}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1base_1_1ResultsBase_ab6af8d14e5f8034d682f2c680f5aec54}
+
+\begin{DoxyCode}
+57     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1base_1_1ResultsBase_ab6af8d14e5f8034d682f2c680f5aec54}{getParamTree}(cls):
+58         \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} cls.\_\_paramTree:
+59             cls.\_\_paramTree = CWParameterTree(\textcolor{stringliteral}{"Results"})
+60         \textcolor{keywordflow}{return} cls.\_\_paramTree
+61 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1base_1_1ResultsBase_aefcd936de015bb84991229618e8d473f}{}\index{software\+::chipwhisperer\+::common\+::results\+::base\+::\+Results\+Base@{software\+::chipwhisperer\+::common\+::results\+::base\+::\+Results\+Base}!get\+Widget@{get\+Widget}}
+\index{get\+Widget@{get\+Widget}!software\+::chipwhisperer\+::common\+::results\+::base\+::\+Results\+Base@{software\+::chipwhisperer\+::common\+::results\+::base\+::\+Results\+Base}}
+\subsubsection[{get\+Widget}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+results.\+base.\+Results\+Base.\+get\+Widget (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1base_1_1ResultsBase_aefcd936de015bb84991229618e8d473f}
+
+\begin{DoxyCode}
+42     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1base_1_1ResultsBase_aefcd936de015bb84991229618e8d473f}{getWidget}(self):
+43         \textcolor{keywordflow}{return} \textcolor{keywordtype}{None}
+44 
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1base_1_1ResultsBase_ac0d733a6098da1cedab98f46a587beb6}{}\index{software\+::chipwhisperer\+::common\+::results\+::base\+::\+Results\+Base@{software\+::chipwhisperer\+::common\+::results\+::base\+::\+Results\+Base}!registered\+Objects@{registered\+Objects}}
+\index{registered\+Objects@{registered\+Objects}!software\+::chipwhisperer\+::common\+::results\+::base\+::\+Results\+Base@{software\+::chipwhisperer\+::common\+::results\+::base\+::\+Results\+Base}}
+\subsubsection[{registered\+Objects}]{\setlength{\rightskip}{0pt plus 5cm}tuple software.\+chipwhisperer.\+common.\+results.\+base.\+Results\+Base.\+registered\+Objects = util.\+Dict\+Type()\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1base_1_1ResultsBase_ac0d733a6098da1cedab98f46a587beb6}
+
+
+Referenced by software.\+chipwhisperer.\+common.\+utils.\+tracesource.\+Trace\+Source.\+register().
+
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1base_1_1ResultsBase_a49a8dbf8a5790e3153def3b292510715}{}\index{software\+::chipwhisperer\+::common\+::results\+::base\+::\+Results\+Base@{software\+::chipwhisperer\+::common\+::results\+::base\+::\+Results\+Base}!sig\+Registered\+Objects\+Changed@{sig\+Registered\+Objects\+Changed}}
+\index{sig\+Registered\+Objects\+Changed@{sig\+Registered\+Objects\+Changed}!software\+::chipwhisperer\+::common\+::results\+::base\+::\+Results\+Base@{software\+::chipwhisperer\+::common\+::results\+::base\+::\+Results\+Base}}
+\subsubsection[{sig\+Registered\+Objects\+Changed}]{\setlength{\rightskip}{0pt plus 5cm}tuple software.\+chipwhisperer.\+common.\+results.\+base.\+Results\+Base.\+sig\+Registered\+Objects\+Changed = util.\+Signal()\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1base_1_1ResultsBase_a49a8dbf8a5790e3153def3b292510715}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{results_2base_8py}{results/base.\+py}\end{DoxyCompactItemize}

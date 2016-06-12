@@ -1,0 +1,300 @@
+\hypertarget{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1IntelHex16bit}{}\section{software.\+chipwhisperer.\+capture.\+utils.\+Intel\+Hex.\+Intel\+Hex16bit Class Reference}
+\label{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1IntelHex16bit}\index{software.\+chipwhisperer.\+capture.\+utils.\+Intel\+Hex.\+Intel\+Hex16bit@{software.\+chipwhisperer.\+capture.\+utils.\+Intel\+Hex.\+Intel\+Hex16bit}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1IntelHex16bit_a9fcb7ef259b84001f1472e5c1f8c3320}{\+\_\+\+\_\+init\+\_\+\+\_\+}
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1IntelHex16bit_a6191fad4d1f41165b62af2924c8ff00f}{\+\_\+\+\_\+getitem\+\_\+\+\_\+} (self, addr16)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1IntelHex16bit_ae8ef150348091907446d2d07bf0b8297}{\+\_\+\+\_\+setitem\+\_\+\+\_\+} (self, addr16, word)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1IntelHex16bit_a25f1d62285eaf06217cb691a4c80b216}{minaddr} (self)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1IntelHex16bit_aa9e3d3f7ed6652a80d4169716300d5a2}{maxaddr} (self)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1IntelHex16bit_aaeaa6a3ba064f3574d752309cefc1633}{tobinarray}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1IntelHex16bit_a8c2c4cd2080774693d8fb6916e15c289}{padding}
+\item 
+\hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1IntelHex16bit_a3e59336acca1f0eb76aedf92df1c1a4e}{start\+\_\+addr}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Access to data as 16-bit words. Intended to use with Microchip HEX files.\end{DoxyVerb}
+ 
+
+Inheritance diagram for software.\+chipwhisperer.\+capture.\+utils.\+Intel\+Hex.\+Intel\+Hex16bit\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{df/d2d/classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1IntelHex16bit__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for software.\+chipwhisperer.\+capture.\+utils.\+Intel\+Hex.\+Intel\+Hex16bit\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{d4/d14/classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1IntelHex16bit__coll__graph}
+\end{center}
+\end{figure}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1IntelHex16bit_a9fcb7ef259b84001f1472e5c1f8c3320}{}\index{software\+::chipwhisperer\+::capture\+::utils\+::\+Intel\+Hex\+::\+Intel\+Hex16bit@{software\+::chipwhisperer\+::capture\+::utils\+::\+Intel\+Hex\+::\+Intel\+Hex16bit}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!software\+::chipwhisperer\+::capture\+::utils\+::\+Intel\+Hex\+::\+Intel\+Hex16bit@{software\+::chipwhisperer\+::capture\+::utils\+::\+Intel\+Hex\+::\+Intel\+Hex16bit}}
+\subsubsection[{\+\_\+\+\_\+init\+\_\+\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+capture.\+utils.\+Intel\+Hex.\+Intel\+Hex16bit.\+\_\+\+\_\+init\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{source = {\ttfamily None}}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1IntelHex16bit_a9fcb7ef259b84001f1472e5c1f8c3320}
+\begin{DoxyVerb}Construct class from HEX file
+or from instance of ordinary IntelHex class. If IntelHex object
+is passed as source, the original IntelHex object should not be used
+again because this class will alter it. This class leaves padding
+alone unless it was precisely 0xFF. In that instance it is sign
+extended to 0xFFFF.
+
+@param  source  file name of HEX file or file object
+        or instance of ordinary IntelHex class.
+        Will also accept dictionary from todict method.
+\end{DoxyVerb}
+ 
+\begin{DoxyCode}
+864     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1IntelHex16bit_a9fcb7ef259b84001f1472e5c1f8c3320}{\_\_init\_\_}(self, source=None):
+865         \textcolor{stringliteral}{"""Construct class from HEX file}
+866 \textcolor{stringliteral}{        or from instance of ordinary IntelHex class. If IntelHex object}
+867 \textcolor{stringliteral}{        is passed as source, the original IntelHex object should not be used}
+868 \textcolor{stringliteral}{        again because this class will alter it. This class leaves padding}
+869 \textcolor{stringliteral}{        alone unless it was precisely 0xFF. In that instance it is sign}
+870 \textcolor{stringliteral}{        extended to 0xFFFF.}
+871 \textcolor{stringliteral}{}
+872 \textcolor{stringliteral}{        @param  source  file name of HEX file or file object}
+873 \textcolor{stringliteral}{                        or instance of ordinary IntelHex class.}
+874 \textcolor{stringliteral}{                        Will also accept dictionary from todict method.}
+875 \textcolor{stringliteral}{        """}
+876         \textcolor{keywordflow}{if} isinstance(source, IntelHex):
+877             \textcolor{comment}{# from ihex8}
+878             self.\hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1IntelHex_af1b0c8c73d204cd8677cf6840511d3b0}{padding} = source.padding
+879             self.\hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1IntelHex_a5da95579a9d232f27b10682ef2422316}{start\_addr} = source.start\_addr
+880             \textcolor{comment}{# private members}
+881             self.\hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1IntelHex_a9acc18c6165db7a6540c07688a8e09ac}{\_buf} = source.\_buf
+882             self.\hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1IntelHex_ae76fa50a74ef63f6d385854c330203ef}{\_offset} = source.\_offset
+883         \textcolor{keywordflow}{elif} isinstance(source, dict):
+884             \textcolor{keywordflow}{raise} \hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1IntelHexError}{IntelHexError}(\textcolor{stringliteral}{"IntelHex16bit does not support initialization from dictionary
+       yet.\(\backslash\)n"}
+885                                 \textcolor{stringliteral}{"Patches are welcome."})
+886         \textcolor{keywordflow}{else}:
+887             IntelHex.\_\_init\_\_(self, source)
+888 
+889         \textcolor{keywordflow}{if} self.\hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1IntelHex_af1b0c8c73d204cd8677cf6840511d3b0}{padding} == 0x0FF:
+890             self.\hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1IntelHex_af1b0c8c73d204cd8677cf6840511d3b0}{padding} = 0x0FFFF
+891 
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1IntelHex16bit_a6191fad4d1f41165b62af2924c8ff00f}{}\index{software\+::chipwhisperer\+::capture\+::utils\+::\+Intel\+Hex\+::\+Intel\+Hex16bit@{software\+::chipwhisperer\+::capture\+::utils\+::\+Intel\+Hex\+::\+Intel\+Hex16bit}!\+\_\+\+\_\+getitem\+\_\+\+\_\+@{\+\_\+\+\_\+getitem\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+getitem\+\_\+\+\_\+@{\+\_\+\+\_\+getitem\+\_\+\+\_\+}!software\+::chipwhisperer\+::capture\+::utils\+::\+Intel\+Hex\+::\+Intel\+Hex16bit@{software\+::chipwhisperer\+::capture\+::utils\+::\+Intel\+Hex\+::\+Intel\+Hex16bit}}
+\subsubsection[{\+\_\+\+\_\+getitem\+\_\+\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+capture.\+utils.\+Intel\+Hex.\+Intel\+Hex16bit.\+\_\+\+\_\+getitem\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{addr16}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1IntelHex16bit_a6191fad4d1f41165b62af2924c8ff00f}
+\begin{DoxyVerb}Get 16-bit word from address.
+Raise error if only one byte from the pair is set.
+We assume a Little Endian interpretation of the hex file.
+
+@param  addr16  address of word (addr8 = 2 * addr16).
+@return         word if bytes exists in HEX file, or self.padding
+        if no data found.
+\end{DoxyVerb}
+ 
+
+References software.\+chipwhisperer.\+capture.\+utils.\+Intel\+Hex.\+Intel\+Hex.\+padding.
+
+
+\begin{DoxyCode}
+892     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1IntelHex16bit_a6191fad4d1f41165b62af2924c8ff00f}{\_\_getitem\_\_}(self, addr16):
+893         \textcolor{stringliteral}{"""Get 16-bit word from address.}
+894 \textcolor{stringliteral}{        Raise error if only one byte from the pair is set.}
+895 \textcolor{stringliteral}{        We assume a Little Endian interpretation of the hex file.}
+896 \textcolor{stringliteral}{}
+897 \textcolor{stringliteral}{        @param  addr16  address of word (addr8 = 2 * addr16).}
+898 \textcolor{stringliteral}{        @return         word if bytes exists in HEX file, or self.padding}
+899 \textcolor{stringliteral}{                        if no data found.}
+900 \textcolor{stringliteral}{        """}
+901         addr1 = addr16 * 2
+902         addr2 = addr1 + 1
+903         byte1 = self.\_buf.get(addr1, \textcolor{keywordtype}{None})
+904         byte2 = self.\_buf.get(addr2, \textcolor{keywordtype}{None})
+905 
+906         \textcolor{keywordflow}{if} byte1 != \textcolor{keywordtype}{None} \textcolor{keywordflow}{and} byte2 != \textcolor{keywordtype}{None}:
+907             \textcolor{keywordflow}{return} byte1 | (byte2 << 8)  \textcolor{comment}{# low endian}
+908 
+909         \textcolor{keywordflow}{if} byte1 == \textcolor{keywordtype}{None} \textcolor{keywordflow}{and} byte2 == \textcolor{keywordtype}{None}:
+910             \textcolor{keywordflow}{return} self.\hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1IntelHex_af1b0c8c73d204cd8677cf6840511d3b0}{padding}
+911 
+912         \textcolor{keywordflow}{raise} \hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1BadAccess16bit}{BadAccess16bit}(address=addr16)
+913 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1IntelHex16bit_ae8ef150348091907446d2d07bf0b8297}{}\index{software\+::chipwhisperer\+::capture\+::utils\+::\+Intel\+Hex\+::\+Intel\+Hex16bit@{software\+::chipwhisperer\+::capture\+::utils\+::\+Intel\+Hex\+::\+Intel\+Hex16bit}!\+\_\+\+\_\+setitem\+\_\+\+\_\+@{\+\_\+\+\_\+setitem\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+setitem\+\_\+\+\_\+@{\+\_\+\+\_\+setitem\+\_\+\+\_\+}!software\+::chipwhisperer\+::capture\+::utils\+::\+Intel\+Hex\+::\+Intel\+Hex16bit@{software\+::chipwhisperer\+::capture\+::utils\+::\+Intel\+Hex\+::\+Intel\+Hex16bit}}
+\subsubsection[{\+\_\+\+\_\+setitem\+\_\+\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+capture.\+utils.\+Intel\+Hex.\+Intel\+Hex16bit.\+\_\+\+\_\+setitem\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{addr16, }
+\item[{}]{word}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1IntelHex16bit_ae8ef150348091907446d2d07bf0b8297}
+\begin{DoxyVerb}Sets the address at addr16 to word assuming Little Endian mode.
+\end{DoxyVerb}
+ 
+
+References software.\+chipwhisperer.\+capture.\+utils.\+Intel\+Hex.\+Intel\+Hex.\+\_\+buf.
+
+
+\begin{DoxyCode}
+914     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1IntelHex16bit_ae8ef150348091907446d2d07bf0b8297}{\_\_setitem\_\_}(self, addr16, word):
+915         \textcolor{stringliteral}{"""Sets the address at addr16 to word assuming Little Endian mode.}
+916 \textcolor{stringliteral}{        """}
+917         addr\_byte = addr16 * 2
+918         b = divmod(word, 256)
+919         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1IntelHex_a9acc18c6165db7a6540c07688a8e09ac}{\_buf}[addr\_byte] = b[1]
+920         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1IntelHex_a9acc18c6165db7a6540c07688a8e09ac}{\_buf}[addr\_byte + 1] = b[0]
+921 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1IntelHex16bit_aa9e3d3f7ed6652a80d4169716300d5a2}{}\index{software\+::chipwhisperer\+::capture\+::utils\+::\+Intel\+Hex\+::\+Intel\+Hex16bit@{software\+::chipwhisperer\+::capture\+::utils\+::\+Intel\+Hex\+::\+Intel\+Hex16bit}!maxaddr@{maxaddr}}
+\index{maxaddr@{maxaddr}!software\+::chipwhisperer\+::capture\+::utils\+::\+Intel\+Hex\+::\+Intel\+Hex16bit@{software\+::chipwhisperer\+::capture\+::utils\+::\+Intel\+Hex\+::\+Intel\+Hex16bit}}
+\subsubsection[{maxaddr}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+capture.\+utils.\+Intel\+Hex.\+Intel\+Hex16bit.\+maxaddr (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1IntelHex16bit_aa9e3d3f7ed6652a80d4169716300d5a2}
+\begin{DoxyVerb}Get maximal address of HEX content in 16-bit mode.
+
+@return         maximal address used in this object 
+\end{DoxyVerb}
+ 
+
+References software.\+chipwhisperer.\+capture.\+utils.\+Intel\+Hex.\+Intel\+Hex.\+\_\+buf, and software.\+chipwhisperer.\+capture.\+utils.\+Intel\+Hex.\+dict\+\_\+keys().
+
+
+\begin{DoxyCode}
+933     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1IntelHex16bit_aa9e3d3f7ed6652a80d4169716300d5a2}{maxaddr}(self):
+934         \textcolor{stringliteral}{'''Get maximal address of HEX content in 16-bit mode.}
+935 \textcolor{stringliteral}{}
+936 \textcolor{stringliteral}{        @return         maximal address used in this object }
+937 \textcolor{stringliteral}{        '''}
+938         aa = \hyperlink{namespacesoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_a675ad269e4a9a3ee5a5b4b413d0fb690}{dict\_keys}(self.\hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1IntelHex_a9acc18c6165db7a6540c07688a8e09ac}{\_buf})
+939         \textcolor{keywordflow}{if} aa == []:
+940             \textcolor{keywordflow}{return} 0
+941         \textcolor{keywordflow}{else}:
+942             \textcolor{keywordflow}{return} max(aa) >> 1
+943 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1IntelHex16bit_a25f1d62285eaf06217cb691a4c80b216}{}\index{software\+::chipwhisperer\+::capture\+::utils\+::\+Intel\+Hex\+::\+Intel\+Hex16bit@{software\+::chipwhisperer\+::capture\+::utils\+::\+Intel\+Hex\+::\+Intel\+Hex16bit}!minaddr@{minaddr}}
+\index{minaddr@{minaddr}!software\+::chipwhisperer\+::capture\+::utils\+::\+Intel\+Hex\+::\+Intel\+Hex16bit@{software\+::chipwhisperer\+::capture\+::utils\+::\+Intel\+Hex\+::\+Intel\+Hex16bit}}
+\subsubsection[{minaddr}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+capture.\+utils.\+Intel\+Hex.\+Intel\+Hex16bit.\+minaddr (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1IntelHex16bit_a25f1d62285eaf06217cb691a4c80b216}
+\begin{DoxyVerb}Get minimal address of HEX content in 16-bit mode.
+
+@return         minimal address used in this object
+\end{DoxyVerb}
+ 
+
+References software.\+chipwhisperer.\+capture.\+utils.\+Intel\+Hex.\+Intel\+Hex.\+\_\+buf, and software.\+chipwhisperer.\+capture.\+utils.\+Intel\+Hex.\+dict\+\_\+keys().
+
+
+\begin{DoxyCode}
+922     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1IntelHex16bit_a25f1d62285eaf06217cb691a4c80b216}{minaddr}(self):
+923         \textcolor{stringliteral}{'''Get minimal address of HEX content in 16-bit mode.}
+924 \textcolor{stringliteral}{}
+925 \textcolor{stringliteral}{        @return         minimal address used in this object}
+926 \textcolor{stringliteral}{        '''}
+927         aa = \hyperlink{namespacesoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_a675ad269e4a9a3ee5a5b4b413d0fb690}{dict\_keys}(self.\hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1IntelHex_a9acc18c6165db7a6540c07688a8e09ac}{\_buf})
+928         \textcolor{keywordflow}{if} aa == []:
+929             \textcolor{keywordflow}{return} 0
+930         \textcolor{keywordflow}{else}:
+931             \textcolor{keywordflow}{return} min(aa) >> 1
+932 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1IntelHex16bit_aaeaa6a3ba064f3574d752309cefc1633}{}\index{software\+::chipwhisperer\+::capture\+::utils\+::\+Intel\+Hex\+::\+Intel\+Hex16bit@{software\+::chipwhisperer\+::capture\+::utils\+::\+Intel\+Hex\+::\+Intel\+Hex16bit}!tobinarray@{tobinarray}}
+\index{tobinarray@{tobinarray}!software\+::chipwhisperer\+::capture\+::utils\+::\+Intel\+Hex\+::\+Intel\+Hex16bit@{software\+::chipwhisperer\+::capture\+::utils\+::\+Intel\+Hex\+::\+Intel\+Hex16bit}}
+\subsubsection[{tobinarray}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+capture.\+utils.\+Intel\+Hex.\+Intel\+Hex16bit.\+tobinarray (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{start = {\ttfamily None}, }
+\item[{}]{end = {\ttfamily None}, }
+\item[{}]{size = {\ttfamily None}}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1IntelHex16bit_aaeaa6a3ba064f3574d752309cefc1633}
+\begin{DoxyVerb}Convert this object to binary form as array (of 2-bytes word data).
+If start and end unspecified, they will be inferred from the data.
+@param  start   start address of output data.
+@param  end     end address of output data (inclusive).
+@param  size    size of the block (number of words),
+        used with start or end parameter.
+@return         array of unsigned short (uint16_t) data.
+\end{DoxyVerb}
+ 
+
+References software.\+chipwhisperer.\+capture.\+utils.\+Intel\+Hex.\+Intel\+Hex.\+\_\+buf, software.\+chipwhisperer.\+capture.\+utils.\+Intel\+Hex.\+Intel\+Hex.\+\_\+get\+\_\+start\+\_\+end(), and software.\+chipwhisperer.\+capture.\+utils.\+Intel\+Hex.\+range\+\_\+g.
+
+
+\begin{DoxyCode}
+944     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1IntelHex16bit_aaeaa6a3ba064f3574d752309cefc1633}{tobinarray}(self, start=None, end=None, size=None):
+945         \textcolor{stringliteral}{'''Convert this object to binary form as array (of 2-bytes word data).}
+946 \textcolor{stringliteral}{        If start and end unspecified, they will be inferred from the data.}
+947 \textcolor{stringliteral}{        @param  start   start address of output data.}
+948 \textcolor{stringliteral}{        @param  end     end address of output data (inclusive).}
+949 \textcolor{stringliteral}{        @param  size    size of the block (number of words),}
+950 \textcolor{stringliteral}{                        used with start or end parameter.}
+951 \textcolor{stringliteral}{        @return         array of unsigned short (uint16\_t) data.}
+952 \textcolor{stringliteral}{        '''}
+953         bin = array(\textcolor{stringliteral}{'H'})
+954 
+955         \textcolor{keywordflow}{if} self.\hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1IntelHex_a9acc18c6165db7a6540c07688a8e09ac}{\_buf} == \{\} \textcolor{keywordflow}{and} \textcolor{keywordtype}{None} \textcolor{keywordflow}{in} (start, end):
+956             \textcolor{keywordflow}{return} bin
+957 
+958         \textcolor{keywordflow}{if} size \textcolor{keywordflow}{is} \textcolor{keywordflow}{not} \textcolor{keywordtype}{None} \textcolor{keywordflow}{and} size <= 0:
+959             \textcolor{keywordflow}{raise} ValueError(\textcolor{stringliteral}{"tobinarray: wrong value for size"})
+960 
+961         start, end = self.\hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1IntelHex_aa25852bae4c5a890bbd9d0b40c01c1ac}{\_get\_start\_end}(start, end, size)
+962 
+963         \textcolor{keywordflow}{for} addr \textcolor{keywordflow}{in} \hyperlink{namespacesoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_abac275d54b0c0dc47a6ef2f7c4f7bcdf}{range\_g}(start, end + 1):
+964             bin.append(self[addr])
+965 
+966         \textcolor{keywordflow}{return} bin
+967 
+968 
+969 \textcolor{comment}{# /class IntelHex16bit}
+970 
+971 
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1IntelHex16bit_a8c2c4cd2080774693d8fb6916e15c289}{}\index{software\+::chipwhisperer\+::capture\+::utils\+::\+Intel\+Hex\+::\+Intel\+Hex16bit@{software\+::chipwhisperer\+::capture\+::utils\+::\+Intel\+Hex\+::\+Intel\+Hex16bit}!padding@{padding}}
+\index{padding@{padding}!software\+::chipwhisperer\+::capture\+::utils\+::\+Intel\+Hex\+::\+Intel\+Hex16bit@{software\+::chipwhisperer\+::capture\+::utils\+::\+Intel\+Hex\+::\+Intel\+Hex16bit}}
+\subsubsection[{padding}]{\setlength{\rightskip}{0pt plus 5cm}software.\+chipwhisperer.\+capture.\+utils.\+Intel\+Hex.\+Intel\+Hex16bit.\+padding}\label{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1IntelHex16bit_a8c2c4cd2080774693d8fb6916e15c289}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1IntelHex16bit_a3e59336acca1f0eb76aedf92df1c1a4e}{}\index{software\+::chipwhisperer\+::capture\+::utils\+::\+Intel\+Hex\+::\+Intel\+Hex16bit@{software\+::chipwhisperer\+::capture\+::utils\+::\+Intel\+Hex\+::\+Intel\+Hex16bit}!start\+\_\+addr@{start\+\_\+addr}}
+\index{start\+\_\+addr@{start\+\_\+addr}!software\+::chipwhisperer\+::capture\+::utils\+::\+Intel\+Hex\+::\+Intel\+Hex16bit@{software\+::chipwhisperer\+::capture\+::utils\+::\+Intel\+Hex\+::\+Intel\+Hex16bit}}
+\subsubsection[{start\+\_\+addr}]{\setlength{\rightskip}{0pt plus 5cm}software.\+chipwhisperer.\+capture.\+utils.\+Intel\+Hex.\+Intel\+Hex16bit.\+start\+\_\+addr}\label{classsoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1IntelHex_1_1IntelHex16bit_a3e59336acca1f0eb76aedf92df1c1a4e}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{IntelHex_8py}{Intel\+Hex.\+py}\end{DoxyCompactItemize}

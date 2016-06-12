@@ -1,0 +1,320 @@
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1__base_1_1PreprocessingBase}{}\section{software.\+chipwhisperer.\+analyzer.\+preprocessing.\+\_\+base.\+Preprocessing\+Base Class Reference}
+\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1__base_1_1PreprocessingBase}\index{software.\+chipwhisperer.\+analyzer.\+preprocessing.\+\_\+base.\+Preprocessing\+Base@{software.\+chipwhisperer.\+analyzer.\+preprocessing.\+\_\+base.\+Preprocessing\+Base}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1__base_1_1PreprocessingBase_a43ff7638d5399e5fb72cf9d2bda17b74}{\+\_\+\+\_\+init\+\_\+\+\_\+}
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1__base_1_1PreprocessingBase_a8f1add186cf310162dc2dc547ca7c673}{update\+Script}
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1__base_1_1PreprocessingBase_a953d83422ff476e8ab26758e89d23f24}{set\+Enabled} (self, \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1__base_1_1PreprocessingBase_ae665d04fcffe5a72f76fb88c4e0f9aaa}{enabled})
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1__base_1_1PreprocessingBase_a67bee0053da84ff226f88331141f88d8}{get\+Trace} (self, n)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1__base_1_1PreprocessingBase_a383263b764a4b4a25611ab8973486611}{get\+Textin} (self, n)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1__base_1_1PreprocessingBase_a12dd4307b279451b72450ad2479d4fad}{get\+Textout} (self, n)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1__base_1_1PreprocessingBase_a894f01b7b6122e929d9294373e7cfc51}{get\+Known\+Key}
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1__base_1_1PreprocessingBase_a45d799a8f734677f3576f2f5f8337f54}{init} (self)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1__base_1_1PreprocessingBase_ad0fe8b21c542e0851e5c10ca8128a4fb}{get\+Segment\+List} (self)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1__base_1_1PreprocessingBase_a42050903e153b279344fd344547b6832}{get\+Aux\+Data} (self, n, aux\+Dic)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1__base_1_1PreprocessingBase_aabc8dbcfac138ca7e9cb3781aea30189}{find\+Mapped\+Trace} (self, n)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1__base_1_1PreprocessingBase_a8a5570de2dcd1bfa2f7094af292d8397}{num\+Traces} (self)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1__base_1_1PreprocessingBase_aa88129028d0bcdb18323d3eef3d95d6d}{num\+Points} (self)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1__base_1_1PreprocessingBase_ae665d04fcffe5a72f76fb88c4e0f9aaa}{enabled}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Base Class for all preprocessing modules
+Derivate Classes work like this:
+    - updateScript is used by the GUI to create the parameters list and generate the API scripts
+    - the other methods are used by the API to apply the preprocessing filtering
+      You need to pass the traceSource reference in the constructor in order to apply the preprocessing step
+\end{DoxyVerb}
+ 
+
+Inheritance diagram for software.\+chipwhisperer.\+analyzer.\+preprocessing.\+\_\+base.\+Preprocessing\+Base\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/d71/classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1__base_1_1PreprocessingBase__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for software.\+chipwhisperer.\+analyzer.\+preprocessing.\+\_\+base.\+Preprocessing\+Base\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/dd0/classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1__base_1_1PreprocessingBase__coll__graph}
+\end{center}
+\end{figure}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1__base_1_1PreprocessingBase_a43ff7638d5399e5fb72cf9d2bda17b74}{}\index{software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+\_\+base\+::\+Preprocessing\+Base@{software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+\_\+base\+::\+Preprocessing\+Base}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+\_\+base\+::\+Preprocessing\+Base@{software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+\_\+base\+::\+Preprocessing\+Base}}
+\subsubsection[{\+\_\+\+\_\+init\+\_\+\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+analyzer.\+preprocessing.\+\_\+base.\+Preprocessing\+Base.\+\_\+\+\_\+init\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{parent\+Param = {\ttfamily None}, }
+\item[{}]{trace\+Source = {\ttfamily None}}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1__base_1_1PreprocessingBase_a43ff7638d5399e5fb72cf9d2bda17b74}
+
+\begin{DoxyCode}
+43     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1__base_1_1PreprocessingBase_a43ff7638d5399e5fb72cf9d2bda17b74}{\_\_init\_\_}(self, parentParam=None, traceSource=None):
+44         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1__base_1_1PreprocessingBase_ae665d04fcffe5a72f76fb88c4e0f9aaa}{enabled} = \textcolor{keyword}{True}
+45         ActiveTraceObserver.\_\_init\_\_(self, parentParam=parentParam)
+46         TraceSource.\_\_init\_\_(self)
+47         AutoScript.\_\_init\_\_(self)
+48         self.setTraceSource(traceSource)
+49         \textcolor{keywordflow}{if} traceSource:
+50             traceSource.sigTracesChanged.connect(self.sigTracesChanged.emit)  \textcolor{comment}{# Forwards the traceChanged
+       signal to the next observer in the chain}
+51         self.params.addChildren([
+52                  \{\textcolor{stringliteral}{'name'}:\textcolor{stringliteral}{'Enabled'}, \textcolor{stringliteral}{'key'}:\textcolor{stringliteral}{'enabled'}, \textcolor{stringliteral}{'type'}:\textcolor{stringliteral}{'bool'}, \textcolor{stringliteral}{'value'}:self.
+      \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1__base_1_1PreprocessingBase_ae665d04fcffe5a72f76fb88c4e0f9aaa}{enabled}, \textcolor{stringliteral}{'set'}:self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1__base_1_1PreprocessingBase_a953d83422ff476e8ab26758e89d23f24}{setEnabled}\}
+53         ])
+54         self.findParam(\textcolor{stringliteral}{'input'}).hide()
+55 
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1__base_1_1PreprocessingBase_aabc8dbcfac138ca7e9cb3781aea30189}{}\index{software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+\_\+base\+::\+Preprocessing\+Base@{software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+\_\+base\+::\+Preprocessing\+Base}!find\+Mapped\+Trace@{find\+Mapped\+Trace}}
+\index{find\+Mapped\+Trace@{find\+Mapped\+Trace}!software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+\_\+base\+::\+Preprocessing\+Base@{software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+\_\+base\+::\+Preprocessing\+Base}}
+\subsubsection[{find\+Mapped\+Trace}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+analyzer.\+preprocessing.\+\_\+base.\+Preprocessing\+Base.\+find\+Mapped\+Trace (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{n}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1__base_1_1PreprocessingBase_aabc8dbcfac138ca7e9cb3781aea30189}
+
+
+Referenced by software.\+chipwhisperer.\+common.\+api.\+Trace\+Manager.\+Trace\+Manager.\+get\+Aux\+Data(), software.\+chipwhisperer.\+common.\+api.\+Trace\+Manager.\+Trace\+Manager.\+get\+Known\+Key(), software.\+chipwhisperer.\+common.\+api.\+Trace\+Manager.\+Trace\+Manager.\+get\+Segment\+List(), software.\+chipwhisperer.\+common.\+api.\+Trace\+Manager.\+Trace\+Manager.\+get\+Textin(), software.\+chipwhisperer.\+common.\+api.\+Trace\+Manager.\+Trace\+Manager.\+get\+Textout(), and software.\+chipwhisperer.\+common.\+api.\+Trace\+Manager.\+Trace\+Manager.\+get\+Trace().
+
+
+\begin{DoxyCode}
+95     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1__base_1_1PreprocessingBase_aabc8dbcfac138ca7e9cb3781aea30189}{findMappedTrace}(self, n):
+96         \textcolor{keywordflow}{return} self.\_traceSource.findMappedTrace(n)
+97 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1__base_1_1PreprocessingBase_a42050903e153b279344fd344547b6832}{}\index{software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+\_\+base\+::\+Preprocessing\+Base@{software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+\_\+base\+::\+Preprocessing\+Base}!get\+Aux\+Data@{get\+Aux\+Data}}
+\index{get\+Aux\+Data@{get\+Aux\+Data}!software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+\_\+base\+::\+Preprocessing\+Base@{software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+\_\+base\+::\+Preprocessing\+Base}}
+\subsubsection[{get\+Aux\+Data}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+analyzer.\+preprocessing.\+\_\+base.\+Preprocessing\+Base.\+get\+Aux\+Data (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{n, }
+\item[{}]{aux\+Dic}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1__base_1_1PreprocessingBase_a42050903e153b279344fd344547b6832}
+
+\begin{DoxyCode}
+92     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1__base_1_1PreprocessingBase_a42050903e153b279344fd344547b6832}{getAuxData}(self, n, auxDic):
+93         \textcolor{keywordflow}{return} self.\_traceSource.getAuxData(n, auxDic)
+94 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1__base_1_1PreprocessingBase_a894f01b7b6122e929d9294373e7cfc51}{}\index{software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+\_\+base\+::\+Preprocessing\+Base@{software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+\_\+base\+::\+Preprocessing\+Base}!get\+Known\+Key@{get\+Known\+Key}}
+\index{get\+Known\+Key@{get\+Known\+Key}!software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+\_\+base\+::\+Preprocessing\+Base@{software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+\_\+base\+::\+Preprocessing\+Base}}
+\subsubsection[{get\+Known\+Key}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+analyzer.\+preprocessing.\+\_\+base.\+Preprocessing\+Base.\+get\+Known\+Key (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{n = {\ttfamily None}}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1__base_1_1PreprocessingBase_a894f01b7b6122e929d9294373e7cfc51}
+\begin{DoxyVerb}Get known-key number n\end{DoxyVerb}
+ 
+\begin{DoxyCode}
+81     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1__base_1_1PreprocessingBase_a894f01b7b6122e929d9294373e7cfc51}{getKnownKey}(self, n=None):
+82         \textcolor{stringliteral}{"""Get known-key number n"""}
+83         \textcolor{keywordflow}{return} self.\_traceSource.getKnownKey(n)
+84 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1__base_1_1PreprocessingBase_ad0fe8b21c542e0851e5c10ca8128a4fb}{}\index{software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+\_\+base\+::\+Preprocessing\+Base@{software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+\_\+base\+::\+Preprocessing\+Base}!get\+Segment\+List@{get\+Segment\+List}}
+\index{get\+Segment\+List@{get\+Segment\+List}!software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+\_\+base\+::\+Preprocessing\+Base@{software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+\_\+base\+::\+Preprocessing\+Base}}
+\subsubsection[{get\+Segment\+List}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+analyzer.\+preprocessing.\+\_\+base.\+Preprocessing\+Base.\+get\+Segment\+List (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1__base_1_1PreprocessingBase_ad0fe8b21c542e0851e5c10ca8128a4fb}
+
+\begin{DoxyCode}
+89     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1__base_1_1PreprocessingBase_ad0fe8b21c542e0851e5c10ca8128a4fb}{getSegmentList}(self):
+90         \textcolor{keywordflow}{return} self.\_traceSource.getSegmentList()
+91 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1__base_1_1PreprocessingBase_a383263b764a4b4a25611ab8973486611}{}\index{software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+\_\+base\+::\+Preprocessing\+Base@{software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+\_\+base\+::\+Preprocessing\+Base}!get\+Textin@{get\+Textin}}
+\index{get\+Textin@{get\+Textin}!software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+\_\+base\+::\+Preprocessing\+Base@{software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+\_\+base\+::\+Preprocessing\+Base}}
+\subsubsection[{get\+Textin}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+analyzer.\+preprocessing.\+\_\+base.\+Preprocessing\+Base.\+get\+Textin (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{n}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1__base_1_1PreprocessingBase_a383263b764a4b4a25611ab8973486611}
+\begin{DoxyVerb}Get text-in number n\end{DoxyVerb}
+ 
+\begin{DoxyCode}
+73     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1__base_1_1PreprocessingBase_a383263b764a4b4a25611ab8973486611}{getTextin}(self, n):
+74         \textcolor{stringliteral}{"""Get text-in number n"""}
+75         \textcolor{keywordflow}{return} self.\_traceSource.getTextin(n)
+76 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1__base_1_1PreprocessingBase_a12dd4307b279451b72450ad2479d4fad}{}\index{software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+\_\+base\+::\+Preprocessing\+Base@{software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+\_\+base\+::\+Preprocessing\+Base}!get\+Textout@{get\+Textout}}
+\index{get\+Textout@{get\+Textout}!software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+\_\+base\+::\+Preprocessing\+Base@{software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+\_\+base\+::\+Preprocessing\+Base}}
+\subsubsection[{get\+Textout}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+analyzer.\+preprocessing.\+\_\+base.\+Preprocessing\+Base.\+get\+Textout (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{n}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1__base_1_1PreprocessingBase_a12dd4307b279451b72450ad2479d4fad}
+\begin{DoxyVerb}Get text-out number n\end{DoxyVerb}
+ 
+\begin{DoxyCode}
+77     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1__base_1_1PreprocessingBase_a12dd4307b279451b72450ad2479d4fad}{getTextout}(self, n):
+78         \textcolor{stringliteral}{"""Get text-out number n"""}
+79         \textcolor{keywordflow}{return} self.\_traceSource.getTextout(n)
+80 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1__base_1_1PreprocessingBase_a67bee0053da84ff226f88331141f88d8}{}\index{software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+\_\+base\+::\+Preprocessing\+Base@{software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+\_\+base\+::\+Preprocessing\+Base}!get\+Trace@{get\+Trace}}
+\index{get\+Trace@{get\+Trace}!software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+\_\+base\+::\+Preprocessing\+Base@{software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+\_\+base\+::\+Preprocessing\+Base}}
+\subsubsection[{get\+Trace}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+analyzer.\+preprocessing.\+\_\+base.\+Preprocessing\+Base.\+get\+Trace (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{n}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1__base_1_1PreprocessingBase_a67bee0053da84ff226f88331141f88d8}
+\begin{DoxyVerb}Get trace number n\end{DoxyVerb}
+ 
+
+References software.\+chipwhisperer.\+analyzer.\+preprocessing.\+\_\+base.\+Preprocessing\+Base.\+enabled.
+
+
+\begin{DoxyCode}
+64     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1__base_1_1PreprocessingBase_a67bee0053da84ff226f88331141f88d8}{getTrace}(self, n):
+65         \textcolor{stringliteral}{"""Get trace number n"""}
+66         \textcolor{keywordflow}{if} self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1__base_1_1PreprocessingBase_ae665d04fcffe5a72f76fb88c4e0f9aaa}{enabled}:
+67             trace = self.\_traceSource.getTrace(n)
+68             \textcolor{comment}{# Do your preprocessing here}
+69             \textcolor{keywordflow}{return} trace
+70         \textcolor{keywordflow}{else}:
+71             \textcolor{keywordflow}{return} self.\_traceSource.getTrace(n)
+72 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1__base_1_1PreprocessingBase_a45d799a8f734677f3576f2f5f8337f54}{}\index{software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+\_\+base\+::\+Preprocessing\+Base@{software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+\_\+base\+::\+Preprocessing\+Base}!init@{init}}
+\index{init@{init}!software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+\_\+base\+::\+Preprocessing\+Base@{software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+\_\+base\+::\+Preprocessing\+Base}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+analyzer.\+preprocessing.\+\_\+base.\+Preprocessing\+Base.\+init (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1__base_1_1PreprocessingBase_a45d799a8f734677f3576f2f5f8337f54}
+\begin{DoxyVerb}Do any initilization required once all traces are loaded\end{DoxyVerb}
+ 
+
+Referenced by software.\+chipwhisperer.\+capture.\+targets.\+S\+A\+K\+U\+R\+A\+G.\+Sakura\+G.\+con(), software.\+chipwhisperer.\+capture.\+targets.\+S\+A\+S\+E\+B\+O\+G\+I\+I.\+Sasebo\+G\+I\+I.\+reinit(), software.\+chipwhisperer.\+analyzer.\+preprocessing.\+Resync\+Cross\+Correlation.\+Resync\+Cross\+Correlation.\+set\+Reference(), software.\+chipwhisperer.\+analyzer.\+preprocessing.\+Resync\+S\+A\+D.\+Resync\+S\+A\+D.\+set\+Reference(), and software.\+chipwhisperer.\+analyzer.\+preprocessing.\+Resync\+Peak\+Detect.\+Resync\+Peak\+Detect.\+set\+Reference().
+
+
+\begin{DoxyCode}
+85     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1__base_1_1PreprocessingBase_a45d799a8f734677f3576f2f5f8337f54}{init}(self):
+86         \textcolor{stringliteral}{"""Do any initilization required once all traces are loaded"""}
+87         \textcolor{keywordflow}{pass}
+88 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1__base_1_1PreprocessingBase_aa88129028d0bcdb18323d3eef3d95d6d}{}\index{software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+\_\+base\+::\+Preprocessing\+Base@{software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+\_\+base\+::\+Preprocessing\+Base}!num\+Points@{num\+Points}}
+\index{num\+Points@{num\+Points}!software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+\_\+base\+::\+Preprocessing\+Base@{software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+\_\+base\+::\+Preprocessing\+Base}}
+\subsubsection[{num\+Points}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+analyzer.\+preprocessing.\+\_\+base.\+Preprocessing\+Base.\+num\+Points (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1__base_1_1PreprocessingBase_aa88129028d0bcdb18323d3eef3d95d6d}
+
+
+Referenced by software.\+chipwhisperer.\+common.\+traces.\+\_\+base.\+Trace\+Container.\+write\+Data\+To\+Config().
+
+
+\begin{DoxyCode}
+101     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1__base_1_1PreprocessingBase_aa88129028d0bcdb18323d3eef3d95d6d}{numPoints}(self):
+102         \textcolor{keywordflow}{return} self.\_traceSource.numPoints()\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1__base_1_1PreprocessingBase_a8a5570de2dcd1bfa2f7094af292d8397}{}\index{software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+\_\+base\+::\+Preprocessing\+Base@{software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+\_\+base\+::\+Preprocessing\+Base}!num\+Traces@{num\+Traces}}
+\index{num\+Traces@{num\+Traces}!software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+\_\+base\+::\+Preprocessing\+Base@{software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+\_\+base\+::\+Preprocessing\+Base}}
+\subsubsection[{num\+Traces}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+analyzer.\+preprocessing.\+\_\+base.\+Preprocessing\+Base.\+num\+Traces (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1__base_1_1PreprocessingBase_a8a5570de2dcd1bfa2f7094af292d8397}
+
+
+Referenced by software.\+chipwhisperer.\+capture.\+ui.\+C\+W\+Capture\+G\+U\+I.\+C\+W\+Capture\+G\+U\+I.\+validate\+Settings().
+
+
+\begin{DoxyCode}
+98     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1__base_1_1PreprocessingBase_a8a5570de2dcd1bfa2f7094af292d8397}{numTraces}(self):
+99         \textcolor{keywordflow}{return} self.\_traceSource.numTraces()
+100 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1__base_1_1PreprocessingBase_a953d83422ff476e8ab26758e89d23f24}{}\index{software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+\_\+base\+::\+Preprocessing\+Base@{software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+\_\+base\+::\+Preprocessing\+Base}!set\+Enabled@{set\+Enabled}}
+\index{set\+Enabled@{set\+Enabled}!software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+\_\+base\+::\+Preprocessing\+Base@{software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+\_\+base\+::\+Preprocessing\+Base}}
+\subsubsection[{set\+Enabled}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+analyzer.\+preprocessing.\+\_\+base.\+Preprocessing\+Base.\+set\+Enabled (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{enabled}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1__base_1_1PreprocessingBase_a953d83422ff476e8ab26758e89d23f24}
+\begin{DoxyVerb}Turn on/off this preprocessing\end{DoxyVerb}
+ 
+
+Referenced by software.\+chipwhisperer.\+capture.\+scopes.\+\_\+qt.\+Open\+A\+D\+C\+Qt.\+con().
+
+
+\begin{DoxyCode}
+59     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1__base_1_1PreprocessingBase_a953d83422ff476e8ab26758e89d23f24}{setEnabled}(self, enabled):
+60         \textcolor{stringliteral}{"""Turn on/off this preprocessing"""}
+61         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1__base_1_1PreprocessingBase_ae665d04fcffe5a72f76fb88c4e0f9aaa}{enabled} = enabled
+62         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1__base_1_1PreprocessingBase_a8f1add186cf310162dc2dc547ca7c673}{updateScript}()
+63 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1__base_1_1PreprocessingBase_a8f1add186cf310162dc2dc547ca7c673}{}\index{software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+\_\+base\+::\+Preprocessing\+Base@{software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+\_\+base\+::\+Preprocessing\+Base}!update\+Script@{update\+Script}}
+\index{update\+Script@{update\+Script}!software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+\_\+base\+::\+Preprocessing\+Base@{software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+\_\+base\+::\+Preprocessing\+Base}}
+\subsubsection[{update\+Script}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+analyzer.\+preprocessing.\+\_\+base.\+Preprocessing\+Base.\+update\+Script (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{ignored = {\ttfamily None}}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1__base_1_1PreprocessingBase_a8f1add186cf310162dc2dc547ca7c673}
+
+
+Referenced by software.\+chipwhisperer.\+analyzer.\+preprocessing.\+Add\+Noise\+Random.\+Add\+Noise\+Random.\+\_\+\+\_\+init\+\_\+\+\_\+(), software.\+chipwhisperer.\+analyzer.\+preprocessing.\+Decimation\+Fixed.\+Decimation\+Fixed.\+\_\+\+\_\+init\+\_\+\+\_\+(), software.\+chipwhisperer.\+analyzer.\+preprocessing.\+Filter.\+Filter.\+\_\+\+\_\+init\+\_\+\+\_\+(), software.\+chipwhisperer.\+analyzer.\+preprocessing.\+Decimation\+Clock\+Recovery.\+Decimation\+Clock\+Recovery.\+\_\+\+\_\+init\+\_\+\+\_\+(), software.\+chipwhisperer.\+analyzer.\+preprocessing.\+\_\+base.\+Preprocessing\+Base.\+set\+Enabled(), software.\+chipwhisperer.\+analyzer.\+preprocessing.\+Normalize.\+Normalize.\+update\+Norm\+Class(), and software.\+chipwhisperer.\+analyzer.\+utils.\+Trace\+Explorer\+Scripts.\+Partition\+Display.\+Partition\+Display.\+update\+P\+O\+I().
+
+
+\begin{DoxyCode}
+56     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1__base_1_1PreprocessingBase_a8f1add186cf310162dc2dc547ca7c673}{updateScript}(self, ignored=None):
+57         \textcolor{keywordflow}{pass}
+58 
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1__base_1_1PreprocessingBase_ae665d04fcffe5a72f76fb88c4e0f9aaa}{}\index{software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+\_\+base\+::\+Preprocessing\+Base@{software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+\_\+base\+::\+Preprocessing\+Base}!enabled@{enabled}}
+\index{enabled@{enabled}!software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+\_\+base\+::\+Preprocessing\+Base@{software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+\_\+base\+::\+Preprocessing\+Base}}
+\subsubsection[{enabled}]{\setlength{\rightskip}{0pt plus 5cm}software.\+chipwhisperer.\+analyzer.\+preprocessing.\+\_\+base.\+Preprocessing\+Base.\+enabled}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1__base_1_1PreprocessingBase_ae665d04fcffe5a72f76fb88c4e0f9aaa}
+
+
+Referenced by software.\+chipwhisperer.\+analyzer.\+preprocessing.\+Add\+Noise\+Random.\+Add\+Noise\+Random.\+get\+Trace(), software.\+chipwhisperer.\+analyzer.\+preprocessing.\+Decimation\+Fixed.\+Decimation\+Fixed.\+get\+Trace(), software.\+chipwhisperer.\+analyzer.\+preprocessing.\+Add\+Noise\+Jitter.\+Add\+Noise\+Jitter.\+get\+Trace(), software.\+chipwhisperer.\+analyzer.\+preprocessing.\+\_\+base.\+Preprocessing\+Base.\+get\+Trace(), software.\+chipwhisperer.\+analyzer.\+preprocessing.\+Resync\+Resample\+Z\+C.\+Resync\+Resample\+Z\+C.\+get\+Trace(), software.\+chipwhisperer.\+analyzer.\+preprocessing.\+Resync\+Cross\+Correlation.\+Resync\+Cross\+Correlation.\+get\+Trace(), software.\+chipwhisperer.\+analyzer.\+preprocessing.\+Filter.\+Filter.\+get\+Trace(), software.\+chipwhisperer.\+analyzer.\+preprocessing.\+Resync\+Peak\+Detect.\+Resync\+Peak\+Detect.\+get\+Trace(), software.\+chipwhisperer.\+analyzer.\+preprocessing.\+Resync\+S\+A\+D.\+Resync\+S\+A\+D.\+get\+Trace(), software.\+chipwhisperer.\+analyzer.\+preprocessing.\+Decimation\+Clock\+Recovery.\+Decimation\+Clock\+Recovery.\+get\+Trace(), software.\+chipwhisperer.\+analyzer.\+preprocessing.\+Normalize.\+Normalize.\+get\+Trace(), and software.\+chipwhisperer.\+analyzer.\+preprocessing.\+\_\+base.\+Preprocessing\+Base.\+set\+Enabled().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{analyzer_2preprocessing_2__base_8py}{analyzer/preprocessing/\+\_\+base.\+py}\end{DoxyCompactItemize}

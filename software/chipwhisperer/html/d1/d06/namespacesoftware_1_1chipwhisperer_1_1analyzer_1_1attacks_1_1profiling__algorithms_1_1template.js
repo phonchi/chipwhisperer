@@ -1,0 +1,4 @@
+var namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1profiling__algorithms_1_1template =
+[
+    [ "ProfilingTemplate", "d8/d7b/classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1profiling__algorithms_1_1template_1_1ProfilingTemplate.html", "d8/d7b/classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1profiling__algorithms_1_1template_1_1ProfilingTemplate" ]
+];

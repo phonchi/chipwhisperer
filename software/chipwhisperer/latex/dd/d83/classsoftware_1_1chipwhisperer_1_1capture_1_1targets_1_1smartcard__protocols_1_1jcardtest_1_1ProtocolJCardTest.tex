@@ -1,0 +1,128 @@
+\hypertarget{classsoftware_1_1chipwhisperer_1_1capture_1_1targets_1_1smartcard__protocols_1_1jcardtest_1_1ProtocolJCardTest}{}\section{software.\+chipwhisperer.\+capture.\+targets.\+smartcard\+\_\+protocols.\+jcardtest.\+Protocol\+J\+Card\+Test Class Reference}
+\label{classsoftware_1_1chipwhisperer_1_1capture_1_1targets_1_1smartcard__protocols_1_1jcardtest_1_1ProtocolJCardTest}\index{software.\+chipwhisperer.\+capture.\+targets.\+smartcard\+\_\+protocols.\+jcardtest.\+Protocol\+J\+Card\+Test@{software.\+chipwhisperer.\+capture.\+targets.\+smartcard\+\_\+protocols.\+jcardtest.\+Protocol\+J\+Card\+Test}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1targets_1_1smartcard__protocols_1_1jcardtest_1_1ProtocolJCardTest_aecf021021fc1806d70f664846ade682e}{load\+Encryption\+Key} (self, key)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1targets_1_1smartcard__protocols_1_1jcardtest_1_1ProtocolJCardTest_ada8c20654b8c0405a9348ce22730262d}{load\+Input} (self, inputtext)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1targets_1_1smartcard__protocols_1_1jcardtest_1_1ProtocolJCardTest_a704a78b04c2fa14f79e8e0f791ae1da9}{go} (self)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1targets_1_1smartcard__protocols_1_1jcardtest_1_1ProtocolJCardTest_a99cf50c93a51f3285a2f9e51f1d2d20f}{read\+Output} (self)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1targets_1_1smartcard__protocols_1_1jcardtest_1_1ProtocolJCardTest_aa9ebbb3ebad5108bd2f41b17fcadee91}{resp}
+\end{DoxyCompactItemize}
+
+
+Inheritance diagram for software.\+chipwhisperer.\+capture.\+targets.\+smartcard\+\_\+protocols.\+jcardtest.\+Protocol\+J\+Card\+Test\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{d3/dae/classsoftware_1_1chipwhisperer_1_1capture_1_1targets_1_1smartcard__protocols_1_1jcardtest_1_1ProtocolJCardTest__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for software.\+chipwhisperer.\+capture.\+targets.\+smartcard\+\_\+protocols.\+jcardtest.\+Protocol\+J\+Card\+Test\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{d5/d24/classsoftware_1_1chipwhisperer_1_1capture_1_1targets_1_1smartcard__protocols_1_1jcardtest_1_1ProtocolJCardTest__coll__graph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1capture_1_1targets_1_1smartcard__protocols_1_1jcardtest_1_1ProtocolJCardTest_a704a78b04c2fa14f79e8e0f791ae1da9}{}\index{software\+::chipwhisperer\+::capture\+::targets\+::smartcard\+\_\+protocols\+::jcardtest\+::\+Protocol\+J\+Card\+Test@{software\+::chipwhisperer\+::capture\+::targets\+::smartcard\+\_\+protocols\+::jcardtest\+::\+Protocol\+J\+Card\+Test}!go@{go}}
+\index{go@{go}!software\+::chipwhisperer\+::capture\+::targets\+::smartcard\+\_\+protocols\+::jcardtest\+::\+Protocol\+J\+Card\+Test@{software\+::chipwhisperer\+::capture\+::targets\+::smartcard\+\_\+protocols\+::jcardtest\+::\+Protocol\+J\+Card\+Test}}
+\subsubsection[{go}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+capture.\+targets.\+smartcard\+\_\+protocols.\+jcardtest.\+Protocol\+J\+Card\+Test.\+go (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1capture_1_1targets_1_1smartcard__protocols_1_1jcardtest_1_1ProtocolJCardTest_a704a78b04c2fa14f79e8e0f791ae1da9}
+
+\begin{DoxyCode}
+37     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1targets_1_1smartcard__protocols_1_1jcardtest_1_1ProtocolJCardTest_a704a78b04c2fa14f79e8e0f791ae1da9}{go}(self):
+38 
+39         \textcolor{comment}{# self.hw.scserv.connection.disconnect()}
+40         \textcolor{comment}{# self.hw.con()}
+41 
+42         status = self.hw.sendAPDU(0x00, 0xA4, 0x04, 0x00, [0xD0, 0xD1, 0xD2, 0xD3, 0xD4, 0xD5, 0x01, 0x01])
+43         \textcolor{keywordflow}{if} status != 0x9000:
+44             \textcolor{keywordflow}{raise} IOError(\textcolor{stringliteral}{"Invalid Status: %x"} % status)
+45 
+46         (resp, pay) = self.hw.sendAPDU(0x80, 0x10, 0x01, 0x02, [0xAE], rxdatalen=6)
+47         \textcolor{keywordflow}{if}  resp != 0x9000:
+48             \textcolor{keywordflow}{raise} IOError(\textcolor{stringliteral}{"Invalid Status: %x"} % status)
+49 
+50         counter1 = (pay[5] << 8) | pay[6]
+51         counter2 = (pay[7] << 8) | pay[8]
+52         counter3 = (pay[9] << 8) | pay[10]
+53 
+54         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1targets_1_1smartcard__protocols_1_1jcardtest_1_1ProtocolJCardTest_aa9ebbb3ebad5108bd2f41b17fcadee91}{resp} = (counter1, counter2, counter3)
+55         \textcolor{keywordflow}{print} (counter1, counter2, counter3)
+56 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1capture_1_1targets_1_1smartcard__protocols_1_1jcardtest_1_1ProtocolJCardTest_aecf021021fc1806d70f664846ade682e}{}\index{software\+::chipwhisperer\+::capture\+::targets\+::smartcard\+\_\+protocols\+::jcardtest\+::\+Protocol\+J\+Card\+Test@{software\+::chipwhisperer\+::capture\+::targets\+::smartcard\+\_\+protocols\+::jcardtest\+::\+Protocol\+J\+Card\+Test}!load\+Encryption\+Key@{load\+Encryption\+Key}}
+\index{load\+Encryption\+Key@{load\+Encryption\+Key}!software\+::chipwhisperer\+::capture\+::targets\+::smartcard\+\_\+protocols\+::jcardtest\+::\+Protocol\+J\+Card\+Test@{software\+::chipwhisperer\+::capture\+::targets\+::smartcard\+\_\+protocols\+::jcardtest\+::\+Protocol\+J\+Card\+Test}}
+\subsubsection[{load\+Encryption\+Key}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+capture.\+targets.\+smartcard\+\_\+protocols.\+jcardtest.\+Protocol\+J\+Card\+Test.\+load\+Encryption\+Key (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{key}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1capture_1_1targets_1_1smartcard__protocols_1_1jcardtest_1_1ProtocolJCardTest_aecf021021fc1806d70f664846ade682e}
+
+\begin{DoxyCode}
+31     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1targets_1_1smartcard__protocols_1_1jcardtest_1_1ProtocolJCardTest_aecf021021fc1806d70f664846ade682e}{loadEncryptionKey}(self, key):
+32         \textcolor{keywordflow}{pass}
+33 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1capture_1_1targets_1_1smartcard__protocols_1_1jcardtest_1_1ProtocolJCardTest_ada8c20654b8c0405a9348ce22730262d}{}\index{software\+::chipwhisperer\+::capture\+::targets\+::smartcard\+\_\+protocols\+::jcardtest\+::\+Protocol\+J\+Card\+Test@{software\+::chipwhisperer\+::capture\+::targets\+::smartcard\+\_\+protocols\+::jcardtest\+::\+Protocol\+J\+Card\+Test}!load\+Input@{load\+Input}}
+\index{load\+Input@{load\+Input}!software\+::chipwhisperer\+::capture\+::targets\+::smartcard\+\_\+protocols\+::jcardtest\+::\+Protocol\+J\+Card\+Test@{software\+::chipwhisperer\+::capture\+::targets\+::smartcard\+\_\+protocols\+::jcardtest\+::\+Protocol\+J\+Card\+Test}}
+\subsubsection[{load\+Input}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+capture.\+targets.\+smartcard\+\_\+protocols.\+jcardtest.\+Protocol\+J\+Card\+Test.\+load\+Input (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{inputtext}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1capture_1_1targets_1_1smartcard__protocols_1_1jcardtest_1_1ProtocolJCardTest_ada8c20654b8c0405a9348ce22730262d}
+
+\begin{DoxyCode}
+34     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1targets_1_1smartcard__protocols_1_1jcardtest_1_1ProtocolJCardTest_ada8c20654b8c0405a9348ce22730262d}{loadInput}(self, inputtext):
+35         \textcolor{keywordflow}{pass}
+36 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1capture_1_1targets_1_1smartcard__protocols_1_1jcardtest_1_1ProtocolJCardTest_a99cf50c93a51f3285a2f9e51f1d2d20f}{}\index{software\+::chipwhisperer\+::capture\+::targets\+::smartcard\+\_\+protocols\+::jcardtest\+::\+Protocol\+J\+Card\+Test@{software\+::chipwhisperer\+::capture\+::targets\+::smartcard\+\_\+protocols\+::jcardtest\+::\+Protocol\+J\+Card\+Test}!read\+Output@{read\+Output}}
+\index{read\+Output@{read\+Output}!software\+::chipwhisperer\+::capture\+::targets\+::smartcard\+\_\+protocols\+::jcardtest\+::\+Protocol\+J\+Card\+Test@{software\+::chipwhisperer\+::capture\+::targets\+::smartcard\+\_\+protocols\+::jcardtest\+::\+Protocol\+J\+Card\+Test}}
+\subsubsection[{read\+Output}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+capture.\+targets.\+smartcard\+\_\+protocols.\+jcardtest.\+Protocol\+J\+Card\+Test.\+read\+Output (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1capture_1_1targets_1_1smartcard__protocols_1_1jcardtest_1_1ProtocolJCardTest_a99cf50c93a51f3285a2f9e51f1d2d20f}
+
+
+References software.\+chipwhisperer.\+capture.\+targets.\+smartcard\+\_\+protocols.\+jcardtest.\+Protocol\+J\+Card\+Test.\+resp.
+
+
+\begin{DoxyCode}
+57     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1targets_1_1smartcard__protocols_1_1jcardtest_1_1ProtocolJCardTest_a99cf50c93a51f3285a2f9e51f1d2d20f}{readOutput}(self):
+58         \textcolor{keywordflow}{return} self.\hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1targets_1_1smartcard__protocols_1_1jcardtest_1_1ProtocolJCardTest_aa9ebbb3ebad5108bd2f41b17fcadee91}{resp}
+59 \end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1capture_1_1targets_1_1smartcard__protocols_1_1jcardtest_1_1ProtocolJCardTest_aa9ebbb3ebad5108bd2f41b17fcadee91}{}\index{software\+::chipwhisperer\+::capture\+::targets\+::smartcard\+\_\+protocols\+::jcardtest\+::\+Protocol\+J\+Card\+Test@{software\+::chipwhisperer\+::capture\+::targets\+::smartcard\+\_\+protocols\+::jcardtest\+::\+Protocol\+J\+Card\+Test}!resp@{resp}}
+\index{resp@{resp}!software\+::chipwhisperer\+::capture\+::targets\+::smartcard\+\_\+protocols\+::jcardtest\+::\+Protocol\+J\+Card\+Test@{software\+::chipwhisperer\+::capture\+::targets\+::smartcard\+\_\+protocols\+::jcardtest\+::\+Protocol\+J\+Card\+Test}}
+\subsubsection[{resp}]{\setlength{\rightskip}{0pt plus 5cm}software.\+chipwhisperer.\+capture.\+targets.\+smartcard\+\_\+protocols.\+jcardtest.\+Protocol\+J\+Card\+Test.\+resp}\label{classsoftware_1_1chipwhisperer_1_1capture_1_1targets_1_1smartcard__protocols_1_1jcardtest_1_1ProtocolJCardTest_aa9ebbb3ebad5108bd2f41b17fcadee91}
+
+
+Referenced by software.\+chipwhisperer.\+capture.\+targets.\+smartcard\+\_\+protocols.\+jcardtest.\+Protocol\+J\+Card\+Test.\+read\+Output().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{jcardtest_8py}{jcardtest.\+py}\end{DoxyCompactItemize}

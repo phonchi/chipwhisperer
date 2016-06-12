@@ -1,0 +1,121 @@
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1SerialProtocols}{}\section{software.\+chipwhisperer.\+capture.\+utils.\+Serial\+Protocols Namespace Reference}
+\label{namespacesoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1SerialProtocols}\index{software.\+chipwhisperer.\+capture.\+utils.\+Serial\+Protocols@{software.\+chipwhisperer.\+capture.\+utils.\+Serial\+Protocols}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacesoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1SerialProtocols_af6539cd2f29a57523083d34fa324d493}{C\+W\+Calc\+Clk\+Div} (sysclk, targfreq)
+\item 
+def \hyperlink{namespacesoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1SerialProtocols_ae026398d5953835633fdc1631d7847a8}{str\+To\+Bits}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1SerialProtocols_af6539cd2f29a57523083d34fa324d493}{}\index{software\+::chipwhisperer\+::capture\+::utils\+::\+Serial\+Protocols@{software\+::chipwhisperer\+::capture\+::utils\+::\+Serial\+Protocols}!C\+W\+Calc\+Clk\+Div@{C\+W\+Calc\+Clk\+Div}}
+\index{C\+W\+Calc\+Clk\+Div@{C\+W\+Calc\+Clk\+Div}!software\+::chipwhisperer\+::capture\+::utils\+::\+Serial\+Protocols@{software\+::chipwhisperer\+::capture\+::utils\+::\+Serial\+Protocols}}
+\subsubsection[{C\+W\+Calc\+Clk\+Div}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+capture.\+utils.\+Serial\+Protocols.\+C\+W\+Calc\+Clk\+Div (
+\begin{DoxyParamCaption}
+\item[{}]{sysclk, }
+\item[{}]{targfreq}
+\end{DoxyParamCaption}
+)}\label{namespacesoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1SerialProtocols_af6539cd2f29a57523083d34fa324d493}
+
+\begin{DoxyCode}
+2 \textcolor{keyword}{def }\hyperlink{namespacesoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1SerialProtocols_af6539cd2f29a57523083d34fa324d493}{CWCalcClkDiv}(sysclk, targfreq):
+3     clkdivider = int((sysclk / (2 * targfreq)) + 1)   
+4     
+5     \textcolor{keywordflow}{try}:
+6         actual = sysclk / (2 * (clkdivider - 1))
+7     \textcolor{keywordflow}{except} ZeroDivisionError:
+8         actual = 0
+9     error = (float(actual - targfreq) / targfreq)*100.0        
+10     
+11     \textcolor{keywordflow}{return} (clkdivider, error)
+12     
+13     \textcolor{comment}{#    desired\_freq = 38400 * 3}
+14     \textcolor{comment}{#    clk = 30E6}
+15     \textcolor{comment}{#    clkdivider = (clk / (2 * desired\_freq)) + 1        }
+16     \textcolor{comment}{#    self.cwADV.setIOPattern(strToPattern("\(\backslash\)n"), clkdiv=clkdivider)}
+17 
+18 
+\end{DoxyCode}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1SerialProtocols_ae026398d5953835633fdc1631d7847a8}{}\index{software\+::chipwhisperer\+::capture\+::utils\+::\+Serial\+Protocols@{software\+::chipwhisperer\+::capture\+::utils\+::\+Serial\+Protocols}!str\+To\+Bits@{str\+To\+Bits}}
+\index{str\+To\+Bits@{str\+To\+Bits}!software\+::chipwhisperer\+::capture\+::utils\+::\+Serial\+Protocols@{software\+::chipwhisperer\+::capture\+::utils\+::\+Serial\+Protocols}}
+\subsubsection[{str\+To\+Bits}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+capture.\+utils.\+Serial\+Protocols.\+str\+To\+Bits (
+\begin{DoxyParamCaption}
+\item[{}]{string, }
+\item[{}]{startbits = {\ttfamily 1}, }
+\item[{}]{stopbits = {\ttfamily 1}, }
+\item[{}]{parity = {\ttfamily \char`\"{}none\char`\"{}}, }
+\item[{}]{guardbits = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\label{namespacesoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1SerialProtocols_ae026398d5953835633fdc1631d7847a8}
+\begin{DoxyVerb}Converts a string into a standard serial pattern\end{DoxyVerb}
+ 
+
+Referenced by software.\+chipwhisperer.\+capture.\+scopes.\+cwhardware.\+Chip\+Whisperer\+Digital\+Pattern.\+Chip\+Whisperer\+Digital\+Pattern.\+set\+Pattern(), and software.\+chipwhisperer.\+capture.\+scopes.\+cwhardware.\+Chip\+Whisperer\+Targets.\+C\+W\+Universal\+Serial.\+write().
+
+
+\begin{DoxyCode}
+19 \textcolor{keyword}{def }\hyperlink{namespacesoftware_1_1chipwhisperer_1_1capture_1_1utils_1_1SerialProtocols_ae026398d5953835633fdc1631d7847a8}{strToBits}(string, startbits=1, stopbits=1, parity="none", guardbits=0):
+20     \textcolor{stringliteral}{"""Converts a string into a standard serial pattern"""}
+21     totalpat = []
+22     \textcolor{keywordflow}{for} s \textcolor{keywordflow}{in} string:
+23         
+24         \textcolor{keywordflow}{try}:        
+25             bp = ord(s)
+26         \textcolor{keywordflow}{except}:
+27             bp = s
+28             
+29         \textcolor{keywordflow}{if} s \textcolor{keywordflow}{is} \textcolor{keywordtype}{None}:
+30             \textcolor{keywordflow}{for} i \textcolor{keywordflow}{in} range(0, startbits):
+31                 totalpat.append(1)
+32                 
+33             \textcolor{keywordflow}{for} i \textcolor{keywordflow}{in} range(0, 8):
+34                 totalpat.append(1)
+35                 
+36             \textcolor{keywordflow}{if} parity != \textcolor{stringliteral}{"none"}:
+37                 totalpat.append(1)
+38                 
+39             \textcolor{keywordflow}{for} i \textcolor{keywordflow}{in} range(0, stopbits):
+40                 totalpat.append(1)
+41                 
+42             \textcolor{keywordflow}{for} i \textcolor{keywordflow}{in} range(0, guardbits):
+43                 totalpat.append(1)
+44         \textcolor{keywordflow}{else}:
+45                 
+46             \textcolor{comment}{#Start bits}
+47             \textcolor{keywordflow}{for} i \textcolor{keywordflow}{in} range(0, startbits):
+48                 totalpat.append(0)
+49              
+50             onebits = 0
+51              
+52             \textcolor{comment}{#Following for MSB first:   }
+53             \textcolor{comment}{#for i in range(7, -1, -1):}
+54             \textcolor{comment}{#Serial protocols LSB first:}
+55             \textcolor{keywordflow}{for} i \textcolor{keywordflow}{in} range(0,  8):
+56                 bit = (bp >> i) & 0x01
+57                 \textcolor{keywordflow}{if} bit:
+58                     onebits += 1
+59                 totalpat.append(bit)
+60     
+61             \textcolor{comment}{#Parity bits}
+62             \textcolor{keywordflow}{if} (onebits % 2) == 0:
+63                 \textcolor{keywordflow}{if} parity == \textcolor{stringliteral}{"even"}:
+64                     totalpat.append(0)
+65                 \textcolor{keywordflow}{elif} parity == \textcolor{stringliteral}{"odd"}:
+66                     totalpat.append(1)
+67             \textcolor{keywordflow}{else}:
+68                 \textcolor{keywordflow}{if} parity == \textcolor{stringliteral}{"even"}:
+69                     totalpat.append(1)
+70                 \textcolor{keywordflow}{elif} parity == \textcolor{stringliteral}{"odd"}:
+71                     totalpat.append(0)            
+72     
+73             \textcolor{comment}{#Stop bits}
+74             \textcolor{keywordflow}{for} i \textcolor{keywordflow}{in} range(0, stopbits):
+75                 totalpat.append(1)
+76     
+77             \textcolor{keywordflow}{for} i \textcolor{keywordflow}{in} range(0, guardbits):
+78                 totalpat.append(1)       
+79                 
+80     \textcolor{keywordflow}{return} totalpat
+81 \end{DoxyCode}

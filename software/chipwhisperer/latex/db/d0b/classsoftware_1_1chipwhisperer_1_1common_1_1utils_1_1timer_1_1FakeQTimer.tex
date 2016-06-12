@@ -1,0 +1,163 @@
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1timer_1_1FakeQTimer}{}\section{software.\+chipwhisperer.\+common.\+utils.\+timer.\+Fake\+Q\+Timer Class Reference}
+\label{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1timer_1_1FakeQTimer}\index{software.\+chipwhisperer.\+common.\+utils.\+timer.\+Fake\+Q\+Timer@{software.\+chipwhisperer.\+common.\+utils.\+timer.\+Fake\+Q\+Timer}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1timer_1_1FakeQTimer_ac028360f72084ef25a0c97d2edebac97}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1timer_1_1FakeQTimer_abf376752153c5974f821c4be4c3e164e}{connect} (self, callback)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1timer_1_1FakeQTimer_a40cf110c2d7815c6efae66b896d74868}{set\+Interval} (self, ms\+\_\+timeout)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1timer_1_1FakeQTimer_a52db52d71b88f18a465e2acbda588e9f}{start} (self)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1timer_1_1FakeQTimer_a8136527866560186a65442f98c63d1ee}{stop} (self)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1timer_1_1FakeQTimer_a7e1ce2f56019dbafbb4900acc51cb62f}{set\+Single\+Shot} (self, single\+\_\+shot)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1timer_1_1FakeQTimer_a9e24301cced0ef27c4721e652ee0221e}{timeout}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1timer_1_1FakeQTimer_a0c7b1e53a861fc83868588c20007fe27}{Timer} = Q\+Timer
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Replicates basic QTimer() API but does nothing \end{DoxyVerb}
+ 
+
+Inheritance diagram for software.\+chipwhisperer.\+common.\+utils.\+timer.\+Fake\+Q\+Timer\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=286pt]{d8/dfc/classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1timer_1_1FakeQTimer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for software.\+chipwhisperer.\+common.\+utils.\+timer.\+Fake\+Q\+Timer\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=286pt]{d0/d4a/classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1timer_1_1FakeQTimer__coll__graph}
+\end{center}
+\end{figure}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1timer_1_1FakeQTimer_ac028360f72084ef25a0c97d2edebac97}{}\index{software\+::chipwhisperer\+::common\+::utils\+::timer\+::\+Fake\+Q\+Timer@{software\+::chipwhisperer\+::common\+::utils\+::timer\+::\+Fake\+Q\+Timer}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!software\+::chipwhisperer\+::common\+::utils\+::timer\+::\+Fake\+Q\+Timer@{software\+::chipwhisperer\+::common\+::utils\+::timer\+::\+Fake\+Q\+Timer}}
+\subsubsection[{\+\_\+\+\_\+init\+\_\+\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+utils.\+timer.\+Fake\+Q\+Timer.\+\_\+\+\_\+init\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1timer_1_1FakeQTimer_ac028360f72084ef25a0c97d2edebac97}
+
+\begin{DoxyCode}
+28     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1timer_1_1FakeQTimer_ac028360f72084ef25a0c97d2edebac97}{\_\_init\_\_}(self):
+29         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1timer_1_1FakeQTimer_a9e24301cced0ef27c4721e652ee0221e}{timeout} = self
+30         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1timer_1_1FakeQTimer_a0ae6aaaace6e0181404323939a136ea6}{\_single\_shot} = \textcolor{keyword}{False}
+31 
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1timer_1_1FakeQTimer_abf376752153c5974f821c4be4c3e164e}{}\index{software\+::chipwhisperer\+::common\+::utils\+::timer\+::\+Fake\+Q\+Timer@{software\+::chipwhisperer\+::common\+::utils\+::timer\+::\+Fake\+Q\+Timer}!connect@{connect}}
+\index{connect@{connect}!software\+::chipwhisperer\+::common\+::utils\+::timer\+::\+Fake\+Q\+Timer@{software\+::chipwhisperer\+::common\+::utils\+::timer\+::\+Fake\+Q\+Timer}}
+\subsubsection[{connect}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+utils.\+timer.\+Fake\+Q\+Timer.\+connect (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{callback}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1timer_1_1FakeQTimer_abf376752153c5974f821c4be4c3e164e}
+
+
+References software.\+chipwhisperer.\+common.\+utils.\+timer.\+Fake\+Q\+Timer.\+\_\+callback, and software.\+chipwhisperer.\+common.\+api.\+Project\+Format.\+Config\+Obj\+Proj.\+\_\+callback.
+
+
+
+Referenced by software.\+chipwhisperer.\+common.\+ui.\+Trace\+Manager\+Dialog.\+Trace\+Manager\+Dialog.\+refresh().
+
+
+\begin{DoxyCode}
+32     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1timer_1_1FakeQTimer_abf376752153c5974f821c4be4c3e164e}{connect}(self, callback):
+33         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1timer_1_1FakeQTimer_a0967b5b3c51d3d0f231ed01e51dd599b}{\_callback} = callback
+34 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1timer_1_1FakeQTimer_a40cf110c2d7815c6efae66b896d74868}{}\index{software\+::chipwhisperer\+::common\+::utils\+::timer\+::\+Fake\+Q\+Timer@{software\+::chipwhisperer\+::common\+::utils\+::timer\+::\+Fake\+Q\+Timer}!set\+Interval@{set\+Interval}}
+\index{set\+Interval@{set\+Interval}!software\+::chipwhisperer\+::common\+::utils\+::timer\+::\+Fake\+Q\+Timer@{software\+::chipwhisperer\+::common\+::utils\+::timer\+::\+Fake\+Q\+Timer}}
+\subsubsection[{set\+Interval}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+utils.\+timer.\+Fake\+Q\+Timer.\+set\+Interval (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{ms\+\_\+timeout}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1timer_1_1FakeQTimer_a40cf110c2d7815c6efae66b896d74868}
+
+\begin{DoxyCode}
+35     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1timer_1_1FakeQTimer_a40cf110c2d7815c6efae66b896d74868}{setInterval}(self, ms\_timeout):
+36         \textcolor{keywordflow}{pass}
+37 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1timer_1_1FakeQTimer_a7e1ce2f56019dbafbb4900acc51cb62f}{}\index{software\+::chipwhisperer\+::common\+::utils\+::timer\+::\+Fake\+Q\+Timer@{software\+::chipwhisperer\+::common\+::utils\+::timer\+::\+Fake\+Q\+Timer}!set\+Single\+Shot@{set\+Single\+Shot}}
+\index{set\+Single\+Shot@{set\+Single\+Shot}!software\+::chipwhisperer\+::common\+::utils\+::timer\+::\+Fake\+Q\+Timer@{software\+::chipwhisperer\+::common\+::utils\+::timer\+::\+Fake\+Q\+Timer}}
+\subsubsection[{set\+Single\+Shot}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+utils.\+timer.\+Fake\+Q\+Timer.\+set\+Single\+Shot (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{single\+\_\+shot}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1timer_1_1FakeQTimer_a7e1ce2f56019dbafbb4900acc51cb62f}
+
+\begin{DoxyCode}
+47     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1timer_1_1FakeQTimer_a7e1ce2f56019dbafbb4900acc51cb62f}{setSingleShot}(self, single\_shot):
+48         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1timer_1_1FakeQTimer_a0ae6aaaace6e0181404323939a136ea6}{\_single\_shot} = single\_shot
+49 
+50 \textcolor{keywordflow}{try}:
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1timer_1_1FakeQTimer_a52db52d71b88f18a465e2acbda588e9f}{}\index{software\+::chipwhisperer\+::common\+::utils\+::timer\+::\+Fake\+Q\+Timer@{software\+::chipwhisperer\+::common\+::utils\+::timer\+::\+Fake\+Q\+Timer}!start@{start}}
+\index{start@{start}!software\+::chipwhisperer\+::common\+::utils\+::timer\+::\+Fake\+Q\+Timer@{software\+::chipwhisperer\+::common\+::utils\+::timer\+::\+Fake\+Q\+Timer}}
+\subsubsection[{start}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+utils.\+timer.\+Fake\+Q\+Timer.\+start (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1timer_1_1FakeQTimer_a52db52d71b88f18a465e2acbda588e9f}
+
+\begin{DoxyCode}
+38     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1timer_1_1FakeQTimer_a52db52d71b88f18a465e2acbda588e9f}{start}(self):
+39         \textcolor{keywordflow}{if} self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1timer_1_1FakeQTimer_a0ae6aaaace6e0181404323939a136ea6}{\_single\_shot}:
+40             print(\textcolor{stringliteral}{"Timer: Not using Qt, calling callback immediatly"})
+41             self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1timer_1_1FakeQTimer_a0967b5b3c51d3d0f231ed01e51dd599b}{\_callback}()
+42         print(\textcolor{stringliteral}{"Timer: Not using Qt, timer disabled"})
+43 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1timer_1_1FakeQTimer_a8136527866560186a65442f98c63d1ee}{}\index{software\+::chipwhisperer\+::common\+::utils\+::timer\+::\+Fake\+Q\+Timer@{software\+::chipwhisperer\+::common\+::utils\+::timer\+::\+Fake\+Q\+Timer}!stop@{stop}}
+\index{stop@{stop}!software\+::chipwhisperer\+::common\+::utils\+::timer\+::\+Fake\+Q\+Timer@{software\+::chipwhisperer\+::common\+::utils\+::timer\+::\+Fake\+Q\+Timer}}
+\subsubsection[{stop}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+utils.\+timer.\+Fake\+Q\+Timer.\+stop (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1timer_1_1FakeQTimer_a8136527866560186a65442f98c63d1ee}
+
+\begin{DoxyCode}
+44     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1timer_1_1FakeQTimer_a8136527866560186a65442f98c63d1ee}{stop}(self):
+45         \textcolor{keywordflow}{pass}
+46 
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1timer_1_1FakeQTimer_a9e24301cced0ef27c4721e652ee0221e}{}\index{software\+::chipwhisperer\+::common\+::utils\+::timer\+::\+Fake\+Q\+Timer@{software\+::chipwhisperer\+::common\+::utils\+::timer\+::\+Fake\+Q\+Timer}!timeout@{timeout}}
+\index{timeout@{timeout}!software\+::chipwhisperer\+::common\+::utils\+::timer\+::\+Fake\+Q\+Timer@{software\+::chipwhisperer\+::common\+::utils\+::timer\+::\+Fake\+Q\+Timer}}
+\subsubsection[{timeout}]{\setlength{\rightskip}{0pt plus 5cm}software.\+chipwhisperer.\+common.\+utils.\+timer.\+Fake\+Q\+Timer.\+timeout}\label{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1timer_1_1FakeQTimer_a9e24301cced0ef27c4721e652ee0221e}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1timer_1_1FakeQTimer_a0c7b1e53a861fc83868588c20007fe27}{}\index{software\+::chipwhisperer\+::common\+::utils\+::timer\+::\+Fake\+Q\+Timer@{software\+::chipwhisperer\+::common\+::utils\+::timer\+::\+Fake\+Q\+Timer}!Timer@{Timer}}
+\index{Timer@{Timer}!software\+::chipwhisperer\+::common\+::utils\+::timer\+::\+Fake\+Q\+Timer@{software\+::chipwhisperer\+::common\+::utils\+::timer\+::\+Fake\+Q\+Timer}}
+\subsubsection[{Timer}]{\setlength{\rightskip}{0pt plus 5cm}software.\+chipwhisperer.\+common.\+utils.\+timer.\+Fake\+Q\+Timer.\+Timer = Q\+Timer\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1timer_1_1FakeQTimer_a0c7b1e53a861fc83868588c20007fe27}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{timer_8py}{timer.\+py}\end{DoxyCompactItemize}

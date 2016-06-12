@@ -1,0 +1,176 @@
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1pluginmanager}{}\section{software.\+chipwhisperer.\+common.\+utils.\+pluginmanager Namespace Reference}
+\label{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1pluginmanager}\index{software.\+chipwhisperer.\+common.\+utils.\+pluginmanager@{software.\+chipwhisperer.\+common.\+utils.\+pluginmanager}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1pluginmanager_1_1Plugin}{Plugin}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1pluginmanager_ab548f765a1943ab1d23c0126a1c43e5b}{get\+Plugins\+In\+Dict\+From\+Package} (path, instantiate, add\+None, args, kwargs)
+\item 
+def \hyperlink{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1pluginmanager_ab676ad867096bb4c10184958fdb64699}{import\+Modules\+In\+Package} (path)
+\item 
+def \hyperlink{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1pluginmanager_a64b8a11fb7e35e9c3c566f71a40c1581}{get\+Plugin\+Classes\+From\+Modules} (modules)
+\item 
+def \hyperlink{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1pluginmanager_aef75a345b6737524966068654fab2415}{put\+In\+Dict} (items, instantiate, args, kwargs)
+\item 
+def \hyperlink{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1pluginmanager_add0e94e268386b288202476fe5f34d64}{module\+\_\+reorder} (resp)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+list \hyperlink{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1pluginmanager_ad3fbdbdc78196085b0709f08be567525}{loaded\+Items} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1pluginmanager_a64b8a11fb7e35e9c3c566f71a40c1581}{}\index{software\+::chipwhisperer\+::common\+::utils\+::pluginmanager@{software\+::chipwhisperer\+::common\+::utils\+::pluginmanager}!get\+Plugin\+Classes\+From\+Modules@{get\+Plugin\+Classes\+From\+Modules}}
+\index{get\+Plugin\+Classes\+From\+Modules@{get\+Plugin\+Classes\+From\+Modules}!software\+::chipwhisperer\+::common\+::utils\+::pluginmanager@{software\+::chipwhisperer\+::common\+::utils\+::pluginmanager}}
+\subsubsection[{get\+Plugin\+Classes\+From\+Modules}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+utils.\+pluginmanager.\+get\+Plugin\+Classes\+From\+Modules (
+\begin{DoxyParamCaption}
+\item[{}]{modules}
+\end{DoxyParamCaption}
+)}\label{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1pluginmanager_a64b8a11fb7e35e9c3c566f71a40c1581}
+
+
+Referenced by software.\+chipwhisperer.\+common.\+utils.\+pluginmanager.\+get\+Plugins\+In\+Dict\+From\+Package().
+
+
+\begin{DoxyCode}
+91 \textcolor{keyword}{def }\hyperlink{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1pluginmanager_a64b8a11fb7e35e9c3c566f71a40c1581}{getPluginClassesFromModules}(modules):
+92     resp = []
+93     \textcolor{keywordflow}{for} module \textcolor{keywordflow}{in} modules:
+94         clsmembers = inspect.getmembers(module, \textcolor{keyword}{lambda} member: inspect.isclass(member) \textcolor{keywordflow}{and} 
+      member.\_\_module\_\_ == module.\_\_name\_\_)
+95         \textcolor{keywordflow}{for} clsName, clsMember \textcolor{keywordflow}{in} clsmembers:
+96             \textcolor{keywordflow}{if} issubclass(clsMember, Plugin) \textcolor{keywordflow}{and} (\textcolor{keywordflow}{not} clsName.startswith(\textcolor{stringliteral}{'\_'})):
+97                 resp.append(clsMember)
+98     \textcolor{keywordflow}{return} resp
+99 
+100 
+\end{DoxyCode}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1pluginmanager_ab548f765a1943ab1d23c0126a1c43e5b}{}\index{software\+::chipwhisperer\+::common\+::utils\+::pluginmanager@{software\+::chipwhisperer\+::common\+::utils\+::pluginmanager}!get\+Plugins\+In\+Dict\+From\+Package@{get\+Plugins\+In\+Dict\+From\+Package}}
+\index{get\+Plugins\+In\+Dict\+From\+Package@{get\+Plugins\+In\+Dict\+From\+Package}!software\+::chipwhisperer\+::common\+::utils\+::pluginmanager@{software\+::chipwhisperer\+::common\+::utils\+::pluginmanager}}
+\subsubsection[{get\+Plugins\+In\+Dict\+From\+Package}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+utils.\+pluginmanager.\+get\+Plugins\+In\+Dict\+From\+Package (
+\begin{DoxyParamCaption}
+\item[{}]{path, }
+\item[{}]{instantiate, }
+\item[{}]{add\+None, }
+\item[{}]{args, }
+\item[{}]{kwargs}
+\end{DoxyParamCaption}
+)}\label{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1pluginmanager_ab548f765a1943ab1d23c0126a1c43e5b}
+
+
+References software.\+chipwhisperer.\+common.\+utils.\+pluginmanager.\+get\+Plugin\+Classes\+From\+Modules(), software.\+chipwhisperer.\+common.\+utils.\+pluginmanager.\+import\+Modules\+In\+Package(), software.\+chipwhisperer.\+common.\+utils.\+pluginmanager.\+module\+\_\+reorder(), and software.\+chipwhisperer.\+common.\+utils.\+pluginmanager.\+put\+In\+Dict().
+
+
+
+Referenced by software.\+chipwhisperer.\+common.\+results.\+base.\+Results\+Base.\+get\+Classes().
+
+
+\begin{DoxyCode}
+70 \textcolor{keyword}{def }\hyperlink{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1pluginmanager_ab548f765a1943ab1d23c0126a1c43e5b}{getPluginsInDictFromPackage}(path, instantiate, addNone, *args, **kwargs):
+71     modules = \hyperlink{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1pluginmanager_ab676ad867096bb4c10184958fdb64699}{importModulesInPackage}(path)
+72     classes = \hyperlink{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1pluginmanager_a64b8a11fb7e35e9c3c566f71a40c1581}{getPluginClassesFromModules}(modules)
+73     items = \hyperlink{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1pluginmanager_aef75a345b6737524966068654fab2415}{putInDict}(classes, instantiate, *args, **kwargs)
+74     \textcolor{keywordflow}{if} addNone:
+75         items[\textcolor{stringliteral}{"None"}] = \textcolor{keywordtype}{None}
+76     \textcolor{keywordflow}{return} \hyperlink{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1pluginmanager_add0e94e268386b288202476fe5f34d64}{module\_reorder}(items)
+77 
+78 
+\end{DoxyCode}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1pluginmanager_ab676ad867096bb4c10184958fdb64699}{}\index{software\+::chipwhisperer\+::common\+::utils\+::pluginmanager@{software\+::chipwhisperer\+::common\+::utils\+::pluginmanager}!import\+Modules\+In\+Package@{import\+Modules\+In\+Package}}
+\index{import\+Modules\+In\+Package@{import\+Modules\+In\+Package}!software\+::chipwhisperer\+::common\+::utils\+::pluginmanager@{software\+::chipwhisperer\+::common\+::utils\+::pluginmanager}}
+\subsubsection[{import\+Modules\+In\+Package}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+utils.\+pluginmanager.\+import\+Modules\+In\+Package (
+\begin{DoxyParamCaption}
+\item[{}]{path}
+\end{DoxyParamCaption}
+)}\label{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1pluginmanager_ab676ad867096bb4c10184958fdb64699}
+
+
+Referenced by software.\+chipwhisperer.\+common.\+utils.\+pluginmanager.\+get\+Plugins\+In\+Dict\+From\+Package().
+
+
+\begin{DoxyCode}
+79 \textcolor{keyword}{def }\hyperlink{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1pluginmanager_ab676ad867096bb4c10184958fdb64699}{importModulesInPackage}(path):
+80     resp = []
+81     \textcolor{keywordflow}{for} package\_name \textcolor{keywordflow}{in} util.getPyFiles(os.path.join(util.getRootDir(), (os.path.normpath(path).replace(\textcolor{stringliteral}{"."}
+      , \textcolor{stringliteral}{"/"})))):\textcolor{comment}{#   (os.path.normpath(path).replace(".", "/"))):}
+82         full\_package\_name = \textcolor{stringliteral}{'%s.%s'} % (path, package\_name)
+83         \textcolor{keywordflow}{try}:
+84             resp.append(importlib.import\_module(full\_package\_name))
+85         \textcolor{keywordflow}{except} Exception \textcolor{keyword}{as} e:
+86             \textcolor{keywordflow}{print} \textcolor{stringliteral}{"INFO: Could not import module: "} + full\_package\_name + \textcolor{stringliteral}{": "} + str(e)
+87             loadedItems.append([full\_package\_name, \textcolor{keyword}{False}, str(e), traceback.format\_exc()])
+88     \textcolor{keywordflow}{return} resp
+89 
+90 
+\end{DoxyCode}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1pluginmanager_add0e94e268386b288202476fe5f34d64}{}\index{software\+::chipwhisperer\+::common\+::utils\+::pluginmanager@{software\+::chipwhisperer\+::common\+::utils\+::pluginmanager}!module\+\_\+reorder@{module\+\_\+reorder}}
+\index{module\+\_\+reorder@{module\+\_\+reorder}!software\+::chipwhisperer\+::common\+::utils\+::pluginmanager@{software\+::chipwhisperer\+::common\+::utils\+::pluginmanager}}
+\subsubsection[{module\+\_\+reorder}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+utils.\+pluginmanager.\+module\+\_\+reorder (
+\begin{DoxyParamCaption}
+\item[{}]{resp}
+\end{DoxyParamCaption}
+)}\label{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1pluginmanager_add0e94e268386b288202476fe5f34d64}
+
+
+Referenced by software.\+chipwhisperer.\+common.\+utils.\+pluginmanager.\+get\+Plugins\+In\+Dict\+From\+Package().
+
+
+\begin{DoxyCode}
+121 \textcolor{keyword}{def }\hyperlink{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1pluginmanager_add0e94e268386b288202476fe5f34d64}{module\_reorder}(resp):
+122     \textcolor{comment}{#None is first, then alphabetical}
+123     newresp = util.DictType()
+124     \textcolor{keywordflow}{if} \textcolor{stringliteral}{'None'} \textcolor{keywordflow}{in} resp:
+125         newresp[\textcolor{stringliteral}{'None'}] = resp[\textcolor{stringliteral}{'None'}]
+126         del resp[\textcolor{stringliteral}{'None'}]
+127     newresp.update(sorted(resp.items(), key=\textcolor{keyword}{lambda} t: t[0]))
+128     \textcolor{keywordflow}{return} newresp
+129 \end{DoxyCode}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1pluginmanager_aef75a345b6737524966068654fab2415}{}\index{software\+::chipwhisperer\+::common\+::utils\+::pluginmanager@{software\+::chipwhisperer\+::common\+::utils\+::pluginmanager}!put\+In\+Dict@{put\+In\+Dict}}
+\index{put\+In\+Dict@{put\+In\+Dict}!software\+::chipwhisperer\+::common\+::utils\+::pluginmanager@{software\+::chipwhisperer\+::common\+::utils\+::pluginmanager}}
+\subsubsection[{put\+In\+Dict}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+utils.\+pluginmanager.\+put\+In\+Dict (
+\begin{DoxyParamCaption}
+\item[{}]{items, }
+\item[{}]{instantiate, }
+\item[{}]{args, }
+\item[{}]{kwargs}
+\end{DoxyParamCaption}
+)}\label{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1pluginmanager_aef75a345b6737524966068654fab2415}
+
+
+Referenced by software.\+chipwhisperer.\+common.\+utils.\+pluginmanager.\+get\+Plugins\+In\+Dict\+From\+Package().
+
+
+\begin{DoxyCode}
+101 \textcolor{keyword}{def }\hyperlink{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1pluginmanager_aef75a345b6737524966068654fab2415}{putInDict}(items, instantiate, *args, **kwargs):
+102     resp = util.DictType()
+103     \textcolor{keywordflow}{for} c \textcolor{keywordflow}{in} items:
+104         \textcolor{keywordflow}{try}:
+105             \textcolor{keywordflow}{if} instantiate:
+106                 item = c(*args, **kwargs)
+107                 resp[item.getName()] = item
+108             \textcolor{keywordflow}{else}:
+109                 item = c
+110                 resp[item.getClassName()] = item
+111             loadedItems.append([str(c), \textcolor{keyword}{True}, \textcolor{stringliteral}{""}, \textcolor{stringliteral}{""}])
+112         \textcolor{keywordflow}{except} Exception \textcolor{keyword}{as} e:
+113             \textcolor{keywordflow}{print} \textcolor{stringliteral}{"INFO: Could not instantiate module "} + str(c) + \textcolor{stringliteral}{": "} + str(e)
+114             loadedItems.append([str(c), \textcolor{keyword}{False}, str(e), traceback.format\_exc()])
+115 
+116     \textcolor{keywordflow}{if} len(resp) == 0:
+117         \textcolor{keywordflow}{print} \textcolor{stringliteral}{"Warning: Dictionary contains zero modules"}
+118     \textcolor{keywordflow}{return} resp
+119 
+120 
+\end{DoxyCode}
+
+
+\subsection{Variable Documentation}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1pluginmanager_ad3fbdbdc78196085b0709f08be567525}{}\index{software\+::chipwhisperer\+::common\+::utils\+::pluginmanager@{software\+::chipwhisperer\+::common\+::utils\+::pluginmanager}!loaded\+Items@{loaded\+Items}}
+\index{loaded\+Items@{loaded\+Items}!software\+::chipwhisperer\+::common\+::utils\+::pluginmanager@{software\+::chipwhisperer\+::common\+::utils\+::pluginmanager}}
+\subsubsection[{loaded\+Items}]{\setlength{\rightskip}{0pt plus 5cm}list software.\+chipwhisperer.\+common.\+utils.\+pluginmanager.\+loaded\+Items = \mbox{[}$\,$\mbox{]}}\label{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1pluginmanager_ad3fbdbdc78196085b0709f08be567525}

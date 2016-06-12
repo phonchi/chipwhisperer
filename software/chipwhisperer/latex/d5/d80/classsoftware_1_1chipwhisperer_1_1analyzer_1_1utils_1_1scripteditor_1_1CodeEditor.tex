@@ -1,0 +1,165 @@
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1scripteditor_1_1CodeEditor}{}\section{software.\+chipwhisperer.\+analyzer.\+utils.\+scripteditor.\+Code\+Editor Class Reference}
+\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1scripteditor_1_1CodeEditor}\index{software.\+chipwhisperer.\+analyzer.\+utils.\+scripteditor.\+Code\+Editor@{software.\+chipwhisperer.\+analyzer.\+utils.\+scripteditor.\+Code\+Editor}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1scripteditor_1_1CodeEditor_a35a9b17974a4f7e5ad7caa945299d688}{\+\_\+\+\_\+init\+\_\+\+\_\+}
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1scripteditor_1_1CodeEditor_a99b1240a617210f971b63568d8e2ec20}{key\+Press\+Event} (self, event)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1scripteditor_1_1CodeEditor_a40222c4cb4f6969ec06214e179aa0831}{context\+Menu\+Event} (self, event)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1scripteditor_1_1CodeEditor_ab626b3abe7bd6d578b1a78a5b95481fc}{r\+Func\+Act} (self)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1scripteditor_1_1CodeEditor_a111683c8e1e9deca78f4f56b72f5befb}{ass\+Func\+Act} (self)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1scripteditor_1_1CodeEditor_a131d73170dc9a8e02972083066771167}{highlighter}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+tuple \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1scripteditor_1_1CodeEditor_acf04b5a4626c3118d07213612582d8ec}{run\+Function} = Signal(str)
+\item 
+tuple \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1scripteditor_1_1CodeEditor_a2b1f86d6c9f733319a8d68eef5b2c420}{assign\+Function} = Signal(str)
+\end{DoxyCompactItemize}
+
+
+Inheritance diagram for software.\+chipwhisperer.\+analyzer.\+utils.\+scripteditor.\+Code\+Editor\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{d9/d67/classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1scripteditor_1_1CodeEditor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for software.\+chipwhisperer.\+analyzer.\+utils.\+scripteditor.\+Code\+Editor\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{d5/d4d/classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1scripteditor_1_1CodeEditor__coll__graph}
+\end{center}
+\end{figure}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1scripteditor_1_1CodeEditor_a35a9b17974a4f7e5ad7caa945299d688}{}\index{software\+::chipwhisperer\+::analyzer\+::utils\+::scripteditor\+::\+Code\+Editor@{software\+::chipwhisperer\+::analyzer\+::utils\+::scripteditor\+::\+Code\+Editor}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!software\+::chipwhisperer\+::analyzer\+::utils\+::scripteditor\+::\+Code\+Editor@{software\+::chipwhisperer\+::analyzer\+::utils\+::scripteditor\+::\+Code\+Editor}}
+\subsubsection[{\+\_\+\+\_\+init\+\_\+\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+analyzer.\+utils.\+scripteditor.\+Code\+Editor.\+\_\+\+\_\+init\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{parent = {\ttfamily None}}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1scripteditor_1_1CodeEditor_a35a9b17974a4f7e5ad7caa945299d688}
+
+\begin{DoxyCode}
+42     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1scripteditor_1_1CodeEditor_a35a9b17974a4f7e5ad7caa945299d688}{\_\_init\_\_}(self, parent=None):
+43         super(CodeEditor, self).\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1scripteditor_1_1CodeEditor_a35a9b17974a4f7e5ad7caa945299d688}{\_\_init\_\_}(parent)
+44 
+45         \textcolor{comment}{# Use fixed-space font}
+46         font = QFont()
+47         font.setFamily(\textcolor{stringliteral}{"Courier"})
+48         font.setStyleHint(QFont.Monospace)
+49         font.setFixedPitch(\textcolor{keyword}{True})
+50         font.setPointSize(10)
+51         self.setFont(font)
+52 
+53         \textcolor{comment}{# Setup code highlighter}
+54         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1scripteditor_1_1CodeEditor_a131d73170dc9a8e02972083066771167}{highlighter} = PythonHighlighter(self.document())
+55 
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1scripteditor_1_1CodeEditor_a111683c8e1e9deca78f4f56b72f5befb}{}\index{software\+::chipwhisperer\+::analyzer\+::utils\+::scripteditor\+::\+Code\+Editor@{software\+::chipwhisperer\+::analyzer\+::utils\+::scripteditor\+::\+Code\+Editor}!ass\+Func\+Act@{ass\+Func\+Act}}
+\index{ass\+Func\+Act@{ass\+Func\+Act}!software\+::chipwhisperer\+::analyzer\+::utils\+::scripteditor\+::\+Code\+Editor@{software\+::chipwhisperer\+::analyzer\+::utils\+::scripteditor\+::\+Code\+Editor}}
+\subsubsection[{ass\+Func\+Act}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+analyzer.\+utils.\+scripteditor.\+Code\+Editor.\+ass\+Func\+Act (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1scripteditor_1_1CodeEditor_a111683c8e1e9deca78f4f56b72f5befb}
+
+\begin{DoxyCode}
+72     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1scripteditor_1_1CodeEditor_a111683c8e1e9deca78f4f56b72f5befb}{assFuncAct}(self):
+73         self.assignFunction.emit(self.textCursor().selectedText())
+74 
+75 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1scripteditor_1_1CodeEditor_a40222c4cb4f6969ec06214e179aa0831}{}\index{software\+::chipwhisperer\+::analyzer\+::utils\+::scripteditor\+::\+Code\+Editor@{software\+::chipwhisperer\+::analyzer\+::utils\+::scripteditor\+::\+Code\+Editor}!context\+Menu\+Event@{context\+Menu\+Event}}
+\index{context\+Menu\+Event@{context\+Menu\+Event}!software\+::chipwhisperer\+::analyzer\+::utils\+::scripteditor\+::\+Code\+Editor@{software\+::chipwhisperer\+::analyzer\+::utils\+::scripteditor\+::\+Code\+Editor}}
+\subsubsection[{context\+Menu\+Event}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+analyzer.\+utils.\+scripteditor.\+Code\+Editor.\+context\+Menu\+Event (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{event}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1scripteditor_1_1CodeEditor_a40222c4cb4f6969ec06214e179aa0831}
+
+
+References software.\+chipwhisperer.\+analyzer.\+utils.\+scripteditor.\+Code\+Editor.\+r\+Func\+Act().
+
+
+\begin{DoxyCode}
+62     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1scripteditor_1_1CodeEditor_a40222c4cb4f6969ec06214e179aa0831}{contextMenuEvent}(self, event):
+63         menu = self.createStandardContextMenu()
+64         menu.insertAction(menu.actions()[0], QAction(\textcolor{stringliteral}{"Run Function"}, self, triggered=self.
+      \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1scripteditor_1_1CodeEditor_ab626b3abe7bd6d578b1a78a5b95481fc}{rFuncAct}))
+65         \textcolor{comment}{# menu.insertAction(menu.actions()[1], QAction("Assign to Toolbar", self,
+       triggered=self.assFuncAct))}
+66         menu.insertSeparator(menu.actions()[1])
+67         menu.exec\_(event.globalPos())
+68 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1scripteditor_1_1CodeEditor_a99b1240a617210f971b63568d8e2ec20}{}\index{software\+::chipwhisperer\+::analyzer\+::utils\+::scripteditor\+::\+Code\+Editor@{software\+::chipwhisperer\+::analyzer\+::utils\+::scripteditor\+::\+Code\+Editor}!key\+Press\+Event@{key\+Press\+Event}}
+\index{key\+Press\+Event@{key\+Press\+Event}!software\+::chipwhisperer\+::analyzer\+::utils\+::scripteditor\+::\+Code\+Editor@{software\+::chipwhisperer\+::analyzer\+::utils\+::scripteditor\+::\+Code\+Editor}}
+\subsubsection[{key\+Press\+Event}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+analyzer.\+utils.\+scripteditor.\+Code\+Editor.\+key\+Press\+Event (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{event}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1scripteditor_1_1CodeEditor_a99b1240a617210f971b63568d8e2ec20}
+
+\begin{DoxyCode}
+56     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1scripteditor_1_1CodeEditor_a99b1240a617210f971b63568d8e2ec20}{keyPressEvent}(self, event):
+57         \textcolor{keywordflow}{if} event.key() == Qt.Key\_Tab:
+58             self.insertPlainText(\textcolor{stringliteral}{"    "})
+59         \textcolor{keywordflow}{else}:
+60             \textcolor{keywordflow}{return} QTextEdit.keyPressEvent(self, event)
+61 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1scripteditor_1_1CodeEditor_ab626b3abe7bd6d578b1a78a5b95481fc}{}\index{software\+::chipwhisperer\+::analyzer\+::utils\+::scripteditor\+::\+Code\+Editor@{software\+::chipwhisperer\+::analyzer\+::utils\+::scripteditor\+::\+Code\+Editor}!r\+Func\+Act@{r\+Func\+Act}}
+\index{r\+Func\+Act@{r\+Func\+Act}!software\+::chipwhisperer\+::analyzer\+::utils\+::scripteditor\+::\+Code\+Editor@{software\+::chipwhisperer\+::analyzer\+::utils\+::scripteditor\+::\+Code\+Editor}}
+\subsubsection[{r\+Func\+Act}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+analyzer.\+utils.\+scripteditor.\+Code\+Editor.\+r\+Func\+Act (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1scripteditor_1_1CodeEditor_ab626b3abe7bd6d578b1a78a5b95481fc}
+
+
+Referenced by software.\+chipwhisperer.\+analyzer.\+utils.\+scripteditor.\+Code\+Editor.\+context\+Menu\+Event().
+
+
+\begin{DoxyCode}
+69     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1scripteditor_1_1CodeEditor_ab626b3abe7bd6d578b1a78a5b95481fc}{rFuncAct}(self):
+70         self.runFunction.emit(self.textCursor().selectedText())
+71 
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1scripteditor_1_1CodeEditor_a2b1f86d6c9f733319a8d68eef5b2c420}{}\index{software\+::chipwhisperer\+::analyzer\+::utils\+::scripteditor\+::\+Code\+Editor@{software\+::chipwhisperer\+::analyzer\+::utils\+::scripteditor\+::\+Code\+Editor}!assign\+Function@{assign\+Function}}
+\index{assign\+Function@{assign\+Function}!software\+::chipwhisperer\+::analyzer\+::utils\+::scripteditor\+::\+Code\+Editor@{software\+::chipwhisperer\+::analyzer\+::utils\+::scripteditor\+::\+Code\+Editor}}
+\subsubsection[{assign\+Function}]{\setlength{\rightskip}{0pt plus 5cm}tuple software.\+chipwhisperer.\+analyzer.\+utils.\+scripteditor.\+Code\+Editor.\+assign\+Function = Signal(str)\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1scripteditor_1_1CodeEditor_a2b1f86d6c9f733319a8d68eef5b2c420}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1scripteditor_1_1CodeEditor_a131d73170dc9a8e02972083066771167}{}\index{software\+::chipwhisperer\+::analyzer\+::utils\+::scripteditor\+::\+Code\+Editor@{software\+::chipwhisperer\+::analyzer\+::utils\+::scripteditor\+::\+Code\+Editor}!highlighter@{highlighter}}
+\index{highlighter@{highlighter}!software\+::chipwhisperer\+::analyzer\+::utils\+::scripteditor\+::\+Code\+Editor@{software\+::chipwhisperer\+::analyzer\+::utils\+::scripteditor\+::\+Code\+Editor}}
+\subsubsection[{highlighter}]{\setlength{\rightskip}{0pt plus 5cm}software.\+chipwhisperer.\+analyzer.\+utils.\+scripteditor.\+Code\+Editor.\+highlighter}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1scripteditor_1_1CodeEditor_a131d73170dc9a8e02972083066771167}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1scripteditor_1_1CodeEditor_acf04b5a4626c3118d07213612582d8ec}{}\index{software\+::chipwhisperer\+::analyzer\+::utils\+::scripteditor\+::\+Code\+Editor@{software\+::chipwhisperer\+::analyzer\+::utils\+::scripteditor\+::\+Code\+Editor}!run\+Function@{run\+Function}}
+\index{run\+Function@{run\+Function}!software\+::chipwhisperer\+::analyzer\+::utils\+::scripteditor\+::\+Code\+Editor@{software\+::chipwhisperer\+::analyzer\+::utils\+::scripteditor\+::\+Code\+Editor}}
+\subsubsection[{run\+Function}]{\setlength{\rightskip}{0pt plus 5cm}tuple software.\+chipwhisperer.\+analyzer.\+utils.\+scripteditor.\+Code\+Editor.\+run\+Function = Signal(str)\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1scripteditor_1_1CodeEditor_acf04b5a4626c3118d07213612582d8ec}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{scripteditor_8py}{scripteditor.\+py}\end{DoxyCompactItemize}

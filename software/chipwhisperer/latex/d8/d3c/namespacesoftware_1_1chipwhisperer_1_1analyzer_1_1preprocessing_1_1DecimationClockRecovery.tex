@@ -1,0 +1,38 @@
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1DecimationClockRecovery}{}\section{software.\+chipwhisperer.\+analyzer.\+preprocessing.\+Decimation\+Clock\+Recovery Namespace Reference}
+\label{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1DecimationClockRecovery}\index{software.\+chipwhisperer.\+analyzer.\+preprocessing.\+Decimation\+Clock\+Recovery@{software.\+chipwhisperer.\+analyzer.\+preprocessing.\+Decimation\+Clock\+Recovery}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1DecimationClockRecovery_1_1DecimationClockRecovery}{Decimation\+Clock\+Recovery}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1DecimationClockRecovery_a071ed626482b2e73cba96afc1ce80942}{fft}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1DecimationClockRecovery_a071ed626482b2e73cba96afc1ce80942}{}\index{software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+Decimation\+Clock\+Recovery@{software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+Decimation\+Clock\+Recovery}!fft@{fft}}
+\index{fft@{fft}!software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+Decimation\+Clock\+Recovery@{software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+Decimation\+Clock\+Recovery}}
+\subsubsection[{fft}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+analyzer.\+preprocessing.\+Decimation\+Clock\+Recovery.\+fft (
+\begin{DoxyParamCaption}
+\item[{}]{signal, }
+\item[{}]{freq = {\ttfamily None}}
+\end{DoxyParamCaption}
+)}\label{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1DecimationClockRecovery_a071ed626482b2e73cba96afc1ce80942}
+
+\begin{DoxyCode}
+35 \textcolor{keyword}{def }\hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1DecimationClockRecovery_a071ed626482b2e73cba96afc1ce80942}{fft}(signal, freq=None):
+36     FFT = abs(scipy.fft(signal))
+37     \textcolor{comment}{# FFTdb = 20*scipy.log10(FFT)}
+38     \textcolor{comment}{# freqs = scipy.fftpack.fftfreq(len(signal), 1/freq)}
+39 
+40     \textcolor{comment}{# FFTdb = FFTdb[2:len(freqs)/2]}
+41     \textcolor{comment}{# freqs = freqs[2:len(freqs)/2]}
+42     \textcolor{comment}{# return (freqs, FFTdb)}
+43 
+44     \textcolor{keywordflow}{print} FFT
+45 
+46 
+\end{DoxyCode}

@@ -1,0 +1,84 @@
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1AddNoiseJitter}{}\section{software.\+chipwhisperer.\+analyzer.\+preprocessing.\+Add\+Noise\+Jitter Namespace Reference}
+\label{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1AddNoiseJitter}\index{software.\+chipwhisperer.\+analyzer.\+preprocessing.\+Add\+Noise\+Jitter@{software.\+chipwhisperer.\+analyzer.\+preprocessing.\+Add\+Noise\+Jitter}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1AddNoiseJitter_1_1AddNoiseJitter}{Add\+Noise\+Jitter}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1AddNoiseJitter_a790f3f20f0f53b393f42bd693cb5182a}{roll\+\_\+zeropad}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1AddNoiseJitter_a790f3f20f0f53b393f42bd693cb5182a}{}\index{software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+Add\+Noise\+Jitter@{software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+Add\+Noise\+Jitter}!roll\+\_\+zeropad@{roll\+\_\+zeropad}}
+\index{roll\+\_\+zeropad@{roll\+\_\+zeropad}!software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+Add\+Noise\+Jitter@{software\+::chipwhisperer\+::analyzer\+::preprocessing\+::\+Add\+Noise\+Jitter}}
+\subsubsection[{roll\+\_\+zeropad}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+analyzer.\+preprocessing.\+Add\+Noise\+Jitter.\+roll\+\_\+zeropad (
+\begin{DoxyParamCaption}
+\item[{}]{a, }
+\item[{}]{shift, }
+\item[{}]{axis = {\ttfamily None}}
+\end{DoxyParamCaption}
+)}\label{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1AddNoiseJitter_a790f3f20f0f53b393f42bd693cb5182a}
+\begin{DoxyVerb}Roll array elements along a given axis. Elements rolled off the end of the array are treated as zeros.
+
+:param a: Input Array
+:type a: array_like
+
+:param shift: The number of places by which elements are shifted.
+:type shift: int
+
+:param axis: The axis along which elements are shifted.  By default, the array
+             is flattened before shifting, after which the original
+             shape is restored.
+:type axis: int, optional      
+
+:rtype: ndarray, with the same shape as ``a``\end{DoxyVerb}
+ 
+
+Referenced by software.\+chipwhisperer.\+analyzer.\+preprocessing.\+Add\+Noise\+Jitter.\+Add\+Noise\+Jitter.\+get\+Trace().
+
+
+\begin{DoxyCode}
+71 \textcolor{keyword}{def }\hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1AddNoiseJitter_a790f3f20f0f53b393f42bd693cb5182a}{roll\_zeropad}(a, shift, axis=None):
+72     \textcolor{stringliteral}{"""}
+73 \textcolor{stringliteral}{    Roll array elements along a given axis. Elements rolled off the end of the array are treated as zeros.}
+74 \textcolor{stringliteral}{}
+75 \textcolor{stringliteral}{    :param a: Input Array}
+76 \textcolor{stringliteral}{    :type a: array\_like}
+77 \textcolor{stringliteral}{    }
+78 \textcolor{stringliteral}{    :param shift: The number of places by which elements are shifted.}
+79 \textcolor{stringliteral}{    :type shift: int}
+80 \textcolor{stringliteral}{}
+81 \textcolor{stringliteral}{    :param axis: The axis along which elements are shifted.  By default, the array}
+82 \textcolor{stringliteral}{                 is flattened before shifting, after which the original}
+83 \textcolor{stringliteral}{                 shape is restored.}
+84 \textcolor{stringliteral}{    :type axis: int, optional      }
+85 \textcolor{stringliteral}{}
+86 \textcolor{stringliteral}{    :rtype: ndarray, with the same shape as ``a``}
+87 \textcolor{stringliteral}{}
+88 \textcolor{stringliteral}{    """}
+89     a = np.asanyarray(a)
+90     \textcolor{keywordflow}{if} shift == 0: \textcolor{keywordflow}{return} a
+91     \textcolor{keywordflow}{if} axis \textcolor{keywordflow}{is} \textcolor{keywordtype}{None}:
+92         n = a.size
+93         reshape = \textcolor{keyword}{True}
+94     \textcolor{keywordflow}{else}:
+95         n = a.shape[axis]
+96         reshape = \textcolor{keyword}{False}
+97     \textcolor{keywordflow}{if} np.abs(shift) > n:
+98         res = np.zeros\_like(a)
+99     \textcolor{keywordflow}{elif} shift < 0:
+100         shift += n
+101         zeros = np.zeros\_like(a.take(np.arange(n - shift), axis))
+102         res = np.concatenate((a.take(np.arange(n - shift, n), axis), zeros), axis)
+103     \textcolor{keywordflow}{else}:
+104         zeros = np.zeros\_like(a.take(np.arange(n - shift, n), axis))
+105         res = np.concatenate((zeros, a.take(np.arange(n - shift), axis)), axis)
+106     \textcolor{keywordflow}{if} reshape:
+107         \textcolor{keywordflow}{return} res.reshape(a.shape)
+108     \textcolor{keywordflow}{else}:
+109         \textcolor{keywordflow}{return} res
+110 \end{DoxyCode}

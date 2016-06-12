@@ -1,0 +1,190 @@
+\hypertarget{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1fpga_1_1FPGA}{}\section{software.\+chipwhisperer.\+hardware.\+naeusb.\+fpga.\+F\+P\+G\+A Class Reference}
+\label{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1fpga_1_1FPGA}\index{software.\+chipwhisperer.\+hardware.\+naeusb.\+fpga.\+F\+P\+G\+A@{software.\+chipwhisperer.\+hardware.\+naeusb.\+fpga.\+F\+P\+G\+A}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1fpga_1_1FPGA_ac01e01435e62c59e6cf663f268250841}{\+\_\+\+\_\+init\+\_\+\+\_\+}
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1fpga_1_1FPGA_a362fcaeea905ecfb91fbe56e36d29c7a}{is\+F\+P\+G\+A\+Programmed} (self)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1fpga_1_1FPGA_ae74c1a11050e1ddf3dad7f7557592334}{F\+P\+G\+A\+Program}
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1fpga_1_1FPGA_a18dce2e9b27a4e1dbafe37295bc7ba87}{send\+Ctrl}
+\item 
+\hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1fpga_1_1FPGA_a2ab1f3bccc19ecf43b8f96907a0c88e5}{read\+Ctrl}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1fpga_1_1FPGA_a7105627c474f731b7edae3397726cca6}{C\+M\+D\+\_\+\+F\+P\+G\+A\+\_\+\+S\+T\+A\+T\+U\+S} = 0x15
+\item 
+int \hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1fpga_1_1FPGA_a611615e3ac2381fd6e320ee4910d7f36}{C\+M\+D\+\_\+\+F\+P\+G\+A\+\_\+\+P\+R\+O\+G\+R\+A\+M} = 0x16
+\end{DoxyCompactItemize}
+
+
+Inheritance diagram for software.\+chipwhisperer.\+hardware.\+naeusb.\+fpga.\+F\+P\+G\+A\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{d6/d6d/classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1fpga_1_1FPGA__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for software.\+chipwhisperer.\+hardware.\+naeusb.\+fpga.\+F\+P\+G\+A\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{d4/d79/classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1fpga_1_1FPGA__coll__graph}
+\end{center}
+\end{figure}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1fpga_1_1FPGA_ac01e01435e62c59e6cf663f268250841}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::fpga\+::\+F\+P\+G\+A@{software\+::chipwhisperer\+::hardware\+::naeusb\+::fpga\+::\+F\+P\+G\+A}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!software\+::chipwhisperer\+::hardware\+::naeusb\+::fpga\+::\+F\+P\+G\+A@{software\+::chipwhisperer\+::hardware\+::naeusb\+::fpga\+::\+F\+P\+G\+A}}
+\subsubsection[{\+\_\+\+\_\+init\+\_\+\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+hardware.\+naeusb.\+fpga.\+F\+P\+G\+A.\+\_\+\+\_\+init\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{usb, }
+\item[{}]{timeout = {\ttfamily 200}}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1fpga_1_1FPGA_ac01e01435e62c59e6cf663f268250841}
+
+\begin{DoxyCode}
+34     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1fpga_1_1FPGA_ac01e01435e62c59e6cf663f268250841}{\_\_init\_\_}(self, usb, timeout=200):
+35         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1fpga_1_1FPGA_a18dce2e9b27a4e1dbafe37295bc7ba87}{sendCtrl} = usb.sendCtrl
+36         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1fpga_1_1FPGA_a2ab1f3bccc19ecf43b8f96907a0c88e5}{readCtrl} = usb.readCtrl
+37         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1fpga_1_1FPGA_a810007140dbc50c76bdb0d7ed5b5b579}{\_usb} = usb
+38         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1fpga_1_1FPGA_ada589f4310bb9600f4de68eb62e813f0}{\_timeout} = timeout
+39 
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1fpga_1_1FPGA_ae74c1a11050e1ddf3dad7f7557592334}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::fpga\+::\+F\+P\+G\+A@{software\+::chipwhisperer\+::hardware\+::naeusb\+::fpga\+::\+F\+P\+G\+A}!F\+P\+G\+A\+Program@{F\+P\+G\+A\+Program}}
+\index{F\+P\+G\+A\+Program@{F\+P\+G\+A\+Program}!software\+::chipwhisperer\+::hardware\+::naeusb\+::fpga\+::\+F\+P\+G\+A@{software\+::chipwhisperer\+::hardware\+::naeusb\+::fpga\+::\+F\+P\+G\+A}}
+\subsubsection[{F\+P\+G\+A\+Program}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+hardware.\+naeusb.\+fpga.\+F\+P\+G\+A.\+F\+P\+G\+A\+Program (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{bitstream = {\ttfamily None}}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1fpga_1_1FPGA_ae74c1a11050e1ddf3dad7f7557592334}
+\begin{DoxyVerb}Program FPGA with a bitstream, or if not bitstream passed just erases FPGA
+\end{DoxyVerb}
+ 
+
+References software.\+chipwhisperer.\+hardware.\+naeusb.\+fpga.\+F\+P\+G\+A.\+\_\+\+F\+P\+G\+A\+Download\+Bitstream(), software.\+chipwhisperer.\+hardware.\+naeusb.\+fpga.\+F\+P\+G\+A.\+\_\+timeout, software.\+chipwhisperer.\+capture.\+scopes.\+\_\+\+Open\+A\+D\+C\+Interface.\+Trigger\+Settings.\+\_\+timeout, software.\+chipwhisperer.\+capture.\+scopes.\+\_\+\+Open\+A\+D\+C\+Interface.\+Open\+A\+D\+C\+Interface.\+\_\+timeout, software.\+chipwhisperer.\+hardware.\+naeusb.\+fpga.\+F\+P\+G\+A.\+C\+M\+D\+\_\+\+F\+P\+G\+A\+\_\+\+P\+R\+O\+G\+R\+A\+M, software.\+chipwhisperer.\+hardware.\+naeusb.\+fpga.\+F\+P\+G\+A.\+is\+F\+P\+G\+A\+Programmed(), and software.\+chipwhisperer.\+hardware.\+naeusb.\+fpga.\+F\+P\+G\+A.\+send\+Ctrl.
+
+
+\begin{DoxyCode}
+52     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1fpga_1_1FPGA_ae74c1a11050e1ddf3dad7f7557592334}{FPGAProgram}(self, bitstream=None):
+53         \textcolor{stringliteral}{"""}
+54 \textcolor{stringliteral}{        Program FPGA with a bitstream, or if not bitstream passed just erases FPGA}
+55 \textcolor{stringliteral}{        """}
+56 
+57         \textcolor{comment}{# Erase the FPGA by toggling PROGRAM pin, setup}
+58         \textcolor{comment}{# NAEUSB chip for FPGA programming}
+59         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1fpga_1_1FPGA_a18dce2e9b27a4e1dbafe37295bc7ba87}{sendCtrl}(self.\hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1fpga_1_1FPGA_a611615e3ac2381fd6e320ee4910d7f36}{CMD\_FPGA\_PROGRAM}, 0xA0)
+60         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1fpga_1_1FPGA_a18dce2e9b27a4e1dbafe37295bc7ba87}{sendCtrl}(self.\hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1fpga_1_1FPGA_a611615e3ac2381fd6e320ee4910d7f36}{CMD\_FPGA\_PROGRAM}, 0xA1)
+61 
+62         time.sleep(0.01)
+63 
+64         \textcolor{comment}{# Download actual bitstream now if present}
+65         \textcolor{keywordflow}{if} bitstream:
+66             \textcolor{comment}{# Run the download which should program FPGA}
+67             self.\hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1fpga_1_1FPGA_aac94297243f0755786b09c29f83773d6}{\_FPGADownloadBitstream}(bitstream)
+68 
+69             wait = 4
+70             \textcolor{keywordflow}{while} wait > 0:
+71                 \textcolor{comment}{# Check the status a few times}
+72                 programStatus = self.\hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1fpga_1_1FPGA_a362fcaeea905ecfb91fbe56e36d29c7a}{isFPGAProgrammed}()
+73                 \textcolor{keywordflow}{if} programStatus:
+74                     \textcolor{keywordflow}{break}
+75                 time.sleep(0.01)
+76                 wait -= 1
+77 
+78             \textcolor{comment}{# Exit FPGA programming mode}
+79             self.\hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1fpga_1_1FPGA_a18dce2e9b27a4e1dbafe37295bc7ba87}{sendCtrl}(self.\hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1fpga_1_1FPGA_a611615e3ac2381fd6e320ee4910d7f36}{CMD\_FPGA\_PROGRAM}, 0xA2)
+80 
+81             \textcolor{keywordflow}{if} programStatus == \textcolor{keyword}{False}:
+82                 \textcolor{keywordflow}{raise} IOError(\textcolor{stringliteral}{"FPGA Done pin failed to go high, bad bitstream?"})
+83 
+84             \textcolor{keywordflow}{return} programStatus
+85         \textcolor{keywordflow}{else}:
+86             \textcolor{comment}{# No bitstream, exit programming mode}
+87             self.\hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1fpga_1_1FPGA_a18dce2e9b27a4e1dbafe37295bc7ba87}{sendCtrl}(self.\hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1fpga_1_1FPGA_a611615e3ac2381fd6e320ee4910d7f36}{CMD\_FPGA\_PROGRAM}, 0xA2)
+88             \textcolor{keywordflow}{return} \textcolor{keyword}{False}
+89 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1fpga_1_1FPGA_a362fcaeea905ecfb91fbe56e36d29c7a}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::fpga\+::\+F\+P\+G\+A@{software\+::chipwhisperer\+::hardware\+::naeusb\+::fpga\+::\+F\+P\+G\+A}!is\+F\+P\+G\+A\+Programmed@{is\+F\+P\+G\+A\+Programmed}}
+\index{is\+F\+P\+G\+A\+Programmed@{is\+F\+P\+G\+A\+Programmed}!software\+::chipwhisperer\+::hardware\+::naeusb\+::fpga\+::\+F\+P\+G\+A@{software\+::chipwhisperer\+::hardware\+::naeusb\+::fpga\+::\+F\+P\+G\+A}}
+\subsubsection[{is\+F\+P\+G\+A\+Programmed}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+hardware.\+naeusb.\+fpga.\+F\+P\+G\+A.\+is\+F\+P\+G\+A\+Programmed (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1fpga_1_1FPGA_a362fcaeea905ecfb91fbe56e36d29c7a}
+\begin{DoxyVerb}Return True/False about FPGA status
+\end{DoxyVerb}
+ 
+
+References software.\+chipwhisperer.\+hardware.\+naeusb.\+fpga.\+F\+P\+G\+A.\+C\+M\+D\+\_\+\+F\+P\+G\+A\+\_\+\+S\+T\+A\+T\+U\+S, and software.\+chipwhisperer.\+hardware.\+naeusb.\+fpga.\+F\+P\+G\+A.\+read\+Ctrl.
+
+
+
+Referenced by software.\+chipwhisperer.\+hardware.\+naeusb.\+fpga.\+F\+P\+G\+A.\+F\+P\+G\+A\+Program().
+
+
+\begin{DoxyCode}
+40     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1fpga_1_1FPGA_a362fcaeea905ecfb91fbe56e36d29c7a}{isFPGAProgrammed}(self):
+41         \textcolor{stringliteral}{"""}
+42 \textcolor{stringliteral}{        Return True/False about FPGA status}
+43 \textcolor{stringliteral}{        """}
+44 
+45         status = self.\hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1fpga_1_1FPGA_a2ab1f3bccc19ecf43b8f96907a0c88e5}{readCtrl}(self.\hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1fpga_1_1FPGA_a7105627c474f731b7edae3397726cca6}{CMD\_FPGA\_STATUS}, dlen=4)
+46 
+47         \textcolor{keywordflow}{if} status[0] & 0x01:
+48             \textcolor{keywordflow}{return} \textcolor{keyword}{True}
+49         \textcolor{keywordflow}{else}:
+50             \textcolor{keywordflow}{return} \textcolor{keyword}{False}
+51 
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1fpga_1_1FPGA_a611615e3ac2381fd6e320ee4910d7f36}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::fpga\+::\+F\+P\+G\+A@{software\+::chipwhisperer\+::hardware\+::naeusb\+::fpga\+::\+F\+P\+G\+A}!C\+M\+D\+\_\+\+F\+P\+G\+A\+\_\+\+P\+R\+O\+G\+R\+A\+M@{C\+M\+D\+\_\+\+F\+P\+G\+A\+\_\+\+P\+R\+O\+G\+R\+A\+M}}
+\index{C\+M\+D\+\_\+\+F\+P\+G\+A\+\_\+\+P\+R\+O\+G\+R\+A\+M@{C\+M\+D\+\_\+\+F\+P\+G\+A\+\_\+\+P\+R\+O\+G\+R\+A\+M}!software\+::chipwhisperer\+::hardware\+::naeusb\+::fpga\+::\+F\+P\+G\+A@{software\+::chipwhisperer\+::hardware\+::naeusb\+::fpga\+::\+F\+P\+G\+A}}
+\subsubsection[{C\+M\+D\+\_\+\+F\+P\+G\+A\+\_\+\+P\+R\+O\+G\+R\+A\+M}]{\setlength{\rightskip}{0pt plus 5cm}int software.\+chipwhisperer.\+hardware.\+naeusb.\+fpga.\+F\+P\+G\+A.\+C\+M\+D\+\_\+\+F\+P\+G\+A\+\_\+\+P\+R\+O\+G\+R\+A\+M = 0x16\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1fpga_1_1FPGA_a611615e3ac2381fd6e320ee4910d7f36}
+
+
+Referenced by software.\+chipwhisperer.\+hardware.\+naeusb.\+fpga.\+F\+P\+G\+A.\+F\+P\+G\+A\+Program().
+
+\hypertarget{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1fpga_1_1FPGA_a7105627c474f731b7edae3397726cca6}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::fpga\+::\+F\+P\+G\+A@{software\+::chipwhisperer\+::hardware\+::naeusb\+::fpga\+::\+F\+P\+G\+A}!C\+M\+D\+\_\+\+F\+P\+G\+A\+\_\+\+S\+T\+A\+T\+U\+S@{C\+M\+D\+\_\+\+F\+P\+G\+A\+\_\+\+S\+T\+A\+T\+U\+S}}
+\index{C\+M\+D\+\_\+\+F\+P\+G\+A\+\_\+\+S\+T\+A\+T\+U\+S@{C\+M\+D\+\_\+\+F\+P\+G\+A\+\_\+\+S\+T\+A\+T\+U\+S}!software\+::chipwhisperer\+::hardware\+::naeusb\+::fpga\+::\+F\+P\+G\+A@{software\+::chipwhisperer\+::hardware\+::naeusb\+::fpga\+::\+F\+P\+G\+A}}
+\subsubsection[{C\+M\+D\+\_\+\+F\+P\+G\+A\+\_\+\+S\+T\+A\+T\+U\+S}]{\setlength{\rightskip}{0pt plus 5cm}int software.\+chipwhisperer.\+hardware.\+naeusb.\+fpga.\+F\+P\+G\+A.\+C\+M\+D\+\_\+\+F\+P\+G\+A\+\_\+\+S\+T\+A\+T\+U\+S = 0x15\hspace{0.3cm}{\ttfamily [static]}}\label{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1fpga_1_1FPGA_a7105627c474f731b7edae3397726cca6}
+
+
+Referenced by software.\+chipwhisperer.\+hardware.\+naeusb.\+fpga.\+F\+P\+G\+A.\+is\+F\+P\+G\+A\+Programmed().
+
+\hypertarget{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1fpga_1_1FPGA_a2ab1f3bccc19ecf43b8f96907a0c88e5}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::fpga\+::\+F\+P\+G\+A@{software\+::chipwhisperer\+::hardware\+::naeusb\+::fpga\+::\+F\+P\+G\+A}!read\+Ctrl@{read\+Ctrl}}
+\index{read\+Ctrl@{read\+Ctrl}!software\+::chipwhisperer\+::hardware\+::naeusb\+::fpga\+::\+F\+P\+G\+A@{software\+::chipwhisperer\+::hardware\+::naeusb\+::fpga\+::\+F\+P\+G\+A}}
+\subsubsection[{read\+Ctrl}]{\setlength{\rightskip}{0pt plus 5cm}software.\+chipwhisperer.\+hardware.\+naeusb.\+fpga.\+F\+P\+G\+A.\+read\+Ctrl}\label{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1fpga_1_1FPGA_a2ab1f3bccc19ecf43b8f96907a0c88e5}
+
+
+Referenced by software.\+chipwhisperer.\+hardware.\+naeusb.\+naeusb.\+N\+A\+E\+U\+S\+B.\+cmd\+Read\+Mem(), software.\+chipwhisperer.\+hardware.\+naeusb.\+fpga.\+F\+P\+G\+A.\+is\+F\+P\+G\+A\+Programmed(), and software.\+chipwhisperer.\+hardware.\+naeusb.\+naeusb.\+N\+A\+E\+U\+S\+B.\+read\+Fw\+Version().
+
+\hypertarget{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1fpga_1_1FPGA_a18dce2e9b27a4e1dbafe37295bc7ba87}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::fpga\+::\+F\+P\+G\+A@{software\+::chipwhisperer\+::hardware\+::naeusb\+::fpga\+::\+F\+P\+G\+A}!send\+Ctrl@{send\+Ctrl}}
+\index{send\+Ctrl@{send\+Ctrl}!software\+::chipwhisperer\+::hardware\+::naeusb\+::fpga\+::\+F\+P\+G\+A@{software\+::chipwhisperer\+::hardware\+::naeusb\+::fpga\+::\+F\+P\+G\+A}}
+\subsubsection[{send\+Ctrl}]{\setlength{\rightskip}{0pt plus 5cm}software.\+chipwhisperer.\+hardware.\+naeusb.\+fpga.\+F\+P\+G\+A.\+send\+Ctrl}\label{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1fpga_1_1FPGA_a18dce2e9b27a4e1dbafe37295bc7ba87}
+
+
+Referenced by software.\+chipwhisperer.\+hardware.\+naeusb.\+naeusb.\+N\+A\+E\+U\+S\+B.\+cmd\+Read\+Mem(), software.\+chipwhisperer.\+hardware.\+naeusb.\+naeusb.\+N\+A\+E\+U\+S\+B.\+cmd\+Write\+Mem(), software.\+chipwhisperer.\+hardware.\+naeusb.\+naeusb.\+N\+A\+E\+U\+S\+B.\+enter\+Bootloader(), and software.\+chipwhisperer.\+hardware.\+naeusb.\+fpga.\+F\+P\+G\+A.\+F\+P\+G\+A\+Program().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{fpga_8py}{fpga.\+py}\end{DoxyCompactItemize}

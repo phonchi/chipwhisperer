@@ -1,0 +1,6 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node2" href="$d4/d5f/classsoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1OpenADC_1_1OpenADCInterface.html" title="software.chipwhisperer.capture.scopes.\lOpenADC.OpenADCInterface" alt="" coords="167,5,420,47"/>
+<area shape="rect" id="node3" href="$d1/d36/classsoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1PicoScope_1_1PicoScope.html" title="software.chipwhisperer.capture.scopes.\lPicoScope.PicoScope" alt="" coords="167,71,420,112"/>
+<area shape="rect" id="node4" href="$da/d31/classsoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1PicoScope_1_1PicoScopeInterface.html" title="software.chipwhisperer.capture.scopes.\lPicoScope.PicoScopeInterface" alt="" coords="167,136,420,177"/>
+<area shape="rect" id="node5" href="$d6/d21/classsoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1VisaScope_1_1VisaScopeInterface.html" title="software.chipwhisperer.capture.scopes.\lVisaScope.VisaScopeInterface" alt="" coords="167,201,420,243"/>
+</map>

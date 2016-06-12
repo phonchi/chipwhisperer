@@ -1,0 +1,63 @@
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1capture_1_1ui_1_1CWCaptureGUI}{}\section{software.\+chipwhisperer.\+capture.\+ui.\+C\+W\+Capture\+G\+U\+I Namespace Reference}
+\label{namespacesoftware_1_1chipwhisperer_1_1capture_1_1ui_1_1CWCaptureGUI}\index{software.\+chipwhisperer.\+capture.\+ui.\+C\+W\+Capture\+G\+U\+I@{software.\+chipwhisperer.\+capture.\+ui.\+C\+W\+Capture\+G\+U\+I}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1ui_1_1CWCaptureGUI_1_1CWCaptureGUI}{C\+W\+Capture\+G\+U\+I}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacesoftware_1_1chipwhisperer_1_1capture_1_1ui_1_1CWCaptureGUI_acca6166338e19979626939510d9ea50d}{make\+Application} ()
+\item 
+def \hyperlink{namespacesoftware_1_1chipwhisperer_1_1capture_1_1ui_1_1CWCaptureGUI_a108cd0ee05969d7789eaafa4f51d03f3}{main} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1capture_1_1ui_1_1CWCaptureGUI_a108cd0ee05969d7789eaafa4f51d03f3}{}\index{software\+::chipwhisperer\+::capture\+::ui\+::\+C\+W\+Capture\+G\+U\+I@{software\+::chipwhisperer\+::capture\+::ui\+::\+C\+W\+Capture\+G\+U\+I}!main@{main}}
+\index{main@{main}!software\+::chipwhisperer\+::capture\+::ui\+::\+C\+W\+Capture\+G\+U\+I@{software\+::chipwhisperer\+::capture\+::ui\+::\+C\+W\+Capture\+G\+U\+I}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+capture.\+ui.\+C\+W\+Capture\+G\+U\+I.\+main (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{namespacesoftware_1_1chipwhisperer_1_1capture_1_1ui_1_1CWCaptureGUI_a108cd0ee05969d7789eaafa4f51d03f3}
+
+
+References software.\+chipwhisperer.\+capture.\+ui.\+C\+W\+Capture\+G\+U\+I.\+make\+Application().
+
+
+\begin{DoxyCode}
+241 \textcolor{keyword}{def }\hyperlink{namespacesoftware_1_1chipwhisperer_1_1capture_1_1ui_1_1CWCaptureGUI_a108cd0ee05969d7789eaafa4f51d03f3}{main}():
+242     \textcolor{comment}{# Create the Qt Application}
+243     app = \hyperlink{namespacesoftware_1_1chipwhisperer_1_1capture_1_1ui_1_1CWCaptureGUI_acca6166338e19979626939510d9ea50d}{makeApplication}()
+244     \textcolor{comment}{# Create and show the GUI}
+245     window = \hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1ui_1_1CWCaptureGUI_1_1CWCaptureGUI}{CWCaptureGUI}(CWCoreAPI())
+246     window.show()
+247 
+248     \textcolor{comment}{# Run the main Qt loop}
+249     sys.exit(app.exec\_())
+250 
+\end{DoxyCode}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1capture_1_1ui_1_1CWCaptureGUI_acca6166338e19979626939510d9ea50d}{}\index{software\+::chipwhisperer\+::capture\+::ui\+::\+C\+W\+Capture\+G\+U\+I@{software\+::chipwhisperer\+::capture\+::ui\+::\+C\+W\+Capture\+G\+U\+I}!make\+Application@{make\+Application}}
+\index{make\+Application@{make\+Application}!software\+::chipwhisperer\+::capture\+::ui\+::\+C\+W\+Capture\+G\+U\+I@{software\+::chipwhisperer\+::capture\+::ui\+::\+C\+W\+Capture\+G\+U\+I}}
+\subsubsection[{make\+Application}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+capture.\+ui.\+C\+W\+Capture\+G\+U\+I.\+make\+Application (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{namespacesoftware_1_1chipwhisperer_1_1capture_1_1ui_1_1CWCaptureGUI_acca6166338e19979626939510d9ea50d}
+
+
+Referenced by software.\+chipwhisperer.\+capture.\+ui.\+C\+W\+Capture\+G\+U\+I.\+main().
+
+
+\begin{DoxyCode}
+233 \textcolor{keyword}{def }\hyperlink{namespacesoftware_1_1chipwhisperer_1_1capture_1_1ui_1_1CWCaptureGUI_acca6166338e19979626939510d9ea50d}{makeApplication}():
+234     \textcolor{comment}{# Create the Qt Application}
+235     app = QApplication(sys.argv)
+236     app.setOrganizationName(CWCoreAPI.\_\_organization\_\_)
+237     app.setApplicationName(CWCoreAPI.\_\_name\_\_ + \textcolor{stringliteral}{" - Capture "})
+238     \textcolor{keywordflow}{return} app
+239 
+240 
+\end{DoxyCode}

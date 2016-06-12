@@ -1,0 +1,137 @@
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1CWMainGUI_1_1OutLog}{}\section{software.\+chipwhisperer.\+common.\+ui.\+C\+W\+Main\+G\+U\+I.\+Out\+Log Class Reference}
+\label{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1CWMainGUI_1_1OutLog}\index{software.\+chipwhisperer.\+common.\+ui.\+C\+W\+Main\+G\+U\+I.\+Out\+Log@{software.\+chipwhisperer.\+common.\+ui.\+C\+W\+Main\+G\+U\+I.\+Out\+Log}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1CWMainGUI_1_1OutLog_a8b7818709cfe869a3d6fd530aa44ce20}{\+\_\+\+\_\+init\+\_\+\+\_\+}
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1CWMainGUI_1_1OutLog_a9ce9fbfa97b20e49bf86854060e8cdfc}{write} (self, m)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1CWMainGUI_1_1OutLog_a446c7961ef5ae7b88e52d0fe18184e0d}{edit}
+\item 
+\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1CWMainGUI_1_1OutLog_a74d31e7b8063bd62bff3aafa515f39ff}{out}
+\item 
+\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1CWMainGUI_1_1OutLog_a1afed4aff3a7765b8d8609cff5556d55}{color}
+\item 
+\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1CWMainGUI_1_1OutLog_a5b854f0c7fb8f98692a348b3055f7078}{orig\+Stdout}
+\end{DoxyCompactItemize}
+
+
+Collaboration diagram for software.\+chipwhisperer.\+common.\+ui.\+C\+W\+Main\+G\+U\+I.\+Out\+Log\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=251pt]{d1/d33/classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1CWMainGUI_1_1OutLog__coll__graph}
+\end{center}
+\end{figure}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1CWMainGUI_1_1OutLog_a8b7818709cfe869a3d6fd530aa44ce20}{}\index{software\+::chipwhisperer\+::common\+::ui\+::\+C\+W\+Main\+G\+U\+I\+::\+Out\+Log@{software\+::chipwhisperer\+::common\+::ui\+::\+C\+W\+Main\+G\+U\+I\+::\+Out\+Log}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!software\+::chipwhisperer\+::common\+::ui\+::\+C\+W\+Main\+G\+U\+I\+::\+Out\+Log@{software\+::chipwhisperer\+::common\+::ui\+::\+C\+W\+Main\+G\+U\+I\+::\+Out\+Log}}
+\subsubsection[{\+\_\+\+\_\+init\+\_\+\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+ui.\+C\+W\+Main\+G\+U\+I.\+Out\+Log.\+\_\+\+\_\+init\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{edit, }
+\item[{}]{out = {\ttfamily None}, }
+\item[{}]{color = {\ttfamily None}, }
+\item[{}]{orig\+Stdout = {\ttfamily None}}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1CWMainGUI_1_1OutLog_a8b7818709cfe869a3d6fd530aa44ce20}
+\begin{DoxyVerb}(edit, out=None, color=None) -> can write stdout, stderr to a
+QTextEdit.
+edit = QTextEdit
+out = alternate stream ( can be the original sys.stdout )
+color = alternate color (i.e. color stderr a different color)
+\end{DoxyVerb}
+ 
+\begin{DoxyCode}
+490     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1CWMainGUI_1_1OutLog_a8b7818709cfe869a3d6fd530aa44ce20}{\_\_init\_\_}(self, edit, out=None, color=None, origStdout=None):
+491         \textcolor{stringliteral}{"""(edit, out=None, color=None) -> can write stdout, stderr to a}
+492 \textcolor{stringliteral}{        QTextEdit.}
+493 \textcolor{stringliteral}{        edit = QTextEdit}
+494 \textcolor{stringliteral}{        out = alternate stream ( can be the original sys.stdout )}
+495 \textcolor{stringliteral}{        color = alternate color (i.e. color stderr a different color)}
+496 \textcolor{stringliteral}{        """}
+497         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1CWMainGUI_1_1OutLog_a446c7961ef5ae7b88e52d0fe18184e0d}{edit} = edit
+498         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1CWMainGUI_1_1OutLog_a74d31e7b8063bd62bff3aafa515f39ff}{out} = \textcolor{keywordtype}{None}
+499         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1CWMainGUI_1_1OutLog_a1afed4aff3a7765b8d8609cff5556d55}{color} = color
+500         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1CWMainGUI_1_1OutLog_a5b854f0c7fb8f98692a348b3055f7078}{origStdout} = origStdout
+501 
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1CWMainGUI_1_1OutLog_a9ce9fbfa97b20e49bf86854060e8cdfc}{}\index{software\+::chipwhisperer\+::common\+::ui\+::\+C\+W\+Main\+G\+U\+I\+::\+Out\+Log@{software\+::chipwhisperer\+::common\+::ui\+::\+C\+W\+Main\+G\+U\+I\+::\+Out\+Log}!write@{write}}
+\index{write@{write}!software\+::chipwhisperer\+::common\+::ui\+::\+C\+W\+Main\+G\+U\+I\+::\+Out\+Log@{software\+::chipwhisperer\+::common\+::ui\+::\+C\+W\+Main\+G\+U\+I\+::\+Out\+Log}}
+\subsubsection[{write}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+ui.\+C\+W\+Main\+G\+U\+I.\+Out\+Log.\+write (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{m}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1CWMainGUI_1_1OutLog_a9ce9fbfa97b20e49bf86854060e8cdfc}
+
+
+References software.\+chipwhisperer.\+common.\+ui.\+C\+W\+Main\+G\+U\+I.\+Out\+Log.\+color, software.\+chipwhisperer.\+common.\+ui.\+C\+W\+Main\+G\+U\+I.\+Out\+Log.\+orig\+Stdout, and software.\+chipwhisperer.\+common.\+ui.\+C\+W\+Main\+G\+U\+I.\+Out\+Log.\+out.
+
+
+
+Referenced by software.\+chipwhisperer.\+capture.\+targets.\+S\+A\+S\+E\+B\+O\+G\+I\+I.\+Sasebo\+G\+I\+I\+D\+P\+A\+Contest.\+go(), software.\+chipwhisperer.\+capture.\+targets.\+S\+A\+S\+E\+B\+O\+G\+I\+I.\+Sasebo\+G\+I\+I\+A\+E\+S\+Rev1.\+go(), software.\+chipwhisperer.\+capture.\+targets.\+S\+A\+S\+E\+B\+O\+G\+I\+I.\+Sasebo\+G\+I\+I\+D\+P\+A\+Contest.\+init(), software.\+chipwhisperer.\+capture.\+targets.\+S\+A\+S\+E\+B\+O\+G\+I\+I.\+Sasebo\+G\+I\+I\+A\+E\+S\+Rev1.\+init(), software.\+chipwhisperer.\+capture.\+targets.\+S\+A\+S\+E\+B\+O\+G\+I\+I.\+Sasebo\+G\+I\+I\+D\+P\+A\+Contest.\+load\+Encryption\+Key(), software.\+chipwhisperer.\+capture.\+targets.\+S\+A\+S\+E\+B\+O\+G\+I\+I.\+Sasebo\+G\+I\+I\+A\+E\+S\+Rev1.\+load\+Encryption\+Key(), software.\+chipwhisperer.\+capture.\+targets.\+S\+A\+S\+E\+B\+O\+G\+I\+I.\+Sasebo\+G\+I\+I\+D\+P\+A\+Contest.\+load\+Input(), software.\+chipwhisperer.\+capture.\+targets.\+S\+A\+S\+E\+B\+O\+G\+I\+I.\+Sasebo\+G\+I\+I\+A\+E\+S\+Rev1.\+load\+Input(), software.\+chipwhisperer.\+common.\+ui.\+Python\+Console.\+\_\+\+Q\+Python\+Console\+Interpreter.\+runsource(), software.\+chipwhisperer.\+capture.\+targets.\+S\+A\+S\+E\+B\+O\+G\+I\+I.\+Sasebo\+G\+I\+I\+D\+P\+A\+Contest.\+set\+Mode(), software.\+chipwhisperer.\+capture.\+targets.\+S\+A\+S\+E\+B\+O\+G\+I\+I.\+Sasebo\+G\+I\+I\+A\+E\+S\+Rev1.\+set\+Mode(), software.\+chipwhisperer.\+capture.\+targets.\+S\+A\+S\+E\+B\+O\+G\+I\+I.\+Sasebo\+G\+I\+I\+D\+P\+A\+Contest.\+set\+Mode\+Decrypt(), software.\+chipwhisperer.\+capture.\+targets.\+S\+A\+S\+E\+B\+O\+G\+I\+I.\+Sasebo\+G\+I\+I\+A\+E\+S\+Rev1.\+set\+Mode\+Decrypt(), software.\+chipwhisperer.\+capture.\+targets.\+S\+A\+S\+E\+B\+O\+G\+I\+I.\+Sasebo\+G\+I\+I\+D\+P\+A\+Contest.\+set\+Mode\+Encrypt(), and software.\+chipwhisperer.\+capture.\+targets.\+S\+A\+S\+E\+B\+O\+G\+I\+I.\+Sasebo\+G\+I\+I\+A\+E\+S\+Rev1.\+set\+Mode\+Encrypt().
+
+
+\begin{DoxyCode}
+502     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1CWMainGUI_1_1OutLog_a9ce9fbfa97b20e49bf86854060e8cdfc}{write}(self, m):
+503         \textcolor{comment}{# Still redirect to original STDOUT}
+504         tc = self.edit.textColor()
+505         \textcolor{keywordflow}{if} self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1CWMainGUI_1_1OutLog_a1afed4aff3a7765b8d8609cff5556d55}{color}:
+506             self.edit.setTextColor(self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1CWMainGUI_1_1OutLog_a1afed4aff3a7765b8d8609cff5556d55}{color})
+507 
+508         self.edit.moveCursor(QTextCursor.End)
+509         self.edit.insertPlainText(m)
+510 
+511         \textcolor{keywordflow}{if} self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1CWMainGUI_1_1OutLog_a1afed4aff3a7765b8d8609cff5556d55}{color}:
+512             self.edit.setTextColor(tc)
+513 
+514         \textcolor{keywordflow}{if} self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1CWMainGUI_1_1OutLog_a74d31e7b8063bd62bff3aafa515f39ff}{out}:
+515             self.out.write(m)
+516 
+517         \textcolor{keywordflow}{if} self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1CWMainGUI_1_1OutLog_a5b854f0c7fb8f98692a348b3055f7078}{origStdout}:
+518             self.origStdout.write(m)
+519 
+520 
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1CWMainGUI_1_1OutLog_a1afed4aff3a7765b8d8609cff5556d55}{}\index{software\+::chipwhisperer\+::common\+::ui\+::\+C\+W\+Main\+G\+U\+I\+::\+Out\+Log@{software\+::chipwhisperer\+::common\+::ui\+::\+C\+W\+Main\+G\+U\+I\+::\+Out\+Log}!color@{color}}
+\index{color@{color}!software\+::chipwhisperer\+::common\+::ui\+::\+C\+W\+Main\+G\+U\+I\+::\+Out\+Log@{software\+::chipwhisperer\+::common\+::ui\+::\+C\+W\+Main\+G\+U\+I\+::\+Out\+Log}}
+\subsubsection[{color}]{\setlength{\rightskip}{0pt plus 5cm}software.\+chipwhisperer.\+common.\+ui.\+C\+W\+Main\+G\+U\+I.\+Out\+Log.\+color}\label{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1CWMainGUI_1_1OutLog_a1afed4aff3a7765b8d8609cff5556d55}
+
+
+Referenced by software.\+chipwhisperer.\+common.\+ui.\+Graph\+Widget.\+Graph\+Widget.\+set\+Color\+Int(), and software.\+chipwhisperer.\+common.\+ui.\+C\+W\+Main\+G\+U\+I.\+Out\+Log.\+write().
+
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1CWMainGUI_1_1OutLog_a446c7961ef5ae7b88e52d0fe18184e0d}{}\index{software\+::chipwhisperer\+::common\+::ui\+::\+C\+W\+Main\+G\+U\+I\+::\+Out\+Log@{software\+::chipwhisperer\+::common\+::ui\+::\+C\+W\+Main\+G\+U\+I\+::\+Out\+Log}!edit@{edit}}
+\index{edit@{edit}!software\+::chipwhisperer\+::common\+::ui\+::\+C\+W\+Main\+G\+U\+I\+::\+Out\+Log@{software\+::chipwhisperer\+::common\+::ui\+::\+C\+W\+Main\+G\+U\+I\+::\+Out\+Log}}
+\subsubsection[{edit}]{\setlength{\rightskip}{0pt plus 5cm}software.\+chipwhisperer.\+common.\+ui.\+C\+W\+Main\+G\+U\+I.\+Out\+Log.\+edit}\label{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1CWMainGUI_1_1OutLog_a446c7961ef5ae7b88e52d0fe18184e0d}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1CWMainGUI_1_1OutLog_a5b854f0c7fb8f98692a348b3055f7078}{}\index{software\+::chipwhisperer\+::common\+::ui\+::\+C\+W\+Main\+G\+U\+I\+::\+Out\+Log@{software\+::chipwhisperer\+::common\+::ui\+::\+C\+W\+Main\+G\+U\+I\+::\+Out\+Log}!orig\+Stdout@{orig\+Stdout}}
+\index{orig\+Stdout@{orig\+Stdout}!software\+::chipwhisperer\+::common\+::ui\+::\+C\+W\+Main\+G\+U\+I\+::\+Out\+Log@{software\+::chipwhisperer\+::common\+::ui\+::\+C\+W\+Main\+G\+U\+I\+::\+Out\+Log}}
+\subsubsection[{orig\+Stdout}]{\setlength{\rightskip}{0pt plus 5cm}software.\+chipwhisperer.\+common.\+ui.\+C\+W\+Main\+G\+U\+I.\+Out\+Log.\+orig\+Stdout}\label{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1CWMainGUI_1_1OutLog_a5b854f0c7fb8f98692a348b3055f7078}
+
+
+Referenced by software.\+chipwhisperer.\+common.\+ui.\+C\+W\+Main\+G\+U\+I.\+Out\+Log.\+write().
+
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1CWMainGUI_1_1OutLog_a74d31e7b8063bd62bff3aafa515f39ff}{}\index{software\+::chipwhisperer\+::common\+::ui\+::\+C\+W\+Main\+G\+U\+I\+::\+Out\+Log@{software\+::chipwhisperer\+::common\+::ui\+::\+C\+W\+Main\+G\+U\+I\+::\+Out\+Log}!out@{out}}
+\index{out@{out}!software\+::chipwhisperer\+::common\+::ui\+::\+C\+W\+Main\+G\+U\+I\+::\+Out\+Log@{software\+::chipwhisperer\+::common\+::ui\+::\+C\+W\+Main\+G\+U\+I\+::\+Out\+Log}}
+\subsubsection[{out}]{\setlength{\rightskip}{0pt plus 5cm}software.\+chipwhisperer.\+common.\+ui.\+C\+W\+Main\+G\+U\+I.\+Out\+Log.\+out}\label{classsoftware_1_1chipwhisperer_1_1common_1_1ui_1_1CWMainGUI_1_1OutLog_a74d31e7b8063bd62bff3aafa515f39ff}
+
+
+Referenced by software.\+chipwhisperer.\+common.\+ui.\+C\+W\+Main\+G\+U\+I.\+Out\+Log.\+write().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{CWMainGUI_8py}{C\+W\+Main\+G\+U\+I.\+py}\end{DoxyCompactItemize}

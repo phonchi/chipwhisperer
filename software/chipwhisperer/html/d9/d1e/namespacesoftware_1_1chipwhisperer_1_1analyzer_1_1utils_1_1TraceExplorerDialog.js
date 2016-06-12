@@ -1,0 +1,4 @@
+var namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1TraceExplorerDialog =
+[
+    [ "TraceExplorerDialog", "dc/d85/classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1TraceExplorerDialog_1_1TraceExplorerDialog.html", "dc/d85/classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1TraceExplorerDialog_1_1TraceExplorerDialog" ]
+];

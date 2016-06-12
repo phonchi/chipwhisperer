@@ -1,0 +1,236 @@
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES128__8bit}{}\section{software.\+chipwhisperer.\+analyzer.\+attacks.\+models.\+A\+E\+S128\+\_\+8bit Namespace Reference}
+\label{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES128__8bit}\index{software.\+chipwhisperer.\+analyzer.\+attacks.\+models.\+A\+E\+S128\+\_\+8bit@{software.\+chipwhisperer.\+analyzer.\+attacks.\+models.\+A\+E\+S128\+\_\+8bit}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES128__8bit_a2b764a2591fca27d7d1771b97dd324cd}{process\+Known\+Key} (setting, inpkey)
+\item 
+def \hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES128__8bit_a00d1c3fdc8cf07710dc70de7d751aa28}{leakage} (pt, ct, guess, bnum, setting, state)
+\item 
+def \hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES128__8bit_ad7e775a7bb3510f159149dba221c7732}{get\+H\+W} (var)
+\item 
+def \hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES128__8bit_a61952256c74f62816970ed5226c57b1f}{Vcc\+To\+Gnd} (var)
+\item 
+def \hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES128__8bit_ad37a36500fd9ae3d9248e1146f9f8fa5}{xtime} (a)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES128__8bit_a2f3751465572d0233e51cf00f8c56fcc}{L\+E\+A\+K\+\_\+\+H\+W\+\_\+\+S\+B\+O\+X\+O\+U\+T\+\_\+\+F\+I\+R\+S\+T\+R\+O\+U\+N\+D} = 1
+\item 
+int \hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES128__8bit_a9f862c9aa73c1b4f174f6411ceb13bb7}{L\+E\+A\+K\+\_\+\+H\+D\+\_\+\+L\+A\+S\+T\+R\+O\+U\+N\+D\+\_\+\+S\+T\+A\+T\+E} = 2
+\item 
+int \hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES128__8bit_ac173615fbfe69731678b23890d51b9f5}{L\+E\+A\+K\+\_\+\+H\+D\+\_\+\+S\+B\+O\+X\+\_\+\+I\+N\+\_\+\+O\+U\+T} = 3
+\item 
+int \hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES128__8bit_aa157d73e0f6c30fca0f223793d6349a5}{L\+E\+A\+K\+\_\+\+H\+D\+\_\+\+S\+B\+O\+X\+\_\+\+I\+N\+\_\+\+S\+U\+C\+C\+E\+S\+S\+I\+V\+E} = 4
+\item 
+int \hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES128__8bit_ada60cdb0e2e50f212a32d1eff1490f05}{L\+E\+A\+K\+\_\+\+H\+D\+\_\+\+S\+B\+O\+X\+\_\+\+O\+U\+T\+\_\+\+S\+U\+C\+C\+E\+S\+S\+I\+V\+E} = 5
+\item 
+int \hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES128__8bit_ad1c6071e513f3d14e3e83c7f73fc140e}{L\+E\+A\+K\+\_\+\+H\+W\+\_\+\+I\+N\+V\+S\+B\+O\+X\+O\+U\+T\+\_\+\+F\+I\+R\+S\+T\+R\+O\+U\+N\+D} = 6
+\item 
+tuple \hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES128__8bit_aa1884fa8f182a3a465f0a4c2355b7cf1}{leakagemodels} = util.\+Dict\+Type()
+\item 
+int \hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES128__8bit_acb8c2af6a81f7ddbb99b4d2e0f4bf65f}{num\+Sub\+Keys} = 16
+\item 
+int \hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES128__8bit_a842b0fe06df25c7bd4e67ba777a94886}{perm\+Per\+Subkey} = 256
+\item 
+list \hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES128__8bit_a2c5c921d3b44ad512e0cc55be1f4b301}{H\+W8\+Bit}
+\begin{DoxyCompactList}\small\item\em Generate this table with\+: H\+W = \mbox{[}\mbox{]} for n in range(0, 256)\+: H\+W = H\+W + \mbox{[}bin(n).count(\char`\"{}1\char`\"{})\mbox{]}. \end{DoxyCompactList}\item 
+list \hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES128__8bit_aaf8f4a7882a964a28ab807fa9e4ccc73}{S\+H\+I\+F\+T} = \mbox{[}$\,$\mbox{]}
+\item 
+list \hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES128__8bit_a93f1d2552c1587ff00416596da63662a}{I\+N\+V\+S\+H\+I\+F\+T} = \mbox{[}0, 5, 10, 15, 4, 9, 14, 3, 8, 13, 2, 7, 12, 1, 6, 11\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES128__8bit_ad7e775a7bb3510f159149dba221c7732}{}\index{software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S128\+\_\+8bit@{software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S128\+\_\+8bit}!get\+H\+W@{get\+H\+W}}
+\index{get\+H\+W@{get\+H\+W}!software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S128\+\_\+8bit@{software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S128\+\_\+8bit}}
+\subsubsection[{get\+H\+W}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+analyzer.\+attacks.\+models.\+A\+E\+S128\+\_\+8bit.\+get\+H\+W (
+\begin{DoxyParamCaption}
+\item[{}]{var}
+\end{DoxyParamCaption}
+)}\label{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES128__8bit_ad7e775a7bb3510f159149dba221c7732}
+\begin{DoxyVerb}Given a variable, return the hamming weight (number of 1's)\end{DoxyVerb}
+ 
+
+Referenced by software.\+chipwhisperer.\+analyzer.\+attacks.\+profiling\+\_\+algorithms.\+template.\+Profiling\+Template.\+add\+Traces(), software.\+chipwhisperer.\+analyzer.\+utils.\+Partition.\+Partition\+H\+D\+Last\+Round.\+get\+Partition\+Num(), software.\+chipwhisperer.\+analyzer.\+utils.\+Partition.\+Partition\+H\+W\+Intermediate.\+get\+Partition\+Num(), and software.\+chipwhisperer.\+analyzer.\+attacks.\+models.\+A\+E\+S128\+\_\+8bit.\+leakage().
+
+
+\begin{DoxyCode}
+112 \textcolor{keyword}{def }\hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES128__8bit_ad7e775a7bb3510f159149dba221c7732}{getHW}(var):
+113     \textcolor{stringliteral}{"""Given a variable, return the hamming weight (number of 1's)"""}
+114     \textcolor{keywordflow}{return} HW8Bit[var]
+115 
+116 
+\end{DoxyCode}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES128__8bit_a00d1c3fdc8cf07710dc70de7d751aa28}{}\index{software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S128\+\_\+8bit@{software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S128\+\_\+8bit}!leakage@{leakage}}
+\index{leakage@{leakage}!software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S128\+\_\+8bit@{software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S128\+\_\+8bit}}
+\subsubsection[{leakage}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+analyzer.\+attacks.\+models.\+A\+E\+S128\+\_\+8bit.\+leakage (
+\begin{DoxyParamCaption}
+\item[{}]{pt, }
+\item[{}]{ct, }
+\item[{}]{guess, }
+\item[{}]{bnum, }
+\item[{}]{setting, }
+\item[{}]{state}
+\end{DoxyParamCaption}
+)}\label{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES128__8bit_a00d1c3fdc8cf07710dc70de7d751aa28}
+
+
+References software.\+chipwhisperer.\+analyzer.\+attacks.\+models.\+A\+E\+S128\+\_\+8bit.\+get\+H\+W(), software.\+chipwhisperer.\+analyzer.\+models.\+aes.\+funcs.\+inv\+\_\+sbox(), and software.\+chipwhisperer.\+common.\+utils.\+aes\+\_\+tables.\+sbox.
+
+
+\begin{DoxyCode}
+79 \textcolor{keyword}{def }\hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES128__8bit_a00d1c3fdc8cf07710dc70de7d751aa28}{leakage}(pt, ct, guess, bnum, setting, state):
+80 
+81     \textcolor{keywordflow}{if} setting == LEAK\_HW\_SBOXOUT\_FIRSTROUND:
+82         \textcolor{comment}{# Classic HW of S-Box output}
+83         \textcolor{keywordflow}{return} \hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES128__8bit_ad7e775a7bb3510f159149dba221c7732}{getHW}(\hyperlink{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1aes__tables_ab29ec75e9f1c27e4d0e14aa03b1558ba}{sbox}(pt[bnum] ^ guess))
+84 
+85     \textcolor{keywordflow}{elif} setting == LEAK\_HW\_INVSBOXOUT\_FIRSTROUND:
+86         \textcolor{comment}{# HW Leakage of inverse S-Box (AES Decryption)}
+87         \textcolor{keywordflow}{return} \hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES128__8bit_ad7e775a7bb3510f159149dba221c7732}{getHW}(\hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1models_1_1aes_1_1funcs_abd974ec608fb9868e7bed0e11facf526}{inv\_sbox}(pt[bnum] ^ guess))
+88 
+89     \textcolor{keywordflow}{elif} setting == LEAK\_HD\_LASTROUND\_STATE:
+90         \textcolor{comment}{# HD Leakage of AES State between 9th and 10th Round}
+91         \textcolor{comment}{# Used to break SASEBO-GII / SAKURA-G}
+92         st10 = ct[INVSHIFT[bnum]]
+93         st9 =  \hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1models_1_1aes_1_1funcs_abd974ec608fb9868e7bed0e11facf526}{inv\_sbox}(ct[bnum] ^ guess)
+94         \textcolor{keywordflow}{return} \hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES128__8bit_ad7e775a7bb3510f159149dba221c7732}{getHW}(st9 ^ st10)
+95 
+96     \textcolor{keywordflow}{elif} setting == LEAK\_HD\_SBOX\_IN\_OUT:
+97         \textcolor{comment}{# Leakage from HD of S-Box input to output}
+98         st1 = pt[bnum] ^ guess
+99         st2 = \hyperlink{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1aes__tables_ab29ec75e9f1c27e4d0e14aa03b1558ba}{sbox}(st1)
+100         \textcolor{keywordflow}{return} \hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES128__8bit_ad7e775a7bb3510f159149dba221c7732}{getHW}(st1 ^ st2)
+101 
+102     \textcolor{keywordflow}{elif} setting == LEAK\_HD\_SBOX\_IN\_SUCCESSIVE:
+103         \textcolor{keywordflow}{pass}
+104 
+105     \textcolor{keywordflow}{elif} setting == LEAK\_HD\_SBOX\_OUT\_SUCCESSIVE:
+106         \textcolor{keywordflow}{pass}
+107 
+108     \textcolor{keywordflow}{else}:
+109         \textcolor{keywordflow}{raise} ValueError(\textcolor{stringliteral}{"Invalid setting: %s"} % str(setting))
+110 
+111 
+\end{DoxyCode}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES128__8bit_a2b764a2591fca27d7d1771b97dd324cd}{}\index{software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S128\+\_\+8bit@{software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S128\+\_\+8bit}!process\+Known\+Key@{process\+Known\+Key}}
+\index{process\+Known\+Key@{process\+Known\+Key}!software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S128\+\_\+8bit@{software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S128\+\_\+8bit}}
+\subsubsection[{process\+Known\+Key}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+analyzer.\+attacks.\+models.\+A\+E\+S128\+\_\+8bit.\+process\+Known\+Key (
+\begin{DoxyParamCaption}
+\item[{}]{setting, }
+\item[{}]{inpkey}
+\end{DoxyParamCaption}
+)}\label{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES128__8bit_a2b764a2591fca27d7d1771b97dd324cd}
+
+
+References software.\+chipwhisperer.\+analyzer.\+models.\+aes.\+key\+\_\+schedule.\+key\+Schedule\+Rounds().
+
+
+\begin{DoxyCode}
+71 \textcolor{keyword}{def }\hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES128__8bit_a2b764a2591fca27d7d1771b97dd324cd}{processKnownKey}(setting, inpkey):
+72 
+73     \textcolor{keywordflow}{if} setting == LEAK\_HD\_LASTROUND\_STATE:
+74         \textcolor{keywordflow}{return} \hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1models_1_1aes_1_1key__schedule_aa0e0cef2bfba47599cd9fdaed40e4c5c}{keyScheduleRounds}(inpkey, 0, 10)
+75 
+76     \textcolor{keywordflow}{return} inpkey
+77 
+78 
+\end{DoxyCode}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES128__8bit_a61952256c74f62816970ed5226c57b1f}{}\index{software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S128\+\_\+8bit@{software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S128\+\_\+8bit}!Vcc\+To\+Gnd@{Vcc\+To\+Gnd}}
+\index{Vcc\+To\+Gnd@{Vcc\+To\+Gnd}!software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S128\+\_\+8bit@{software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S128\+\_\+8bit}}
+\subsubsection[{Vcc\+To\+Gnd}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+analyzer.\+attacks.\+models.\+A\+E\+S128\+\_\+8bit.\+Vcc\+To\+Gnd (
+\begin{DoxyParamCaption}
+\item[{}]{var}
+\end{DoxyParamCaption}
+)}\label{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES128__8bit_a61952256c74f62816970ed5226c57b1f}
+\begin{DoxyVerb}Convert from number of 1's to number of 0's... used when shunt inserted in GND path\end{DoxyVerb}
+ 
+\begin{DoxyCode}
+117 \textcolor{keyword}{def }\hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES128__8bit_a61952256c74f62816970ed5226c57b1f}{VccToGnd}(var):
+118     \textcolor{stringliteral}{"""Convert from number of 1's to number of 0's... used when shunt inserted in GND path"""}
+119     \textcolor{keywordflow}{return} 8 - var
+120 
+121 
+122 \textcolor{comment}{# TODO: Use this}
+\end{DoxyCode}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES128__8bit_ad37a36500fd9ae3d9248e1146f9f8fa5}{}\index{software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S128\+\_\+8bit@{software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S128\+\_\+8bit}!xtime@{xtime}}
+\index{xtime@{xtime}!software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S128\+\_\+8bit@{software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S128\+\_\+8bit}}
+\subsubsection[{xtime}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+analyzer.\+attacks.\+models.\+A\+E\+S128\+\_\+8bit.\+xtime (
+\begin{DoxyParamCaption}
+\item[{}]{a}
+\end{DoxyParamCaption}
+)}\label{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES128__8bit_ad37a36500fd9ae3d9248e1146f9f8fa5}
+\begin{DoxyVerb}xtime operation\end{DoxyVerb}
+ 
+\begin{DoxyCode}
+123 \textcolor{keyword}{def }\hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES128__8bit_ad37a36500fd9ae3d9248e1146f9f8fa5}{xtime}(a):
+124     \textcolor{stringliteral}{"""xtime operation"""}
+125     a %= 0x100
+126     b = 0
+127     \textcolor{keywordflow}{if} a & 0x80:
+128         b = 0x1b
+129     a <<= 1
+130     a &= 0xff
+131     a ^= b
+132     \textcolor{keywordflow}{return} a
+133 \end{DoxyCode}
+
+
+\subsection{Variable Documentation}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES128__8bit_a2c5c921d3b44ad512e0cc55be1f4b301}{}\index{software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S128\+\_\+8bit@{software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S128\+\_\+8bit}!H\+W8\+Bit@{H\+W8\+Bit}}
+\index{H\+W8\+Bit@{H\+W8\+Bit}!software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S128\+\_\+8bit@{software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S128\+\_\+8bit}}
+\subsubsection[{H\+W8\+Bit}]{\setlength{\rightskip}{0pt plus 5cm}list software.\+chipwhisperer.\+analyzer.\+attacks.\+models.\+A\+E\+S128\+\_\+8bit.\+H\+W8\+Bit}\label{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES128__8bit_a2c5c921d3b44ad512e0cc55be1f4b301}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 = [0, 1, 1, 2, 1, 2, 2, 3, 1, 2, 2, 3, 2, 3, 3, 4, 1, 2, 2, 3, 2, 3, 3,
+2           4, 2, 3, 3, 4, 3, 4, 4, 5, 1, 2, 2, 3, 2, 3, 3, 4, 2, 3, 3, 4, 3, 4,
+3           4, 5, 2, 3, 3, 4, 3, 4, 4, 5, 3, 4, 4, 5, 4, 5, 5, 6, 1, 2, 2, 3, 2,
+4           3, 3, 4, 2, 3, 3, 4, 3, 4, 4, 5, 2, 3, 3, 4, 3, 4, 4, 5, 3, 4, 4, 5,
+5           4, 5, 5, 6, 2, 3, 3, 4, 3, 4, 4, 5, 3, 4, 4, 5, 4, 5, 5, 6, 3, 4, 4,
+6           5, 4, 5, 5, 6, 4, 5, 5, 6, 5, 6, 6, 7, 1, 2, 2, 3, 2, 3, 3, 4, 2, 3,
+7           3, 4, 3, 4, 4, 5, 2, 3, 3, 4, 3, 4, 4, 5, 3, 4, 4, 5, 4, 5, 5, 6, 2,
+8           3, 3, 4, 3, 4, 4, 5, 3, 4, 4, 5, 4, 5, 5, 6, 3, 4, 4, 5, 4, 5, 5, 6,
+9           4, 5, 5, 6, 5, 6, 6, 7, 2, 3, 3, 4, 3, 4, 4, 5, 3, 4, 4, 5, 4, 5, 5,
+10           6, 3, 4, 4, 5, 4, 5, 5, 6, 4, 5, 5, 6, 5, 6, 6, 7, 3, 4, 4, 5, 4, 5,
+11           5, 6, 4, 5, 5, 6, 5, 6, 6, 7, 4, 5, 5, 6, 5, 6, 6, 7, 5, 6, 6, 7, 6,
+12           7, 7, 8]
+\end{DoxyCode}
+
+
+Generate this table with\+: H\+W = \mbox{[}\mbox{]} for n in range(0, 256)\+: H\+W = H\+W + \mbox{[}bin(n).count(\char`\"{}1\char`\"{})\mbox{]}. 
+
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES128__8bit_a93f1d2552c1587ff00416596da63662a}{}\index{software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S128\+\_\+8bit@{software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S128\+\_\+8bit}!I\+N\+V\+S\+H\+I\+F\+T@{I\+N\+V\+S\+H\+I\+F\+T}}
+\index{I\+N\+V\+S\+H\+I\+F\+T@{I\+N\+V\+S\+H\+I\+F\+T}!software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S128\+\_\+8bit@{software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S128\+\_\+8bit}}
+\subsubsection[{I\+N\+V\+S\+H\+I\+F\+T}]{\setlength{\rightskip}{0pt plus 5cm}list software.\+chipwhisperer.\+analyzer.\+attacks.\+models.\+A\+E\+S128\+\_\+8bit.\+I\+N\+V\+S\+H\+I\+F\+T = \mbox{[}0, 5, 10, 15, 4, 9, 14, 3, 8, 13, 2, 7, 12, 1, 6, 11\mbox{]}}\label{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES128__8bit_a93f1d2552c1587ff00416596da63662a}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES128__8bit_a9f862c9aa73c1b4f174f6411ceb13bb7}{}\index{software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S128\+\_\+8bit@{software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S128\+\_\+8bit}!L\+E\+A\+K\+\_\+\+H\+D\+\_\+\+L\+A\+S\+T\+R\+O\+U\+N\+D\+\_\+\+S\+T\+A\+T\+E@{L\+E\+A\+K\+\_\+\+H\+D\+\_\+\+L\+A\+S\+T\+R\+O\+U\+N\+D\+\_\+\+S\+T\+A\+T\+E}}
+\index{L\+E\+A\+K\+\_\+\+H\+D\+\_\+\+L\+A\+S\+T\+R\+O\+U\+N\+D\+\_\+\+S\+T\+A\+T\+E@{L\+E\+A\+K\+\_\+\+H\+D\+\_\+\+L\+A\+S\+T\+R\+O\+U\+N\+D\+\_\+\+S\+T\+A\+T\+E}!software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S128\+\_\+8bit@{software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S128\+\_\+8bit}}
+\subsubsection[{L\+E\+A\+K\+\_\+\+H\+D\+\_\+\+L\+A\+S\+T\+R\+O\+U\+N\+D\+\_\+\+S\+T\+A\+T\+E}]{\setlength{\rightskip}{0pt plus 5cm}int software.\+chipwhisperer.\+analyzer.\+attacks.\+models.\+A\+E\+S128\+\_\+8bit.\+L\+E\+A\+K\+\_\+\+H\+D\+\_\+\+L\+A\+S\+T\+R\+O\+U\+N\+D\+\_\+\+S\+T\+A\+T\+E = 2}\label{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES128__8bit_a9f862c9aa73c1b4f174f6411ceb13bb7}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES128__8bit_ac173615fbfe69731678b23890d51b9f5}{}\index{software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S128\+\_\+8bit@{software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S128\+\_\+8bit}!L\+E\+A\+K\+\_\+\+H\+D\+\_\+\+S\+B\+O\+X\+\_\+\+I\+N\+\_\+\+O\+U\+T@{L\+E\+A\+K\+\_\+\+H\+D\+\_\+\+S\+B\+O\+X\+\_\+\+I\+N\+\_\+\+O\+U\+T}}
+\index{L\+E\+A\+K\+\_\+\+H\+D\+\_\+\+S\+B\+O\+X\+\_\+\+I\+N\+\_\+\+O\+U\+T@{L\+E\+A\+K\+\_\+\+H\+D\+\_\+\+S\+B\+O\+X\+\_\+\+I\+N\+\_\+\+O\+U\+T}!software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S128\+\_\+8bit@{software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S128\+\_\+8bit}}
+\subsubsection[{L\+E\+A\+K\+\_\+\+H\+D\+\_\+\+S\+B\+O\+X\+\_\+\+I\+N\+\_\+\+O\+U\+T}]{\setlength{\rightskip}{0pt plus 5cm}int software.\+chipwhisperer.\+analyzer.\+attacks.\+models.\+A\+E\+S128\+\_\+8bit.\+L\+E\+A\+K\+\_\+\+H\+D\+\_\+\+S\+B\+O\+X\+\_\+\+I\+N\+\_\+\+O\+U\+T = 3}\label{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES128__8bit_ac173615fbfe69731678b23890d51b9f5}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES128__8bit_aa157d73e0f6c30fca0f223793d6349a5}{}\index{software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S128\+\_\+8bit@{software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S128\+\_\+8bit}!L\+E\+A\+K\+\_\+\+H\+D\+\_\+\+S\+B\+O\+X\+\_\+\+I\+N\+\_\+\+S\+U\+C\+C\+E\+S\+S\+I\+V\+E@{L\+E\+A\+K\+\_\+\+H\+D\+\_\+\+S\+B\+O\+X\+\_\+\+I\+N\+\_\+\+S\+U\+C\+C\+E\+S\+S\+I\+V\+E}}
+\index{L\+E\+A\+K\+\_\+\+H\+D\+\_\+\+S\+B\+O\+X\+\_\+\+I\+N\+\_\+\+S\+U\+C\+C\+E\+S\+S\+I\+V\+E@{L\+E\+A\+K\+\_\+\+H\+D\+\_\+\+S\+B\+O\+X\+\_\+\+I\+N\+\_\+\+S\+U\+C\+C\+E\+S\+S\+I\+V\+E}!software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S128\+\_\+8bit@{software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S128\+\_\+8bit}}
+\subsubsection[{L\+E\+A\+K\+\_\+\+H\+D\+\_\+\+S\+B\+O\+X\+\_\+\+I\+N\+\_\+\+S\+U\+C\+C\+E\+S\+S\+I\+V\+E}]{\setlength{\rightskip}{0pt plus 5cm}int software.\+chipwhisperer.\+analyzer.\+attacks.\+models.\+A\+E\+S128\+\_\+8bit.\+L\+E\+A\+K\+\_\+\+H\+D\+\_\+\+S\+B\+O\+X\+\_\+\+I\+N\+\_\+\+S\+U\+C\+C\+E\+S\+S\+I\+V\+E = 4}\label{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES128__8bit_aa157d73e0f6c30fca0f223793d6349a5}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES128__8bit_ada60cdb0e2e50f212a32d1eff1490f05}{}\index{software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S128\+\_\+8bit@{software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S128\+\_\+8bit}!L\+E\+A\+K\+\_\+\+H\+D\+\_\+\+S\+B\+O\+X\+\_\+\+O\+U\+T\+\_\+\+S\+U\+C\+C\+E\+S\+S\+I\+V\+E@{L\+E\+A\+K\+\_\+\+H\+D\+\_\+\+S\+B\+O\+X\+\_\+\+O\+U\+T\+\_\+\+S\+U\+C\+C\+E\+S\+S\+I\+V\+E}}
+\index{L\+E\+A\+K\+\_\+\+H\+D\+\_\+\+S\+B\+O\+X\+\_\+\+O\+U\+T\+\_\+\+S\+U\+C\+C\+E\+S\+S\+I\+V\+E@{L\+E\+A\+K\+\_\+\+H\+D\+\_\+\+S\+B\+O\+X\+\_\+\+O\+U\+T\+\_\+\+S\+U\+C\+C\+E\+S\+S\+I\+V\+E}!software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S128\+\_\+8bit@{software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S128\+\_\+8bit}}
+\subsubsection[{L\+E\+A\+K\+\_\+\+H\+D\+\_\+\+S\+B\+O\+X\+\_\+\+O\+U\+T\+\_\+\+S\+U\+C\+C\+E\+S\+S\+I\+V\+E}]{\setlength{\rightskip}{0pt plus 5cm}int software.\+chipwhisperer.\+analyzer.\+attacks.\+models.\+A\+E\+S128\+\_\+8bit.\+L\+E\+A\+K\+\_\+\+H\+D\+\_\+\+S\+B\+O\+X\+\_\+\+O\+U\+T\+\_\+\+S\+U\+C\+C\+E\+S\+S\+I\+V\+E = 5}\label{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES128__8bit_ada60cdb0e2e50f212a32d1eff1490f05}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES128__8bit_ad1c6071e513f3d14e3e83c7f73fc140e}{}\index{software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S128\+\_\+8bit@{software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S128\+\_\+8bit}!L\+E\+A\+K\+\_\+\+H\+W\+\_\+\+I\+N\+V\+S\+B\+O\+X\+O\+U\+T\+\_\+\+F\+I\+R\+S\+T\+R\+O\+U\+N\+D@{L\+E\+A\+K\+\_\+\+H\+W\+\_\+\+I\+N\+V\+S\+B\+O\+X\+O\+U\+T\+\_\+\+F\+I\+R\+S\+T\+R\+O\+U\+N\+D}}
+\index{L\+E\+A\+K\+\_\+\+H\+W\+\_\+\+I\+N\+V\+S\+B\+O\+X\+O\+U\+T\+\_\+\+F\+I\+R\+S\+T\+R\+O\+U\+N\+D@{L\+E\+A\+K\+\_\+\+H\+W\+\_\+\+I\+N\+V\+S\+B\+O\+X\+O\+U\+T\+\_\+\+F\+I\+R\+S\+T\+R\+O\+U\+N\+D}!software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S128\+\_\+8bit@{software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S128\+\_\+8bit}}
+\subsubsection[{L\+E\+A\+K\+\_\+\+H\+W\+\_\+\+I\+N\+V\+S\+B\+O\+X\+O\+U\+T\+\_\+\+F\+I\+R\+S\+T\+R\+O\+U\+N\+D}]{\setlength{\rightskip}{0pt plus 5cm}int software.\+chipwhisperer.\+analyzer.\+attacks.\+models.\+A\+E\+S128\+\_\+8bit.\+L\+E\+A\+K\+\_\+\+H\+W\+\_\+\+I\+N\+V\+S\+B\+O\+X\+O\+U\+T\+\_\+\+F\+I\+R\+S\+T\+R\+O\+U\+N\+D = 6}\label{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES128__8bit_ad1c6071e513f3d14e3e83c7f73fc140e}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES128__8bit_a2f3751465572d0233e51cf00f8c56fcc}{}\index{software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S128\+\_\+8bit@{software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S128\+\_\+8bit}!L\+E\+A\+K\+\_\+\+H\+W\+\_\+\+S\+B\+O\+X\+O\+U\+T\+\_\+\+F\+I\+R\+S\+T\+R\+O\+U\+N\+D@{L\+E\+A\+K\+\_\+\+H\+W\+\_\+\+S\+B\+O\+X\+O\+U\+T\+\_\+\+F\+I\+R\+S\+T\+R\+O\+U\+N\+D}}
+\index{L\+E\+A\+K\+\_\+\+H\+W\+\_\+\+S\+B\+O\+X\+O\+U\+T\+\_\+\+F\+I\+R\+S\+T\+R\+O\+U\+N\+D@{L\+E\+A\+K\+\_\+\+H\+W\+\_\+\+S\+B\+O\+X\+O\+U\+T\+\_\+\+F\+I\+R\+S\+T\+R\+O\+U\+N\+D}!software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S128\+\_\+8bit@{software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S128\+\_\+8bit}}
+\subsubsection[{L\+E\+A\+K\+\_\+\+H\+W\+\_\+\+S\+B\+O\+X\+O\+U\+T\+\_\+\+F\+I\+R\+S\+T\+R\+O\+U\+N\+D}]{\setlength{\rightskip}{0pt plus 5cm}int software.\+chipwhisperer.\+analyzer.\+attacks.\+models.\+A\+E\+S128\+\_\+8bit.\+L\+E\+A\+K\+\_\+\+H\+W\+\_\+\+S\+B\+O\+X\+O\+U\+T\+\_\+\+F\+I\+R\+S\+T\+R\+O\+U\+N\+D = 1}\label{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES128__8bit_a2f3751465572d0233e51cf00f8c56fcc}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES128__8bit_aa1884fa8f182a3a465f0a4c2355b7cf1}{}\index{software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S128\+\_\+8bit@{software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S128\+\_\+8bit}!leakagemodels@{leakagemodels}}
+\index{leakagemodels@{leakagemodels}!software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S128\+\_\+8bit@{software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S128\+\_\+8bit}}
+\subsubsection[{leakagemodels}]{\setlength{\rightskip}{0pt plus 5cm}tuple software.\+chipwhisperer.\+analyzer.\+attacks.\+models.\+A\+E\+S128\+\_\+8bit.\+leakagemodels = util.\+Dict\+Type()}\label{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES128__8bit_aa1884fa8f182a3a465f0a4c2355b7cf1}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES128__8bit_acb8c2af6a81f7ddbb99b4d2e0f4bf65f}{}\index{software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S128\+\_\+8bit@{software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S128\+\_\+8bit}!num\+Sub\+Keys@{num\+Sub\+Keys}}
+\index{num\+Sub\+Keys@{num\+Sub\+Keys}!software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S128\+\_\+8bit@{software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S128\+\_\+8bit}}
+\subsubsection[{num\+Sub\+Keys}]{\setlength{\rightskip}{0pt plus 5cm}int software.\+chipwhisperer.\+analyzer.\+attacks.\+models.\+A\+E\+S128\+\_\+8bit.\+num\+Sub\+Keys = 16}\label{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES128__8bit_acb8c2af6a81f7ddbb99b4d2e0f4bf65f}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES128__8bit_a842b0fe06df25c7bd4e67ba777a94886}{}\index{software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S128\+\_\+8bit@{software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S128\+\_\+8bit}!perm\+Per\+Subkey@{perm\+Per\+Subkey}}
+\index{perm\+Per\+Subkey@{perm\+Per\+Subkey}!software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S128\+\_\+8bit@{software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S128\+\_\+8bit}}
+\subsubsection[{perm\+Per\+Subkey}]{\setlength{\rightskip}{0pt plus 5cm}int software.\+chipwhisperer.\+analyzer.\+attacks.\+models.\+A\+E\+S128\+\_\+8bit.\+perm\+Per\+Subkey = 256}\label{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES128__8bit_a842b0fe06df25c7bd4e67ba777a94886}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES128__8bit_aaf8f4a7882a964a28ab807fa9e4ccc73}{}\index{software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S128\+\_\+8bit@{software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S128\+\_\+8bit}!S\+H\+I\+F\+T@{S\+H\+I\+F\+T}}
+\index{S\+H\+I\+F\+T@{S\+H\+I\+F\+T}!software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S128\+\_\+8bit@{software\+::chipwhisperer\+::analyzer\+::attacks\+::models\+::\+A\+E\+S128\+\_\+8bit}}
+\subsubsection[{S\+H\+I\+F\+T}]{\setlength{\rightskip}{0pt plus 5cm}list software.\+chipwhisperer.\+analyzer.\+attacks.\+models.\+A\+E\+S128\+\_\+8bit.\+S\+H\+I\+F\+T = \mbox{[}$\,$\mbox{]}}\label{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1models_1_1AES128__8bit_aaf8f4a7882a964a28ab807fa9e4ccc73}

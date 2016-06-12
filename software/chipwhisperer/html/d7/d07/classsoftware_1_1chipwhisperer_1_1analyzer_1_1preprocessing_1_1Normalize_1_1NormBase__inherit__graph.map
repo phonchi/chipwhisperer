@@ -1,0 +1,5 @@
+<map id="software.chipwhisperer.analyzer.preprocessing.Normalize.NormBase" name="software.chipwhisperer.analyzer.preprocessing.Normalize.NormBase">
+<area shape="rect" id="node3" href="$de/d34/classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1Normalize_1_1NormMean.html" title="{software.chipwhisperer.analyzer.preprocessing.\lNormalize.NormMean\n||+ processTrace()\l}" alt="" coords="5,432,304,524"/>
+<area shape="rect" id="node4" href="$d3/d0b/classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1Normalize_1_1NormMeanStd.html" title="{software.chipwhisperer.analyzer.preprocessing.\lNormalize.NormMeanStd\n||+ processTrace()\l}" alt="" coords="328,432,627,524"/>
+<area shape="rect" id="node5" href="$de/dd9/classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1Normalize_1_1NormMeanStd_1_1NormLinFunc.html" title="{software.chipwhisperer.analyzer.preprocessing.\lNormalize.NormMeanStd.NormLinFunc\n|+ f1coeff\l+ f2coeff\l+ zdata\l+ UseF1Coeff\l+ UseF2Coeff\l+ UseZSource\l|+ loadF1File()\l+ loadF2File()\l+ loadZFile()\l+ processTrace()\l}" alt="" coords="651,373,949,583"/>
+</map>

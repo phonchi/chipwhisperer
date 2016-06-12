@@ -1,0 +1,187 @@
+\hypertarget{namespaceFlowchart}{}\section{Flowchart Namespace Reference}
+\label{namespaceFlowchart}\index{Flowchart@{Flowchart}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classFlowchart_1_1Flowchart}{Flowchart}
+\item 
+class \hyperlink{classFlowchart_1_1FlowchartCtrlWidget}{Flowchart\+Ctrl\+Widget}
+\item 
+class \hyperlink{classFlowchart_1_1FlowchartGraphicsItem}{Flowchart\+Graphics\+Item}
+\item 
+class \hyperlink{classFlowchart_1_1FlowchartNode}{Flowchart\+Node}
+\item 
+class \hyperlink{classFlowchart_1_1FlowchartWidget}{Flowchart\+Widget}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespaceFlowchart_a4df8d2b9c9d35144082607ac873bbb0e}{str\+Dict} (d)
+\item 
+def \hyperlink{namespaceFlowchart_a3a8dec1a56afa0fb5e704625606501b6}{toposort}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+tuple \hyperlink{namespaceFlowchart_a1341dbc8fc4a0b646c19b56f288e03bd}{app} = Qt\+Gui.\+Q\+Application(\mbox{[}$\,$\mbox{]})
+\item 
+tuple \hyperlink{namespaceFlowchart_a0b07efb30fc1f11db38e4e6242d25f89}{win} = Qt\+Gui.\+Q\+Main\+Window()
+\begin{DoxyCompactList}\small\item\em Create main window with grid layout. \end{DoxyCompactList}\item 
+tuple \hyperlink{namespaceFlowchart_a8c7765a75e5c267970b7a075876dd703}{cw} = Qt\+Gui.\+Q\+Widget()
+\item 
+tuple \hyperlink{namespaceFlowchart_a7c65bdf9588d2e20126ed9915552be1d}{layout} = Qt\+Gui.\+Q\+Grid\+Layout()
+\item 
+tuple \hyperlink{namespaceFlowchart_afcff929e4d9621e1fa7a72969e1e247e}{fc}
+\begin{DoxyCompactList}\small\item\em Create flowchart, define input/output terminals. \end{DoxyCompactList}\item 
+tuple \hyperlink{namespaceFlowchart_adb242633cef63f930a6b70acdbbfec00}{w} = fc.\+widget()
+\item 
+tuple \hyperlink{namespaceFlowchart_a626e983c67d5de28756f40bf152d7cca}{pw1} = pg.\+Plot\+Widget()
+\begin{DoxyCompactList}\small\item\em Add flowchart control panel to the main window. \end{DoxyCompactList}\item 
+tuple \hyperlink{namespaceFlowchart_a7312d9e0a403b4d8f1b99a0a65c178eb}{pw2} = pg.\+Plot\+Widget()
+\item 
+tuple \hyperlink{namespaceFlowchart_a7d5fda16f35dc91fa5fde9e7bb08e1e5}{data} = np.\+random.\+normal(size=1000)
+\begin{DoxyCompactList}\small\item\em generate signal data to pass through the flowchart \end{DoxyCompactList}\item 
+tuple \hyperlink{namespaceFlowchart_acd2501986ff39a534fd62ecda0487108}{pw1\+Node} = fc.\+create\+Node(\textquotesingle{}Plot\+Widget\textquotesingle{}, pos=(0, -\/150))
+\begin{DoxyCompactList}\small\item\em Feed data into the input terminal of the flowchart. \end{DoxyCompactList}\item 
+tuple \hyperlink{namespaceFlowchart_adb645108dfae32e4c6f93efc3876c876}{pw2\+Node} = fc.\+create\+Node(\textquotesingle{}Plot\+Widget\textquotesingle{}, pos=(150, -\/150))
+\item 
+tuple \hyperlink{namespaceFlowchart_aed61dc3e3102ab47e39b56d0318e82b1}{f\+Node} = fc.\+create\+Node(\textquotesingle{}Gaussian\+Filter\textquotesingle{}, pos=(0, 0))
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{namespaceFlowchart_a4df8d2b9c9d35144082607ac873bbb0e}{}\index{Flowchart@{Flowchart}!str\+Dict@{str\+Dict}}
+\index{str\+Dict@{str\+Dict}!Flowchart@{Flowchart}}
+\subsubsection[{str\+Dict}]{\setlength{\rightskip}{0pt plus 5cm}def Flowchart.\+str\+Dict (
+\begin{DoxyParamCaption}
+\item[{}]{d}
+\end{DoxyParamCaption}
+)}\label{namespaceFlowchart_a4df8d2b9c9d35144082607ac873bbb0e}
+
+\begin{DoxyCode}
+56 \textcolor{keyword}{def }\hyperlink{namespaceFlowchart_a4df8d2b9c9d35144082607ac873bbb0e}{strDict}(d):
+57     \textcolor{keywordflow}{return} dict([(str(k), v) \textcolor{keywordflow}{for} k, v \textcolor{keywordflow}{in} d.items()])
+58 
+59 
+\end{DoxyCode}
+\hypertarget{namespaceFlowchart_a3a8dec1a56afa0fb5e704625606501b6}{}\index{Flowchart@{Flowchart}!toposort@{toposort}}
+\index{toposort@{toposort}!Flowchart@{Flowchart}}
+\subsubsection[{toposort}]{\setlength{\rightskip}{0pt plus 5cm}def Flowchart.\+toposort (
+\begin{DoxyParamCaption}
+\item[{}]{deps, }
+\item[{}]{nodes = {\ttfamily None}, }
+\item[{}]{seen = {\ttfamily None}, }
+\item[{}]{stack = {\ttfamily None}, }
+\item[{}]{depth = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\label{namespaceFlowchart_a3a8dec1a56afa0fb5e704625606501b6}
+\begin{DoxyVerb}Topological sort. Arguments are:
+  deps    dictionary describing dependencies where a:[b,c] means "a depends on b and c"
+  nodes   optional, specifies list of starting nodes (these should be the nodes 
+          which are not depended on by any other nodes) 
+\end{DoxyVerb}
+ 
+
+Referenced by Flowchart.\+Flowchart.\+node\+Output\+Changed(), and Flowchart.\+Flowchart.\+process\+Order().
+
+
+\begin{DoxyCode}
+60 \textcolor{keyword}{def }\hyperlink{namespaceFlowchart_a3a8dec1a56afa0fb5e704625606501b6}{toposort}(deps, nodes=None, seen=None, stack=None, depth=0):
+61     \textcolor{stringliteral}{"""Topological sort. Arguments are:}
+62 \textcolor{stringliteral}{      deps    dictionary describing dependencies where a:[b,c] means "a depends on b and c"}
+63 \textcolor{stringliteral}{      nodes   optional, specifies list of starting nodes (these should be the nodes }
+64 \textcolor{stringliteral}{              which are not depended on by any other nodes) }
+65 \textcolor{stringliteral}{    """}
+66     
+67     \textcolor{keywordflow}{if} nodes \textcolor{keywordflow}{is} \textcolor{keywordtype}{None}:
+68         \textcolor{comment}{## run through deps to find nodes that are not depended upon}
+69         rem = set()
+70         \textcolor{keywordflow}{for} dep \textcolor{keywordflow}{in} deps.values():
+71             rem |= set(dep)
+72         nodes = set(deps.keys()) - rem
+73     \textcolor{keywordflow}{if} seen \textcolor{keywordflow}{is} \textcolor{keywordtype}{None}:
+74         seen = set()
+75         stack = []
+76     sorted = []
+77     \textcolor{comment}{#print "  "*depth, "Starting from", nodes}
+78     \textcolor{keywordflow}{for} n \textcolor{keywordflow}{in} nodes:
+79         \textcolor{keywordflow}{if} n \textcolor{keywordflow}{in} stack:
+80             \textcolor{keywordflow}{raise} Exception(\textcolor{stringliteral}{"Cyclic dependency detected"}, stack + [n])
+81         \textcolor{keywordflow}{if} n \textcolor{keywordflow}{in} seen:
+82             \textcolor{keywordflow}{continue}
+83         seen.add(n)
+84         \textcolor{comment}{#print "  "*depth, "  descending into", n, deps[n]}
+85         sorted.extend( \hyperlink{namespaceFlowchart_a3a8dec1a56afa0fb5e704625606501b6}{toposort}(deps, deps[n], seen, stack+[n], depth=depth+1))
+86         \textcolor{comment}{#print "  "*depth, "  Added", n}
+87         sorted.append(n)
+88         \textcolor{comment}{#print "  "*depth, "  ", sorted}
+89     \textcolor{keywordflow}{return} sorted
+90         
+91 
+\end{DoxyCode}
+
+
+\subsection{Variable Documentation}
+\hypertarget{namespaceFlowchart_a1341dbc8fc4a0b646c19b56f288e03bd}{}\index{Flowchart@{Flowchart}!app@{app}}
+\index{app@{app}!Flowchart@{Flowchart}}
+\subsubsection[{app}]{\setlength{\rightskip}{0pt plus 5cm}tuple Flowchart.\+app = Qt\+Gui.\+Q\+Application(\mbox{[}$\,$\mbox{]})}\label{namespaceFlowchart_a1341dbc8fc4a0b646c19b56f288e03bd}
+\hypertarget{namespaceFlowchart_a8c7765a75e5c267970b7a075876dd703}{}\index{Flowchart@{Flowchart}!cw@{cw}}
+\index{cw@{cw}!Flowchart@{Flowchart}}
+\subsubsection[{cw}]{\setlength{\rightskip}{0pt plus 5cm}tuple Flowchart.\+cw = Qt\+Gui.\+Q\+Widget()}\label{namespaceFlowchart_a8c7765a75e5c267970b7a075876dd703}
+\hypertarget{namespaceFlowchart_a7d5fda16f35dc91fa5fde9e7bb08e1e5}{}\index{Flowchart@{Flowchart}!data@{data}}
+\index{data@{data}!Flowchart@{Flowchart}}
+\subsubsection[{data}]{\setlength{\rightskip}{0pt plus 5cm}tuple Flowchart.\+data = np.\+random.\+normal(size=1000)}\label{namespaceFlowchart_a7d5fda16f35dc91fa5fde9e7bb08e1e5}
+
+
+generate signal data to pass through the flowchart 
+
+\hypertarget{namespaceFlowchart_afcff929e4d9621e1fa7a72969e1e247e}{}\index{Flowchart@{Flowchart}!fc@{fc}}
+\index{fc@{fc}!Flowchart@{Flowchart}}
+\subsubsection[{fc}]{\setlength{\rightskip}{0pt plus 5cm}tuple Flowchart.\+fc}\label{namespaceFlowchart_afcff929e4d9621e1fa7a72969e1e247e}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 = \hyperlink{classFlowchart_1_1Flowchart}{Flowchart}(terminals=\{
+2         \textcolor{stringliteral}{'dataIn'}: \{\textcolor{stringliteral}{'io'}: \textcolor{stringliteral}{'in'}\},
+3         \textcolor{stringliteral}{'dataOut'}: \{\textcolor{stringliteral}{'io'}: \textcolor{stringliteral}{'out'}\}    
+4     \})
+\end{DoxyCode}
+
+
+Create flowchart, define input/output terminals. 
+
+\hypertarget{namespaceFlowchart_aed61dc3e3102ab47e39b56d0318e82b1}{}\index{Flowchart@{Flowchart}!f\+Node@{f\+Node}}
+\index{f\+Node@{f\+Node}!Flowchart@{Flowchart}}
+\subsubsection[{f\+Node}]{\setlength{\rightskip}{0pt plus 5cm}tuple Flowchart.\+f\+Node = fc.\+create\+Node(\textquotesingle{}Gaussian\+Filter\textquotesingle{}, pos=(0, 0))}\label{namespaceFlowchart_aed61dc3e3102ab47e39b56d0318e82b1}
+\hypertarget{namespaceFlowchart_a7c65bdf9588d2e20126ed9915552be1d}{}\index{Flowchart@{Flowchart}!layout@{layout}}
+\index{layout@{layout}!Flowchart@{Flowchart}}
+\subsubsection[{layout}]{\setlength{\rightskip}{0pt plus 5cm}tuple Flowchart.\+layout = Qt\+Gui.\+Q\+Grid\+Layout()}\label{namespaceFlowchart_a7c65bdf9588d2e20126ed9915552be1d}
+\hypertarget{namespaceFlowchart_a626e983c67d5de28756f40bf152d7cca}{}\index{Flowchart@{Flowchart}!pw1@{pw1}}
+\index{pw1@{pw1}!Flowchart@{Flowchart}}
+\subsubsection[{pw1}]{\setlength{\rightskip}{0pt plus 5cm}tuple Flowchart.\+pw1 = pg.\+Plot\+Widget()}\label{namespaceFlowchart_a626e983c67d5de28756f40bf152d7cca}
+
+
+Add flowchart control panel to the main window. 
+
+Add two plot widgets \hypertarget{namespaceFlowchart_acd2501986ff39a534fd62ecda0487108}{}\index{Flowchart@{Flowchart}!pw1\+Node@{pw1\+Node}}
+\index{pw1\+Node@{pw1\+Node}!Flowchart@{Flowchart}}
+\subsubsection[{pw1\+Node}]{\setlength{\rightskip}{0pt plus 5cm}tuple Flowchart.\+pw1\+Node = fc.\+create\+Node(\textquotesingle{}Plot\+Widget\textquotesingle{}, pos=(0, -\/150))}\label{namespaceFlowchart_acd2501986ff39a534fd62ecda0487108}
+
+
+Feed data into the input terminal of the flowchart. 
+
+populate the flowchart with a basic set of processing nodes. (usually we let the user do this) \hypertarget{namespaceFlowchart_a7312d9e0a403b4d8f1b99a0a65c178eb}{}\index{Flowchart@{Flowchart}!pw2@{pw2}}
+\index{pw2@{pw2}!Flowchart@{Flowchart}}
+\subsubsection[{pw2}]{\setlength{\rightskip}{0pt plus 5cm}tuple Flowchart.\+pw2 = pg.\+Plot\+Widget()}\label{namespaceFlowchart_a7312d9e0a403b4d8f1b99a0a65c178eb}
+\hypertarget{namespaceFlowchart_adb645108dfae32e4c6f93efc3876c876}{}\index{Flowchart@{Flowchart}!pw2\+Node@{pw2\+Node}}
+\index{pw2\+Node@{pw2\+Node}!Flowchart@{Flowchart}}
+\subsubsection[{pw2\+Node}]{\setlength{\rightskip}{0pt plus 5cm}tuple Flowchart.\+pw2\+Node = fc.\+create\+Node(\textquotesingle{}Plot\+Widget\textquotesingle{}, pos=(150, -\/150))}\label{namespaceFlowchart_adb645108dfae32e4c6f93efc3876c876}
+\hypertarget{namespaceFlowchart_adb242633cef63f930a6b70acdbbfec00}{}\index{Flowchart@{Flowchart}!w@{w}}
+\index{w@{w}!Flowchart@{Flowchart}}
+\subsubsection[{w}]{\setlength{\rightskip}{0pt plus 5cm}tuple Flowchart.\+w = fc.\+widget()}\label{namespaceFlowchart_adb242633cef63f930a6b70acdbbfec00}
+\hypertarget{namespaceFlowchart_a0b07efb30fc1f11db38e4e6242d25f89}{}\index{Flowchart@{Flowchart}!win@{win}}
+\index{win@{win}!Flowchart@{Flowchart}}
+\subsubsection[{win}]{\setlength{\rightskip}{0pt plus 5cm}tuple Flowchart.\+win = Qt\+Gui.\+Q\+Main\+Window()}\label{namespaceFlowchart_a0b07efb30fc1f11db38e4e6242d25f89}
+
+
+Create main window with grid layout. 
+

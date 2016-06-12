@@ -1,0 +1,4 @@
+var namespacesoftware_1_1chipwhisperer_1_1capture_1_1targets_1_1smartcard__readers_1_1chipwhispererlite__scard =
+[
+    [ "ReaderChipWhispererLiteSCard", "d5/def/classsoftware_1_1chipwhisperer_1_1capture_1_1targets_1_1smartcard__readers_1_1chipwhispererlite_fcbff8031d4c94f40f5e5a51a3e4a7d0.html", "d5/def/classsoftware_1_1chipwhisperer_1_1capture_1_1targets_1_1smartcard__readers_1_1chipwhispererlite_fcbff8031d4c94f40f5e5a51a3e4a7d0" ]
+];

@@ -1,0 +1,4 @@
+var namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1syntaxhighlighter =
+[
+    [ "PythonHighlighter", "db/dcb/classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1syntaxhighlighter_1_1PythonHighlighter.html", "db/dcb/classsoftware_1_1chipwhisperer_1_1analyzer_1_1utils_1_1syntaxhighlighter_1_1PythonHighlighter" ]
+];

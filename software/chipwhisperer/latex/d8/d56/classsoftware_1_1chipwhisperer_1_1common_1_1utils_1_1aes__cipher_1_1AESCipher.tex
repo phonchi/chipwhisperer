@@ -1,0 +1,124 @@
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1aes__cipher_1_1AESCipher}{}\section{software.\+chipwhisperer.\+common.\+utils.\+aes\+\_\+cipher.\+A\+E\+S\+Cipher Class Reference}
+\label{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1aes__cipher_1_1AESCipher}\index{software.\+chipwhisperer.\+common.\+utils.\+aes\+\_\+cipher.\+A\+E\+S\+Cipher@{software.\+chipwhisperer.\+common.\+utils.\+aes\+\_\+cipher.\+A\+E\+S\+Cipher}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1aes__cipher_1_1AESCipher_aed6a2ba69ca2ea0a9003d85d080a8848}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self, expanded\+\_\+key)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1aes__cipher_1_1AESCipher_a29b33c0f6edbc2a29d0b68fcfcfaa6d3}{cipher\+\_\+block} (self, state)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1aes__cipher_1_1AESCipher_af893b3c3a6d04d108b4f45158463e95f}{decipher\+\_\+block} (self, state)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Perform single block AES cipher/decipher\end{DoxyVerb}
+ 
+
+Collaboration diagram for software.\+chipwhisperer.\+common.\+utils.\+aes\+\_\+cipher.\+A\+E\+S\+Cipher\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=277pt]{de/d74/classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1aes__cipher_1_1AESCipher__coll__graph}
+\end{center}
+\end{figure}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1aes__cipher_1_1AESCipher_aed6a2ba69ca2ea0a9003d85d080a8848}{}\index{software\+::chipwhisperer\+::common\+::utils\+::aes\+\_\+cipher\+::\+A\+E\+S\+Cipher@{software\+::chipwhisperer\+::common\+::utils\+::aes\+\_\+cipher\+::\+A\+E\+S\+Cipher}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!software\+::chipwhisperer\+::common\+::utils\+::aes\+\_\+cipher\+::\+A\+E\+S\+Cipher@{software\+::chipwhisperer\+::common\+::utils\+::aes\+\_\+cipher\+::\+A\+E\+S\+Cipher}}
+\subsubsection[{\+\_\+\+\_\+init\+\_\+\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+utils.\+aes\+\_\+cipher.\+A\+E\+S\+Cipher.\+\_\+\+\_\+init\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{expanded\+\_\+key}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1aes__cipher_1_1AESCipher_aed6a2ba69ca2ea0a9003d85d080a8848}
+
+
+References software.\+chipwhisperer.\+common.\+utils.\+aes\+\_\+cipher.\+A\+E\+S\+Cipher.\+\_\+expanded\+\_\+key, software.\+chipwhisperer.\+common.\+utils.\+aes\+\_\+cipher.\+A\+E\+S\+Cipher.\+\_\+i\+\_\+shift\+\_\+row(), software.\+chipwhisperer.\+common.\+utils.\+aes\+\_\+cipher.\+A\+E\+S\+Cipher.\+\_\+mix\+\_\+column(), software.\+chipwhisperer.\+common.\+utils.\+aes\+\_\+cipher.\+A\+E\+S\+Cipher.\+\_\+\+Nr, and software.\+chipwhisperer.\+common.\+utils.\+aes\+\_\+cipher.\+A\+E\+S\+Cipher.\+\_\+shift\+\_\+row().
+
+
+\begin{DoxyCode}
+26     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1aes__cipher_1_1AESCipher_aed6a2ba69ca2ea0a9003d85d080a8848}{\_\_init\_\_} (self, expanded\_key):
+27         \textcolor{comment}{#Store epanded key}
+28         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1aes__cipher_1_1AESCipher_aecc58b80b7d9284237191d41f50e139d}{\_expanded\_key} = expanded\_key
+29 
+30         \textcolor{comment}{#Number of rounds determined by expanded key length}
+31         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1aes__cipher_1_1AESCipher_a7f2fe76216e05a99ac06c8350e6f64a9}{\_Nr} = int(len(expanded\_key) / 16) - 1
+32 
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1aes__cipher_1_1AESCipher_a29b33c0f6edbc2a29d0b68fcfcfaa6d3}{}\index{software\+::chipwhisperer\+::common\+::utils\+::aes\+\_\+cipher\+::\+A\+E\+S\+Cipher@{software\+::chipwhisperer\+::common\+::utils\+::aes\+\_\+cipher\+::\+A\+E\+S\+Cipher}!cipher\+\_\+block@{cipher\+\_\+block}}
+\index{cipher\+\_\+block@{cipher\+\_\+block}!software\+::chipwhisperer\+::common\+::utils\+::aes\+\_\+cipher\+::\+A\+E\+S\+Cipher@{software\+::chipwhisperer\+::common\+::utils\+::aes\+\_\+cipher\+::\+A\+E\+S\+Cipher}}
+\subsubsection[{cipher\+\_\+block}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+utils.\+aes\+\_\+cipher.\+A\+E\+S\+Cipher.\+cipher\+\_\+block (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{state}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1aes__cipher_1_1AESCipher_a29b33c0f6edbc2a29d0b68fcfcfaa6d3}
+\begin{DoxyVerb}Perform AES block cipher on input\end{DoxyVerb}
+ 
+
+References software.\+chipwhisperer.\+common.\+utils.\+aes\+\_\+cipher.\+A\+E\+S\+Cipher.\+\_\+add\+\_\+round\+\_\+key(), software.\+chipwhisperer.\+common.\+utils.\+aes\+\_\+cipher.\+A\+E\+S\+Cipher.\+\_\+mix\+\_\+columns(), software.\+chipwhisperer.\+common.\+utils.\+aes\+\_\+cipher.\+A\+E\+S\+Cipher.\+\_\+\+Nr, software.\+chipwhisperer.\+common.\+utils.\+aes\+\_\+cipher.\+A\+E\+S\+Cipher.\+\_\+shift\+\_\+rows(), and software.\+chipwhisperer.\+common.\+utils.\+aes\+\_\+cipher.\+A\+E\+S\+Cipher.\+\_\+sub\+\_\+bytes().
+
+
+\begin{DoxyCode}
+85     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1aes__cipher_1_1AESCipher_a29b33c0f6edbc2a29d0b68fcfcfaa6d3}{cipher\_block} (self, state):
+86         \textcolor{stringliteral}{"""Perform AES block cipher on input"""}
+87         \textcolor{comment}{#PKCS7 Padding}
+88         state=state+[16-len(state)]*(16-len(state))\textcolor{comment}{#Fails test if it changes the input with +=}
+89 
+90         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1aes__cipher_1_1AESCipher_ad71a8b373522ddd258ec0f5ccb25844b}{\_add\_round\_key}(state, 0)
+91 
+92         \textcolor{keywordflow}{for} i \textcolor{keywordflow}{in} range(1, self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1aes__cipher_1_1AESCipher_a7f2fe76216e05a99ac06c8350e6f64a9}{\_Nr}):
+93             self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1aes__cipher_1_1AESCipher_a523347b46cb5e08b13cee65851775ad3}{\_sub\_bytes}(state)
+94             self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1aes__cipher_1_1AESCipher_a817ec4b33656a9fef748d94363fe62f6}{\_shift\_rows}(state)
+95             self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1aes__cipher_1_1AESCipher_a2eeb094b9136803b97c004a5e055e151}{\_mix\_columns}(state, \textcolor{keyword}{False})
+96             self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1aes__cipher_1_1AESCipher_ad71a8b373522ddd258ec0f5ccb25844b}{\_add\_round\_key}(state, i)
+97 
+98         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1aes__cipher_1_1AESCipher_a523347b46cb5e08b13cee65851775ad3}{\_sub\_bytes}(state)
+99         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1aes__cipher_1_1AESCipher_a817ec4b33656a9fef748d94363fe62f6}{\_shift\_rows}(state)
+100         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1aes__cipher_1_1AESCipher_ad71a8b373522ddd258ec0f5ccb25844b}{\_add\_round\_key}(state, self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1aes__cipher_1_1AESCipher_a7f2fe76216e05a99ac06c8350e6f64a9}{\_Nr})
+101         \textcolor{keywordflow}{return} state
+102 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1aes__cipher_1_1AESCipher_af893b3c3a6d04d108b4f45158463e95f}{}\index{software\+::chipwhisperer\+::common\+::utils\+::aes\+\_\+cipher\+::\+A\+E\+S\+Cipher@{software\+::chipwhisperer\+::common\+::utils\+::aes\+\_\+cipher\+::\+A\+E\+S\+Cipher}!decipher\+\_\+block@{decipher\+\_\+block}}
+\index{decipher\+\_\+block@{decipher\+\_\+block}!software\+::chipwhisperer\+::common\+::utils\+::aes\+\_\+cipher\+::\+A\+E\+S\+Cipher@{software\+::chipwhisperer\+::common\+::utils\+::aes\+\_\+cipher\+::\+A\+E\+S\+Cipher}}
+\subsubsection[{decipher\+\_\+block}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+utils.\+aes\+\_\+cipher.\+A\+E\+S\+Cipher.\+decipher\+\_\+block (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{state}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1aes__cipher_1_1AESCipher_af893b3c3a6d04d108b4f45158463e95f}
+\begin{DoxyVerb}Perform AES block decipher on input\end{DoxyVerb}
+ 
+
+References software.\+chipwhisperer.\+common.\+utils.\+aes\+\_\+cipher.\+A\+E\+S\+Cipher.\+\_\+add\+\_\+round\+\_\+key(), software.\+chipwhisperer.\+common.\+utils.\+aes\+\_\+cipher.\+A\+E\+S\+Cipher.\+\_\+i\+\_\+shift\+\_\+rows(), software.\+chipwhisperer.\+common.\+utils.\+aes\+\_\+cipher.\+A\+E\+S\+Cipher.\+\_\+i\+\_\+sub\+\_\+bytes(), software.\+chipwhisperer.\+common.\+utils.\+aes\+\_\+cipher.\+A\+E\+S\+Cipher.\+\_\+mix\+\_\+columns(), and software.\+chipwhisperer.\+common.\+utils.\+aes\+\_\+cipher.\+A\+E\+S\+Cipher.\+\_\+\+Nr.
+
+
+\begin{DoxyCode}
+103     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1aes__cipher_1_1AESCipher_af893b3c3a6d04d108b4f45158463e95f}{decipher\_block} (self, state):
+104         \textcolor{stringliteral}{"""Perform AES block decipher on input"""}
+105         \textcolor{comment}{#null padding. Padding actually should not be needed here with valid input.}
+106         state=state+[0]*(16-len(state))
+107 
+108         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1aes__cipher_1_1AESCipher_ad71a8b373522ddd258ec0f5ccb25844b}{\_add\_round\_key}(state, self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1aes__cipher_1_1AESCipher_a7f2fe76216e05a99ac06c8350e6f64a9}{\_Nr})
+109 
+110         \textcolor{keywordflow}{for} i \textcolor{keywordflow}{in} range(self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1aes__cipher_1_1AESCipher_a7f2fe76216e05a99ac06c8350e6f64a9}{\_Nr} - 1, 0, -1):
+111             self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1aes__cipher_1_1AESCipher_a7d5692da8a8c2f4431f790e251283459}{\_i\_shift\_rows}(state)
+112             self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1aes__cipher_1_1AESCipher_a2b40ea89bf68dbc5707a1aef1d4ee5bf}{\_i\_sub\_bytes}(state)
+113             self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1aes__cipher_1_1AESCipher_ad71a8b373522ddd258ec0f5ccb25844b}{\_add\_round\_key}(state, i)
+114             self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1aes__cipher_1_1AESCipher_a2eeb094b9136803b97c004a5e055e151}{\_mix\_columns}(state, \textcolor{keyword}{True})
+115 
+116         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1aes__cipher_1_1AESCipher_a7d5692da8a8c2f4431f790e251283459}{\_i\_shift\_rows}(state)
+117         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1aes__cipher_1_1AESCipher_a2b40ea89bf68dbc5707a1aef1d4ee5bf}{\_i\_sub\_bytes}(state)
+118         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1aes__cipher_1_1AESCipher_ad71a8b373522ddd258ec0f5ccb25844b}{\_add\_round\_key}(state, 0)
+119         \textcolor{keywordflow}{return} state
+120 \end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{aes__cipher_8py}{aes\+\_\+cipher.\+py}\end{DoxyCompactItemize}

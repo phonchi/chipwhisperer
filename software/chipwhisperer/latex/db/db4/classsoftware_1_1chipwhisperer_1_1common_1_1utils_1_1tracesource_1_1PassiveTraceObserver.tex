@@ -1,0 +1,141 @@
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1tracesource_1_1PassiveTraceObserver}{}\section{software.\+chipwhisperer.\+common.\+utils.\+tracesource.\+Passive\+Trace\+Observer Class Reference}
+\label{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1tracesource_1_1PassiveTraceObserver}\index{software.\+chipwhisperer.\+common.\+utils.\+tracesource.\+Passive\+Trace\+Observer@{software.\+chipwhisperer.\+common.\+utils.\+tracesource.\+Passive\+Trace\+Observer}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1tracesource_1_1PassiveTraceObserver_a315712dd352572613d539fcbcbfd890b}{\+\_\+\+\_\+init\+\_\+\+\_\+}
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1tracesource_1_1PassiveTraceObserver_a86dbfff05e7c94cc850695e7e1cfa19f}{set\+Trace\+Source} (self, \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1tracesource_1_1PassiveTraceObserver_a568937b55f6c7678e712b0a8ce114d4b}{trace\+Source})
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1tracesource_1_1PassiveTraceObserver_a568937b55f6c7678e712b0a8ce114d4b}{trace\+Source} (self)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1tracesource_1_1PassiveTraceObserver_aa69f8f052016fcce1396b89909790afe}{process\+Traces} (self)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1tracesource_1_1PassiveTraceObserver_ac2f2d80249923116d46080c478962455}{trace\+Sources\+Changed} (self)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}It processes data from a TraceSource when requested \end{DoxyVerb}
+ 
+
+Inheritance diagram for software.\+chipwhisperer.\+common.\+utils.\+tracesource.\+Passive\+Trace\+Observer\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{d2/d85/classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1tracesource_1_1PassiveTraceObserver__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for software.\+chipwhisperer.\+common.\+utils.\+tracesource.\+Passive\+Trace\+Observer\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{dc/dad/classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1tracesource_1_1PassiveTraceObserver__coll__graph}
+\end{center}
+\end{figure}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1tracesource_1_1PassiveTraceObserver_a315712dd352572613d539fcbcbfd890b}{}\index{software\+::chipwhisperer\+::common\+::utils\+::tracesource\+::\+Passive\+Trace\+Observer@{software\+::chipwhisperer\+::common\+::utils\+::tracesource\+::\+Passive\+Trace\+Observer}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!software\+::chipwhisperer\+::common\+::utils\+::tracesource\+::\+Passive\+Trace\+Observer@{software\+::chipwhisperer\+::common\+::utils\+::tracesource\+::\+Passive\+Trace\+Observer}}
+\subsubsection[{\+\_\+\+\_\+init\+\_\+\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+utils.\+tracesource.\+Passive\+Trace\+Observer.\+\_\+\+\_\+init\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{parent\+Param = {\ttfamily None}}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1tracesource_1_1PassiveTraceObserver_a315712dd352572613d539fcbcbfd890b}
+
+
+References software.\+chipwhisperer.\+common.\+results.\+waveform\+\_\+widget.\+Wave\+Form\+Widget.\+\_\+set\+Trace\+Source(), software.\+chipwhisperer.\+common.\+utils.\+tracesource.\+Passive\+Trace\+Observer.\+\_\+set\+Trace\+Source(), software.\+chipwhisperer.\+common.\+utils.\+tracesource.\+Passive\+Trace\+Observer.\+\_\+trace\+Source, and software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+experimentalchannelinfo.\+Template\+C\+S\+I.\+\_\+trace\+Source.
+
+
+\begin{DoxyCode}
+105     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1tracesource_1_1PassiveTraceObserver_a315712dd352572613d539fcbcbfd890b}{\_\_init\_\_}(self, parentParam=None):
+106         Parameterized.\_\_init\_\_(self, parentParam)
+107         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1tracesource_1_1PassiveTraceObserver_a962629f6a541166905d5e8a141d08c65}{\_traceSource} = \textcolor{keywordtype}{None}
+108         self.params.addChildren([
+109             \{\textcolor{stringliteral}{'name'}:\textcolor{stringliteral}{'Input'}, \textcolor{stringliteral}{'key'}:\textcolor{stringliteral}{'input'}, \textcolor{stringliteral}{'type'}:\textcolor{stringliteral}{'list'}, \textcolor{stringliteral}{'values'}:TraceSource.registeredObjects, \textcolor{stringliteral}{'set'}:
+      self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1tracesource_1_1PassiveTraceObserver_a5a533eac1d3828aa4ec8886988e450f5}{\_setTraceSource}\}
+110         ])
+111 
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1tracesource_1_1PassiveTraceObserver_aa69f8f052016fcce1396b89909790afe}{}\index{software\+::chipwhisperer\+::common\+::utils\+::tracesource\+::\+Passive\+Trace\+Observer@{software\+::chipwhisperer\+::common\+::utils\+::tracesource\+::\+Passive\+Trace\+Observer}!process\+Traces@{process\+Traces}}
+\index{process\+Traces@{process\+Traces}!software\+::chipwhisperer\+::common\+::utils\+::tracesource\+::\+Passive\+Trace\+Observer@{software\+::chipwhisperer\+::common\+::utils\+::tracesource\+::\+Passive\+Trace\+Observer}}
+\subsubsection[{process\+Traces}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+utils.\+tracesource.\+Passive\+Trace\+Observer.\+process\+Traces (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1tracesource_1_1PassiveTraceObserver_aa69f8f052016fcce1396b89909790afe}
+
+\begin{DoxyCode}
+123     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1tracesource_1_1PassiveTraceObserver_aa69f8f052016fcce1396b89909790afe}{processTraces}(self):
+124         \textcolor{keywordflow}{pass}
+125 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1tracesource_1_1PassiveTraceObserver_a86dbfff05e7c94cc850695e7e1cfa19f}{}\index{software\+::chipwhisperer\+::common\+::utils\+::tracesource\+::\+Passive\+Trace\+Observer@{software\+::chipwhisperer\+::common\+::utils\+::tracesource\+::\+Passive\+Trace\+Observer}!set\+Trace\+Source@{set\+Trace\+Source}}
+\index{set\+Trace\+Source@{set\+Trace\+Source}!software\+::chipwhisperer\+::common\+::utils\+::tracesource\+::\+Passive\+Trace\+Observer@{software\+::chipwhisperer\+::common\+::utils\+::tracesource\+::\+Passive\+Trace\+Observer}}
+\subsubsection[{set\+Trace\+Source}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+utils.\+tracesource.\+Passive\+Trace\+Observer.\+set\+Trace\+Source (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{trace\+Source}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1tracesource_1_1PassiveTraceObserver_a86dbfff05e7c94cc850695e7e1cfa19f}
+
+
+References software.\+chipwhisperer.\+common.\+utils.\+tracesource.\+Passive\+Trace\+Observer.\+\_\+trace\+Source, software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+experimentalchannelinfo.\+Template\+C\+S\+I.\+\_\+trace\+Source, software.\+chipwhisperer.\+capture.\+scopes.\+\_\+\+Open\+A\+D\+C\+Interface.\+Open\+A\+D\+C\+Settings.\+find\+Param, software.\+chipwhisperer.\+common.\+api.\+Extended\+Parameter.\+Extended\+Parameter.\+find\+Param(), and software.\+chipwhisperer.\+capture.\+scopes.\+\_\+\+Open\+A\+D\+C\+Interface.\+Clock\+Settings.\+find\+Param.
+
+
+\begin{DoxyCode}
+112     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1tracesource_1_1PassiveTraceObserver_a86dbfff05e7c94cc850695e7e1cfa19f}{setTraceSource}(self, traceSource):
+113         par = self.findParam(\textcolor{stringliteral}{'input'})
+114         par.setValue(traceSource)
+115         \textcolor{keyword}{assert} self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1tracesource_1_1PassiveTraceObserver_a962629f6a541166905d5e8a141d08c65}{\_traceSource} == traceSource
+116 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1tracesource_1_1PassiveTraceObserver_a568937b55f6c7678e712b0a8ce114d4b}{}\index{software\+::chipwhisperer\+::common\+::utils\+::tracesource\+::\+Passive\+Trace\+Observer@{software\+::chipwhisperer\+::common\+::utils\+::tracesource\+::\+Passive\+Trace\+Observer}!trace\+Source@{trace\+Source}}
+\index{trace\+Source@{trace\+Source}!software\+::chipwhisperer\+::common\+::utils\+::tracesource\+::\+Passive\+Trace\+Observer@{software\+::chipwhisperer\+::common\+::utils\+::tracesource\+::\+Passive\+Trace\+Observer}}
+\subsubsection[{trace\+Source}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+utils.\+tracesource.\+Passive\+Trace\+Observer.\+trace\+Source (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1tracesource_1_1PassiveTraceObserver_a568937b55f6c7678e712b0a8ce114d4b}
+
+
+References software.\+chipwhisperer.\+common.\+utils.\+tracesource.\+Passive\+Trace\+Observer.\+\_\+trace\+Source, and software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+experimentalchannelinfo.\+Template\+C\+S\+I.\+\_\+trace\+Source.
+
+
+
+Referenced by software.\+chipwhisperer.\+analyzer.\+attacks.\+profiling\+\_\+algorithms.\+\_\+base.\+Template\+Basic.\+generate(), software.\+chipwhisperer.\+analyzer.\+attacks.\+\_\+base.\+Attack\+Base\+Class.\+known\+Key(), software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa.\+C\+P\+A.\+process\+Traces(), and software.\+chipwhisperer.\+analyzer.\+attacks.\+profiling.\+Profiling.\+process\+Traces().
+
+
+\begin{DoxyCode}
+120     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1tracesource_1_1PassiveTraceObserver_a568937b55f6c7678e712b0a8ce114d4b}{traceSource}(self):
+121         \textcolor{keywordflow}{return} self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1tracesource_1_1PassiveTraceObserver_a962629f6a541166905d5e8a141d08c65}{\_traceSource}
+122 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1tracesource_1_1PassiveTraceObserver_ac2f2d80249923116d46080c478962455}{}\index{software\+::chipwhisperer\+::common\+::utils\+::tracesource\+::\+Passive\+Trace\+Observer@{software\+::chipwhisperer\+::common\+::utils\+::tracesource\+::\+Passive\+Trace\+Observer}!trace\+Sources\+Changed@{trace\+Sources\+Changed}}
+\index{trace\+Sources\+Changed@{trace\+Sources\+Changed}!software\+::chipwhisperer\+::common\+::utils\+::tracesource\+::\+Passive\+Trace\+Observer@{software\+::chipwhisperer\+::common\+::utils\+::tracesource\+::\+Passive\+Trace\+Observer}}
+\subsubsection[{trace\+Sources\+Changed}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+utils.\+tracesource.\+Passive\+Trace\+Observer.\+trace\+Sources\+Changed (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1tracesource_1_1PassiveTraceObserver_ac2f2d80249923116d46080c478962455}
+
+\begin{DoxyCode}
+126     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1tracesource_1_1PassiveTraceObserver_ac2f2d80249923116d46080c478962455}{traceSourcesChanged}(self):
+127         par = self.findParam(\textcolor{stringliteral}{'input'})
+128         par.setLimits(\{\})  \textcolor{comment}{# Will not update if the obj is the same :(}
+129         par.setLimits(TraceSource.registeredObjects)
+130 
+131 
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{tracesource_8py}{tracesource.\+py}\end{DoxyCompactItemize}

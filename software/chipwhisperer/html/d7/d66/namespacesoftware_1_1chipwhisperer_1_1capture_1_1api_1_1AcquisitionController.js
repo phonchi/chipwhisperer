@@ -1,0 +1,4 @@
+var namespacesoftware_1_1chipwhisperer_1_1capture_1_1api_1_1AcquisitionController =
+[
+    [ "AcquisitionController", "d4/d96/classsoftware_1_1chipwhisperer_1_1capture_1_1api_1_1AcquisitionController_1_1AcquisitionController.html", "d4/d96/classsoftware_1_1chipwhisperer_1_1capture_1_1api_1_1AcquisitionController_1_1AcquisitionController" ]
+];

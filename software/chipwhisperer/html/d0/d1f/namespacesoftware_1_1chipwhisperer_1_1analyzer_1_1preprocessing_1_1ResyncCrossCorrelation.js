@@ -1,0 +1,4 @@
+var namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1ResyncCrossCorrelation =
+[
+    [ "ResyncCrossCorrelation", "d3/dfe/classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1ResyncCrossCorrelation_1_1ResyncCrossCorrelation.html", "d3/dfe/classsoftware_1_1chipwhisperer_1_1analyzer_1_1preprocessing_1_1ResyncCrossCorrelation_1_1ResyncCrossCorrelation" ]
+];

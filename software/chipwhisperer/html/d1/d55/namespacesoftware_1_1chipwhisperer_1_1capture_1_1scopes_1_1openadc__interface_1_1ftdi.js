@@ -1,0 +1,4 @@
+var namespacesoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1openadc__interface_1_1ftdi =
+[
+    [ "OpenADCInterface_FTDI", "d1/ddf/classsoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1openadc__interface_1_1ftdi_1_1OpenADCInterface__FTDI.html", "d1/ddf/classsoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1openadc__interface_1_1ftdi_1_1OpenADCInterface__FTDI" ]
+];

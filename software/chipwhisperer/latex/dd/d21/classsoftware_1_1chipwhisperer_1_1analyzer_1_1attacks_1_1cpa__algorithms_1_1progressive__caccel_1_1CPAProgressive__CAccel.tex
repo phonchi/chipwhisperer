@@ -1,0 +1,376 @@
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive__caccel_1_1CPAProgressive__CAccel}{}\section{software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+progressive\+\_\+caccel.\+C\+P\+A\+Progressive\+\_\+\+C\+Accel Class Reference}
+\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive__caccel_1_1CPAProgressive__CAccel}\index{software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+progressive\+\_\+caccel.\+C\+P\+A\+Progressive\+\_\+\+C\+Accel@{software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+progressive\+\_\+caccel.\+C\+P\+A\+Progressive\+\_\+\+C\+Accel}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive__caccel_1_1CPAProgressive__CAccel_ab6b37ce22fab31e1117df10a248c94c7}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self, parent\+Param, target\+Model, leakage\+Function)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive__caccel_1_1CPAProgressive__CAccel_a30950a39a51dacab1d464832a8255746}{update\+Script}
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive__caccel_1_1CPAProgressive__CAccel_acbcff416995acfe0eab9a8dc9a3d0e1b}{set\+Target\+Bytes} (self, \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive__caccel_1_1CPAProgressive__CAccel_a11fa06dd5d4fb9ad43dfd86c99d4bc9c}{brange})
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive__caccel_1_1CPAProgressive__CAccel_a94222ee39513fa8b60f0ecf788f1e496}{set\+Reporting\+Interval} (self, ri)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive__caccel_1_1CPAProgressive__CAccel_a4a13be84224739e5ec306b6d45837fed}{add\+Traces}
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive__caccel_1_1CPAProgressive__CAccel_a4d1ae58dc2c7a90148511de3a9d02f7e}{get\+Statistics} (self)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive__caccel_1_1CPAProgressive__CAccel_a1a0a20c7d6652ad7ddb77379fc22f4e6}{set\+Stats\+Ready\+Callback} (self, \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive__caccel_1_1CPAProgressive__CAccel_a666be788c7eaea5a2be75912288d763e}{sr})
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive__caccel_1_1CPAProgressive__CAccel_a389b0ac7059f513862d94beb9b57c9e6}{process\+Known\+Key} (self, inpkey)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive__caccel_1_1CPAProgressive__CAccel_a964c4e82ecc2fddc3bdd7836ee1146fa}{model}
+\item 
+\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive__caccel_1_1CPAProgressive__CAccel_aa6611e610a6298213394c8582dea50e5}{leakage}
+\item 
+\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive__caccel_1_1CPAProgressive__CAccel_a666be788c7eaea5a2be75912288d763e}{sr}
+\item 
+\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive__caccel_1_1CPAProgressive__CAccel_a9669a367b7ef01f897e7aa1f62d8381d}{stats}
+\item 
+\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive__caccel_1_1CPAProgressive__CAccel_a11fa06dd5d4fb9ad43dfd86c99d4bc9c}{brange}
+\item 
+\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive__caccel_1_1CPAProgressive__CAccel_a4e9d37e4a284dc33de07bc3c89a1c0a7}{all\+\_\+diffs}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}CPA Attack done as a loop, but using an algorithm which can progressively add traces & give output stats
+\end{DoxyVerb}
+ 
+
+Inheritance diagram for software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+progressive\+\_\+caccel.\+C\+P\+A\+Progressive\+\_\+\+C\+Accel\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=347pt]{df/d82/classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive__caccel_1515dac6075a482e4db99ceceb3fc38b}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+progressive\+\_\+caccel.\+C\+P\+A\+Progressive\+\_\+\+C\+Accel\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=347pt]{d7/db2/classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive__caccel_4ab75acbe0ea661f7918dc1652359241}
+\end{center}
+\end{figure}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive__caccel_1_1CPAProgressive__CAccel_ab6b37ce22fab31e1117df10a248c94c7}{}\index{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+\_\+caccel\+::\+C\+P\+A\+Progressive\+\_\+\+C\+Accel@{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+\_\+caccel\+::\+C\+P\+A\+Progressive\+\_\+\+C\+Accel}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+\_\+caccel\+::\+C\+P\+A\+Progressive\+\_\+\+C\+Accel@{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+\_\+caccel\+::\+C\+P\+A\+Progressive\+\_\+\+C\+Accel}}
+\subsubsection[{\+\_\+\+\_\+init\+\_\+\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+progressive\+\_\+caccel.\+C\+P\+A\+Progressive\+\_\+\+C\+Accel.\+\_\+\+\_\+init\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{parent\+Param, }
+\item[{}]{target\+Model, }
+\item[{}]{leakage\+Function}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive__caccel_1_1CPAProgressive__CAccel_ab6b37ce22fab31e1117df10a248c94c7}
+
+\begin{DoxyCode}
+177     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive__caccel_1_1CPAProgressive__CAccel_ab6b37ce22fab31e1117df10a248c94c7}{\_\_init\_\_}(self, parentParam, targetModel, leakageFunction):
+178         Parameterized.\_\_init\_\_(self, parentParam)
+179         AutoScript.\_\_init\_\_(self)
+180 
+181         self.params.addChildren([
+182             \{\textcolor{stringliteral}{'name'}:\textcolor{stringliteral}{'Iteration Mode'}, \textcolor{stringliteral}{'key'}:\textcolor{stringliteral}{'itmode'}, \textcolor{stringliteral}{'type'}:\textcolor{stringliteral}{'list'}, \textcolor{stringliteral}{'values'}:\{\textcolor{stringliteral}{'Depth-First'}:\textcolor{stringliteral}{'df'}, \textcolor{stringliteral}{'
+      Breadth-First'}:\textcolor{stringliteral}{'bf'}\}, \textcolor{stringliteral}{'value'}:\textcolor{stringliteral}{'bf'}\},
+183             \{\textcolor{stringliteral}{'name'}:\textcolor{stringliteral}{'Skip when PGE=0'}, \textcolor{stringliteral}{'key'}:\textcolor{stringliteral}{'checkpge'}, \textcolor{stringliteral}{'type'}:\textcolor{stringliteral}{'bool'}, \textcolor{stringliteral}{'value'}:\textcolor{keyword}{False}\},
+184         ])
+185 
+186         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive__caccel_1_1CPAProgressive__CAccel_a964c4e82ecc2fddc3bdd7836ee1146fa}{model} = targetModel
+187         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive__caccel_1_1CPAProgressive__CAccel_aa6611e610a6298213394c8582dea50e5}{leakage} = leakageFunction
+188         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive__caccel_1_1CPAProgressive__CAccel_a666be788c7eaea5a2be75912288d763e}{sr} = \textcolor{keywordtype}{None}
+189         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive__caccel_1_1CPAProgressive__CAccel_a9669a367b7ef01f897e7aa1f62d8381d}{stats} = DataTypeDiffs()
+190         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive__caccel_1_1CPAProgressive__CAccel_a30950a39a51dacab1d464832a8255746}{updateScript}()
+191 
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive__caccel_1_1CPAProgressive__CAccel_a4a13be84224739e5ec306b6d45837fed}{}\index{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+\_\+caccel\+::\+C\+P\+A\+Progressive\+\_\+\+C\+Accel@{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+\_\+caccel\+::\+C\+P\+A\+Progressive\+\_\+\+C\+Accel}!add\+Traces@{add\+Traces}}
+\index{add\+Traces@{add\+Traces}!software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+\_\+caccel\+::\+C\+P\+A\+Progressive\+\_\+\+C\+Accel@{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+\_\+caccel\+::\+C\+P\+A\+Progressive\+\_\+\+C\+Accel}}
+\subsubsection[{add\+Traces}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+progressive\+\_\+caccel.\+C\+P\+A\+Progressive\+\_\+\+C\+Accel.\+add\+Traces (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{tracedata, }
+\item[{}]{tracerange, }
+\item[{}]{progress\+Bar = {\ttfamily None}, }
+\item[{}]{point\+Range = {\ttfamily None}}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive__caccel_1_1CPAProgressive__CAccel_a4a13be84224739e5ec306b6d45837fed}
+
+
+References software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+bayesian.\+Attack\+C\+P\+A\+\_\+\+Bayesian.\+brange, software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+progressive.\+C\+P\+A\+Progressive.\+brange, software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+progressive\+\_\+caccel.\+C\+P\+A\+Progressive\+\_\+\+C\+Accel.\+brange, and software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+experimentalchannelinfo.\+C\+P\+A\+Experimental\+Channelinfo.\+brange.
+
+
+\begin{DoxyCode}
+201     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive__caccel_1_1CPAProgressive__CAccel_a4a13be84224739e5ec306b6d45837fed}{addTraces}(self, tracedata, tracerange, progressBar=None, pointRange=None):
+202         brange=self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive__caccel_1_1CPAProgressive__CAccel_a11fa06dd5d4fb9ad43dfd86c99d4bc9c}{brange}
+203 
+204         foundkey = []
+205 
+206         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive__caccel_1_1CPAProgressive__CAccel_a4e9d37e4a284dc33de07bc3c89a1c0a7}{all\_diffs} = range(0,16)
+207 
+208         numtraces = tracerange[1] - tracerange[0]
+209 
+210         \textcolor{keywordflow}{if} progressBar:
+211             progressBar.setText(\textcolor{stringliteral}{"Attacking traces: from %d to %d (total = %d)"} % (tracerange[0], tracerange
+      [1], numtraces))
+212             progressBar.setStatusMask(\textcolor{stringliteral}{"Trace Interval: %d-%d. Current Subkey: %d"}, (0,0,0))
+213             progressBar.setMaximum(len(brange) * 256 * (numtraces / self.
+      \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive__caccel_1_1CPAProgressive__CAccel_aeeada041496f41516cf4b3effe6a8b36}{\_reportingInterval} + 1))
+214         pbcnt = 0
+215         \textcolor{comment}{#r = Parallel(n\_jobs=4)(delayed(traceOneSubkey)(bnum, pointRange, traces\_all, numtraces,
+       plaintexts, ciphertexts, keyround, modeltype, progressBar, self.model, pbcnt) for bnum in brange)}
+216         \textcolor{comment}{#self.all\_diffs, pb = zip(*r)}
+217         \textcolor{comment}{#pbcnt = 0}
+218         cpa = [\textcolor{keywordtype}{None}]*(max(brange)+1)
+219         \textcolor{keywordflow}{for} bnum \textcolor{keywordflow}{in} brange:
+220             cpa[bnum] = \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive__caccel_1_1CPAProgressiveOneSubkey}{CPAProgressiveOneSubkey}()
+221 
+222         brangeMap = [\textcolor{keywordtype}{None}]*(max(brange)+1)
+223         i = 1
+224         \textcolor{keywordflow}{for} bnum \textcolor{keywordflow}{in} brange:
+225             brangeMap[bnum] = i
+226             i += 1
+227 
+228         skipPGE = \textcolor{keyword}{False}  \textcolor{comment}{# self.findParam('checkpge').value()}
+229         bf = \textcolor{keyword}{True}  \textcolor{comment}{# self.findParam('itmode').value() == 'bf'}
+230 
+231         \textcolor{comment}{#bf specifies a 'breadth-first' search. bf means we search across each}
+232         \textcolor{comment}{#subkey by only the amount of traces specified. Depth-First means we}
+233         \textcolor{comment}{#search each subkey completely, then move onto the next.}
+234         \textcolor{keywordflow}{if} bf:
+235             brange\_df = [0]
+236             brange\_bf = brange
+237         \textcolor{keywordflow}{else}:
+238             brange\_bf = [0]
+239             brange\_df = brange
+240 
+241 
+242         \textcolor{keywordflow}{for} bnum\_df \textcolor{keywordflow}{in} brange\_df:
+243 
+244             tstart = 0
+245             tend = self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive__caccel_1_1CPAProgressive__CAccel_aeeada041496f41516cf4b3effe6a8b36}{\_reportingInterval}
+246 
+247             \textcolor{keywordflow}{while} tstart < numtraces:
+248                 \textcolor{keywordflow}{if} tend > numtraces:
+249                     tend = numtraces
+250 
+251                 \textcolor{keywordflow}{if} tstart > numtraces:
+252                     tstart = numtraces
+253 
+254                 data = []
+255                 textins = []
+256                 textouts = []
+257                 knownkeys = []
+258                 \textcolor{keywordflow}{for} i \textcolor{keywordflow}{in} range(tstart, tend):
+259 
+260                     \textcolor{comment}{# Handle Offset}
+261                     tnum = i + tracerange[0]
+262 
+263                     d = tracedata.getTrace(tnum)
+264 
+265                     \textcolor{keywordflow}{if} d \textcolor{keywordflow}{is} \textcolor{keywordtype}{None}:
+266                         \textcolor{keywordflow}{continue}
+267 
+268                     data.append(d)
+269                     textins.append(tracedata.getTextin(tnum))
+270                     textouts.append(tracedata.getTextout(tnum))
+271                     knownkeys.append(tracedata.getKnownKey(tnum))
+272 
+273                 traces = np.array(data)
+274                 textins = np.array(textins)
+275                 textouts = np.array(textouts)
+276 
+277 
+278                 \textcolor{keywordflow}{for} bnum\_bf \textcolor{keywordflow}{in} brange\_bf:
+279 
+280                     \textcolor{keywordflow}{if} bf:
+281                         bnum = bnum\_bf
+282                     \textcolor{keywordflow}{else}:
+283                         bnum = bnum\_df
+284 
+285 
+286                     skip = \textcolor{keyword}{False}
+287                     \textcolor{keywordflow}{if} (self.stats.simplePGE(bnum) != 0) \textcolor{keywordflow}{or} (skipPGE == \textcolor{keyword}{False}):
+288                         \textcolor{keywordflow}{if} isinstance(pointRange, list):
+289                             bptrange = pointRange[bnum]
+290                         \textcolor{keywordflow}{else}:
+291                             bptrange = pointRange
+292                         (data, pbcnt) = cpa[bnum].oneSubkey(bnum, bptrange, traces, tend - tstart, textins,
+       textouts, knownkeys, progressBar, self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive__caccel_1_1CPAProgressive__CAccel_a964c4e82ecc2fddc3bdd7836ee1146fa}{model}, self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive__caccel_1_1CPAProgressive__CAccel_aa6611e610a6298213394c8582dea50e5}{leakage}, cpa[bnum].modelstate, pbcnt)
+293                         self.stats.updateSubkey(bnum, data, tnum=tend)
+294                     \textcolor{keywordflow}{else}:
+295                         skip = \textcolor{keyword}{True}
+296 
+297                     \textcolor{keywordflow}{if} skip:
+298                         pbcnt = brangeMap[bnum] * 256 * (numtraces / self.
+      \hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive__caccel_1_1CPAProgressive__CAccel_aeeada041496f41516cf4b3effe6a8b36}{\_reportingInterval} + 1)
+299 
+300                         \textcolor{keywordflow}{if} bf \textcolor{keywordflow}{is} \textcolor{keyword}{False}:
+301                             tstart = numtraces
+302 
+303                 tend += self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive__caccel_1_1CPAProgressive__CAccel_aeeada041496f41516cf4b3effe6a8b36}{\_reportingInterval}
+304                 tstart += self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive__caccel_1_1CPAProgressive__CAccel_aeeada041496f41516cf4b3effe6a8b36}{\_reportingInterval}
+305 
+306                 \textcolor{keywordflow}{if} self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive__caccel_1_1CPAProgressive__CAccel_a666be788c7eaea5a2be75912288d763e}{sr} \textcolor{keywordflow}{is} \textcolor{keywordflow}{not} \textcolor{keywordtype}{None}:
+307                     self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive__caccel_1_1CPAProgressive__CAccel_a666be788c7eaea5a2be75912288d763e}{sr}()
+308 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive__caccel_1_1CPAProgressive__CAccel_a4d1ae58dc2c7a90148511de3a9d02f7e}{}\index{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+\_\+caccel\+::\+C\+P\+A\+Progressive\+\_\+\+C\+Accel@{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+\_\+caccel\+::\+C\+P\+A\+Progressive\+\_\+\+C\+Accel}!get\+Statistics@{get\+Statistics}}
+\index{get\+Statistics@{get\+Statistics}!software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+\_\+caccel\+::\+C\+P\+A\+Progressive\+\_\+\+C\+Accel@{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+\_\+caccel\+::\+C\+P\+A\+Progressive\+\_\+\+C\+Accel}}
+\subsubsection[{get\+Statistics}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+progressive\+\_\+caccel.\+C\+P\+A\+Progressive\+\_\+\+C\+Accel.\+get\+Statistics (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive__caccel_1_1CPAProgressive__CAccel_a4d1ae58dc2c7a90148511de3a9d02f7e}
+
+
+References software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+progressive.\+C\+P\+A\+Progressive.\+stats, software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+progressive\+\_\+caccel.\+C\+P\+A\+Progressive\+\_\+\+C\+Accel.\+stats, and software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+experimentalchannelinfo.\+C\+P\+A\+Experimental\+Channelinfo.\+stats.
+
+
+\begin{DoxyCode}
+309     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive__caccel_1_1CPAProgressive__CAccel_a4d1ae58dc2c7a90148511de3a9d02f7e}{getStatistics}(self):
+310         \textcolor{keywordflow}{return} self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive__caccel_1_1CPAProgressive__CAccel_a9669a367b7ef01f897e7aa1f62d8381d}{stats}
+311 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive__caccel_1_1CPAProgressive__CAccel_a389b0ac7059f513862d94beb9b57c9e6}{}\index{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+\_\+caccel\+::\+C\+P\+A\+Progressive\+\_\+\+C\+Accel@{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+\_\+caccel\+::\+C\+P\+A\+Progressive\+\_\+\+C\+Accel}!process\+Known\+Key@{process\+Known\+Key}}
+\index{process\+Known\+Key@{process\+Known\+Key}!software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+\_\+caccel\+::\+C\+P\+A\+Progressive\+\_\+\+C\+Accel@{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+\_\+caccel\+::\+C\+P\+A\+Progressive\+\_\+\+C\+Accel}}
+\subsubsection[{process\+Known\+Key}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+progressive\+\_\+caccel.\+C\+P\+A\+Progressive\+\_\+\+C\+Accel.\+process\+Known\+Key (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{inpkey}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive__caccel_1_1CPAProgressive__CAccel_a389b0ac7059f513862d94beb9b57c9e6}
+
+
+References software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+progressive.\+C\+P\+A\+Progressive.\+leakage, software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+progressive\+\_\+caccel.\+C\+P\+A\+Progressive\+\_\+\+C\+Accel.\+leakage, software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+bayesian.\+Attack\+C\+P\+A\+\_\+\+Bayesian.\+model, software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+progressive.\+C\+P\+A\+Progressive.\+model, software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+progressive\+\_\+caccel.\+C\+P\+A\+Progressive\+\_\+\+C\+Accel.\+model, and software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+experimentalchannelinfo.\+C\+P\+A\+Experimental\+Channelinfo.\+model.
+
+
+\begin{DoxyCode}
+315     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive__caccel_1_1CPAProgressive__CAccel_a389b0ac7059f513862d94beb9b57c9e6}{processKnownKey}(self, inpkey):
+316         \textcolor{keywordflow}{if} hasattr(self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive__caccel_1_1CPAProgressive__CAccel_a964c4e82ecc2fddc3bdd7836ee1146fa}{model}, \textcolor{stringliteral}{'processKnownKey'}):
+317             \textcolor{keywordflow}{return} self.model.processKnownKey(self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive__caccel_1_1CPAProgressive__CAccel_aa6611e610a6298213394c8582dea50e5}{leakage}, inpkey)
+318         \textcolor{keywordflow}{else}:
+319             \textcolor{keywordflow}{return} inpkey
+320 \end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive__caccel_1_1CPAProgressive__CAccel_a94222ee39513fa8b60f0ecf788f1e496}{}\index{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+\_\+caccel\+::\+C\+P\+A\+Progressive\+\_\+\+C\+Accel@{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+\_\+caccel\+::\+C\+P\+A\+Progressive\+\_\+\+C\+Accel}!set\+Reporting\+Interval@{set\+Reporting\+Interval}}
+\index{set\+Reporting\+Interval@{set\+Reporting\+Interval}!software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+\_\+caccel\+::\+C\+P\+A\+Progressive\+\_\+\+C\+Accel@{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+\_\+caccel\+::\+C\+P\+A\+Progressive\+\_\+\+C\+Accel}}
+\subsubsection[{set\+Reporting\+Interval}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+progressive\+\_\+caccel.\+C\+P\+A\+Progressive\+\_\+\+C\+Accel.\+set\+Reporting\+Interval (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{ri}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive__caccel_1_1CPAProgressive__CAccel_a94222ee39513fa8b60f0ecf788f1e496}
+
+
+References software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+progressive.\+C\+P\+A\+Progressive.\+\_\+reporting\+Interval, and software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+progressive\+\_\+caccel.\+C\+P\+A\+Progressive\+\_\+\+C\+Accel.\+\_\+reporting\+Interval.
+
+
+\begin{DoxyCode}
+198     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive__caccel_1_1CPAProgressive__CAccel_a94222ee39513fa8b60f0ecf788f1e496}{setReportingInterval}(self, ri):
+199         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive__caccel_1_1CPAProgressive__CAccel_aeeada041496f41516cf4b3effe6a8b36}{\_reportingInterval} = ri
+200 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive__caccel_1_1CPAProgressive__CAccel_a1a0a20c7d6652ad7ddb77379fc22f4e6}{}\index{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+\_\+caccel\+::\+C\+P\+A\+Progressive\+\_\+\+C\+Accel@{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+\_\+caccel\+::\+C\+P\+A\+Progressive\+\_\+\+C\+Accel}!set\+Stats\+Ready\+Callback@{set\+Stats\+Ready\+Callback}}
+\index{set\+Stats\+Ready\+Callback@{set\+Stats\+Ready\+Callback}!software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+\_\+caccel\+::\+C\+P\+A\+Progressive\+\_\+\+C\+Accel@{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+\_\+caccel\+::\+C\+P\+A\+Progressive\+\_\+\+C\+Accel}}
+\subsubsection[{set\+Stats\+Ready\+Callback}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+progressive\+\_\+caccel.\+C\+P\+A\+Progressive\+\_\+\+C\+Accel.\+set\+Stats\+Ready\+Callback (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{sr}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive__caccel_1_1CPAProgressive__CAccel_a1a0a20c7d6652ad7ddb77379fc22f4e6}
+
+
+References software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+progressive.\+C\+P\+A\+Progressive.\+sr, software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+progressive\+\_\+caccel.\+C\+P\+A\+Progressive\+\_\+\+C\+Accel.\+sr, and software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+experimentalchannelinfo.\+C\+P\+A\+Experimental\+Channelinfo.\+sr.
+
+
+\begin{DoxyCode}
+312     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive__caccel_1_1CPAProgressive__CAccel_a1a0a20c7d6652ad7ddb77379fc22f4e6}{setStatsReadyCallback}(self, sr):
+313         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive__caccel_1_1CPAProgressive__CAccel_a666be788c7eaea5a2be75912288d763e}{sr} = sr
+314 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive__caccel_1_1CPAProgressive__CAccel_acbcff416995acfe0eab9a8dc9a3d0e1b}{}\index{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+\_\+caccel\+::\+C\+P\+A\+Progressive\+\_\+\+C\+Accel@{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+\_\+caccel\+::\+C\+P\+A\+Progressive\+\_\+\+C\+Accel}!set\+Target\+Bytes@{set\+Target\+Bytes}}
+\index{set\+Target\+Bytes@{set\+Target\+Bytes}!software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+\_\+caccel\+::\+C\+P\+A\+Progressive\+\_\+\+C\+Accel@{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+\_\+caccel\+::\+C\+P\+A\+Progressive\+\_\+\+C\+Accel}}
+\subsubsection[{set\+Target\+Bytes}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+progressive\+\_\+caccel.\+C\+P\+A\+Progressive\+\_\+\+C\+Accel.\+set\+Target\+Bytes (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{brange}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive__caccel_1_1CPAProgressive__CAccel_acbcff416995acfe0eab9a8dc9a3d0e1b}
+
+\begin{DoxyCode}
+195     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive__caccel_1_1CPAProgressive__CAccel_acbcff416995acfe0eab9a8dc9a3d0e1b}{setTargetBytes}(self, brange):
+196         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive__caccel_1_1CPAProgressive__CAccel_a11fa06dd5d4fb9ad43dfd86c99d4bc9c}{brange} = brange
+197 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive__caccel_1_1CPAProgressive__CAccel_a30950a39a51dacab1d464832a8255746}{}\index{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+\_\+caccel\+::\+C\+P\+A\+Progressive\+\_\+\+C\+Accel@{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+\_\+caccel\+::\+C\+P\+A\+Progressive\+\_\+\+C\+Accel}!update\+Script@{update\+Script}}
+\index{update\+Script@{update\+Script}!software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+\_\+caccel\+::\+C\+P\+A\+Progressive\+\_\+\+C\+Accel@{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+\_\+caccel\+::\+C\+P\+A\+Progressive\+\_\+\+C\+Accel}}
+\subsubsection[{update\+Script}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+progressive\+\_\+caccel.\+C\+P\+A\+Progressive\+\_\+\+C\+Accel.\+update\+Script (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{ignored = {\ttfamily None}}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive__caccel_1_1CPAProgressive__CAccel_a30950a39a51dacab1d464832a8255746}
+
+
+Referenced by software.\+chipwhisperer.\+analyzer.\+preprocessing.\+Add\+Noise\+Random.\+Add\+Noise\+Random.\+\_\+\+\_\+init\+\_\+\+\_\+(), software.\+chipwhisperer.\+analyzer.\+preprocessing.\+Decimation\+Fixed.\+Decimation\+Fixed.\+\_\+\+\_\+init\+\_\+\+\_\+(), software.\+chipwhisperer.\+analyzer.\+preprocessing.\+Filter.\+Filter.\+\_\+\+\_\+init\+\_\+\+\_\+(), software.\+chipwhisperer.\+analyzer.\+attacks.\+profiling\+\_\+algorithms.\+template.\+Profiling\+Template.\+\_\+\+\_\+init\+\_\+\+\_\+(), software.\+chipwhisperer.\+analyzer.\+preprocessing.\+Decimation\+Clock\+Recovery.\+Decimation\+Clock\+Recovery.\+\_\+\+\_\+init\+\_\+\+\_\+(), software.\+chipwhisperer.\+analyzer.\+attacks.\+profiling.\+Profiling.\+update\+Algorithm(), software.\+chipwhisperer.\+analyzer.\+preprocessing.\+Normalize.\+Normalize.\+update\+Norm\+Class(), and software.\+chipwhisperer.\+analyzer.\+utils.\+Trace\+Explorer\+Scripts.\+Partition\+Display.\+Partition\+Display.\+update\+P\+O\+I().
+
+
+\begin{DoxyCode}
+192     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive__caccel_1_1CPAProgressive__CAccel_a30950a39a51dacab1d464832a8255746}{updateScript}(self, ignored=None):
+193         \textcolor{keywordflow}{pass}
+194 
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive__caccel_1_1CPAProgressive__CAccel_a4e9d37e4a284dc33de07bc3c89a1c0a7}{}\index{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+\_\+caccel\+::\+C\+P\+A\+Progressive\+\_\+\+C\+Accel@{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+\_\+caccel\+::\+C\+P\+A\+Progressive\+\_\+\+C\+Accel}!all\+\_\+diffs@{all\+\_\+diffs}}
+\index{all\+\_\+diffs@{all\+\_\+diffs}!software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+\_\+caccel\+::\+C\+P\+A\+Progressive\+\_\+\+C\+Accel@{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+\_\+caccel\+::\+C\+P\+A\+Progressive\+\_\+\+C\+Accel}}
+\subsubsection[{all\+\_\+diffs}]{\setlength{\rightskip}{0pt plus 5cm}software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+progressive\+\_\+caccel.\+C\+P\+A\+Progressive\+\_\+\+C\+Accel.\+all\+\_\+diffs}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive__caccel_1_1CPAProgressive__CAccel_a4e9d37e4a284dc33de07bc3c89a1c0a7}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive__caccel_1_1CPAProgressive__CAccel_a11fa06dd5d4fb9ad43dfd86c99d4bc9c}{}\index{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+\_\+caccel\+::\+C\+P\+A\+Progressive\+\_\+\+C\+Accel@{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+\_\+caccel\+::\+C\+P\+A\+Progressive\+\_\+\+C\+Accel}!brange@{brange}}
+\index{brange@{brange}!software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+\_\+caccel\+::\+C\+P\+A\+Progressive\+\_\+\+C\+Accel@{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+\_\+caccel\+::\+C\+P\+A\+Progressive\+\_\+\+C\+Accel}}
+\subsubsection[{brange}]{\setlength{\rightskip}{0pt plus 5cm}software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+progressive\+\_\+caccel.\+C\+P\+A\+Progressive\+\_\+\+C\+Accel.\+brange}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive__caccel_1_1CPAProgressive__CAccel_a11fa06dd5d4fb9ad43dfd86c99d4bc9c}
+
+
+Referenced by software.\+chipwhisperer.\+analyzer.\+attacks.\+profiling\+\_\+algorithms.\+template.\+Profiling\+Template.\+add\+Traces(), and software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+progressive\+\_\+caccel.\+C\+P\+A\+Progressive\+\_\+\+C\+Accel.\+add\+Traces().
+
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive__caccel_1_1CPAProgressive__CAccel_aa6611e610a6298213394c8582dea50e5}{}\index{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+\_\+caccel\+::\+C\+P\+A\+Progressive\+\_\+\+C\+Accel@{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+\_\+caccel\+::\+C\+P\+A\+Progressive\+\_\+\+C\+Accel}!leakage@{leakage}}
+\index{leakage@{leakage}!software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+\_\+caccel\+::\+C\+P\+A\+Progressive\+\_\+\+C\+Accel@{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+\_\+caccel\+::\+C\+P\+A\+Progressive\+\_\+\+C\+Accel}}
+\subsubsection[{leakage}]{\setlength{\rightskip}{0pt plus 5cm}software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+progressive\+\_\+caccel.\+C\+P\+A\+Progressive\+\_\+\+C\+Accel.\+leakage}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive__caccel_1_1CPAProgressive__CAccel_aa6611e610a6298213394c8582dea50e5}
+
+
+Referenced by software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+progressive\+\_\+caccel.\+C\+P\+A\+Progressive\+\_\+\+C\+Accel.\+process\+Known\+Key().
+
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive__caccel_1_1CPAProgressive__CAccel_a964c4e82ecc2fddc3bdd7836ee1146fa}{}\index{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+\_\+caccel\+::\+C\+P\+A\+Progressive\+\_\+\+C\+Accel@{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+\_\+caccel\+::\+C\+P\+A\+Progressive\+\_\+\+C\+Accel}!model@{model}}
+\index{model@{model}!software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+\_\+caccel\+::\+C\+P\+A\+Progressive\+\_\+\+C\+Accel@{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+\_\+caccel\+::\+C\+P\+A\+Progressive\+\_\+\+C\+Accel}}
+\subsubsection[{model}]{\setlength{\rightskip}{0pt plus 5cm}software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+progressive\+\_\+caccel.\+C\+P\+A\+Progressive\+\_\+\+C\+Accel.\+model}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive__caccel_1_1CPAProgressive__CAccel_a964c4e82ecc2fddc3bdd7836ee1146fa}
+
+
+Referenced by software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+progressive\+\_\+caccel.\+C\+P\+A\+Progressive\+\_\+\+C\+Accel.\+process\+Known\+Key().
+
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive__caccel_1_1CPAProgressive__CAccel_a666be788c7eaea5a2be75912288d763e}{}\index{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+\_\+caccel\+::\+C\+P\+A\+Progressive\+\_\+\+C\+Accel@{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+\_\+caccel\+::\+C\+P\+A\+Progressive\+\_\+\+C\+Accel}!sr@{sr}}
+\index{sr@{sr}!software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+\_\+caccel\+::\+C\+P\+A\+Progressive\+\_\+\+C\+Accel@{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+\_\+caccel\+::\+C\+P\+A\+Progressive\+\_\+\+C\+Accel}}
+\subsubsection[{sr}]{\setlength{\rightskip}{0pt plus 5cm}software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+progressive\+\_\+caccel.\+C\+P\+A\+Progressive\+\_\+\+C\+Accel.\+sr}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive__caccel_1_1CPAProgressive__CAccel_a666be788c7eaea5a2be75912288d763e}
+
+
+Referenced by software.\+chipwhisperer.\+analyzer.\+attacks.\+profiling\+\_\+algorithms.\+template.\+Profiling\+Template.\+add\+Traces(), software.\+chipwhisperer.\+analyzer.\+attacks.\+profiling\+\_\+algorithms.\+template.\+Profiling\+Template.\+set\+Stats\+Ready\+Callback(), and software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+progressive\+\_\+caccel.\+C\+P\+A\+Progressive\+\_\+\+C\+Accel.\+set\+Stats\+Ready\+Callback().
+
+\hypertarget{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive__caccel_1_1CPAProgressive__CAccel_a9669a367b7ef01f897e7aa1f62d8381d}{}\index{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+\_\+caccel\+::\+C\+P\+A\+Progressive\+\_\+\+C\+Accel@{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+\_\+caccel\+::\+C\+P\+A\+Progressive\+\_\+\+C\+Accel}!stats@{stats}}
+\index{stats@{stats}!software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+\_\+caccel\+::\+C\+P\+A\+Progressive\+\_\+\+C\+Accel@{software\+::chipwhisperer\+::analyzer\+::attacks\+::cpa\+\_\+algorithms\+::progressive\+\_\+caccel\+::\+C\+P\+A\+Progressive\+\_\+\+C\+Accel}}
+\subsubsection[{stats}]{\setlength{\rightskip}{0pt plus 5cm}software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+progressive\+\_\+caccel.\+C\+P\+A\+Progressive\+\_\+\+C\+Accel.\+stats}\label{classsoftware_1_1chipwhisperer_1_1analyzer_1_1attacks_1_1cpa__algorithms_1_1progressive__caccel_1_1CPAProgressive__CAccel_a9669a367b7ef01f897e7aa1f62d8381d}
+
+
+Referenced by software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+simpleloop.\+C\+P\+A\+Simple\+Loop.\+get\+Statistics(), software.\+chipwhisperer.\+analyzer.\+attacks.\+profiling\+\_\+algorithms.\+template.\+Profiling\+Template.\+get\+Statistics(), and software.\+chipwhisperer.\+analyzer.\+attacks.\+cpa\+\_\+algorithms.\+progressive\+\_\+caccel.\+C\+P\+A\+Progressive\+\_\+\+C\+Accel.\+get\+Statistics().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{progressive__caccel_8py}{progressive\+\_\+caccel.\+py}\end{DoxyCompactItemize}

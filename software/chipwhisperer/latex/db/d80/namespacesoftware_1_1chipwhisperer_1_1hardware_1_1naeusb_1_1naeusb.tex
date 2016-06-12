@@ -1,0 +1,149 @@
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1naeusb}{}\section{software.\+chipwhisperer.\+hardware.\+naeusb.\+naeusb Namespace Reference}
+\label{namespacesoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1naeusb}\index{software.\+chipwhisperer.\+hardware.\+naeusb.\+naeusb@{software.\+chipwhisperer.\+hardware.\+naeusb.\+naeusb}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1naeusb_1_1NAEUSB}{N\+A\+E\+U\+S\+B}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacesoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1naeusb_a51ac98c158e5ef60f6b600a4761ed279}{packuint32} (\hyperlink{namespacesoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1naeusb_a490446b9215f63f77a4abed9b8009220}{data})
+\item 
+def \hyperlink{namespacesoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1naeusb_ac69408c7101a5e39a44008f4dced71d0}{packuint16} (\hyperlink{namespacesoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1naeusb_a490446b9215f63f77a4abed9b8009220}{data})
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{namespacesoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1naeusb_a08cfb9a196e610981a82a5510456b05b}{N\+E\+W\+A\+E\+\_\+\+V\+I\+D} = 0x2\+B3\+E
+\item 
+dictionary \hyperlink{namespacesoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1naeusb_a9ad6a5aa758524481b77b2673e8e1b0a}{N\+E\+W\+A\+E\+\_\+\+P\+I\+D\+S}
+\item 
+tuple \hyperlink{namespacesoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1naeusb_a58a1847e180572b1e8956da9f77e86e4}{cwtestusb} = \hyperlink{classsoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1naeusb_1_1NAEUSB}{N\+A\+E\+U\+S\+B}()
+\item 
+tuple \hyperlink{namespacesoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1naeusb_a2f2a7b8ccea3423eb7132fa4fb80618f}{fpga} = F\+P\+G\+A(\hyperlink{namespacesoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1naeusb_a58a1847e180572b1e8956da9f77e86e4}{cwtestusb})
+\item 
+tuple \hyperlink{namespacesoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1naeusb_a1f0d4205534ef2e7f7461e7aa9b6e737}{xmega} = X\+M\+E\+G\+A\+P\+D\+I(\hyperlink{namespacesoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1naeusb_a58a1847e180572b1e8956da9f77e86e4}{cwtestusb})
+\item 
+tuple \hyperlink{namespacesoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1naeusb_aa00a9945ed04ca30cd2f8164fe9bf073}{avr} = A\+V\+R\+I\+S\+P(\hyperlink{namespacesoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1naeusb_a58a1847e180572b1e8956da9f77e86e4}{cwtestusb})
+\item 
+tuple \hyperlink{namespacesoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1naeusb_a718d6db4be65b5c05643f40c26113f20}{usart} = U\+S\+A\+R\+T(\hyperlink{namespacesoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1naeusb_a58a1847e180572b1e8956da9f77e86e4}{cwtestusb})
+\item 
+\hyperlink{namespacesoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1naeusb_a4858ced4b3b06e505891d5e005cca1dd}{force} = True
+\item 
+tuple \hyperlink{namespacesoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1naeusb_a4adf2b4ac902727d07ae761d547b4d62}{starttime} = datetime.\+now()
+\item 
+tuple \hyperlink{namespacesoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1naeusb_a70293c25c54b266d7f1f5179f6bed7f1}{stoptime} = datetime.\+now()
+\item 
+\hyperlink{namespacesoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1naeusb_a48cf2f953bdf64db5514ed5c89b36863}{avrprogram} = False
+\item 
+\hyperlink{namespacesoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1naeusb_acc30c1f6f61ce888741a3f8c58a61344}{xmegaprogram} = True
+\item 
+tuple \hyperlink{namespacesoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1naeusb_a490446b9215f63f77a4abed9b8009220}{data} = xmega.\+read\+Memory(0x01000090, 3, \char`\"{}signature\char`\"{})
+\item 
+list \hyperlink{namespacesoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1naeusb_acfd20b529a2ea4f360162e10efc30913}{fakedata} = \mbox{[}i \& 0xff for i in range(0, 2048)\mbox{]}
+\item 
+tuple \hyperlink{namespacesoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1naeusb_a838ea91a48030ed657fbae2aee627afc}{test} = xmega.\+read\+Memory(0x0800000, 512)
+\item 
+\hyperlink{namespacesoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1naeusb_a3d4045cbc3287c2f337d55bad870e5ec}{sertest} = True
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1naeusb_ac69408c7101a5e39a44008f4dced71d0}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::naeusb@{software\+::chipwhisperer\+::hardware\+::naeusb\+::naeusb}!packuint16@{packuint16}}
+\index{packuint16@{packuint16}!software\+::chipwhisperer\+::hardware\+::naeusb\+::naeusb@{software\+::chipwhisperer\+::hardware\+::naeusb\+::naeusb}}
+\subsubsection[{packuint16}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+hardware.\+naeusb.\+naeusb.\+packuint16 (
+\begin{DoxyParamCaption}
+\item[{}]{data}
+\end{DoxyParamCaption}
+)}\label{namespacesoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1naeusb_ac69408c7101a5e39a44008f4dced71d0}
+\begin{DoxyVerb}Converts a 16-bit integer into format expected by USB firmware\end{DoxyVerb}
+ 
+\begin{DoxyCode}
+36 \textcolor{keyword}{def }\hyperlink{namespacesoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1naeusb_ac69408c7101a5e39a44008f4dced71d0}{packuint16}(data):
+37     \textcolor{stringliteral}{"""Converts a 16-bit integer into format expected by USB firmware"""}
+38 
+39     \textcolor{keywordflow}{return} [data & 0xff, (data >> 8) & 0xff, (data >> 16) & 0xff, (data >> 24) & 0xff]
+40 
+41 
+42 \textcolor{comment}{#List of all NewAE PID's}
+\end{DoxyCode}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1naeusb_a51ac98c158e5ef60f6b600a4761ed279}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::naeusb@{software\+::chipwhisperer\+::hardware\+::naeusb\+::naeusb}!packuint32@{packuint32}}
+\index{packuint32@{packuint32}!software\+::chipwhisperer\+::hardware\+::naeusb\+::naeusb@{software\+::chipwhisperer\+::hardware\+::naeusb\+::naeusb}}
+\subsubsection[{packuint32}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+hardware.\+naeusb.\+naeusb.\+packuint32 (
+\begin{DoxyParamCaption}
+\item[{}]{data}
+\end{DoxyParamCaption}
+)}\label{namespacesoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1naeusb_a51ac98c158e5ef60f6b600a4761ed279}
+\begin{DoxyVerb}Converts a 32-bit integer into format expected by USB firmware\end{DoxyVerb}
+ 
+
+Referenced by software.\+chipwhisperer.\+hardware.\+naeusb.\+naeusb.\+N\+A\+E\+U\+S\+B.\+cmd\+Read\+Mem(), software.\+chipwhisperer.\+hardware.\+naeusb.\+naeusb.\+N\+A\+E\+U\+S\+B.\+cmd\+Write\+Mem(), software.\+chipwhisperer.\+hardware.\+naeusb.\+serial.\+U\+S\+A\+R\+T.\+init(), software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+xmega.\+X\+M\+E\+G\+A\+P\+D\+I.\+read\+Memory(), software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+avr.\+A\+V\+R\+I\+S\+P.\+read\+Memory(), software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+xmega.\+X\+M\+E\+G\+A\+P\+D\+I.\+set\+Param\+Timeout(), and software.\+chipwhisperer.\+hardware.\+naeusb.\+programmer\+\_\+xmega.\+X\+M\+E\+G\+A\+P\+D\+I.\+write\+Memory().
+
+
+\begin{DoxyCode}
+30 \textcolor{keyword}{def }\hyperlink{namespacesoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1naeusb_a51ac98c158e5ef60f6b600a4761ed279}{packuint32}(data):
+31     \textcolor{stringliteral}{"""Converts a 32-bit integer into format expected by USB firmware"""}
+32 
+33     \textcolor{keywordflow}{return} [data & 0xff, (data >> 8) & 0xff, (data >> 16) & 0xff, (data >> 24) & 0xff]
+34 
+35 
+\end{DoxyCode}
+
+
+\subsection{Variable Documentation}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1naeusb_aa00a9945ed04ca30cd2f8164fe9bf073}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::naeusb@{software\+::chipwhisperer\+::hardware\+::naeusb\+::naeusb}!avr@{avr}}
+\index{avr@{avr}!software\+::chipwhisperer\+::hardware\+::naeusb\+::naeusb@{software\+::chipwhisperer\+::hardware\+::naeusb\+::naeusb}}
+\subsubsection[{avr}]{\setlength{\rightskip}{0pt plus 5cm}tuple software.\+chipwhisperer.\+hardware.\+naeusb.\+naeusb.\+avr = A\+V\+R\+I\+S\+P({\bf cwtestusb})}\label{namespacesoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1naeusb_aa00a9945ed04ca30cd2f8164fe9bf073}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1naeusb_a48cf2f953bdf64db5514ed5c89b36863}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::naeusb@{software\+::chipwhisperer\+::hardware\+::naeusb\+::naeusb}!avrprogram@{avrprogram}}
+\index{avrprogram@{avrprogram}!software\+::chipwhisperer\+::hardware\+::naeusb\+::naeusb@{software\+::chipwhisperer\+::hardware\+::naeusb\+::naeusb}}
+\subsubsection[{avrprogram}]{\setlength{\rightskip}{0pt plus 5cm}software.\+chipwhisperer.\+hardware.\+naeusb.\+naeusb.\+avrprogram = False}\label{namespacesoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1naeusb_a48cf2f953bdf64db5514ed5c89b36863}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1naeusb_a58a1847e180572b1e8956da9f77e86e4}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::naeusb@{software\+::chipwhisperer\+::hardware\+::naeusb\+::naeusb}!cwtestusb@{cwtestusb}}
+\index{cwtestusb@{cwtestusb}!software\+::chipwhisperer\+::hardware\+::naeusb\+::naeusb@{software\+::chipwhisperer\+::hardware\+::naeusb\+::naeusb}}
+\subsubsection[{cwtestusb}]{\setlength{\rightskip}{0pt plus 5cm}tuple software.\+chipwhisperer.\+hardware.\+naeusb.\+naeusb.\+cwtestusb = {\bf N\+A\+E\+U\+S\+B}()}\label{namespacesoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1naeusb_a58a1847e180572b1e8956da9f77e86e4}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1naeusb_a490446b9215f63f77a4abed9b8009220}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::naeusb@{software\+::chipwhisperer\+::hardware\+::naeusb\+::naeusb}!data@{data}}
+\index{data@{data}!software\+::chipwhisperer\+::hardware\+::naeusb\+::naeusb@{software\+::chipwhisperer\+::hardware\+::naeusb\+::naeusb}}
+\subsubsection[{data}]{\setlength{\rightskip}{0pt plus 5cm}tuple software.\+chipwhisperer.\+hardware.\+naeusb.\+naeusb.\+data = xmega.\+read\+Memory(0x01000090, 3, \char`\"{}signature\char`\"{})}\label{namespacesoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1naeusb_a490446b9215f63f77a4abed9b8009220}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1naeusb_acfd20b529a2ea4f360162e10efc30913}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::naeusb@{software\+::chipwhisperer\+::hardware\+::naeusb\+::naeusb}!fakedata@{fakedata}}
+\index{fakedata@{fakedata}!software\+::chipwhisperer\+::hardware\+::naeusb\+::naeusb@{software\+::chipwhisperer\+::hardware\+::naeusb\+::naeusb}}
+\subsubsection[{fakedata}]{\setlength{\rightskip}{0pt plus 5cm}list software.\+chipwhisperer.\+hardware.\+naeusb.\+naeusb.\+fakedata = \mbox{[}i \& 0xff for i in range(0, 2048)\mbox{]}}\label{namespacesoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1naeusb_acfd20b529a2ea4f360162e10efc30913}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1naeusb_a4858ced4b3b06e505891d5e005cca1dd}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::naeusb@{software\+::chipwhisperer\+::hardware\+::naeusb\+::naeusb}!force@{force}}
+\index{force@{force}!software\+::chipwhisperer\+::hardware\+::naeusb\+::naeusb@{software\+::chipwhisperer\+::hardware\+::naeusb\+::naeusb}}
+\subsubsection[{force}]{\setlength{\rightskip}{0pt plus 5cm}software.\+chipwhisperer.\+hardware.\+naeusb.\+naeusb.\+force = True}\label{namespacesoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1naeusb_a4858ced4b3b06e505891d5e005cca1dd}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1naeusb_a2f2a7b8ccea3423eb7132fa4fb80618f}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::naeusb@{software\+::chipwhisperer\+::hardware\+::naeusb\+::naeusb}!fpga@{fpga}}
+\index{fpga@{fpga}!software\+::chipwhisperer\+::hardware\+::naeusb\+::naeusb@{software\+::chipwhisperer\+::hardware\+::naeusb\+::naeusb}}
+\subsubsection[{fpga}]{\setlength{\rightskip}{0pt plus 5cm}tuple software.\+chipwhisperer.\+hardware.\+naeusb.\+naeusb.\+fpga = F\+P\+G\+A({\bf cwtestusb})}\label{namespacesoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1naeusb_a2f2a7b8ccea3423eb7132fa4fb80618f}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1naeusb_a9ad6a5aa758524481b77b2673e8e1b0a}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::naeusb@{software\+::chipwhisperer\+::hardware\+::naeusb\+::naeusb}!N\+E\+W\+A\+E\+\_\+\+P\+I\+D\+S@{N\+E\+W\+A\+E\+\_\+\+P\+I\+D\+S}}
+\index{N\+E\+W\+A\+E\+\_\+\+P\+I\+D\+S@{N\+E\+W\+A\+E\+\_\+\+P\+I\+D\+S}!software\+::chipwhisperer\+::hardware\+::naeusb\+::naeusb@{software\+::chipwhisperer\+::hardware\+::naeusb\+::naeusb}}
+\subsubsection[{N\+E\+W\+A\+E\+\_\+\+P\+I\+D\+S}]{\setlength{\rightskip}{0pt plus 5cm}dictionary software.\+chipwhisperer.\+hardware.\+naeusb.\+naeusb.\+N\+E\+W\+A\+E\+\_\+\+P\+I\+D\+S}\label{namespacesoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1naeusb_a9ad6a5aa758524481b77b2673e8e1b0a}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 = \{
+2     0xACE2: \textcolor{stringliteral}{"ChipWhisperer-Lite"},
+3     0xC305: \textcolor{stringliteral}{"CW305 Artix FPGA Board"},
+4 \}
+\end{DoxyCode}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1naeusb_a08cfb9a196e610981a82a5510456b05b}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::naeusb@{software\+::chipwhisperer\+::hardware\+::naeusb\+::naeusb}!N\+E\+W\+A\+E\+\_\+\+V\+I\+D@{N\+E\+W\+A\+E\+\_\+\+V\+I\+D}}
+\index{N\+E\+W\+A\+E\+\_\+\+V\+I\+D@{N\+E\+W\+A\+E\+\_\+\+V\+I\+D}!software\+::chipwhisperer\+::hardware\+::naeusb\+::naeusb@{software\+::chipwhisperer\+::hardware\+::naeusb\+::naeusb}}
+\subsubsection[{N\+E\+W\+A\+E\+\_\+\+V\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}int software.\+chipwhisperer.\+hardware.\+naeusb.\+naeusb.\+N\+E\+W\+A\+E\+\_\+\+V\+I\+D = 0x2\+B3\+E}\label{namespacesoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1naeusb_a08cfb9a196e610981a82a5510456b05b}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1naeusb_a3d4045cbc3287c2f337d55bad870e5ec}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::naeusb@{software\+::chipwhisperer\+::hardware\+::naeusb\+::naeusb}!sertest@{sertest}}
+\index{sertest@{sertest}!software\+::chipwhisperer\+::hardware\+::naeusb\+::naeusb@{software\+::chipwhisperer\+::hardware\+::naeusb\+::naeusb}}
+\subsubsection[{sertest}]{\setlength{\rightskip}{0pt plus 5cm}software.\+chipwhisperer.\+hardware.\+naeusb.\+naeusb.\+sertest = True}\label{namespacesoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1naeusb_a3d4045cbc3287c2f337d55bad870e5ec}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1naeusb_a4adf2b4ac902727d07ae761d547b4d62}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::naeusb@{software\+::chipwhisperer\+::hardware\+::naeusb\+::naeusb}!starttime@{starttime}}
+\index{starttime@{starttime}!software\+::chipwhisperer\+::hardware\+::naeusb\+::naeusb@{software\+::chipwhisperer\+::hardware\+::naeusb\+::naeusb}}
+\subsubsection[{starttime}]{\setlength{\rightskip}{0pt plus 5cm}tuple software.\+chipwhisperer.\+hardware.\+naeusb.\+naeusb.\+starttime = datetime.\+now()}\label{namespacesoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1naeusb_a4adf2b4ac902727d07ae761d547b4d62}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1naeusb_a70293c25c54b266d7f1f5179f6bed7f1}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::naeusb@{software\+::chipwhisperer\+::hardware\+::naeusb\+::naeusb}!stoptime@{stoptime}}
+\index{stoptime@{stoptime}!software\+::chipwhisperer\+::hardware\+::naeusb\+::naeusb@{software\+::chipwhisperer\+::hardware\+::naeusb\+::naeusb}}
+\subsubsection[{stoptime}]{\setlength{\rightskip}{0pt plus 5cm}tuple software.\+chipwhisperer.\+hardware.\+naeusb.\+naeusb.\+stoptime = datetime.\+now()}\label{namespacesoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1naeusb_a70293c25c54b266d7f1f5179f6bed7f1}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1naeusb_a838ea91a48030ed657fbae2aee627afc}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::naeusb@{software\+::chipwhisperer\+::hardware\+::naeusb\+::naeusb}!test@{test}}
+\index{test@{test}!software\+::chipwhisperer\+::hardware\+::naeusb\+::naeusb@{software\+::chipwhisperer\+::hardware\+::naeusb\+::naeusb}}
+\subsubsection[{test}]{\setlength{\rightskip}{0pt plus 5cm}tuple software.\+chipwhisperer.\+hardware.\+naeusb.\+naeusb.\+test = xmega.\+read\+Memory(0x0800000, 512)}\label{namespacesoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1naeusb_a838ea91a48030ed657fbae2aee627afc}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1naeusb_a718d6db4be65b5c05643f40c26113f20}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::naeusb@{software\+::chipwhisperer\+::hardware\+::naeusb\+::naeusb}!usart@{usart}}
+\index{usart@{usart}!software\+::chipwhisperer\+::hardware\+::naeusb\+::naeusb@{software\+::chipwhisperer\+::hardware\+::naeusb\+::naeusb}}
+\subsubsection[{usart}]{\setlength{\rightskip}{0pt plus 5cm}tuple software.\+chipwhisperer.\+hardware.\+naeusb.\+naeusb.\+usart = U\+S\+A\+R\+T({\bf cwtestusb})}\label{namespacesoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1naeusb_a718d6db4be65b5c05643f40c26113f20}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1naeusb_a1f0d4205534ef2e7f7461e7aa9b6e737}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::naeusb@{software\+::chipwhisperer\+::hardware\+::naeusb\+::naeusb}!xmega@{xmega}}
+\index{xmega@{xmega}!software\+::chipwhisperer\+::hardware\+::naeusb\+::naeusb@{software\+::chipwhisperer\+::hardware\+::naeusb\+::naeusb}}
+\subsubsection[{xmega}]{\setlength{\rightskip}{0pt plus 5cm}tuple software.\+chipwhisperer.\+hardware.\+naeusb.\+naeusb.\+xmega = X\+M\+E\+G\+A\+P\+D\+I({\bf cwtestusb})}\label{namespacesoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1naeusb_a1f0d4205534ef2e7f7461e7aa9b6e737}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1naeusb_acc30c1f6f61ce888741a3f8c58a61344}{}\index{software\+::chipwhisperer\+::hardware\+::naeusb\+::naeusb@{software\+::chipwhisperer\+::hardware\+::naeusb\+::naeusb}!xmegaprogram@{xmegaprogram}}
+\index{xmegaprogram@{xmegaprogram}!software\+::chipwhisperer\+::hardware\+::naeusb\+::naeusb@{software\+::chipwhisperer\+::hardware\+::naeusb\+::naeusb}}
+\subsubsection[{xmegaprogram}]{\setlength{\rightskip}{0pt plus 5cm}software.\+chipwhisperer.\+hardware.\+naeusb.\+naeusb.\+xmegaprogram = True}\label{namespacesoftware_1_1chipwhisperer_1_1hardware_1_1naeusb_1_1naeusb_acc30c1f6f61ce888741a3f8c58a61344}

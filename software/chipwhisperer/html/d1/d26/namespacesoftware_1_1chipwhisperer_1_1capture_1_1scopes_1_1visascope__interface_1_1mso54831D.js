@@ -1,0 +1,4 @@
+var namespacesoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1visascope__interface_1_1mso54831D =
+[
+    [ "VisaScopeInterface_MSO54831D", "db/d9a/classsoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1visascope__interface_1_1mso54831D_1_1VisaScopeInterface__MSO54831D.html", "db/d9a/classsoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1visascope__interface_1_1mso54831D_1_1VisaScopeInterface__MSO54831D" ]
+];

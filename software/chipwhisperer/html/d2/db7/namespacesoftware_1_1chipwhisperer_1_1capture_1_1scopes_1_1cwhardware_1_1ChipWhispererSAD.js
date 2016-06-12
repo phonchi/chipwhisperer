@@ -1,0 +1,4 @@
+var namespacesoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1cwhardware_1_1ChipWhispererSAD =
+[
+    [ "ChipWhispererSAD", "d2/d6a/classsoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1cwhardware_1_1ChipWhispererSAD_1_1ChipWhispererSAD.html", "d2/d6a/classsoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1cwhardware_1_1ChipWhispererSAD_1_1ChipWhispererSAD" ]
+];

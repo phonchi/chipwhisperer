@@ -1,0 +1,25 @@
+var classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1TraceManager_1_1TraceManager =
+[
+    [ "__init__", "d0/d1c/classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1TraceManager_1_1TraceManager.html#ae884c3326fe9d0168d29e717538ad3ae", null ],
+    [ "appendTraceSet", "d0/d1c/classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1TraceManager_1_1TraceManager.html#ac3681061b88e3569c8dcbb8e30f6edf7", null ],
+    [ "findMappedTrace", "d0/d1c/classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1TraceManager_1_1TraceManager.html#a9d5742a02ec11dc24b0895a04caedc8c", null ],
+    [ "getAuxData", "d0/d1c/classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1TraceManager_1_1TraceManager.html#adad8d76a395001af41fef11bcee0930f", null ],
+    [ "getKnownKey", "d0/d1c/classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1TraceManager_1_1TraceManager.html#aa9095063a47b3edd6d53aaa6cca1095e", null ],
+    [ "getSegmentList", "d0/d1c/classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1TraceManager_1_1TraceManager.html#abcd793c60e7c199dc13b772868cd908a", null ],
+    [ "getTextin", "d0/d1c/classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1TraceManager_1_1TraceManager.html#a664e3958c3ae8ff8d2baf00a81ff32ce", null ],
+    [ "getTextout", "d0/d1c/classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1TraceManager_1_1TraceManager.html#a5037b3dc08a8b2f70c7a9e23e2bc3a79", null ],
+    [ "getTrace", "d0/d1c/classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1TraceManager_1_1TraceManager.html#af3986748f55ff9bcd5d8b050da37ade8", null ],
+    [ "loadProject", "d0/d1c/classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1TraceManager_1_1TraceManager.html#a0471625afb023973dae8f0bfbaeaec50", null ],
+    [ "newProject", "d0/d1c/classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1TraceManager_1_1TraceManager.html#ac023c852ceb0e0430b4eb2376b6ebc34", null ],
+    [ "numPoints", "d0/d1c/classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1TraceManager_1_1TraceManager.html#aafe2fb8a4523f8113f4a43d2000c60a8", null ],
+    [ "numTraces", "d0/d1c/classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1TraceManager_1_1TraceManager.html#af904aaa4a8f158edff59e27a06592655", null ],
+    [ "removeTraceSet", "d0/d1c/classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1TraceManager_1_1TraceManager.html#abf750208d9d6d0dd9d5936d26d1fc676", null ],
+    [ "saveProject", "d0/d1c/classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1TraceManager_1_1TraceManager.html#a0036b263bb093b6a5e006021ee54176f", null ],
+    [ "setModified", "d0/d1c/classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1TraceManager_1_1TraceManager.html#a071397501e90117365f21c6b1a391d6c", null ],
+    [ "setTraceSetStatus", "d0/d1c/classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1TraceManager_1_1TraceManager.html#a340fce499c02e11db6a809d0796840f4", null ],
+    [ "updateRanges", "d0/d1c/classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1TraceManager_1_1TraceManager.html#a383b58d4494b5898182cf84c27adb6b4", null ],
+    [ "dirty", "d0/d1c/classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1TraceManager_1_1TraceManager.html#a65941d9525db4345be427d0676ccd71e", null ],
+    [ "lastMapped", "d0/d1c/classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1TraceManager_1_1TraceManager.html#a0ae4576b6dcfae006a6cc4a176398998", null ],
+    [ "name", "d0/d1c/classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1TraceManager_1_1TraceManager.html#a281ad58f0abdb465d15bf878e27dee73", null ],
+    [ "traceSets", "d0/d1c/classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1TraceManager_1_1TraceManager.html#a12d367c3f8b7e0fe7270a76e676347b7", null ]
+];

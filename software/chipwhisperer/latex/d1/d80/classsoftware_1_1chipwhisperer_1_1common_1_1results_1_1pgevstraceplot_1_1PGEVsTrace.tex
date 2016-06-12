@@ -1,0 +1,230 @@
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1pgevstraceplot_1_1PGEVsTrace}{}\section{software.\+chipwhisperer.\+common.\+results.\+pgevstraceplot.\+P\+G\+E\+Vs\+Trace Class Reference}
+\label{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1pgevstraceplot_1_1PGEVsTrace}\index{software.\+chipwhisperer.\+common.\+results.\+pgevstraceplot.\+P\+G\+E\+Vs\+Trace@{software.\+chipwhisperer.\+common.\+results.\+pgevstraceplot.\+P\+G\+E\+Vs\+Trace}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1pgevstraceplot_1_1PGEVsTrace_ab7541e852bbef4d40c4fc14646006e6d}{\+\_\+\+\_\+init\+\_\+\+\_\+}
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1pgevstraceplot_1_1PGEVsTrace_a8a9d71b5b6a422510d16b0da496a29f0}{copy\+P\+G\+E}
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1pgevstraceplot_1_1PGEVsTrace_ad1074cc8b19ffa1cc7cc156b4d7799f9}{calculate\+P\+G\+E} (self)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1pgevstraceplot_1_1PGEVsTrace_a7da78636d231527f48261ddf2a4410ba}{redraw\+Plot} (self)
+\end{DoxyCompactItemize}
+
+
+Inheritance diagram for software.\+chipwhisperer.\+common.\+results.\+pgevstraceplot.\+P\+G\+E\+Vs\+Trace\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{d4/dbc/classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1pgevstraceplot_1_1PGEVsTrace__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for software.\+chipwhisperer.\+common.\+results.\+pgevstraceplot.\+P\+G\+E\+Vs\+Trace\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{d0/dfd/classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1pgevstraceplot_1_1PGEVsTrace__coll__graph}
+\end{center}
+\end{figure}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1pgevstraceplot_1_1PGEVsTrace_ab7541e852bbef4d40c4fc14646006e6d}{}\index{software\+::chipwhisperer\+::common\+::results\+::pgevstraceplot\+::\+P\+G\+E\+Vs\+Trace@{software\+::chipwhisperer\+::common\+::results\+::pgevstraceplot\+::\+P\+G\+E\+Vs\+Trace}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!software\+::chipwhisperer\+::common\+::results\+::pgevstraceplot\+::\+P\+G\+E\+Vs\+Trace@{software\+::chipwhisperer\+::common\+::results\+::pgevstraceplot\+::\+P\+G\+E\+Vs\+Trace}}
+\subsubsection[{\+\_\+\+\_\+init\+\_\+\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+results.\+pgevstraceplot.\+P\+G\+E\+Vs\+Trace.\+\_\+\+\_\+init\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{parent\+Param = {\ttfamily None}, }
+\item[{}]{name = {\ttfamily None}}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1pgevstraceplot_1_1PGEVsTrace_ab7541e852bbef4d40c4fc14646006e6d}
+
+
+References software.\+chipwhisperer.\+common.\+results.\+pgevstraceplot.\+P\+G\+E\+Vs\+Trace.\+copy\+P\+G\+E(), and software.\+chipwhisperer.\+common.\+ui.\+Graph\+Widget.\+Graph\+Widget.\+set\+Labels().
+
+
+\begin{DoxyCode}
+37     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1pgevstraceplot_1_1PGEVsTrace_ab7541e852bbef4d40c4fc14646006e6d}{\_\_init\_\_}(self, parentParam=None, name=None):
+38         AttackResultPlot.\_\_init\_\_(self, parentParam, name)
+39         self.setLabels(\textcolor{stringliteral}{"Partial Guessing Entropy vs. Traces"}, \textcolor{stringliteral}{"Traces"}, \textcolor{stringliteral}{"Partial Guessing Entropy"})
+40 
+41         self.params.addChildren([
+42             \{\textcolor{stringliteral}{'name'}:\textcolor{stringliteral}{'Copy PGE Data to Clipboard'}, \textcolor{stringliteral}{'type'}:\textcolor{stringliteral}{'action'}, \textcolor{stringliteral}{'action'}:self.
+      \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1pgevstraceplot_1_1PGEVsTrace_a8a9d71b5b6a422510d16b0da496a29f0}{copyPGE}\},
+43             \{\textcolor{stringliteral}{'name'}:\textcolor{stringliteral}{'Clipboard Format'}, \textcolor{stringliteral}{'key'}:\textcolor{stringliteral}{'fmt'}, \textcolor{stringliteral}{'type'}:\textcolor{stringliteral}{'list'}, \textcolor{stringliteral}{'values'}:[\textcolor{stringliteral}{'CSV'}, \textcolor{stringliteral}{'MATLAB'}], \textcolor{stringliteral}{'value'}:\textcolor{stringliteral}{'
+      CSV'}\}
+44         ])
+45 
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1pgevstraceplot_1_1PGEVsTrace_ad1074cc8b19ffa1cc7cc156b4d7799f9}{}\index{software\+::chipwhisperer\+::common\+::results\+::pgevstraceplot\+::\+P\+G\+E\+Vs\+Trace@{software\+::chipwhisperer\+::common\+::results\+::pgevstraceplot\+::\+P\+G\+E\+Vs\+Trace}!calculate\+P\+G\+E@{calculate\+P\+G\+E}}
+\index{calculate\+P\+G\+E@{calculate\+P\+G\+E}!software\+::chipwhisperer\+::common\+::results\+::pgevstraceplot\+::\+P\+G\+E\+Vs\+Trace@{software\+::chipwhisperer\+::common\+::results\+::pgevstraceplot\+::\+P\+G\+E\+Vs\+Trace}}
+\subsubsection[{calculate\+P\+G\+E}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+results.\+pgevstraceplot.\+P\+G\+E\+Vs\+Trace.\+calculate\+P\+G\+E (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1pgevstraceplot_1_1PGEVsTrace_ad1074cc8b19ffa1cc7cc156b4d7799f9}
+\begin{DoxyVerb}Calculate the Partial Guessing Entropy (PGE)\end{DoxyVerb}
+ 
+
+References software.\+chipwhisperer.\+common.\+utils.\+analysissource.\+Analysis\+Observer.\+\_\+analysis\+Source.
+
+
+
+Referenced by software.\+chipwhisperer.\+common.\+results.\+pgevstraceplot.\+P\+G\+E\+Vs\+Trace.\+copy\+P\+G\+E(), and software.\+chipwhisperer.\+common.\+results.\+pgevstraceplot.\+P\+G\+E\+Vs\+Trace.\+redraw\+Plot().
+
+
+\begin{DoxyCode}
+101     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1pgevstraceplot_1_1PGEVsTrace_ad1074cc8b19ffa1cc7cc156b4d7799f9}{calculatePGE}(self):
+102         \textcolor{stringliteral}{"""Calculate the Partial Guessing Entropy (PGE)"""}
+103         \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} self.\_analysisSource:
+104             \textcolor{keywordflow}{raise} Warning(\textcolor{stringliteral}{"Attack not set/executed yet"})
+105 
+106         stats = self.\_analysisSource.getStatistics()
+107         pge = stats.pge\_total
+108         allpge = util.DictType()
+109 
+110         \textcolor{keywordflow}{for} i \textcolor{keywordflow}{in} pge:
+111             tnum = i[\textcolor{stringliteral}{'trace'}]
+112             \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} tnum \textcolor{keywordflow}{in} allpge:
+113                 allpge[tnum] = [\{\textcolor{stringliteral}{'pgesum'}:0, \textcolor{stringliteral}{'trials'}:0\} \textcolor{keywordflow}{for} z \textcolor{keywordflow}{in} range(0,stats.numSubkeys)]
+114 
+115             allpge[tnum][i[\textcolor{stringliteral}{'subkey'}]][\textcolor{stringliteral}{'pgesum'}] += i[\textcolor{stringliteral}{'pge'}]
+116             allpge[tnum][i[\textcolor{stringliteral}{'subkey'}]][\textcolor{stringliteral}{'trials'}] += 1
+117 
+118         \textcolor{keywordflow}{for} (tnum, plist) \textcolor{keywordflow}{in} allpge.iteritems():
+119             \textcolor{keywordflow}{for} j \textcolor{keywordflow}{in} plist:
+120                 \textcolor{keywordflow}{if} j[\textcolor{stringliteral}{'trials'}] > 0:
+121                     j[\textcolor{stringliteral}{'pge'}] = float(j[\textcolor{stringliteral}{'pgesum'}]) / float(j[\textcolor{stringliteral}{'trials'}])
+122                     \textcolor{comment}{# print "%d "%j['trials'],}
+123                 \textcolor{keywordflow}{else}:
+124                     j[\textcolor{stringliteral}{'pge'}] = \textcolor{keywordtype}{None}
+125 
+126         \textcolor{comment}{#print ""}
+127 
+128         \textcolor{keywordflow}{return} allpge
+129 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1pgevstraceplot_1_1PGEVsTrace_a8a9d71b5b6a422510d16b0da496a29f0}{}\index{software\+::chipwhisperer\+::common\+::results\+::pgevstraceplot\+::\+P\+G\+E\+Vs\+Trace@{software\+::chipwhisperer\+::common\+::results\+::pgevstraceplot\+::\+P\+G\+E\+Vs\+Trace}!copy\+P\+G\+E@{copy\+P\+G\+E}}
+\index{copy\+P\+G\+E@{copy\+P\+G\+E}!software\+::chipwhisperer\+::common\+::results\+::pgevstraceplot\+::\+P\+G\+E\+Vs\+Trace@{software\+::chipwhisperer\+::common\+::results\+::pgevstraceplot\+::\+P\+G\+E\+Vs\+Trace}}
+\subsubsection[{copy\+P\+G\+E}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+results.\+pgevstraceplot.\+P\+G\+E\+Vs\+Trace.\+copy\+P\+G\+E (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{dont\+Copy = {\ttfamily False}, }
+\item[{}]{add\+Plot\+Matlab = {\ttfamily True}}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1pgevstraceplot_1_1PGEVsTrace_a8a9d71b5b6a422510d16b0da496a29f0}
+\begin{DoxyVerb}Copy the Partial Guessing Entropy (PGE) to clipboard for use in other programs\end{DoxyVerb}
+ 
+
+References software.\+chipwhisperer.\+analyzer.\+attacks.\+\_\+base.\+Attack\+Observer.\+\_\+num\+Keys(), software.\+chipwhisperer.\+common.\+results.\+pgevstraceplot.\+P\+G\+E\+Vs\+Trace.\+calculate\+P\+G\+E(), software.\+chipwhisperer.\+capture.\+scopes.\+\_\+\+Open\+A\+D\+C\+Interface.\+Open\+A\+D\+C\+Settings.\+find\+Param, software.\+chipwhisperer.\+common.\+api.\+Extended\+Parameter.\+Extended\+Parameter.\+find\+Param(), and software.\+chipwhisperer.\+capture.\+scopes.\+\_\+\+Open\+A\+D\+C\+Interface.\+Clock\+Settings.\+find\+Param.
+
+
+
+Referenced by software.\+chipwhisperer.\+common.\+results.\+pgevstraceplot.\+P\+G\+E\+Vs\+Trace.\+\_\+\+\_\+init\+\_\+\+\_\+().
+
+
+\begin{DoxyCode}
+46     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1pgevstraceplot_1_1PGEVsTrace_a8a9d71b5b6a422510d16b0da496a29f0}{copyPGE}(self, dontCopy=False, addPlotMatlab=True):
+47         \textcolor{stringliteral}{"""Copy the Partial Guessing Entropy (PGE) to clipboard for use in other programs"""}
+48         allpge = self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1pgevstraceplot_1_1PGEVsTrace_ad1074cc8b19ffa1cc7cc156b4d7799f9}{calculatePGE}()
+49         cb = QClipboard()
+50 
+51         fmt = self.findParam(\textcolor{stringliteral}{'fmt'}).value()
+52 
+53         \textcolor{keywordflow}{if} fmt == \textcolor{stringliteral}{'CSV'}:
+54             spge = \textcolor{stringliteral}{"Trace Number, "}
+55             \textcolor{keywordflow}{for} i \textcolor{keywordflow}{in} range(0, self.\_numKeys()):
+56                 spge += \textcolor{stringliteral}{"Subkey %d, "}%i
+57             spge += \textcolor{stringliteral}{"\(\backslash\)n"}
+58             \textcolor{keywordflow}{for} (tnum, plist) \textcolor{keywordflow}{in} allpge.iteritems():
+59                 spge += \textcolor{stringliteral}{"%d, "}%tnum
+60                 \textcolor{keywordflow}{for} j \textcolor{keywordflow}{in} plist:
+61                     \textcolor{keywordflow}{if} j[\textcolor{stringliteral}{'trials'}] > 0:
+62                         spge += \textcolor{stringliteral}{"%f, "}%j[\textcolor{stringliteral}{'pge'}]
+63                     \textcolor{keywordflow}{else}:
+64                         spge += \textcolor{stringliteral}{"NaN, "}
+65                 spge += \textcolor{stringliteral}{"\(\backslash\)n"}
+66         \textcolor{keywordflow}{elif} fmt == \textcolor{stringliteral}{'MATLAB'}:
+67             tracestr = \textcolor{stringliteral}{"tnum = ["}
+68             spge = \textcolor{stringliteral}{"pge = ["}
+69             trials = 0
+70             \textcolor{keywordflow}{for} (tnum, plist) \textcolor{keywordflow}{in} allpge.iteritems():
+71                 tracestr += \textcolor{stringliteral}{"%d "}%tnum
+72                 \textcolor{keywordflow}{for} j \textcolor{keywordflow}{in} plist:
+73                     \textcolor{keywordflow}{if} j[\textcolor{stringliteral}{'trials'}] > 0:
+74                         spge += \textcolor{stringliteral}{"%f "}%j[\textcolor{stringliteral}{'pge'}]
+75                         trials = max(trials, j[\textcolor{stringliteral}{'trials'}])
+76                     \textcolor{keywordflow}{else}:
+77                         spge += \textcolor{stringliteral}{"NaN, "}
+78                 spge += \textcolor{stringliteral}{";\(\backslash\)n"}
+79             tracestr += \textcolor{stringliteral}{"];\(\backslash\)n"}
+80             spge += \textcolor{stringliteral}{"];\(\backslash\)n"}
+81             spge += tracestr
+82             spge += \textcolor{stringliteral}{"\(\backslash\)n"}
+83             \textcolor{keywordflow}{if} addPlotMatlab:
+84                 spge += \textcolor{stringliteral}{"plot(tnum, pge)\(\backslash\)n"}
+85                 spge += \textcolor{stringliteral}{"xlabel('Trace Number')\(\backslash\)n"}
+86                 spge += \textcolor{stringliteral}{"ylabel('Average PGE (%d Trials)')\(\backslash\)n"} % trials
+87                 spge += \textcolor{stringliteral}{"title('Average Partial Guessing Entropy (PGE) via ChipWhisperer')\(\backslash\)n"}
+88                 spge += \textcolor{stringliteral}{"legend("}
+89                 \textcolor{keywordflow}{for} k \textcolor{keywordflow}{in} range(0, self.\_numKeys()):
+90                     spge += \textcolor{stringliteral}{"'Subkey %d'"}%k
+91                     \textcolor{keywordflow}{if} k != (self.\_numKeys()-1):
+92                         spge += \textcolor{stringliteral}{", "}
+93                 spge += \textcolor{stringliteral}{")\(\backslash\)n"}
+94         \textcolor{keywordflow}{else}:
+95             \textcolor{keywordflow}{raise} ValueError(\textcolor{stringliteral}{"Invalid fmt: %s"}%fmt)
+96 
+97         \textcolor{keywordflow}{if} dontCopy \textcolor{keywordflow}{is} \textcolor{keyword}{False}:
+98             cb.setText(spge)
+99         \textcolor{keywordflow}{return} spge
+100 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1pgevstraceplot_1_1PGEVsTrace_a7da78636d231527f48261ddf2a4410ba}{}\index{software\+::chipwhisperer\+::common\+::results\+::pgevstraceplot\+::\+P\+G\+E\+Vs\+Trace@{software\+::chipwhisperer\+::common\+::results\+::pgevstraceplot\+::\+P\+G\+E\+Vs\+Trace}!redraw\+Plot@{redraw\+Plot}}
+\index{redraw\+Plot@{redraw\+Plot}!software\+::chipwhisperer\+::common\+::results\+::pgevstraceplot\+::\+P\+G\+E\+Vs\+Trace@{software\+::chipwhisperer\+::common\+::results\+::pgevstraceplot\+::\+P\+G\+E\+Vs\+Trace}}
+\subsubsection[{redraw\+Plot}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+results.\+pgevstraceplot.\+P\+G\+E\+Vs\+Trace.\+redraw\+Plot (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1pgevstraceplot_1_1PGEVsTrace_a7da78636d231527f48261ddf2a4410ba}
+\begin{DoxyVerb}Recalculate the PGE and redraw the PGE plot\end{DoxyVerb}
+ 
+
+References software.\+chipwhisperer.\+common.\+results.\+pgevstraceplot.\+P\+G\+E\+Vs\+Trace.\+calculate\+P\+G\+E(), software.\+chipwhisperer.\+common.\+ui.\+Graph\+Widget.\+Graph\+Widget.\+clear\+Pushed(), software.\+chipwhisperer.\+common.\+results.\+\_\+plotdata.\+Attack\+Result\+Plot.\+enabledbytes, software.\+chipwhisperer.\+analyzer.\+utils.\+Trace\+Explorer\+Scripts.\+Partition\+Display.\+Partition\+Display.\+enabledbytes, and software.\+chipwhisperer.\+common.\+ui.\+Graph\+Widget.\+Graph\+Widget.\+select\+Trace().
+
+
+\begin{DoxyCode}
+130     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1pgevstraceplot_1_1PGEVsTrace_a7da78636d231527f48261ddf2a4410ba}{redrawPlot}(self):
+131         \textcolor{stringliteral}{"""Recalculate the PGE and redraw the PGE plot"""}
+132         allpge = self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1results_1_1pgevstraceplot_1_1PGEVsTrace_ad1074cc8b19ffa1cc7cc156b4d7799f9}{calculatePGE}()
+133 
+134         self.clearPushed()
+135         \textcolor{comment}{#prange = range(self.pstart[bnum], self.pend[bnum])}
+136 
+137         \textcolor{keywordflow}{try}:
+138             \textcolor{keywordflow}{for} bnum \textcolor{keywordflow}{in} range(0, len(self.enabledbytes)):
+139                 \textcolor{keywordflow}{if} self.enabledbytes[bnum]:
+140                     trace = []
+141                     pge = []
+142                     \textcolor{keywordflow}{for} (tnum, plist) \textcolor{keywordflow}{in} allpge.iteritems():
+143                         \textcolor{keywordflow}{if} plist[bnum][\textcolor{stringliteral}{'pge'}] \textcolor{keywordflow}{is} \textcolor{keywordflow}{not} \textcolor{keywordtype}{None}:
+144                             trace.append(tnum)
+145                             pge.append(plist[bnum][\textcolor{stringliteral}{'pge'}])
+146                     p = self.pw.plot(trace, pge, pen=\textcolor{stringliteral}{'}\textcolor{stringliteral}{r')}
+147 \textcolor{stringliteral}{                    p.curve.setClickable(}\textcolor{keyword}{True})
+148                     p.id = str(bnum)
+149                     p.sigClicked.connect(self.selectTrace)
+150         \textcolor{keywordflow}{except} StopIteration:
+151             \textcolor{keywordflow}{pass}
+152 \end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{pgevstraceplot_8py}{pgevstraceplot.\+py}\end{DoxyCompactItemize}

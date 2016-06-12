@@ -1,0 +1,317 @@
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1util}{}\section{software.\+chipwhisperer.\+common.\+utils.\+util Namespace Reference}
+\label{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1util}\index{software.\+chipwhisperer.\+common.\+utils.\+util@{software.\+chipwhisperer.\+common.\+utils.\+util}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1util_1_1Observable}{Observable}
+\item 
+class \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1utils_1_1util_1_1Signal}{Signal}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1util_a11b5d0b7d7861308fcf300efc50a6a68}{get\+Root\+Dir} ()
+\item 
+def \hyperlink{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1util_aae19dbfe7566c2ae892a616cea701954}{copy\+File}
+\item 
+def \hyperlink{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1util_aab8bbeaa86a40daf0f2d054089e79696}{stripped\+Name} (full\+File\+Name)
+\item 
+def \hyperlink{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1util_ae908bc5f3ca084c9501cec78422f1fb7}{append\+And\+Forward\+Error\+Message} (msg, e)
+\item 
+def \hyperlink{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1util_ab9523216670c8ca6ee80632fd361e3d7}{list2hexstr}
+\item 
+def \hyperlink{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1util_ad2cd7abc81938c0de013778a8044d187}{hexstr2list} (data)
+\item 
+def \hyperlink{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1util_a6f71ffb5d9ae253734e37a687d49d132}{str\+List\+To\+List} (strlist)
+\item 
+def \hyperlink{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1util_a11d75631a72f9c0c702542db1e3591d5}{convert\+\_\+to\+\_\+str} (data)
+\item 
+def \hyperlink{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1util_a1d3b1731a3bdb29f7a0b429095243bb3}{hex\+Str\+To\+Byte\+Array} (hex\+Str)
+\item 
+def \hyperlink{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1util_af9db4a9b0df70649f5afcf541196edba}{get\+Py\+Files} (dir)
+\item 
+def \hyperlink{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1util_a122bb717e53cd2ccfa7274a307679202}{set\+U\+Iupdate\+Function} (func)
+\item 
+def \hyperlink{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1util_a2e4fb0757363e9387a6072084d7341a3}{update\+U\+I} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1util_aa256ae974052a2cfddc80fd21216b08d}{Dict\+Type} = Ordered\+Dict
+\item 
+\hyperlink{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1util_adc2daa599b24498a339b01ed819bca3d}{\+\_\+uiupdate\+Function} = None
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1util_ae908bc5f3ca084c9501cec78422f1fb7}{}\index{software\+::chipwhisperer\+::common\+::utils\+::util@{software\+::chipwhisperer\+::common\+::utils\+::util}!append\+And\+Forward\+Error\+Message@{append\+And\+Forward\+Error\+Message}}
+\index{append\+And\+Forward\+Error\+Message@{append\+And\+Forward\+Error\+Message}!software\+::chipwhisperer\+::common\+::utils\+::util@{software\+::chipwhisperer\+::common\+::utils\+::util}}
+\subsubsection[{append\+And\+Forward\+Error\+Message}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+utils.\+util.\+append\+And\+Forward\+Error\+Message (
+\begin{DoxyParamCaption}
+\item[{}]{msg, }
+\item[{}]{e}
+\end{DoxyParamCaption}
+)}\label{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1util_ae908bc5f3ca084c9501cec78422f1fb7}
+
+\begin{DoxyCode}
+58 \textcolor{keyword}{def }\hyperlink{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1util_ae908bc5f3ca084c9501cec78422f1fb7}{appendAndForwardErrorMessage}(msg, e):
+59     \textcolor{keywordflow}{raise} type(e)(msg + \textcolor{stringliteral}{"\(\backslash\)n  -> "} + str(e))
+60 
+61 
+\end{DoxyCode}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1util_a11d75631a72f9c0c702542db1e3591d5}{}\index{software\+::chipwhisperer\+::common\+::utils\+::util@{software\+::chipwhisperer\+::common\+::utils\+::util}!convert\+\_\+to\+\_\+str@{convert\+\_\+to\+\_\+str}}
+\index{convert\+\_\+to\+\_\+str@{convert\+\_\+to\+\_\+str}!software\+::chipwhisperer\+::common\+::utils\+::util@{software\+::chipwhisperer\+::common\+::utils\+::util}}
+\subsubsection[{convert\+\_\+to\+\_\+str}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+utils.\+util.\+convert\+\_\+to\+\_\+str (
+\begin{DoxyParamCaption}
+\item[{}]{data}
+\end{DoxyParamCaption}
+)}\label{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1util_a11d75631a72f9c0c702542db1e3591d5}
+\begin{DoxyVerb}Converts all dictionary elements to string type - similar to what ConfigObj will
+be doing when it saves and loads the data.
+\end{DoxyVerb}
+ 
+\begin{DoxyCode}
+115 \textcolor{keyword}{def }\hyperlink{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1util_a11d75631a72f9c0c702542db1e3591d5}{convert\_to\_str}(data):
+116     \textcolor{stringliteral}{"""}
+117 \textcolor{stringliteral}{    Converts all dictionary elements to string type - similar to what ConfigObj will}
+118 \textcolor{stringliteral}{    be doing when it saves and loads the data.}
+119 \textcolor{stringliteral}{    """}
+120     \textcolor{keywordflow}{if} isinstance(data, collections.Mapping):
+121         \textcolor{keywordflow}{return} dict(map(convert\_to\_str, data.iteritems()))
+122     \textcolor{keywordflow}{elif} isinstance(data, collections.Iterable) \textcolor{keywordflow}{and} \textcolor{keywordflow}{not} isinstance(data, basestring):
+123         \textcolor{keywordflow}{return} type(data)(map(convert\_to\_str, data))
+124     \textcolor{keywordflow}{else}:
+125         \textcolor{keywordflow}{return} str(data)
+126 
+127 
+\end{DoxyCode}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1util_aae19dbfe7566c2ae892a616cea701954}{}\index{software\+::chipwhisperer\+::common\+::utils\+::util@{software\+::chipwhisperer\+::common\+::utils\+::util}!copy\+File@{copy\+File}}
+\index{copy\+File@{copy\+File}!software\+::chipwhisperer\+::common\+::utils\+::util@{software\+::chipwhisperer\+::common\+::utils\+::util}}
+\subsubsection[{copy\+File}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+utils.\+util.\+copy\+File (
+\begin{DoxyParamCaption}
+\item[{}]{source, }
+\item[{}]{destination, }
+\item[{}]{keep\+Originals = {\ttfamily True}}
+\end{DoxyParamCaption}
+)}\label{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1util_aae19dbfe7566c2ae892a616cea701954}
+
+\begin{DoxyCode}
+45 \textcolor{keyword}{def }\hyperlink{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1util_aae19dbfe7566c2ae892a616cea701954}{copyFile}(source, destination, keepOriginals = True):
+46     \textcolor{keywordflow}{if} keepOriginals:
+47         shutil.copy2(source, destination)
+48     \textcolor{keywordflow}{else}:
+49         shutil.move(source, destination)
+50 
+51 
+\end{DoxyCode}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1util_af9db4a9b0df70649f5afcf541196edba}{}\index{software\+::chipwhisperer\+::common\+::utils\+::util@{software\+::chipwhisperer\+::common\+::utils\+::util}!get\+Py\+Files@{get\+Py\+Files}}
+\index{get\+Py\+Files@{get\+Py\+Files}!software\+::chipwhisperer\+::common\+::utils\+::util@{software\+::chipwhisperer\+::common\+::utils\+::util}}
+\subsubsection[{get\+Py\+Files}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+utils.\+util.\+get\+Py\+Files (
+\begin{DoxyParamCaption}
+\item[{}]{dir}
+\end{DoxyParamCaption}
+)}\label{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1util_af9db4a9b0df70649f5afcf541196edba}
+
+\begin{DoxyCode}
+135 \textcolor{keyword}{def }\hyperlink{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1util_af9db4a9b0df70649f5afcf541196edba}{getPyFiles}(dir):
+136     scriptList = []
+137     \textcolor{keywordflow}{if} os.path.isdir(dir):
+138         \textcolor{keywordflow}{for} fn \textcolor{keywordflow}{in} os.listdir(dir):
+139             fnfull = dir + \textcolor{stringliteral}{'/'} + fn
+140             \textcolor{keywordflow}{if} os.path.isfile(fnfull) \textcolor{keywordflow}{and} fnfull.lower().endswith(\textcolor{stringliteral}{'.py'}) \textcolor{keywordflow}{and} (\textcolor{keywordflow}{not} fnfull.endswith(\textcolor{stringliteral}{'
+      \_\_init\_\_.py'})) \textcolor{keywordflow}{and} (\textcolor{keywordflow}{not} fn.startswith(\textcolor{stringliteral}{'\_'})):
+141                 scriptList.append(os.path.splitext(fn)[0])
+142     \textcolor{keywordflow}{return} scriptList
+143 
+144 
+\end{DoxyCode}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1util_a11b5d0b7d7861308fcf300efc50a6a68}{}\index{software\+::chipwhisperer\+::common\+::utils\+::util@{software\+::chipwhisperer\+::common\+::utils\+::util}!get\+Root\+Dir@{get\+Root\+Dir}}
+\index{get\+Root\+Dir@{get\+Root\+Dir}!software\+::chipwhisperer\+::common\+::utils\+::util@{software\+::chipwhisperer\+::common\+::utils\+::util}}
+\subsubsection[{get\+Root\+Dir}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+utils.\+util.\+get\+Root\+Dir (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1util_a11b5d0b7d7861308fcf300efc50a6a68}
+
+\begin{DoxyCode}
+40 \textcolor{keyword}{def }\hyperlink{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1util_a11b5d0b7d7861308fcf300efc50a6a68}{getRootDir}():
+41     path = os.path.join(os.path.dirname(\_\_file\_\_), \textcolor{stringliteral}{"../../../"})
+42     \textcolor{keywordflow}{return} os.path.normpath(path)
+43 
+44 
+\end{DoxyCode}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1util_ad2cd7abc81938c0de013778a8044d187}{}\index{software\+::chipwhisperer\+::common\+::utils\+::util@{software\+::chipwhisperer\+::common\+::utils\+::util}!hexstr2list@{hexstr2list}}
+\index{hexstr2list@{hexstr2list}!software\+::chipwhisperer\+::common\+::utils\+::util@{software\+::chipwhisperer\+::common\+::utils\+::util}}
+\subsubsection[{hexstr2list}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+utils.\+util.\+hexstr2list (
+\begin{DoxyParamCaption}
+\item[{}]{data}
+\end{DoxyParamCaption}
+)}\label{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1util_ad2cd7abc81938c0de013778a8044d187}
+\begin{DoxyVerb}Convert a string with hex numbers into a list of numbers\end{DoxyVerb}
+ 
+
+Referenced by software.\+chipwhisperer.\+capture.\+targets.\+\_\+smartcard\+\_\+gui.\+Smart\+Card\+G\+U\+I\+Card.\+execute\+A\+P\+D\+Us(), software.\+chipwhisperer.\+common.\+ui.\+Key\+Schedule\+Dialog.\+Key\+Schedule\+Dialog.\+in\+Text\+Changed(), and software.\+chipwhisperer.\+capture.\+targets.\+\_\+smartcard\+\_\+gui.\+A\+P\+D\+U\+Filter.\+validate\+A\+P\+D\+U().
+
+
+\begin{DoxyCode}
+77 \textcolor{keyword}{def }\hyperlink{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1util_ad2cd7abc81938c0de013778a8044d187}{hexstr2list}(data):
+78     \textcolor{stringliteral}{"""Convert a string with hex numbers into a list of numbers"""}
+79 
+80     data = str(data)
+81 
+82     newdata = data.lower()
+83     newdata = newdata.replace(\textcolor{stringliteral}{"0x"}, \textcolor{stringliteral}{""})
+84     newdata = newdata.replace(\textcolor{stringliteral}{","}, \textcolor{stringliteral}{""})
+85     newdata = newdata.replace(\textcolor{stringliteral}{" "}, \textcolor{stringliteral}{""})
+86     newdata = newdata.replace(\textcolor{stringliteral}{"["}, \textcolor{stringliteral}{""})
+87     newdata = newdata.replace(\textcolor{stringliteral}{"]"}, \textcolor{stringliteral}{""})
+88     newdata = newdata.replace(\textcolor{stringliteral}{"("}, \textcolor{stringliteral}{""})
+89     newdata = newdata.replace(\textcolor{stringliteral}{")"}, \textcolor{stringliteral}{""})
+90     newdata = newdata.replace(\textcolor{stringliteral}{"\{"}, \textcolor{stringliteral}{""})
+91     newdata = newdata.replace(\textcolor{stringliteral}{"\}"}, \textcolor{stringliteral}{""})
+92     newdata = newdata.replace(\textcolor{stringliteral}{":"}, \textcolor{stringliteral}{""})
+93     newdata = newdata.replace(\textcolor{stringliteral}{"-"}, \textcolor{stringliteral}{""})
+94 
+95     datalist = [int(newdata[i:(i + 2)], 16) \textcolor{keywordflow}{for} i \textcolor{keywordflow}{in} range(0, len(newdata), 2)]
+96 
+97     \textcolor{keywordflow}{return} datalist
+98 
+99 
+\end{DoxyCode}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1util_a1d3b1731a3bdb29f7a0b429095243bb3}{}\index{software\+::chipwhisperer\+::common\+::utils\+::util@{software\+::chipwhisperer\+::common\+::utils\+::util}!hex\+Str\+To\+Byte\+Array@{hex\+Str\+To\+Byte\+Array}}
+\index{hex\+Str\+To\+Byte\+Array@{hex\+Str\+To\+Byte\+Array}!software\+::chipwhisperer\+::common\+::utils\+::util@{software\+::chipwhisperer\+::common\+::utils\+::util}}
+\subsubsection[{hex\+Str\+To\+Byte\+Array}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+utils.\+util.\+hex\+Str\+To\+Byte\+Array (
+\begin{DoxyParamCaption}
+\item[{}]{hex\+Str}
+\end{DoxyParamCaption}
+)}\label{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1util_a1d3b1731a3bdb29f7a0b429095243bb3}
+
+\begin{DoxyCode}
+128 \textcolor{keyword}{def }\hyperlink{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1util_a1d3b1731a3bdb29f7a0b429095243bb3}{hexStrToByteArray}(hexStr):
+129     ba = bytearray()
+130     \textcolor{keywordflow}{for} s \textcolor{keywordflow}{in} hexStr.split():
+131         ba.append(int(s, 16))
+132     \textcolor{keywordflow}{return} ba
+133 
+134 
+\end{DoxyCode}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1util_ab9523216670c8ca6ee80632fd361e3d7}{}\index{software\+::chipwhisperer\+::common\+::utils\+::util@{software\+::chipwhisperer\+::common\+::utils\+::util}!list2hexstr@{list2hexstr}}
+\index{list2hexstr@{list2hexstr}!software\+::chipwhisperer\+::common\+::utils\+::util@{software\+::chipwhisperer\+::common\+::utils\+::util}}
+\subsubsection[{list2hexstr}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+utils.\+util.\+list2hexstr (
+\begin{DoxyParamCaption}
+\item[{}]{data, }
+\item[{}]{delim = {\ttfamily \textquotesingle{}\textquotesingle{}}, }
+\item[{}]{prefix = {\ttfamily \textquotesingle{}\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\label{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1util_ab9523216670c8ca6ee80632fd361e3d7}
+\begin{DoxyVerb}Convert a list of integers to a hex string, with optional deliminators/prefix
+
+delim is inserted between each list item
+
+prefix is inserted infront of each item (including first item)
+\end{DoxyVerb}
+ 
+\begin{DoxyCode}
+62 \textcolor{keyword}{def }\hyperlink{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1util_ab9523216670c8ca6ee80632fd361e3d7}{list2hexstr}(data, delim='', prefix=''):
+63     \textcolor{stringliteral}{"""}
+64 \textcolor{stringliteral}{    Convert a list of integers to a hex string, with optional deliminators/prefix}
+65 \textcolor{stringliteral}{}
+66 \textcolor{stringliteral}{    delim is inserted between each list item}
+67 \textcolor{stringliteral}{}
+68 \textcolor{stringliteral}{    prefix is inserted infront of each item (including first item)}
+69 \textcolor{stringliteral}{    """}
+70 
+71     rstr = [\textcolor{stringliteral}{"%02x"} % t \textcolor{keywordflow}{for} t \textcolor{keywordflow}{in} data]
+72     rstr = (delim + prefix).join(rstr)
+73     rstr = prefix + rstr
+74     \textcolor{keywordflow}{return} rstr
+75 
+76 
+\end{DoxyCode}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1util_a122bb717e53cd2ccfa7274a307679202}{}\index{software\+::chipwhisperer\+::common\+::utils\+::util@{software\+::chipwhisperer\+::common\+::utils\+::util}!set\+U\+Iupdate\+Function@{set\+U\+Iupdate\+Function}}
+\index{set\+U\+Iupdate\+Function@{set\+U\+Iupdate\+Function}!software\+::chipwhisperer\+::common\+::utils\+::util@{software\+::chipwhisperer\+::common\+::utils\+::util}}
+\subsubsection[{set\+U\+Iupdate\+Function}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+utils.\+util.\+set\+U\+Iupdate\+Function (
+\begin{DoxyParamCaption}
+\item[{}]{func}
+\end{DoxyParamCaption}
+)}\label{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1util_a122bb717e53cd2ccfa7274a307679202}
+
+\begin{DoxyCode}
+186 \textcolor{keyword}{def }\hyperlink{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1util_a122bb717e53cd2ccfa7274a307679202}{setUIupdateFunction}(func):
+187     \textcolor{keyword}{global} \_uiupdateFunction
+188     \_uiupdateFunction= func
+189 
+\end{DoxyCode}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1util_aab8bbeaa86a40daf0f2d054089e79696}{}\index{software\+::chipwhisperer\+::common\+::utils\+::util@{software\+::chipwhisperer\+::common\+::utils\+::util}!stripped\+Name@{stripped\+Name}}
+\index{stripped\+Name@{stripped\+Name}!software\+::chipwhisperer\+::common\+::utils\+::util@{software\+::chipwhisperer\+::common\+::utils\+::util}}
+\subsubsection[{stripped\+Name}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+utils.\+util.\+stripped\+Name (
+\begin{DoxyParamCaption}
+\item[{}]{full\+File\+Name}
+\end{DoxyParamCaption}
+)}\label{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1util_aab8bbeaa86a40daf0f2d054089e79696}
+
+\begin{DoxyCode}
+52 \textcolor{keyword}{def }\hyperlink{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1util_aab8bbeaa86a40daf0f2d054089e79696}{strippedName}(fullFileName):
+53     (filepath, filename) = os.path.split(fullFileName)
+54     (base, toplevel) = os.path.split(filepath)
+55     \textcolor{keywordflow}{return} toplevel + \textcolor{stringliteral}{"/"} + filename
+56 
+57 
+\end{DoxyCode}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1util_a6f71ffb5d9ae253734e37a687d49d132}{}\index{software\+::chipwhisperer\+::common\+::utils\+::util@{software\+::chipwhisperer\+::common\+::utils\+::util}!str\+List\+To\+List@{str\+List\+To\+List}}
+\index{str\+List\+To\+List@{str\+List\+To\+List}!software\+::chipwhisperer\+::common\+::utils\+::util@{software\+::chipwhisperer\+::common\+::utils\+::util}}
+\subsubsection[{str\+List\+To\+List}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+utils.\+util.\+str\+List\+To\+List (
+\begin{DoxyParamCaption}
+\item[{}]{strlist}
+\end{DoxyParamCaption}
+)}\label{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1util_a6f71ffb5d9ae253734e37a687d49d132}
+\begin{DoxyVerb}Convert string in form of '"[33, 42, 43]", "[24, 43, 4]"'
+into a normal list.
+\end{DoxyVerb}
+ 
+\begin{DoxyCode}
+100 \textcolor{keyword}{def }\hyperlink{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1util_a6f71ffb5d9ae253734e37a687d49d132}{strListToList}(strlist):
+101     \textcolor{stringliteral}{"""}
+102 \textcolor{stringliteral}{    Convert string in form of '"[33, 42, 43]", "[24, 43, 4]"'}
+103 \textcolor{stringliteral}{    into a normal list.}
+104 \textcolor{stringliteral}{    """}
+105 
+106     strlist = strlist.replace(\textcolor{stringliteral}{'"'}, \textcolor{stringliteral}{''})
+107     strlist = strlist.replace(\textcolor{stringliteral}{"'"}, \textcolor{stringliteral}{""})
+108     \textcolor{keywordflow}{try}:
+109         listeval = ast.literal\_eval(strlist)
+110         \textcolor{keywordflow}{return} listeval
+111     \textcolor{keywordflow}{except} ValueError:
+112         \textcolor{keywordflow}{raise} ValueError(\textcolor{stringliteral}{"Failed to convert %s to list"} % (strlist))
+113 
+114 
+\end{DoxyCode}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1util_a2e4fb0757363e9387a6072084d7341a3}{}\index{software\+::chipwhisperer\+::common\+::utils\+::util@{software\+::chipwhisperer\+::common\+::utils\+::util}!update\+U\+I@{update\+U\+I}}
+\index{update\+U\+I@{update\+U\+I}!software\+::chipwhisperer\+::common\+::utils\+::util@{software\+::chipwhisperer\+::common\+::utils\+::util}}
+\subsubsection[{update\+U\+I}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+utils.\+util.\+update\+U\+I (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1util_a2e4fb0757363e9387a6072084d7341a3}
+
+
+References software.\+chipwhisperer.\+common.\+utils.\+util.\+\_\+uiupdate\+Function.
+
+
+\begin{DoxyCode}
+190 \textcolor{keyword}{def }\hyperlink{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1util_a2e4fb0757363e9387a6072084d7341a3}{updateUI}():
+191     \textcolor{keywordflow}{if} \_uiupdateFunction:
+192         \hyperlink{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1util_adc2daa599b24498a339b01ed819bca3d}{\_uiupdateFunction}()\end{DoxyCode}
+
+
+\subsection{Variable Documentation}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1util_adc2daa599b24498a339b01ed819bca3d}{}\index{software\+::chipwhisperer\+::common\+::utils\+::util@{software\+::chipwhisperer\+::common\+::utils\+::util}!\+\_\+uiupdate\+Function@{\+\_\+uiupdate\+Function}}
+\index{\+\_\+uiupdate\+Function@{\+\_\+uiupdate\+Function}!software\+::chipwhisperer\+::common\+::utils\+::util@{software\+::chipwhisperer\+::common\+::utils\+::util}}
+\subsubsection[{\+\_\+uiupdate\+Function}]{\setlength{\rightskip}{0pt plus 5cm}software.\+chipwhisperer.\+common.\+utils.\+util.\+\_\+uiupdate\+Function = None}\label{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1util_adc2daa599b24498a339b01ed819bca3d}
+
+
+Referenced by software.\+chipwhisperer.\+common.\+utils.\+util.\+update\+U\+I().
+
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1util_aa256ae974052a2cfddc80fd21216b08d}{}\index{software\+::chipwhisperer\+::common\+::utils\+::util@{software\+::chipwhisperer\+::common\+::utils\+::util}!Dict\+Type@{Dict\+Type}}
+\index{Dict\+Type@{Dict\+Type}!software\+::chipwhisperer\+::common\+::utils\+::util@{software\+::chipwhisperer\+::common\+::utils\+::util}}
+\subsubsection[{Dict\+Type}]{\setlength{\rightskip}{0pt plus 5cm}software.\+chipwhisperer.\+common.\+utils.\+util.\+Dict\+Type = Ordered\+Dict}\label{namespacesoftware_1_1chipwhisperer_1_1common_1_1utils_1_1util_aa256ae974052a2cfddc80fd21216b08d}

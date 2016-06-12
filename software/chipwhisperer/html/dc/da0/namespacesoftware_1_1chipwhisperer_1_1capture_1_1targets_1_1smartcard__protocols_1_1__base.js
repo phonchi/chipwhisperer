@@ -1,0 +1,4 @@
+var namespacesoftware_1_1chipwhisperer_1_1capture_1_1targets_1_1smartcard__protocols_1_1__base =
+[
+    [ "ProtocolTemplate", "df/dea/classsoftware_1_1chipwhisperer_1_1capture_1_1targets_1_1smartcard__protocols_1_1__base_1_1ProtocolTemplate.html", "df/dea/classsoftware_1_1chipwhisperer_1_1capture_1_1targets_1_1smartcard__protocols_1_1__base_1_1ProtocolTemplate" ]
+];

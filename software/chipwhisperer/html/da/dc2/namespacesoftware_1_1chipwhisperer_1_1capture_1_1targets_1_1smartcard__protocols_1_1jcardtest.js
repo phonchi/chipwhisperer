@@ -1,0 +1,4 @@
+var namespacesoftware_1_1chipwhisperer_1_1capture_1_1targets_1_1smartcard__protocols_1_1jcardtest =
+[
+    [ "ProtocolJCardTest", "dd/d83/classsoftware_1_1chipwhisperer_1_1capture_1_1targets_1_1smartcard__protocols_1_1jcardtest_1_1ProtocolJCardTest.html", "dd/d83/classsoftware_1_1chipwhisperer_1_1capture_1_1targets_1_1smartcard__protocols_1_1jcardtest_1_1ProtocolJCardTest" ]
+];

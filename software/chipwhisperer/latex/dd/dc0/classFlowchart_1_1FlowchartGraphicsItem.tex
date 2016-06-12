@@ -1,0 +1,141 @@
+\hypertarget{classFlowchart_1_1FlowchartGraphicsItem}{}\section{Flowchart.\+Flowchart\+Graphics\+Item Class Reference}
+\label{classFlowchart_1_1FlowchartGraphicsItem}\index{Flowchart.\+Flowchart\+Graphics\+Item@{Flowchart.\+Flowchart\+Graphics\+Item}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classFlowchart_1_1FlowchartGraphicsItem_a16a4f583fcbe809db1bfcf36b30cbb3c}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self, \hyperlink{classFlowchart_1_1FlowchartGraphicsItem_a45b3c53ca87846d8371be9a2b4f105de}{chart})
+\item 
+def \hyperlink{classFlowchart_1_1FlowchartGraphicsItem_a04fff90776f467e80dc74cf01f7de075}{update\+Terminals} (self)
+\item 
+def \hyperlink{classFlowchart_1_1FlowchartGraphicsItem_a1ddef431c6038f1667559a14bfca806d}{bounding\+Rect} (self)
+\item 
+def \hyperlink{classFlowchart_1_1FlowchartGraphicsItem_acd7fbc7ecf3b1d2244a1cf0275d9872a}{paint} (self, p, args)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFlowchart_1_1FlowchartGraphicsItem_a45b3c53ca87846d8371be9a2b4f105de}{chart}
+\item 
+\hyperlink{classFlowchart_1_1FlowchartGraphicsItem_a919ee98b54e9529135f69abc23d7ebe9}{terminals}
+\end{DoxyCompactItemize}
+
+
+Inheritance diagram for Flowchart.\+Flowchart\+Graphics\+Item\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{d3/d17/classFlowchart_1_1FlowchartGraphicsItem__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Flowchart.\+Flowchart\+Graphics\+Item\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{dc/d90/classFlowchart_1_1FlowchartGraphicsItem__coll__graph}
+\end{center}
+\end{figure}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFlowchart_1_1FlowchartGraphicsItem_a16a4f583fcbe809db1bfcf36b30cbb3c}{}\index{Flowchart\+::\+Flowchart\+Graphics\+Item@{Flowchart\+::\+Flowchart\+Graphics\+Item}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!Flowchart\+::\+Flowchart\+Graphics\+Item@{Flowchart\+::\+Flowchart\+Graphics\+Item}}
+\subsubsection[{\+\_\+\+\_\+init\+\_\+\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}def Flowchart.\+Flowchart\+Graphics\+Item.\+\_\+\+\_\+init\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{chart}
+\end{DoxyParamCaption}
+)}\label{classFlowchart_1_1FlowchartGraphicsItem_a16a4f583fcbe809db1bfcf36b30cbb3c}
+
+\begin{DoxyCode}
+617     \textcolor{keyword}{def }\hyperlink{classFlowchart_1_1FlowchartGraphicsItem_a16a4f583fcbe809db1bfcf36b30cbb3c}{\_\_init\_\_}(self, chart):
+618         \textcolor{comment}{#print "FlowchartGraphicsItem.\_\_init\_\_"}
+619         \textcolor{comment}{#QtGui.QGraphicsItem.\_\_init\_\_(self)}
+620         GraphicsObject.\_\_init\_\_(self)
+621         self.\hyperlink{classFlowchart_1_1FlowchartGraphicsItem_a45b3c53ca87846d8371be9a2b4f105de}{chart} = chart \textcolor{comment}{## chart is an instance of Flowchart()}
+622         self.\hyperlink{classFlowchart_1_1FlowchartGraphicsItem_a04fff90776f467e80dc74cf01f7de075}{updateTerminals}()
+623         
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classFlowchart_1_1FlowchartGraphicsItem_a1ddef431c6038f1667559a14bfca806d}{}\index{Flowchart\+::\+Flowchart\+Graphics\+Item@{Flowchart\+::\+Flowchart\+Graphics\+Item}!bounding\+Rect@{bounding\+Rect}}
+\index{bounding\+Rect@{bounding\+Rect}!Flowchart\+::\+Flowchart\+Graphics\+Item@{Flowchart\+::\+Flowchart\+Graphics\+Item}}
+\subsubsection[{bounding\+Rect}]{\setlength{\rightskip}{0pt plus 5cm}def Flowchart.\+Flowchart\+Graphics\+Item.\+bounding\+Rect (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classFlowchart_1_1FlowchartGraphicsItem_a1ddef431c6038f1667559a14bfca806d}
+
+\begin{DoxyCode}
+647     \textcolor{keyword}{def }\hyperlink{classFlowchart_1_1FlowchartGraphicsItem_a1ddef431c6038f1667559a14bfca806d}{boundingRect}(self):
+648         \textcolor{comment}{#print "FlowchartGraphicsItem.boundingRect"}
+649         \textcolor{keywordflow}{return} QtCore.QRectF()
+650         
+\end{DoxyCode}
+\hypertarget{classFlowchart_1_1FlowchartGraphicsItem_acd7fbc7ecf3b1d2244a1cf0275d9872a}{}\index{Flowchart\+::\+Flowchart\+Graphics\+Item@{Flowchart\+::\+Flowchart\+Graphics\+Item}!paint@{paint}}
+\index{paint@{paint}!Flowchart\+::\+Flowchart\+Graphics\+Item@{Flowchart\+::\+Flowchart\+Graphics\+Item}}
+\subsubsection[{paint}]{\setlength{\rightskip}{0pt plus 5cm}def Flowchart.\+Flowchart\+Graphics\+Item.\+paint (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{p, }
+\item[{}]{args}
+\end{DoxyParamCaption}
+)}\label{classFlowchart_1_1FlowchartGraphicsItem_acd7fbc7ecf3b1d2244a1cf0275d9872a}
+
+\begin{DoxyCode}
+651     \textcolor{keyword}{def }\hyperlink{classFlowchart_1_1FlowchartGraphicsItem_acd7fbc7ecf3b1d2244a1cf0275d9872a}{paint}(self, p, *args):
+652         \textcolor{comment}{#print "FlowchartGraphicsItem.paint"}
+653         \textcolor{keywordflow}{pass}
+654         \textcolor{comment}{#p.drawRect(self.boundingRect())}
+655     
+656 
+\end{DoxyCode}
+\hypertarget{classFlowchart_1_1FlowchartGraphicsItem_a04fff90776f467e80dc74cf01f7de075}{}\index{Flowchart\+::\+Flowchart\+Graphics\+Item@{Flowchart\+::\+Flowchart\+Graphics\+Item}!update\+Terminals@{update\+Terminals}}
+\index{update\+Terminals@{update\+Terminals}!Flowchart\+::\+Flowchart\+Graphics\+Item@{Flowchart\+::\+Flowchart\+Graphics\+Item}}
+\subsubsection[{update\+Terminals}]{\setlength{\rightskip}{0pt plus 5cm}def Flowchart.\+Flowchart\+Graphics\+Item.\+update\+Terminals (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classFlowchart_1_1FlowchartGraphicsItem_a04fff90776f467e80dc74cf01f7de075}
+
+\begin{DoxyCode}
+624     \textcolor{keyword}{def }\hyperlink{classFlowchart_1_1FlowchartGraphicsItem_a04fff90776f467e80dc74cf01f7de075}{updateTerminals}(self):
+625         \textcolor{comment}{#print "FlowchartGraphicsItem.updateTerminals"}
+626         self.\hyperlink{classFlowchart_1_1FlowchartGraphicsItem_a919ee98b54e9529135f69abc23d7ebe9}{terminals} = \{\}
+627         bounds = self.\hyperlink{classFlowchart_1_1FlowchartGraphicsItem_a1ddef431c6038f1667559a14bfca806d}{boundingRect}()
+628         inp = self.chart.inputs()
+629         dy = bounds.height() / (len(inp)+1)
+630         y = dy
+631         \textcolor{keywordflow}{for} n, t \textcolor{keywordflow}{in} inp.items():
+632             item = t.graphicsItem()
+633             self.\hyperlink{classFlowchart_1_1FlowchartGraphicsItem_a919ee98b54e9529135f69abc23d7ebe9}{terminals}[n] = item
+634             item.setParentItem(self)
+635             item.setAnchor(bounds.width(), y)
+636             y += dy
+637         out = self.chart.outputs()
+638         dy = bounds.height() / (len(out)+1)
+639         y = dy
+640         \textcolor{keywordflow}{for} n, t \textcolor{keywordflow}{in} out.items():
+641             item = t.graphicsItem()
+642             self.\hyperlink{classFlowchart_1_1FlowchartGraphicsItem_a919ee98b54e9529135f69abc23d7ebe9}{terminals}[n] = item
+643             item.setParentItem(self)
+644             item.setAnchor(0, y)
+645             y += dy
+646         
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classFlowchart_1_1FlowchartGraphicsItem_a45b3c53ca87846d8371be9a2b4f105de}{}\index{Flowchart\+::\+Flowchart\+Graphics\+Item@{Flowchart\+::\+Flowchart\+Graphics\+Item}!chart@{chart}}
+\index{chart@{chart}!Flowchart\+::\+Flowchart\+Graphics\+Item@{Flowchart\+::\+Flowchart\+Graphics\+Item}}
+\subsubsection[{chart}]{\setlength{\rightskip}{0pt plus 5cm}Flowchart.\+Flowchart\+Graphics\+Item.\+chart}\label{classFlowchart_1_1FlowchartGraphicsItem_a45b3c53ca87846d8371be9a2b4f105de}
+\hypertarget{classFlowchart_1_1FlowchartGraphicsItem_a919ee98b54e9529135f69abc23d7ebe9}{}\index{Flowchart\+::\+Flowchart\+Graphics\+Item@{Flowchart\+::\+Flowchart\+Graphics\+Item}!terminals@{terminals}}
+\index{terminals@{terminals}!Flowchart\+::\+Flowchart\+Graphics\+Item@{Flowchart\+::\+Flowchart\+Graphics\+Item}}
+\subsubsection[{terminals}]{\setlength{\rightskip}{0pt plus 5cm}Flowchart.\+Flowchart\+Graphics\+Item.\+terminals}\label{classFlowchart_1_1FlowchartGraphicsItem_a919ee98b54e9529135f69abc23d7ebe9}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Flowchart_8py}{Flowchart.\+py}\end{DoxyCompactItemize}

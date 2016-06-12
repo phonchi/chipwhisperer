@@ -1,0 +1,265 @@
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1autoscript_1_1SmartStatements}{}\section{software.\+chipwhisperer.\+common.\+api.\+autoscript.\+Smart\+Statements Class Reference}
+\label{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1autoscript_1_1SmartStatements}\index{software.\+chipwhisperer.\+common.\+api.\+autoscript.\+Smart\+Statements@{software.\+chipwhisperer.\+common.\+api.\+autoscript.\+Smart\+Statements}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1autoscript_1_1SmartStatements_a04fd2e08634929a891dd466867b739ad}{\+\_\+\+\_\+init\+\_\+\+\_\+} (self)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1autoscript_1_1SmartStatements_af107c14e9e33170b981f44c5bceadcf4}{add\+Variable\+Assignment}
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1autoscript_1_1SmartStatements_aa73a99168bb14bc90ddb6101ad0809c1}{add\+Function\+Call}
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1autoscript_1_1SmartStatements_a99f6aecb789f5bb35fb8ae72d8616ef9}{del\+Function\+Call} (self, methodname)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1autoscript_1_1SmartStatements_aaf3e2a165ea5a5e49eda591f91ef294d}{statements}
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1autoscript_1_1SmartStatements_a82f126bc016ad0c3e81e0b30ad531ef8}{self\+Replacement} (self)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1autoscript_1_1SmartStatements_a284fddfd804bd5ea907fdbe1a11394a7}{add\+Self\+Replacement}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}SmartStatements is a simple class which holds a list of python commands
+to be run in a list. Adding a new command with addFunctionCall() will
+automatically replace a previous call in-place with the new arguments.
+\end{DoxyVerb}
+ 
+
+Inheritance diagram for software.\+chipwhisperer.\+common.\+api.\+autoscript.\+Smart\+Statements\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{df/de0/classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1autoscript_1_1SmartStatements__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for software.\+chipwhisperer.\+common.\+api.\+autoscript.\+Smart\+Statements\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{d0/dcb/classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1autoscript_1_1SmartStatements__coll__graph}
+\end{center}
+\end{figure}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1autoscript_1_1SmartStatements_a04fd2e08634929a891dd466867b739ad}{}\index{software\+::chipwhisperer\+::common\+::api\+::autoscript\+::\+Smart\+Statements@{software\+::chipwhisperer\+::common\+::api\+::autoscript\+::\+Smart\+Statements}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!software\+::chipwhisperer\+::common\+::api\+::autoscript\+::\+Smart\+Statements@{software\+::chipwhisperer\+::common\+::api\+::autoscript\+::\+Smart\+Statements}}
+\subsubsection[{\+\_\+\+\_\+init\+\_\+\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+api.\+autoscript.\+Smart\+Statements.\+\_\+\+\_\+init\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1autoscript_1_1SmartStatements_a04fd2e08634929a891dd466867b739ad}
+
+
+References software.\+chipwhisperer.\+common.\+api.\+autoscript.\+Smart\+Statements.\+\_\+selfreplacement, and software.\+chipwhisperer.\+common.\+api.\+autoscript.\+Smart\+Statements.\+\_\+statements.
+
+
+\begin{DoxyCode}
+38     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1autoscript_1_1SmartStatements_a04fd2e08634929a891dd466867b739ad}{\_\_init\_\_}(self):
+39         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1autoscript_1_1SmartStatements_af10879e7ae478182b70275c18a0af4f8}{\_statements} = list()
+40         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1autoscript_1_1SmartStatements_a937b4e52cf69da12ff77746d07d60be8}{\_selfreplacement} = \textcolor{stringliteral}{"self."}
+41         
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1autoscript_1_1SmartStatements_aa73a99168bb14bc90ddb6101ad0809c1}{}\index{software\+::chipwhisperer\+::common\+::api\+::autoscript\+::\+Smart\+Statements@{software\+::chipwhisperer\+::common\+::api\+::autoscript\+::\+Smart\+Statements}!add\+Function\+Call@{add\+Function\+Call}}
+\index{add\+Function\+Call@{add\+Function\+Call}!software\+::chipwhisperer\+::common\+::api\+::autoscript\+::\+Smart\+Statements@{software\+::chipwhisperer\+::common\+::api\+::autoscript\+::\+Smart\+Statements}}
+\subsubsection[{add\+Function\+Call}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+api.\+autoscript.\+Smart\+Statements.\+add\+Function\+Call (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{methodname, }
+\item[{}]{arguments, }
+\item[{}]{varassignment = {\ttfamily None}, }
+\item[{}]{obj = {\ttfamily \char`\"{}self\char`\"{}}, }
+\item[{}]{loc = {\ttfamily None}}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1autoscript_1_1SmartStatements_aa73a99168bb14bc90ddb6101ad0809c1}
+\begin{DoxyVerb}Will add a python statement of the format 'methodname(arguments)'
+to the list of Python commands. If you already have a statement
+calling methodname() this will be replaced in-place.
+\end{DoxyVerb}
+ 
+
+References software.\+chipwhisperer.\+common.\+api.\+autoscript.\+Smart\+Statements.\+\_\+statements.
+
+
+\begin{DoxyCode}
+63     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1autoscript_1_1SmartStatements_aa73a99168bb14bc90ddb6101ad0809c1}{addFunctionCall}(self, methodname, arguments, varassignment=None, obj="self", 
+      loc=None):
+64         \textcolor{stringliteral}{"""}
+65 \textcolor{stringliteral}{        Will add a python statement of the format 'methodname(arguments)'}
+66 \textcolor{stringliteral}{        to the list of Python commands. If you already have a statement}
+67 \textcolor{stringliteral}{        calling methodname() this will be replaced in-place.}
+68 \textcolor{stringliteral}{        """}
+69         statementIndex = -1
+70         \textcolor{keywordflow}{for} i,s \textcolor{keywordflow}{in} enumerate(self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1autoscript_1_1SmartStatements_af10879e7ae478182b70275c18a0af4f8}{\_statements}):
+71             \textcolor{keywordflow}{if} s[\textcolor{stringliteral}{"objname"}] == methodname:
+72                 statementIndex = i
+73 
+74         \textcolor{keywordflow}{if} len(obj) > 0: obj += \textcolor{stringliteral}{"."}
+75 
+76         mstr = \textcolor{stringliteral}{"%s%s(%s)"} % (obj, methodname, arguments)
+77 
+78         \textcolor{keywordflow}{if} varassignment:
+79             mstr = varassignment + \textcolor{stringliteral}{" = "} + mstr
+80 
+81         \textcolor{keywordflow}{if} statementIndex == -1:
+82             d = \{\textcolor{stringliteral}{"objname"}:methodname,
+83                  \textcolor{stringliteral}{"type"}:\textcolor{stringliteral}{"function"},
+84                  \textcolor{stringliteral}{"args"}:arguments,
+85                  \textcolor{stringliteral}{"varassignment"}:varassignment,
+86                  \textcolor{stringliteral}{"obj"}:obj,
+87                  \textcolor{stringliteral}{"command"}:mstr\}
+88             \textcolor{keywordflow}{if} loc \textcolor{keywordflow}{is} \textcolor{keywordflow}{not} \textcolor{keywordtype}{None}:
+89                 self.\_statements.insert(loc, d)
+90             \textcolor{keywordflow}{else}:
+91                 self.\_statements.append(d)
+92         \textcolor{keywordflow}{else}:
+93             self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1autoscript_1_1SmartStatements_af10879e7ae478182b70275c18a0af4f8}{\_statements}[statementIndex][\textcolor{stringliteral}{"command"}] = mstr
+94             self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1autoscript_1_1SmartStatements_af10879e7ae478182b70275c18a0af4f8}{\_statements}[statementIndex][\textcolor{stringliteral}{"args"}] = arguments
+95             self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1autoscript_1_1SmartStatements_af10879e7ae478182b70275c18a0af4f8}{\_statements}[statementIndex][\textcolor{stringliteral}{"varassignment"}] = varassignment
+96             self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1autoscript_1_1SmartStatements_af10879e7ae478182b70275c18a0af4f8}{\_statements}[statementIndex][\textcolor{stringliteral}{"obj"}] = obj
+97             
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1autoscript_1_1SmartStatements_a284fddfd804bd5ea907fdbe1a11394a7}{}\index{software\+::chipwhisperer\+::common\+::api\+::autoscript\+::\+Smart\+Statements@{software\+::chipwhisperer\+::common\+::api\+::autoscript\+::\+Smart\+Statements}!add\+Self\+Replacement@{add\+Self\+Replacement}}
+\index{add\+Self\+Replacement@{add\+Self\+Replacement}!software\+::chipwhisperer\+::common\+::api\+::autoscript\+::\+Smart\+Statements@{software\+::chipwhisperer\+::common\+::api\+::autoscript\+::\+Smart\+Statements}}
+\subsubsection[{add\+Self\+Replacement}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+api.\+autoscript.\+Smart\+Statements.\+add\+Self\+Replacement (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{newstr, }
+\item[{}]{force = {\ttfamily False}}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1autoscript_1_1SmartStatements_a284fddfd804bd5ea907fdbe1a11394a7}
+
+
+References software.\+chipwhisperer.\+common.\+api.\+autoscript.\+Smart\+Statements.\+\_\+selfreplacement.
+
+
+\begin{DoxyCode}
+120     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1autoscript_1_1SmartStatements_a284fddfd804bd5ea907fdbe1a11394a7}{addSelfReplacement}(self, newstr, force=False):
+121         \textcolor{keywordflow}{if} force \textcolor{keywordflow}{or} newstr \textcolor{keywordflow}{not} \textcolor{keywordflow}{in} self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1autoscript_1_1SmartStatements_a937b4e52cf69da12ff77746d07d60be8}{\_selfreplacement}:
+122             \textcolor{comment}{# print newstr not in self.\_selfreplacement}
+123             \textcolor{comment}{# print "%s: %s" % (self.\_selfreplacement, newstr)}
+124 
+125             \textcolor{keywordflow}{if} len(self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1autoscript_1_1SmartStatements_a937b4e52cf69da12ff77746d07d60be8}{\_selfreplacement}) > 0:
+126                 sp = self.\_selfreplacement.split(\textcolor{stringliteral}{"."}, 1)
+127                 self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1autoscript_1_1SmartStatements_a937b4e52cf69da12ff77746d07d60be8}{\_selfreplacement} = sp[0] + \textcolor{stringliteral}{"."} + newstr + sp[1]
+128             \textcolor{keywordflow}{else}:
+129                 self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1autoscript_1_1SmartStatements_a937b4e52cf69da12ff77746d07d60be8}{\_selfreplacement} =  newstr
+130 
+131 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1autoscript_1_1SmartStatements_af107c14e9e33170b981f44c5bceadcf4}{}\index{software\+::chipwhisperer\+::common\+::api\+::autoscript\+::\+Smart\+Statements@{software\+::chipwhisperer\+::common\+::api\+::autoscript\+::\+Smart\+Statements}!add\+Variable\+Assignment@{add\+Variable\+Assignment}}
+\index{add\+Variable\+Assignment@{add\+Variable\+Assignment}!software\+::chipwhisperer\+::common\+::api\+::autoscript\+::\+Smart\+Statements@{software\+::chipwhisperer\+::common\+::api\+::autoscript\+::\+Smart\+Statements}}
+\subsubsection[{add\+Variable\+Assignment}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+api.\+autoscript.\+Smart\+Statements.\+add\+Variable\+Assignment (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{varname, }
+\item[{}]{values, }
+\item[{}]{loc = {\ttfamily None}}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1autoscript_1_1SmartStatements_af107c14e9e33170b981f44c5bceadcf4}
+
+
+References software.\+chipwhisperer.\+common.\+api.\+autoscript.\+Smart\+Statements.\+\_\+statements.
+
+
+\begin{DoxyCode}
+42     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1autoscript_1_1SmartStatements_af107c14e9e33170b981f44c5bceadcf4}{addVariableAssignment}(self, varname, values, loc=None):
+43         statementIndex = -1
+44         \textcolor{keywordflow}{for} i, s \textcolor{keywordflow}{in} enumerate(self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1autoscript_1_1SmartStatements_af10879e7ae478182b70275c18a0af4f8}{\_statements}):
+45             \textcolor{keywordflow}{if} s[\textcolor{stringliteral}{"objname"}] == varname:
+46                 statementIndex = i
+47 
+48         mstr = \textcolor{stringliteral}{"%s = %s"} % (varname, values)
+49 
+50         \textcolor{keywordflow}{if} statementIndex == -1:
+51             d = \{\textcolor{stringliteral}{"objname"}:varname,
+52                  \textcolor{stringliteral}{"type"}:\textcolor{stringliteral}{"variable"},
+53                  \textcolor{stringliteral}{"values"}:values,
+54                  \textcolor{stringliteral}{"command"}:mstr\}
+55             \textcolor{keywordflow}{if} loc \textcolor{keywordflow}{is} \textcolor{keywordflow}{not} \textcolor{keywordtype}{None}:
+56                 self.\_statements.insert(loc, d)
+57             \textcolor{keywordflow}{else}:
+58                 self.\_statements.append(d)
+59         \textcolor{keywordflow}{else}:
+60             self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1autoscript_1_1SmartStatements_af10879e7ae478182b70275c18a0af4f8}{\_statements}[statementIndex][\textcolor{stringliteral}{"command"}] = mstr
+61             self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1autoscript_1_1SmartStatements_af10879e7ae478182b70275c18a0af4f8}{\_statements}[statementIndex][\textcolor{stringliteral}{"values"}] = values
+62         
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1autoscript_1_1SmartStatements_a99f6aecb789f5bb35fb8ae72d8616ef9}{}\index{software\+::chipwhisperer\+::common\+::api\+::autoscript\+::\+Smart\+Statements@{software\+::chipwhisperer\+::common\+::api\+::autoscript\+::\+Smart\+Statements}!del\+Function\+Call@{del\+Function\+Call}}
+\index{del\+Function\+Call@{del\+Function\+Call}!software\+::chipwhisperer\+::common\+::api\+::autoscript\+::\+Smart\+Statements@{software\+::chipwhisperer\+::common\+::api\+::autoscript\+::\+Smart\+Statements}}
+\subsubsection[{del\+Function\+Call}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+api.\+autoscript.\+Smart\+Statements.\+del\+Function\+Call (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{methodname}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1autoscript_1_1SmartStatements_a99f6aecb789f5bb35fb8ae72d8616ef9}
+\begin{DoxyVerb}Remove a function call or silently fail\end{DoxyVerb}
+ 
+
+References software.\+chipwhisperer.\+common.\+api.\+autoscript.\+Smart\+Statements.\+\_\+statements.
+
+
+\begin{DoxyCode}
+98     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1autoscript_1_1SmartStatements_a99f6aecb789f5bb35fb8ae72d8616ef9}{delFunctionCall}(self, methodname):
+99         \textcolor{stringliteral}{"""Remove a function call or silently fail"""}
+100         statementIndex = -1
+101         \textcolor{keywordflow}{for} i, s \textcolor{keywordflow}{in} enumerate(self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1autoscript_1_1SmartStatements_af10879e7ae478182b70275c18a0af4f8}{\_statements}):
+102             \textcolor{keywordflow}{if} s[\textcolor{stringliteral}{"objname"}] == methodname:
+103                 statementIndex = i
+104 
+105         \textcolor{keywordflow}{if} statementIndex >= 0:
+106             del self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1autoscript_1_1SmartStatements_af10879e7ae478182b70275c18a0af4f8}{\_statements}[statementIndex]
+107 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1autoscript_1_1SmartStatements_a82f126bc016ad0c3e81e0b30ad531ef8}{}\index{software\+::chipwhisperer\+::common\+::api\+::autoscript\+::\+Smart\+Statements@{software\+::chipwhisperer\+::common\+::api\+::autoscript\+::\+Smart\+Statements}!self\+Replacement@{self\+Replacement}}
+\index{self\+Replacement@{self\+Replacement}!software\+::chipwhisperer\+::common\+::api\+::autoscript\+::\+Smart\+Statements@{software\+::chipwhisperer\+::common\+::api\+::autoscript\+::\+Smart\+Statements}}
+\subsubsection[{self\+Replacement}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+api.\+autoscript.\+Smart\+Statements.\+self\+Replacement (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1autoscript_1_1SmartStatements_a82f126bc016ad0c3e81e0b30ad531ef8}
+
+
+References software.\+chipwhisperer.\+common.\+api.\+autoscript.\+Smart\+Statements.\+\_\+selfreplacement.
+
+
+\begin{DoxyCode}
+117     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1autoscript_1_1SmartStatements_a82f126bc016ad0c3e81e0b30ad531ef8}{selfReplacement}(self):
+118         \textcolor{keywordflow}{return} self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1autoscript_1_1SmartStatements_a937b4e52cf69da12ff77746d07d60be8}{\_selfreplacement}
+119 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1autoscript_1_1SmartStatements_aaf3e2a165ea5a5e49eda591f91ef294d}{}\index{software\+::chipwhisperer\+::common\+::api\+::autoscript\+::\+Smart\+Statements@{software\+::chipwhisperer\+::common\+::api\+::autoscript\+::\+Smart\+Statements}!statements@{statements}}
+\index{statements@{statements}!software\+::chipwhisperer\+::common\+::api\+::autoscript\+::\+Smart\+Statements@{software\+::chipwhisperer\+::common\+::api\+::autoscript\+::\+Smart\+Statements}}
+\subsubsection[{statements}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+common.\+api.\+autoscript.\+Smart\+Statements.\+statements (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{replace\+Self = {\ttfamily True}}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1autoscript_1_1SmartStatements_aaf3e2a165ea5a5e49eda591f91ef294d}
+
+
+References software.\+chipwhisperer.\+common.\+api.\+autoscript.\+Smart\+Statements.\+\_\+selfreplacement, and software.\+chipwhisperer.\+common.\+api.\+autoscript.\+Smart\+Statements.\+\_\+statements.
+
+
+\begin{DoxyCode}
+108     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1autoscript_1_1SmartStatements_aaf3e2a165ea5a5e49eda591f91ef294d}{statements}(self, replaceSelf=True):
+109         cmdlist = list()
+110         \textcolor{keywordflow}{for} s \textcolor{keywordflow}{in} self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1autoscript_1_1SmartStatements_af10879e7ae478182b70275c18a0af4f8}{\_statements}:
+111             \textcolor{keywordflow}{if} replaceSelf:
+112                 s = s[\textcolor{stringliteral}{"command"}].replace(\textcolor{stringliteral}{"self."}, self.\hyperlink{classsoftware_1_1chipwhisperer_1_1common_1_1api_1_1autoscript_1_1SmartStatements_a937b4e52cf69da12ff77746d07d60be8}{\_selfreplacement})
+113                 s = s.rstrip(\textcolor{stringliteral}{'.'})
+114             cmdlist.append(s)
+115         \textcolor{keywordflow}{return} cmdlist
+116     
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{autoscript_8py}{autoscript.\+py}\end{DoxyCompactItemize}

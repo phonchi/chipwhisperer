@@ -1,0 +1,415 @@
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1models_1_1aes_1_1key__schedule}{}\section{software.\+chipwhisperer.\+analyzer.\+models.\+aes.\+key\+\_\+schedule Namespace Reference}
+\label{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1models_1_1aes_1_1key__schedule}\index{software.\+chipwhisperer.\+analyzer.\+models.\+aes.\+key\+\_\+schedule@{software.\+chipwhisperer.\+analyzer.\+models.\+aes.\+key\+\_\+schedule}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1models_1_1aes_1_1key__schedule_ab403ea833b4e70350f2fb974d3d2adf3}{sbox} (inp)
+\item 
+def \hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1models_1_1aes_1_1key__schedule_ac3f402095947072f7133ff28c1b0e0ed}{invsbox} (inp)
+\item 
+def \hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1models_1_1aes_1_1key__schedule_a8e40a05b996028d50872e21019fcd197}{g\+\_\+func} (inp, \hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1models_1_1aes_1_1key__schedule_acf2e930c08018b7cb8ecc9d19ccb48d1}{rcon})
+\item 
+def \hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1models_1_1aes_1_1key__schedule_a246af38d68dab40d5e973f9f6a92f285}{h\+\_\+func} (inp)
+\item 
+def \hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1models_1_1aes_1_1key__schedule_a5bf493afb3110461a9cc19465b3e6094}{xor} (l1, l2)
+\item 
+def \hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1models_1_1aes_1_1key__schedule_aa0e0cef2bfba47599cd9fdaed40e4c5c}{key\+Schedule\+Rounds} (inputkey, inputround, desiredround)
+\item 
+def \hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1models_1_1aes_1_1key__schedule_a738dfc04cf684936da826dcde7488983}{test} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+list \hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1models_1_1aes_1_1key__schedule_acf2e930c08018b7cb8ecc9d19ccb48d1}{rcon}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1models_1_1aes_1_1key__schedule_a8e40a05b996028d50872e21019fcd197}{}\index{software\+::chipwhisperer\+::analyzer\+::models\+::aes\+::key\+\_\+schedule@{software\+::chipwhisperer\+::analyzer\+::models\+::aes\+::key\+\_\+schedule}!g\+\_\+func@{g\+\_\+func}}
+\index{g\+\_\+func@{g\+\_\+func}!software\+::chipwhisperer\+::analyzer\+::models\+::aes\+::key\+\_\+schedule@{software\+::chipwhisperer\+::analyzer\+::models\+::aes\+::key\+\_\+schedule}}
+\subsubsection[{g\+\_\+func}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+analyzer.\+models.\+aes.\+key\+\_\+schedule.\+g\+\_\+func (
+\begin{DoxyParamCaption}
+\item[{}]{inp, }
+\item[{}]{rcon}
+\end{DoxyParamCaption}
+)}\label{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1models_1_1aes_1_1key__schedule_a8e40a05b996028d50872e21019fcd197}
+
+
+References software.\+chipwhisperer.\+analyzer.\+models.\+aes.\+key\+\_\+schedule.\+sbox().
+
+
+
+Referenced by software.\+chipwhisperer.\+analyzer.\+models.\+aes.\+key\+\_\+schedule.\+key\+Schedule\+Rounds().
+
+
+\begin{DoxyCode}
+118 \textcolor{keyword}{def }\hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1models_1_1aes_1_1key__schedule_a8e40a05b996028d50872e21019fcd197}{g\_func}(inp, rcon):
+119     \textcolor{comment}{#Step 1: change order}
+120     newlist = [inp[1], inp[2], inp[3], inp[0]]
+121 
+122     \textcolor{comment}{#Step 2: s-box}
+123     newlist = [\hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1models_1_1aes_1_1key__schedule_ab403ea833b4e70350f2fb974d3d2adf3}{sbox}(t) \textcolor{keywordflow}{for} t \textcolor{keywordflow}{in} newlist]
+124 
+125     \textcolor{comment}{#Step 3: apply rcon}
+126     newlist[0] ^= rcon
+127 
+128     \textcolor{keywordflow}{return} newlist
+129 
+130 
+\end{DoxyCode}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1models_1_1aes_1_1key__schedule_a246af38d68dab40d5e973f9f6a92f285}{}\index{software\+::chipwhisperer\+::analyzer\+::models\+::aes\+::key\+\_\+schedule@{software\+::chipwhisperer\+::analyzer\+::models\+::aes\+::key\+\_\+schedule}!h\+\_\+func@{h\+\_\+func}}
+\index{h\+\_\+func@{h\+\_\+func}!software\+::chipwhisperer\+::analyzer\+::models\+::aes\+::key\+\_\+schedule@{software\+::chipwhisperer\+::analyzer\+::models\+::aes\+::key\+\_\+schedule}}
+\subsubsection[{h\+\_\+func}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+analyzer.\+models.\+aes.\+key\+\_\+schedule.\+h\+\_\+func (
+\begin{DoxyParamCaption}
+\item[{}]{inp}
+\end{DoxyParamCaption}
+)}\label{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1models_1_1aes_1_1key__schedule_a246af38d68dab40d5e973f9f6a92f285}
+
+
+References software.\+chipwhisperer.\+analyzer.\+models.\+aes.\+key\+\_\+schedule.\+sbox().
+
+
+
+Referenced by software.\+chipwhisperer.\+analyzer.\+models.\+aes.\+key\+\_\+schedule.\+key\+Schedule\+Rounds().
+
+
+\begin{DoxyCode}
+131 \textcolor{keyword}{def }\hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1models_1_1aes_1_1key__schedule_a246af38d68dab40d5e973f9f6a92f285}{h\_func}(inp):
+132     \textcolor{comment}{#Step 1: s-box}
+133     newlist = [\hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1models_1_1aes_1_1key__schedule_ab403ea833b4e70350f2fb974d3d2adf3}{sbox}(t) \textcolor{keywordflow}{for} t \textcolor{keywordflow}{in} inp]
+134 
+135     \textcolor{keywordflow}{return} newlist
+136 
+137 
+\end{DoxyCode}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1models_1_1aes_1_1key__schedule_ac3f402095947072f7133ff28c1b0e0ed}{}\index{software\+::chipwhisperer\+::analyzer\+::models\+::aes\+::key\+\_\+schedule@{software\+::chipwhisperer\+::analyzer\+::models\+::aes\+::key\+\_\+schedule}!invsbox@{invsbox}}
+\index{invsbox@{invsbox}!software\+::chipwhisperer\+::analyzer\+::models\+::aes\+::key\+\_\+schedule@{software\+::chipwhisperer\+::analyzer\+::models\+::aes\+::key\+\_\+schedule}}
+\subsubsection[{invsbox}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+analyzer.\+models.\+aes.\+key\+\_\+schedule.\+invsbox (
+\begin{DoxyParamCaption}
+\item[{}]{inp}
+\end{DoxyParamCaption}
+)}\label{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1models_1_1aes_1_1key__schedule_ac3f402095947072f7133ff28c1b0e0ed}
+
+\begin{DoxyCode}
+64 \textcolor{keyword}{def }\hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1models_1_1aes_1_1key__schedule_ac3f402095947072f7133ff28c1b0e0ed}{invsbox}(inp):
+65     s = [0x52, 0x09, 0x6a, 0xd5, 0x30, 0x36, 0xa5, 0x38, 0xbf, 0x40, 0xa3,
+66             0x9e, 0x81, 0xf3, 0xd7, 0xfb , 0x7c, 0xe3, 0x39, 0x82, 0x9b, 0x2f,
+67             0xff, 0x87, 0x34, 0x8e, 0x43, 0x44, 0xc4, 0xde, 0xe9, 0xcb , 0x54,
+68             0x7b, 0x94, 0x32, 0xa6, 0xc2, 0x23, 0x3d, 0xee, 0x4c, 0x95, 0x0b,
+69             0x42, 0xfa, 0xc3, 0x4e , 0x08, 0x2e, 0xa1, 0x66, 0x28, 0xd9, 0x24,
+70             0xb2, 0x76, 0x5b, 0xa2, 0x49, 0x6d, 0x8b, 0xd1, 0x25 , 0x72, 0xf8,
+71             0xf6, 0x64, 0x86, 0x68, 0x98, 0x16, 0xd4, 0xa4, 0x5c, 0xcc, 0x5d,
+72             0x65, 0xb6, 0x92 , 0x6c, 0x70, 0x48, 0x50, 0xfd, 0xed, 0xb9, 0xda,
+73             0x5e, 0x15, 0x46, 0x57, 0xa7, 0x8d, 0x9d, 0x84 , 0x90, 0xd8, 0xab,
+74             0x00, 0x8c, 0xbc, 0xd3, 0x0a, 0xf7, 0xe4, 0x58, 0x05, 0xb8, 0xb3,
+75             0x45, 0x06 , 0xd0, 0x2c, 0x1e, 0x8f, 0xca, 0x3f, 0x0f, 0x02, 0xc1,
+76             0xaf, 0xbd, 0x03, 0x01, 0x13, 0x8a, 0x6b , 0x3a, 0x91, 0x11, 0x41,
+77             0x4f, 0x67, 0xdc, 0xea, 0x97, 0xf2, 0xcf, 0xce, 0xf0, 0xb4, 0xe6,
+78             0x73 , 0x96, 0xac, 0x74, 0x22, 0xe7, 0xad, 0x35, 0x85, 0xe2, 0xf9,
+79             0x37, 0xe8, 0x1c, 0x75, 0xdf, 0x6e , 0x47, 0xf1, 0x1a, 0x71, 0x1d,
+80             0x29, 0xc5, 0x89, 0x6f, 0xb7, 0x62, 0x0e, 0xaa, 0x18, 0xbe, 0x1b ,
+81             0xfc, 0x56, 0x3e, 0x4b, 0xc6, 0xd2, 0x79, 0x20, 0x9a, 0xdb, 0xc0,
+82             0xfe, 0x78, 0xcd, 0x5a, 0xf4 , 0x1f, 0xdd, 0xa8, 0x33, 0x88, 0x07,
+83             0xc7, 0x31, 0xb1, 0x12, 0x10, 0x59, 0x27, 0x80, 0xec, 0x5f , 0x60,
+84             0x51, 0x7f, 0xa9, 0x19, 0xb5, 0x4a, 0x0d, 0x2d, 0xe5, 0x7a, 0x9f,
+85             0x93, 0xc9, 0x9c, 0xef , 0xa0, 0xe0, 0x3b, 0x4d, 0xae, 0x2a, 0xf5,
+86             0xb0, 0xc8, 0xeb, 0xbb, 0x3c, 0x83, 0x53, 0x99, 0x61 , 0x17, 0x2b,
+87             0x04, 0x7e, 0xba, 0x77, 0xd6, 0x26, 0xe1, 0x69, 0x14, 0x63, 0x55,
+88             0x21, 0x0c, 0x7d]
+89     \textcolor{keywordflow}{return} s[inp]
+90 
+91 
+\end{DoxyCode}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1models_1_1aes_1_1key__schedule_aa0e0cef2bfba47599cd9fdaed40e4c5c}{}\index{software\+::chipwhisperer\+::analyzer\+::models\+::aes\+::key\+\_\+schedule@{software\+::chipwhisperer\+::analyzer\+::models\+::aes\+::key\+\_\+schedule}!key\+Schedule\+Rounds@{key\+Schedule\+Rounds}}
+\index{key\+Schedule\+Rounds@{key\+Schedule\+Rounds}!software\+::chipwhisperer\+::analyzer\+::models\+::aes\+::key\+\_\+schedule@{software\+::chipwhisperer\+::analyzer\+::models\+::aes\+::key\+\_\+schedule}}
+\subsubsection[{key\+Schedule\+Rounds}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+analyzer.\+models.\+aes.\+key\+\_\+schedule.\+key\+Schedule\+Rounds (
+\begin{DoxyParamCaption}
+\item[{}]{inputkey, }
+\item[{}]{inputround, }
+\item[{}]{desiredround}
+\end{DoxyParamCaption}
+)}\label{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1models_1_1aes_1_1key__schedule_aa0e0cef2bfba47599cd9fdaed40e4c5c}
+\begin{DoxyVerb}inputkey = starting key, 16/32 bytes
+inputround = starting round number (i.e. 0 = first)
+desiredround = desired round number (i.e. 10 = last for 16-byte)
+
+returns desired round number. Can go forward or backwards.
+
+When dealing with AES-256, inputkey is 16 bytes and inputround
+indicates round that bytes 0...15 are from.
+\end{DoxyVerb}
+ 
+
+References software.\+chipwhisperer.\+analyzer.\+models.\+aes.\+key\+\_\+schedule.\+g\+\_\+func(), software.\+chipwhisperer.\+analyzer.\+models.\+aes.\+key\+\_\+schedule.\+h\+\_\+func(), and software.\+chipwhisperer.\+analyzer.\+models.\+aes.\+key\+\_\+schedule.\+xor().
+
+
+
+Referenced by software.\+chipwhisperer.\+analyzer.\+utils.\+Partition.\+Partition\+H\+D\+Last\+Round.\+get\+Partition\+Num(), software.\+chipwhisperer.\+common.\+ui.\+Key\+Schedule\+Dialog.\+Key\+Schedule\+Dialog.\+in\+Text\+Changed(), software.\+chipwhisperer.\+analyzer.\+attacks.\+models.\+A\+E\+S128\+\_\+8bit.\+process\+Known\+Key(), and software.\+chipwhisperer.\+analyzer.\+models.\+aes.\+key\+\_\+schedule.\+test().
+
+
+\begin{DoxyCode}
+142 \textcolor{keyword}{def }\hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1models_1_1aes_1_1key__schedule_aa0e0cef2bfba47599cd9fdaed40e4c5c}{keyScheduleRounds}(inputkey, inputround, desiredround):
+143     \textcolor{stringliteral}{"""}
+144 \textcolor{stringliteral}{    inputkey = starting key, 16/32 bytes}
+145 \textcolor{stringliteral}{    inputround = starting round number (i.e. 0 = first)}
+146 \textcolor{stringliteral}{    desiredround = desired round number (i.e. 10 = last for 16-byte)}
+147 \textcolor{stringliteral}{}
+148 \textcolor{stringliteral}{    returns desired round number. Can go forward or backwards.}
+149 \textcolor{stringliteral}{}
+150 \textcolor{stringliteral}{    When dealing with AES-256, inputkey is 16 bytes and inputround}
+151 \textcolor{stringliteral}{    indicates round that bytes 0...15 are from.}
+152 \textcolor{stringliteral}{    """}
+153 
+154     \textcolor{comment}{#Some constants}
+155     n = len(inputkey)
+156     \textcolor{keywordflow}{if} n == 16:
+157         \textcolor{keywordflow}{pass}
+158     \textcolor{keywordflow}{elif} n == 32:
+159         desiredfull = desiredround
+160         desiredround = int(desiredround / 2)
+161 
+162         \textcolor{comment}{#Special case for inputround of 13, needed for 'final' round...}
+163         \textcolor{keywordflow}{if} inputround != 13:
+164             \textcolor{keywordflow}{if} inputround % 2 == 1:
+165                 \textcolor{keywordflow}{raise} ValueError(\textcolor{stringliteral}{"Input round must be divisible by 2"})
+166             inputround = int(inputround / 2)
+167         \textcolor{keywordflow}{else}:
+168             \textcolor{keywordflow}{if} inputround <= desiredfull:
+169                 \textcolor{keywordflow}{if} desiredfull < 13:
+170                     \textcolor{keywordflow}{raise} ValueError(\textcolor{stringliteral}{"Round = 13 only permissible for reverse"})
+171 
+172                 \textcolor{keywordflow}{if} desiredfull == 13:
+173                     \textcolor{keywordflow}{return} inputkey[0:16]
+174                 \textcolor{keywordflow}{else}:
+175                     \textcolor{keywordflow}{return} inputkey[16:32]
+176 
+177     \textcolor{keywordflow}{else}:
+178         \textcolor{keywordflow}{raise} ValueError(\textcolor{stringliteral}{"Invalid keylength: %d"}%n)
+179 
+180     rnd = inputround
+181     state = list(inputkey)
+182 
+183     \textcolor{comment}{#Check if we are going forward or backwards}
+184     \textcolor{keywordflow}{while} rnd < desiredround:
+185         rnd += 1
+186 
+187         \textcolor{comment}{#Forward algorithm, thus need at least one round}
+188         state[0:4] = \hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1models_1_1aes_1_1key__schedule_a5bf493afb3110461a9cc19465b3e6094}{xor}(state[0:4], \hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1models_1_1aes_1_1key__schedule_a8e40a05b996028d50872e21019fcd197}{g\_func}(state[(n-4):n], rcon[rnd]))
+189         \textcolor{keywordflow}{for} i \textcolor{keywordflow}{in} range(4, n, 4):
+190             \textcolor{keywordflow}{if} n == 32 \textcolor{keywordflow}{and} i == 16:
+191                 inp = \hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1models_1_1aes_1_1key__schedule_a246af38d68dab40d5e973f9f6a92f285}{h\_func}(state[(i-4):i])
+192             \textcolor{keywordflow}{else}:
+193                 inp = state[(i - 4):i]
+194             state[i:(i+4)] = \hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1models_1_1aes_1_1key__schedule_a5bf493afb3110461a9cc19465b3e6094}{xor}(state[i:(i+4)], inp)
+195 
+196     \textcolor{keywordflow}{while} rnd > desiredround:
+197         \textcolor{comment}{#For AES-256 final-round is 13 as that includes 32 bytes}
+198         \textcolor{comment}{#of key. Convert to round 12 then continue as usual...}
+199         \textcolor{keywordflow}{if} n == 32 \textcolor{keywordflow}{and} rnd == 13:
+200             inputrnd = int(12/2)
+201             rnd = inputrnd
+202             oldstate = list(state[16:32])
+203             state[16:32] = state[0:16]
+204 
+205             \textcolor{keywordflow}{for} i \textcolor{keywordflow}{in} range(12, 0, -4):
+206                 state[i:(i+4)] = \hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1models_1_1aes_1_1key__schedule_a5bf493afb3110461a9cc19465b3e6094}{xor}(oldstate[i:(i+4)], oldstate[(i-4):i])
+207             state[0:4] = \hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1models_1_1aes_1_1key__schedule_a5bf493afb3110461a9cc19465b3e6094}{xor}(oldstate[0:4], \hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1models_1_1aes_1_1key__schedule_a8e40a05b996028d50872e21019fcd197}{g\_func}(state[(n - 4):n], rcon[7]))
+208 
+209         \textcolor{keywordflow}{if} rnd == desiredround:
+210             \textcolor{keywordflow}{break}
+211 
+212         \textcolor{comment}{# Reverse algorithm, thus need at least one round}
+213         \textcolor{keywordflow}{for} i \textcolor{keywordflow}{in} range(n-4, 0, -4):
+214             \textcolor{keywordflow}{if} n == 32 \textcolor{keywordflow}{and} i == 16:
+215                 inp = \hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1models_1_1aes_1_1key__schedule_a246af38d68dab40d5e973f9f6a92f285}{h\_func}(state[(i-4):i])
+216             \textcolor{keywordflow}{else}:
+217                 inp = state[(i - 4):i]
+218             state[i:(i+4)] = \hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1models_1_1aes_1_1key__schedule_a5bf493afb3110461a9cc19465b3e6094}{xor}(state[i:(i+4)], inp)
+219         state[0:4] = \hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1models_1_1aes_1_1key__schedule_a5bf493afb3110461a9cc19465b3e6094}{xor}(state[0:4], \hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1models_1_1aes_1_1key__schedule_a8e40a05b996028d50872e21019fcd197}{g\_func}(state[(n - 4):n], rcon[rnd]))
+220         rnd -= 1
+221 
+222     \textcolor{comment}{#For AES-256, we use half the generated key at once...}
+223     \textcolor{keywordflow}{if} n == 32:
+224         \textcolor{keywordflow}{if} desiredfull % 2:
+225             state = state[16:32]
+226         \textcolor{keywordflow}{else}:
+227             state = state[0:16]
+228 
+229     \textcolor{comment}{#Return answer}
+230     \textcolor{keywordflow}{return} state
+231 
+232 
+\end{DoxyCode}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1models_1_1aes_1_1key__schedule_ab403ea833b4e70350f2fb974d3d2adf3}{}\index{software\+::chipwhisperer\+::analyzer\+::models\+::aes\+::key\+\_\+schedule@{software\+::chipwhisperer\+::analyzer\+::models\+::aes\+::key\+\_\+schedule}!sbox@{sbox}}
+\index{sbox@{sbox}!software\+::chipwhisperer\+::analyzer\+::models\+::aes\+::key\+\_\+schedule@{software\+::chipwhisperer\+::analyzer\+::models\+::aes\+::key\+\_\+schedule}}
+\subsubsection[{sbox}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+analyzer.\+models.\+aes.\+key\+\_\+schedule.\+sbox (
+\begin{DoxyParamCaption}
+\item[{}]{inp}
+\end{DoxyParamCaption}
+)}\label{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1models_1_1aes_1_1key__schedule_ab403ea833b4e70350f2fb974d3d2adf3}
+
+
+Referenced by software.\+chipwhisperer.\+analyzer.\+models.\+aes.\+key\+\_\+schedule.\+g\+\_\+func(), and software.\+chipwhisperer.\+analyzer.\+models.\+aes.\+key\+\_\+schedule.\+h\+\_\+func().
+
+
+\begin{DoxyCode}
+36 \textcolor{keyword}{def }\hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1models_1_1aes_1_1key__schedule_ab403ea833b4e70350f2fb974d3d2adf3}{sbox}(inp):
+37     s =  [0x63, 0x7c, 0x77, 0x7b, 0xf2, 0x6b, 0x6f, 0xc5, 0x30, 0x01, 0x67,
+38             0x2b, 0xfe, 0xd7, 0xab, 0x76, 0xca, 0x82, 0xc9, 0x7d, 0xfa, 0x59,
+39             0x47, 0xf0, 0xad, 0xd4, 0xa2, 0xaf, 0x9c, 0xa4, 0x72, 0xc0, 0xb7,
+40             0xfd, 0x93, 0x26, 0x36, 0x3f, 0xf7, 0xcc, 0x34, 0xa5, 0xe5, 0xf1,
+41             0x71, 0xd8, 0x31, 0x15, 0x04, 0xc7, 0x23, 0xc3, 0x18, 0x96, 0x05,
+42             0x9a, 0x07, 0x12, 0x80, 0xe2, 0xeb, 0x27, 0xb2, 0x75, 0x09, 0x83,
+43             0x2c, 0x1a, 0x1b, 0x6e, 0x5a, 0xa0, 0x52, 0x3b, 0xd6, 0xb3, 0x29,
+44             0xe3, 0x2f, 0x84, 0x53, 0xd1, 0x00, 0xed, 0x20, 0xfc, 0xb1, 0x5b,
+45             0x6a, 0xcb, 0xbe, 0x39, 0x4a, 0x4c, 0x58, 0xcf, 0xd0, 0xef, 0xaa,
+46             0xfb, 0x43, 0x4d, 0x33, 0x85, 0x45, 0xf9, 0x02, 0x7f, 0x50, 0x3c,
+47             0x9f, 0xa8, 0x51, 0xa3, 0x40, 0x8f, 0x92, 0x9d, 0x38, 0xf5, 0xbc,
+48             0xb6, 0xda, 0x21, 0x10, 0xff, 0xf3, 0xd2, 0xcd, 0x0c, 0x13, 0xec,
+49             0x5f, 0x97, 0x44, 0x17, 0xc4, 0xa7, 0x7e, 0x3d, 0x64, 0x5d, 0x19,
+50             0x73, 0x60, 0x81, 0x4f, 0xdc, 0x22, 0x2a, 0x90, 0x88, 0x46, 0xee,
+51             0xb8, 0x14, 0xde, 0x5e, 0x0b, 0xdb, 0xe0, 0x32, 0x3a, 0x0a, 0x49,
+52             0x06, 0x24, 0x5c, 0xc2, 0xd3, 0xac, 0x62, 0x91, 0x95, 0xe4, 0x79,
+53             0xe7, 0xc8, 0x37, 0x6d, 0x8d, 0xd5, 0x4e, 0xa9, 0x6c, 0x56, 0xf4,
+54             0xea, 0x65, 0x7a, 0xae, 0x08, 0xba, 0x78, 0x25, 0x2e, 0x1c, 0xa6,
+55             0xb4, 0xc6, 0xe8, 0xdd, 0x74, 0x1f, 0x4b, 0xbd, 0x8b, 0x8a, 0x70,
+56             0x3e, 0xb5, 0x66, 0x48, 0x03, 0xf6, 0x0e, 0x61, 0x35, 0x57, 0xb9,
+57             0x86, 0xc1, 0x1d, 0x9e, 0xe1, 0xf8, 0x98, 0x11, 0x69, 0xd9, 0x8e,
+58             0x94, 0x9b, 0x1e, 0x87, 0xe9, 0xce, 0x55, 0x28, 0xdf, 0x8c, 0xa1,
+59             0x89, 0x0d, 0xbf, 0xe6, 0x42, 0x68, 0x41, 0x99, 0x2d, 0x0f, 0xb0,
+60             0x54, 0xbb, 0x16]
+61     \textcolor{keywordflow}{return} s[inp]
+62 
+63 
+\end{DoxyCode}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1models_1_1aes_1_1key__schedule_a738dfc04cf684936da826dcde7488983}{}\index{software\+::chipwhisperer\+::analyzer\+::models\+::aes\+::key\+\_\+schedule@{software\+::chipwhisperer\+::analyzer\+::models\+::aes\+::key\+\_\+schedule}!test@{test}}
+\index{test@{test}!software\+::chipwhisperer\+::analyzer\+::models\+::aes\+::key\+\_\+schedule@{software\+::chipwhisperer\+::analyzer\+::models\+::aes\+::key\+\_\+schedule}}
+\subsubsection[{test}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+analyzer.\+models.\+aes.\+key\+\_\+schedule.\+test (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1models_1_1aes_1_1key__schedule_a738dfc04cf684936da826dcde7488983}
+
+
+References software.\+chipwhisperer.\+analyzer.\+models.\+aes.\+key\+\_\+schedule.\+key\+Schedule\+Rounds().
+
+
+\begin{DoxyCode}
+233 \textcolor{keyword}{def }\hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1models_1_1aes_1_1key__schedule_a738dfc04cf684936da826dcde7488983}{test}():
+234     \textcolor{comment}{#Manual tests right now - need to automate this.}
+235 
+236     \textcolor{comment}{##### AES-128 Tests}
+237     \textcolor{keywordflow}{print} \textcolor{stringliteral}{"**********AES-128 Tests***************"}
+238 
+239     ik = [0]*16
+240     \textcolor{keywordflow}{for} i \textcolor{keywordflow}{in} range(0, 11):
+241         result = \hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1models_1_1aes_1_1key__schedule_aa0e0cef2bfba47599cd9fdaed40e4c5c}{keyScheduleRounds}(ik, 0, i)
+242         \textcolor{keywordflow}{print} \textcolor{stringliteral}{" "}.join([\textcolor{stringliteral}{"%2x"}%d \textcolor{keywordflow}{for} d \textcolor{keywordflow}{in} result])
+243         ok = result
+244 
+245     \textcolor{comment}{# 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00}
+246     \textcolor{comment}{# 62 63 63 63 62 63 63 63 62 63 63 63 62 63 63 63}
+247     \textcolor{comment}{# 9b 98 98 c9 f9 fb fb aa 9b 98 98 c9 f9 fb fb aa}
+248     \textcolor{comment}{# 90 97 34 50 69 6c cf fa f2 f4 57 33 0b 0f ac 99}
+249     \textcolor{comment}{# ee 06 da 7b 87 6a 15 81 75 9e 42 b2 7e 91 ee 2b}
+250     \textcolor{comment}{# 7f 2e 2b 88 f8 44 3e 09 8d da 7c bb f3 4b 92 90}
+251     \textcolor{comment}{# ec 61 4b 85 14 25 75 8c 99 ff 09 37 6a b4 9b a7}
+252     \textcolor{comment}{# 21 75 17 87 35 50 62 0b ac af 6b 3c c6 1b f0 9b}
+253     \textcolor{comment}{# 0e f9 03 33 3b a9 61 38 97 06 0a 04 51 1d fa 9f}
+254     \textcolor{comment}{# b1 d4 d8 e2 8a 7d b9 da 1d 7b b3 de 4c 66 49 41}
+255     \textcolor{comment}{#b4 ef 5b cb 3e 92 e2 11 23 e9 51 cf 6f 8f 18 8e}
+256 
+257     \textcolor{keywordflow}{print} \textcolor{stringliteral}{""}
+258 
+259     \textcolor{keywordflow}{for} i \textcolor{keywordflow}{in} range(0, 11):  \textcolor{comment}{# 10 Rounds}
+260         result = \hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1models_1_1aes_1_1key__schedule_aa0e0cef2bfba47599cd9fdaed40e4c5c}{keyScheduleRounds}(ok, 10, i)
+261         \textcolor{keywordflow}{print} \textcolor{stringliteral}{" "}.join([\textcolor{stringliteral}{"%2x"} % d \textcolor{keywordflow}{for} d \textcolor{keywordflow}{in} result])
+262 
+263     \textcolor{comment}{##### AES-256 Tests}
+264     \textcolor{keywordflow}{print} \textcolor{stringliteral}{"**********AES-256 Tests***************"}
+265 
+266     ik = [0]*32
+267     \textcolor{keywordflow}{for} i \textcolor{keywordflow}{in} range(0, 15):  \textcolor{comment}{# 14 Rounds}
+268         result = \hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1models_1_1aes_1_1key__schedule_aa0e0cef2bfba47599cd9fdaed40e4c5c}{keyScheduleRounds}(ik, 0, i)
+269         \textcolor{keywordflow}{print} \textcolor{stringliteral}{" "}.join([\textcolor{stringliteral}{"%02x"}%d \textcolor{keywordflow}{for} d \textcolor{keywordflow}{in} result])
+270 
+271     \textcolor{comment}{# 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00}
+272     \textcolor{comment}{# 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00}
+273     \textcolor{comment}{# 62 63 63 63 62 63 63 63 62 63 63 63 62 63 63 63}
+274     \textcolor{comment}{# aa fb fb fb aa fb fb fb aa fb fb fb aa fb fb fb}
+275     \textcolor{comment}{# 6f 6c 6c cf 0d 0f 0f ac 6f 6c 6c cf 0d 0f 0f ac}
+276     \textcolor{comment}{# 7d 8d 8d 6a d7 76 76 91 7d 8d 8d 6a d7 76 76 91}
+277     \textcolor{comment}{# 53 54 ed c1 5e 5b e2 6d 31 37 8e a2 3c 38 81 0e}
+278     \textcolor{comment}{# 96 8a 81 c1 41 fc f7 50 3c 71 7a 3a eb 07 0c ab}
+279     \textcolor{comment}{# 9e aa 8f 28 c0 f1 6d 45 f1 c6 e3 e7 cd fe 62 e9}
+280     \textcolor{comment}{# 2b 31 2b df 6a cd dc 8f 56 bc a6 b5 bd bb aa 1e}
+281     \textcolor{comment}{# 64 06 fd 52 a4 f7 90 17 55 31 73 f0 98 cf 11 19}
+282     \textcolor{comment}{# 6d bb a9 0b 07 76 75 84 51 ca d3 31 ec 71 79 2f}
+283     \textcolor{comment}{# e7 b0 e8 9c 43 47 78 8b 16 76 0b 7b 8e b9 1a 62}
+284     \textcolor{comment}{# 74 ed 0b a1 73 9b 7e 25 22 51 ad 14 ce 20 d4 3b}
+285     \textcolor{comment}{#10 f8 0a 17 53 bf 72 9c 45 c9 79 e7 cb 70 63 85}
+286 
+287     \textcolor{keywordflow}{print} \textcolor{stringliteral}{""}
+288 
+289     ik = [0x74 ,0xed ,0x0b ,0xa1 ,0x73 ,0x9b ,0x7e ,0x25 ,0x22 ,
+290           0x51 ,0xad ,0x14 ,0xce ,0x20 ,0xd4 ,0x3b ,0x10 ,0xf8 ,
+291           0x0a ,0x17 ,0x53 ,0xbf ,0x72 ,0x9c ,0x45 ,0xc9 ,0x79 ,
+292           0xe7 ,0xcb ,0x70 ,0x63, 0x85]
+293 
+294     \textcolor{keywordflow}{for} i \textcolor{keywordflow}{in} range(0, 14):
+295         result = \hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1models_1_1aes_1_1key__schedule_aa0e0cef2bfba47599cd9fdaed40e4c5c}{keyScheduleRounds}(ik, 13, i)
+296         \textcolor{keywordflow}{print} \textcolor{stringliteral}{" "}.join([\textcolor{stringliteral}{"%2x"}%d \textcolor{keywordflow}{for} d \textcolor{keywordflow}{in} result])
+297 
+\end{DoxyCode}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1models_1_1aes_1_1key__schedule_a5bf493afb3110461a9cc19465b3e6094}{}\index{software\+::chipwhisperer\+::analyzer\+::models\+::aes\+::key\+\_\+schedule@{software\+::chipwhisperer\+::analyzer\+::models\+::aes\+::key\+\_\+schedule}!xor@{xor}}
+\index{xor@{xor}!software\+::chipwhisperer\+::analyzer\+::models\+::aes\+::key\+\_\+schedule@{software\+::chipwhisperer\+::analyzer\+::models\+::aes\+::key\+\_\+schedule}}
+\subsubsection[{xor}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+analyzer.\+models.\+aes.\+key\+\_\+schedule.\+xor (
+\begin{DoxyParamCaption}
+\item[{}]{l1, }
+\item[{}]{l2}
+\end{DoxyParamCaption}
+)}\label{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1models_1_1aes_1_1key__schedule_a5bf493afb3110461a9cc19465b3e6094}
+
+
+Referenced by software.\+chipwhisperer.\+analyzer.\+models.\+aes.\+key\+\_\+schedule.\+key\+Schedule\+Rounds().
+
+
+\begin{DoxyCode}
+138 \textcolor{keyword}{def }\hyperlink{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1models_1_1aes_1_1key__schedule_a5bf493afb3110461a9cc19465b3e6094}{xor}(l1, l2):
+139     \textcolor{keywordflow}{return} [l1[i] ^ l2[i] \textcolor{keywordflow}{for} i \textcolor{keywordflow}{in} range(0, len(l1))]
+140 
+141 
+\end{DoxyCode}
+
+
+\subsection{Variable Documentation}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1models_1_1aes_1_1key__schedule_acf2e930c08018b7cb8ecc9d19ccb48d1}{}\index{software\+::chipwhisperer\+::analyzer\+::models\+::aes\+::key\+\_\+schedule@{software\+::chipwhisperer\+::analyzer\+::models\+::aes\+::key\+\_\+schedule}!rcon@{rcon}}
+\index{rcon@{rcon}!software\+::chipwhisperer\+::analyzer\+::models\+::aes\+::key\+\_\+schedule@{software\+::chipwhisperer\+::analyzer\+::models\+::aes\+::key\+\_\+schedule}}
+\subsubsection[{rcon}]{\setlength{\rightskip}{0pt plus 5cm}list software.\+chipwhisperer.\+analyzer.\+models.\+aes.\+key\+\_\+schedule.\+rcon}\label{namespacesoftware_1_1chipwhisperer_1_1analyzer_1_1models_1_1aes_1_1key__schedule_acf2e930c08018b7cb8ecc9d19ccb48d1}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 = [0x8d, 0x01, 0x02, 0x04, 0x08, 0x10, 0x20, 0x40, 0x80, 0x1b, 0x36,
+2             0x6c, 0xd8, 0xab, 0x4d, 0x9a, 0x2f, 0x5e, 0xbc, 0x63, 0xc6, 0x97,
+3             0x35, 0x6a, 0xd4, 0xb3, 0x7d, 0xfa, 0xef, 0xc5, 0x91, 0x39, 0x72,
+4             0xe4, 0xd3, 0xbd, 0x61, 0xc2, 0x9f, 0x25, 0x4a, 0x94, 0x33, 0x66,
+5             0xcc, 0x83, 0x1d, 0x3a, 0x74, 0xe8, 0xcb, 0x8d, 0x01, 0x02, 0x04,
+6             0x08, 0x10, 0x20, 0x40, 0x80, 0x1b, 0x36, 0x6c, 0xd8, 0xab, 0x4d,
+7             0x9a, 0x2f, 0x5e, 0xbc, 0x63, 0xc6, 0x97, 0x35, 0x6a, 0xd4, 0xb3,
+8             0x7d, 0xfa, 0xef, 0xc5, 0x91, 0x39, 0x72, 0xe4, 0xd3, 0xbd, 0x61,
+9             0xc2, 0x9f, 0x25, 0x4a, 0x94, 0x33, 0x66, 0xcc, 0x83, 0x1d, 0x3a,
+10             0x74, 0xe8, 0xcb, 0x8d, 0x01, 0x02, 0x04, 0x08, 0x10, 0x20, 0x40,
+11             0x80, 0x1b, 0x36, 0x6c, 0xd8, 0xab, 0x4d, 0x9a, 0x2f, 0x5e, 0xbc,
+12             0x63, 0xc6, 0x97, 0x35, 0x6a, 0xd4, 0xb3, 0x7d, 0xfa, 0xef, 0xc5,
+13             0x91, 0x39, 0x72, 0xe4, 0xd3, 0xbd, 0x61, 0xc2, 0x9f, 0x25, 0x4a,
+14             0x94, 0x33, 0x66, 0xcc, 0x83, 0x1d, 0x3a, 0x74, 0xe8, 0xcb, 0x8d,
+15             0x01, 0x02, 0x04, 0x08, 0x10, 0x20, 0x40, 0x80, 0x1b, 0x36, 0x6c,
+16             0xd8, 0xab, 0x4d, 0x9a, 0x2f, 0x5e, 0xbc, 0x63, 0xc6, 0x97, 0x35,
+17             0x6a, 0xd4, 0xb3, 0x7d, 0xfa, 0xef, 0xc5, 0x91, 0x39, 0x72, 0xe4,
+18             0xd3, 0xbd, 0x61, 0xc2, 0x9f, 0x25, 0x4a, 0x94, 0x33, 0x66, 0xcc,
+19             0x83, 0x1d, 0x3a, 0x74, 0xe8, 0xcb, 0x8d, 0x01, 0x02, 0x04, 0x08,
+20             0x10, 0x20, 0x40, 0x80, 0x1b, 0x36, 0x6c, 0xd8, 0xab, 0x4d, 0x9a,
+21             0x2f, 0x5e, 0xbc, 0x63, 0xc6, 0x97, 0x35, 0x6a, 0xd4, 0xb3, 0x7d,
+22             0xfa, 0xef, 0xc5, 0x91, 0x39, 0x72, 0xe4, 0xd3, 0xbd, 0x61, 0xc2,
+23             0x9f, 0x25, 0x4a, 0x94, 0x33, 0x66, 0xcc, 0x83, 0x1d, 0x3a, 0x74,
+24             0xe8, 0xcb ]
+\end{DoxyCode}

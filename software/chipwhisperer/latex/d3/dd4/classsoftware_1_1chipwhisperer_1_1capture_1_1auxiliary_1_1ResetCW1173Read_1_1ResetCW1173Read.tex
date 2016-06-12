@@ -1,0 +1,280 @@
+\hypertarget{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1ResetCW1173Read_1_1ResetCW1173Read}{}\section{software.\+chipwhisperer.\+capture.\+auxiliary.\+Reset\+C\+W1173\+Read.\+Reset\+C\+W1173\+Read Class Reference}
+\label{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1ResetCW1173Read_1_1ResetCW1173Read}\index{software.\+chipwhisperer.\+capture.\+auxiliary.\+Reset\+C\+W1173\+Read.\+Reset\+C\+W1173\+Read@{software.\+chipwhisperer.\+capture.\+auxiliary.\+Reset\+C\+W1173\+Read.\+Reset\+C\+W1173\+Read}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1ResetCW1173Read_1_1ResetCW1173Read_abb0ea1a542c8b474fe9324ea19085a0a}{\+\_\+\+\_\+init\+\_\+\+\_\+}
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1ResetCW1173Read_1_1ResetCW1173Read_a7995649a5d51334bab48c721745906c5}{capture\+Init} (self)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1ResetCW1173Read_1_1ResetCW1173Read_a2c5435c952a2fe23d2299fe91c4f37fc}{capture\+Complete} (self)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1ResetCW1173Read_1_1ResetCW1173Read_aea0cf7bd4ff10d53c0463512cf6617ee}{trace\+Arm} (self)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1ResetCW1173Read_1_1ResetCW1173Read_a1eaadea176d3b34ccc39b5f890264157}{trace\+Arm\+Post} (self)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1ResetCW1173Read_1_1ResetCW1173Read_a195813a21181e4690558a19932b36acd}{trace\+Done} (self)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1ResetCW1173Read_1_1ResetCW1173Read_a05cf57e585058b8c5e961ca25155968f}{reset\+Device} (self)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1ResetCW1173Read_1_1ResetCW1173Read_a86326b8f28747c5df4025c50be219a14}{test\+Reset} (self)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1ResetCW1173Read_1_1ResetCW1173Read_a3b6b31c9291cb06898524b255f8c4a1d}{nonblocking\+Sleep\+\_\+done} (self)
+\item 
+def \hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1ResetCW1173Read_1_1ResetCW1173Read_a462a1a7f997d42fe308db27ac2172883}{nonblocking\+Sleep} (self, stime)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}This auxiliary module can do two things:
+  1. Reset the target before arming the scope:
+         ^ reset     ^ arm       ^ trigger
+         |<-- d_1 -->|<-- d_2 -->|
+         |           |           |
+  -----------------------------------------------> (time)
+  
+  2. Reset the target after arming the scope:
+                     ^ arm       ^ reset ^ trigger
+          <-- d_1 -->|<-- d_2 -->|       |
+                     |           |       |
+  -----------------------------------------------> (time)
+  
+Method 1 is more consistent (resetting the device can accidentally cause
+a trigger event) but method 2 allows for a shorter delay between the reset
+and the scope measurement. 
+
+In the ChipWhisperer software, method 1 is called "pre-arm reset" and 
+method 2 is called "post-arm reset".
+\end{DoxyVerb}
+ 
+
+Inheritance diagram for software.\+chipwhisperer.\+capture.\+auxiliary.\+Reset\+C\+W1173\+Read.\+Reset\+C\+W1173\+Read\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=275pt]{d0/d0a/classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1ResetCW1173Read_1_1ResetCW1173Read__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for software.\+chipwhisperer.\+capture.\+auxiliary.\+Reset\+C\+W1173\+Read.\+Reset\+C\+W1173\+Read\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=275pt]{d0/d0c/classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1ResetCW1173Read_1_1ResetCW1173Read__coll__graph}
+\end{center}
+\end{figure}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1ResetCW1173Read_1_1ResetCW1173Read_abb0ea1a542c8b474fe9324ea19085a0a}{}\index{software\+::chipwhisperer\+::capture\+::auxiliary\+::\+Reset\+C\+W1173\+Read\+::\+Reset\+C\+W1173\+Read@{software\+::chipwhisperer\+::capture\+::auxiliary\+::\+Reset\+C\+W1173\+Read\+::\+Reset\+C\+W1173\+Read}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!software\+::chipwhisperer\+::capture\+::auxiliary\+::\+Reset\+C\+W1173\+Read\+::\+Reset\+C\+W1173\+Read@{software\+::chipwhisperer\+::capture\+::auxiliary\+::\+Reset\+C\+W1173\+Read\+::\+Reset\+C\+W1173\+Read}}
+\subsubsection[{\+\_\+\+\_\+init\+\_\+\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+capture.\+auxiliary.\+Reset\+C\+W1173\+Read.\+Reset\+C\+W1173\+Read.\+\_\+\+\_\+init\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{parent\+Param = {\ttfamily None}}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1ResetCW1173Read_1_1ResetCW1173Read_abb0ea1a542c8b474fe9324ea19085a0a}
+
+
+References software.\+chipwhisperer.\+capture.\+auxiliary.\+Reset\+A\+V\+R.\+Reset\+A\+V\+R.\+test\+Reset(), and software.\+chipwhisperer.\+capture.\+auxiliary.\+Reset\+C\+W1173\+Read.\+Reset\+C\+W1173\+Read.\+test\+Reset().
+
+
+\begin{DoxyCode}
+56     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1ResetCW1173Read_1_1ResetCW1173Read_abb0ea1a542c8b474fe9324ea19085a0a}{\_\_init\_\_}(self, parentParam=None):
+57         AuxiliaryTemplate.\_\_init\_\_(self, parentParam)
+58         self.params.addChildren([
+59             \{\textcolor{stringliteral}{'name'}:\textcolor{stringliteral}{'Interface'}, \textcolor{stringliteral}{'type'}:\textcolor{stringliteral}{'list'}, \textcolor{stringliteral}{'key'}:\textcolor{stringliteral}{'target'}, \textcolor{stringliteral}{'values'}:[\textcolor{stringliteral}{'xmega (PDI)'}, \textcolor{stringliteral}{'avr (ISP)'}], \textcolor{stringliteral}{'
+      value'}:\textcolor{stringliteral}{'xmega (PDI)'}\},
+60             \{\textcolor{stringliteral}{'name'}:\textcolor{stringliteral}{'Delay (Pre-Arm)'} , \textcolor{stringliteral}{'type'}:\textcolor{stringliteral}{'int'},  \textcolor{stringliteral}{'key'}:\textcolor{stringliteral}{'predelay'},  \textcolor{stringliteral}{'limits'}:(0, 10E3), \textcolor{stringliteral}{'value'}:0, \textcolor{stringliteral}{'
+      suffix'}:\textcolor{stringliteral}{' ms'}\},
+61             \{\textcolor{stringliteral}{'name'}:\textcolor{stringliteral}{'Delay (Post-Arm)'}, \textcolor{stringliteral}{'type'}:\textcolor{stringliteral}{'int'},  \textcolor{stringliteral}{'key'}:\textcolor{stringliteral}{'postdelay'}, \textcolor{stringliteral}{'limits'}:(0, 10E3), \textcolor{stringliteral}{'value'}:0, \textcolor{stringliteral}{'
+      suffix'}:\textcolor{stringliteral}{' ms'}\},
+62             \{\textcolor{stringliteral}{'name'}:\textcolor{stringliteral}{'Reset Timing'}  , \textcolor{stringliteral}{'type'}:\textcolor{stringliteral}{'list'}, \textcolor{stringliteral}{'key'}:\textcolor{stringliteral}{'resettiming'}, \textcolor{stringliteral}{'values'}:[\textcolor{stringliteral}{'Pre-Arm'}, \textcolor{stringliteral}{'Post-Arm'}],
+       \textcolor{stringliteral}{'value'}:\textcolor{stringliteral}{'Pre-Arm'}\},
+63             \{\textcolor{stringliteral}{'name'}:\textcolor{stringliteral}{'Test Reset'}, \textcolor{stringliteral}{'type'}:\textcolor{stringliteral}{'action'}, \textcolor{stringliteral}{'action'}:self.\hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1ResetCW1173Read_1_1ResetCW1173Read_a86326b8f28747c5df4025c50be219a14}{testReset}\}
+64         ])
+65 
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1ResetCW1173Read_1_1ResetCW1173Read_a2c5435c952a2fe23d2299fe91c4f37fc}{}\index{software\+::chipwhisperer\+::capture\+::auxiliary\+::\+Reset\+C\+W1173\+Read\+::\+Reset\+C\+W1173\+Read@{software\+::chipwhisperer\+::capture\+::auxiliary\+::\+Reset\+C\+W1173\+Read\+::\+Reset\+C\+W1173\+Read}!capture\+Complete@{capture\+Complete}}
+\index{capture\+Complete@{capture\+Complete}!software\+::chipwhisperer\+::capture\+::auxiliary\+::\+Reset\+C\+W1173\+Read\+::\+Reset\+C\+W1173\+Read@{software\+::chipwhisperer\+::capture\+::auxiliary\+::\+Reset\+C\+W1173\+Read\+::\+Reset\+C\+W1173\+Read}}
+\subsubsection[{capture\+Complete}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+capture.\+auxiliary.\+Reset\+C\+W1173\+Read.\+Reset\+C\+W1173\+Read.\+capture\+Complete (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1ResetCW1173Read_1_1ResetCW1173Read_a2c5435c952a2fe23d2299fe91c4f37fc}
+
+\begin{DoxyCode}
+69     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1ResetCW1173Read_1_1ResetCW1173Read_a2c5435c952a2fe23d2299fe91c4f37fc}{captureComplete}(self):
+70         \textcolor{keywordflow}{pass}
+71 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1ResetCW1173Read_1_1ResetCW1173Read_a7995649a5d51334bab48c721745906c5}{}\index{software\+::chipwhisperer\+::capture\+::auxiliary\+::\+Reset\+C\+W1173\+Read\+::\+Reset\+C\+W1173\+Read@{software\+::chipwhisperer\+::capture\+::auxiliary\+::\+Reset\+C\+W1173\+Read\+::\+Reset\+C\+W1173\+Read}!capture\+Init@{capture\+Init}}
+\index{capture\+Init@{capture\+Init}!software\+::chipwhisperer\+::capture\+::auxiliary\+::\+Reset\+C\+W1173\+Read\+::\+Reset\+C\+W1173\+Read@{software\+::chipwhisperer\+::capture\+::auxiliary\+::\+Reset\+C\+W1173\+Read\+::\+Reset\+C\+W1173\+Read}}
+\subsubsection[{capture\+Init}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+capture.\+auxiliary.\+Reset\+C\+W1173\+Read.\+Reset\+C\+W1173\+Read.\+capture\+Init (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1ResetCW1173Read_1_1ResetCW1173Read_a7995649a5d51334bab48c721745906c5}
+
+\begin{DoxyCode}
+66     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1ResetCW1173Read_1_1ResetCW1173Read_a7995649a5d51334bab48c721745906c5}{captureInit}(self):
+67         \textcolor{keywordflow}{pass}
+68 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1ResetCW1173Read_1_1ResetCW1173Read_a462a1a7f997d42fe308db27ac2172883}{}\index{software\+::chipwhisperer\+::capture\+::auxiliary\+::\+Reset\+C\+W1173\+Read\+::\+Reset\+C\+W1173\+Read@{software\+::chipwhisperer\+::capture\+::auxiliary\+::\+Reset\+C\+W1173\+Read\+::\+Reset\+C\+W1173\+Read}!nonblocking\+Sleep@{nonblocking\+Sleep}}
+\index{nonblocking\+Sleep@{nonblocking\+Sleep}!software\+::chipwhisperer\+::capture\+::auxiliary\+::\+Reset\+C\+W1173\+Read\+::\+Reset\+C\+W1173\+Read@{software\+::chipwhisperer\+::capture\+::auxiliary\+::\+Reset\+C\+W1173\+Read\+::\+Reset\+C\+W1173\+Read}}
+\subsubsection[{nonblocking\+Sleep}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+capture.\+auxiliary.\+Reset\+C\+W1173\+Read.\+Reset\+C\+W1173\+Read.\+nonblocking\+Sleep (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{stime}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1ResetCW1173Read_1_1ResetCW1173Read_a462a1a7f997d42fe308db27ac2172883}
+\begin{DoxyVerb}Sleep for given number of seconds (~50mS resolution), but don't block GUI while we do it\end{DoxyVerb}
+ 
+
+References software.\+chipwhisperer.\+capture.\+auxiliary.\+G\+P\+I\+O\+Toggle.\+G\+P\+I\+O\+Toggle.\+\_\+sleeping, software.\+chipwhisperer.\+capture.\+auxiliary.\+Reset\+C\+W1173\+Read.\+Reset\+C\+W1173\+Read.\+\_\+sleeping, software.\+chipwhisperer.\+capture.\+auxiliary.\+G\+P\+I\+O\+Toggle.\+G\+P\+I\+O\+Toggle.\+nonblocking\+Sleep\+\_\+done(), and software.\+chipwhisperer.\+capture.\+auxiliary.\+Reset\+C\+W1173\+Read.\+Reset\+C\+W1173\+Read.\+nonblocking\+Sleep\+\_\+done().
+
+
+
+Referenced by software.\+chipwhisperer.\+capture.\+auxiliary.\+Reset\+C\+W1173\+Read.\+Reset\+C\+W1173\+Read.\+trace\+Arm\+Post().
+
+
+\begin{DoxyCode}
+109     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1ResetCW1173Read_1_1ResetCW1173Read_a462a1a7f997d42fe308db27ac2172883}{nonblockingSleep}(self, stime):
+110         \textcolor{stringliteral}{"""Sleep for given number of seconds (~50mS resolution), but don't block GUI while we do it"""}
+111         timer.Timer.singleShot(stime * 1000, self.\hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1ResetCW1173Read_1_1ResetCW1173Read_a3b6b31c9291cb06898524b255f8c4a1d}{nonblockingSleep\_done})
+112         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1ResetCW1173Read_1_1ResetCW1173Read_a943ce7adb768d02566e886994426b269}{\_sleeping} = \textcolor{keyword}{True}
+113         while(self.\hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1ResetCW1173Read_1_1ResetCW1173Read_a943ce7adb768d02566e886994426b269}{\_sleeping}):
+114             time.sleep(0.01)
+115             util.updateUI()
+116 \end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1ResetCW1173Read_1_1ResetCW1173Read_a3b6b31c9291cb06898524b255f8c4a1d}{}\index{software\+::chipwhisperer\+::capture\+::auxiliary\+::\+Reset\+C\+W1173\+Read\+::\+Reset\+C\+W1173\+Read@{software\+::chipwhisperer\+::capture\+::auxiliary\+::\+Reset\+C\+W1173\+Read\+::\+Reset\+C\+W1173\+Read}!nonblocking\+Sleep\+\_\+done@{nonblocking\+Sleep\+\_\+done}}
+\index{nonblocking\+Sleep\+\_\+done@{nonblocking\+Sleep\+\_\+done}!software\+::chipwhisperer\+::capture\+::auxiliary\+::\+Reset\+C\+W1173\+Read\+::\+Reset\+C\+W1173\+Read@{software\+::chipwhisperer\+::capture\+::auxiliary\+::\+Reset\+C\+W1173\+Read\+::\+Reset\+C\+W1173\+Read}}
+\subsubsection[{nonblocking\+Sleep\+\_\+done}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+capture.\+auxiliary.\+Reset\+C\+W1173\+Read.\+Reset\+C\+W1173\+Read.\+nonblocking\+Sleep\+\_\+done (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1ResetCW1173Read_1_1ResetCW1173Read_a3b6b31c9291cb06898524b255f8c4a1d}
+
+
+References software.\+chipwhisperer.\+capture.\+auxiliary.\+G\+P\+I\+O\+Toggle.\+G\+P\+I\+O\+Toggle.\+\_\+sleeping, and software.\+chipwhisperer.\+capture.\+auxiliary.\+Reset\+C\+W1173\+Read.\+Reset\+C\+W1173\+Read.\+\_\+sleeping.
+
+
+
+Referenced by software.\+chipwhisperer.\+capture.\+auxiliary.\+Reset\+C\+W1173\+Read.\+Reset\+C\+W1173\+Read.\+nonblocking\+Sleep().
+
+
+\begin{DoxyCode}
+106     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1ResetCW1173Read_1_1ResetCW1173Read_a3b6b31c9291cb06898524b255f8c4a1d}{nonblockingSleep\_done}(self):
+107         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1ResetCW1173Read_1_1ResetCW1173Read_a943ce7adb768d02566e886994426b269}{\_sleeping} = \textcolor{keyword}{False}
+108 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1ResetCW1173Read_1_1ResetCW1173Read_a05cf57e585058b8c5e961ca25155968f}{}\index{software\+::chipwhisperer\+::capture\+::auxiliary\+::\+Reset\+C\+W1173\+Read\+::\+Reset\+C\+W1173\+Read@{software\+::chipwhisperer\+::capture\+::auxiliary\+::\+Reset\+C\+W1173\+Read\+::\+Reset\+C\+W1173\+Read}!reset\+Device@{reset\+Device}}
+\index{reset\+Device@{reset\+Device}!software\+::chipwhisperer\+::capture\+::auxiliary\+::\+Reset\+C\+W1173\+Read\+::\+Reset\+C\+W1173\+Read@{software\+::chipwhisperer\+::capture\+::auxiliary\+::\+Reset\+C\+W1173\+Read\+::\+Reset\+C\+W1173\+Read}}
+\subsubsection[{reset\+Device}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+capture.\+auxiliary.\+Reset\+C\+W1173\+Read.\+Reset\+C\+W1173\+Read.\+reset\+Device (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1ResetCW1173Read_1_1ResetCW1173Read_a05cf57e585058b8c5e961ca25155968f}
+
+
+Referenced by software.\+chipwhisperer.\+capture.\+auxiliary.\+Reset\+C\+W1173\+Read.\+Reset\+C\+W1173\+Read.\+test\+Reset(), and software.\+chipwhisperer.\+capture.\+auxiliary.\+Reset\+C\+W1173\+Read.\+Reset\+C\+W1173\+Read.\+trace\+Arm\+Post().
+
+
+\begin{DoxyCode}
+95     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1ResetCW1173Read_1_1ResetCW1173Read_a05cf57e585058b8c5e961ca25155968f}{resetDevice}(self):
+96         \textcolor{comment}{# Reset the target by reading its signature}
+97         target = self.findParam(\textcolor{stringliteral}{'target'}).value()
+98         \textcolor{keywordflow}{if} target == \textcolor{stringliteral}{'xmega (PDI)'}:
+99             CWCoreAPI.getInstance().getScope().scopetype.cwliteXMEGA.readSignature()
+100         \textcolor{keywordflow}{else}:
+101             CWCoreAPI.getInstance().getScope().scopetype.cwliteAVR.readSignature()
+102         
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1ResetCW1173Read_1_1ResetCW1173Read_a86326b8f28747c5df4025c50be219a14}{}\index{software\+::chipwhisperer\+::capture\+::auxiliary\+::\+Reset\+C\+W1173\+Read\+::\+Reset\+C\+W1173\+Read@{software\+::chipwhisperer\+::capture\+::auxiliary\+::\+Reset\+C\+W1173\+Read\+::\+Reset\+C\+W1173\+Read}!test\+Reset@{test\+Reset}}
+\index{test\+Reset@{test\+Reset}!software\+::chipwhisperer\+::capture\+::auxiliary\+::\+Reset\+C\+W1173\+Read\+::\+Reset\+C\+W1173\+Read@{software\+::chipwhisperer\+::capture\+::auxiliary\+::\+Reset\+C\+W1173\+Read\+::\+Reset\+C\+W1173\+Read}}
+\subsubsection[{test\+Reset}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+capture.\+auxiliary.\+Reset\+C\+W1173\+Read.\+Reset\+C\+W1173\+Read.\+test\+Reset (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1ResetCW1173Read_1_1ResetCW1173Read_a86326b8f28747c5df4025c50be219a14}
+
+
+References software.\+chipwhisperer.\+capture.\+auxiliary.\+Reset\+C\+W1173\+Read.\+Reset\+C\+W1173\+Read.\+reset\+Device().
+
+
+
+Referenced by software.\+chipwhisperer.\+capture.\+auxiliary.\+Reset\+C\+W1173\+Read.\+Reset\+C\+W1173\+Read.\+\_\+\+\_\+init\+\_\+\+\_\+().
+
+
+\begin{DoxyCode}
+103     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1ResetCW1173Read_1_1ResetCW1173Read_a86326b8f28747c5df4025c50be219a14}{testReset}(self):
+104         self.\hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1ResetCW1173Read_1_1ResetCW1173Read_a05cf57e585058b8c5e961ca25155968f}{resetDevice}()
+105 
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1ResetCW1173Read_1_1ResetCW1173Read_aea0cf7bd4ff10d53c0463512cf6617ee}{}\index{software\+::chipwhisperer\+::capture\+::auxiliary\+::\+Reset\+C\+W1173\+Read\+::\+Reset\+C\+W1173\+Read@{software\+::chipwhisperer\+::capture\+::auxiliary\+::\+Reset\+C\+W1173\+Read\+::\+Reset\+C\+W1173\+Read}!trace\+Arm@{trace\+Arm}}
+\index{trace\+Arm@{trace\+Arm}!software\+::chipwhisperer\+::capture\+::auxiliary\+::\+Reset\+C\+W1173\+Read\+::\+Reset\+C\+W1173\+Read@{software\+::chipwhisperer\+::capture\+::auxiliary\+::\+Reset\+C\+W1173\+Read\+::\+Reset\+C\+W1173\+Read}}
+\subsubsection[{trace\+Arm}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+capture.\+auxiliary.\+Reset\+C\+W1173\+Read.\+Reset\+C\+W1173\+Read.\+trace\+Arm (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1ResetCW1173Read_1_1ResetCW1173Read_aea0cf7bd4ff10d53c0463512cf6617ee}
+
+\begin{DoxyCode}
+72     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1ResetCW1173Read_1_1ResetCW1173Read_aea0cf7bd4ff10d53c0463512cf6617ee}{traceArm}(self):
+73         \textcolor{comment}{# Before we arm the scope, possibly reset the device and wait for a bit}
+74         resettiming = self.findParam(\textcolor{stringliteral}{'resettiming'}).value()
+75         \textcolor{keywordflow}{if} resettiming == \textcolor{stringliteral}{'Pre-Arm'}:
+76             self.\hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1ResetCW1173Read_1_1ResetCW1173Read_a05cf57e585058b8c5e961ca25155968f}{resetDevice}()
+77 
+78         dly = self.findParam(\textcolor{stringliteral}{'predelay'}).value()
+79         \textcolor{keywordflow}{if} dly > 0:
+80             self.\hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1ResetCW1173Read_1_1ResetCW1173Read_a462a1a7f997d42fe308db27ac2172883}{nonblockingSleep}(dly / 1000.0)
+81             
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1ResetCW1173Read_1_1ResetCW1173Read_a1eaadea176d3b34ccc39b5f890264157}{}\index{software\+::chipwhisperer\+::capture\+::auxiliary\+::\+Reset\+C\+W1173\+Read\+::\+Reset\+C\+W1173\+Read@{software\+::chipwhisperer\+::capture\+::auxiliary\+::\+Reset\+C\+W1173\+Read\+::\+Reset\+C\+W1173\+Read}!trace\+Arm\+Post@{trace\+Arm\+Post}}
+\index{trace\+Arm\+Post@{trace\+Arm\+Post}!software\+::chipwhisperer\+::capture\+::auxiliary\+::\+Reset\+C\+W1173\+Read\+::\+Reset\+C\+W1173\+Read@{software\+::chipwhisperer\+::capture\+::auxiliary\+::\+Reset\+C\+W1173\+Read\+::\+Reset\+C\+W1173\+Read}}
+\subsubsection[{trace\+Arm\+Post}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+capture.\+auxiliary.\+Reset\+C\+W1173\+Read.\+Reset\+C\+W1173\+Read.\+trace\+Arm\+Post (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1ResetCW1173Read_1_1ResetCW1173Read_a1eaadea176d3b34ccc39b5f890264157}
+
+
+References software.\+chipwhisperer.\+capture.\+scopes.\+\_\+\+Open\+A\+D\+C\+Interface.\+Open\+A\+D\+C\+Settings.\+find\+Param, software.\+chipwhisperer.\+common.\+api.\+Extended\+Parameter.\+Extended\+Parameter.\+find\+Param(), software.\+chipwhisperer.\+capture.\+scopes.\+\_\+\+Open\+A\+D\+C\+Interface.\+Clock\+Settings.\+find\+Param, software.\+chipwhisperer.\+capture.\+auxiliary.\+G\+P\+I\+O\+Toggle.\+G\+P\+I\+O\+Toggle.\+nonblocking\+Sleep(), software.\+chipwhisperer.\+capture.\+auxiliary.\+Reset\+C\+W1173\+Read.\+Reset\+C\+W1173\+Read.\+nonblocking\+Sleep(), and software.\+chipwhisperer.\+capture.\+auxiliary.\+Reset\+C\+W1173\+Read.\+Reset\+C\+W1173\+Read.\+reset\+Device().
+
+
+\begin{DoxyCode}
+82     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1ResetCW1173Read_1_1ResetCW1173Read_a1eaadea176d3b34ccc39b5f890264157}{traceArmPost}(self):
+83         \textcolor{comment}{# After we arm the scope, wait for a bit, then possibly reset the target            }
+84         dly = self.findParam(\textcolor{stringliteral}{'postdelay'}).value()
+85         \textcolor{keywordflow}{if} dly > 0:
+86             self.\hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1ResetCW1173Read_1_1ResetCW1173Read_a462a1a7f997d42fe308db27ac2172883}{nonblockingSleep}(dly / 1000.0)
+87             
+88         resettiming = self.findParam(\textcolor{stringliteral}{'resettiming'}).value()
+89         \textcolor{keywordflow}{if} resettiming == \textcolor{stringliteral}{'Post-Arm'}:
+90             self.\hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1ResetCW1173Read_1_1ResetCW1173Read_a05cf57e585058b8c5e961ca25155968f}{resetDevice}()
+91             
+\end{DoxyCode}
+\hypertarget{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1ResetCW1173Read_1_1ResetCW1173Read_a195813a21181e4690558a19932b36acd}{}\index{software\+::chipwhisperer\+::capture\+::auxiliary\+::\+Reset\+C\+W1173\+Read\+::\+Reset\+C\+W1173\+Read@{software\+::chipwhisperer\+::capture\+::auxiliary\+::\+Reset\+C\+W1173\+Read\+::\+Reset\+C\+W1173\+Read}!trace\+Done@{trace\+Done}}
+\index{trace\+Done@{trace\+Done}!software\+::chipwhisperer\+::capture\+::auxiliary\+::\+Reset\+C\+W1173\+Read\+::\+Reset\+C\+W1173\+Read@{software\+::chipwhisperer\+::capture\+::auxiliary\+::\+Reset\+C\+W1173\+Read\+::\+Reset\+C\+W1173\+Read}}
+\subsubsection[{trace\+Done}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+capture.\+auxiliary.\+Reset\+C\+W1173\+Read.\+Reset\+C\+W1173\+Read.\+trace\+Done (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1ResetCW1173Read_1_1ResetCW1173Read_a195813a21181e4690558a19932b36acd}
+
+\begin{DoxyCode}
+92     \textcolor{keyword}{def }\hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1auxiliary_1_1ResetCW1173Read_1_1ResetCW1173Read_a195813a21181e4690558a19932b36acd}{traceDone}(self):
+93         \textcolor{keywordflow}{pass}
+94 
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ResetCW1173Read_8py}{Reset\+C\+W1173\+Read.\+py}\end{DoxyCompactItemize}

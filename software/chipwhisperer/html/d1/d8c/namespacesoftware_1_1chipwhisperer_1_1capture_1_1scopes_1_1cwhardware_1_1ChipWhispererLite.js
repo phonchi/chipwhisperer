@@ -1,0 +1,4 @@
+var namespacesoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1cwhardware_1_1ChipWhispererLite =
+[
+    [ "CWLiteUSB", "d8/dac/classsoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1cwhardware_1_1ChipWhispererLite_1_1CWLiteUSB.html", "d8/dac/classsoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1cwhardware_1_1ChipWhispererLite_1_1CWLiteUSB" ]
+];

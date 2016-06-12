@@ -1,0 +1,284 @@
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1PicoScope}{}\section{software.\+chipwhisperer.\+capture.\+scopes.\+Pico\+Scope Namespace Reference}
+\label{namespacesoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1PicoScope}\index{software.\+chipwhisperer.\+capture.\+scopes.\+Pico\+Scope@{software.\+chipwhisperer.\+capture.\+scopes.\+Pico\+Scope}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1PicoScope_1_1PicoScope}{Pico\+Scope}
+\item 
+class \hyperlink{classsoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1PicoScope_1_1PicoScopeInterface}{Pico\+Scope\+Interface}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacesoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1PicoScope_aede6bc8094789e7a9abfcfee603d9b4b}{\+\_\+\+\_\+init\+\_\+\+\_\+}
+\item 
+def \hyperlink{namespacesoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1PicoScope_abd05c556af1f41b561abfb0604c17458}{update\+Sample\+Rate\+Freq}
+\item 
+def \hyperlink{namespacesoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1PicoScope_a387dc036eac5d58fcf4d69e8dd3782bd}{update\+Sample\+Rate\+Freq\+U\+I} (self)
+\item 
+def \hyperlink{namespacesoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1PicoScope_abda082a236e19064566ae87b069d0f67}{con} (self)
+\item 
+def \hyperlink{namespacesoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1PicoScope_a6dcdf3772e023e33e09f655fd20aaaed}{dis} (self)
+\item 
+def \hyperlink{namespacesoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1PicoScope_a4f7d1e34961e416ee8aa74ce7809dbea}{update\+Current\+Settings}
+\item 
+def \hyperlink{namespacesoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1PicoScope_a30f8ebc4175d5b339ed8482eadc23a31}{arm} (self)
+\item 
+def \hyperlink{namespacesoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1PicoScope_a40e1a05746b56eec869864779cc23153}{capture} (self)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{namespacesoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1PicoScope_a2f1e9b3bced098087fbeb2f541e3ef07}{\+\_\+name} = \textquotesingle{}Pico Scope\textquotesingle{}
+\item 
+\hyperlink{namespacesoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1PicoScope_a78c5cc6340a0e5ef065f518f8bb95ec0}{ps}
+\item 
+\hyperlink{namespacesoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1PicoScope_a1155ab1ced163f9636f83aef2839a57e}{data\+Updated}
+\item 
+\hyperlink{namespacesoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1PicoScope_ac64cd74bf8420740d70799da3f3f1566}{\+\_\+faketimer}
+\item 
+\hyperlink{namespacesoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1PicoScope_ad5aad75f7e8408e9f666947678d187b0}{datapoints}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1PicoScope_aede6bc8094789e7a9abfcfee603d9b4b}{}\index{software\+::chipwhisperer\+::capture\+::scopes\+::\+Pico\+Scope@{software\+::chipwhisperer\+::capture\+::scopes\+::\+Pico\+Scope}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!software\+::chipwhisperer\+::capture\+::scopes\+::\+Pico\+Scope@{software\+::chipwhisperer\+::capture\+::scopes\+::\+Pico\+Scope}}
+\subsubsection[{\+\_\+\+\_\+init\+\_\+\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+capture.\+scopes.\+Pico\+Scope.\+\_\+\+\_\+init\+\_\+\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{parent\+Param = {\ttfamily None}, }
+\item[{}]{ps\+Class = {\ttfamily None}}
+\end{DoxyParamCaption}
+)}\label{namespacesoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1PicoScope_aede6bc8094789e7a9abfcfee603d9b4b}
+
+\begin{DoxyCode}
+45     \textcolor{keyword}{def }\hyperlink{namespacesoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1PicoScope_aede6bc8094789e7a9abfcfee603d9b4b}{\_\_init\_\_}(self, parentParam=None, psClass=None):
+46         ScopeTemplate.\_\_init\_\_(self, parentParam)
+47         self.ps = psClass
+48         self.dataUpdated = util.Signal()
+49 
+50         chlist = \{\}
+51         \textcolor{keywordflow}{for} t \textcolor{keywordflow}{in} self.ps.CHANNELS:
+52             \textcolor{keywordflow}{if} self.ps.CHANNELS[t] < self.ps.CHANNELS[\textcolor{stringliteral}{'MaxChannels'}]:
+53                 chlist[t] = self.ps.CHANNELS[t]
+54 
+55         \textcolor{comment}{# Rebuild channel range as string + api value}
+56         chRange = util.DictType()
+57         \textcolor{keywordflow}{for} key \textcolor{keywordflow}{in} sorted(self.ps.CHANNEL\_RANGE):
+58             chRange[ key[\textcolor{stringliteral}{'rangeStr'}] ] = key[\textcolor{stringliteral}{'rangeV'}]
+59 
+60         self.params.addChildren([
+61             \{\textcolor{stringliteral}{'name'}:\textcolor{stringliteral}{'Trace Measurement'}, \textcolor{stringliteral}{'type'}:\textcolor{stringliteral}{'group'}, \textcolor{stringliteral}{'children'}:[
+62                 \{\textcolor{stringliteral}{'name'}:\textcolor{stringliteral}{'Source'}, \textcolor{stringliteral}{'key'}:\textcolor{stringliteral}{'tracesource'}, \textcolor{stringliteral}{'type'}:\textcolor{stringliteral}{'list'}, \textcolor{stringliteral}{'values'}:chlist, \textcolor{stringliteral}{'value'}:0, \textcolor{stringliteral}{'set'}:
+      self.updateCurrentSettings\},
+63                 \{\textcolor{stringliteral}{'name'}:\textcolor{stringliteral}{'Probe Att.'}, \textcolor{stringliteral}{'key'}:\textcolor{stringliteral}{'traceprobe'}, \textcolor{stringliteral}{'type'}:\textcolor{stringliteral}{'list'}, \textcolor{stringliteral}{'values'}:\{\textcolor{stringliteral}{'1:1'}:1, \textcolor{stringliteral}{'1:10'}:10\}, \textcolor{stringliteral}{'
+      value'}:1, \textcolor{stringliteral}{'set'}:self.updateCurrentSettings\},
+64                 \{\textcolor{stringliteral}{'name'}:\textcolor{stringliteral}{'Coupling'}, \textcolor{stringliteral}{'key'}:\textcolor{stringliteral}{'tracecouple'}, \textcolor{stringliteral}{'type'}:\textcolor{stringliteral}{'list'}, \textcolor{stringliteral}{'values'}:self.ps.CHANNEL\_COUPLINGS,
+       \textcolor{stringliteral}{'value'}:0, \textcolor{stringliteral}{'set'}:self.updateCurrentSettings\},
+65                 \{\textcolor{stringliteral}{'name'}:\textcolor{stringliteral}{'Y-Range'}, \textcolor{stringliteral}{'key'}:\textcolor{stringliteral}{'traceyrange'}, \textcolor{stringliteral}{'type'}:\textcolor{stringliteral}{'list'}, \textcolor{stringliteral}{'values'}:chRange, \textcolor{stringliteral}{'value'}:1.0, \textcolor{stringliteral}{'set'}
+      :self.updateCurrentSettings\},
+66             ]\},
+67             \{\textcolor{stringliteral}{'name'}:\textcolor{stringliteral}{'Trigger'}, \textcolor{stringliteral}{'type'}:\textcolor{stringliteral}{'group'}, \textcolor{stringliteral}{'children'}:[
+68                 \{\textcolor{stringliteral}{'name'}:\textcolor{stringliteral}{'Source'}, \textcolor{stringliteral}{'key'}:\textcolor{stringliteral}{'trigsource'}, \textcolor{stringliteral}{'type'}:\textcolor{stringliteral}{'list'}, \textcolor{stringliteral}{'values'}:chlist, \textcolor{stringliteral}{'value'}:1, \textcolor{stringliteral}{'set'}:
+      self.updateCurrentSettings\},
+69                 \{\textcolor{stringliteral}{'name'}:\textcolor{stringliteral}{'Probe Att.'}, \textcolor{stringliteral}{'key'}:\textcolor{stringliteral}{'trigprobe'}, \textcolor{stringliteral}{'type'}:\textcolor{stringliteral}{'list'}, \textcolor{stringliteral}{'values'}:\{\textcolor{stringliteral}{'1:1'}:1, \textcolor{stringliteral}{'1:10'}:10\}, \textcolor{stringliteral}{'
+      value'}:10, \textcolor{stringliteral}{'set'}:self.updateCurrentSettings\},
+70                 \{\textcolor{stringliteral}{'name'}:\textcolor{stringliteral}{'Coupling'}, \textcolor{stringliteral}{'key'}:\textcolor{stringliteral}{'trigcouple'}, \textcolor{stringliteral}{'type'}:\textcolor{stringliteral}{'list'}, \textcolor{stringliteral}{'values'}:self.ps.CHANNEL\_COUPLINGS, \textcolor{stringliteral}{
+      'value'}:1, \textcolor{stringliteral}{'set'}:self.updateCurrentSettings\},
+71                 \{\textcolor{stringliteral}{'name'}:\textcolor{stringliteral}{'Y-Range'}, \textcolor{stringliteral}{'key'}:\textcolor{stringliteral}{'trigrange'}, \textcolor{stringliteral}{'type'}:\textcolor{stringliteral}{'list'}, \textcolor{stringliteral}{'values'}:chRange, \textcolor{stringliteral}{'value'}:5.0, \textcolor{stringliteral}{'set'}:
+      self.updateCurrentSettings\},
+72                 \{\textcolor{stringliteral}{'name'}:\textcolor{stringliteral}{'Trigger Direction'}, \textcolor{stringliteral}{'key'}:\textcolor{stringliteral}{'trigtype'}, \textcolor{stringliteral}{'type'}:\textcolor{stringliteral}{'list'}, \textcolor{stringliteral}{'values'}:
+      self.ps.THRESHOLD\_TYPE, \textcolor{stringliteral}{'value'}:2, \textcolor{stringliteral}{'set'}:self.updateCurrentSettings\},
+73                 \{\textcolor{stringliteral}{'name'}:\textcolor{stringliteral}{'Trigger Level'}, \textcolor{stringliteral}{'key'}:\textcolor{stringliteral}{'triglevel'}, \textcolor{stringliteral}{'type'}:\textcolor{stringliteral}{'float'}, \textcolor{stringliteral}{'step'}:1E-2, \textcolor{stringliteral}{'siPrefix'}:\textcolor{keyword}{True}, \textcolor{stringliteral}{'
+      suffix'}:\textcolor{stringliteral}{'V'}, \textcolor{stringliteral}{'limits'}:(-5, 5), \textcolor{stringliteral}{'value'}:0.5, \textcolor{stringliteral}{'set'}:self.updateCurrentSettings\},
+74             ]\},
+75             \{\textcolor{stringliteral}{'name'}:\textcolor{stringliteral}{'Sample Rate'}, \textcolor{stringliteral}{'key'}:\textcolor{stringliteral}{'samplerate'}, \textcolor{stringliteral}{'type'}:\textcolor{stringliteral}{'int'}, \textcolor{stringliteral}{'step'}:1E6, \textcolor{stringliteral}{'limits'}:(10000, 5E9), \textcolor{stringliteral}{'
+      value'}:100E6, \textcolor{stringliteral}{'set'}:self.updateSampleRateFreq, \textcolor{stringliteral}{'siPrefix'}:\textcolor{keyword}{True}, \textcolor{stringliteral}{'suffix'}: \textcolor{stringliteral}{'S/s'}\},
+76             \{\textcolor{stringliteral}{'name'}:\textcolor{stringliteral}{'Sample Length'}, \textcolor{stringliteral}{'key'}:\textcolor{stringliteral}{'samplelength'}, \textcolor{stringliteral}{'type'}:\textcolor{stringliteral}{'int'}, \textcolor{stringliteral}{'step'}:5000, \textcolor{stringliteral}{'limits'}:(1, 500E6), \textcolor{stringliteral}{
+      'value'}:5000, \textcolor{stringliteral}{'set'}:self.updateSampleRateFreq\},
+77             \{\textcolor{stringliteral}{'name'}:\textcolor{stringliteral}{'Sample Offset'}, \textcolor{stringliteral}{'key'}:\textcolor{stringliteral}{'sampleoffset'}, \textcolor{stringliteral}{'type'}:\textcolor{stringliteral}{'int'}, \textcolor{stringliteral}{'step'}:1000, \textcolor{stringliteral}{'limits'}:(0, 100E6), \textcolor{stringliteral}{
+      'value'}:0, \textcolor{stringliteral}{'set'}:self.updateSampleRateFreq\},
+78         ])
+79             
+\end{DoxyCode}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1PicoScope_a30f8ebc4175d5b339ed8482eadc23a31}{}\index{software\+::chipwhisperer\+::capture\+::scopes\+::\+Pico\+Scope@{software\+::chipwhisperer\+::capture\+::scopes\+::\+Pico\+Scope}!arm@{arm}}
+\index{arm@{arm}!software\+::chipwhisperer\+::capture\+::scopes\+::\+Pico\+Scope@{software\+::chipwhisperer\+::capture\+::scopes\+::\+Pico\+Scope}}
+\subsubsection[{arm}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+capture.\+scopes.\+Pico\+Scope.\+arm (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{namespacesoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1PicoScope_a30f8ebc4175d5b339ed8482eadc23a31}
+
+\begin{DoxyCode}
+141     \textcolor{keyword}{def }\hyperlink{namespacesoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1PicoScope_a30f8ebc4175d5b339ed8482eadc23a31}{arm}(self):       
+142         self.ps.runBlock()
+143         
+\end{DoxyCode}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1PicoScope_a40e1a05746b56eec869864779cc23153}{}\index{software\+::chipwhisperer\+::capture\+::scopes\+::\+Pico\+Scope@{software\+::chipwhisperer\+::capture\+::scopes\+::\+Pico\+Scope}!capture@{capture}}
+\index{capture@{capture}!software\+::chipwhisperer\+::capture\+::scopes\+::\+Pico\+Scope@{software\+::chipwhisperer\+::capture\+::scopes\+::\+Pico\+Scope}}
+\subsubsection[{capture}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+capture.\+scopes.\+Pico\+Scope.\+capture (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{namespacesoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1PicoScope_a40e1a05746b56eec869864779cc23153}
+
+\begin{DoxyCode}
+144     \textcolor{keyword}{def }\hyperlink{namespacesoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1PicoScope_a40e1a05746b56eec869864779cc23153}{capture}(self):
+145         while(self.ps.isReady() == \textcolor{keyword}{False}): time.sleep(0.01)
+146         data = self.ps.getDataV(self.findParam(\textcolor{stringliteral}{'tracesource'}).value(), self.findParam(\textcolor{stringliteral}{'samplelength'}).value
+      (), startIndex=self.findParam(\textcolor{stringliteral}{'sampleoffset'}).value(), returnOverflow=\textcolor{keyword}{True})
+147         \textcolor{keywordflow}{if} data[1] \textcolor{keywordflow}{is} \textcolor{keyword}{True}:
+148             \textcolor{keywordflow}{print} \textcolor{stringliteral}{"WARNING: OVERFLOW IN DATA"}
+149         self.datapoints = data[0]
+150         self.dataUpdated.emit(self.datapoints, 0)
+151 
+152         \textcolor{comment}{# No timeout?}
+153         \textcolor{keywordflow}{return} \textcolor{keyword}{False}
+154 
+155 
+\end{DoxyCode}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1PicoScope_abda082a236e19064566ae87b069d0f67}{}\index{software\+::chipwhisperer\+::capture\+::scopes\+::\+Pico\+Scope@{software\+::chipwhisperer\+::capture\+::scopes\+::\+Pico\+Scope}!con@{con}}
+\index{con@{con}!software\+::chipwhisperer\+::capture\+::scopes\+::\+Pico\+Scope@{software\+::chipwhisperer\+::capture\+::scopes\+::\+Pico\+Scope}}
+\subsubsection[{con}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+capture.\+scopes.\+Pico\+Scope.\+con (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{namespacesoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1PicoScope_abda082a236e19064566ae87b069d0f67}
+
+
+Referenced by software.\+chipwhisperer.\+common.\+api.\+C\+W\+Core\+A\+P\+I.\+C\+W\+Core\+A\+P\+I.\+connect\+Scope(), and software.\+chipwhisperer.\+common.\+api.\+C\+W\+Core\+A\+P\+I.\+C\+W\+Core\+A\+P\+I.\+connect\+Target().
+
+
+\begin{DoxyCode}
+102     \textcolor{keyword}{def }\hyperlink{namespacesoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1PicoScope_abda082a236e19064566ae87b069d0f67}{con}(self):
+103         self.ps.open()
+104         self.updateCurrentSettings()
+105 
+\end{DoxyCode}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1PicoScope_a6dcdf3772e023e33e09f655fd20aaaed}{}\index{software\+::chipwhisperer\+::capture\+::scopes\+::\+Pico\+Scope@{software\+::chipwhisperer\+::capture\+::scopes\+::\+Pico\+Scope}!dis@{dis}}
+\index{dis@{dis}!software\+::chipwhisperer\+::capture\+::scopes\+::\+Pico\+Scope@{software\+::chipwhisperer\+::capture\+::scopes\+::\+Pico\+Scope}}
+\subsubsection[{dis}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+capture.\+scopes.\+Pico\+Scope.\+dis (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{namespacesoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1PicoScope_a6dcdf3772e023e33e09f655fd20aaaed}
+
+
+Referenced by software.\+chipwhisperer.\+common.\+api.\+C\+W\+Core\+A\+P\+I.\+C\+W\+Core\+A\+P\+I.\+disconnect\+Scope(), software.\+chipwhisperer.\+common.\+api.\+C\+W\+Core\+A\+P\+I.\+C\+W\+Core\+A\+P\+I.\+disconnect\+Target(), software.\+chipwhisperer.\+common.\+api.\+C\+W\+Core\+A\+P\+I.\+C\+W\+Core\+A\+P\+I.\+set\+Scope(), and software.\+chipwhisperer.\+common.\+api.\+C\+W\+Core\+A\+P\+I.\+C\+W\+Core\+A\+P\+I.\+set\+Target().
+
+
+\begin{DoxyCode}
+106     \textcolor{keyword}{def }\hyperlink{namespacesoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1PicoScope_a6dcdf3772e023e33e09f655fd20aaaed}{dis}(self):
+107         self.ps.close()
+108     
+\end{DoxyCode}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1PicoScope_a4f7d1e34961e416ee8aa74ce7809dbea}{}\index{software\+::chipwhisperer\+::capture\+::scopes\+::\+Pico\+Scope@{software\+::chipwhisperer\+::capture\+::scopes\+::\+Pico\+Scope}!update\+Current\+Settings@{update\+Current\+Settings}}
+\index{update\+Current\+Settings@{update\+Current\+Settings}!software\+::chipwhisperer\+::capture\+::scopes\+::\+Pico\+Scope@{software\+::chipwhisperer\+::capture\+::scopes\+::\+Pico\+Scope}}
+\subsubsection[{update\+Current\+Settings}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+capture.\+scopes.\+Pico\+Scope.\+update\+Current\+Settings (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{ignored = {\ttfamily False}}
+\end{DoxyParamCaption}
+)}\label{namespacesoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1PicoScope_a4f7d1e34961e416ee8aa74ce7809dbea}
+
+\begin{DoxyCode}
+109     \textcolor{keyword}{def }\hyperlink{namespacesoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1PicoScope_a4f7d1e34961e416ee8aa74ce7809dbea}{updateCurrentSettings}(self, ignored=False):
+110         \textcolor{keywordflow}{if} self.ps.handle \textcolor{keywordflow}{is} \textcolor{keywordtype}{None}: \textcolor{keywordflow}{return}
+111 
+112         \textcolor{keywordflow}{try}:
+113             \textcolor{comment}{# Turn off all channels}
+114             \textcolor{keywordflow}{for} c \textcolor{keywordflow}{in} self.ps.CHANNELS:
+115                 self.ps.setChannel(c, enabled=\textcolor{keyword}{False})
+116         \textcolor{keywordflow}{except} IOError:
+117             \textcolor{keywordflow}{pass}
+118 
+119         \textcolor{keywordflow}{try}:
+120             \textcolor{comment}{# Trace Channel}
+121             TraceCh = self.findParam(\textcolor{stringliteral}{'tracesource'}).value()
+122             TraceCo = self.findParam(\textcolor{stringliteral}{'tracecouple'}).value()
+123             TraceY = self.findParam(\textcolor{stringliteral}{'traceyrange'}).value()
+124             TraceP = self.findParam(\textcolor{stringliteral}{'traceprobe'}).value()
+125             self.ps.setChannel(channel=TraceCh, coupling=TraceCo, VRange=TraceY, probeAttenuation=TraceP, 
+      enabled=\textcolor{keyword}{True})
+126 
+127             \textcolor{comment}{# Trigger Channel}
+128             TrigCh = self.findParam(\textcolor{stringliteral}{'trigsource'}).value()
+129             TrigCo = self.findParam(\textcolor{stringliteral}{'trigcouple'}).value()
+130             TrigY = self.findParam(\textcolor{stringliteral}{'trigrange'}).value()
+131             TrigP = self.findParam(\textcolor{stringliteral}{'trigprobe'}).value()
+132             self.ps.setChannel(channel=TrigCh, coupling=TrigCo, VRange=TrigY, probeAttenuation=TrigP, 
+      enabled=\textcolor{keyword}{True})
+133 
+134             \textcolor{comment}{# Trigger}
+135             self.ps.setSimpleTrigger(TrigCh, self.findParam(\textcolor{stringliteral}{'triglevel'}).value(), direction=self.findParam(\textcolor{stringliteral}{
+      'trigtype'}).value(), timeout\_ms=1000)
+136 
+137             self.updateSampleRateFreq()
+138         \textcolor{keywordflow}{except} IOError, e:
+139             \textcolor{keywordflow}{raise} IOError(\textcolor{stringliteral}{"Caught Error: %s"} % str(e))
+140 
+\end{DoxyCode}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1PicoScope_abd05c556af1f41b561abfb0604c17458}{}\index{software\+::chipwhisperer\+::capture\+::scopes\+::\+Pico\+Scope@{software\+::chipwhisperer\+::capture\+::scopes\+::\+Pico\+Scope}!update\+Sample\+Rate\+Freq@{update\+Sample\+Rate\+Freq}}
+\index{update\+Sample\+Rate\+Freq@{update\+Sample\+Rate\+Freq}!software\+::chipwhisperer\+::capture\+::scopes\+::\+Pico\+Scope@{software\+::chipwhisperer\+::capture\+::scopes\+::\+Pico\+Scope}}
+\subsubsection[{update\+Sample\+Rate\+Freq}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+capture.\+scopes.\+Pico\+Scope.\+update\+Sample\+Rate\+Freq (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{ignored = {\ttfamily None}}
+\end{DoxyParamCaption}
+)}\label{namespacesoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1PicoScope_abd05c556af1f41b561abfb0604c17458}
+
+\begin{DoxyCode}
+80     \textcolor{keyword}{def }\hyperlink{namespacesoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1PicoScope_abd05c556af1f41b561abfb0604c17458}{updateSampleRateFreq}(self, ignored=None):
+81         \textcolor{keywordflow}{if} self.ps.handle \textcolor{keywordflow}{is} \textcolor{keywordflow}{not} \textcolor{keywordtype}{None}:
+82             paramSR = self.findParam(\textcolor{stringliteral}{'samplerate'})
+83             paramSL = self.findParam(\textcolor{stringliteral}{'samplelength'})
+84             self.ps.setSamplingFrequency(paramSR.value(), paramSL.value() + self.findParam(\textcolor{stringliteral}{'sampleoffset'}).
+      value(), 1)
+85 
+86             \textcolor{comment}{#Need this callback as otherwise the setValue() is overwritten when the user toggles off, might
+       be fixed}
+87             \textcolor{comment}{#with Adriel's new parameterTypes, will have to test again}
+88             self.\_faketimer = timer.runTask(self.updateSampleRateFreqUI, 0.1, \textcolor{keyword}{True}, \textcolor{keyword}{True})
+89 
+\end{DoxyCode}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1PicoScope_a387dc036eac5d58fcf4d69e8dd3782bd}{}\index{software\+::chipwhisperer\+::capture\+::scopes\+::\+Pico\+Scope@{software\+::chipwhisperer\+::capture\+::scopes\+::\+Pico\+Scope}!update\+Sample\+Rate\+Freq\+U\+I@{update\+Sample\+Rate\+Freq\+U\+I}}
+\index{update\+Sample\+Rate\+Freq\+U\+I@{update\+Sample\+Rate\+Freq\+U\+I}!software\+::chipwhisperer\+::capture\+::scopes\+::\+Pico\+Scope@{software\+::chipwhisperer\+::capture\+::scopes\+::\+Pico\+Scope}}
+\subsubsection[{update\+Sample\+Rate\+Freq\+U\+I}]{\setlength{\rightskip}{0pt plus 5cm}def software.\+chipwhisperer.\+capture.\+scopes.\+Pico\+Scope.\+update\+Sample\+Rate\+Freq\+U\+I (
+\begin{DoxyParamCaption}
+\item[{}]{self}
+\end{DoxyParamCaption}
+)}\label{namespacesoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1PicoScope_a387dc036eac5d58fcf4d69e8dd3782bd}
+
+\begin{DoxyCode}
+90     \textcolor{keyword}{def }\hyperlink{namespacesoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1PicoScope_a387dc036eac5d58fcf4d69e8dd3782bd}{updateSampleRateFreqUI}(self):
+91         paramSR = self.findParam(\textcolor{stringliteral}{'samplerate'})
+92         paramSL = self.findParam(\textcolor{stringliteral}{'samplelength'})
+93 
+94         \textcolor{keywordflow}{if} self.ps.sampleRate != paramSR.value():
+95             paramSR.setValue(self.ps.sampleRate)
+96 
+97         newSL = min(self.ps.maxSamples, paramSL.value())
+98         \textcolor{keywordflow}{if} newSL != paramSL.value():
+99             paramSL.setValue(newSL)
+100 
+101 
+\end{DoxyCode}
+
+
+\subsection{Variable Documentation}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1PicoScope_ac64cd74bf8420740d70799da3f3f1566}{}\index{software\+::chipwhisperer\+::capture\+::scopes\+::\+Pico\+Scope@{software\+::chipwhisperer\+::capture\+::scopes\+::\+Pico\+Scope}!\+\_\+faketimer@{\+\_\+faketimer}}
+\index{\+\_\+faketimer@{\+\_\+faketimer}!software\+::chipwhisperer\+::capture\+::scopes\+::\+Pico\+Scope@{software\+::chipwhisperer\+::capture\+::scopes\+::\+Pico\+Scope}}
+\subsubsection[{\+\_\+faketimer}]{\setlength{\rightskip}{0pt plus 5cm}software.\+chipwhisperer.\+capture.\+scopes.\+Pico\+Scope.\+\_\+faketimer}\label{namespacesoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1PicoScope_ac64cd74bf8420740d70799da3f3f1566}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1PicoScope_a2f1e9b3bced098087fbeb2f541e3ef07}{}\index{software\+::chipwhisperer\+::capture\+::scopes\+::\+Pico\+Scope@{software\+::chipwhisperer\+::capture\+::scopes\+::\+Pico\+Scope}!\+\_\+name@{\+\_\+name}}
+\index{\+\_\+name@{\+\_\+name}!software\+::chipwhisperer\+::capture\+::scopes\+::\+Pico\+Scope@{software\+::chipwhisperer\+::capture\+::scopes\+::\+Pico\+Scope}}
+\subsubsection[{\+\_\+name}]{\setlength{\rightskip}{0pt plus 5cm}string software.\+chipwhisperer.\+capture.\+scopes.\+Pico\+Scope.\+\_\+name = \textquotesingle{}Pico Scope\textquotesingle{}}\label{namespacesoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1PicoScope_a2f1e9b3bced098087fbeb2f541e3ef07}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1PicoScope_ad5aad75f7e8408e9f666947678d187b0}{}\index{software\+::chipwhisperer\+::capture\+::scopes\+::\+Pico\+Scope@{software\+::chipwhisperer\+::capture\+::scopes\+::\+Pico\+Scope}!datapoints@{datapoints}}
+\index{datapoints@{datapoints}!software\+::chipwhisperer\+::capture\+::scopes\+::\+Pico\+Scope@{software\+::chipwhisperer\+::capture\+::scopes\+::\+Pico\+Scope}}
+\subsubsection[{datapoints}]{\setlength{\rightskip}{0pt plus 5cm}software.\+chipwhisperer.\+capture.\+scopes.\+Pico\+Scope.\+datapoints}\label{namespacesoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1PicoScope_ad5aad75f7e8408e9f666947678d187b0}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1PicoScope_a1155ab1ced163f9636f83aef2839a57e}{}\index{software\+::chipwhisperer\+::capture\+::scopes\+::\+Pico\+Scope@{software\+::chipwhisperer\+::capture\+::scopes\+::\+Pico\+Scope}!data\+Updated@{data\+Updated}}
+\index{data\+Updated@{data\+Updated}!software\+::chipwhisperer\+::capture\+::scopes\+::\+Pico\+Scope@{software\+::chipwhisperer\+::capture\+::scopes\+::\+Pico\+Scope}}
+\subsubsection[{data\+Updated}]{\setlength{\rightskip}{0pt plus 5cm}software.\+chipwhisperer.\+capture.\+scopes.\+Pico\+Scope.\+data\+Updated}\label{namespacesoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1PicoScope_a1155ab1ced163f9636f83aef2839a57e}
+\hypertarget{namespacesoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1PicoScope_a78c5cc6340a0e5ef065f518f8bb95ec0}{}\index{software\+::chipwhisperer\+::capture\+::scopes\+::\+Pico\+Scope@{software\+::chipwhisperer\+::capture\+::scopes\+::\+Pico\+Scope}!ps@{ps}}
+\index{ps@{ps}!software\+::chipwhisperer\+::capture\+::scopes\+::\+Pico\+Scope@{software\+::chipwhisperer\+::capture\+::scopes\+::\+Pico\+Scope}}
+\subsubsection[{ps}]{\setlength{\rightskip}{0pt plus 5cm}software.\+chipwhisperer.\+capture.\+scopes.\+Pico\+Scope.\+ps}\label{namespacesoftware_1_1chipwhisperer_1_1capture_1_1scopes_1_1PicoScope_a78c5cc6340a0e5ef065f518f8bb95ec0}
