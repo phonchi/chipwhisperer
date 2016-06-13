@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: chipwhisperer
+Version: 3.1rc1
+Summary: ChipWhisperer Side-Channel Analysis Tool
+Home-page: www.ChipWhisperer.com
+Author: Colin O'Flynn
+Author-email: coflynn@newae.com
+License: GPLv3
+Download-URL: https://www.newae.com/files/chipwhisperer-3.1rc1.tar.gz
+Description: UNKNOWN
+Platform: UNKNOWN

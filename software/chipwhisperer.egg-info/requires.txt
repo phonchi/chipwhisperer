@@ -1,0 +1,5 @@
+pyqtgraph
+configobj
+pyusb
+docutils
+numpy
