@@ -169,7 +169,7 @@ try:
             ProgressBarText.close(self)
             QDialog.close(self)
 
-    ProgressBar = ProgressBarText
+    ProgressBar = ProgressBarGUI
 
 except ImportError:
     ProgressBar = ProgressBarText

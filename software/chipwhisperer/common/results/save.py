@@ -45,7 +45,8 @@ class ResultsSave(ResultsBase, AttackObserver, Plugin):
         self.dataarray = None
 
         self.getParams().addChildren([
-            {'name': 'Save Raw Results', 'type': 'bool', 'get': self.getEnabled, 'set': self.setEnabled}
+            {'name': 'Save Raw Results', 'type': 'bool', 'get': self.getEnabled, 'set': self.setEnabled},
+            {'name': 'Save type', 'key': 'tp', 'type': 'list', 'values': ['correlation', 'pge'], 'value': 'correlation'}
         ])
 
     def getPrange(self, bnum, diffs):
@@ -85,11 +86,11 @@ class ResultsSave(ResultsBase, AttackObserver, Plugin):
             for j in plist:
                 if j['trials'] > 0:
                     j['pge'] = float(j['pgesum']) / float(j['trials'])
-                    # print "%d "%j['trials'],
+                    print "%d "%j['trials'],
                 else:
                     j['pge'] = None
 
-        # print ""
+        print ""
 
         return allpge
 
@@ -97,52 +98,62 @@ class ResultsSave(ResultsBase, AttackObserver, Plugin):
         """Stats have been updated"""
         if self._enabled == False:
             return
-        # ouput vs time
-        data = self._analysisSource.getStatistics().diffs
+        fmt = self.findParam('tp').getValue()
 
-        enabledlist = []
-        for bnum in range(16):
-                enabledlist.append(bnum)
+        if fmt == 'correlation':
+            # ouput vs time
+            data = self._analysisSource.getStatistics().diffs
 
-        xrangelist = [0] * 256
-        for bnum in enabledlist:
-            diffs = data[bnum]
-            if diffs is not None:
-                if not hasattr(diffs[0], '__iter__'):
-                    diffs = [[t] for t in diffs]
+            enabledlist = []
+            for bnum in range(16):
+                    enabledlist.append(bnum)
 
-                prange = self.getPrange(bnum, diffs)
-                xrangelist[bnum] = prange
+            xrangelist = [0] * 256
+            for bnum in enabledlist:
+                diffs = data[bnum]
+                if diffs is not None:
+                    if not hasattr(diffs[0], '__iter__'):
+                        diffs = [[t] for t in diffs]
 
-        # pge vs trace
-        allpge = self.calculatePGE()
-        # corr vs trace
-        attackStats = self._analysisSource.getStatistics()
-        # attackStats.setKnownkey(nk)
-        # attackStats.findMaximums(useAbsolute=self.useAbs)
+                    prange = self.getPrange(bnum, diffs)
+                    xrangelist[bnum] = prange
+            print "yap"
+            # corr vs trace
+            attackStats = self._analysisSource.getStatistics()
+            # attackStats.setKnownkey(nk)
+            # attackStats.findMaximums(useAbsolute=self.useAbs)
 
-        # attackStats.diffs[i][hypkey]
-        # attackStats.diffs_tnum[i]
+            # attackStats.diffs[i][hypkey]
+            # attackStats.diffs_tnum[i]
 
-        if self._filename is None:
-            # Generate filename
-            self._filename = "tempstats_%s.npy" % datetime.now().strftime('%Y%m%d_%H%M%S')
+            if self._filename is None:
+                # Generate filename
+                self._filename = "tempstats_%s.npy" % datetime.now().strftime('%Y%m%d_%H%M%S')
 
-            # Generate Array
-            self.dataarray = []
+                # Generate Array
+                self.dataarray = []
 
-        # Record max & min, used as we don't know if user wanted absolute mode or not
+            # Record max & min, used as we don't know if user wanted absolute mode or not
 
-        tempmin = np.ndarray((self._numKeys(), self._maxNumPerms()))
-        tempmax = np.ndarray((self._numKeys(), self._maxNumPerms()))
+            tempmin = np.ndarray((self._numKeys(), self._maxNumPerms()))
+            tempmax = np.ndarray((self._numKeys(), self._maxNumPerms()))
 
-        for i in range(0, self._numKeys()):
-            for j in range(0, self._numPerms(i)):
-                tempmax[i][j] = np.nanmax(attackStats.diffs[i][j])
-                tempmin[i][j] = np.nanmin(attackStats.diffs[i][j])
+            for i in range(0, self._numKeys()):
+                for j in range(0, self._numPerms(i)):
+                    tempmax[i][j] = np.nanmax(attackStats.diffs[i][j])
+                    tempmin[i][j] = np.nanmin(attackStats.diffs[i][j])
 
-        newdata = {"tracecnt": copy.deepcopy(attackStats.diffs_tnum), "diffsmax": tempmax, "diffsmin": tempmin,
-                   "maxlist": attackStats.maxes_list, "data": data, "range": xrangelist, "pge": allpge}
+            newdata = {"tracecnt": copy.deepcopy(attackStats.diffs_tnum), "maxlist": attackStats.maxes_list, "data": data, "xrange": xrangelist}
+        else:
+            if self._filename is None:
+                # Generate filename
+                self._filename = "tempstats_%s.npy" % datetime.now().strftime('%Y%m%d_%H%M%S')
+                # Generate Array
+                self.dataarray = []
+            # pge vs trace
+            allpge = util.DictType() # clean up
+            allpge = self.calculatePGE()
+            newdata = {"pge": allpge}
 
         self.dataarray.append(newdata)
         np.save(self._filename, self.dataarray)

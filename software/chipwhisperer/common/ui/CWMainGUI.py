@@ -154,10 +154,12 @@ class CWMainGUI(QMainWindow):
         """Add a QTextBrowser, used as a console/debug window"""
         console = QTextBrowser()
         console.write = console.insertPlainText
+        f_handler = open('out.log', 'w')
         if redirectStdOut:
             self.originalStdout = sys.stdout
             sys.stdout = OutLog(console, sys.stdout, origStdout=self.originalStdout)
             sys.stderr = OutLog(console, sys.stderr, QColor(255, 0, 0), origStdout=self.originalStdout)
+
 
         return self.addDock(console, name, area=Qt.BottomDockWidgetArea, visible=visible)
     

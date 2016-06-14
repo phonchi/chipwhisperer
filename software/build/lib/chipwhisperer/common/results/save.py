@@ -141,8 +141,7 @@ class ResultsSave(ResultsBase, AttackObserver, Plugin):
                 tempmax[i][j] = np.nanmax(attackStats.diffs[i][j])
                 tempmin[i][j] = np.nanmin(attackStats.diffs[i][j])
 
-        newdata = {"tracecnt": copy.deepcopy(attackStats.diffs_tnum), "diffsmax": tempmax, "diffsmin": tempmin,
-                   "maxlist": attackStats.maxes_list, "data": data, "range": xrangelist, "pge": allpge}
+        newdata = {"tracecnt": copy.deepcopy(attackStats.diffs_tnum), "maxlist": attackStats.maxes_list, "data": data, "xrange": xrangelist, "pge": allpge}
 
         self.dataarray.append(newdata)
         np.save(self._filename, self.dataarray)

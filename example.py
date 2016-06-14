@@ -34,7 +34,7 @@ class UserScript(UserScriptBase):
         self.attack.setTraceStart(0)
         self.attack.setTracesPerAttack(10000)
         self.attack.setIterations(1)
-        self.attack.setReportingInterval(10)
+        self.attack.setReportingInterval(100)
         self.attack.setTargetBytes([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15])
         self.attack.setTraceSource(self.traces)
         self.attack.setPointRange((0,396))
@@ -49,6 +49,8 @@ class UserScript(UserScriptBase):
         self.api.getResults("Save to Files").setAnalysisSource(self.attack)
         self.api.getResults("Trace Output Plot").setTraceSource(self.traces)
         self.api.setParameter(['Results', 'Save to Files', 'Save Raw Results', True])
+        self.api.setParameter(['Results', 'Save to Files', 'Save type', 'pge'])
+        #self.api.setParameter(['Results', 'PGE vs Trace Plot', 'Copy PGE Data to Clipboard', None])
 
     def run(self):
         self.attack.processTraces()
@@ -63,7 +65,7 @@ if __name__ == '__main__':
     api = CWCoreAPI()                               # Instantiate the API
     app.setApplicationName("Capture Scripted")    # If you DO NOT want to overwrite settings from the GUI
     gui = cwa.CWAnalyzerGUI(api)                     # Comment this line if you don't want to use the GUI
-    # gui.show()                                      # Comment this line if you don't want to use the GUI
+    gui.show()                                      # Comment this line if you don't want to use the GUI
     api.runScriptClass(UserScript)                  # Run the User Script
 
     sys.exit(app.exec_())                           # Comment this line if you don't want to use the GUI

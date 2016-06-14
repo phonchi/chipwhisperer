@@ -140,7 +140,10 @@ class Parameter(object):
 
     sigParametersChanged = util.Signal()
     registeredParameters = {}
-    scriptingOutput = sys.stdout
+    f_handler = open('out.log', 'w')
+    scriptingOutput = f_handler
+
+    #scriptingOutput = sys.stdout
     supportedTypes = ["group", "list", "label", "str", 'text', "bool", "action", "int", "float", "rangegraph", "file", 'filelist', "range", "color", "menu"]
     suppertedAttributes = {"name", "key", "type", "values", "value", "set", "get", "limits", "step", "linked", "default", "tip", "action", "visible", "children", "readonly", "graphwidget"}
     usePyQtGraph = False
