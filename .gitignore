@@ -20,4 +20,5 @@ default-data-dir/
 *.o
 *.d
 *.lst
+*.npy
 README.md
