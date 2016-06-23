@@ -24,11 +24,11 @@
 #=================================================
 
 import sys  # Do not remove!
+from chipwhisperer.common.ui.CWMainGUI import CWMainGUI
 from chipwhisperer.capture.utils.GlitchExplorerDialog import GlitchExplorerDialog as GlitchExplorerDialog
 from chipwhisperer.capture.utils.SerialTerminalDialog import SerialTerminalDialog as SerialTerminalDialog
 from chipwhisperer.common.api.CWCoreAPI import CWCoreAPI
 from chipwhisperer.common.results.base import ResultsBase
-from chipwhisperer.common.ui.CWMainGUI import CWMainGUI
 from chipwhisperer.common.ui.ProgressBar import *
 from chipwhisperer.common.ui.ValidationDialog import ValidationDialog
 from chipwhisperer.common.utils.tracesource import ActiveTraceObserver
@@ -48,6 +48,10 @@ class CWCaptureGUI(CWMainGUI):
         self.api.sigTraceDone.connect(self.glitchMonitor.traceDone)
         self.api.sigCampaignStart.connect(self.glitchMonitor.campaignStart)
         self.api.sigCampaignDone.connect(self.glitchMonitor.campaignDone)
+
+    def closeEvent(self, event):
+        CWMainGUI.closeEvent(self, event)
+        self.glitchMonitor.close() #  Fixes a crash on exit bug (PyQtGraph bug?)
 
     def loadExtraModules(self):
         self.serialTerminal = SerialTerminalDialog(self, self.api)
@@ -94,11 +98,11 @@ class CWCaptureGUI(CWMainGUI):
         self.glitchMonitor.addResponse(data)
 
     def addToolMenuItems(self):
-        self.terminalAct = QAction('Open Terminal', self, statusTip='Open Simple Serial Terminal',
+        self.terminalAct = QAction('Terminal', self, statusTip='Open Simple Serial Terminal',
                                    triggered=self.serialTerminal.show)
 
         self.toolMenu.addAction(self.terminalAct)
-        self.glitchMonitorAct = QAction('Open Glitch Monitor', self, statusTip='Open Glitch Monitor Table',
+        self.glitchMonitorAct = QAction('Glitch Monitor', self, statusTip='Open Glitch Monitor Table',
                                         triggered=self.glitchMonitor.show)
         self.toolMenu.addAction(self.glitchMonitorAct)
 
@@ -202,7 +206,7 @@ class CWCaptureGUI(CWMainGUI):
             vw.addMessage(*i)
 
         if self.api.project().isUntitled():
-            vw.addMessage("info", "File Menu", "Project not saved, using default-data-dir", "Save project file before api", "8c9101ff-7553-4686-875d-b6a8a3b1d2ce")
+            vw.addMessage("info", "File Menu", "Project not saved, using default-data-dir", "Save project file before capture.", "8c9101ff-7553-4686-875d-b6a8a3b1d2ce")
 
         if vw.numWarnings() > 0 or warnOnly is False:
             return vw.exec_()
@@ -210,6 +214,7 @@ class CWCaptureGUI(CWMainGUI):
             return True
 
     def doCapture(self, callback):
+        self.clearFocus()
         try:
             self.capture1Act.setEnabled(False)
             self.captureMAct.setEnabled(False)
@@ -239,13 +244,23 @@ def makeApplication():
 def main():
     # Create the Qt Application
     app = makeApplication()
+    app.aboutToQuit.connect(app.deleteLater)
     Parameter.usePyQtGraph = True
     # Create and show the GUI
     window = CWCaptureGUI(CWCoreAPI())
     window.show()
 
     # Run the main Qt loop
-    sys.exit(app.exec_())
+    app.exec_()
+
+    #Restore exception handlers (in case called from interactive console)
+    sys.excepthook = sys.__excepthook__
+
+    #Restore print statements
+    sys.stdout = sys.__stdout__
+    sys.stderr = sys.__stderr__
+
+    #sys.exit()
 
 if __name__ == '__main__':
     main()

@@ -113,7 +113,8 @@ class AttackScriptGen(Parameterized):
 
             # No previous dock, do setup
             if 'dock' not in script.keys():
-                script['widget'].editWindow.runFunction.connect(partial(self.runScriptFunction, filename=script['filename']))
+                self.__runScriptConverter = partial(self.runScriptFunction, filename=script['filename'])
+                script['widget'].editWindow.runFunction.connect(self.__runScriptConverter)
                 script['dock'] = self.cwGUI.addDock(script['widget'], name=dockname, area=Qt.BottomDockWidgetArea)
 
             script['dock'].setWindowTitle(dockname)
@@ -182,11 +183,11 @@ class AttackScriptGen(Parameterized):
 
     def reloadScripts(self):
         """Rewrite the auto-generated analyzer script, using settings from the GUI"""
-        if self.cwGUI.api.busy.value():
-            self.cwGUI.api.busy.connect(self.reloadScripts)
+        if self.cwGUI.api.executingScripts.value():
+            self.cwGUI.api.executingScripts.connect(self.reloadScripts)
             return
 
-        self.cwGUI.api.busy.disconnect(self.reloadScripts)
+        self.cwGUI.api.executingScripts.disconnect(self.reloadScripts)
 
         # Auto-Generated is always first
         mse = self.scriptList[0]['widget']
@@ -199,6 +200,7 @@ class AttackScriptGen(Parameterized):
         # Get imports from preprocessing
         mse.append("# Imports from Preprocessing", 0)
         mse.append("import chipwhisperer.analyzer.preprocessing as preprocessing", 0)
+
         for p in self.preprocessingListGUI:
             if p:
                 imports = p.getImportStatements()
@@ -298,7 +300,6 @@ class AttackScriptGen(Parameterized):
                             mse.append(s.replace("UserScript.", "self."))
 
         mse.append("if __name__ == '__main__':\n"
-                    "    import sys\n"
                     "    from chipwhisperer.common.api.CWCoreAPI import CWCoreAPI\n"
                     "    import chipwhisperer.analyzer.ui.CWAnalyzerGUI as cwa\n"
                     "    from chipwhisperer.common.utils.parameter import Parameter\n"
@@ -308,8 +309,7 @@ class AttackScriptGen(Parameterized):
                     "    gui = cwa.CWAnalyzerGUI(api)    # Comment if you don't need the GUI\n"
                     "    gui.show()                      # Comment if you don't need the GUI\n"
                     "    api.runScriptClass(UserScript)  # Run UserScript through the API\n"
-                    "\n"
-                    "    sys.exit(app.exec_())           # Comment if you don't need the GUI\n", 0)
+                    "    app.exec_()                     # Comment if you don't need the GUI\n", 0)
 
         mse.restoreSliderPosition()
         self.cwGUI.api.runScriptModule(self.setupScriptModule(), None)

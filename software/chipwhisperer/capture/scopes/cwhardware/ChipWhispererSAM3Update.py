@@ -27,7 +27,13 @@
 import os.path
 from PySide.QtCore import *
 from PySide.QtGui import *
-import chipwhisperer.common.utils.serialport as scan
+try:
+    import chipwhisperer.common.utils.serialport as scan
+except ImportError:
+    class scan:
+        @staticmethod
+        def scan():
+            return ["pyserial not installed"]
 import chipwhisperer.common.utils.qt_tweaks as QtFixes
 from chipwhisperer.common.utils import util
 from chipwhisperer.hardware.naeusb.bootloader_sam3u import Samba
@@ -109,7 +115,7 @@ class SAM3LoaderConfig(QtFixes.QDialog):
         rootprefix = util.getRootDir() + "/"
 
         if not sam3uFWLoc:
-            defLocfwF = rootprefix + "../../../hardware/api/chipwhisperer-lite/sam3u_fw/SAM3U_VendorExample/Debug/SAM3U_CW1173.bin"
+            defLocfwF = rootprefix + "../../../hardware/capture/chipwhisperer-lite/sam3u_fw/SAM3U_VendorExample/Debug/SAM3U_CW1173.bin"
             if os.path.isfile(defLocfwF):
                 sam3uFWLoc = str(defLocfwF)
                 QSettings().setValue("cwlite-sam3u-firmware-location", sam3uFWLoc)

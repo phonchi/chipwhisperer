@@ -25,16 +25,17 @@
 #=================================================
 
 import sys
+from chipwhisperer.common.ui.CWMainGUI import CWMainGUI
 from PySide.QtGui import *  # DO NOT REMOVE PYSIDE IMPORTS - Required for pyqtgraph to select correct version on some platforms
 from chipwhisperer.common.ui.KeyScheduleDialog import KeyScheduleDialog
-from chipwhisperer.common.ui.CWMainGUI import CWMainGUI
 from chipwhisperer.common.api.CWCoreAPI import CWCoreAPI
 from chipwhisperer.analyzer.utils.TraceExplorerDialog import TraceExplorerDialog
 from chipwhisperer.common.results.base import ResultsBase
 from chipwhisperer.analyzer.utils.attackscriptgen import AttackScriptGen
 from chipwhisperer.common.utils import pluginmanager
 from chipwhisperer.common.utils.parameter import Parameter
-
+from chipwhisperer.common.utils.tracesource import PassiveTraceObserver
+from chipwhisperer.analyzer.attacks._base import AttackObserver
 
 class CWAnalyzerGUI(CWMainGUI):
     """ Main ChipWhisperer Analyzer GUI Window Class.
@@ -69,13 +70,13 @@ class CWAnalyzerGUI(CWMainGUI):
 
     def doAnalysis(self):
         """Called when the 'Do Analysis' button is pressed"""
+        self.clearFocus()
         if self.api.project().traceManager().numTraces() == 0:
             ret = QMessageBox.question(self, "Attack Error", "No traces enabled in project.\nOpen Trace Manager?", QMessageBox.Yes | QMessageBox.No)
             if ret == QMessageBox.Yes:
                 self.traceManagerDialog.show()
             return
 
-        QApplication.focusWidget().clearFocus()  # Force accepting the current parameter edition by removing its focus
         self.attackScriptGen.flushTimer()
         self.updateStatusBar("Executing analyzis...")
         self.api.runScriptModule(self.attackScriptGen.setupScriptModule())
@@ -91,7 +92,8 @@ class CWAnalyzerGUI(CWMainGUI):
         # Load all ActiveTraceObservers
         self.windowMenu.addSeparator()
         for k, v in ResultsBase.getClasses().iteritems():
-            ResultsBase.createNew(k)
+            if issubclass(v, PassiveTraceObserver) or issubclass(v, AttackObserver):
+                ResultsBase.createNew(k)
         self.tabifyDocks(self.resultDocks)
 
         self.tabifyDocks([self.settingsScriptDock, self.settingsPreprocessingDock, self.settingsAttackDock,
@@ -118,6 +120,7 @@ def makeApplication():
 def main():
     # Create the Qt Application
     app = makeApplication()
+    app.aboutToQuit.connect(app.deleteLater)
     # Create and show the GUI
 
     Parameter.usePyQtGraph = True
@@ -125,7 +128,16 @@ def main():
     window.show()
 
     # Run the main Qt loop
-    sys.exit(app.exec_())
+    app.exec_()
+
+    #Restore exception handlers (in case called from interactive console)
+    sys.excepthook = sys.__excepthook__
+
+    #Restore print statements
+    sys.stdout = sys.__stdout__
+    sys.stderr = sys.__stderr__
+
+    #sys.exit()
 
 if __name__ == '__main__':
     main()

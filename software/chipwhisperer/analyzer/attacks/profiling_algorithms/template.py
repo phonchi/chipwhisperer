@@ -55,11 +55,11 @@ class ProfilingTemplate(AutoScript, PassiveTraceObserver, Plugin):
         self.params.addChildren([
             {'name':'Load Template', 'type':'group', 'children':[]},
             {'name':'Generate New Template', 'type':'group', 'children':[
-                {'name':'Trace Start', 'key':'tgenstart', 'value':0, 'type':'int', 'action':lambda _:self.updateScript()},
-                {'name':'Trace End', 'key':'tgenstop', 'value':parent.traceMax, 'type':'int', 'action':lambda _:self.updateScript()},
-                {'name':'POI Selection', 'key':'poimode', 'type':'list', 'values':{'TraceExplorer Table':0, 'Read from Project File':1}, 'value':0, 'action':lambda _:self.updateScript()},
-                {'name':'Read POI', 'type':'action', 'action':lambda _:self.updateScript()},
-                {'name':'Generate Templates', 'type':'action', 'action': lambda _:self.runScriptFunction.emit("generateTemplates")}
+                {'name':'Trace Start', 'key':'tgenstart', 'value':0, 'type':'int', 'action':self.updateScript},
+                {'name':'Trace End', 'key':'tgenstop', 'value':parent.traceMax, 'type':'int', 'action':self.updateScript},
+                {'name':'POI Selection', 'key':'poimode', 'type':'list', 'values':{'TraceExplorer Table':0, 'Read from Project File':1}, 'value':0, 'action':self.updateScript},
+                {'name':'Read POI', 'type':'action', 'action':self.updateScript},
+                {'name':'Generate Templates', 'type':'action', 'action':util.Command(self.runScriptFunction.emit, "generateTemplates")}
             ]},
         ])
 
@@ -76,7 +76,7 @@ class ProfilingTemplate(AutoScript, PassiveTraceObserver, Plugin):
         self.profiling.scriptsUpdated.connect(self.updateScript)
         self.updateScript()
 
-    def updateScript(self, ignored=None):
+    def updateScript(self, _=None):
         #self.addFunction('init', 'setReportingInterval', '%d' % self.findParam('reportinterval').getValue())
 
         try:
@@ -188,7 +188,7 @@ class ProfilingTemplate(AutoScript, PassiveTraceObserver, Plugin):
     def addTraces(self, traces, plaintexts, ciphertexts, knownkeys=None, progressBar=None, pointRange=None):
 
         if multivariate_normal is None:
-            raise Warning("Version of SciPy too old, require > 0.14, have %s. "
+            raise Warning("Version of SciPy too old, require >= 0.14, have %s. "
                           "Update to support this attack" % (scipy.version.version))
 
         # Hack for now - just use last template found
@@ -200,7 +200,7 @@ class ProfilingTemplate(AutoScript, PassiveTraceObserver, Plugin):
         tdiff = self._reportinginterval
 
         if progressBar:
-            progressBar.setStatusMask("Current Trace = %d-%d Current Subkey = %d")
+            progressBar.setStatusMask("Current Trace = %d-%d Current Subkey = %d", (0, 0, 0))
             progressBar.setMaximum(16 * len(traces))
         pcnt = 0
 
@@ -208,7 +208,7 @@ class ProfilingTemplate(AutoScript, PassiveTraceObserver, Plugin):
             for bnum in self.brange:
                 try:
                     newresultsint = [multivariate_normal.logpdf(traces[tnum][pois[bnum]], mean=template['mean'][bnum][i], cov=np.diag(template['cov'][bnum][i])) for i in range(0, numparts)]
-                except np.linalg.LinAlgError, e:
+                except np.linalg.LinAlgError as e:
                     print("WARNING: Error in applying template, probably template is poorly formed or POI incorrect. Error: " + str(e))
                     print("         Byte %d for tnum %d skipped due to this error."%(bnum, tnum))
                     newresultsint = [0] * 256
