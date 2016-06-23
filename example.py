@@ -49,7 +49,7 @@ class UserScript(UserScriptBase):
         self.api.getResults("Save to Files").setAnalysisSource(self.attack)
         self.api.getResults("Trace Output Plot").setTraceSource(self.traces)
         self.api.setParameter(['Results', 'Save to Files', 'Save Raw Results', True])
-        self.api.setParameter(['Results', 'Save to Files', 'Save type', 'pge'])
+        self.api.setParameter(['Results', 'Save to Files', 'Save type', 'correlation'])
         #self.api.setParameter(['Results', 'PGE vs Trace Plot', 'Copy PGE Data to Clipboard', None])
 
     def run(self):
