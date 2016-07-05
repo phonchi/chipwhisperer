@@ -88,8 +88,8 @@ class HIDSPI(object):
 class ChipWhispererSPI(TargetTemplate):
     _name = "ChipWhisperer SPI"
 
-    def __init__(self, parentParam=None):
-        TargetTemplate.__init__(self, parentParam)
+    def __init__(self):
+        TargetTemplate.__init__(self)
         self.hdev = HIDSPI()
         self.keylength = 16
         self.params.addChildren([
@@ -104,9 +104,8 @@ class ChipWhispererSPI(TargetTemplate):
         """ Return key length in BYTES """
         return self.keylength
 
-    def con(self, scope = None):
+    def _con(self, scope=None):
         self.hdev.findCWSPI()
-        self.connectStatus.setValue(True)
 
     def init(self):
         return

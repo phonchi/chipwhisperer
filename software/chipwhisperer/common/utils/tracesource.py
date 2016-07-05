@@ -67,6 +67,18 @@ class TraceSource(object):
         """Get known-key number n"""
         raise NotImplementedError
 
+    def getSegmentList(self):
+        """Return a list of segments."""
+        raise NotImplementedError
+
+    def getAuxData(self, n, auxDic):
+        """Return data about a segment"""
+        raise NotImplementedError
+
+    def getSegment(self, n):
+        """Return the trace segment with the specified trace in the list with all enabled segments."""
+        raise NotImplementedError
+
     def register(self):
         self.registeredObjects[self.name] = self
         self.sigRegisteredObjectsChanged.emit()
@@ -120,7 +132,7 @@ class LiveTraceSource(TraceSource):
 class PassiveTraceObserver(Parameterized):
     """ It processes data from a TraceSource when requested """
 
-    def __init__(self, parentParam=None):
+    def __init__(self):
         self._traceSource = None
 
         self.getParams().addChildren([
@@ -143,6 +155,7 @@ class PassiveTraceObserver(Parameterized):
         par.setLimits(TraceSource.registeredObjects)
         if par.getValue() not in TraceSource.registeredObjects.values():
             par.setValue(None)
+
 
 class ActiveTraceObserver(PassiveTraceObserver):
     """ It observes a TraceSource for state changes and process the Traces actively """

@@ -36,8 +36,8 @@ class SimpleSerial_ChipWhisperer(SimpleSerialTemplate):
     ADDR_LEN        = 34
     ADDR_BAUD       = 35
 
-    def __init__(self, parentParam=None):
-        SimpleSerialTemplate.__init__(self, parentParam)
+    def __init__(self):
+        SimpleSerialTemplate.__init__(self)
         self._regVer = 0
         self.params.addChildren([
             {'name':'TX Baud', 'key':'txbaud', 'type':'int', 'limits':(0, 1E6), 'default':38400, 'get':self.txBaud, 'set':self.setTxBaud},
@@ -206,7 +206,7 @@ class SimpleSerial_ChipWhisperer(SimpleSerialTemplate):
         if not scope or not hasattr(scope, "qtadc"): Warning("You need a scope with OpenADC connected to use this Target")
 
         self.oa = scope.qtadc.sc
-        scope.connectStatus.connect(self.dis())
+        scope.connectStatus.connect(self.dis)
         # Check first!
         self.checkVersion()
         self.params.refreshAllParameters()

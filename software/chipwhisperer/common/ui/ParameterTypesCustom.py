@@ -41,6 +41,8 @@ from pyqtgraph.widgets.SpinBox import SpinBox
 
 
 # User defined Help Window used in the parameters
+from chipwhisperer.common.api.settings import Settings
+
 helpwnd = None
 
 
@@ -67,30 +69,39 @@ def showHelpWindow(curParam):
                                       QtGui.QMessageBox.Cancel)
 
 
-def drawHelpIcon(curParam):
+def drawHelpIcon(curParam, layout=None, removeDefault=True):
     """Add a single help icons to a Parameter Item. Also removes the "default" button which isn't really used in our applications"""
-    layout = curParam.layoutWidget.layout()
 
-    # Bonus: We don't want the default button so delete it here
-    numitems = layout.count()
-    lastitem = layout.itemAt(numitems - 1)
+    if layout is None:
+        layout = curParam.layoutWidget.layout()
+        standard_icon = curParam.layoutWidget.style().standardIcon
+    else:
+        standard_icon = QtGui.qApp.style().standardIcon
 
-    if (type(lastitem.widget()) == QtGui.QPushButton) and lastitem.widget().width() == 20:
-        lastitem.widget().deleteLater()
+    if removeDefault:
+        # Bonus: We don't want the default button so delete it here
+        numitems = layout.count()
+        lastitem = layout.itemAt(numitems - 1)
+
+        if (type(lastitem.widget()) == QtGui.QPushButton) and lastitem.widget().width() == 20:
+            lastitem.widget().deleteLater()
 
     # If help option add the button
     if 'help' in curParam.param.opts:
         buthelp = QtGui.QPushButton()
         buthelp.setFixedWidth(20)
         buthelp.setFixedHeight(20)
-        buthelp.setIcon(curParam.layoutWidget.style().standardIcon(QtGui.QStyle.SP_TitleBarContextHelpButton))
+        buthelp.setIcon(standard_icon(QtGui.QStyle.SP_TitleBarContextHelpButton))
         buthelp.clicked[bool].connect(lambda ignored: showHelpWindow(curParam))
         layout.addWidget(buthelp)
 
 
+def ignore_param(a=None, b=None):
+    pass
+
 def __init___fix(self, param, depth):
     """
-    Fixes some bug with PyQtGraph:
+    Fix some bugs with PyQtGraph:
     - Disconnect the signals when the widget is gone.
     - Adjusts the parameter height to also take into account the edit widget
     """
@@ -120,12 +131,21 @@ def __init___fix(self, param, depth):
     if 'tip' in opts:
         w.setToolTip(opts['tip'])
 
-    self.defaultBtn = QtGui.QPushButton()
-    self.defaultBtn.setFixedWidth(20)
-    self.defaultBtn.setFixedHeight(20)
-    modDir = os.path.dirname(__file__)
-    self.defaultBtn.setIcon(QtGui.QIcon(pixmaps.getPixmap('default')))
-    self.defaultBtn.clicked.connect(self.defaultClicked)
+    self.updateDefaultBtn = ignore_param
+    self.defaultBtn = ignore_param
+    self.defaultBtn.setHidden = ignore_param
+    self.defaultBtn.setEnabled = ignore_param
+
+    #No default button
+    #self.defaultBtn = QtGui.QPushButton()
+    #self.defaultBtn.setEnabled(False)
+    #self.defaultBtn.setHidden(True)
+    #self.defaultBtn.setFixedWidth(20)
+    #self.defaultBtn.setFixedHeight(20)
+    #self.defaultBtn.setIcon(QtGui.QIcon(pixmaps.getPixmap('default')))
+    #self.defaultBtn.clicked.connect(self.defaultClicked)
+    #self.defaultBtn.setHidden = ignore_param
+    #self.defaultBtn.setEnabled = ignore_param
 
     self.displayLabel = QtGui.QLabel()
 
@@ -134,7 +154,11 @@ def __init___fix(self, param, depth):
     layout.setSpacing(2)
     layout.addWidget(w)
     layout.addWidget(self.displayLabel)
-    layout.addWidget(self.defaultBtn)
+
+    drawHelpIcon(self, layout, False)
+
+    #No default button
+    #layout.addWidget(self.defaultBtn)
 
     self.layoutWidget = QtGui.QWidget()
     self.layoutWidget.setLayout(layout)
@@ -153,9 +177,73 @@ def __init___fix(self, param, depth):
         ## no starting value was given; use whatever the widget has
         self.widgetValueChanged()
 
-    self.updateDefaultBtn()
+    #self.updateDefaultBtn()
 
 WidgetParameterItem.__init__ = __init___fix
+
+
+def __init___fix2(self, param, depth):
+    ParameterItem.__init__(self, param, depth)
+    self.updateDepth(depth)
+
+    self.addItem = None
+
+    if 'addLoadSave' in param.opts:
+        self.loadBtn = QtGui.QPushButton(QtGui.QIcon(":/images/open.png"),"")
+        self.loadBtn.setCheckable(False)
+        self.loadBtn.setFixedSize(20, 20)
+        self.loadBtn.clicked.connect(self.loadBtnClicked)
+        self.saveBtn = QtGui.QPushButton(QtGui.QIcon(":/images/save.png"),"")
+        self.saveBtn.setCheckable(False)
+        self.saveBtn.setFixedSize(20, 20)
+        self.saveBtn.clicked.connect(self.saveBtnClicked)
+
+        layout = QtGui.QHBoxLayout()
+        layout.setContentsMargins(0, 0, 0, 0)
+        layout.setSpacing(11)
+
+        layout.addStretch()
+        layout.addWidget(self.loadBtn)
+        layout.addWidget(self.saveBtn)
+
+        self.widget = QtGui.QWidget()
+        self.widget.setLayout(layout)
+
+GroupParameterItem.__init__ = __init___fix2
+
+
+def loadBtnClicked(self):
+    fname = QtCore.QSettings().value("Group_"+ self.param.name(), Settings().value("project-home-dir", "/"))
+    fname, _ = QtGui.QFileDialog.getOpenFileName(None, 'Load settings from:', fname, "*.cwset")
+    if fname:
+        self.param.opts['addLoadSave'][0](fname)
+
+GroupParameterItem.loadBtnClicked = loadBtnClicked
+
+
+def saveBtnClicked(self):
+    fname = QtCore.QSettings().value("Group_"+ self.param.name(), Settings().value("project-home-dir", "/"))
+    fname, _ = QtGui.QFileDialog.getSaveFileName(None, 'Save settings to:', fname, "*.cwset")
+    if fname:
+        QtCore.QSettings().setValue("Group_"+ self.param.name(), fname)
+        self.param.opts['addLoadSave'][1](fname)
+
+GroupParameterItem.saveBtnClicked = saveBtnClicked
+
+
+def treeWidgetChanged_fix(self):
+    ParameterItem.treeWidgetChanged(self)
+    self.treeWidget().setFirstItemColumnSpanned(self, True)
+
+    ## add all widgets for this item into the tree
+    if hasattr(self, "widget"):
+        tree = self.treeWidget()
+        if tree is None:
+            return
+        tree.setItemWidget(self, 1, self.widget)
+        self.selected(False)
+
+GroupParameterItem.treeWidgetChanged = treeWidgetChanged_fix
 
 
 class WidgetParameterItemHelp(WidgetParameterItem):

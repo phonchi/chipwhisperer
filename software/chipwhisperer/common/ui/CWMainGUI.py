@@ -22,9 +22,9 @@
 #    You should have received a copy of the GNU General Public License
 #    along with chipwhisperer.  If not, see <http://www.gnu.org/licenses/>.
 
-__author__ = "Colin O'Flynn"
-
 import sys
+import os
+import traceback
 
 #We always import PySide first, to force usage of PySide over PyQt
 try:
@@ -49,9 +49,6 @@ except ImportError, e:
 
     print "Failed to import 'pyqtgraph', full exception trace given below in case it's another problem:"
     raise
-import os
-import traceback
-from functools import partial
 from datetime import datetime
 from PythonConsole import QPythonConsole
 from saveproject import SaveProjectDialog
@@ -69,6 +66,9 @@ from chipwhisperer.common.ui import ParameterTypesCustom
 from chipwhisperer.common.ui.PreferencesDialog import CWPreferencesDialog
 import urllib
 
+__author__ = "Colin O'Flynn"
+
+
 class CWMainGUI(QMainWindow):
     """
     This is the base GUI class, used for both the Analyzer and Capture software. It defines a number of
@@ -78,10 +78,11 @@ class CWMainGUI(QMainWindow):
 
     def __init__(self, api, name="Demo", icon="cwicon"):
         QMainWindow.__init__(self)
+        self.setAttribute(Qt.WA_DeleteOnClose)  # Close and delete all windows/QObj that has it as a parent when closing
         CWMainGUI.instance = self
         self.name = name
-        self.cwPrefDialog = CWPreferencesDialog(self, api.settings)
         sys.excepthook = self.exceptionHandlerDialog
+        self.cwPrefDialog = CWPreferencesDialog(self, api.settings)
         util.setUIupdateFunction(QCoreApplication.processEvents)
         self.api = api
         self.setCentralWidget(None)
@@ -131,19 +132,16 @@ class CWMainGUI(QMainWindow):
         dock.setAllowedAreas(allowedAreas)
         dock.setObjectName(name)
         self.addDockWidget(area, dock)
-        if(hasattr(dockWidget,"visibilityChanged")):
-            dockWidget.visibilityChanged.connect(dock.setVisible)
-            dock.visibilityChanged.connect(lambda: dockWidget.updateVisibility(dock.isVisible()))
 
-        if visible == False:
+        if not visible:
             dock.toggleViewAction()
-        
+
         #Add to "Windows" menu
         if addToWindows:
             self.windowMenu.addAction(dock.toggleViewAction())
 
         return dock
-    
+
     def addSettings(self, param):
         """Adds a dockwidget designed to store a ParameterTree, also adds to 'Windows' menu"""
         parameterTree = ParameterTree()
@@ -171,7 +169,7 @@ class CWMainGUI(QMainWindow):
             sys.stderr = OutLog(console, sys.stderr, QColor(255, 0, 0), origStdout=self.originalStdout)
 
         return self.addDock(console, name, area=Qt.BottomDockWidgetArea, visible=visible)
-    
+
     def addPythonConsole(self, name="Python Console", visible=False):
         """Add a python console, inside which you can access the Python interpreter"""
         # tmp = locals()
@@ -182,7 +180,7 @@ class CWMainGUI(QMainWindow):
 
     def reloadGuiActions(self):
         # Remove all old actions that don't apply for new selection
-        if hasattr(self,"_ToolMenuItems"):
+        if hasattr(self, "_ToolMenuItems"):
             for act in self._ToolMenuItems:
                 self.toolMenu.removeAction(act)
 
@@ -217,6 +215,12 @@ class CWMainGUI(QMainWindow):
             QMainWindow.closeEvent(self, event)
         else:
             event.ignore()
+
+    def close(self):
+        sys.excepthook = sys.__excepthook__  # Restore exception handlers
+        sys.stdout = sys.__stdout__          # Restore print statements
+        sys.stderr = sys.__stderr__
+        super(CWMainGUI,self).close()
 
     def helpdialog(self):
         """Helps the User"""
@@ -292,19 +296,23 @@ class CWMainGUI(QMainWindow):
                                statusTip="Exit the application", triggered=self.close)
         self.fileMenu.addSeparator()
         self.fileMenu.addAction(self.exitAct)
-        
+
         self.projectMenu = self.menuBar().addMenu("&Project")
-        self.traceManageAct = QAction('&Trace Management', self, statusTip='Add/Remove traces from project', triggered=self.traceManagerDialog.show)
+        self.saveSettingsAct = QAction('&Save Settings', self, statusTip='Save parameter settings to a file inside the '
+                              'project folder so you can load it latter using the load button in the group settings.',
+                              triggered=self.api.project().saveAllSettings)
+        self.projectMenu.addAction(self.saveSettingsAct)
+        self.traceManageAct = QAction('&Trace Management', self, statusTip='Add/Remove traces from project.', triggered=self.traceManagerDialog.show)
         self.projectMenu.addAction(self.traceManageAct)
-        self.consolidateAct = QAction('&Consolidate', self, statusTip='Copy trace files to project directory', triggered=self.consolidateDialog)
+        self.consolidateAct = QAction('&Consolidate', self, statusTip='Copy trace files to project directory.', triggered=self.consolidateDialog)
         self.projectMenu.addAction(self.consolidateAct)
-        self.showProjFileAct = QAction('&Project File Editor (Text)', self, statusTip='Edit project file', triggered=self.projEditDock.show)
+        self.showProjFileAct = QAction('&Project File Editor (Text)', self, statusTip='Edit project file.', triggered=self.projEditDock.show)
         self.projectMenu.addAction(self.showProjFileAct)
 
         self.toolMenu = self.menuBar().addMenu("&Tools")
 
-        self.windowMenu = self.menuBar().addMenu("&Windows")        
-                
+        self.windowMenu = self.menuBar().addMenu("&Windows")
+
         self.helpMenu = self.menuBar().addMenu("&Help")
         self.helpMenu.addAction(QAction('&Tutorial/User Manual', self, statusTip='Everything you need to know', triggered=self.helpdialog))
         self.helpMenu.addAction(QAction('&List Enabled/Disable Plugins', self, statusTip='Check if you\'re missing plugins', triggered=self.pluginDialog))
@@ -368,9 +376,16 @@ class CWMainGUI(QMainWindow):
         self.toolbar.addAction(QAction(QIcon(":/images/save.png"), 'Save', self, triggered=self.saveProject))
         self.toolbar.addSeparator()
         self.toolbar.addAction(QAction(QIcon(":/images/tracemanager.png"), 'Trace Manager', self, triggered=self.traceManagerDialog.show))
+        # self.toolbar.addSeparator()
+        # self.toolbar.addAction(QAction(QIcon(":/images/tracemanager.png"), 'CW Analyzer', self, triggered=self._openAnalyzer))
 
         self.addToolbarItems(self.toolbar)
         self.toolbar.show()
+
+    def _openAnalyzer(self):
+        """Just for test purposes"""
+        from chipwhisperer.analyzer.ui.CWAnalyzerGUI import CWAnalyzerGUI
+        CWAnalyzerGUI(self.api).show()
 
     def addToolbarItems(self, toolbar):
         pass
@@ -382,7 +397,7 @@ class CWMainGUI(QMainWindow):
         subMenu = QMenu("Submenu", self)
 
         for name, script in scripts.iteritems():
-            subMenu.addAction(QAction(name, self, statusTip=script.getDescription(), triggered=partial(self.runScript, script)))
+            subMenu.addAction(QAction(name, self, statusTip=script.getDescription(), triggered=util.Command(self.runScript, script)))
 
         self.exampleScriptAct.setMenu(subMenu)
 
@@ -395,9 +410,9 @@ class CWMainGUI(QMainWindow):
     def projectStatusChanged(self):
         """Add File to recent file list"""
         self.updateTitleBar()
-        
+
         if self.api.project().isUntitled(): return
-        
+
         files = QSettings().value('recentFileList')
         if files is None or not isinstance(files, list):
             files = []
@@ -438,7 +453,8 @@ class CWMainGUI(QMainWindow):
         if not self.okToContinue():
             return
         if fname is None:
-            fname, _ = QFileDialog.getOpenFileName(self, 'Open File', self.api.settings.value("project-home-dir"),'ChipWhisperer Project (*.cwp)','', QFileDialog.DontUseNativeDialog)
+            fname, _ = QFileDialog.getOpenFileName(self, 'Open File', self.api.settings.value("project-home-dir"),
+                                                   'ChipWhisperer Project (*.cwp)','', QFileDialog.DontUseNativeDialog)
             if not fname: return
 
         self.updateStatusBar("Opening Project: " + fname)
@@ -447,7 +463,8 @@ class CWMainGUI(QMainWindow):
     def saveProject(self):
         fname = self.api.project().getFilename()
         if self.api.project().isUntitled():
-            fd = QFileDialog(self, 'Save New File', self.api.settings.value("project-home-dir"), 'ChipWhisperer Project (*.cwp)')
+            fd = QFileDialog(self, 'Save New File', self.api.settings.value("project-home-dir"),
+                             'ChipWhisperer Project (*.cwp)')
             fd.setOption(QFileDialog.DontUseNativeDialog)
             fd.setDefaultSuffix('cwp') # Will not append the file extension if using the static file dialog
             fd.setAcceptMode(QFileDialog.AcceptSave)
@@ -570,13 +587,25 @@ class OutLog:
         if QApplication.focusWidget() is not None:
             QApplication.focusWidget().clearFocus()
 
-def main():    
+
+def makeApplication(name="Other"):
+    """ Create a Qt Application.
+    @param name: The QSettings scope name. If no scope is specified it will erase the default at each new execution.
+    """
     app = QApplication(sys.argv)
-    app.aboutToQuit.connect(app.deleteLater)
     app.setOrganizationName("ChipWhisperer")
-    app.setApplicationName("Window Demo")
+    app.setApplicationName(CWCoreAPI.__name__ + " - " + name)
+    app.aboutToQuit.connect(app.deleteLater)
+    if name=="Other":
+        QSettings().clear()
+
+    return app
+
+
+def main():
+    app = makeApplication("Test")
     CWMainGUI(CWCoreAPI(), app.applicationName())
-    sys.exit(app.exec_())
+    app.exec_()
 
 if __name__ == '__main__':
     main()

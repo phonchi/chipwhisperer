@@ -23,7 +23,6 @@
 #    You should have received a copy of the GNU General Public License
 #    along with chipwhisperer.  If not, see <http://www.gnu.org/licenses/>.
 #=================================================
-from datetime import datetime
 
 from .base import ResultsBase
 from chipwhisperer.common.api.CWCoreAPI import CWCoreAPI
@@ -81,4 +80,4 @@ class TraceRecorder(ResultsBase, PassiveTraceObserver, Plugin):
         for tnum in range(tstart, tend+1):
             trace.addTrace(self.getTraceSource().getTrace(tnum)[pstart:pend+1], self.getTraceSource().getTextin(tnum), self.getTraceSource().getTextout(tnum), self.getTraceSource().getKnownKey(tnum))
         trace.closeAll()
-        CWCoreAPI.getInstance().project().traceManager().appendTraceSet(trace, enabled=False)
+        CWCoreAPI.getInstance().project().traceManager().appendSegment(trace, enabled=False)

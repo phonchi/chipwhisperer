@@ -39,13 +39,13 @@ except ImportError:
 class ReaderPCSC(ReaderTemplate):
     _name = "PC/SC Reader"
 
-    def __init__(self, parentParam=None):
-        ReaderTemplate.__init__(self, parentParam)
+    def __init__(self):
+        ReaderTemplate.__init__(self)
 
         self.timeoutTimer = timer.Timer()
         self.timeoutTimer.timeout.connect(self.timeoutFired)
         self.timeoutTimer.setInterval(2000)
-        self.params.addChildren([
+        self.getParams().addChildren([
             {'name':'Keep-Alive Interval (off=0)', 'type':'int', 'value':2, 'set':self.setKeepalive}
         ])
 
@@ -70,7 +70,7 @@ class ReaderPCSC(ReaderTemplate):
         if (txdata is None) & (rxdatalen == 0):
             data.append(0)
 
-        #Append payload
+        # Append payload
         if txdata is not None:
             for b in txdata: data.append(b)
 

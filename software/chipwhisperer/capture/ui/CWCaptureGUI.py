@@ -23,18 +23,17 @@
 #    along with chipwhisperer.  If not, see <http://www.gnu.org/licenses/>.
 #=================================================
 
-import sys  # Do not remove!
-from chipwhisperer.common.ui.CWMainGUI import CWMainGUI
-from chipwhisperer.capture.utils.GlitchExplorerDialog import GlitchExplorerDialog as GlitchExplorerDialog
+from chipwhisperer.capture.ui.EncryptionStatusMonitor import EncryptionStatusMonitor
+from chipwhisperer.capture.ui.GlitchExplorerDialog import GlitchExplorerDialog as GlitchExplorerDialog
 from chipwhisperer.capture.utils.SerialTerminalDialog import SerialTerminalDialog as SerialTerminalDialog
 from chipwhisperer.common.api.CWCoreAPI import CWCoreAPI
 from chipwhisperer.common.results.base import ResultsBase
+from chipwhisperer.common.ui.CWMainGUI import CWMainGUI, makeApplication
 from chipwhisperer.common.ui.ProgressBar import *
 from chipwhisperer.common.ui.ValidationDialog import ValidationDialog
-from chipwhisperer.common.utils.tracesource import ActiveTraceObserver
 from chipwhisperer.common.utils import pluginmanager
-from chipwhisperer.capture.ui.EncryptionStatusMonitor import EncryptionStatusMonitor
 from chipwhisperer.common.utils.parameter import Parameter
+from chipwhisperer.common.utils.tracesource import ActiveTraceObserver
 
 
 class CWCaptureGUI(CWMainGUI):
@@ -48,10 +47,6 @@ class CWCaptureGUI(CWMainGUI):
         self.api.sigTraceDone.connect(self.glitchMonitor.traceDone)
         self.api.sigCampaignStart.connect(self.glitchMonitor.campaignStart)
         self.api.sigCampaignDone.connect(self.glitchMonitor.campaignDone)
-
-    def closeEvent(self, event):
-        CWMainGUI.closeEvent(self, event)
-        self.glitchMonitor.close() #  Fixes a crash on exit bug (PyQtGraph bug?)
 
     def loadExtraModules(self):
         self.serialTerminal = SerialTerminalDialog(self, self.api)
@@ -116,6 +111,7 @@ class CWCaptureGUI(CWMainGUI):
         # Capture
         self.capture1Act = QAction(QIcon(':/images/play1.png'), 'Capture 1', self, triggered=lambda: self.doCapture(self.capture1))
         self.captureMAct = QAction(QIcon(':/images/playM.png'), 'Capture Trace Set', self, triggered=lambda: self.doCapture(self.captureM))
+        self.stopCaptureMAct = QAction(QIcon(':/images/stopM.png'), 'Stop Capture', self, triggered=lambda: self.capturingProgressBar.abort(), enabled=False)
 
         # Master
         self.captureStatus = QToolButton()
@@ -137,6 +133,7 @@ class CWCaptureGUI(CWMainGUI):
 
         toolbar.addAction(self.capture1Act)
         toolbar.addAction(self.captureMAct)
+        toolbar.addAction(self.stopCaptureMAct)
         toolbar.addSeparator()
         toolbar.addWidget(QLabel('Master:'))
         toolbar.addWidget(self.captureStatus)
@@ -230,22 +227,17 @@ class CWCaptureGUI(CWMainGUI):
         self.api.capture1()
 
     def captureM(self):
-        self.api.captureM(ProgressBar("Capture in Progress", "Capturing:"))
-
-
-def makeApplication():
-    # Create the Qt Application
-    app = QApplication(sys.argv)
-    app.setOrganizationName(CWCoreAPI.__organization__)
-    app.setApplicationName(CWCoreAPI.__name__ + " - Capture ")
-    return app
+        self.stopCaptureMAct.setEnabled(True)
+        self.capturingProgressBar = ProgressBar("Capture in Progress", "Capturing:")
+        self.api.captureM(self.capturingProgressBar)
+        self.stopCaptureMAct.setEnabled(False)
 
 
 def main():
     # Create the Qt Application
-    app = makeApplication()
-    app.aboutToQuit.connect(app.deleteLater)
+    app = makeApplication("Capture")
     Parameter.usePyQtGraph = True
+
     # Create and show the GUI
     window = CWCaptureGUI(CWCoreAPI())
     window.show()
@@ -253,14 +245,6 @@ def main():
     # Run the main Qt loop
     app.exec_()
 
-    #Restore exception handlers (in case called from interactive console)
-    sys.excepthook = sys.__excepthook__
-
-    #Restore print statements
-    sys.stdout = sys.__stdout__
-    sys.stderr = sys.__stderr__
-
-    #sys.exit()
 
 if __name__ == '__main__':
     main()

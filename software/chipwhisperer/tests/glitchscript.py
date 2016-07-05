@@ -25,13 +25,15 @@
 #    along with chipwhisperer.  If not, see <http://www.gnu.org/licenses/>.
 #=================================================
 
-import sys
-import shutil, os
-from chipwhisperer.common.api.CWCoreAPI import CWCoreAPI  # Import the ChipWhisperer API
+import os
+import shutil
+
 import chipwhisperer.capture.ui.CWCaptureGUI as cwc       # Import the ChipWhispererCapture GUI
+from chipwhisperer.capture.api.programmers import XMEGAProgrammer
+from chipwhisperer.common.api.CWCoreAPI import CWCoreAPI  # Import the ChipWhisperer API
 from chipwhisperer.common.scripts.base import UserScriptBase
 from chipwhisperer.common.utils.parameter import Parameter
-from chipwhisperer.capture.utils.XMEGAProgrammer import XMEGAProgrammer
+
 
 # Wiki: https://wiki.newae.com/Tutorial_A2_Introduction_to_Glitch_Attacks_(including_Glitch_Explorer)
 
@@ -193,11 +195,10 @@ if __name__ == '__main__':
     app = cwc.makeApplication()                     # Comment this line if you don't want to use the GUI
     Parameter.usePyQtGraph = True                   # Comment this line if you don't want to use the GUI
     api = CWCoreAPI()                               # Instantiate the API
-    # app.setApplicationName("Capture Scripted")    # If you DO NOT want to overwrite settings from the GUI
     gui = cwc.CWCaptureGUI(api)                     # Comment this line if you don't want to use the GUI
     gui.show()
     gui.glitchMonitor.show()
     gui.serialTerminal.show()
     api.runScriptClass(UserScript)                  # Run the User Script
 
-    sys.exit(app.exec_())
+    app.exec_()

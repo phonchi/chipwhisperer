@@ -38,8 +38,8 @@ class ResyncSAD(PreprocessingBase):
                   "window' for each trace, and the amount of shift resulting in the minimum SAD criteria is selected "\
                   "as the shift amount for that trace."
 
-    def __init__(self, parentParam=None, traceSource=None):
-        PreprocessingBase.__init__(self, parentParam, traceSource)
+    def __init__(self, traceSource=None):
+        PreprocessingBase.__init__(self, traceSource)
         self.rtrace = 0
         self.debugReturnSad = False
         self.ccStart = 0
@@ -63,8 +63,8 @@ class ResyncSAD(PreprocessingBase):
 
     def updateLimits(self):
         if self._traceSource:
-            self.findParam('refpts').setLimits((0,self._traceSource.numPoints()))
-            self.findParam('windowpt').setLimits((0, self._traceSource.numPoints()))
+            self.findParam('refpts').setLimits((0, self._traceSource.numPoints()-1))
+            self.findParam('windowpt').setLimits((0, self._traceSource.numPoints()-1))
 
     def updateScript(self, _=None):
         self.addFunction("init", "setEnabled", "%s" % self.findParam('enabled').getValue())

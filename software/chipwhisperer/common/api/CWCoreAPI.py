@@ -23,9 +23,11 @@
 #    along with chipwhisperer.  If not, see <http://www.gnu.org/licenses/>.
 
 import copy
+import os
 import traceback
 import sys
-from chipwhisperer.capture.api.AcquisitionController import AcquisitionController
+from chipwhisperer.capture.api.acquisition_controller import AcquisitionController
+from chipwhisperer.capture.api.programmers import Programmer
 from chipwhisperer.common.api.ProjectFormat import ProjectFormat
 from chipwhisperer.common.results.base import ResultsBase
 from chipwhisperer.common.ui.ProgressBar import *
@@ -44,7 +46,7 @@ class CWCoreAPI(Parameterized):
 
     __name__ = "ChipWhisperer"
     __organization__ = "NewAE Technology Inc."
-    __version__ = "V3.1"
+    __version__ = "V3.1.9"
     _name = 'Generic Settings'
     instance = None
 
@@ -66,9 +68,9 @@ class CWCoreAPI(Parameterized):
         self.valid_targets =  pluginmanager.getPluginsInDictFromPackage("chipwhisperer.capture.targets", True, True)
         self.valid_traces = pluginmanager.getPluginsInDictFromPackage("chipwhisperer.common.traces", True, True)
         self.valid_aux = pluginmanager.getPluginsInDictFromPackage("chipwhisperer.capture.auxiliary", True, True)
-        self.valid_acqPatterns =  pluginmanager.getPluginsInDictFromPackage("chipwhisperer.capture.acq_patterns", True, False, self)
+        self.valid_acqPatterns =  pluginmanager.getPluginsInDictFromPackage("chipwhisperer.capture.acq_patterns", True, False)
         self.valid_attacks = pluginmanager.getPluginsInDictFromPackage("chipwhisperer.analyzer.attacks", True, False)
-        self.valid_preprocessingModules = pluginmanager.getPluginsInDictFromPackage("chipwhisperer.analyzer.preprocessing", False, True, self)
+        self.valid_preprocessingModules = pluginmanager.getPluginsInDictFromPackage("chipwhisperer.analyzer.preprocessing", False, True)
 
         self.settings = Settings()
 
@@ -80,7 +82,7 @@ class CWCoreAPI(Parameterized):
         self._numTraces = 50
         self._numTraceSets = 1
 
-        self.params = Parameter(name='Generic Settings', type='group').register()
+        self.params = Parameter(name='Generic Settings', type='group', addLoadSave=True).register()
         self.params.addChildren([
             {'name':'Scope Module', 'key':'scopeMod', 'type':'list', 'values':self.valid_scopes, 'get':self.getScope, 'set':self.setScope},
             {'name':'Target Module', 'key':'targetMod', 'type':'list', 'values':self.valid_targets, 'get':self.getTarget, 'set':self.setTarget},
@@ -95,16 +97,16 @@ class CWCoreAPI(Parameterized):
                     {'name':'Key/Text Pattern', 'type':'list', 'values':self.valid_acqPatterns, 'get':self.getAcqPattern, 'set':self.setAcqPattern},
             ]},
         ])
-        self.scopeParam = Parameter(name="Scope Settings", type='group').register()
+        self.scopeParam = Parameter(name="Scope Settings", type='group', addLoadSave=True).register()
         self.params.getChild('Scope Module').stealDynamicParameters(self.scopeParam)
 
-        self.targetParam = Parameter(name="Target Settings", type='group').register()
+        self.targetParam = Parameter(name="Target Settings", type='group', addLoadSave=True).register()
         self.params.getChild('Target Module').stealDynamicParameters(self.targetParam)
 
-        self.traceParam = Parameter(name="Trace Settings", type='group').register()
+        self.traceParam = Parameter(name="Trace Settings", type='group', addLoadSave=True).register()
         self.params.getChild('Trace Format').stealDynamicParameters(self.traceParam)
 
-        self.auxParam = Parameter(name="Aux Settings", type='group').register()
+        self.auxParam = Parameter(name="Aux Settings", type='group', addLoadSave=True).register()
         self.params.getChild('Auxiliary Module').stealDynamicParameters(self.auxParam)
 
         # self.attackParam = Parameter(name="Attack Settings", type='group')
@@ -215,9 +217,6 @@ class CWCoreAPI(Parameterized):
         self.setProject(ProjectFormat())
         self.project().setProgramName(self.__name__)
         self.project().setProgramVersion(self.__version__)
-        self.project().addParamTree(self)
-        # self.project().addParamTree(self.getScope())
-        # self.project().addParamTree(self.getTarget())
         self.project().traceManager().sigTracesChanged.connect(self.sigTracesChanged.emit)
 
     def openProject(self, fname):
@@ -322,7 +321,7 @@ class CWCoreAPI(Parameterized):
 
         with progressBar:
             progressBar.setStatusMask("Current Segment = %d Current Trace = %d", (0,0))
-            progressBar.setMaximum(self._numTraces - 1)
+            progressBar.setMaximum(self._numTraces)
 
             waveBuffer = None
             tcnt = 0
@@ -334,7 +333,7 @@ class CWCoreAPI(Parameterized):
                     # Load trace writer information
                     prefix = currentTrace.config.attr("prefix")[:-1]
                     currentTrace.config.setAttr("targetHW", self.getTarget().getName() if self.getTarget() is not None else "None")
-                    currentTrace.config.setAttr("targetSW", "unknown")
+                    currentTrace.config.setAttr("targetSW", os.path.split(Programmer.lastFlashedFile)[1])
                     currentTrace.config.setAttr("scopeName", self.getScope().getName() if self.getScope() is not None else "None")
                     currentTrace.config.setAttr("scopeSampleRate", 0)
                     currentTrace.config.setAttr("notes", "AckPattern: " + str(self.getAcqPattern()) + "; Aux: " + ', '.join(item.getName() for item in self._auxList if item))
@@ -354,14 +353,12 @@ class CWCoreAPI(Parameterized):
                 ac.setMaxtraces(setSize)
                 ac.sigNewTextResponse.connect(self.sigNewTextResponse.emit)
                 ac.sigTraceDone.connect(self.sigTraceDone.emit)
-                __pb = lambda: progressBar.updateStatus(i*setSize + ac.currentTrace, (i, ac.currentTrace))
+                __pb = lambda: progressBar.updateStatus(i*setSize + ac.currentTrace + 1, (i, ac.currentTrace))
                 ac.sigTraceDone.connect(__pb)
-                __abort = lambda: ac.abortCapture(progressBar.wasAborted())
-                ac.sigTraceDone.connect(__abort)
-
                 self.sigCampaignStart.emit(prefix)
-                ac.doReadings(tracesDestination=self.project().traceManager())
+                ac.doReadings(tracesDestination=self.project().traceManager(), progressBar=progressBar)
                 self.sigCampaignDone.emit()
+                self.project().saveAllSettings(os.path.dirname(currentTrace.config.configFilename()) + "/%s_settings.cwset" % prefix, onlyVisibles=True)
                 tcnt += setSize
 
                 if currentTrace is not None:

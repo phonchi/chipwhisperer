@@ -47,8 +47,8 @@ class CW305_USB(object):
 class CW305(TargetTemplate):
     _name = "ChipWhisperer CW305 (Artix-7)"
 
-    def __init__(self, parentParam=None):
-        TargetTemplate.__init__(self, parentParam)
+    def __init__(self):
+        TargetTemplate.__init__(self)
         self._naeusb = NAEUSB()
         self.pll = PLLCDCE906(self._naeusb, ref_freq = 12.0E6, parent=self)
         self.fpga = FPGA(self._naeusb)
@@ -164,7 +164,7 @@ class CW305(TargetTemplate):
         stoptime = datetime.now()
         print "FPGA Config time: %s" % str(stoptime - starttime)
 
-    def con(self, scope = None, bsfile = None, force = False):
+    def _con(self, scope=None, bsfile=None, force=False):
         """Connect to CW305 board, download bitstream"""
 
         self._naeusb.con(idProduct=[0xC305])
@@ -183,7 +183,6 @@ class CW305(TargetTemplate):
         self.fpga_write(0x100+self._woffset, [0])
         self.params.refreshAllParameters()
         self.pll.cdce906init()
-        self.connectStatus.setValue(True)
 
     def checkEncryptionKey(self, key):
         """Validate encryption key"""

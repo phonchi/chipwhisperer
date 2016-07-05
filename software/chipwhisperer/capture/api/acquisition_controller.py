@@ -31,14 +31,12 @@ class AcquisitionController():
 
     def __init__(self, scope, target=None, writer=None, auxList=None, keyTextPattern=None):
         self.sigTraceDone = util.Signal()
-        self.sigCaptureDone = util.Signal()
         self.sigNewTextResponse = util.Signal()
 
         self.target = target
         self.scope = scope
         self.writer = writer
         self.auxList = auxList
-        self.running = False
         self.setKeyTextPattern(keyTextPattern)
         keyTextPattern.setTarget(target)
 
@@ -67,7 +65,7 @@ class AcquisitionController():
         while self.target.isDone() == False and timeout:
             timeout -= 1
             time.sleep(0.01)
-            
+
         if timeout == 0:
             print "WARNING: Target timeout"
 
@@ -113,6 +111,7 @@ class AcquisitionController():
             self.target.reinit()
             self.target.setModeEncrypt()
             self.target.loadEncryptionKey(self.key)
+            self.target.loadInput(self.textin)
             # Load input, start encryption, get output. Key was set already, don't resend
             self.textout = self.targetDoTrace(self.textin, key=None)
         else:
@@ -138,13 +137,7 @@ class AcquisitionController():
     def setMaxtraces(self, maxtraces):
         self.maxtraces = maxtraces
 
-    def abortCapture(self, doAbort=True):
-        if doAbort:
-            self.running = False
-
-    def doReadings(self, tracesDestination=None):
-        self.running = True
-
+    def doReadings(self, tracesDestination=None, progressBar=None):
         self._keyTextPattern.initPair()
         data = self._keyTextPattern.newPair()
         self.key = data[0]
@@ -160,16 +153,19 @@ class AcquisitionController():
                     aux.traceArm()
 
         self.currentTrace = 0
-        while (self.currentTrace < self.maxtraces) and self.running:
-            if self.doSingleReading(True, None) == True:
+        while self.currentTrace < self.maxtraces:
+            if self.doSingleReading(True, None):
                 try:
                     if self.writer:
                         self.writer.addTrace(self.scope.datapoints, self.textin, self.textout, self.key)
                 except ValueError as e:
-                    print "WARNING: Exception caught in adding trace %d, trace skipped."%self.currentTrace
-                    print "         Exception info: %s"%str(e)
+                    print "WARNING: Exception caught in adding trace %d, trace skipped." % self.currentTrace
+                    print "         Exception info: %s" % str(e)
                 self.sigTraceDone.emit()
                 self.currentTrace += 1
+            if progressBar is not None:
+                if progressBar.wasAborted():
+                    break
 
         if self.auxList:
             for aux in self.auxList:
@@ -180,7 +176,4 @@ class AcquisitionController():
             # Don't clear trace as we re-use the buffer
             self.writer.closeAll(clearTrace=False)
             if tracesDestination:
-                tracesDestination.appendTraceSet(self.writer)
-
-        self.sigCaptureDone.emit(self.running)
-        self.running = False
+                tracesDestination.appendSegment(self.writer)

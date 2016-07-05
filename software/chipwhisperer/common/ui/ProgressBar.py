@@ -27,8 +27,9 @@ from datetime import *
 from ..utils import qt_tweaks
 from ..utils import util
 
+
 class ProgressBarText(object):
-    def __init__(self, title = "Progress", text = None, statusMask ="Initializing...", textValues = None, show=True):
+    def __init__(self, title = "Progress", text = None, statusMask ="Initializing...", textValues=None, show=True, parent=None):
         self.title = title
         self.last = self.currentProgress = 0
         self.maximum = 100
@@ -74,16 +75,16 @@ class ProgressBarText(object):
         if self.maximum!=0:
             print self.title + (": %.1f" % ((self.currentProgress/self.maximum) * 100)) + "% (" + self.getStatusText() + ")"
 
-    def updateStatus(self, currentProgress, textValues = None):
+    def updateStatus(self, currentProgress, textValues=None):
         self.textValues = textValues
         self.currentProgress = currentProgress
         if self.printAll or self.currentProgress == 0 or self.currentProgress == self.maximum\
                 or self.currentProgress/self.maximum - self.last/self.maximum >= 0.2:
-            self.last = currentProgress
+            self.last = self.currentProgress
             self.printStatus()
         util.updateUI()
 
-    def abort(self, message = None):
+    def abort(self, message=None):
         if not message:
             message = "User request."
         self.aborted = True
@@ -114,10 +115,10 @@ try:
     from PySide.QtGui import *
 
     class ProgressBarGUI(qt_tweaks.QDialog, ProgressBarText):
-        def __init__(self, title = "Progress", text=None, statusMask ="Initializing...", textValues = None, show=True):
+        def __init__(self, title="Progress", text=None, statusMask="Initializing...", textValues=None, show=True, parent=None):
 
-            ProgressBarText.__init__(self, title = title, text=text, statusMask= statusMask, textValues = textValues)
-            QDialog.__init__(self, None)
+            ProgressBarText.__init__(self, title = title, text=text, statusMask=statusMask, textValues=textValues)
+            QDialog.__init__(self, parent)
 
             self.setModal(False)
             self.setWindowFlags(Qt.WindowStaysOnTopHint)
@@ -150,7 +151,7 @@ try:
             # if self.getText() == "":
             #     self.textLabel.hide()
 
-        def setStatusMask(self, statusTextMask, textValues = None):
+        def setStatusMask(self, statusTextMask, textValues=None):
             ProgressBarText.setStatusMask(self, statusTextMask, textValues)
             self.updateStatus(self.currentProgress, textValues)
 
@@ -159,7 +160,7 @@ try:
             if message:
                 QMessageBox.warning(self, "Warning", "Could not complete the execution:\n\n" + self.getStatusText())
 
-        def updateStatus(self, currentProgress, textValues = None):
+        def updateStatus(self, currentProgress, textValues=None):
             ProgressBarText.updateStatus(self, currentProgress, textValues)
             self.statusLabel.setText(self.getStatusText())
             if self.maximum!=0:

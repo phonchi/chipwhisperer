@@ -1,16 +1,17 @@
 # Date Auto-Generated: 2016.06.09-16.47.02
+import os
+import shutil
+
 from chipwhisperer.common.scripts.base import UserScriptBase
-import shutil, os
 # Imports from Preprocessing
-import chipwhisperer.analyzer.preprocessing as preprocessing
 # Imports from Attack
 from chipwhisperer.analyzer.attacks.profiling import Profiling
 from chipwhisperer.analyzer.attacks.profiling_algorithms.template import ProfilingTemplate
 from chipwhisperer.analyzer.utils.Partition import PartitionHWIntermediate
 # Imports from utilList
-from chipwhisperer.analyzer.utils.TraceExplorerScripts.PartitionDisplay import DifferenceModeTTest, DifferenceModeSAD
+from chipwhisperer.analyzer.utils.TraceExplorerScripts.PartitionDisplay import DifferenceModeSAD
 from chipwhisperer.analyzer.ui.CWAnalyzerGUI import CWAnalyzerGUI
-from chipwhisperer.capture.utils.XMEGAProgrammer import XMEGAProgrammer
+from chipwhisperer.capture.api.programmers import XMEGAProgrammer
 
 
 class Capture(UserScriptBase):
@@ -123,7 +124,7 @@ class Attack(UserScriptBase):
         self.initAnalysis2()
         self.attack.processTraces()
 
-        # Delete all pending scripts executions (that are observing the api be available again),
+        # Delete all pending scripts executions (that are observing the api to be available again),
         # otherwise the current setup would be overridden
         self.api.executingScripts.disconnectAll()
 

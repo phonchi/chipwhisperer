@@ -1,6 +1,8 @@
 # Date Auto-Generated: 2016.06.09-16.47.02
+import os
+import shutil
+
 from chipwhisperer.common.scripts.base import UserScriptBase
-import shutil, os
 # Imports from Preprocessing
 import chipwhisperer.analyzer.preprocessing as preprocessing
 # Imports from Attack
@@ -8,7 +10,7 @@ from chipwhisperer.analyzer.attacks.cpa import CPA
 from chipwhisperer.analyzer.attacks.cpa_algorithms.progressive import CPAProgressive
 import chipwhisperer.analyzer.attacks.models.AES128_8bit
 # Imports from utilList
-from chipwhisperer.capture.utils.XMEGAProgrammer import XMEGAProgrammer
+from chipwhisperer.capture.api.programmers import XMEGAProgrammer
 
 
 class Capture(UserScriptBase):
@@ -69,11 +71,11 @@ class Attack(UserScriptBase):
 
     def initPreprocessing(self):
         # Add amplitude noise and jitter to the original traces
-        ppMod0 = preprocessing.AddNoiseJitter.AddNoiseJitter(None, self.api.project().traceManager())
+        ppMod0 = preprocessing.AddNoiseJitter.AddNoiseJitter(self.api.project().traceManager())
         ppMod0.setEnabled(True)
         ppMod0.setMaxJitter(2)
         ppMod0.init()
-        ppMod1 = preprocessing.AddNoiseRandom.AddNoiseRandom(None, ppMod0)
+        ppMod1 = preprocessing.AddNoiseRandom.AddNoiseRandom(ppMod0)
         ppMod1.setEnabled(False)
         ppMod1.setMaxNoise(0.005000)
         ppMod1.init()
@@ -81,11 +83,11 @@ class Attack(UserScriptBase):
 
     def initPreprocessing2(self):
         # Resync using SAD (to fix the jitter) and applies decimation (because we want to test this feature :)
-        ppMod0 = preprocessing.ResyncSAD.ResyncSAD(None, self.api.project().traceManager())
+        ppMod0 = preprocessing.ResyncSAD.ResyncSAD(self.api.project().traceManager())
         ppMod0.setEnabled(True)
         ppMod0.setReference(rtraceno=0, refpoints=(90,100), inputwindow=(70,120))
         ppMod0.init()
-        ppMod1 = preprocessing.DecimationFixed.DecimationFixed(None, ppMod0)
+        ppMod1 = preprocessing.DecimationFixed.DecimationFixed(ppMod0)
         ppMod1.setEnabled(True)
         ppMod1.setDecimationFactor(2)
         ppMod1.init()
@@ -127,8 +129,8 @@ class Attack(UserScriptBase):
         self.api.setParameter(['Results', 'Trace Recorder', 'Save', None])
 
         # Deselect the original traces and select this new one
-        self.api.project().traceManager().setTraceSetStatus(0, False)
-        self.api.project().traceManager().setTraceSetStatus(1, True)
+        self.api.project().traceManager().setTraceSegmentStatus(0, False)
+        self.api.project().traceManager().setTraceSegmentStatus(1, True)
         self.api.saveProject()
 
         # Fix the traces
@@ -151,7 +153,7 @@ if __name__ == '__main__':
     app = cwc.makeApplication()
     Parameter.usePyQtGraph = True
     api = CWCoreAPI()               # Instantiate the API
-    gui = cwc.CWCaptureGUI(api)        # Instantiate the Capture GUI
+    gui = cwc.CWCaptureGUI(api)     # Instantiate the Capture GUI
     gui.show()
     api.runScriptClass(Capture)
     gui.reset()

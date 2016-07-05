@@ -54,7 +54,7 @@ class ChipWhispererGlitch(Parameterized):
     CLKSOURCE_MASK = 0b00000011
     _name= 'Glitch Module'
 
-    def __init__(self, parentParam, cwtype, scope, oa):
+    def __init__(self, cwtype, scope, oa):
 
         # Setup FPGA partial configuration dataZ
         self.prCon = pr.PartialReconfigConnection()
@@ -71,10 +71,10 @@ class ChipWhispererGlitch(Parameterized):
             {'name':'Single-Shot Arm', 'type':'list', 'key':'ssarm', 'values':{'Before Scope Arm':1, 'After Scope Arm':2}, 'value':2},
             {'name':'Ext Trigger Offset', 'type':'int', 'range':(0, 50000000), 'set':self.setTriggerOffset, 'get':self.triggerOffset},
             {'name':'Repeat', 'type':'int', 'limits':(1,255), 'set':self.setNumGlitches, 'get':self.numGlitches},
-            {'name':'Manual Trigger / Single-Shot Arm', 'type':'action', 'action': lambda _ : self.glitchManual()},
+            {'name':'Manual Trigger / Single-Shot Arm', 'type':'action', 'action': self.glitchManual},
             {'name':'Output Mode', 'type':'list', 'values':{'Clock XORd':0, 'Clock ORd':1, 'Glitch Only':2, 'Clock Only':3, 'Enable Only':4}, 'set':self.setGlitchType, 'get':self.glitchType},
             {'name':'Read Status', 'type':'action', 'action':self.checkLocked},
-            {'name':'Reset DCM', 'type':'action', 'action':self.resetDCMs},
+            {'name':'Reset DCM', 'type':'action', 'action':self.actionResetDCMs},
         ])
 
         # Check if we've got partial reconfiguration stuff for this scope
@@ -312,6 +312,10 @@ class ChipWhispererGlitch(Parameterized):
 
         return (phase1, phase2, dcm1Lock, dcm2Lock)
 
+    def actionResetDCMs(self, _=None):
+        """Action for parameter class"""
+        self.resetDCMs()
+
     def resetDCMs(self, keepPhase=False):
         """Reset the DCMs for the Glitch width & Glitch offset. Required after doing a PR operation"""
 
@@ -329,7 +333,7 @@ class ChipWhispererGlitch(Parameterized):
             self.findParam('widthfine').setValue(0)
             self.findParam('offsetfine').setValue(0)
 
-    def checkLocked(self):
+    def checkLocked(self, _=None):
         """Check if the DCMs are locked and print results """
 
         stat = self.getDCMStatus()
@@ -378,7 +382,7 @@ class ChipWhispererGlitch(Parameterized):
         resp = self.oa.sendMessage(CODE_READ, glitchaddr, Validate=False, maxResp=8)
         return (resp[5] & 0x70) >> 4
 
-    def glitchManual(self):
+    def glitchManual(self, _=None):
         """
         Cause a single glitch event to occur. Depending on setting of numGlitches() this may mean
         multiple glitches in a row
