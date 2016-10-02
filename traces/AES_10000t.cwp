@@ -1,0 +1,24 @@
+[Trace Management]
+tracefile0 = AES_10000t_data\traces\config_2015.07.17-21.33.48_.cfg
+enabled0 = True
+[ChipWhisperer-Capture]
+[[General Settings]]
+Project Name = Untitled
+Program Name = ChipWhisperer-Capture
+Project File Version = 1.00
+Project Author = Unknown
+Program Version = 2.00
+[ChipWhisperer-Analyzer]
+[[General Settings]]
+Project Name = Untitled
+Program Name = ChipWhisperer-Analyzer
+Project File Version = 1.00
+Project Author = Unknown
+Program Version = 2.00
+[ChipWhisperer]
+[[General Settings]]
+Project Name = Untitled
+Program Name = ChipWhisperer
+Project File Version = 1.00
+Project Author = Unknown
+Program Version = V3.1
