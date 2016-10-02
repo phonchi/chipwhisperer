@@ -1,0 +1,69 @@
+[Scope Settings]
+[[ChipWhisperer/OpenADC]]
+Connection = FTDI (SASEBO-W/SAKURA-G)
+Auto-Refresh DCM Status = True
+[[[FTDI (SASEBO-W/SAKURA-G)]]]
+Device Serial Number = FTJGU99A
+[[ChipWhisperer/OpenADC]]
+[[[OpenADC]]]
+[[[[HW Information]]]]
+Version = (1, 7, 'SAKURA-G', 0)
+Synth Date = unknown
+System Freq = 48000000
+Max Samples = 24573
+[[[OpenADC]]]
+[[[[Gain Setting]]]]
+Mode = low
+Setting = 40
+Result = 19.28125
+[[[OpenADC]]]
+[[[[Trigger Setup]]]]
+Source = digital
+Digital Pin State = True
+Mode = falling edge
+Timeout (secs) = 2
+Offset = 0
+Pre-Trigger Samples = 0
+Total Samples = 400
+[[[OpenADC]]]
+[[[[Clock Setup]]]]
+[[[[[ADC Clock]]]]]
+Source = CLKGEN x1 via DCM
+Phase Adjust = 0
+ADC Freq = 38400747
+DCM Locked = True
+[[[[Clock Setup]]]]
+Freq Counter = 1500000
+Freq Counter Src = EXTCLK Input
+[[[[[CLKGEN Settings]]]]]
+Input Source = system
+Multiply = 2
+Divide = 2
+Desired Frequency = 48000000
+Current Frequency = 48000000 Hz
+DCM Locked = True
+[Aux Settings]
+[Trace Settings]
+[[ChipWhisperer/Native]]
+Config File = 
+Format = 
+[Trace Settings]
+[Generic Settings]
+Scope Module = ChipWhisperer/OpenADC
+Target Module = SAKURA G
+Trace Format = ChipWhisperer/Native
+Auxiliary Module = None
+[[Acquisition Settings]]
+Number of Traces = 10000
+Number of Sets = 5
+Traces per Set = 2000
+Key/Text Pattern = Basic
+[Generic Settings]
+[[Basic]]
+Key = Fixed
+Fixed Encryption Key = 00 01 02 03 04 05 06 07 08 F7 15 88 09 CF 4F 3C
+Plaintext = Random
+[Target Settings]
+[[SAKURA G]]
+Connection via: = CW Bitstream, with OpenADC
+[Target Settings]
