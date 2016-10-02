@@ -1,0 +1,79 @@
+INFO:sim:172 - Generating IP...
+Applying current project options...
+Finished applying current project options.
+Resolving generics for 'fifoonly_adcfifo'...
+WARNING:sim - A core named 'fifoonly_adcfifo' already exists in the project.
+   Output products for this core may be overwritten.
+Applying external generics to 'fifoonly_adcfifo'...
+Delivering associated files for 'fifoonly_adcfifo'...
+Delivering EJava files for 'fifoonly_adcfifo'...
+Generating implementation netlist for 'fifoonly_adcfifo'...
+INFO:sim - Pre-processing HDL files for 'fifoonly_adcfifo'...
+WARNING:sim - BlackBox generator run option '-ifmt' found multiple times. Only
+   the first occurence is considered.
+Running synthesis for 'fifoonly_adcfifo'
+Running ngcbuild...
+Writing VEO instantiation template for 'fifoonly_adcfifo'...
+Writing Verilog behavioral simulation model for 'fifoonly_adcfifo'...
+WARNING:sim - Overwriting existing file
+   D:/github_project/chipwhisperer_scrip/hardware/capture/sakura-g/sakurag_ise_p
+   roject/chipwhisperer-sakurag/ipcore_dir/tmp/_cg/fifoonly_adcfifo/doc/fifo_gen
+   erator_v9_3_vinfo.html with file from view xilinx_documentation
+Delivered 3 files into directory
+D:/github_project/chipwhisperer_scrip/hardware/capture/sakura-g/sakurag_ise_proj
+ect/chipwhisperer-sakurag/ipcore_dir/tmp/_cg/fifoonly_adcfifo
+Delivered 1 file into directory
+D:/github_project/chipwhisperer_scrip/hardware/capture/sakura-g/sakurag_ise_proj
+ect/chipwhisperer-sakurag/ipcore_dir/tmp/_cg/fifoonly_adcfifo
+Generating ASY schematic symbol...
+INFO:sim:949 - Finished generation of ASY schematic symbol.
+Generating SYM schematic symbol for 'fifoonly_adcfifo'...
+Generating metadata file...
+Regenerating ISE project file for 'fifoonly_adcfifo'...
+Generating ISE project...
+XCO file found: fifoonly_adcfifo.xco
+XMDF file found: fifoonly_adcfifo_xmdf.tcl
+Adding
+D:/github_project/chipwhisperer_scrip/hardware/capture/sakura-g/sakurag_ise_proj
+ect/chipwhisperer-sakurag/ipcore_dir/tmp/_cg/fifoonly_adcfifo.asy -view all
+-origin_type imported
+Adding
+D:/github_project/chipwhisperer_scrip/hardware/capture/sakura-g/sakurag_ise_proj
+ect/chipwhisperer-sakurag/ipcore_dir/tmp/_cg/fifoonly_adcfifo.ngc -view all
+-origin_type created
+Checking file
+"D:/github_project/chipwhisperer_scrip/hardware/capture/sakura-g/sakurag_ise_pro
+ject/chipwhisperer-sakurag/ipcore_dir/tmp/_cg/fifoonly_adcfifo.ngc" for project
+device match ...
+File
+"D:/github_project/chipwhisperer_scrip/hardware/capture/sakura-g/sakurag_ise_pro
+ject/chipwhisperer-sakurag/ipcore_dir/tmp/_cg/fifoonly_adcfifo.ngc" device
+information matches project device.
+Adding
+D:/github_project/chipwhisperer_scrip/hardware/capture/sakura-g/sakurag_ise_proj
+ect/chipwhisperer-sakurag/ipcore_dir/tmp/_cg/fifoonly_adcfifo.sym -view all
+-origin_type imported
+Adding
+D:/github_project/chipwhisperer_scrip/hardware/capture/sakura-g/sakurag_ise_proj
+ect/chipwhisperer-sakurag/ipcore_dir/tmp/_cg/fifoonly_adcfifo.v -view all
+-origin_type created
+INFO:HDLCompiler:1845 - Analyzing Verilog file
+   "D:/github_project/chipwhisperer_scrip/hardware/capture/sakura-g/sakurag_ise_
+   project/chipwhisperer-sakurag/ipcore_dir/tmp/_cg/fifoonly_adcfifo.v" into
+   library work
+INFO:ProjectMgmt - Parsing design hierarchy completed successfully.
+Adding
+D:/github_project/chipwhisperer_scrip/hardware/capture/sakura-g/sakurag_ise_proj
+ect/chipwhisperer-sakurag/ipcore_dir/tmp/_cg/fifoonly_adcfifo.veo -view all
+-origin_type imported
+INFO:TclTasksC:2116 - The automatic calculation of top has been turned-off.
+   Please set the new top explicitly by running the "project set top" command.
+   To re-calculate the new top automatically, set the "Auto Implementation Top"
+   property to true.
+Top level has been set to "/fifoonly_adcfifo"
+Generating README file...
+Generating FLIST file...
+INFO:sim:948 - Finished FLIST file generation.
+Moving files to output directory...
+Finished moving files to output directory
+Wrote CGP file for project 'fifoonly_adcfifo'.

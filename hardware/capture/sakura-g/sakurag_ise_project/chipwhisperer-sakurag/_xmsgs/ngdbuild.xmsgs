@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="ConstraintSystem" num="56" delta="new" >Constraint <arg fmt="%s" index="1">&lt;TIMESPEC TS_openadc_inst_genclocks_dcm_clk_1 = PERIOD &quot;openadc_inst_genclocks_dcm_clk_1&quot; TS_openadc_inst_target_clk_0 * 2 HIGH 50%&gt;</arg>: Unable to find an active <arg fmt="%s" index="2">&apos;TNM&apos;</arg> constraint named &apos;<arg fmt="%s" index="3">openadc_inst_genclocks_dcm_clk_1</arg>&apos;.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="56" delta="new" >Constraint <arg fmt="%s" index="1">&lt;TIMESPEC TS_openadc_inst_genclocks_ADC_clk_times4_1 = PERIOD &quot;openadc_inst_genclocks_ADC_clk_times4_1&quot; TS_openadc_inst_target_clk_0 * 4 HIGH 50%&gt;</arg>: Unable to find an active <arg fmt="%s" index="2">&apos;TNM&apos;</arg> constraint named &apos;<arg fmt="%s" index="3">openadc_inst_genclocks_ADC_clk_times4_1</arg>&apos;.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="56" delta="new" >Constraint <arg fmt="%s" index="1">&lt;TIMESPEC TS_openadc_inst_genclocks_ADC_clk_1 = PERIOD &quot;openadc_inst_genclocks_ADC_clk_1&quot; TS_openadc_inst_target_clk_0 HIGH 50%&gt;</arg>: Unable to find an active <arg fmt="%s" index="2">&apos;TNM&apos;</arg> constraint named &apos;<arg fmt="%s" index="3">openadc_inst_genclocks_ADC_clk_1</arg>&apos;.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="178" delta="new" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">clkin_GRP</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_clkin</arg>&apos;, was traced into <arg fmt="%s" index="4">DCM_CLKGEN</arg> instance <arg fmt="%s" index="5">openadc_inst/genclocks/DCM_CLKGEN_inst</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">DCM_CLKGEN</arg> output(s): 
+<arg fmt="%s" index="7">CLKFX</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_openadc_inst_target_clk = PERIOD &quot;openadc_inst_target_clk&quot; TS_clkin HIGH 50%&gt;</arg>
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="178" delta="new" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">usb_clk_GRP</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_usb_clk</arg>&apos;, was traced into <arg fmt="%s" index="4">DCM_SP</arg> instance <arg fmt="%s" index="5">registers_sakura_lbus/mk_clkrst/u11</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">DCM_SP</arg> output(s): 
+<arg fmt="%s" index="7">CLKDV</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_registers_sakura_lbus_mk_clkrst_clkdv_dcm = PERIOD &quot;registers_sakura_lbus_mk_clkrst_clkdv_dcm&quot; TS_usb_clk / 32 HIGH 50%&gt;</arg>
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="178" delta="new" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">openadc_inst_target_clk</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_openadc_inst_target_clk</arg>&apos;, was traced into <arg fmt="%s" index="4">DCM_SP</arg> instance <arg fmt="%s" index="5">openadc_inst/genclocks/DCM_extclock_gen</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">DCM_SP</arg> output(s): 
+<arg fmt="%s" index="7">CLKFX</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_openadc_inst_genclocks_ADC_clk_times4 = PERIOD &quot;openadc_inst_genclocks_ADC_clk_times4&quot; TS_openadc_inst_target_clk * 4 HIGH 50%&gt;</arg>
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="178" delta="new" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">openadc_inst_target_clk</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_openadc_inst_target_clk</arg>&apos;, was traced into <arg fmt="%s" index="4">DCM_SP</arg> instance <arg fmt="%s" index="5">openadc_inst/genclocks/DCM_extclock_gen</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">DCM_SP</arg> output(s): 
+<arg fmt="%s" index="7">CLK0</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_openadc_inst_genclocks_ADC_clk = PERIOD &quot;openadc_inst_genclocks_ADC_clk&quot; TS_openadc_inst_target_clk HIGH 50%&gt;</arg>
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="178" delta="new" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">registers_sakura_lbus_mk_clkrst_clkdv_dcm</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_registers_sakura_lbus_mk_clkrst_clkdv_dcm</arg>&apos;, was traced into <arg fmt="%s" index="4">DCM_CLKGEN</arg> instance <arg fmt="%s" index="5">openadc_inst/genclocks/DCM_CLKGEN_inst</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">DCM_CLKGEN</arg> output(s): 
+<arg fmt="%s" index="7">CLKFX</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_openadc_inst_target_clk_0 = PERIOD &quot;openadc_inst_target_clk_0&quot; TS_registers_sakura_lbus_mk_clkrst_clkdv_dcm HIGH 50%&gt;</arg>
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="178" delta="new" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">registers_sakura_lbus_mk_clkrst_clkdv_dcm</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_registers_sakura_lbus_mk_clkrst_clkdv_dcm</arg>&apos;, was traced into <arg fmt="%s" index="4">DCM_SP</arg> instance <arg fmt="%s" index="5">openadc_inst/genclocks/DCM_extclock_gen</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">DCM_SP</arg> output(s): 
+<arg fmt="%s" index="7">CLKFX</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_openadc_inst_genclocks_ADC_clk_times4_0 = PERIOD &quot;openadc_inst_genclocks_ADC_clk_times4_0&quot; TS_registers_sakura_lbus_mk_clkrst_clkdv_dcm * 4 HIGH 50%&gt;</arg>
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="178" delta="new" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">registers_sakura_lbus_mk_clkrst_clkdv_dcm</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_registers_sakura_lbus_mk_clkrst_clkdv_dcm</arg>&apos;, was traced into <arg fmt="%s" index="4">DCM_SP</arg> instance <arg fmt="%s" index="5">openadc_inst/genclocks/DCM_extclock_gen</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">DCM_SP</arg> output(s): 
+<arg fmt="%s" index="7">CLK0</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_openadc_inst_genclocks_ADC_clk_0 = PERIOD &quot;openadc_inst_genclocks_ADC_clk_0&quot; TS_registers_sakura_lbus_mk_clkrst_clkdv_dcm HIGH 50%&gt;</arg>
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1212" delta="new" >User specified non-default attribute value (<arg fmt="%s" index="1">20.833000</arg>) was detected for the <arg fmt="%s" index="2">CLKIN_PERIOD</arg> attribute on <arg fmt="%s" index="3">DCM</arg> &quot;<arg fmt="%s" index="4">registers_sakura_lbus/mk_clkrst/u11</arg>&quot;.  This does not match the PERIOD constraint value (<arg fmt="%s" index="5">60 MHz.</arg>).  The uncertainty calculation will use the non-default attribute value.  This could result in incorrect uncertainty calculated for <arg fmt="%s" index="6">DCM</arg> output clocks.
+</msg>
+
+<msg type="info" file="NgdBuild" num="1222" delta="new" >Setting <arg fmt="%s" index="1">CLKIN_PERIOD</arg> attribute associated with <arg fmt="%s" index="2">DCM</arg> instance <arg fmt="%s" index="3">openadc_inst/genclocks/DCM_CLKGEN_inst</arg> to <arg fmt="%s" index="4">20.833333</arg> ns based on the period specification (<arg fmt="%s" index="5">&lt;TIMESPEC &quot;TS_clkin&quot; = PERIOD : &quot;clkin_GRP&quot; : 48 MHz HIGH 50.0% ;&gt; [sakura_g_ctrl_r1.ucf(14)]</arg>).
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1212" delta="new" >User specified non-default attribute value (<arg fmt="%s" index="1">20.833333</arg>) was detected for the <arg fmt="%s" index="2">CLKIN_PERIOD</arg> attribute on <arg fmt="%s" index="3">DCM</arg> &quot;<arg fmt="%s" index="4">openadc_inst/genclocks/DCM_CLKGEN_inst</arg>&quot;.  This does not match the PERIOD constraint value (<arg fmt="%s" index="5">1.875 MHz.</arg>).  The uncertainty calculation will use the non-default attribute value.  This could result in incorrect uncertainty calculated for <arg fmt="%s" index="6">DCM</arg> output clocks.
+</msg>
+
+<msg type="info" file="NgdBuild" num="1222" delta="new" >Setting <arg fmt="%s" index="1">CLKIN_PERIOD</arg> attribute associated with <arg fmt="%s" index="2">DCM</arg> instance <arg fmt="%s" index="3">openadc_inst/genclocks/DCM_extclock_gen</arg> to <arg fmt="%s" index="4">20.833333</arg> ns based on the period specification (<arg fmt="%s" index="5">&lt;TIMESPEC TS_openadc_inst_target_clk = PERIOD &quot;openadc_inst_target_clk&quot; TS_clkin HIGH 50%&gt;</arg>).
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1212" delta="new" >User specified non-default attribute value (<arg fmt="%s" index="1">20.833333</arg>) was detected for the <arg fmt="%s" index="2">CLKIN_PERIOD</arg> attribute on <arg fmt="%s" index="3">DCM</arg> &quot;<arg fmt="%s" index="4">openadc_inst/genclocks/DCM_extclock_gen</arg>&quot;.  This does not match the PERIOD constraint value (<arg fmt="%s" index="5">1.875 MHz.</arg>).  The uncertainty calculation will use the non-default attribute value.  This could result in incorrect uncertainty calculated for <arg fmt="%s" index="6">DCM</arg> output clocks.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1212" delta="new" >User specified non-default attribute value (<arg fmt="%s" index="1">20.833333</arg>) was detected for the <arg fmt="%s" index="2">CLKIN_PERIOD</arg> attribute on <arg fmt="%s" index="3">DCM</arg> &quot;<arg fmt="%s" index="4">openadc_inst/genclocks/DCM_extclock_gen</arg>&quot;.  This does not match the PERIOD constraint value (<arg fmt="%s" index="5">1.875 MHz.</arg>).  The uncertainty calculation will use the non-default attribute value.  This could result in incorrect uncertainty calculated for <arg fmt="%s" index="6">DCM</arg> output clocks.
+</msg>
+
+</messages>
+

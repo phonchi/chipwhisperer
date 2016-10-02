@@ -1,0 +1,3 @@
+verilog work "../lbus_if.v"
+verilog work "../aes_composite_enc.v"
+verilog work "../chip_sasebo_gii_aes.v"

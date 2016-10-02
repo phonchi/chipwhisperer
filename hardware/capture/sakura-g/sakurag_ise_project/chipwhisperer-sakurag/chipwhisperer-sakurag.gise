@@ -23,6 +23,9 @@
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="../../../../common/hdl/sakura/coregen/coregen.log"/>
+    <file xil_pn:fileType="FILE_ASY" xil_pn:name="../../../../common/hdl/sakura/coregen/syncfifo_8x31.asy" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="../../../../common/hdl/sakura/coregen/syncfifo_8x31.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_VEO" xil_pn:name="../../../../common/hdl/sakura/coregen/syncfifo_8x31.veo" xil_pn:origination="imported"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="CHIP_SAKURAG.bld"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="CHIP_SAKURAG.cmd_log"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="CHIP_SAKURAG.lso"/>
@@ -69,6 +72,9 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="chip_sakurag.bit" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="chip_sakurag.drc" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="ipcore_dir/coregen.log"/>
+    <file xil_pn:fileType="FILE_ASY" xil_pn:name="ipcore_dir/fifoonly_adcfifo.asy" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="ipcore_dir/fifoonly_adcfifo.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_VEO" xil_pn:name="ipcore_dir/fifoonly_adcfifo.veo" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
@@ -85,15 +91,11 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1380568591" xil_pn:in_ck="3088671287583220158" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-2052044918844625210" xil_pn:start_ts="1380568591">
+    <transform xil_pn:end_ts="1475119639" xil_pn:in_ck="7832056118635799639" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-2052044918844625210" xil_pn:start_ts="1475119096">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="../../../../common/hdl/sakura/coregen/syncfifo_8x31.ngc"/>
       <outfile xil_pn:name="../../../../common/hdl/sakura/coregen/syncfifo_8x31.v"/>
-      <outfile xil_pn:name="ipcore_dir/chipscope_icon.ngc"/>
-      <outfile xil_pn:name="ipcore_dir/chipscope_icon.v"/>
-      <outfile xil_pn:name="ipcore_dir/chipscope_ila.ngc"/>
-      <outfile xil_pn:name="ipcore_dir/chipscope_ila.v"/>
       <outfile xil_pn:name="ipcore_dir/fifoonly_adcfifo.ngc"/>
       <outfile xil_pn:name="ipcore_dir/fifoonly_adcfifo.v"/>
     </transform>
@@ -113,7 +115,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1399754478" xil_pn:in_ck="7443994310915305619" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="6868465104578785748" xil_pn:start_ts="1399754446">
+    <transform xil_pn:end_ts="1475119673" xil_pn:in_ck="-1920745206275781580" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="6868465104578785748" xil_pn:start_ts="1475119639">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -135,7 +137,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1399754540" xil_pn:in_ck="5502387883117850620" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-4081876409237549273" xil_pn:start_ts="1399754533">
+    <transform xil_pn:end_ts="1475119686" xil_pn:in_ck="-4315797753405904359" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-4081876409237549273" xil_pn:start_ts="1475119673">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -145,10 +147,12 @@
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1399754592" xil_pn:in_ck="-1536869652298431609" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="-3038358747526061968" xil_pn:start_ts="1399754540">
+    <transform xil_pn:end_ts="1475119731" xil_pn:in_ck="-1536869652298431609" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="-3038358747526061968" xil_pn:start_ts="1475119686">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="CHIP_SAKURAG.pcf"/>
       <outfile xil_pn:name="CHIP_SAKURAG_map.map"/>
       <outfile xil_pn:name="CHIP_SAKURAG_map.mrp"/>
@@ -159,7 +163,7 @@
       <outfile xil_pn:name="CHIP_SAKURAG_usage.xml"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1399754827" xil_pn:in_ck="-2589612855674850016" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="93661965788626211" xil_pn:start_ts="1399754592">
+    <transform xil_pn:end_ts="1475119899" xil_pn:in_ck="-2589612855674850016" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="93661965788626211" xil_pn:start_ts="1475119731">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -174,7 +178,7 @@
       <outfile xil_pn:name="CHIP_SAKURAG_par.xrpt"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1399754858" xil_pn:in_ck="-7919715708273431852" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1399754827">
+    <transform xil_pn:end_ts="1475119923" xil_pn:in_ck="-7919715708273431852" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1475119899">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -187,6 +191,10 @@
       <outfile xil_pn:name="webtalk.log"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
     </transform>
+    <transform xil_pn:end_ts="1475127724" xil_pn:in_ck="5084351861782468094" xil_pn:name="TRAN_impactProgrammingTool" xil_pn:prop_ck="2682241697568822907" xil_pn:start_ts="1475127723">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
     <transform xil_pn:end_ts="1380319443" xil_pn:in_ck="5084351861782468094" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="8482462020707587906" xil_pn:start_ts="1380319442">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -194,6 +202,10 @@
       <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="InputRemoved"/>
+    </transform>
+    <transform xil_pn:end_ts="1475120342" xil_pn:in_ck="5084351861782468094" xil_pn:name="TRAN_genImpactFile" xil_pn:prop_ck="-7047989797201823252" xil_pn:start_ts="1475120340">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
     </transform>
     <transform xil_pn:end_ts="1380319444" xil_pn:in_ck="5084351861782468094" xil_pn:name="TRAN_analyzeDesignUsingChipscope" xil_pn:prop_ck="-4081876409237549273" xil_pn:start_ts="1380319444">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -203,7 +215,7 @@
       <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="InputRemoved"/>
     </transform>
-    <transform xil_pn:end_ts="1399754827" xil_pn:in_ck="7724178826413693187" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416184" xil_pn:start_ts="1399754812">
+    <transform xil_pn:end_ts="1475119899" xil_pn:in_ck="7724178826413693187" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416184" xil_pn:start_ts="1475119890">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>

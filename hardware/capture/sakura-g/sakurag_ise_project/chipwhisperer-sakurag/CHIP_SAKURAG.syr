@@ -1,0 +1,1292 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.18 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.18 secs
+ 
+--> Reading design: CHIP_SAKURAG.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "CHIP_SAKURAG.prj"
+Ignore Synthesis Constraint File   : NO
+Verilog Include Directory          : { "D:/github_project/chipwhisperer_scrip/openadc/hdl/hdl" }
+
+---- Target Parameters
+Output File Name                   : "CHIP_SAKURAG"
+Output Format                      : NGC
+Target Device                      : xc6slx9-2-csg225
+
+---- Source Options
+Top Module Name                    : CHIP_SAKURAG
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir" "../../../../common/hdl/sakura/coregen"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:\github_project\chipwhisperer_scrip\openadc\hdl\hdl\spartan6\dcm_phaseshift_interface.v" into library work
+Parsing module <dcm_phaseshift_interface>.
+Analyzing Verilog file "D:\github_project\chipwhisperer_scrip\openadc\hdl\hdl\spartan6\dcm_clkgen_load.v" into library work
+Parsing module <dcm_clkgen_load>.
+WARNING:HDLCompiler:572 - "D:\github_project\chipwhisperer_scrip\openadc\hdl\hdl\spartan6\dcm_clkgen_load.v" Line 55: Macro <DONE> is redefined.
+Analyzing Verilog file "D:\github_project\chipwhisperer_scrip\hardware\capture\sakura-g\sakurag_ise_project\chipwhisperer-sakurag\ipcore_dir\fifoonly_adcfifo.v" into library work
+Parsing module <fifoonly_adcfifo>.
+Analyzing Verilog file "D:\github_project\chipwhisperer_scrip\openadc\hdl\hdl\trigger_unit.v" into library work
+Parsing module <trigger_unit>.
+Analyzing Verilog file "D:\github_project\chipwhisperer_scrip\openadc\hdl\hdl\spartan6\fifo_top.v" into library work
+Parsing verilog file "D:\github_project\chipwhisperer_scrip\openadc\hdl\hdl\/includes.v" included at line 1.
+Parsing verilog file "D:\github_project\chipwhisperer_scrip\openadc\hdl\hdl\/timescale.v" included at line 1.
+Parsing verilog file "setup.v" included at line 2.
+Parsing verilog file "D:\github_project\chipwhisperer_scrip\openadc\hdl\hdl\/registers.v" included at line 3.
+Parsing module <fifo_top>.
+Analyzing Verilog file "D:\github_project\chipwhisperer_scrip\openadc\hdl\hdl\spartan6\clock_managment_advanced.v" into library work
+Parsing verilog file "D:\github_project\chipwhisperer_scrip\openadc\hdl\hdl\/includes.v" included at line 2.
+Parsing verilog file "D:\github_project\chipwhisperer_scrip\openadc\hdl\hdl\/timescale.v" included at line 1.
+Parsing verilog file "setup.v" included at line 2.
+Parsing verilog file "D:\github_project\chipwhisperer_scrip\openadc\hdl\hdl\/registers.v" included at line 3.
+Parsing module <clock_managment_advanced>.
+Analyzing Verilog file "D:\github_project\chipwhisperer_scrip\openadc\hdl\hdl\reg_openadc_adcfifo.v" into library work
+Parsing verilog file "D:\github_project\chipwhisperer_scrip\openadc\hdl\hdl\/includes.v" included at line 1.
+Parsing verilog file "D:\github_project\chipwhisperer_scrip\openadc\hdl\hdl\/timescale.v" included at line 1.
+Parsing verilog file "setup.v" included at line 2.
+Parsing verilog file "D:\github_project\chipwhisperer_scrip\openadc\hdl\hdl\/registers.v" included at line 3.
+Parsing module <reg_openadc_adcfifo>.
+Analyzing Verilog file "D:\github_project\chipwhisperer_scrip\openadc\hdl\hdl\reg_openadc.v" into library work
+Parsing verilog file "D:\github_project\chipwhisperer_scrip\openadc\hdl\hdl\/includes.v" included at line 1.
+Parsing verilog file "D:\github_project\chipwhisperer_scrip\openadc\hdl\hdl\/timescale.v" included at line 1.
+Parsing verilog file "setup.v" included at line 2.
+Parsing verilog file "D:\github_project\chipwhisperer_scrip\openadc\hdl\hdl\/registers.v" included at line 3.
+Parsing module <reg_openadc>.
+Analyzing Verilog file "D:\github_project\chipwhisperer_scrip\openadc\hdl\hdl\reg_main.v" into library work
+Parsing verilog file "D:\github_project\chipwhisperer_scrip\openadc\hdl\hdl\/includes.v" included at line 1.
+Parsing verilog file "D:\github_project\chipwhisperer_scrip\openadc\hdl\hdl\/timescale.v" included at line 1.
+Parsing verilog file "setup.v" included at line 2.
+Parsing verilog file "D:\github_project\chipwhisperer_scrip\openadc\hdl\hdl\/registers.v" included at line 3.
+Parsing module <reg_main>.
+Analyzing Verilog file "D:\github_project\chipwhisperer_scrip\hardware\common\hdl\sakura\ctrl_lbus.v" into library work
+Parsing module <CTRL_LBUS>.
+Analyzing Verilog file "D:\github_project\chipwhisperer_scrip\hardware\common\hdl\sakura\coregen\syncfifo_8x31.v" into library work
+Parsing module <syncfifo_8x31>.
+Analyzing Verilog file "D:\github_project\chipwhisperer_scrip\openadc\hdl\hdl\openadc_interface.v" into library work
+Parsing verilog file "D:\github_project\chipwhisperer_scrip\openadc\hdl\hdl\/includes.v" included at line 1.
+Parsing verilog file "D:\github_project\chipwhisperer_scrip\openadc\hdl\hdl\/timescale.v" included at line 1.
+Parsing verilog file "setup.v" included at line 2.
+Parsing verilog file "D:\github_project\chipwhisperer_scrip\openadc\hdl\hdl\/registers.v" included at line 3.
+Parsing module <openadc_interface>.
+Analyzing Verilog file "D:\github_project\chipwhisperer_scrip\hardware\common\hdl\sakura\registers_sakura_lbus.v" into library work
+Parsing verilog file "D:\github_project\chipwhisperer_scrip\openadc\hdl\hdl\/includes.v" included at line 1.
+Parsing verilog file "D:\github_project\chipwhisperer_scrip\openadc\hdl\hdl\/timescale.v" included at line 1.
+Parsing verilog file "setup.v" included at line 2.
+Parsing verilog file "D:\github_project\chipwhisperer_scrip\openadc\hdl\hdl\/registers.v" included at line 3.
+Parsing module <reg_sakura_lbus>.
+Parsing module <MK_CLKRST>.
+Analyzing Verilog file "D:\github_project\chipwhisperer_scrip\hardware\capture\sakura-g\sakurag_ise_project\chipwhisperer-sakurag\chip_sakurag.v" into library work
+Parsing module <CHIP_SAKURAG>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+WARNING:HDLCompiler:1016 - "D:\github_project\chipwhisperer_scrip\hardware\capture\sakura-g\sakurag_ise_project\chipwhisperer-sakurag\chip_sakurag.v" Line 104: Port clk_adcsample is not connected to this instance
+WARNING:HDLCompiler:1016 - "D:\github_project\chipwhisperer_scrip\hardware\capture\sakura-g\sakurag_ise_project\chipwhisperer-sakurag\chip_sakurag.v" Line 140: Port reg_stream is not connected to this instance
+
+Elaborating module <CHIP_SAKURAG>.
+WARNING:HDLCompiler:1016 - "D:\github_project\chipwhisperer_scrip\openadc\hdl\hdl\openadc_interface.v" Line 233: Port BUSY is not connected to this instance
+
+Elaborating module <openadc_interface>.
+
+Elaborating module <IODELAY2(COUNTER_WRAPAROUND="WRAPAROUND",DATA_RATE="SDR",DELAY_SRC="IDATAIN",IDELAY2_VALUE=0,IDELAY_MODE="NORMAL",IDELAY_TYPE="DEFAULT",IDELAY_VALUE=20,ODELAY_VALUE=0,SERDES_MODE="NONE",SIM_TAPDELAY_VALUE=75)>.
+
+Elaborating module <trigger_unit>.
+
+Elaborating module <reg_main>.
+
+Elaborating module <reg_openadc>.
+
+Elaborating module <reg_openadc_adcfifo>.
+WARNING:HDLCompiler:1016 - "D:\github_project\chipwhisperer_scrip\openadc\hdl\hdl\spartan6\clock_managment_advanced.v" Line 147: Port DSSEN is not connected to this instance
+
+Elaborating module <clock_managment_advanced>.
+
+Elaborating module <dcm_phaseshift_interface>.
+
+Elaborating module <dcm_clkgen_load>.
+
+Elaborating module <BUFGMUX(CLK_SEL_TYPE="ASYNC")>.
+
+Elaborating module <DCM_SP(CLKFX_DIVIDE=1,CLKFX_MULTIPLY=4,CLKIN_DIVIDE_BY_2="FALSE",CLKOUT_PHASE_SHIFT="VARIABLE",CLK_FEEDBACK="2X",DESKEW_ADJUST="SYSTEM_SYNCHRONOUS",PHASE_SHIFT=0,STARTUP_WAIT="FALSE")>.
+
+Elaborating module <DCM_CLKGEN(CLKFXDV_DIVIDE=4,CLKFX_DIVIDE=2,CLKFX_MULTIPLY=2,CLKFX_MD_MAX=1.0,SPREAD_SPECTRUM="NONE",STARTUP_WAIT="FALSE")>.
+
+Elaborating module <ODDR2(DDR_ALIGNMENT="NONE",INIT=1'b0,SRTYPE="SYNC")>.
+
+Elaborating module <fifo_top>.
+
+Elaborating module <IBUFG>.
+
+Elaborating module <fifoonly_adcfifo>.
+WARNING:HDLCompiler:1499 - "D:\github_project\chipwhisperer_scrip\hardware\capture\sakura-g\sakurag_ise_project\chipwhisperer-sakurag\ipcore_dir\fifoonly_adcfifo.v" Line 39: Empty module <fifoonly_adcfifo> remains a black box.
+WARNING:HDLCompiler:189 - "D:\github_project\chipwhisperer_scrip\openadc\hdl\hdl\spartan6\fifo_top.v" Line 298: Size mismatch in connection of port <prog_full_thresh>. Formal port size is 13-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "D:\github_project\chipwhisperer_scrip\openadc\hdl\hdl\spartan6\fifo_top.v" Line 300: Size mismatch in connection of port <rd_data_count>. Formal port size is 12-bit while actual signal size is 28-bit.
+WARNING:HDLCompiler:1127 - "D:\github_project\chipwhisperer_scrip\hardware\capture\sakura-g\sakurag_ise_project\chipwhisperer-sakurag\chip_sakurag.v" Line 114: Assignment to usb_siwua ignored, since the identifier is never used
+
+Elaborating module <reg_sakura_lbus>.
+
+Elaborating module <syncfifo_8x31>.
+WARNING:HDLCompiler:1499 - "D:\github_project\chipwhisperer_scrip\hardware\common\hdl\sakura\coregen\syncfifo_8x31.v" Line 39: Empty module <syncfifo_8x31> remains a black box.
+
+Elaborating module <CTRL_LBUS>.
+
+Elaborating module <MK_CLKRST>.
+
+Elaborating module <DCM_SP(CLKIN_PERIOD=20.833,CLKIN_DIVIDE_BY_2="TRUE",CLKDV_DIVIDE=16,CLK_FEEDBACK="1X")>.
+WARNING:HDLCompiler:1127 - "D:\github_project\chipwhisperer_scrip\hardware\common\hdl\sakura\registers_sakura_lbus.v" Line 301: Assignment to locked ignored, since the identifier is never used
+
+Elaborating module <BUFG>.
+
+Elaborating module <ODDR2>.
+WARNING:HDLCompiler:552 - "D:\github_project\chipwhisperer_scrip\hardware\capture\sakura-g\sakurag_ise_project\chipwhisperer-sakurag\chip_sakurag.v" Line 104: Input port ADC_clk_feedback is not connected on this instance
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <CHIP_SAKURAG>.
+    Related source file is "D:\github_project\chipwhisperer_scrip\hardware\capture\sakura-g\sakurag_ise_project\chipwhisperer-sakurag\chip_sakurag.v".
+WARNING:Xst:2898 - Port 'ADC_clk_feedback', unconnected in block instance 'openadc_inst', is tied to GND.
+WARNING:Xst:647 - Input <cfg_din> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <DUT_CLK_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <cfg_mosi> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <cfg_fcsb> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <cfg_cclk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <cfg_progn> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <cfg_initn> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <cfg_cson> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <cfg_rdwrn> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <cfg_busy> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <cfg_done> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <cfg_m0_remote> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <cfg_m1_remote> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <flash_DIN> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "D:\github_project\chipwhisperer_scrip\hardware\capture\sakura-g\sakurag_ise_project\chipwhisperer-sakurag\chip_sakurag.v" line 104: Output port <ADC_Data_out> of the instance <openadc_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\github_project\chipwhisperer_scrip\hardware\capture\sakura-g\sakurag_ise_project\chipwhisperer-sakurag\chip_sakurag.v" line 104: Output port <clk_adcsample> of the instance <openadc_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\github_project\chipwhisperer_scrip\hardware\capture\sakura-g\sakurag_ise_project\chipwhisperer-sakurag\chip_sakurag.v" line 104: Output port <ftdi_siwua> of the instance <openadc_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\github_project\chipwhisperer_scrip\hardware\capture\sakura-g\sakurag_ise_project\chipwhisperer-sakurag\chip_sakurag.v" line 104: Output port <LED_ADCDCMUnlock> of the instance <openadc_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\github_project\chipwhisperer_scrip\hardware\capture\sakura-g\sakurag_ise_project\chipwhisperer-sakurag\chip_sakurag.v" line 104: Output port <LED_CLKGENDCMUnlock> of the instance <openadc_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\github_project\chipwhisperer_scrip\hardware\capture\sakura-g\sakurag_ise_project\chipwhisperer-sakurag\chip_sakurag.v" line 104: Output port <target_clk> of the instance <openadc_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\github_project\chipwhisperer_scrip\hardware\capture\sakura-g\sakurag_ise_project\chipwhisperer-sakurag\chip_sakurag.v" line 104: Output port <ADC_Clk_out> of the instance <openadc_inst> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\github_project\chipwhisperer_scrip\hardware\capture\sakura-g\sakurag_ise_project\chipwhisperer-sakurag\chip_sakurag.v" line 140: Output port <reg_stream> of the instance <registers_sakura_lbus> is unconnected or connected to loadless signal.
+    Found 1-bit tristate buffer for signal <flash_DOUT> created at line 164
+    Found 1-bit tristate buffer for signal <flash_CLK> created at line 165
+    Found 1-bit tristate buffer for signal <flash_CS> created at line 166
+    Summary:
+	inferred   3 Tristate(s).
+Unit <CHIP_SAKURAG> synthesized.
+
+Synthesizing Unit <openadc_interface>.
+    Related source file is "D:\github_project\chipwhisperer_scrip\openadc\hdl\hdl\openadc_interface.v".
+WARNING:Xst:647 - Input <ADC_clk_feedback> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "D:\github_project\chipwhisperer_scrip\openadc\hdl\hdl\openadc_interface.v" line 604: Output port <reset_o> of the instance <registers_fiforead> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <clk_adcsample> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 1-bit register for signal <ftdi_rxfn_dly>.
+    Found 32-bit register for signal <extclk_frequency_int>.
+    Found 32-bit register for signal <adcclk_frequency_int>.
+    Found 32-bit register for signal <extclk_frequency>.
+    Found 32-bit register for signal <adcclk_frequency>.
+    Found 10-bit register for signal <ADC_Data_tofifo>.
+    Found 8-bit register for signal <cmdfifo_delay>.
+    Found 9-bit register for signal <PWM_accumulator>.
+    Found 25-bit register for signal <timer_heartbeat>.
+    Found 25-bit adder for signal <timer_heartbeat[24]_GND_2_o_add_1_OUT> created at line 173.
+    Found 32-bit adder for signal <extclk_frequency_int[31]_GND_2_o_add_5_OUT> created at line 197.
+    Found 32-bit adder for signal <adcclk_frequency_int[31]_GND_2_o_add_8_OUT> created at line 206.
+    Found 9-bit adder for signal <n0126> created at line 689.
+    Found 1-bit tristate buffer for signal <ftdi_data<7>> created at line 398
+    Found 1-bit tristate buffer for signal <ftdi_data<6>> created at line 398
+    Found 1-bit tristate buffer for signal <ftdi_data<5>> created at line 398
+    Found 1-bit tristate buffer for signal <ftdi_data<4>> created at line 398
+    Found 1-bit tristate buffer for signal <ftdi_data<3>> created at line 398
+    Found 1-bit tristate buffer for signal <ftdi_data<2>> created at line 398
+    Found 1-bit tristate buffer for signal <ftdi_data<1>> created at line 398
+    Found 1-bit tristate buffer for signal <ftdi_data<0>> created at line 398
+    Summary:
+	inferred   4 Adder/Subtractor(s).
+	inferred 181 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+	inferred   8 Tristate(s).
+Unit <openadc_interface> synthesized.
+
+Synthesizing Unit <trigger_unit>.
+    Related source file is "D:\github_project\chipwhisperer_scrip\openadc\hdl\hdl\trigger_unit.v".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <adc_capture_go_delayed>.
+    Found 1-bit register for signal <reset_arm>.
+    Found 1-bit register for signal <adc_capture_go>.
+    Found 1-bit register for signal <armed>.
+    Found 32-bit register for signal <adc_delay_cnt>.
+    Found 32-bit adder for signal <adc_delay_cnt[31]_GND_4_o_add_3_OUT> created at line 84.
+    Found 10-bit comparator greater for signal <adc_trigger> created at line 63
+    Found 32-bit comparator equal for signal <adc_delay_cnt[31]_trigger_offset_i[31]_equal_8_o> created at line 93
+    Found 1-bit comparator equal for signal <trigger_trigger_level_i_equal_10_o> created at line 103
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  36 D-type flip-flop(s).
+	inferred   3 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <trigger_unit> synthesized.
+
+Synthesizing Unit <reg_main>.
+    Related source file is "D:\github_project\chipwhisperer_scrip\openadc\hdl\hdl\reg_main.v".
+    Found 4-bit register for signal <state>.
+    Found 1-bit register for signal <ftdi_rd_n>.
+    Found 1-bit register for signal <ftdi_wr_n>.
+    Found 1-bit register for signal <ftdi_isOutput>.
+    Found 1-bit register for signal <regout_addrvalid>.
+    Found 1-bit register for signal <regout_read>.
+    Found 1-bit register for signal <regout_write>.
+    Found 16-bit register for signal <bytecnt>.
+    Found 16-bit register for signal <total_bytes>.
+    Found 8-bit register for signal <totalbytes_lsb>.
+    Found 6-bit register for signal <address>.
+    Found 4-bit register for signal <state_new>.
+    Found 1-bit register for signal <reg_streamdly>.
+    Found 17-bit subtractor for signal <GND_13_o_GND_13_o_sub_35_OUT> created at line 331.
+    Found 16-bit subtractor for signal <total_bytes[15]_GND_13_o_sub_47_OUT> created at line 368.
+    Found 16-bit adder for signal <bytecnt[15]_GND_13_o_add_43_OUT> created at line 354.
+    Found 4-bit 13-to-1 multiplexer for signal <state[3]_GND_13_o_wide_mux_58_OUT> created at line 184.
+    Found 8-bit comparator greater for signal <GND_13_o_ftdi_din[7]_LessThan_26_o> created at line 288
+    Found 8-bit comparator greater for signal <GND_13_o_totalbytes_lsb[7]_LessThan_27_o> created at line 288
+    Found 32-bit comparator equal for signal <GND_13_o_GND_13_o_equal_36_o> created at line 331
+    Found 16-bit comparator greater for signal <bytecnt[15]_total_bytes[15]_LessThan_41_o> created at line 345
+    Found 16-bit comparator equal for signal <bytecnt[15]_INV_72_o> created at line 368
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred  61 D-type flip-flop(s).
+	inferred   5 Comparator(s).
+	inferred  33 Multiplexer(s).
+Unit <reg_main> synthesized.
+
+Synthesizing Unit <reg_openadc>.
+    Related source file is "D:\github_project\chipwhisperer_scrip\openadc\hdl\hdl\reg_openadc.v".
+WARNING:Xst:647 - Input <reg_bytecnt<15:3>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <reg_size> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:653 - Signal <trigger_level> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <reg_stream> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <trigger_source> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 1-bit register for signal <clkgen_load_reg_int>.
+    Found 1-bit register for signal <clkgen_load>.
+    Found 1-bit register for signal <clkgen_done_reg>.
+    Found 1-bit register for signal <reset_latched>.
+    Found 32-bit register for signal <registers_extclk_frequency>.
+    Found 32-bit register for signal <registers_adcclk_frequency>.
+    Found 1-bit register for signal <extclk_locked>.
+    Found 1-bit register for signal <adcclk_locked>.
+    Found 1-bit register for signal <reg_datao_valid_reg>.
+    Found 8-bit register for signal <reg_datao_reg>.
+    Found 8-bit register for signal <registers_gain>.
+    Found 8-bit register for signal <registers_settings>.
+    Found 8-bit register for signal <registers_echo>.
+    Found 32-bit register for signal <registers_samples>.
+    Found 32-bit register for signal <registers_presamples>.
+    Found 32-bit register for signal <registers_offset>.
+    Found 32-bit register for signal <registers_advclocksettings>.
+    Found 16-bit register for signal <phase_out>.
+    Found 56-bit shifter logical right for signal <n0345> created at line 307
+    Found 56-bit shifter logical right for signal <n0346> created at line 308
+    Found 10-bit shifter logical right for signal <n0347> created at line 309
+    Found 88-bit shifter logical right for signal <n0348> created at line 310
+    Found 56-bit shifter logical right for signal <n0349> created at line 311
+    Found 56-bit shifter logical right for signal <n0350> created at line 312
+    Found 56-bit shifter logical right for signal <n0351> created at line 313
+    Found 56-bit shifter logical right for signal <n0352> created at line 314
+    Found 56-bit shifter logical right for signal <n0353> created at line 315
+    Found 56-bit shifter logical right for signal <n0354> created at line 316
+    WARNING:Xst:2404 -  FFs/Latches <phase_in<8:0>> (without init value) have a constant value of 0 in block <reg_openadc>.
+    Summary:
+	inferred 247 D-type flip-flop(s).
+	inferred 148 Multiplexer(s).
+	inferred  10 Combinational logic shifter(s).
+Unit <reg_openadc> synthesized.
+
+Synthesizing Unit <reg_openadc_adcfifo>.
+    Related source file is "D:\github_project\chipwhisperer_scrip\openadc\hdl\hdl\reg_openadc_adcfifo.v".
+WARNING:Xst:647 - Input <reg_datai> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <reg_size> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <reg_write> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:653 - Signal <reset_o> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 8-bit register for signal <reg_datao_reg>.
+    Found 1-bit register for signal <reg_stream_reg>.
+    Found 1-bit register for signal <reg_datao_valid_reg>.
+    Found 16-bit comparator greater for signal <GND_15_o_reg_bytecnt[15]_LessThan_16_o> created at line 141
+    Summary:
+	inferred  10 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   2 Multiplexer(s).
+Unit <reg_openadc_adcfifo> synthesized.
+
+Synthesizing Unit <clock_managment_advanced>.
+    Related source file is "D:\github_project\chipwhisperer_scrip\openadc\hdl\hdl\spartan6\clock_managment_advanced.v".
+    Summary:
+	no macro.
+Unit <clock_managment_advanced> synthesized.
+
+Synthesizing Unit <dcm_phaseshift_interface>.
+    Related source file is "D:\github_project\chipwhisperer_scrip\openadc\hdl\hdl\spartan6\dcm_phaseshift_interface.v".
+WARNING:Xst:647 - Input <dcm_status_i<7:1>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 4-bit register for signal <state>.
+    Found 1-bit register for signal <done>.
+    Found 1-bit register for signal <dcm_psen>.
+    Found 1-bit register for signal <dcm_psincdec>.
+    Found 9-bit register for signal <dcm_ps_count>.
+    Found 9-bit register for signal <value>.
+    Found 1-bit register for signal <last_psincdec>.
+    Found 9-bit register for signal <dcm_ps_target>.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 7                                              |
+    | Transitions        | 15                                             |
+    | Inputs             | 6                                              |
+    | Outputs            | 10                                             |
+    | Clock              | clk_i (rising_edge)                            |
+    | Reset              | reset_i (positive)                             |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 0000                                           |
+    | Power Up State     | 0000                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 9-bit adder for signal <dcm_ps_count[8]_PWR_13_o_add_6_OUT> created at line 122.
+    Found 9-bit adder for signal <dcm_ps_count[8]_GND_17_o_add_13_OUT> created at line 137.
+    Found 9-bit comparator greater for signal <dcm_ps_count[8]_dcm_ps_target[8]_LessThan_4_o> created at line 110
+    Found 9-bit comparator greater for signal <dcm_ps_target[8]_dcm_ps_count[8]_LessThan_11_o> created at line 125
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  31 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred  10 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <dcm_phaseshift_interface> synthesized.
+
+Synthesizing Unit <dcm_clkgen_load>.
+    Related source file is "D:\github_project\chipwhisperer_scrip\openadc\hdl\hdl\spartan6\dcm_clkgen_load.v".
+    Found 25-bit register for signal <enline>.
+    Found 1-bit register for signal <PROGDATA>.
+    Found 1-bit register for signal <PROGEN>.
+    Found 4-bit register for signal <state>.
+    Found 1-bit register for signal <go>.
+    Found 1-bit register for signal <done>.
+    Found 25-bit register for signal <dataline>.
+    Found finite state machine <FSM_1> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 8                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 3                                              |
+    | Clock              | clk_i (rising_edge)                            |
+    | Reset              | reset_i (positive)                             |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 0000                                           |
+    | Power Up State     | 0000                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred  54 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <dcm_clkgen_load> synthesized.
+
+Synthesizing Unit <fifo_top>.
+    Related source file is "D:\github_project\chipwhisperer_scrip\openadc\hdl\hdl\spartan6\fifo_top.v".
+WARNING:Xst:647 - Input <adc_or> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <adc_trig_status> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 2-bit register for signal <adcfifo_merge_cnt>.
+    Found 10-bit register for signal <adcfifo_adcsample0>.
+    Found 10-bit register for signal <adcfifo_adcsample1>.
+    Found 10-bit register for signal <adcfifo_adcsample2>.
+    Found 32-bit register for signal <sample_counter>.
+    Found 1-bit register for signal <adcfifo_wr_en>.
+    Found 2-bit register for signal <mergeloc>.
+    Found 1-bit register for signal <fifo_empty_longer1>.
+    Found 1-bit register for signal <fifo_empty_longer2>.
+    Found 1-bit register for signal <fifo_empty_longer3>.
+    Found 1-bit register for signal <drain_fifo>.
+    Found 1-bit register for signal <presample_possible>.
+    Found 1-bit register for signal <presample>.
+    Found 16-bit register for signal <byte_select>.
+    Found 1-bit register for signal <read_en>.
+    Found 8-bit register for signal <fifo_read_data_reg>.
+    Found 1-bit register for signal <adc_capture_stop_reg>.
+    Found finite state machine <FSM_2> for signal <byte_select>.
+    -----------------------------------------------------------------------
+    | States             | 16                                             |
+    | Transitions        | 48                                             |
+    | Inputs             | 2                                              |
+    | Outputs            | 16                                             |
+    | Clock              | fifo_read_fifoclk (rising_edge)                |
+    | Reset              | reset_i_fifo_empty_longer3_OR_248_o (positive)       |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 0000000000000001                               |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 2-bit adder for signal <adcfifo_merge_cnt[1]_GND_23_o_add_17_OUT> created at line 117.
+    Found 32-bit adder for signal <sample_counter[31]_GND_23_o_add_28_OUT> created at line 125.
+    Found 32-bit comparator greater for signal <sample_counter[31]_max_samples_i[31]_LessThan_3_o> created at line 99
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  83 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred  16 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <fifo_top> synthesized.
+
+Synthesizing Unit <reg_sakura_lbus>.
+    Related source file is "D:\github_project\chipwhisperer_scrip\hardware\common\hdl\sakura\registers_sakura_lbus.v".
+WARNING:Xst:647 - Input <reg_bytecnt> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <reg_size> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "D:\github_project\chipwhisperer_scrip\hardware\common\hdl\sakura\registers_sakura_lbus.v" line 200: Output port <almost_empty> of the instance <fifo_rd> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\github_project\chipwhisperer_scrip\hardware\common\hdl\sakura\registers_sakura_lbus.v" line 214: Output port <almost_full> of the instance <fifo_wr> is unconnected or connected to loadless signal.
+    Found 1-bit register for signal <lbus_rdn>.
+    Found 1-bit register for signal <lbus_wrn>.
+    Found 1-bit register for signal <reg_fifo_datao_valid_reg>.
+    Found 8-bit register for signal <reg_datao_reg>.
+    Found 8-bit register for signal <sakura_status_write>.
+    Found 16-bit register for signal <lbus_di_a>.
+    Found 1-bit register for signal <reg_datao_valid_reg>.
+    Summary:
+	inferred  36 D-type flip-flop(s).
+	inferred   3 Multiplexer(s).
+Unit <reg_sakura_lbus> synthesized.
+
+Synthesizing Unit <CTRL_LBUS>.
+    Related source file is "D:\github_project\chipwhisperer_scrip\hardware\common\hdl\sakura\ctrl_lbus.v".
+        CMD0 = 5'b00000
+        CMD1 = 5'b00001
+        CMD2 = 5'b00010
+        ADDR0 = 5'b00011
+        ADDR1 = 5'b00100
+        ADDR2 = 5'b00101
+        ADDR3 = 5'b00110
+        ADDR4 = 5'b00111
+        ADDR5 = 5'b01000
+        BRANCH = 5'b01001
+        RD0 = 5'b01010
+        RD1 = 5'b01011
+        RD2 = 5'b01100
+        RD3 = 5'b01101
+        RD4 = 5'b01110
+        RD5 = 5'b01111
+        WR0 = 5'b10000
+        WR1 = 5'b10001
+        WR2 = 5'b10010
+        WR3 = 5'b10011
+        WR4 = 5'b10100
+        WR5 = 5'b10101
+        WR6 = 5'b10110
+        WR7 = 5'b10111
+        WR8 = 5'b11000
+        WR9 = 5'b11001
+        TRAP = 5'b11010
+    Found 1-bit register for signal <lbus_wrn>.
+    Found 1-bit register for signal <lbus_rdn>.
+    Found 4-bit register for signal <cnt>.
+    Found 8-bit register for signal <wd>.
+    Found 5-bit register for signal <state>.
+    Found 1-bit register for signal <we>.
+    Found 1-bit register for signal <re>.
+    Found 1-bit register for signal <lbus_a<15>>.
+    Found 1-bit register for signal <lbus_a<14>>.
+    Found 1-bit register for signal <lbus_a<13>>.
+    Found 1-bit register for signal <lbus_a<12>>.
+    Found 1-bit register for signal <lbus_a<11>>.
+    Found 1-bit register for signal <lbus_a<10>>.
+    Found 1-bit register for signal <lbus_a<9>>.
+    Found 1-bit register for signal <lbus_a<8>>.
+    Found 1-bit register for signal <lbus_a<7>>.
+    Found 1-bit register for signal <lbus_a<6>>.
+    Found 1-bit register for signal <lbus_a<5>>.
+    Found 1-bit register for signal <lbus_a<4>>.
+    Found 1-bit register for signal <lbus_a<3>>.
+    Found 1-bit register for signal <lbus_a<2>>.
+    Found 1-bit register for signal <lbus_a<1>>.
+    Found 1-bit register for signal <lbus_a<0>>.
+    Found 1-bit register for signal <lbus_di<15>>.
+    Found 1-bit register for signal <lbus_di<14>>.
+    Found 1-bit register for signal <lbus_di<13>>.
+    Found 1-bit register for signal <lbus_di<12>>.
+    Found 1-bit register for signal <lbus_di<11>>.
+    Found 1-bit register for signal <lbus_di<10>>.
+    Found 1-bit register for signal <lbus_di<9>>.
+    Found 1-bit register for signal <lbus_di<8>>.
+    Found 1-bit register for signal <lbus_di<7>>.
+    Found 1-bit register for signal <lbus_di<6>>.
+    Found 1-bit register for signal <lbus_di<5>>.
+    Found 1-bit register for signal <lbus_di<4>>.
+    Found 1-bit register for signal <lbus_di<3>>.
+    Found 1-bit register for signal <lbus_di<2>>.
+    Found 1-bit register for signal <lbus_di<1>>.
+    Found 1-bit register for signal <lbus_di<0>>.
+    Found 16-bit register for signal <fetch>.
+    Found 8-bit register for signal <cmd>.
+    Found finite state machine <FSM_3> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 27                                             |
+    | Transitions        | 40                                             |
+    | Inputs             | 5                                              |
+    | Outputs            | 7                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst (positive)                                 |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 00000                                          |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 4-bit adder for signal <cnt[3]_GND_44_o_add_22_OUT> created at line 194.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  72 D-type flip-flop(s).
+	inferred  17 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <CTRL_LBUS> synthesized.
+
+Synthesizing Unit <MK_CLKRST>.
+    Related source file is "D:\github_project\chipwhisperer_scrip\hardware\common\hdl\sakura\registers_sakura_lbus.v".
+    Set property "KEEP_HIERARCHY = NO".
+    Summary:
+	no macro.
+Unit <MK_CLKRST> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 12
+ 16-bit adder                                          : 1
+ 16-bit subtractor                                     : 1
+ 17-bit subtractor                                     : 1
+ 2-bit adder                                           : 1
+ 25-bit adder                                          : 1
+ 32-bit adder                                          : 4
+ 4-bit adder                                           : 1
+ 9-bit adder                                           : 2
+# Registers                                            : 124
+ 1-bit register                                        : 78
+ 10-bit register                                       : 4
+ 16-bit register                                       : 5
+ 2-bit register                                        : 2
+ 25-bit register                                       : 3
+ 32-bit register                                       : 12
+ 4-bit register                                        : 3
+ 6-bit register                                        : 1
+ 8-bit register                                        : 12
+ 9-bit register                                        : 4
+# Comparators                                          : 12
+ 1-bit comparator equal                                : 1
+ 10-bit comparator greater                             : 1
+ 16-bit comparator equal                               : 1
+ 16-bit comparator greater                             : 2
+ 32-bit comparator equal                               : 2
+ 32-bit comparator greater                             : 1
+ 8-bit comparator greater                              : 2
+ 9-bit comparator greater                              : 2
+# Multiplexers                                         : 233
+ 1-bit 2-to-1 multiplexer                              : 48
+ 16-bit 2-to-1 multiplexer                             : 6
+ 2-bit 2-to-1 multiplexer                              : 6
+ 25-bit 2-to-1 multiplexer                             : 2
+ 3-bit 2-to-1 multiplexer                              : 5
+ 32-bit 2-to-1 multiplexer                             : 2
+ 4-bit 13-to-1 multiplexer                             : 1
+ 4-bit 2-to-1 multiplexer                              : 15
+ 5-bit 2-to-1 multiplexer                              : 5
+ 6-bit 2-to-1 multiplexer                              : 5
+ 7-bit 2-to-1 multiplexer                              : 5
+ 8-bit 2-to-1 multiplexer                              : 130
+ 9-bit 2-to-1 multiplexer                              : 3
+# Logic shifters                                       : 10
+ 10-bit shifter logical right                          : 1
+ 56-bit shifter logical right                          : 8
+ 88-bit shifter logical right                          : 1
+# Tristates                                            : 11
+ 1-bit tristate buffer                                 : 11
+# FSMs                                                 : 4
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <../../../../common/hdl/sakura/coregen/syncfifo_8x31.ngc>.
+Reading core <ipcore_dir/fifoonly_adcfifo.ngc>.
+Loading core <syncfifo_8x31> for timing and area information for instance <fifo_wr>.
+Loading core <syncfifo_8x31> for timing and area information for instance <fifo_rd>.
+Loading core <fifoonly_adcfifo> for timing and area information for instance <fifoonly_adcfifo_inst>.
+INFO:Xst:2261 - The FF/Latch <state_new_0> in Unit <registers_mainctl> is equivalent to the following FF/Latch, which will be removed : <state_new_3> 
+INFO:Xst:2261 - The FF/Latch <state_new_1> in Unit <registers_mainctl> is equivalent to the following FF/Latch, which will be removed : <state_new_2> 
+WARNING:Xst:2677 - Node <sakura_status_write_1> of sequential type is unconnected in block <registers_sakura_lbus>.
+WARNING:Xst:2677 - Node <sakura_status_write_2> of sequential type is unconnected in block <registers_sakura_lbus>.
+
+Synthesizing (advanced) Unit <dcm_phaseshift_interface>.
+The following registers are absorbed into accumulator <dcm_ps_count>: 1 register on signal <dcm_ps_count>.
+Unit <dcm_phaseshift_interface> synthesized (advanced).
+
+Synthesizing (advanced) Unit <fifo_top>.
+The following registers are absorbed into counter <sample_counter>: 1 register on signal <sample_counter>.
+Unit <fifo_top> synthesized (advanced).
+
+Synthesizing (advanced) Unit <openadc_interface>.
+The following registers are absorbed into counter <timer_heartbeat>: 1 register on signal <timer_heartbeat>.
+The following registers are absorbed into counter <adcclk_frequency_int>: 1 register on signal <adcclk_frequency_int>.
+The following registers are absorbed into counter <extclk_frequency_int>: 1 register on signal <extclk_frequency_int>.
+Unit <openadc_interface> synthesized (advanced).
+
+Synthesizing (advanced) Unit <trigger_unit>.
+The following registers are absorbed into counter <adc_delay_cnt>: 1 register on signal <adc_delay_cnt>.
+Unit <trigger_unit> synthesized (advanced).
+WARNING:Xst:2677 - Node <sakura_status_write_1> of sequential type is unconnected in block <reg_sakura_lbus>.
+WARNING:Xst:2677 - Node <sakura_status_write_2> of sequential type is unconnected in block <reg_sakura_lbus>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 6
+ 16-bit adder                                          : 1
+ 16-bit subtractor                                     : 1
+ 17-bit subtractor                                     : 1
+ 2-bit adder                                           : 1
+ 4-bit adder                                           : 1
+ 9-bit adder                                           : 1
+# Counters                                             : 5
+ 25-bit up counter                                     : 1
+ 32-bit up counter                                     : 4
+# Accumulators                                         : 1
+ 9-bit up loadable accumulator                         : 1
+# Registers                                            : 647
+ Flip-Flops                                            : 647
+# Comparators                                          : 12
+ 1-bit comparator equal                                : 1
+ 10-bit comparator greater                             : 1
+ 16-bit comparator equal                               : 1
+ 16-bit comparator greater                             : 2
+ 32-bit comparator equal                               : 2
+ 32-bit comparator greater                             : 1
+ 8-bit comparator greater                              : 2
+ 9-bit comparator greater                              : 2
+# Multiplexers                                         : 280
+ 1-bit 2-to-1 multiplexer                              : 107
+ 16-bit 2-to-1 multiplexer                             : 4
+ 2-bit 2-to-1 multiplexer                              : 3
+ 25-bit 2-to-1 multiplexer                             : 2
+ 3-bit 2-to-1 multiplexer                              : 3
+ 32-bit 2-to-1 multiplexer                             : 2
+ 4-bit 13-to-1 multiplexer                             : 1
+ 4-bit 2-to-1 multiplexer                              : 13
+ 5-bit 2-to-1 multiplexer                              : 4
+ 6-bit 2-to-1 multiplexer                              : 4
+ 7-bit 2-to-1 multiplexer                              : 5
+ 8-bit 2-to-1 multiplexer                              : 130
+ 9-bit 2-to-1 multiplexer                              : 2
+# Logic shifters                                       : 10
+ 10-bit shifter logical right                          : 1
+ 56-bit shifter logical right                          : 8
+ 88-bit shifter logical right                          : 1
+# FSMs                                                 : 4
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <state_new_0> in Unit <reg_main> is equivalent to the following FF/Latch, which will be removed : <state_new_3> 
+INFO:Xst:2261 - The FF/Latch <state_new_1> in Unit <reg_main> is equivalent to the following FF/Latch, which will be removed : <state_new_2> 
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <registers_sakura_lbus/ctrl_lbus/FSM_3> on signal <state[1:5]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00000 | 00000
+ 00001 | 00001
+ 00010 | 00010
+ 00011 | 00011
+ 00100 | 00100
+ 00101 | 00101
+ 00110 | 00110
+ 00111 | 00111
+ 01000 | 01000
+ 01001 | 01001
+ 01010 | 01010
+ 10000 | 10000
+ 11010 | 11010
+ 01011 | 01011
+ 01100 | 01100
+ 01101 | 01101
+ 01110 | 01110
+ 01111 | 01111
+ 10001 | 10001
+ 10010 | 10010
+ 10011 | 10011
+ 10100 | 10100
+ 10101 | 10101
+ 10110 | 10110
+ 10111 | 10111
+ 11000 | 11000
+ 11001 | 11001
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <openadc_inst/fifo_top_inst/FSM_2> on signal <byte_select[1:4]> with sequential encoding.
+------------------------------
+ State            | Encoding
+------------------------------
+ 0000000000000001 | 0000
+ 0000000000000010 | 0001
+ 0000000000000100 | 0010
+ 0000000000001000 | 0011
+ 0000000000010000 | 0100
+ 0000000000100000 | 0101
+ 0000000001000000 | 0110
+ 0000000010000000 | 0111
+ 0000000100000000 | 1000
+ 0000001000000000 | 1001
+ 0000010000000000 | 1010
+ 0000100000000000 | 1011
+ 0001000000000000 | 1100
+ 0010000000000000 | 1101
+ 0100000000000000 | 1110
+ 1000000000000000 | 1111
+------------------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <openadc_inst/genclocks/clkgenload/FSM_1> on signal <state[1:3]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 0000  | 000
+ 0001  | 001
+ 0010  | 011
+ 0011  | 010
+ 0100  | 110
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <openadc_inst/genclocks/dcmps/FSM_0> on signal <state[1:4]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 0000  | 0000
+ 0001  | 0001
+ 0010  | 0010
+ 0011  | 0011
+ 0110  | 0110
+ 0100  | 0100
+ 0101  | 0101
+-------------------
+WARNING:Xst:2677 - Node <phase_out_10> of sequential type is unconnected in block <reg_openadc>.
+WARNING:Xst:2677 - Node <phase_out_11> of sequential type is unconnected in block <reg_openadc>.
+WARNING:Xst:2677 - Node <phase_out_12> of sequential type is unconnected in block <reg_openadc>.
+WARNING:Xst:2677 - Node <phase_out_13> of sequential type is unconnected in block <reg_openadc>.
+WARNING:Xst:2677 - Node <phase_out_14> of sequential type is unconnected in block <reg_openadc>.
+WARNING:Xst:2677 - Node <phase_out_15> of sequential type is unconnected in block <reg_openadc>.
+WARNING:Xst:2677 - Node <registers_advclocksettings_5> of sequential type is unconnected in block <reg_openadc>.
+WARNING:Xst:2677 - Node <registers_advclocksettings_6> of sequential type is unconnected in block <reg_openadc>.
+WARNING:Xst:2677 - Node <registers_advclocksettings_7> of sequential type is unconnected in block <reg_openadc>.
+WARNING:Xst:2677 - Node <registers_advclocksettings_25> of sequential type is unconnected in block <reg_openadc>.
+WARNING:Xst:1710 - FF/Latch <dataline_22> (without init value) has a constant value of 0 in block <dcm_clkgen_load>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dataline_23> (without init value) has a constant value of 0 in block <dcm_clkgen_load>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dataline_24> (without init value) has a constant value of 0 in block <dcm_clkgen_load>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <CHIP_SAKURAG> ...
+
+Optimizing unit <reg_sakura_lbus> ...
+
+Optimizing unit <CTRL_LBUS> ...
+
+Optimizing unit <reg_main> ...
+
+Optimizing unit <reg_openadc> ...
+
+Optimizing unit <reg_openadc_adcfifo> ...
+
+Optimizing unit <fifo_top> ...
+
+Optimizing unit <trigger_unit> ...
+
+Optimizing unit <clock_managment_advanced> ...
+
+Optimizing unit <dcm_clkgen_load> ...
+
+Optimizing unit <dcm_phaseshift_interface> ...
+WARNING:Xst:2677 - Node <openadc_inst/genclocks/dcmps/value_8> of sequential type is unconnected in block <CHIP_SAKURAG>.
+WARNING:Xst:2677 - Node <openadc_inst/genclocks/dcmps/value_7> of sequential type is unconnected in block <CHIP_SAKURAG>.
+WARNING:Xst:2677 - Node <openadc_inst/genclocks/dcmps/value_6> of sequential type is unconnected in block <CHIP_SAKURAG>.
+WARNING:Xst:2677 - Node <openadc_inst/genclocks/dcmps/value_5> of sequential type is unconnected in block <CHIP_SAKURAG>.
+WARNING:Xst:2677 - Node <openadc_inst/genclocks/dcmps/value_4> of sequential type is unconnected in block <CHIP_SAKURAG>.
+WARNING:Xst:2677 - Node <openadc_inst/genclocks/dcmps/value_3> of sequential type is unconnected in block <CHIP_SAKURAG>.
+WARNING:Xst:2677 - Node <openadc_inst/genclocks/dcmps/value_2> of sequential type is unconnected in block <CHIP_SAKURAG>.
+WARNING:Xst:2677 - Node <openadc_inst/genclocks/dcmps/value_1> of sequential type is unconnected in block <CHIP_SAKURAG>.
+WARNING:Xst:2677 - Node <openadc_inst/genclocks/dcmps/value_0> of sequential type is unconnected in block <CHIP_SAKURAG>.
+WARNING:Xst:2677 - Node <openadc_inst/genclocks/dcmps/done> of sequential type is unconnected in block <CHIP_SAKURAG>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block CHIP_SAKURAG, actual ratio is 30.
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> in Unit <registers_sakura_lbus/fifo_rd> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <registers_sakura_lbus/fifo_rd> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <registers_sakura_lbus/fifo_rd> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <registers_sakura_lbus/fifo_rd> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> in Unit <registers_sakura_lbus/fifo_wr> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <registers_sakura_lbus/fifo_wr> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <registers_sakura_lbus/fifo_wr> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <registers_sakura_lbus/fifo_wr> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <openadc_inst/fifo_top_inst/fifoonly_adcfifo_inst> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <openadc_inst/fifo_top_inst/fifoonly_adcfifo_inst> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/empty_fwft_i> in Unit <openadc_inst/fifo_top_inst/fifoonly_adcfifo_inst> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/empty_fwft_fb> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <openadc_inst/fifo_top_inst/fifoonly_adcfifo_inst> is equivalent to the following 3 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/curr_fwft_state_FSM_FFd2> in Unit <openadc_inst/fifo_top_inst/fifoonly_adcfifo_inst> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/user_valid> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> in Unit <registers_sakura_lbus/fifo_rd> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <registers_sakura_lbus/fifo_rd> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <registers_sakura_lbus/fifo_rd> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <registers_sakura_lbus/fifo_rd> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i> in Unit <registers_sakura_lbus/fifo_wr> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <registers_sakura_lbus/fifo_wr> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <registers_sakura_lbus/fifo_wr> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <registers_sakura_lbus/fifo_wr> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i> in Unit <openadc_inst/fifo_top_inst/fifoonly_adcfifo_inst> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> in Unit <openadc_inst/fifo_top_inst/fifoonly_adcfifo_inst> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_0> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/empty_fwft_i> in Unit <openadc_inst/fifo_top_inst/fifoonly_adcfifo_inst> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/empty_fwft_fb> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <openadc_inst/fifo_top_inst/fifoonly_adcfifo_inst> is equivalent to the following 3 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/curr_fwft_state_FSM_FFd2> in Unit <openadc_inst/fifo_top_inst/fifoonly_adcfifo_inst> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/user_valid> 
+FlipFlop openadc_inst/registers_mainctl/address_0 has been replicated 2 time(s)
+FlipFlop openadc_inst/registers_mainctl/address_1 has been replicated 1 time(s)
+FlipFlop openadc_inst/registers_mainctl/address_2 has been replicated 1 time(s)
+FlipFlop openadc_inst/registers_mainctl/bytecnt_0 has been replicated 1 time(s)
+FlipFlop openadc_inst/registers_mainctl/bytecnt_1 has been replicated 1 time(s)
+FlipFlop openadc_inst/registers_mainctl/bytecnt_2 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 806
+ Flip-Flops                                            : 806
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : CHIP_SAKURAG.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 1982
+#      GND                         : 5
+#      INV                         : 69
+#      LUT1                        : 176
+#      LUT2                        : 213
+#      LUT3                        : 132
+#      LUT4                        : 177
+#      LUT5                        : 207
+#      LUT6                        : 403
+#      MUXCY                       : 340
+#      MUXF7                       : 6
+#      VCC                         : 2
+#      XORCY                       : 252
+# FlipFlops/Latches                : 1341
+#      FD                          : 92
+#      FD_1                        : 64
+#      FDC                         : 277
+#      FDCE                        : 176
+#      FDCE_1                      : 1
+#      FDE                         : 303
+#      FDP                         : 49
+#      FDPE                        : 14
+#      FDR                         : 111
+#      FDRE                        : 248
+#      FDS                         : 2
+#      FDSE                        : 2
+#      ODDR2                       : 2
+# RAMS                             : 21
+#      RAM32M                      : 2
+#      RAM32X1D                    : 4
+#      RAMB16BWER                  : 14
+#      RAMB8BWER                   : 1
+# Clock Buffers                    : 8
+#      BUFG                        : 4
+#      BUFGMUX                     : 4
+# IO Buffers                       : 78
+#      IBUF                        : 30
+#      IBUFG                       : 2
+#      IOBUF                       : 8
+#      OBUF                        : 35
+#      OBUFT                       : 3
+# DCMs                             : 3
+#      DCM_CLKGEN                  : 1
+#      DCM_SP                      : 2
+# Others                           : 10
+#      IODELAY2                    : 10
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9csg225-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:            1341  out of  11440    11%  
+ Number of Slice LUTs:                 1393  out of   5720    24%  
+    Number used as Logic:              1377  out of   5720    24%  
+    Number used as Memory:               16  out of   1440     1%  
+       Number used as RAM:               16
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   2062
+   Number with an unused Flip Flop:     721  out of   2062    34%  
+   Number with an unused LUT:           669  out of   2062    32%  
+   Number of fully used LUT-FF pairs:   672  out of   2062    32%  
+   Number of unique control sets:       104
+
+IO Utilization: 
+ Number of IOs:                         100
+ Number of bonded IOBs:                  78  out of    160    48%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:               15  out of     32    46%  
+    Number using Block RAM only:         15
+ Number of BUFG/BUFGCTRLs:                8  out of     16    50%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------------------------------------+----------------------------------------------+-------+
+Clock Signal                                                     | Clock buffer(FF name)                        | Load  |
+-----------------------------------------------------------------+----------------------------------------------+-------+
+usb_clk                                                          | DCM_SP:CLKDV+DCM_SP:CLKFX+BUFGMUX            | 282   |
+usb_clk                                                          | IBUFG+BUFG                                   | 805   |
+openadc_inst/extmeasure_clk(openadc_inst/Mmux_extmeasure_clk11:O)| NONE(*)(openadc_inst/extclk_frequency_int_31)| 32    |
+openadc_inst/timer_heartbeat_23                                  | NONE(openadc_inst/adcclk_frequency_31)       | 64    |
+usb_clk                                                          | DCM_SP:CLKDV                                 | 196   |
+-----------------------------------------------------------------+----------------------------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 8.345ns (Maximum Frequency: 119.829MHz)
+   Minimum input arrival time before clock: 8.193ns
+   Maximum output required time after clock: 6.737ns
+   Maximum combinational path delay: 7.278ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'usb_clk'
+  Clock period: 8.345ns (frequency: 119.829MHz)
+  Total number of paths / destination ports: 29500 / 3304
+-------------------------------------------------------------------------
+Delay:               8.345ns (Levels of Logic = 5)
+  Source:            openadc_inst/registers_mainctl/address_3 (FF)
+  Destination:       openadc_inst/fifo_top_inst/fifoonly_adcfifo_inst/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout_i_127 (FF)
+  Source Clock:      usb_clk rising
+  Destination Clock: usb_clk rising
+
+  Data Path: openadc_inst/registers_mainctl/address_3 to openadc_inst/fifo_top_inst/fifoonly_adcfifo_inst/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout_i_127
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             18   0.525   1.463  openadc_inst/registers_mainctl/address_3 (openadc_inst/registers_mainctl/address_3)
+     LUT6:I3->O            5   0.235   0.841  openadc_inst/registers_fiforead/reg_address[5]_GND_15_o_equal_10_o<5>1 (openadc_inst/registers_fiforead/reg_address[5]_GND_15_o_equal_10_o)
+     LUT5:I4->O            4   0.254   0.804  openadc_inst/registers_fiforead/fifo_rd_en_reg4 (openadc_inst/ddrfifo_rd_en)
+     LUT3:I2->O            7   0.254   1.138  openadc_inst/fifo_top_inst/fifo_read_fifoen_drain_fifo_OR_269_o1 (openadc_inst/fifo_top_inst/fifo_read_fifoen_drain_fifo_OR_269_o)
+     begin scope: 'openadc_inst/fifo_top_inst/fifoonly_adcfifo_inst:rd_en'
+     LUT3:I0->O          128   0.235   2.294  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.rfwft/RAM_REGOUT_EN1 (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/ram_regout_en)
+     FDRE:CE                   0.302          U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/dout_i_0
+    ----------------------------------------
+    Total                      8.345ns (1.805ns logic, 6.540ns route)
+                                       (21.6% logic, 78.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'openadc_inst/extmeasure_clk'
+  Clock period: 2.698ns (frequency: 370.713MHz)
+  Total number of paths / destination ports: 528 / 32
+-------------------------------------------------------------------------
+Delay:               2.698ns (Levels of Logic = 33)
+  Source:            openadc_inst/extclk_frequency_int_0 (FF)
+  Destination:       openadc_inst/extclk_frequency_int_31 (FF)
+  Source Clock:      openadc_inst/extmeasure_clk rising
+  Destination Clock: openadc_inst/extmeasure_clk rising
+
+  Data Path: openadc_inst/extclk_frequency_int_0 to openadc_inst/extclk_frequency_int_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.525   0.725  openadc_inst/extclk_frequency_int_0 (openadc_inst/extclk_frequency_int_0)
+     INV:I->O              1   0.255   0.000  openadc_inst/Mcount_extclk_frequency_int_lut<0>_INV_0 (openadc_inst/Mcount_extclk_frequency_int_lut<0>)
+     MUXCY:S->O            1   0.215   0.000  openadc_inst/Mcount_extclk_frequency_int_cy<0> (openadc_inst/Mcount_extclk_frequency_int_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  openadc_inst/Mcount_extclk_frequency_int_cy<1> (openadc_inst/Mcount_extclk_frequency_int_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  openadc_inst/Mcount_extclk_frequency_int_cy<2> (openadc_inst/Mcount_extclk_frequency_int_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  openadc_inst/Mcount_extclk_frequency_int_cy<3> (openadc_inst/Mcount_extclk_frequency_int_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  openadc_inst/Mcount_extclk_frequency_int_cy<4> (openadc_inst/Mcount_extclk_frequency_int_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  openadc_inst/Mcount_extclk_frequency_int_cy<5> (openadc_inst/Mcount_extclk_frequency_int_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  openadc_inst/Mcount_extclk_frequency_int_cy<6> (openadc_inst/Mcount_extclk_frequency_int_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  openadc_inst/Mcount_extclk_frequency_int_cy<7> (openadc_inst/Mcount_extclk_frequency_int_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  openadc_inst/Mcount_extclk_frequency_int_cy<8> (openadc_inst/Mcount_extclk_frequency_int_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  openadc_inst/Mcount_extclk_frequency_int_cy<9> (openadc_inst/Mcount_extclk_frequency_int_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  openadc_inst/Mcount_extclk_frequency_int_cy<10> (openadc_inst/Mcount_extclk_frequency_int_cy<10>)
+     MUXCY:CI->O           1   0.023   0.000  openadc_inst/Mcount_extclk_frequency_int_cy<11> (openadc_inst/Mcount_extclk_frequency_int_cy<11>)
+     MUXCY:CI->O           1   0.023   0.000  openadc_inst/Mcount_extclk_frequency_int_cy<12> (openadc_inst/Mcount_extclk_frequency_int_cy<12>)
+     MUXCY:CI->O           1   0.023   0.000  openadc_inst/Mcount_extclk_frequency_int_cy<13> (openadc_inst/Mcount_extclk_frequency_int_cy<13>)
+     MUXCY:CI->O           1   0.023   0.000  openadc_inst/Mcount_extclk_frequency_int_cy<14> (openadc_inst/Mcount_extclk_frequency_int_cy<14>)
+     MUXCY:CI->O           1   0.023   0.000  openadc_inst/Mcount_extclk_frequency_int_cy<15> (openadc_inst/Mcount_extclk_frequency_int_cy<15>)
+     MUXCY:CI->O           1   0.023   0.000  openadc_inst/Mcount_extclk_frequency_int_cy<16> (openadc_inst/Mcount_extclk_frequency_int_cy<16>)
+     MUXCY:CI->O           1   0.023   0.000  openadc_inst/Mcount_extclk_frequency_int_cy<17> (openadc_inst/Mcount_extclk_frequency_int_cy<17>)
+     MUXCY:CI->O           1   0.023   0.000  openadc_inst/Mcount_extclk_frequency_int_cy<18> (openadc_inst/Mcount_extclk_frequency_int_cy<18>)
+     MUXCY:CI->O           1   0.023   0.000  openadc_inst/Mcount_extclk_frequency_int_cy<19> (openadc_inst/Mcount_extclk_frequency_int_cy<19>)
+     MUXCY:CI->O           1   0.023   0.000  openadc_inst/Mcount_extclk_frequency_int_cy<20> (openadc_inst/Mcount_extclk_frequency_int_cy<20>)
+     MUXCY:CI->O           1   0.023   0.000  openadc_inst/Mcount_extclk_frequency_int_cy<21> (openadc_inst/Mcount_extclk_frequency_int_cy<21>)
+     MUXCY:CI->O           1   0.023   0.000  openadc_inst/Mcount_extclk_frequency_int_cy<22> (openadc_inst/Mcount_extclk_frequency_int_cy<22>)
+     MUXCY:CI->O           1   0.023   0.000  openadc_inst/Mcount_extclk_frequency_int_cy<23> (openadc_inst/Mcount_extclk_frequency_int_cy<23>)
+     MUXCY:CI->O           1   0.023   0.000  openadc_inst/Mcount_extclk_frequency_int_cy<24> (openadc_inst/Mcount_extclk_frequency_int_cy<24>)
+     MUXCY:CI->O           1   0.023   0.000  openadc_inst/Mcount_extclk_frequency_int_cy<25> (openadc_inst/Mcount_extclk_frequency_int_cy<25>)
+     MUXCY:CI->O           1   0.023   0.000  openadc_inst/Mcount_extclk_frequency_int_cy<26> (openadc_inst/Mcount_extclk_frequency_int_cy<26>)
+     MUXCY:CI->O           1   0.023   0.000  openadc_inst/Mcount_extclk_frequency_int_cy<27> (openadc_inst/Mcount_extclk_frequency_int_cy<27>)
+     MUXCY:CI->O           1   0.023   0.000  openadc_inst/Mcount_extclk_frequency_int_cy<28> (openadc_inst/Mcount_extclk_frequency_int_cy<28>)
+     MUXCY:CI->O           1   0.023   0.000  openadc_inst/Mcount_extclk_frequency_int_cy<29> (openadc_inst/Mcount_extclk_frequency_int_cy<29>)
+     MUXCY:CI->O           0   0.023   0.000  openadc_inst/Mcount_extclk_frequency_int_cy<30> (openadc_inst/Mcount_extclk_frequency_int_cy<30>)
+     XORCY:CI->O           1   0.206   0.000  openadc_inst/Mcount_extclk_frequency_int_xor<31> (openadc_inst/Result<31>1)
+     FDC:D                     0.074          openadc_inst/extclk_frequency_int_31
+    ----------------------------------------
+    Total                      2.698ns (1.973ns logic, 0.725ns route)
+                                       (73.1% logic, 26.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'usb_clk'
+  Total number of paths / destination ports: 537 / 495
+-------------------------------------------------------------------------
+Offset:              8.193ns (Levels of Logic = 3)
+  Source:            rstnin (PAD)
+  Destination:       registers_sakura_lbus/ctrl_lbus/fetch_15 (FF)
+  Destination Clock: usb_clk rising 0.1X
+
+  Data Path: rstnin to registers_sakura_lbus/ctrl_lbus/fetch_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            73   1.328   1.999  rstnin_IBUF (led_7_OBUF)
+     LUT2:I1->O          212   0.254   2.875  openadc_inst/registers_openadc/reset1 (openadc_inst/reset_intermediate)
+     LUT6:I0->O           16   0.254   1.181  registers_sakura_lbus/ctrl_lbus/_n0613_inv1 (registers_sakura_lbus/ctrl_lbus/_n0613_inv)
+     FDE:CE                    0.302          registers_sakura_lbus/ctrl_lbus/fetch_0
+    ----------------------------------------
+    Total                      8.193ns (2.138ns logic, 6.055ns route)
+                                       (26.1% logic, 73.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'usb_clk'
+  Total number of paths / destination ports: 108 / 42
+-------------------------------------------------------------------------
+Offset:              6.737ns (Levels of Logic = 3)
+  Source:            openadc_inst/registers_fiforead/reg_datao_valid_reg (FF)
+  Destination:       usb_d<7> (PAD)
+  Source Clock:      usb_clk rising
+
+  Data Path: openadc_inst/registers_fiforead/reg_datao_valid_reg to usb_d<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              8   0.525   1.220  openadc_inst/registers_fiforead/reg_datao_valid_reg (openadc_inst/registers_fiforead/reg_datao_valid_reg)
+     LUT4:I0->O            1   0.254   0.910  openadc_inst/reg_datai_fifo[7]_reg_datai_i[7]_or_26_OUT<0>_SW0 (N2)
+     LUT5:I2->O            1   0.235   0.681  openadc_inst/reg_datai_fifo[7]_reg_datai_i[7]_or_26_OUT<0> (openadc_inst/reg_datai_fifo[7]_reg_datai_i[7]_or_26_OUT<0>)
+     IOBUF:I->IO               2.912          usb_d_0_IOBUF (usb_d<0>)
+    ----------------------------------------
+    Total                      6.737ns (3.926ns logic, 2.811ns route)
+                                       (58.3% logic, 41.7% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 20 / 20
+-------------------------------------------------------------------------
+Delay:               7.278ns (Levels of Logic = 3)
+  Source:            rstnin (PAD)
+  Destination:       lbus_rstn (PAD)
+
+  Data Path: rstnin to lbus_rstn
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            73   1.328   2.107  rstnin_IBUF (led_7_OBUF)
+     LUT3:I1->O            1   0.250   0.681  registers_sakura_lbus/lbus_rstn1 (lbus_rstn_OBUF)
+     OBUF:I->O                 2.912          lbus_rstn_OBUF (lbus_rstn)
+    ----------------------------------------
+    Total                      7.278ns (4.490ns logic, 2.788ns route)
+                                       (61.7% logic, 38.3% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock openadc_inst/extmeasure_clk
+---------------------------+---------+---------+---------+---------+
+                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------+---------+---------+---------+---------+
+openadc_inst/extmeasure_clk|    2.698|         |         |         |
+usb_clk                    |    5.112|         |         |         |
+---------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock openadc_inst/timer_heartbeat_23
+---------------------------+---------+---------+---------+---------+
+                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------+---------+---------+---------+---------+
+openadc_inst/extmeasure_clk|         |         |    1.324|         |
+usb_clk                    |         |         |    1.324|         |
+---------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock usb_clk
+-------------------------------+---------+---------+---------+---------+
+                               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------+---------+---------+---------+---------+
+openadc_inst/timer_heartbeat_23|         |    1.280|         |         |
+usb_clk                        |    8.345|    4.066|    1.834|         |
+-------------------------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 31.00 secs
+Total CPU time to Xst completion: 31.03 secs
+ 
+--> 
+
+Total memory usage is 274764 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   72 (   0 filtered)
+Number of infos    :   43 (   0 filtered)
+

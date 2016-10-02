@@ -21,8 +21,180 @@
 
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="sakura-g_main.xise"/>
 
-  <files xmlns="http://www.xilinx.com/XMLSchema"/>
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="CHIP_SAKURA_G_AES.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="CHIP_SAKURA_G_AES.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="CHIP_SAKURA_G_AES.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="CHIP_SAKURA_G_AES.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="CHIP_SAKURA_G_AES.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="CHIP_SAKURA_G_AES.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="CHIP_SAKURA_G_AES.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="CHIP_SAKURA_G_AES.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="CHIP_SAKURA_G_AES.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="CHIP_SAKURA_G_AES.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="CHIP_SAKURA_G_AES.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="CHIP_SAKURA_G_AES.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="CHIP_SAKURA_G_AES.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="CHIP_SAKURA_G_AES.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="CHIP_SAKURA_G_AES.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="CHIP_SAKURA_G_AES.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="CHIP_SAKURA_G_AES.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="CHIP_SAKURA_G_AES.ut" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="CHIP_SAKURA_G_AES.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="CHIP_SAKURA_G_AES.xst"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="CHIP_SAKURA_G_AES_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="CHIP_SAKURA_G_AES_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="CHIP_SAKURA_G_AES_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="CHIP_SAKURA_G_AES_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="CHIP_SAKURA_G_AES_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="CHIP_SAKURA_G_AES_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="CHIP_SAKURA_G_AES_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="CHIP_SAKURA_G_AES_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="CHIP_SAKURA_G_AES_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="CHIP_SAKURA_G_AES_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="CHIP_SAKURA_G_AES_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="CHIP_SAKURA_G_AES_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="CHIP_SAKURA_G_AES_usage.xml"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="CHIP_SAKURA_G_AES_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="_impactbatch.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="chip_sakura_g_aes.bgn" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="chip_sakura_g_aes.bit" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="chip_sakura_g_aes.drc" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_CMD" xil_pn:name="ise_impact.cmd"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
 
-  <transforms xmlns="http://www.xilinx.com/XMLSchema"/>
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1475118407" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1475118407">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1475118407" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-1765378823328188835" xil_pn:start_ts="1475118407">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1475118407" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="2894150840750261463" xil_pn:start_ts="1475118407">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1475118407" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1475118407">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1475118407" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="1015035452859808415" xil_pn:start_ts="1475118407">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1475118407" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="6952878091308752832" xil_pn:start_ts="1475118407">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1475118407" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-5424037472408589023" xil_pn:start_ts="1475118407">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1475118478" xil_pn:in_ck="1477622984613599905" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-7308346329551558074" xil_pn:start_ts="1475118407">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="CHIP_SAKURA_G_AES.lso"/>
+      <outfile xil_pn:name="CHIP_SAKURA_G_AES.ngc"/>
+      <outfile xil_pn:name="CHIP_SAKURA_G_AES.ngr"/>
+      <outfile xil_pn:name="CHIP_SAKURA_G_AES.prj"/>
+      <outfile xil_pn:name="CHIP_SAKURA_G_AES.stx"/>
+      <outfile xil_pn:name="CHIP_SAKURA_G_AES.syr"/>
+      <outfile xil_pn:name="CHIP_SAKURA_G_AES.xst"/>
+      <outfile xil_pn:name="CHIP_SAKURA_G_AES_xst.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1475118478" xil_pn:in_ck="-6744342376628688566" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="6224758105114891978" xil_pn:start_ts="1475118478">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1475118492" xil_pn:in_ck="-1204070635711617640" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-728610021619815336" xil_pn:start_ts="1475118478">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="CHIP_SAKURA_G_AES.bld"/>
+      <outfile xil_pn:name="CHIP_SAKURA_G_AES.ngd"/>
+      <outfile xil_pn:name="CHIP_SAKURA_G_AES_ngdbuild.xrpt"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1475118564" xil_pn:in_ck="-1204070635711617639" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="-9158989890995055542" xil_pn:start_ts="1475118492">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="CHIP_SAKURA_G_AES.pcf"/>
+      <outfile xil_pn:name="CHIP_SAKURA_G_AES_map.map"/>
+      <outfile xil_pn:name="CHIP_SAKURA_G_AES_map.mrp"/>
+      <outfile xil_pn:name="CHIP_SAKURA_G_AES_map.ncd"/>
+      <outfile xil_pn:name="CHIP_SAKURA_G_AES_map.ngm"/>
+      <outfile xil_pn:name="CHIP_SAKURA_G_AES_map.xrpt"/>
+      <outfile xil_pn:name="CHIP_SAKURA_G_AES_summary.xml"/>
+      <outfile xil_pn:name="CHIP_SAKURA_G_AES_usage.xml"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1475118624" xil_pn:in_ck="-7087113961537136334" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="832869163894192598" xil_pn:start_ts="1475118564">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="CHIP_SAKURA_G_AES.ncd"/>
+      <outfile xil_pn:name="CHIP_SAKURA_G_AES.pad"/>
+      <outfile xil_pn:name="CHIP_SAKURA_G_AES.par"/>
+      <outfile xil_pn:name="CHIP_SAKURA_G_AES.ptwx"/>
+      <outfile xil_pn:name="CHIP_SAKURA_G_AES.unroutes"/>
+      <outfile xil_pn:name="CHIP_SAKURA_G_AES.xpi"/>
+      <outfile xil_pn:name="CHIP_SAKURA_G_AES_pad.csv"/>
+      <outfile xil_pn:name="CHIP_SAKURA_G_AES_pad.txt"/>
+      <outfile xil_pn:name="CHIP_SAKURA_G_AES_par.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1475118662" xil_pn:in_ck="-7334861923218486901" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="2867186328748050553" xil_pn:start_ts="1475118625">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="CHIP_SAKURA_G_AES.ut"/>
+      <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+      <outfile xil_pn:name="chip_sakura_g_aes.bgn"/>
+      <outfile xil_pn:name="chip_sakura_g_aes.bit"/>
+      <outfile xil_pn:name="chip_sakura_g_aes.drc"/>
+      <outfile xil_pn:name="usage_statistics_webtalk.html"/>
+      <outfile xil_pn:name="webtalk.log"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1475118737" xil_pn:in_ck="-2533229988051220203" xil_pn:name="TRAN_impactProgrammingTool" xil_pn:prop_ck="2682241697568822907" xil_pn:start_ts="1475118737">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_impactbatch.log"/>
+      <outfile xil_pn:name="ise_impact.cmd"/>
+    </transform>
+    <transform xil_pn:end_ts="1475118669" xil_pn:in_ck="-2533229988051220203" xil_pn:name="TRAN_genImpactFile" xil_pn:prop_ck="-7047989797201823252" xil_pn:start_ts="1475118669">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1475118624" xil_pn:in_ck="-1204070635711617771" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416184" xil_pn:start_ts="1475118609">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="CHIP_SAKURA_G_AES.twr"/>
+      <outfile xil_pn:name="CHIP_SAKURA_G_AES.twx"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+    </transform>
+  </transforms>
 
 </generated_project>

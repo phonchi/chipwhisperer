@@ -1,0 +1,8 @@
+Storage Target: SPI Flash Single FPGA
+32M
+FF
+aes_controller_new
+D:/github_project/chipwhisperer_scrip/hardware/capture/sakura-g/sakurag_ise_project/chipwhisperer-sakurag
+
+MCS
+No

@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=D:\github_project\chipwhisperer_scrip\hardware\victims\sakurag\sakura-g_main_lx75\sakura-g_main\impact.xsl
+OUTFILE=D:\github_project\chipwhisperer_scrip\hardware\victims\sakurag\sakura-g_main_lx75\sakura-g_main\impact.xsl
+FAMILY=Single
+PART=Single
+WORKINGDIR=D:\github_project\chipwhisperer_scrip\hardware\victims\sakurag\sakura-g_main_lx75\sakura-g_main
+LICENSE=iMPACT
+USER_INFO=iMPACT

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\github_project\chipwhisperer_scrip\hardware\capture\sakura-g\sakurag_ise_project\chipwhisperer-sakurag\CHIP_SAKURAG.ncd
+OUTFILE=D:\github_project\chipwhisperer_scrip\hardware\capture\sakura-g\sakurag_ise_project\chipwhisperer-sakurag\CHIP_SAKURAG.bit
+FAMILY=Spartan6
+PART=xc6slx9-2csg225
+WORKINGDIR=D:\github_project\chipwhisperer_scrip\hardware\capture\sakura-g\sakurag_ise_project\chipwhisperer-sakurag
+LICENSE=WebPack
+USER_INFO=__0_0_0

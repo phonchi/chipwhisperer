@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\github_project\chipwhisperer_scrip\hardware\victims\sakurag\sakura-g_main_lx75\sakura-g_main\CHIP_SAKURA_G_AES.ncd
+OUTFILE=D:\github_project\chipwhisperer_scrip\hardware\victims\sakurag\sakura-g_main_lx75\sakura-g_main\CHIP_SAKURA_G_AES.bit
+FAMILY=Spartan6
+PART=xc6slx75-2csg484
+WORKINGDIR=D:\github_project\chipwhisperer_scrip\hardware\victims\sakurag\sakura-g_main_lx75\sakura-g_main
+LICENSE=WebPack
+USER_INFO=__0_0_0

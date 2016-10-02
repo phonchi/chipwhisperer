@@ -1,0 +1,11 @@
+# PROMGEN: Xilinx Prom Generator P.20131013
+# Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+SOFTWARE_VERSION P.20131013
+DATE            09/29/2016 - 11:13
+SOURCE          D:\github_project\chipwhisperer_scrip\hardware\victims\sakurag\sakura-g_main_lx75\sakura-g_main\aes_new_gen.mcs
+DEVICE          4096K
+DATA_WIDTH      1
+FILL_DATA       0xFF
+SIGNATURE       0x1AE1B827
+START_ADDRESS   0x00000000 END_ADDRESS 0x00256E63 DIRECTION_UP   "D:/github_project/chipwhisperer_scrip/hardware/victims/sakurag/sakura-g_main_lx75/sakura-g_main/chip_sakura_g_aes.bit" 6slx75csg484

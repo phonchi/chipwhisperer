@@ -1,0 +1,8 @@
+Release 14.7 Drc P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Thu Sep 29 11:10:33 2016
+
+drc -z CHIP_SAKURA_G_AES.ncd CHIP_SAKURA_G_AES.pcf
+
+DRC detected 0 errors and 0 warnings.

@@ -1,0 +1,16 @@
+Release 14.7 - WebTalk (P.20131013)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+Project Information
+--------------------
+ProjectID=5A9B15078F674EF4ACCAF29407F0CA90
+ProjectIteration=1
+
+WebTalk Summary
+----------------
+INFO:WebTalk:1 - WebTalk is enabled because you are using a WebPACK license.
+
+INFO:WebTalk:9 - WebTalk Install setting is OFF.
+INFO:WebTalk:6 - WebTalk User setting is ON.
+
+INFO:WebTalk:4 - D:/github_project/chipwhisperer_scrip/hardware/capture/sakura-g/sakurag_ise_project/chipwhisperer-sakurag/usage_statistics_webtalk.html WebTalk report has been successfully sent to Xilinx on 2016-09-29T11:32:03.  For additional details about this file, please refer to the WebTalk help file at D:/Verdi_2013/14.7/ISE_DS/ISE/data/reports/webtalk_introduction.html

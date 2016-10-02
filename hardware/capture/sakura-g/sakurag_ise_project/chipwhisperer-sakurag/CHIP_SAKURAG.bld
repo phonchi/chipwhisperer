@@ -1,0 +1,148 @@
+Release 14.7 ngdbuild P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: D:\Verdi_2013\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
+-intstyle ise -dd _ngo -sd ipcore_dir -sd ../../../../common/hdl/sakura/coregen
+-nt timestamp -uc sakura_g_ctrl_r1.ucf -p xc6slx9-csg225-2 CHIP_SAKURAG.ngc
+CHIP_SAKURAG.ngd
+
+Reading NGO file
+"D:/github_project/chipwhisperer_scrip/hardware/capture/sakura-g/sakurag_ise_pro
+ject/chipwhisperer-sakurag/CHIP_SAKURAG.ngc" ...
+Loading design module
+"../../../../common/hdl/sakura/coregen/syncfifo_8x31.ngc"...
+Loading design module "ipcore_dir/fifoonly_adcfifo.ngc"...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "sakura_g_ctrl_r1.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC
+   TS_openadc_inst_genclocks_dcm_clk_1 = PERIOD
+   "openadc_inst_genclocks_dcm_clk_1" TS_openadc_inst_target_clk_0 * 2 HIGH
+   50%>: Unable to find an active 'TNM' constraint named
+   'openadc_inst_genclocks_dcm_clk_1'.
+
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC
+   TS_openadc_inst_genclocks_ADC_clk_times4_1 = PERIOD
+   "openadc_inst_genclocks_ADC_clk_times4_1" TS_openadc_inst_target_clk_0 * 4
+   HIGH 50%>: Unable to find an active 'TNM' constraint named
+   'openadc_inst_genclocks_ADC_clk_times4_1'.
+
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC
+   TS_openadc_inst_genclocks_ADC_clk_1 = PERIOD
+   "openadc_inst_genclocks_ADC_clk_1" TS_openadc_inst_target_clk_0 HIGH 50%>:
+   Unable to find an active 'TNM' constraint named
+   'openadc_inst_genclocks_ADC_clk_1'.
+
+INFO:ConstraintSystem:178 - TNM 'clkin_GRP', used in period specification
+   'TS_clkin', was traced into DCM_CLKGEN instance
+   openadc_inst/genclocks/DCM_CLKGEN_inst. The following new TNM groups and
+   period specifications were generated at the DCM_CLKGEN output(s): 
+   CLKFX: <TIMESPEC TS_openadc_inst_target_clk = PERIOD
+   "openadc_inst_target_clk" TS_clkin HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'usb_clk_GRP', used in period specification
+   'TS_usb_clk', was traced into DCM_SP instance
+   registers_sakura_lbus/mk_clkrst/u11. The following new TNM groups and period
+   specifications were generated at the DCM_SP output(s): 
+   CLKDV: <TIMESPEC TS_registers_sakura_lbus_mk_clkrst_clkdv_dcm = PERIOD
+   "registers_sakura_lbus_mk_clkrst_clkdv_dcm" TS_usb_clk / 32 HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'openadc_inst_target_clk', used in period
+   specification 'TS_openadc_inst_target_clk', was traced into DCM_SP instance
+   openadc_inst/genclocks/DCM_extclock_gen. The following new TNM groups and
+   period specifications were generated at the DCM_SP output(s): 
+   CLKFX: <TIMESPEC TS_openadc_inst_genclocks_ADC_clk_times4 = PERIOD
+   "openadc_inst_genclocks_ADC_clk_times4" TS_openadc_inst_target_clk * 4 HIGH
+   50%>
+
+INFO:ConstraintSystem:178 - TNM 'openadc_inst_target_clk', used in period
+   specification 'TS_openadc_inst_target_clk', was traced into DCM_SP instance
+   openadc_inst/genclocks/DCM_extclock_gen. The following new TNM groups and
+   period specifications were generated at the DCM_SP output(s): 
+   CLK0: <TIMESPEC TS_openadc_inst_genclocks_ADC_clk = PERIOD
+   "openadc_inst_genclocks_ADC_clk" TS_openadc_inst_target_clk HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'registers_sakura_lbus_mk_clkrst_clkdv_dcm',
+   used in period specification 'TS_registers_sakura_lbus_mk_clkrst_clkdv_dcm',
+   was traced into DCM_CLKGEN instance openadc_inst/genclocks/DCM_CLKGEN_inst.
+   The following new TNM groups and period specifications were generated at the
+   DCM_CLKGEN output(s): 
+   CLKFX: <TIMESPEC TS_openadc_inst_target_clk_0 = PERIOD
+   "openadc_inst_target_clk_0" TS_registers_sakura_lbus_mk_clkrst_clkdv_dcm HIGH
+   50%>
+
+INFO:ConstraintSystem:178 - TNM 'registers_sakura_lbus_mk_clkrst_clkdv_dcm',
+   used in period specification 'TS_registers_sakura_lbus_mk_clkrst_clkdv_dcm',
+   was traced into DCM_SP instance openadc_inst/genclocks/DCM_extclock_gen. The
+   following new TNM groups and period specifications were generated at the
+   DCM_SP output(s): 
+   CLKFX: <TIMESPEC TS_openadc_inst_genclocks_ADC_clk_times4_0 = PERIOD
+   "openadc_inst_genclocks_ADC_clk_times4_0"
+   TS_registers_sakura_lbus_mk_clkrst_clkdv_dcm * 4 HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'registers_sakura_lbus_mk_clkrst_clkdv_dcm',
+   used in period specification 'TS_registers_sakura_lbus_mk_clkrst_clkdv_dcm',
+   was traced into DCM_SP instance openadc_inst/genclocks/DCM_extclock_gen. The
+   following new TNM groups and period specifications were generated at the
+   DCM_SP output(s): 
+   CLK0: <TIMESPEC TS_openadc_inst_genclocks_ADC_clk_0 = PERIOD
+   "openadc_inst_genclocks_ADC_clk_0"
+   TS_registers_sakura_lbus_mk_clkrst_clkdv_dcm HIGH 50%>
+
+Done...
+
+WARNING:NgdBuild:1212 - User specified non-default attribute value (20.833000)
+   was detected for the CLKIN_PERIOD attribute on DCM
+   "registers_sakura_lbus/mk_clkrst/u11".  This does not match the PERIOD
+   constraint value (60 MHz.).  The uncertainty calculation will use the
+   non-default attribute value.  This could result in incorrect uncertainty
+   calculated for DCM output clocks.
+INFO:NgdBuild:1222 - Setting CLKIN_PERIOD attribute associated with DCM instance
+   openadc_inst/genclocks/DCM_CLKGEN_inst to 20.833333 ns based on the period
+   specification (<TIMESPEC "TS_clkin" = PERIOD : "clkin_GRP" : 48 MHz HIGH
+   50.0% ;> [sakura_g_ctrl_r1.ucf(14)]).
+WARNING:NgdBuild:1212 - User specified non-default attribute value (20.833333)
+   was detected for the CLKIN_PERIOD attribute on DCM
+   "openadc_inst/genclocks/DCM_CLKGEN_inst".  This does not match the PERIOD
+   constraint value (1.875 MHz.).  The uncertainty calculation will use the
+   non-default attribute value.  This could result in incorrect uncertainty
+   calculated for DCM output clocks.
+INFO:NgdBuild:1222 - Setting CLKIN_PERIOD attribute associated with DCM instance
+   openadc_inst/genclocks/DCM_extclock_gen to 20.833333 ns based on the period
+   specification (<TIMESPEC TS_openadc_inst_target_clk = PERIOD
+   "openadc_inst_target_clk" TS_clkin HIGH 50%>).
+WARNING:NgdBuild:1212 - User specified non-default attribute value (20.833333)
+   was detected for the CLKIN_PERIOD attribute on DCM
+   "openadc_inst/genclocks/DCM_extclock_gen".  This does not match the PERIOD
+   constraint value (1.875 MHz.).  The uncertainty calculation will use the
+   non-default attribute value.  This could result in incorrect uncertainty
+   calculated for DCM output clocks.
+WARNING:NgdBuild:1212 - User specified non-default attribute value (20.833333)
+   was detected for the CLKIN_PERIOD attribute on DCM
+   "openadc_inst/genclocks/DCM_extclock_gen".  This does not match the PERIOD
+   constraint value (1.875 MHz.).  The uncertainty calculation will use the
+   non-default attribute value.  This could result in incorrect uncertainty
+   calculated for DCM output clocks.
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   7
+
+Total memory usage is 177756 kilobytes
+
+Writing NGD file "CHIP_SAKURAG.ngd" ...
+Total REAL time to NGDBUILD completion:  10 sec
+Total CPU time to NGDBUILD completion:   10 sec
+
+Writing NGDBUILD log file "CHIP_SAKURAG.bld"...

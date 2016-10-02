@@ -1,0 +1,706 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.38 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.38 secs
+ 
+--> Reading design: CHIP_SAKURA_G_AES.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "CHIP_SAKURA_G_AES.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "CHIP_SAKURA_G_AES"
+Output Format                      : NGC
+Target Device                      : xc6slx75-2-csg484
+
+---- Source Options
+Top Module Name                    : CHIP_SAKURA_G_AES
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:\github_project\chipwhisperer_scrip\hardware\victims\sakurag\sakura-g_main_lx75\lbus_if.v" into library work
+Parsing module <LBUS_IF>.
+Analyzing Verilog file "D:\github_project\chipwhisperer_scrip\hardware\victims\sakurag\sakura-g_main_lx75\aes_composite_enc.v" into library work
+Parsing module <AES_Composite_enc>.
+Parsing module <KeyExpantion>.
+Parsing module <AES_Core>.
+Parsing module <MixColumns>.
+Parsing module <SubBytes>.
+Parsing module <GF_MULINV_8>.
+Parsing module <GF_MULINV_4>.
+Analyzing Verilog file "D:\github_project\chipwhisperer_scrip\hardware\victims\sakurag\sakura-g_main_lx75\chip_sasebo_gii_aes.v" into library work
+Parsing module <CHIP_SAKURA_G_AES>.
+Parsing module <MK_CLKRST>.
+Parsing module <MK_RST>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <CHIP_SAKURA_G_AES>.
+
+Elaborating module <LBUS_IF>.
+
+Elaborating module <AES_Composite_enc>.
+
+Elaborating module <AES_Core>.
+
+Elaborating module <SubBytes>.
+
+Elaborating module <GF_MULINV_8>.
+
+Elaborating module <GF_MULINV_4>.
+
+Elaborating module <MixColumns>.
+
+Elaborating module <KeyExpantion>.
+
+Elaborating module <MK_CLKRST>.
+
+Elaborating module <IBUFG>.
+
+Elaborating module <BUFG>.
+
+Elaborating module <MK_RST>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <CHIP_SAKURA_G_AES>.
+    Related source file is "D:\github_project\chipwhisperer_scrip\hardware\victims\sakurag\sakura-g_main_lx75\chip_sasebo_gii_aes.v".
+    Found 16-bit register for signal <lbus_di>.
+    Found 1-bit register for signal <blk_drdy_delay>.
+    Found 16-bit register for signal <lbus_a>.
+    Summary:
+	inferred  33 D-type flip-flop(s).
+Unit <CHIP_SAKURA_G_AES> synthesized.
+
+Synthesizing Unit <LBUS_IF>.
+    Related source file is "D:\github_project\chipwhisperer_scrip\hardware\victims\sakurag\sakura-g_main_lx75\lbus_if.v".
+    Found 1-bit register for signal <blk_rstn>.
+    Found 4-bit register for signal <blk_trig>.
+    Found 128-bit register for signal <blk_kin>.
+    Found 128-bit register for signal <blk_din>.
+    Found 16-bit register for signal <lbus_do>.
+    Found 2-bit register for signal <wr>.
+    Found 1-bit register for signal <trig_wr>.
+    Found 1-bit register for signal <ctrl<2>>.
+    Found 1-bit register for signal <ctrl<1>>.
+    Found 1-bit register for signal <ctrl<0>>.
+    Found 1-bit register for signal <blk_krdy>.
+    Found 1-bit register for signal <blk_encdec>.
+    Summary:
+	inferred 285 D-type flip-flop(s).
+	inferred 260 Multiplexer(s).
+Unit <LBUS_IF> synthesized.
+
+Synthesizing Unit <AES_Composite_enc>.
+    Related source file is "D:\github_project\chipwhisperer_scrip\hardware\victims\sakurag\sakura-g_main_lx75\aes_composite_enc.v".
+    Found 128-bit register for signal <dat>.
+    Found 128-bit register for signal <key>.
+    Found 128-bit register for signal <rkey>.
+    Found 8-bit register for signal <rcon>.
+    Found 10-bit register for signal <rnd>.
+    Found 1-bit register for signal <Kvld>.
+    Found 1-bit register for signal <BSY>.
+    Found 1-bit register for signal <sel>.
+    Found 1-bit register for signal <Dvld>.
+    Summary:
+	inferred 406 D-type flip-flop(s).
+	inferred   5 Multiplexer(s).
+Unit <AES_Composite_enc> synthesized.
+
+Synthesizing Unit <AES_Core>.
+    Related source file is "D:\github_project\chipwhisperer_scrip\hardware\victims\sakurag\sakura-g_main_lx75\aes_composite_enc.v".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <AES_Core> synthesized.
+
+Synthesizing Unit <SubBytes>.
+    Related source file is "D:\github_project\chipwhisperer_scrip\hardware\victims\sakurag\sakura-g_main_lx75\aes_composite_enc.v".
+    Summary:
+Unit <SubBytes> synthesized.
+
+Synthesizing Unit <GF_MULINV_8>.
+    Related source file is "D:\github_project\chipwhisperer_scrip\hardware\victims\sakurag\sakura-g_main_lx75\aes_composite_enc.v".
+    Summary:
+Unit <GF_MULINV_8> synthesized.
+
+Synthesizing Unit <GF_MULINV_4>.
+    Related source file is "D:\github_project\chipwhisperer_scrip\hardware\victims\sakurag\sakura-g_main_lx75\aes_composite_enc.v".
+    Summary:
+Unit <GF_MULINV_4> synthesized.
+
+Synthesizing Unit <MixColumns>.
+    Related source file is "D:\github_project\chipwhisperer_scrip\hardware\victims\sakurag\sakura-g_main_lx75\aes_composite_enc.v".
+    Summary:
+	inferred   4 Multiplexer(s).
+Unit <MixColumns> synthesized.
+
+Synthesizing Unit <KeyExpantion>.
+    Related source file is "D:\github_project\chipwhisperer_scrip\hardware\victims\sakurag\sakura-g_main_lx75\aes_composite_enc.v".
+    Summary:
+Unit <KeyExpantion> synthesized.
+
+Synthesizing Unit <MK_CLKRST>.
+    Related source file is "D:\github_project\chipwhisperer_scrip\hardware\victims\sakurag\sakura-g_main_lx75\chip_sasebo_gii_aes.v".
+    Set property "KEEP_HIERARCHY = NO".
+    Summary:
+	no macro.
+Unit <MK_CLKRST> synthesized.
+
+Synthesizing Unit <MK_RST>.
+    Related source file is "D:\github_project\chipwhisperer_scrip\hardware\victims\sakurag\sakura-g_main_lx75\chip_sasebo_gii_aes.v".
+    Set property "KEEP_HIERARCHY = NO".
+    Found 16-bit register for signal <cnt>.
+    Found 16-bit adder for signal <cnt[15]_GND_15_o_add_1_OUT> created at line 157.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  16 D-type flip-flop(s).
+Unit <MK_RST> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 16-bit adder                                          : 1
+# Registers                                            : 25
+ 1-bit register                                        : 12
+ 10-bit register                                       : 1
+ 128-bit register                                      : 5
+ 16-bit register                                       : 4
+ 2-bit register                                        : 1
+ 4-bit register                                        : 1
+ 8-bit register                                        : 1
+# Multiplexers                                         : 282
+ 1-bit 2-to-1 multiplexer                              : 259
+ 128-bit 2-to-1 multiplexer                            : 4
+ 4-bit 2-to-1 multiplexer                              : 1
+ 8-bit 2-to-1 multiplexer                              : 18
+# Xors                                                 : 1982
+ 1-bit xor2                                            : 1445
+ 1-bit xor3                                            : 225
+ 1-bit xor4                                            : 80
+ 1-bit xor5                                            : 65
+ 1-bit xor6                                            : 40
+ 128-bit xor2                                          : 1
+ 2-bit xor2                                            : 40
+ 32-bit xor2                                           : 12
+ 4-bit xor2                                            : 40
+ 8-bit xor2                                            : 18
+ 8-bit xor5                                            : 16
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+INFO:Xst:2261 - The FF/Latch <key_59> in Unit <aes_composite_enc> is equivalent to the following 12 FFs/Latches, which will be removed : <key_64> <key_65> <key_66> <key_73> <key_74> <key_80> <key_82> <key_90> <key_96> <key_97> <key_105> <key_112> 
+INFO:Xst:2261 - The FF/Latch <key_56> in Unit <aes_composite_enc> is equivalent to the following 58 FFs/Latches, which will be removed : <key_57> <key_58> <key_60> <key_61> <key_62> <key_63> <key_67> <key_68> <key_69> <key_70> <key_71> <key_72> <key_75> <key_76> <key_77> <key_78> <key_79> <key_81> <key_83> <key_84> <key_85> <key_86> <key_87> <key_88> <key_89> <key_91> <key_92> <key_93> <key_94> <key_95> <key_98> <key_99> <key_100> <key_101> <key_102> <key_103> <key_104> <key_106> <key_107> <key_108> <key_109> <key_110> <key_111> <key_113> <key_114> <key_115> <key_116> <key_117> <key_118> <key_119> <key_120> <key_121> <key_122> <key_123> <key_124> <key_125> <key_126> <key_127> 
+WARNING:Xst:1710 - FF/Latch <key_56> (without init value) has a constant value of 0 in block <aes_composite_enc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2404 -  FFs/Latches <key<127:113>> (without init value) have a constant value of 0 in block <AES_Composite_enc>.
+
+Synthesizing (advanced) Unit <MK_RST>.
+The following registers are absorbed into counter <cnt>: 1 register on signal <cnt>.
+Unit <MK_RST> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 16-bit up counter                                     : 1
+# Registers                                            : 709
+ Flip-Flops                                            : 709
+# Multiplexers                                         : 282
+ 1-bit 2-to-1 multiplexer                              : 259
+ 128-bit 2-to-1 multiplexer                            : 4
+ 4-bit 2-to-1 multiplexer                              : 1
+ 8-bit 2-to-1 multiplexer                              : 18
+# Xors                                                 : 1982
+ 1-bit xor2                                            : 1445
+ 1-bit xor3                                            : 225
+ 1-bit xor4                                            : 80
+ 1-bit xor5                                            : 65
+ 1-bit xor6                                            : 40
+ 128-bit xor2                                          : 1
+ 2-bit xor2                                            : 40
+ 32-bit xor2                                           : 12
+ 4-bit xor2                                            : 40
+ 8-bit xor2                                            : 18
+ 8-bit xor5                                            : 16
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <key_86> (without init value) has a constant value of 0 in block <AES_Composite_enc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <key_87> (without init value) has a constant value of 0 in block <AES_Composite_enc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <key_88> (without init value) has a constant value of 0 in block <AES_Composite_enc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <key_89> (without init value) has a constant value of 0 in block <AES_Composite_enc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <key_91> (without init value) has a constant value of 0 in block <AES_Composite_enc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <key_92> (without init value) has a constant value of 0 in block <AES_Composite_enc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <key_93> (without init value) has a constant value of 0 in block <AES_Composite_enc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <key_94> (without init value) has a constant value of 0 in block <AES_Composite_enc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <key_95> (without init value) has a constant value of 0 in block <AES_Composite_enc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <key_98> (without init value) has a constant value of 0 in block <AES_Composite_enc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <key_99> (without init value) has a constant value of 0 in block <AES_Composite_enc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <key_100> (without init value) has a constant value of 0 in block <AES_Composite_enc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <key_101> (without init value) has a constant value of 0 in block <AES_Composite_enc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <key_102> (without init value) has a constant value of 0 in block <AES_Composite_enc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <key_103> (without init value) has a constant value of 0 in block <AES_Composite_enc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <key_104> (without init value) has a constant value of 0 in block <AES_Composite_enc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <key_106> (without init value) has a constant value of 0 in block <AES_Composite_enc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <key_107> (without init value) has a constant value of 0 in block <AES_Composite_enc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <key_108> (without init value) has a constant value of 0 in block <AES_Composite_enc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <key_109> (without init value) has a constant value of 0 in block <AES_Composite_enc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <key_110> (without init value) has a constant value of 0 in block <AES_Composite_enc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <key_111> (without init value) has a constant value of 0 in block <AES_Composite_enc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <key_56> (without init value) has a constant value of 0 in block <AES_Composite_enc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <key_57> (without init value) has a constant value of 0 in block <AES_Composite_enc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <key_58> (without init value) has a constant value of 0 in block <AES_Composite_enc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <key_60> (without init value) has a constant value of 0 in block <AES_Composite_enc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <key_61> (without init value) has a constant value of 0 in block <AES_Composite_enc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <key_62> (without init value) has a constant value of 0 in block <AES_Composite_enc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <key_63> (without init value) has a constant value of 0 in block <AES_Composite_enc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <key_67> (without init value) has a constant value of 0 in block <AES_Composite_enc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <key_68> (without init value) has a constant value of 0 in block <AES_Composite_enc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <key_69> (without init value) has a constant value of 0 in block <AES_Composite_enc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <key_70> (without init value) has a constant value of 0 in block <AES_Composite_enc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <key_71> (without init value) has a constant value of 0 in block <AES_Composite_enc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <key_72> (without init value) has a constant value of 0 in block <AES_Composite_enc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <key_75> (without init value) has a constant value of 0 in block <AES_Composite_enc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <key_76> (without init value) has a constant value of 0 in block <AES_Composite_enc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <key_77> (without init value) has a constant value of 0 in block <AES_Composite_enc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <key_78> (without init value) has a constant value of 0 in block <AES_Composite_enc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <key_79> (without init value) has a constant value of 0 in block <AES_Composite_enc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <key_81> (without init value) has a constant value of 0 in block <AES_Composite_enc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <key_83> (without init value) has a constant value of 0 in block <AES_Composite_enc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <key_84> (without init value) has a constant value of 0 in block <AES_Composite_enc>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <key_85> (without init value) has a constant value of 0 in block <AES_Composite_enc>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <key_59> in Unit <AES_Composite_enc> is equivalent to the following 12 FFs/Latches, which will be removed : <key_64> <key_65> <key_66> <key_73> <key_74> <key_80> <key_82> <key_90> <key_96> <key_97> <key_105> <key_112> 
+
+Optimizing unit <CHIP_SAKURA_G_AES> ...
+
+Optimizing unit <LBUS_IF> ...
+
+Optimizing unit <AES_Composite_enc> ...
+
+Optimizing unit <SubBytes> ...
+
+Optimizing unit <GF_MULINV_8> ...
+
+Optimizing unit <AES_Core> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block CHIP_SAKURA_G_AES, actual ratio is 7.
+FlipFlop aes_composite_enc/dat_1 has been replicated 1 time(s)
+FlipFlop aes_composite_enc/dat_10 has been replicated 2 time(s)
+FlipFlop aes_composite_enc/dat_102 has been replicated 1 time(s)
+FlipFlop aes_composite_enc/dat_103 has been replicated 1 time(s)
+FlipFlop aes_composite_enc/dat_105 has been replicated 2 time(s)
+FlipFlop aes_composite_enc/dat_106 has been replicated 3 time(s)
+FlipFlop aes_composite_enc/dat_109 has been replicated 1 time(s)
+FlipFlop aes_composite_enc/dat_110 has been replicated 2 time(s)
+FlipFlop aes_composite_enc/dat_111 has been replicated 2 time(s)
+FlipFlop aes_composite_enc/dat_113 has been replicated 1 time(s)
+FlipFlop aes_composite_enc/dat_114 has been replicated 1 time(s)
+FlipFlop aes_composite_enc/dat_117 has been replicated 3 time(s)
+FlipFlop aes_composite_enc/dat_118 has been replicated 2 time(s)
+FlipFlop aes_composite_enc/dat_119 has been replicated 1 time(s)
+FlipFlop aes_composite_enc/dat_121 has been replicated 1 time(s)
+FlipFlop aes_composite_enc/dat_122 has been replicated 1 time(s)
+FlipFlop aes_composite_enc/dat_125 has been replicated 3 time(s)
+FlipFlop aes_composite_enc/dat_126 has been replicated 1 time(s)
+FlipFlop aes_composite_enc/dat_127 has been replicated 2 time(s)
+FlipFlop aes_composite_enc/dat_13 has been replicated 2 time(s)
+FlipFlop aes_composite_enc/dat_14 has been replicated 2 time(s)
+FlipFlop aes_composite_enc/dat_17 has been replicated 1 time(s)
+FlipFlop aes_composite_enc/dat_18 has been replicated 3 time(s)
+FlipFlop aes_composite_enc/dat_2 has been replicated 1 time(s)
+FlipFlop aes_composite_enc/dat_21 has been replicated 1 time(s)
+FlipFlop aes_composite_enc/dat_22 has been replicated 2 time(s)
+FlipFlop aes_composite_enc/dat_23 has been replicated 1 time(s)
+FlipFlop aes_composite_enc/dat_25 has been replicated 1 time(s)
+FlipFlop aes_composite_enc/dat_26 has been replicated 1 time(s)
+FlipFlop aes_composite_enc/dat_27 has been replicated 1 time(s)
+FlipFlop aes_composite_enc/dat_29 has been replicated 1 time(s)
+FlipFlop aes_composite_enc/dat_30 has been replicated 2 time(s)
+FlipFlop aes_composite_enc/dat_31 has been replicated 1 time(s)
+FlipFlop aes_composite_enc/dat_33 has been replicated 2 time(s)
+FlipFlop aes_composite_enc/dat_34 has been replicated 2 time(s)
+FlipFlop aes_composite_enc/dat_37 has been replicated 1 time(s)
+FlipFlop aes_composite_enc/dat_38 has been replicated 2 time(s)
+FlipFlop aes_composite_enc/dat_39 has been replicated 2 time(s)
+FlipFlop aes_composite_enc/dat_41 has been replicated 1 time(s)
+FlipFlop aes_composite_enc/dat_42 has been replicated 1 time(s)
+FlipFlop aes_composite_enc/dat_45 has been replicated 1 time(s)
+FlipFlop aes_composite_enc/dat_46 has been replicated 1 time(s)
+FlipFlop aes_composite_enc/dat_47 has been replicated 1 time(s)
+FlipFlop aes_composite_enc/dat_5 has been replicated 2 time(s)
+FlipFlop aes_composite_enc/dat_50 has been replicated 1 time(s)
+FlipFlop aes_composite_enc/dat_53 has been replicated 1 time(s)
+FlipFlop aes_composite_enc/dat_54 has been replicated 1 time(s)
+FlipFlop aes_composite_enc/dat_55 has been replicated 1 time(s)
+FlipFlop aes_composite_enc/dat_58 has been replicated 1 time(s)
+FlipFlop aes_composite_enc/dat_6 has been replicated 1 time(s)
+FlipFlop aes_composite_enc/dat_61 has been replicated 1 time(s)
+FlipFlop aes_composite_enc/dat_62 has been replicated 1 time(s)
+FlipFlop aes_composite_enc/dat_63 has been replicated 1 time(s)
+FlipFlop aes_composite_enc/dat_65 has been replicated 2 time(s)
+FlipFlop aes_composite_enc/dat_66 has been replicated 1 time(s)
+FlipFlop aes_composite_enc/dat_7 has been replicated 1 time(s)
+FlipFlop aes_composite_enc/dat_70 has been replicated 2 time(s)
+FlipFlop aes_composite_enc/dat_71 has been replicated 2 time(s)
+FlipFlop aes_composite_enc/dat_73 has been replicated 2 time(s)
+FlipFlop aes_composite_enc/dat_74 has been replicated 2 time(s)
+FlipFlop aes_composite_enc/dat_77 has been replicated 2 time(s)
+FlipFlop aes_composite_enc/dat_78 has been replicated 2 time(s)
+FlipFlop aes_composite_enc/dat_79 has been replicated 2 time(s)
+FlipFlop aes_composite_enc/dat_81 has been replicated 1 time(s)
+FlipFlop aes_composite_enc/dat_82 has been replicated 1 time(s)
+FlipFlop aes_composite_enc/dat_85 has been replicated 2 time(s)
+FlipFlop aes_composite_enc/dat_86 has been replicated 1 time(s)
+FlipFlop aes_composite_enc/dat_87 has been replicated 1 time(s)
+FlipFlop aes_composite_enc/dat_90 has been replicated 2 time(s)
+FlipFlop aes_composite_enc/dat_93 has been replicated 1 time(s)
+FlipFlop aes_composite_enc/dat_94 has been replicated 1 time(s)
+FlipFlop aes_composite_enc/dat_95 has been replicated 2 time(s)
+FlipFlop aes_composite_enc/dat_97 has been replicated 2 time(s)
+FlipFlop aes_composite_enc/dat_98 has been replicated 1 time(s)
+FlipFlop aes_composite_enc/rkey_1 has been replicated 1 time(s)
+FlipFlop aes_composite_enc/rkey_10 has been replicated 1 time(s)
+FlipFlop aes_composite_enc/rkey_13 has been replicated 2 time(s)
+FlipFlop aes_composite_enc/rkey_14 has been replicated 2 time(s)
+FlipFlop aes_composite_enc/rkey_15 has been replicated 3 time(s)
+FlipFlop aes_composite_enc/rkey_17 has been replicated 2 time(s)
+FlipFlop aes_composite_enc/rkey_18 has been replicated 2 time(s)
+FlipFlop aes_composite_enc/rkey_2 has been replicated 1 time(s)
+FlipFlop aes_composite_enc/rkey_21 has been replicated 1 time(s)
+FlipFlop aes_composite_enc/rkey_22 has been replicated 2 time(s)
+FlipFlop aes_composite_enc/rkey_23 has been replicated 2 time(s)
+FlipFlop aes_composite_enc/rkey_25 has been replicated 1 time(s)
+FlipFlop aes_composite_enc/rkey_26 has been replicated 1 time(s)
+FlipFlop aes_composite_enc/rkey_29 has been replicated 1 time(s)
+FlipFlop aes_composite_enc/rkey_30 has been replicated 1 time(s)
+FlipFlop aes_composite_enc/rkey_31 has been replicated 1 time(s)
+FlipFlop aes_composite_enc/rkey_4 has been replicated 1 time(s)
+FlipFlop aes_composite_enc/rkey_5 has been replicated 1 time(s)
+FlipFlop aes_composite_enc/rkey_6 has been replicated 1 time(s)
+FlipFlop aes_composite_enc/rkey_7 has been replicated 1 time(s)
+FlipFlop aes_composite_enc/rkey_9 has been replicated 2 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 808
+ Flip-Flops                                            : 808
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : CHIP_SAKURA_G_AES.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 3531
+#      GND                         : 1
+#      INV                         : 6
+#      LUT1                        : 15
+#      LUT2                        : 114
+#      LUT3                        : 520
+#      LUT4                        : 255
+#      LUT5                        : 448
+#      LUT6                        : 2038
+#      MUXCY                       : 15
+#      MUXF7                       : 102
+#      VCC                         : 1
+#      XORCY                       : 16
+# FlipFlops/Latches                : 808
+#      FD                          : 1
+#      FDC                         : 171
+#      FDCE                        : 601
+#      FDE                         : 32
+#      FDP                         : 1
+#      FDPE                        : 2
+# Clock Buffers                    : 1
+#      BUFG                        : 1
+# IO Buffers                       : 48
+#      IBUF                        : 19
+#      IBUFG                       : 1
+#      OBUF                        : 28
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx75csg484-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             808  out of  93296     0%  
+ Number of Slice LUTs:                 3396  out of  46648     7%  
+    Number used as Logic:              3396  out of  46648     7%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   3616
+   Number with an unused Flip Flop:    2808  out of   3616    77%  
+   Number with an unused LUT:           220  out of   3616     6%  
+   Number of fully used LUT-FF pairs:   588  out of   3616    16%  
+   Number of unique control sets:        14
+
+IO Utilization: 
+ Number of IOs:                          48
+ Number of bonded IOBs:                  48  out of    328    14%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+lbus_clkn                          | IBUFG+BUFG             | 808   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 13.293ns (Maximum Frequency: 75.228MHz)
+   Minimum input arrival time before clock: 4.300ns
+   Maximum output required time after clock: 8.674ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'lbus_clkn'
+  Clock period: 13.293ns (frequency: 75.228MHz)
+  Total number of paths / destination ports: 29440968 / 2120
+-------------------------------------------------------------------------
+Delay:               13.293ns (Levels of Logic = 10)
+  Source:            aes_composite_enc/dat_76 (FF)
+  Destination:       aes_composite_enc/dat_9 (FF)
+  Source Clock:      lbus_clkn rising
+  Destination Clock: lbus_clkn rising
+
+  Data Path: aes_composite_enc/dat_76 to aes_composite_enc/dat_9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            17   0.525   1.317  aes_composite_enc/dat_76 (aes_composite_enc/dat_76)
+     LUT5:I3->O            7   0.250   0.910  aes_composite_enc/aes_core/SB1/u1/Mxor_xt<2>_xo<0>1 (aes_composite_enc/aes_core/SB1/u1/xt<2>)
+     LUT6:I5->O            4   0.254   0.804  aes_composite_enc/aes_core/SB1/u1/Mxor__n0177_xo<0>1 (aes_composite_enc/aes_core/SB1/u1/_n0177)
+     LUT6:I5->O            2   0.254   1.156  aes_composite_enc/aes_core/SB1/u1/Mxor_p_1_xo<0>_1 (aes_composite_enc/aes_core/SB1/u1/Mxor_p_1_xo<0>)
+     LUT5:I0->O           17   0.254   1.209  aes_composite_enc/aes_core/SB1/u1/u0/Mxor_y<0>_xo<0>1 (aes_composite_enc/aes_core/SB1/u1/pi<0>)
+     LUT4:I3->O            3   0.254   0.766  aes_composite_enc/aes_core/SB1/u1/y<0>51 (aes_composite_enc/aes_core/SB1/u1/y<0>_bdd8)
+     LUT6:I5->O           13   0.254   1.098  aes_composite_enc/aes_core/SB1/u1/yt<6>1 (aes_composite_enc/aes_core/SB1/u1/yt<6>)
+     LUT3:I2->O            7   0.254   0.910  aes_composite_enc/aes_core/SB1/u1/Mxor_y<5>_xo<0>1 (aes_composite_enc/aes_core/SB1/s<13>)
+     LUT6:I5->O            6   0.254   1.306  aes_composite_enc/aes_core/SB1/y<8>1 (aes_composite_enc/aes_core/sb1<8>)
+     LUT5:I0->O            1   0.254   0.682  aes_composite_enc/Mmux_dat[127]_Din[127]_mux_7_OUT1284_SW2 (N1215)
+     LUT6:I5->O            1   0.254   0.000  aes_composite_enc/Mmux_dat[127]_Din[127]_mux_7_OUT1284 (aes_composite_enc/dat[127]_Din[127]_mux_7_OUT<9>)
+     FDCE:D                    0.074          aes_composite_enc/dat_9
+    ----------------------------------------
+    Total                     13.293ns (3.135ns logic, 10.158ns route)
+                                       (23.6% logic, 76.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'lbus_clkn'
+  Total number of paths / destination ports: 97 / 97
+-------------------------------------------------------------------------
+Offset:              4.300ns (Levels of Logic = 2)
+  Source:            lbus_wrn (PAD)
+  Destination:       lbus_di_0 (FF)
+  Destination Clock: lbus_clkn rising
+
+  Data Path: lbus_wrn to lbus_di_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            18   1.328   1.234  lbus_wrn_IBUF (lbus_wrn_IBUF)
+     INV:I->O             16   0.255   1.181  lbus_wrn_inv1_INV_0 (lbus_wrn_inv)
+     FDE:CE                    0.302          lbus_di_0
+    ----------------------------------------
+    Total                      4.300ns (1.885ns logic, 2.415ns route)
+                                       (43.8% logic, 56.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'lbus_clkn'
+  Total number of paths / destination ports: 41 / 26
+-------------------------------------------------------------------------
+Offset:              8.674ns (Levels of Logic = 3)
+  Source:            mk_clkrst/u20/cnt_13 (FF)
+  Destination:       led<0> (PAD)
+  Source Clock:      lbus_clkn rising
+
+  Data Path: mk_clkrst/u20/cnt_13 to led<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             2   0.525   1.181  mk_clkrst/u20/cnt_13 (mk_clkrst/u20/cnt_13)
+     LUT6:I0->O            1   0.254   1.112  mk_clkrst/u20/rst1 (mk_clkrst/u20/rst)
+     LUT6:I1->O          302   0.254   2.436  mk_clkrst/u20/rst3 (led_0_OBUF)
+     OBUF:I->O                 2.912          led_0_OBUF (led<0>)
+    ----------------------------------------
+    Total                      8.674ns (3.945ns logic, 4.729ns route)
+                                       (45.5% logic, 54.5% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock lbus_clkn
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+lbus_clkn      |   13.293|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 65.00 secs
+Total CPU time to Xst completion: 65.14 secs
+ 
+--> 
+
+Total memory usage is 310668 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   46 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
+

@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "D:/github_project/chipwhisperer_scrip/hardware/capture/sakura-g/sakurag_ise_project/chipwhisperer-sakurag/CHIP_SAKURAG.xst" -ofn "D:/github_project/chipwhisperer_scrip/hardware/capture/sakura-g/sakurag_ise_project/chipwhisperer-sakurag/CHIP_SAKURAG.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -sd ../../../../common/hdl/sakura/coregen -nt timestamp -uc sakura_g_ctrl_r1.ucf -p xc6slx9-csg225-2 CHIP_SAKURAG.ngc CHIP_SAKURAG.ngd  
+map -intstyle ise -p xc6slx9-csg225-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o CHIP_SAKURAG_map.ncd CHIP_SAKURAG.ngd CHIP_SAKURAG.pcf 
+par -w -intstyle ise -ol high -mt off CHIP_SAKURAG_map.ncd CHIP_SAKURAG.ncd CHIP_SAKURAG.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml CHIP_SAKURAG.twx CHIP_SAKURAG.ncd -o CHIP_SAKURAG.twr CHIP_SAKURAG.pcf -ucf sakura_g_ctrl_r1.ucf 
+bitgen -intstyle ise -f CHIP_SAKURAG.ut CHIP_SAKURAG.ncd 
